@@ -12,6 +12,7 @@ import { HarvestCalendarSection } from '@/components/home/HarvestCalendarSection
 import { QualityTraceabilitySection } from '@/components/home/QualityTraceabilitySection';
 import { PackagingShowcase } from '@/components/home/PackagingShowcase';
 import { GlobalLogisticsSection } from '@/components/home/GlobalLogisticsSection';
+import { ExportHeroSection } from '@/components/home/ExportHeroSection';
 import { InsightsSection } from '@/components/home/InsightsSection';
 import { FinalCTASection } from '@/components/home/FinalCTASection';
 import { RFQContext } from '@/components/layout/AppWrapper';
@@ -40,6 +41,7 @@ export default function HomePage({
       <HarvestCalendarSection lang={lang} />
       <QualityTraceabilitySection lang={lang} />
       <PackagingShowcase lang={lang} />
+      <ExportHeroSection lang={lang} onOpenQuote={() => openQuote()} />
       <GlobalLogisticsSection lang={lang} />
       <InsightsSection lang={lang} />
       <FinalCTASection lang={lang} onOpenQuote={() => openQuote()} />

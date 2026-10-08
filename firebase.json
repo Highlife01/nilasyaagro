@@ -70,6 +70,13 @@
           ]
         }
       ],
+      "redirects": [
+        {
+          "source": "/",
+          "destination": "/en/",
+          "type": 302
+        }
+      ],
       "cleanUrls": true,
       "trailingSlash": true
     }
