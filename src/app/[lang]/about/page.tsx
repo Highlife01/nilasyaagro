@@ -41,6 +41,14 @@ export default async function AboutPage({
 
   return (
     <div className="pt-28 bg-white min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h1 className="text-4xl sm:text-5xl font-black text-slate-900 text-center mb-4">
+          {pt.title}
+        </h1>
+        <p className="text-lg text-slate-600 text-center max-w-3xl mx-auto">
+          {pt.subtitle}
+        </p>
+      </div>
       <CompanyIntro lang={lang} />
       <TrustStrip lang={lang} />
 

@@ -30,7 +30,7 @@ export const ProductFactBox: React.FC<ProductFactBoxProps> = ({ product, lang })
       >
         <div className="flex items-center gap-2 text-xs font-bold text-amber-400 uppercase tracking-wider mb-3">
           <Sparkles className="w-4 h-4 text-amber-400" />
-          <span>{pt.factBoxBadge}</span>
+          <span>{lang === 'tr' ? 'Ürün Bilgileri' : 'Product Information'}</span>
         </div>
 
         <h3 className="text-xl font-bold text-white mb-4">
@@ -64,7 +64,7 @@ export const ProductFactBox: React.FC<ProductFactBoxProps> = ({ product, lang })
           </div>
 
           <div className="p-3 bg-white/5 rounded-xl">
-            <dt className="text-emerald-300 font-semibold">{pt.verifiedSupplier}</dt>
+            <dt className="text-emerald-300 font-semibold">{lang === 'tr' ? 'İhracatçı Firma' : 'Export Company'}</dt>
             <dd className="font-bold text-white mt-0.5">{company.name} ({company.domain})</dd>
           </div>
         </dl>
@@ -74,7 +74,7 @@ export const ProductFactBox: React.FC<ProductFactBoxProps> = ({ product, lang })
       <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
         <div className="flex items-center gap-2 text-xs font-bold text-emerald-800 uppercase tracking-widest">
           <HelpCircle className="w-4 h-4 text-emerald-600" />
-          <span>Direct Answer Block (GEO / Generative Engine Optimization)</span>
+          <span>{lang === 'tr' ? 'Ürün Hakkında' : 'About This Product'}</span>
         </div>
 
         <div className="space-y-3">

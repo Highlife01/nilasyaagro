@@ -8,11 +8,11 @@ export const company = {
   phoneDisplay: '+90 533 684 01 75',
   phoneE164: '+905336840175',
   whatsappNumber: '905336840175',
-  headquarters: 'Mersin International Port Logistics Zone & Akdeniz, Mersin / Türkiye',
+  headquarters: 'Mersin, Türkiye',
   hubLocations: [
-    'Mersin Optical Sorting, Milling & Export Terminal',
-    'Konya & Central Anatolian Pulses Aggregation Center',
-    'Gaziantep & Southeast Anatolia Lentil Processing Hub'
+    'Mersin Export Terminal',
+    'Central Anatolian Pulses Aggregation Hub',
+    'Southeastern Anatolia Processing Center'
   ],
   linkedin: 'https://www.linkedin.com/company/nilasyaagrofoods',
 } as const;

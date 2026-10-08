@@ -32,7 +32,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
   const dialogRef = useRef<HTMLDivElement>(null);
 
   const [formData, setFormData] = useState<Partial<RFQSubmission>>({
-    product: preselectedProduct || 'pomegranate',
+    product: preselectedProduct || 'chickpeas',
     variety: '',
     caliber: '',
     quantity: '40',

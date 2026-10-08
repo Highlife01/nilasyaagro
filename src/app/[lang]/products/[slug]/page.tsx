@@ -7,6 +7,7 @@ import { ClientProductWrapper } from './ClientProductWrapper';
 import type { Metadata } from 'next';
 import { company } from '@/data/company';
 import { localizedSeoDescription } from '@/data/seo';
+import { getTranslations } from '@/data/translations';
 
 export function generateStaticParams() {
   const params: { lang: string; slug: string }[] = [];
@@ -60,8 +61,12 @@ export async function generateMetadata({
       languages: languageAlternates,
     },
     openGraph: {
+      type: 'website',
+      url: `${company.baseUrl}/${lang}/products/${slug}/`,
+      locale: lang === 'zh-cn' ? 'zh_CN' : lang.replace('-', '_'),
       title: `${productName} | Nilasya Agro Foods`,
       description: productDesc,
+      siteName: 'Nilasya Agro Foods',
       images: [
         {
           url: product.heroImage,
@@ -70,6 +75,12 @@ export async function generateMetadata({
           alt: `${productName} export from Türkiye - Nilasya Agro Foods`,
         },
       ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${productName} | Nilasya Agro Foods`,
+      description: productDesc,
+      images: [product.heroImage],
     },
   };
 }
@@ -93,45 +104,77 @@ export default async function ProductDetailPage({
 
   const productName = product.name[lang] || product.name.en;
 
+  // HS codes for products (verified international commodity codes)
+  const hsCodes: Record<string, string> = {
+    'chickpeas': '0713.20',
+    'red-lentils': '0713.40',
+    'green-lentils': '0713.40',
+    'white-beans': '0713.33',
+    'dry-peas': '0713.10',
+    'durum-wheat': '1001.19',
+    'bulgur': '1904.30',
+  };
+
   // JSON-LD Structured Data (Rule #73, #74, #44)
   const productJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: `${productName} (Turkish Fresh Produce)`,
+    '@id': `${company.baseUrl}/${lang}/products/${slug}/#product`,
+    name: productName,
     image: `${company.baseUrl}${product.heroImage}`,
     description: product.fullDescription[lang] || product.fullDescription.en,
     sku: `NG-${product.id.toUpperCase()}-EXP`,
     category: product.category[lang] || product.category.en,
     brand: {
       '@type': 'Brand',
+      '@id': `${company.baseUrl}/#organization`,
       name: 'Nilasya Agro Foods',
     },
-    offers: {
-      '@type': 'AggregateOffer',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      itemCondition: 'https://schema.org/NewCondition',
-      seller: {
-        '@type': 'Organization',
-        name: 'Nilasya Agro Foods',
-      },
+    countryOfOrigin: {
+      '@type': 'Country',
+      name: 'Türkiye',
     },
+    additionalProperty: [
+      hsCodes[product.id] && {
+        '@type': 'PropertyValue',
+        name: 'HS Code',
+        value: hsCodes[product.id],
+      },
+      product.specifications?.moisture && {
+        '@type': 'PropertyValue',
+        name: 'Moisture Content',
+        value: product.specifications.moisture,
+      },
+      product.specifications?.purity && {
+        '@type': 'PropertyValue',
+        name: 'Sortex Purity',
+        value: product.specifications.purity,
+      },
+      product.specifications?.caliber && {
+        '@type': 'PropertyValue',
+        name: 'Caliber Range',
+        value: product.specifications.caliber,
+      },
+    ].filter(Boolean),
+    inLanguage: lang,
   };
 
+  const t = getTranslations(lang);
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': `${company.baseUrl}/${lang}/products/${slug}/#breadcrumb`,
     itemListElement: [
       {
         '@type': 'ListItem',
         position: 1,
-        name: lang === 'tr' ? 'Ana Sayfa' : 'Home',
+        name: t.nav.home || (lang === 'tr' ? 'Ana Sayfa' : 'Home'),
         item: `${company.baseUrl}/${lang}/`,
       },
       {
         '@type': 'ListItem',
         position: 2,
-        name: lang === 'tr' ? 'Ürünlerimiz' : 'Products',
+        name: t.nav.products || (lang === 'tr' ? 'Ürünlerimiz' : 'Products'),
         item: `${company.baseUrl}/${lang}/products/`,
       },
       {

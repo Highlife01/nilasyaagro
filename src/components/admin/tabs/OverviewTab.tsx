@@ -84,7 +84,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
               Hoş Geldiniz, Cebrail Bey
             </h1>
             <p className="text-sm text-slate-600 mt-1 max-w-2xl">
-              Uluslararası yaş meyve & sebze ihracat operasyonları, 25 dilli portal üzerinden gelen kurumsal B2B talepleri ve soğuk hava lojistik radarı aktif durumda.
+              Uluslararası bakliyat ve hububat ihracat operasyonları, 30 dilli portal üzerinden gelen kurumsal B2B talepleri ve lojistik radarı aktif durumda.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">

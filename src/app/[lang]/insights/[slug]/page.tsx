@@ -81,7 +81,7 @@ export default async function InsightDetailPage({
       name: 'Nilasya Agro Foods',
       logo: {
         '@type': 'ImageObject',
-        url: `${company.baseUrl}/images/hero/hero-orchard-panoramic.webp`,
+        url: `${company.baseUrl}/images/hero/pulses-export-warehouse-nilasya.jpg`,
       },
     },
     datePublished: article.publishedAt,

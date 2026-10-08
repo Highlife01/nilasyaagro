@@ -425,7 +425,7 @@ export function saveRFQInquiry(inquiry: Partial<RFQSubmission>): void {
     const newEntry = {
       id: `rfq-${Date.now()}`,
       referenceCode: inquiry.referenceCode || `NG-RFQ-${Math.floor(1000 + Math.random() * 9000)}`,
-      product: inquiry.product || 'pomegranate',
+      product: inquiry.product || 'chickpeas',
       variety: inquiry.variety || 'Standart İhracat Çeşidi',
       caliber: inquiry.caliber || 'Standart İhracat Kalibre',
       quantity: inquiry.quantity || '22',

@@ -116,8 +116,8 @@ export interface Translations {
     road: { title: string; desc: string };
     sea: { title: string; desc: string };
     air: { title: string; desc: string };
-    coldChainTitle: string;
-    coldChainDesc: string;
+    moistureTitle: string;
+    moistureDesc: string;
   };
   insightsSection: {
     tag: string;
