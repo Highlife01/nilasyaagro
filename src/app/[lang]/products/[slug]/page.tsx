@@ -60,8 +60,12 @@ export async function generateMetadata({
       languages: languageAlternates,
     },
     openGraph: {
+      type: 'website',
+      url: `${company.baseUrl}/${lang}/products/${slug}/`,
+      locale: lang === 'zh-cn' ? 'zh_CN' : lang.replace('-', '_'),
       title: `${productName} | Nilasya Agro Foods`,
       description: productDesc,
+      siteName: 'Nilasya Agro Foods',
       images: [
         {
           url: product.heroImage,
@@ -70,6 +74,12 @@ export async function generateMetadata({
           alt: `${productName} export from Türkiye - Nilasya Agro Foods`,
         },
       ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${productName} | Nilasya Agro Foods`,
+      description: productDesc,
+      images: [product.heroImage],
     },
   };
 }

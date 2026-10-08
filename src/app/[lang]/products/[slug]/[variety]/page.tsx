@@ -103,8 +103,12 @@ export async function generateMetadata({
       languages: languageAlternates,
     },
     openGraph: {
+      type: 'website',
+      url: `${company.baseUrl}/${lang}/products/${productSlug}/${varietySlug}/`,
+      locale: lang === 'zh-cn' ? 'zh_CN' : lang.replace('-', '_'),
       title: `${varietyName} | Nilasya Agro Foods`,
       description: metaDesc,
+      siteName: 'Nilasya Agro Foods',
       images: [
         {
           url: heroImg,
@@ -113,6 +117,12 @@ export async function generateMetadata({
           alt: `${varietyName} Turkish Export Pulses - Nilasya Agro Foods`,
         },
       ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${varietyName} | Nilasya Agro Foods`,
+      description: metaDesc,
+      images: [heroImg],
     },
   };
 }
