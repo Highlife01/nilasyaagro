@@ -413,7 +413,7 @@ const baseEnglish: PageTranslations = {
     privacyP3: 'We do not sell or share buyer details with third parties. Form data is transmitted via encrypted HTTPS and secured against unauthorized access.',
   },
   whatsapp: {
-    tooltip: 'WhatsApp Trade Desk (+90 532 505 58 33)',
+    tooltip: 'WhatsApp Trade Desk (+90 533 684 01 75)',
     msgDefault: 'Hello Nilasya Agro Foods Trade Desk, I would like to request an export quotation for Turkish pulses and grains.',
     msgProduct: (p: string) => `Hello Nilasya Agro Foods Trade Desk, I would like to request pricing and specifications for Turkish ${p}.`,
   },
@@ -625,7 +625,7 @@ const baseTurkish: PageTranslations = {
     privacyP3: 'Verileriniz üçüncü taraflarla paylaşılmaz. İletilen bilgiler SSL şifreleme ve güvenli sunucu altyapısıyla korunmaktadır.',
   },
   whatsapp: {
-    tooltip: 'WhatsApp İhracat Masası (+90 532 505 58 33)',
+    tooltip: 'WhatsApp İhracat Masası (+90 533 684 01 75)',
     msgDefault: 'Merhaba Nilasya Agro Foods İhracat Masası, Türk bakliyat ve hububat ihracatı için B2B proforma teklifi almak istiyorum.',
     msgProduct: (p: string) => `Merhaba Nilasya Agro Foods İhracat Masası, Türk ${p} ihracatı ve güncel fiyat teklifi hakkında bilgi almak istiyorum.`,
   },

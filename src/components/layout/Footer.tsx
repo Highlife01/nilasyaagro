@@ -233,8 +233,8 @@ export const Footer: React.FC<FooterProps> = ({ lang, onOpenQuote }) => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <a href="tel:+905325055833" className="hover:text-white font-bold">
-                  +90 532 505 58 33
+                <a href="tel:+905336840175" className="hover:text-white font-bold">
+                  +90 533 684 01 75
                 </a>
               </div>
               <div className="flex items-center gap-2">

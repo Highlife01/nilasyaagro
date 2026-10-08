@@ -5,7 +5,7 @@
 **GitHub Repository:** [https://github.com/Highlife01/nilasyaagro](https://github.com/Highlife01/nilasyaagro)  
 **Brand Positioning:** *Premium Turkish Pulses & Grains. Delivered Worldwide.*  
 **Primary Export Terminal:** Mersin International Port (MIP), Türkiye  
-**Trade Desk WhatsApp / Phone:** +90 532 505 58 33  
+**Trade Desk WhatsApp / Phone:** +90 533 684 01 75  
 **Export Inquiries Email:** [export@nilasyaagrofoods.com.tr](mailto:export@nilasyaagrofoods.com.tr)
 
 ---
@@ -38,7 +38,7 @@ Nilasya Agro Foods is an enterprise B2B agricultural commodity processor, packer
 | Rendering | Fully static export (`output: 'export'`), `trailingSlash: true`, unoptimized images |
 | PWA | Web app manifest, service worker (`sw.js`), offline fallback page |
 | SEO / GEO | JSON-LD structured data (`Organization`, `Product`, `BreadcrumbList`, `Article`), `llms.txt`, `llms-full.txt`, dynamic `robots.txt` & `sitemap.xml` |
-| Hosting | Firebase Hosting — project `ajansonline`, site `nilasyaagrofoods` |
+| Hosting | Firebase Hosting — project `advera-c8dd0`, site `nilasyaagrofoods` |
 
 ---
 

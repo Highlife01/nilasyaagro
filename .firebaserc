@@ -1,9 +1,9 @@
 {
   "projects": {
-    "default": "ajansonline"
+    "default": "advera-c8dd0"
   },
   "targets": {
-    "ajansonline": {
+    "advera-c8dd0": {
       "hosting": {
         "nilasyaagrofoods": [
           "nilasyaagrofoods"

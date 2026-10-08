@@ -5,9 +5,9 @@ export const company = {
   domain: 'nilasyaagrofoods.com.tr',
   email: 'export@nilasyaagrofoods.com.tr',
   secondaryEmail: 'info@nilasyaagrofoods.com.tr',
-  phoneDisplay: '+90 532 505 58 33',
-  phoneE164: '+905325055833',
-  whatsappNumber: '905325055833',
+  phoneDisplay: '+90 533 684 01 75',
+  phoneE164: '+905336840175',
+  whatsappNumber: '905336840175',
   headquarters: 'Mersin International Port Logistics Zone & Akdeniz, Mersin / Türkiye',
   hubLocations: [
     'Mersin Optical Sorting, Milling & Export Terminal',
