@@ -1,6 +1,6 @@
 const descriptions: Record<string, string> = {
   en: 'Premium Turkish pulses and grains supply from Türkiye with Sortex optical cleaning, certified non-GMO quality, and full traceability.',
-  tr: 'Türkiye'den sertifikalı kalite, tam izlenebilirlik ve kesintisiz soğuk zincir ile premium bakliyat ve hububat tedariği.',
+  tr: 'Türkiye\'den sertifikalı kalite, tam izlenebilirlik ve kesintisiz soğuk zincir ile premium bakliyat ve hububat tedariği.',
   de: 'Erstklassige türkische Hülsenfrüchte und Getreide mit Sortex-Reinigung, zertifizierter Qualität und vollständiger Rückverfolgbarkeit.',
   fr: 'Légumineuses et céréales turques premium avec nettoyage optique Sortex, qualité certifiée et traçabilité complète.',
   es: 'Suministro premium de legumbres y cereales turcos con limpieza óptica Sortex, calidad certificada y trazabilidad completa.',
@@ -23,7 +23,7 @@ const descriptions: Record<string, string> = {
   ms: 'Bekalan kekacang dan bijirin Turki premium dengan pembersihan optik Sortex, kualiti diperakui, dan kebolehkesanan penuh.',
   pt: 'Fornecimento premium de leguminosas e grãos turcos com limpeza óptica Sortex, qualidade certificada e rastreabilidade total.',
   az: 'Sortex optik təmizləmə, sertifikatlaşdırılmış keyfiyyət və tam izlənə bilənlik ilə Türkiyədən premium paxlalı bitkilər və taxıl tədarükü.',
-  uz: 'Sortex optik tozalash, sertifikatlangan sifat va to'liq kuzatuv bilan Turkiyadan yuqori sifatli dukkaklilar va don mahsulotlari yetkazib berish.',
+  uz: 'Sortex optik tozalash, sertifikatlangan sifat va to\'liq kuzatuv bilan Turkiyadan yuqori sifatli dukkaklilar va don mahsulotlari yetkazib berish.',
   kk: 'Sortex оптикалық тазалау, сертификатталған сапа және толық қадағалау жүйесімен Түркиядан жоғары сапалы бұршақты дақылдар және астық жеткізу.',
   ka: 'თურქული პრემიუმ-კლასის პარკოსნები და მარცვლეული Sortex ოპტიკური გაწმენდით, სერტიფიცირებული ხარისხით და სრული მოძიებადობით.',
   sr: 'Premium turske mahunарке i žitarice sa Sortex optičkim čišćenjem, sertifikovanim kvalitetom i potpunom sledljivošću.',

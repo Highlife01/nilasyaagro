@@ -59,10 +59,10 @@ export const GlobalLogisticsSection: React.FC<{ lang: Locale }> = ({ lang }) => 
             <div className="lg:col-span-7 space-y-4 relative z-10">
               <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-400">
                 <Ship className="w-4 h-4" />
-                <span>{t.coldChainTitle}</span>
+                <span>{t.moistureTitle}</span>
               </div>
               <h3 className="text-2xl sm:text-4xl font-black text-white leading-tight">
-                {t.coldChainDesc}
+                {t.moistureDesc}
               </h3>
             </div>
 

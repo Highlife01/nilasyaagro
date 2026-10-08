@@ -449,8 +449,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Demiryolu & Multimodal Taşımacılık",
         "desc": "Anadolu silolarından vagonlarla limana ve Avrupa iç hatlarına dökme hububat taşımacılığı."
       },
-      "coldChainTitle": "Nem ve Kargo Güvenliği Protokolü",
-      "coldChainDesc": "Konteyner içi endüstriyel nem alıcılar (desiccant) ve resmi fümigasyon ile deniz aşırı seferlerde küf ve haşere riskine karşı sıfır tolerans."
+      "moistureTitle": "Nem ve Kargo Güvenliği Protokolü",
+      "moistureDesc": "Konteyner içi endüstriyel nem alıcılar (desiccant) ve resmi fümigasyon ile deniz aşırı seferlerde küf ve haşere riskine karşı sıfır tolerans."
     },
     "insightsSection": {
       "tag": "SEKTÖREL ANALİZLER",
