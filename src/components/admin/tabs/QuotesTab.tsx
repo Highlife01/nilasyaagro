@@ -178,7 +178,7 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
             Gelen İhracat Talepleri (RFQ Yönetimi)
           </h1>
           <p className="text-xs text-slate-500 mt-1">
-            Uluslararası B2B meyve-sebze alıcılarından gelen teklif istekleri, müşteri detayları ve proforma hazırlığı.
+            Uluslararası B2B bakliyat ve hububat alıcılarından gelen teklif istekleri, müşteri detayları ve proforma hazırlığı.
           </p>
         </div>
 

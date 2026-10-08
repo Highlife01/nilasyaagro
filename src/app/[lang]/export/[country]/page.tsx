@@ -115,7 +115,7 @@ export default async function CountryExportPage({
 
             <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
               {lang === 'tr'
-                ? `Türkiye'den ${countryName}'ya Taze Meyve ve Sebze İhracatı`
+                ? `Türkiye'den ${countryName}'ya Bakliyat ve Hububat İhracatı`
                 : `Turkish Pulses & Grains Supplier & Exporter to ${countryName}`}
             </h1>
 
@@ -170,7 +170,7 @@ export default async function CountryExportPage({
 
           <h2 className="text-2xl sm:text-3xl font-black text-white">
             {lang === 'tr' 
-              ? `${countryName} için Türk Yaş Meyve ve Sebze Tedariki Nasıl Yapılır?`
+              ? `${countryName} için Türk Bakliyat ve Hububat Tedariki Nasıl Yapılır?`
               : `How does Nilasya Agro Foods supply pulses & grains to ${countryName}?`}
           </h2>
 
