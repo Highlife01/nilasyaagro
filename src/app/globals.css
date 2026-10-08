@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* Lighter global palette: every utility referencing these shades site-wide
+   (bg-, text-, from-, via-, to-, border- …) resolves from these variables. */
+@theme {
+  --color-forest-950: #071f18;
+  --color-forest-900: #0d3b2e;
+  --color-forest-800: #134e3d;
+  --color-forest-700: #1b6852;
+  --color-gold-600: #b47a1e;
+  --color-gold-500: #c8963e;
+  --color-gold-400: #dfb25d;
+  --color-cream-100: #fdfbf7;
+  --color-cream-200: #f7f4ec;
+  --color-earth-900: #2d2319;
+  --color-earth-800: #423428;
+}
+
+@layer base {
+  :root {
+    --color-primary: #0d3b2e;
+    --color-primary-dark: #071f18;
+    --color-primary-light: #165643;
+    --color-gold-accent: #c8963e;
+    --color-gold-hover: #b47a1e;
+    --color-cream-bg: #fdfbf7;
+    --color-cream-surface: #f7f4ec;
+    --color-earth-dark: #2d2319;
+    --color-chickpea: #d8b06b;
+    --color-lentil-red: #d9532f;
+    --color-lentil-green: #5b7e45;
+    --color-bean-white: #e9e4d8;
+    --surface-quiet: #fbf9f4;
+    --ink-strong: #172421;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    color: var(--ink-strong);
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: #d8eedf;
+    color: #0d3b2e;
+  }
+}
+
+/* Quiet, premium utility surfaces shared across the site. */
+.text-high-contrast {
+  color: #102a26;
+}
+
+.bg-fresh-glow {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(45, 154, 120, 0.1) 0%, rgba(255, 255, 255, 0) 44%),
+    radial-gradient(circle at 85% 65%, rgba(201, 151, 69, 0.08) 0%, rgba(255, 255, 255, 0) 38%);
+}
+
+.card-vibrant {
+  background: #ffffff;
+  border: 1px solid #dfe8e1;
+  box-shadow: 0 12px 30px -18px rgba(16, 42, 38, 0.28);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+}
+
+.card-vibrant:hover {
+  border-color: rgba(45, 154, 120, 0.48);
+  box-shadow: 0 24px 46px -22px rgba(12, 107, 82, 0.3);
+  transform: translateY(-4px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

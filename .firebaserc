@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ajansonline"
+  },
+  "targets": {
+    "ajansonline": {
+      "hosting": {
+        "nilasyaagrofoods": [
+          "nilasyaagrofoods"
+        ]
+      }
+    }
+  }
+}
