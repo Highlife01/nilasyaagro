@@ -72,7 +72,7 @@ export async function generateMetadata({
   const metaTitle = `${varietyName} (${productName}) | Nilasya Agro Foods Export`;
   const metaDesc = isTr
     ? `${varietyName} ihracat şartnamesi, kalibre boylama, soğuk hava depolama ve toptan sevkiyat parametreleri. Nilasya Agro Foods güvencesiyle Türkiye'den dünya pazarlarına.`
-    : `Official export specifications, sizing, cold chain storage, and wholesale supply for ${varietyName} from Türkiye. Sourced by Nilasya Agro Foods.`;
+    : `Official export specifications, sizing, moisture-controlled storage, and wholesale supply for ${varietyName} from Türkiye. Sourced by Nilasya Agro Foods.`;
 
   const languageAlternates: Record<string, string> = {
     'x-default': `${company.baseUrl}/en/products/${product.slug.en || product.id}/${varietySlug}/`,
@@ -110,7 +110,7 @@ export async function generateMetadata({
           url: heroImg,
           width: 1200,
           height: 630,
-          alt: `${varietyName} Turkish Export Produce - Nilasya Agro Foods`,
+          alt: `${varietyName} Turkish Export Pulses - Nilasya Agro Foods`,
         },
       ],
     },
@@ -156,7 +156,7 @@ export default async function VarietyDetailPage({
   const varietyJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: `${varietyName} - ${productName} (Turkish Export Produce)`,
+    name: `${varietyName} - ${productName} (Turkish Export Pulses)`,
     image: `${company.baseUrl}${heroImg}`,
     description: varietyDesc,
     sku: `NG-${product.id.toUpperCase()}-${(variety.id || varietySlug).toUpperCase()}`,

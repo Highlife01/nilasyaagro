@@ -116,7 +116,7 @@ export default async function CountryExportPage({
             <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
               {lang === 'tr'
                 ? `Türkiye'den ${countryName}'ya Taze Meyve ve Sebze İhracatı`
-                : `Turkish Fresh Produce Supplier & Exporter to ${countryName}`}
+                : `Turkish Pulses & Grains Supplier & Exporter to ${countryName}`}
             </h1>
 
             <p className="text-base sm:text-xl text-slate-200 leading-relaxed font-normal">

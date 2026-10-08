@@ -20,7 +20,7 @@ export const translationsData: Record<string, Translations> = {
       "badge": "DIRECT GROWER & EXPORT OPERATOR FROM TÜRKİYE",
       "titleLine1": "FROM TÜRKİYE",
       "titleLine2": "TO THE WORLD.",
-      "subtitle": "Exporting Premium Turkish Fresh Produce to Supermarkets, Wholesalers, and Importers Worldwide with Complete Traceability.",
+      "subtitle": "Exporting Premium Turkish Pulses & Grains to Supermarkets, Food Processors, and Importers Worldwide with Complete Traceability.",
       "productsList": "Chickpeas • Red Lentils • Green Lentils • White Beans • Dry Peas • Durum Wheat & Bulgur",
       "ctaPrimary": "EXPLORE OUR PRODUCTS",
       "ctaSecondary": "REQUEST AN EXPORT QUOTE",
@@ -32,7 +32,7 @@ export const translationsData: Record<string, Translations> = {
         "regions": "6 Major",
         "regionsLabel": "Turkish Growing Terroirs",
         "products": "100% Traceable",
-        "productsLabel": "Orchard to Destination"
+        "productsLabel": "Farm to Destination"
       }
     },
     "trustStrip": {
@@ -136,11 +136,11 @@ export const translationsData: Record<string, Translations> = {
       "tag": "12-MONTH HARVEST MATRIX",
       "title": "Year-Round Export & Availability Calendar",
       "subtitle": "Track fresh harvest cycles and controlled atmosphere storage availability across all 12 months.",
-      "legendHarvest": "Peak Orchard Harvest",
+      "legendHarvest": "Peak Harvest Season",
       "legendStorage": "CA Cold Storage Supply",
       "legendNone": "Off Season",
       "viewFullCalendar": "View Full Technical Calendar",
-      "tableSummary": "Monthly export availability matrix for Turkish fruits and vegetables"
+      "tableSummary": "Monthly export availability matrix for Turkish pulses and grains"
     },
     "qualitySection": {
       "tag": "STANDARDS & CERTIFICATIONS",
@@ -190,8 +190,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "MARKET INTELLIGENCE",
@@ -242,7 +242,7 @@ export const translationsData: Record<string, Translations> = {
       "closeBtn": "Close Window"
     },
     "footer": {
-      "description": "Nilasya Agro Foods is a Türkiye-based grower, packer, and exporter of premium fresh fruits and vegetables. Supplying world markets with certified quality, unbroken cold chain, and seamless logistics.",
+      "description": "Nilasya Agro Foods is a Türkiye-based processor and exporter of premium pulses and grains. Supplying world markets with certified quality, Sortex optical purity, and seamless logistics.",
       "quickLinks": "Navigation",
       "products": "Export Produce",
       "company": "Corporate & Standards",
@@ -279,7 +279,7 @@ export const translationsData: Record<string, Translations> = {
       "badge": "TÜRKİYE MENŞEİLİ DOĞRUDAN ÜRETİCİ & İHRACATÇI",
       "titleLine1": "TÜRKİYE'DEN",
       "titleLine2": "DÜNYAYA.",
-      "subtitle": "Türkiye'nin En Seçkin Yaş Meyve ve Sebzelerini Süpermarket Zincirleri, Toptancılar ve İthalatçılara Kesintisiz Soğuk Zincirle İhraç Ediyoruz.",
+      "subtitle": "Türkiye'nin En Kaliteli Bakliyat ve Hububatını Süpermarket Zincirleri, Gıda Üreticileri ve İthalatçılara Tam İzlenebilirlikle İhraç Ediyoruz.",
       "productsList": "Nohut • Kırmızı Mercimek • Yeşil Mercimek • Kuru Fasulye • Kuru Bezelye • Durum Buğdayı & Bulgur",
       "ctaPrimary": "ÜRÜNLERİMİZİ İNCELEYİN",
       "ctaSecondary": "İHRACAT TEKLİFİ ALIN",
@@ -291,7 +291,7 @@ export const translationsData: Record<string, Translations> = {
         "regions": "6 Ana",
         "regionsLabel": "Türkiye Tarım Havzası",
         "products": "%100 İzlenebilir",
-        "productsLabel": "Bahçeden Varış Noktasına"
+        "productsLabel": "Tarladan Varış Noktasına"
       }
     },
     "trustStrip": {
@@ -394,12 +394,12 @@ export const translationsData: Record<string, Translations> = {
     "harvestCalendar": {
       "tag": "12 AYLIK HASAT MATRİSİ",
       "title": "Kesintisiz İhracat ve Hasat Takvimi",
-      "subtitle": "12 ay boyunca taze bahçe hasadı ve kontrollü atmosfer soğuk hava deposu tedarik döngüsü.",
-      "legendHarvest": "Doğrudan Bahçe Hasadı",
+      "subtitle": "12 ay boyunca taze hasat ve modern silo depolama ile kesintisiz tedarik döngüsü.",
+      "legendHarvest": "Doğrudan Tarla Hasadı",
       "legendStorage": "CA Soğuk Depo Tedariki",
       "legendNone": "Sezon Dışı",
       "viewFullCalendar": "Tam Teknik Takvimi Gör",
-      "tableSummary": "Türk yaş meyve ve sebzeleri aylık ihracat tedarik matrisi"
+      "tableSummary": "Türk bakliyat ve hububat aylık ihracat tedarik matrisi"
     },
     "qualitySection": {
       "tag": "SERTİFİKASYON VE KALİTE",
@@ -460,7 +460,7 @@ export const translationsData: Record<string, Translations> = {
       "viewAll": "TÜM REHBERLERİ İNCELE"
     },
     "finalCta": {
-      "title": "Türkiye'den Güvenilir Yaş Meyve & Sebze Tedarikine Başlayın",
+      "title": "Türkiye'den Güvenilir Bakliyat & Hububat Tedarikine Başlayın",
       "subtitle": "Hacim ve varış limanı gereksinimlerinizi iletin, 24 saat içinde resmi B2B ihracat proforma teklifimizi iletelim.",
       "btnQuote": "İHRACAT FİYAT TEKLİFİ ALIN",
       "btnWhatsapp": "WHATSAPP ÜZERİNDEN GÖRÜŞÜN"
@@ -516,7 +516,7 @@ export const translationsData: Record<string, Translations> = {
       "rights": "Tüm Hakları Saklıdır.",
       "privacy": "Gizlilik Politikası",
       "terms": "Kullanım Koşulları",
-      "entityStatement": "Nilasya Agro Foods, Türkiye Cumhuriyeti kanunlarına tabi tescilli bir yaş meyve ve sebze ihracat kuruluşudur."
+      "entityStatement": "Nilasya Agro Foods, Türkiye Cumhuriyeti kanunlarına tabi tescilli bir bakliyat ve hububat ihracat kuruluşudur."
     }
   },
   "de": {
@@ -539,7 +539,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "VON TÜRKİYE",
       "titleLine2": "IN DIE WELT.",
       "subtitle": "Export hochwertiger türkischer Frischprodukte an Supermärkte, Großhändler und Importeure weltweit mit vollständiger Rückverfolgbarkeit.",
-      "productsList": "Granatapfel • Apfel • Trauben • Kiwi • Orange • Tomate",
+      "productsList": "Kichererbsen • Rote Linsen • Grüne Linsen • Weiße Bohnen • Trockenerbsen • Hartweizen & Bulgur",
       "ctaPrimary": "ENTDECKEN SIE UNSERE PRODUKTE",
       "ctaSecondary": "EXPORTANGEBOT ANFRAGEN",
       "stats": {
@@ -708,8 +708,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "MARKET INTELLIGENCE",
@@ -798,7 +798,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "DE TÜRKİYE",
       "titleLine2": "VERS LE MONDE.",
       "subtitle": "Exportation de produits frais turcs de qualité supérieure vers les supermarchés, les grossistes et les importateurs du monde entier avec une traçabilité complète.",
-      "productsList": "Grenade • Pomme • Raisin • Kiwi • Orange • Tomate",
+      "productsList": "Pois Chiches • Lentilles Rouges • Lentilles Vertes • Haricots Blancs • Pois Secs • Blé Dur & Boulgour",
       "ctaPrimary": "EXPLOREZ NOS PRODUITS",
       "ctaSecondary": "DEMANDER UN DEVIS D'EXPORTATION",
       "stats": {
@@ -913,7 +913,7 @@ export const translationsData: Record<string, Translations> = {
       "tag": "MATRICE DE RÉCOLTE SUR 12 MOIS",
       "title": "Calendrier d'exportation et de disponibilité tout au long de l'année",
       "subtitle": "Suivez les cycles de récolte fraîche et la disponibilité du stockage en atmosphère contrôlée sur les 12 mois.",
-      "legendHarvest": "Peak Orchard Récolte",
+      "legendHarvest": "Saison de Récolte Maximale",
       "legendStorage": "Fourniture d'entrepôts frigorifiques en Californie",
       "legendNone": "Hors saison",
       "viewFullCalendar": "Voir le calendrier technique complet",
@@ -967,8 +967,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "INTELLIGENCE DU MARCHÉ",
@@ -1057,7 +1057,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "DE TÜRKİYE",
       "titleLine2": "PARA EL MUNDO.",
       "subtitle": "Exportando productos frescos turcos de primera calidad a supermercados, mayoristas e importadores de todo el mundo con trazabilidad completa.",
-      "productsList": "Granada • Manzana • Uvas • Kiwi • Naranja • Tomate",
+      "productsList": "Garbanzos • Lentejas Rojas • Lentejas Verdes • Frijoles Blancos • Guisantes Secos • Trigo Duro & Bulgur",
       "ctaPrimary": "EXPLORA NUESTROS PRODUCTOS",
       "ctaSecondary": "SOLICITAR COTIZACIÓN DE EXPORTACIÓN",
       "stats": {
@@ -1226,8 +1226,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "INTELIGENCIA DE MERCADO",
@@ -1316,7 +1316,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "DA TÜRKİYE",
       "titleLine2": "NEL MONDO.",
       "subtitle": "Esportazione di prodotti freschi turchi di alta qualità verso supermercati, grossisti e importatori in tutto il mondo con tracciabilità completa.",
-      "productsList": "Melograno • Mela • Uva • Kiwi • Arancia • Pomodoro",
+      "productsList": "Ceci • Lenticchie Rosse • Lenticchie Verdi • Fagioli Bianchi • Piselli Secchi • Grano Duro & Bulgur",
       "ctaPrimary": "ESPLORA I NOSTRI PRODOTTI",
       "ctaSecondary": "RICHIEDI UN PREVENTIVO PER L'ESPORTAZIONE",
       "stats": {
@@ -1485,8 +1485,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "MARKET INTELLIGENCE",
@@ -1575,7 +1575,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "VANAF TÜRKİYE",
       "titleLine2": "NAAR DE WERELD.",
       "subtitle": "Exporteren van premium Turkse verse producten naar supermarkten, groothandelaren en importeurs wereldwijd met volledige traceerbaarheid.",
-      "productsList": "Granaatappel • Appel • Druiven • Kiwi • Sinaasappel • Tomaat",
+      "productsList": "Kikkererwten • Rode Linzen • Groene Linzen • Witte Bonen • Droge Erwten • Durumtarwe & Bulgur",
       "ctaPrimary": "ONTDEK ONZE PRODUCTEN",
       "ctaSecondary": "VRAAG EEN EXPORTofferte aan",
       "stats": {
@@ -1744,8 +1744,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "MARKETINTELLIGENTIE",
@@ -1834,7 +1834,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "Z TÜRKİYE",
       "titleLine2": "NA CAŁY ŚWIAT.",
       "subtitle": "Eksport najwyższej jakości tureckich świeżych produktów do supermarketów, hurtowników i importerów na całym świecie z pełną identyfikowalnością.",
-      "productsList": "Granat • Jabłko • Winogrona • Kiwi • Pomarańcza • Pomidor",
+      "productsList": "Ciecierzyca • Soczewica Czerwona • Soczewica Zielona • Biała Fasola • Groch Suchy • Pszenica Twarda & Bulgur",
       "ctaPrimary": "ODKRYJ NASZE PRODUKTY",
       "ctaSecondary": "ZAPYTAJ O WYCENĘ EKSPORTOWĄ",
       "stats": {
@@ -2003,8 +2003,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "INTELIGENCJA RYNKU",
@@ -2093,7 +2093,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "DIN TÜRKİYE",
       "titleLine2": "PENTRU LUME.",
       "subtitle": "Exportarea produselor proaspete premium turcești către supermarketuri, angrosisti și importatori din întreaga lume, cu trasabilitate completă.",
-      "productsList": "Rodie • Măr • Struguri • Kiwi • Portocală • Roșii",
+      "productsList": "Năut • Linte Roșie • Linte Verde • Fasole Albă • Mazăre Uscată • Grâu Dur & Bulgur",
       "ctaPrimary": "EXPLORAȚI PRODUSELE NOASTRE",
       "ctaSecondary": "CEREȚI O COTATĂ DE EXPORT",
       "stats": {
@@ -2208,7 +2208,7 @@ export const translationsData: Record<string, Translations> = {
       "tag": "MATRICE DE RECOLTA DE 12 LUNI",
       "title": "Calendarul de export și disponibilitate pe tot parcursul anului",
       "subtitle": "Urmăriți ciclurile de recoltare proaspătă și disponibilitatea stocării în atmosferă controlată pe toate cele 12 luni.",
-      "legendHarvest": "Peak Orchard Harvest",
+      "legendHarvest": "Peak Harvest Season",
       "legendStorage": "CA Cold Storage Supply",
       "legendNone": "În afara sezonului",
       "viewFullCalendar": "Vezi calendarul tehnic complet",
@@ -2262,8 +2262,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "INFORMAȚII DE PIAȚĂ",
@@ -2352,7 +2352,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "ОТ ТУРЦИЯ",
       "titleLine2": "КЪМ СВЕТА.",
       "subtitle": "Изнасяме висококачествени турски пресни продукти за супермаркети, търговци на едро и вносители по целия свят с пълна проследимост.",
-      "productsList": "Нар • Ябълка • Грозде • Киви • Портокал • Домати",
+      "productsList": "Нахут • Червена леща • Зелена леща • Бели боб • Сух грах • Твърда пшеница & Булгур",
       "ctaPrimary": "РАЗГЛЕДАЙТЕ НАШИТЕ ПРОДУКТИ",
       "ctaSecondary": "ЗАПИТВАНЕ ЗА ИЗНОСНА ОФЕРТА",
       "stats": {
@@ -2521,8 +2521,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "ПАЗАРНА ИНФОРМАЦИЯ",
@@ -2611,7 +2611,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "ΑΠΟ ΤΗΝ ΤΟΥΡΚΙΑ",
       "titleLine2": "ΣΤΟΝ ΚΟΣΜΟ.",
       "subtitle": "Εξαγωγή Ποιοτικών Τουρκικών Φρέσκων Προϊόντων σε Σούπερ Μάρκετ, Χονδρέμπορους και Εισαγωγείς Παγκοσμίως με Πλήρη Ιχνηλασιμότητα.",
-      "productsList": "Ρόδι • Μήλο • Σταφύλια • Ακτινίδιο • Πορτοκάλι • Τομάτα",
+      "productsList": "Ρεβίθια • Κόκκινες Φακές • Πράσινες Φακές • Λευκά Φασόλια • Ξερά Μπιζέλια • Σκληρό Σιτάρι & Bulgur",
       "ctaPrimary": "ΕΞΕΡΕΥΝΗΣΤΕ ΤΑ ΠΡΟΪΟΝΤΑ ΜΑΣ",
       "ctaSecondary": "ΖΗΤΗΣΤΕ ΠΡΟΣΦΟΡΑ ΕΞΑΓΩΓΗΣ",
       "stats": {
@@ -2780,8 +2780,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "ΣΤΟΙΧΕΙΑ ΑΓΟΡΑΣ",
@@ -2870,7 +2870,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "ИЗ ТУРЦИИ",
       "titleLine2": "В МИР.",
       "subtitle": "Экспорт премиальных турецких свежих продуктов в супермаркеты, оптовые компании и импортёров по всему миру с полной прослеживаемостью.",
-      "productsList": "Гранат • Яблоко • Виноград • Киви • Апельсин • Помидор",
+      "productsList": "Нут • Красная чечевица • Зеленая чечевица • Белая фасоль • Сухой горох • Твердая пшеница & Булгур",
       "ctaPrimary": "ИССЛЕДОВАТЬ НАШИ ПРОДУКТЫ",
       "ctaSecondary": "ЗАПРОСИТЬ ЭКСПОРТНОЕ ПРЕДЛОЖЕНИЕ",
       "stats": {
@@ -3039,8 +3039,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "АНАЛИТИКА РЫНКА",
@@ -3129,7 +3129,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "З TÜRKİYE",
       "titleLine2": "У ВСІЙ СВІТ.",
       "subtitle": "Експорт преміальних турецьких свіжих продуктів до супермаркетів, оптових продавців та імпортерів у всьому світі з повною відстежуваністю.",
-      "productsList": "Гранат • Яблуко • Виноград • Ківі • Апельсин • Помідор",
+      "productsList": "Нут • Червона сочевиця • Зелена сочевиця • Біла квасоля • Сухий горох • Тверда пшениця & Булгур",
       "ctaPrimary": "ДОСЛІДИТИ НАШУ ПРОДУКЦІЮ",
       "ctaSecondary": "ЗАМОВИТИ ЕКСПОРТНИЙ КОШТОРИС",
       "stats": {
@@ -3298,8 +3298,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "АНАЛІТИКА РИНКУ",
@@ -3388,7 +3388,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "من تركيا",
       "titleLine2": "إلى العالم.",
       "subtitle": "تصدير المنتجات الطازجة التركية المتميزة إلى السوبرماركت وتجار الجملة والمستوردين حول العالم مع إمكانية تتبع كاملة.",
-      "productsList": "رمان • تفاح • عنب • كيوي • برتقال • طماطم",
+      "productsList": "حمص • عدس أحمر • عدس أخضر • فاصوليا بيضاء • بازلاء جافة • قمح قاسي وبرغل",
       "ctaPrimary": "استكشف منتجاتنا",
       "ctaSecondary": "طلب عرض تصدير",
       "stats": {
@@ -3557,8 +3557,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "استخبارات السوق",
@@ -3647,7 +3647,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "از ترکیه",
       "titleLine2": "به سراسر جهان.",
       "subtitle": "صادرات محصولات تازه با کیفیت ترکیه به سوپرمارکت‌ها، عمده‌فروشان و واردکنندگان جهانی با قابلیت ردیابی کامل.",
-      "productsList": "انار • سیب • انگور • کیوی • پرتقال • گوجه‌فرنگی",
+      "productsList": "نخود • عدس قرمز • عدس سبز • لوبیا سفید • نخودفرنگی خشک • گندم دوروم و بلغور",
       "ctaPrimary": "بررسی محصولات ما",
       "ctaSecondary": "درخواست پیش‌فاکتور صادرات",
       "stats": {
@@ -3816,8 +3816,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "اطلاعات بازار",
@@ -3906,7 +3906,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "ממטורקיה",
       "titleLine2": "לעולם.",
       "subtitle": "יצוא תוצרת טרייה טורקית יוקרתית לסופרמרקטים, סיטונאים ומייצאים ברחבי העולם עם מעקב מלא.",
-      "productsList": "רימון • תפוח • ענבים • קיווי • תפוז • עגבנייה",
+      "productsList": "חומוס • עדשים אדומות • עדשים ירוקות • שעועית לבנה • אפונה יבשה • חיטת דורום ובורגול",
       "ctaPrimary": "גלה את המוצרים שלנו",
       "ctaSecondary": "בקשת הצעת יצוא",
       "stats": {
@@ -4075,8 +4075,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "מודיעין שוק",
@@ -4165,7 +4165,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "तुर्की से",
       "titleLine2": "दुनिया के लिए।",
       "subtitle": "संपूर्ण ट्रेसबिलिटी के साथ विश्वभर के सुपरमार्केट, होलसेलर और इम्पोर्टर्स को प्रीमियम तुर्की ताजे उत्पादों का निर्यात।",
-      "productsList": "अनार • सेब • अंगूर • कीवी • संतरा • टमाटर",
+      "productsList": "चना • लाल मसूर • हरी मसूर • सफेद बीन्स • सूखी मटर • ड्यूरम गेहूं और बुलगुर",
       "ctaPrimary": "हमारे उत्पादों का अन्वेषण करें",
       "ctaSecondary": "एक्सपोर्ट कोट का अनुरोध करें",
       "stats": {
@@ -4334,8 +4334,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "बाजार बुद्धिमत्ता",
@@ -4424,7 +4424,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "ترکی سے",
       "titleLine2": "دنیا کے لیے۔",
       "subtitle": "دنیا بھر کے سپر مارکیٹس، ہول سیلرز، اور درآمد کنندگان کو مکمل ٹریس ایبلٹی کے ساتھ پریمیم ترک تازہ پیداوار برآمد کرنا۔",
-      "productsList": "انار • سیب • انگور • کیوی • سنترہ • ٹماٹر",
+      "productsList": "چنا • سرخ مسور • سبز مسور • سفید لوبیا • خشک مٹر • ڈیورم گندم اور بلغور",
       "ctaPrimary": "ہمارے مصنوعات کو دریافت کریں",
       "ctaSecondary": "برآمدی کوٹیشن کی درخواست کریں",
       "stats": {
@@ -4593,8 +4593,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "مارکیٹ انٹیلیجنس",
@@ -4683,7 +4683,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "来自土耳其",
       "titleLine2": "致全世界。",
       "subtitle": "向全球超市、批发商和进口商出口优质土耳其新鲜农产品，具有完整的可追溯性。",
-      "productsList": "石榴 • 苹果 • 葡萄 • 猕猴桃 • 橙子 • 番茄",
+      "productsList": "鹰嘴豆 • 红扁豆 • 绿扁豆 • 白芸豆 • 干豌豆 • 硬粒小麦和碎麦",
       "ctaPrimary": "探索我们的产品",
       "ctaSecondary": "请求出口报价",
       "stats": {
@@ -4852,8 +4852,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "市场情报",
@@ -4942,7 +4942,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "トルコより",
       "titleLine2": "世界へ。",
       "subtitle": "完全なトレーサビリティを備えたプレミアムトルコ産新鮮農産物を、世界中のスーパーマーケット、卸売業者、輸入業者に輸出しています。",
-      "productsList": "ザクロ • りんご • ぶどう • キウイ • オレンジ • トマト",
+      "productsList": "ひよこ豆 • 赤レンズ豆 • 緑レンズ豆 • 白いんげん豆 • 乾燥エンドウ豆 • デュラム小麦とブルグル",
       "ctaPrimary": "私たちの製品を探る",
       "ctaSecondary": "輸出見積もりを依頼する",
       "stats": {
@@ -5111,8 +5111,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "市場情報",
@@ -5201,7 +5201,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "터키에서",
       "titleLine2": "세상에.",
       "subtitle": "완전한 추적 가능성과 함께 프리미엄 터키 신선 농산물을 전 세계 슈퍼마켓, 도매업자 및 수입업자에게 수출합니다.",
-      "productsList": "석류 • 사과 • 포도 • 키위 • 오렌지 • 토마토",
+      "productsList": "병아리콩 • 붉은 렌틸콩 • 녹색 렌틸콩 • 흰 강낭콩 • 건조 완두콩 • 듀럼 밀과 불구르",
       "ctaPrimary": "우리 제품 살펴보기",
       "ctaSecondary": "수출 견적 요청",
       "stats": {
@@ -5370,8 +5370,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "시장 정보",
@@ -5460,7 +5460,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "DARI TÜRKİYE",
       "titleLine2": "UNTUK DUNIYA.",
       "subtitle": "Mengekspor Produk Segar Turki Premium ke Supermarket, Grosir, dan Importir di Seluruh Dunia dengan Jejak Pelacakan Lengkap.",
-      "productsList": "Delima • Apel • Anggur • Kiwi • Jeruk • Tomat",
+      "productsList": "Kacang Arab • Lentil Merah • Lentil Hijau • Kacang Putih • Kacang Polong Kering • Gandum Durum & Bulgur",
       "ctaPrimary": "JELAJAHI PRODUK KAMI",
       "ctaSecondary": "MINTA KUTIPAN EKSPOR",
       "stats": {
@@ -5629,8 +5629,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "INTELIJEN PASAR",
@@ -5719,7 +5719,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "DARI TÜRKİYE",
       "titleLine2": "KE DUNIA.",
       "subtitle": "Mengeksport Hasil Segar Turki Premium ke Pasar Raya, Peniaga Borong, dan Pengimport di Seluruh Dunia dengan Kebolehkesanan Penuh.",
-      "productsList": "Delima • Epal • Anggur • Kiwi • Oren • Tomato",
+      "productsList": "Kacang Kuda • Lentil Merah • Lentil Hijau • Kacang Putih • Kacang Pis Kering • Gandum Durum & Bulgur",
       "ctaPrimary": "TEROKAI PRODUK KAMI",
       "ctaSecondary": "PERMOHONAN SEBUT HARGA EKSPORT",
       "stats": {
@@ -5888,8 +5888,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "INTELIJEN PASARAN",
@@ -5978,7 +5978,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "DA TURQUIA",
       "titleLine2": "PARA O MUNDO.",
       "subtitle": "Exportando Produtos Frescos Premium Turcos para Supermercados, Atacadistas e Importadores em Todo o Mundo com Rastreabilidade Completa.",
-      "productsList": "Romã • Maçã • Uvas • Kiwi • Laranja • Tomate",
+      "productsList": "Grão-de-bico • Lentilhas Vermelhas • Lentilhas Verdes • Feijão Branco • Ervilhas Secas • Trigo Duro & Bulgur",
       "ctaPrimary": "EXPLORE NOSSOS PRODUTOS",
       "ctaSecondary": "SOLICITAR UM ORÇAMENTO DE EXPORTAÇÃO",
       "stats": {
@@ -6147,8 +6147,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "INTELIGÊNCIA DE MERCADO",
@@ -6237,7 +6237,7 @@ export const translationsData: Record<string, Translations> = {
       "titleLine1": "Z TURECKA",
       "titleLine2": "SVĚTU.",
       "subtitle": "Export prémiových čerstvých tureckých produktů do supermarketů, velkoobchodů a dovozců po celém světě s úplnou sledovatelností.",
-      "productsList": "Granátové jablko • Jablko • Hrozny • Kiwi • Pomeranč • Rajče",
+      "productsList": "Cizrna • Červená čočka • Zelená čočka • Bílé fazole • Suchý hrách • Tvrdá pšenice & Bulgur",
       "ctaPrimary": "PROZKOUMEJTE NAŠE PRODUKTY",
       "ctaSecondary": "POŽÁDAT O NABÍDKU NA EXPORT",
       "stats": {
@@ -6406,8 +6406,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "TRŽNÍ INTELIGENCE",
@@ -6665,8 +6665,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "BAZAR XƏBƏRLƏRİ",
@@ -6924,8 +6924,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "BAZAR XƏBƏRLƏRİ",
@@ -7183,8 +7183,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "BAZAR XƏBƏRLƏRİ",
@@ -7442,8 +7442,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "BAZAR XƏBƏRLƏRİ",
@@ -7701,8 +7701,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "BAZAR XƏBƏRLƏRİ",
@@ -7960,8 +7960,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "BAZAR XƏBƏRLƏRİ",
@@ -8219,8 +8219,8 @@ export const translationsData: Record<string, Translations> = {
         "title": "Rail & Intermodal Bulk Logistics",
         "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "moistureTitle": "Cargo Moisture & Fumigation Protocol",
+      "moistureDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
     },
     "insightsSection": {
       "tag": "BAZAR XƏBƏRLƏRİ",

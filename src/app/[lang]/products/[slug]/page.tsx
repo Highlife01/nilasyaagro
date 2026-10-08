@@ -97,7 +97,7 @@ export default async function ProductDetailPage({
   const productJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: `${productName} (Turkish Fresh Produce)`,
+    name: `${productName} (Turkish Pulses & Grains)`,
     image: `${company.baseUrl}${product.heroImage}`,
     description: product.fullDescription[lang] || product.fullDescription.en,
     sku: `NG-${product.id.toUpperCase()}-EXP`,
