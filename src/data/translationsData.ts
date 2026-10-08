@@ -1,4 +1,4 @@
-import { Translations } from '@/data/translations';
+import type { Translations } from './translations';
 
 export const translationsData: Record<string, Translations> = {
   "en": {
@@ -20,7 +20,7 @@ export const translationsData: Record<string, Translations> = {
       "badge": "DIRECT GROWER & EXPORT OPERATOR FROM TÜRKİYE",
       "titleLine1": "FROM TÜRKİYE",
       "titleLine2": "TO THE WORLD.",
-      "subtitle": "Exporting Premium Turkish Fresh Produce to Supermarkets, Wholesalers, and Importers Worldwide with Complete Traceability.",
+      "subtitle": "Exporting Premium Turkish Pulses, Grains & Agricultural Commodities to Supermarkets, Dal Millers, Canners, and Bulk Importers Worldwide.",
       "productsList": "Chickpeas • Red Lentils • Green Lentils • White Beans • Dry Peas • Durum Wheat & Bulgur",
       "ctaPrimary": "EXPLORE OUR PRODUCTS",
       "ctaSecondary": "REQUEST AN EXPORT QUOTE",
@@ -32,7 +32,7 @@ export const translationsData: Record<string, Translations> = {
         "regions": "6 Major",
         "regionsLabel": "Turkish Growing Terroirs",
         "products": "100% Traceable",
-        "productsLabel": "Orchard to Destination"
+        "productsLabel": "Farm to Port & Global Cargo"
       }
     },
     "trustStrip": {
@@ -140,7 +140,7 @@ export const translationsData: Record<string, Translations> = {
       "legendStorage": "CA Cold Storage Supply",
       "legendNone": "Off Season",
       "viewFullCalendar": "View Full Technical Calendar",
-      "tableSummary": "Monthly export availability matrix for Turkish fruits and vegetables"
+      "tableSummary": "Monthly export availability matrix for Turkish pulses, grains & commodities"
     },
     "qualitySection": {
       "tag": "STANDARDS & CERTIFICATIONS",
@@ -201,7 +201,7 @@ export const translationsData: Record<string, Translations> = {
       "viewAll": "VIEW ALL SOURCING GUIDES"
     },
     "finalCta": {
-      "title": "Ready to Source Premium Produce from Türkiye?",
+      "title": "Ready to Source Premium Pulses & Grains from Türkiye?",
       "subtitle": "Submit your volume requirements and target destination port to receive a formal B2B export offer within 24 hours.",
       "btnQuote": "REQUEST AN EXPORT QUOTE",
       "btnWhatsapp": "TALK TO EXPORT DESK ON WHATSAPP"
@@ -242,7 +242,7 @@ export const translationsData: Record<string, Translations> = {
       "closeBtn": "Close Window"
     },
     "footer": {
-      "description": "Nilasya Agro Foods is a Türkiye-based grower, packer, and exporter of premium fresh fruits and vegetables. Supplying world markets with certified quality, unbroken cold chain, and seamless logistics.",
+      "description": "Nilasya Agro Foods is an enterprise Turkish processor and exporter of premium pulses, grains, and agricultural commodities. Supplying world markets with Bühler Sortex optical purity, bulk ocean containers, and seamless export logistics from Mersin Port.",
       "quickLinks": "Navigation",
       "products": "Export Produce",
       "company": "Corporate & Standards",
@@ -279,7 +279,7 @@ export const translationsData: Record<string, Translations> = {
       "badge": "TÜRKİYE MENŞEİLİ DOĞRUDAN ÜRETİCİ & İHRACATÇI",
       "titleLine1": "TÜRKİYE'DEN",
       "titleLine2": "DÜNYAYA.",
-      "subtitle": "Türkiye'nin En Seçkin Yaş Meyve ve Sebzelerini Süpermarket Zincirleri, Toptancılar ve İthalatçılara Kesintisiz Soğuk Zincirle İhraç Ediyoruz.",
+      "subtitle": "Türkiye'nin En Kaliteli Bakliyat, Hububat ve Tarımsal Emtialarını Dünya Pazarlarına, Süpermarketlere ve İthalatçılara Güvenle İhraç Ediyoruz.",
       "productsList": "Nohut • Kırmızı Mercimek • Yeşil Mercimek • Kuru Fasulye • Kuru Bezelye • Durum Buğdayı & Bulgur",
       "ctaPrimary": "ÜRÜNLERİMİZİ İNCELEYİN",
       "ctaSecondary": "İHRACAT TEKLİFİ ALIN",
@@ -291,7 +291,7 @@ export const translationsData: Record<string, Translations> = {
         "regions": "6 Ana",
         "regionsLabel": "Türkiye Tarım Havzası",
         "products": "%100 İzlenebilir",
-        "productsLabel": "Bahçeden Varış Noktasına"
+        "productsLabel": "Tarladan Limana & Sevkiyata"
       }
     },
     "trustStrip": {
@@ -394,12 +394,12 @@ export const translationsData: Record<string, Translations> = {
     "harvestCalendar": {
       "tag": "12 AYLIK HASAT MATRİSİ",
       "title": "Kesintisiz İhracat ve Hasat Takvimi",
-      "subtitle": "12 ay boyunca taze bahçe hasadı ve kontrollü atmosfer soğuk hava deposu tedarik döngüsü.",
+      "subtitle": "12 ay boyunca iklim kontrollü modern çelik silolardan kesintisiz bakliyat ve hububat tedariki.",
       "legendHarvest": "Doğrudan Bahçe Hasadı",
       "legendStorage": "CA Soğuk Depo Tedariki",
       "legendNone": "Sezon Dışı",
       "viewFullCalendar": "Tam Teknik Takvimi Gör",
-      "tableSummary": "Türk yaş meyve ve sebzeleri aylık ihracat tedarik matrisi"
+      "tableSummary": "Türk bakliyat ve hububat ürünleri aylık ihracat tedarik matrisi"
     },
     "qualitySection": {
       "tag": "SERTİFİKASYON VE KALİTE",
@@ -460,7 +460,7 @@ export const translationsData: Record<string, Translations> = {
       "viewAll": "TÜM REHBERLERİ İNCELE"
     },
     "finalCta": {
-      "title": "Türkiye'den Güvenilir Yaş Meyve & Sebze Tedarikine Başlayın",
+      "title": "Türkiye'den Güvenilir Bakliyat & Hububat Tedarikine Başlayın",
       "subtitle": "Hacim ve varış limanı gereksinimlerinizi iletin, 24 saat içinde resmi B2B ihracat proforma teklifimizi iletelim.",
       "btnQuote": "İHRACAT FİYAT TEKLİFİ ALIN",
       "btnWhatsapp": "WHATSAPP ÜZERİNDEN GÖRÜŞÜN"
@@ -516,7 +516,7 @@ export const translationsData: Record<string, Translations> = {
       "rights": "Tüm Hakları Saklıdır.",
       "privacy": "Gizlilik Politikası",
       "terms": "Kullanım Koşulları",
-      "entityStatement": "Nilasya Agro Foods, Türkiye Cumhuriyeti kanunlarına tabi tescilli bir yaş meyve ve sebze ihracat kuruluşudur."
+      "entityStatement": "Nilasya Agro Foods, Türkiye Cumhuriyeti kanunlarına tabi tescilli bir bakliyat, hububat ve tarımsal emtia ihracat kuruluşudur."
     }
   },
   "de": {
@@ -550,25 +550,25 @@ export const translationsData: Record<string, Translations> = {
         "regions": "6 große",
         "regionsLabel": "Türkische Produkte Wachsende Terroirs",
         "products": "100 % rückverfolgbar",
-        "productsLabel": "Obstgarten bis zum Bestimmungsort"
+        "productsLabel": "Vom Feld zum Hafen & Weltweiten Export"
       }
     },
     "trustStrip": {
       "fresh": {
-        "title": "Bühler Sortex Optical Purity",
-        "desc": "Multi-stage screening & optical laser sorting guaranteeing 99.8% purity."
+        "title": "Bühler Sortex Optische Reinheit",
+        "desc": "Mehrstufige Screening und optische Lasersortierung garantieren 99.8% Reinheit."
       },
       "reliable": {
-        "title": "Direct Mersin Port Logistics",
-        "desc": "Annual 100,000+ MT capacity with direct weekly FCL container departures."
+        "title": "Direkte Mersin Hafenlogistik",
+        "desc": "Jährliche 100,000+ MT Kapazität mit direkten wöchentlichen FCL Containerabfahrten."
       },
       "traceable": {
-        "title": "100% Non-GMO Anatolian Crops",
-        "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
+        "title": "100% Gentechnikfreie anatolische Pflanzen",
+        "desc": "Vollständige Rückverfolgbarkeit von Farm bis Gefäß aus zertifizierten anatolischen Agrarbecken."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Export in 50+ Länder",
+        "desc": "Liefert Lebensmittelverarbeiter, Konservenfabriken und Großimporteure weltweit."
       }
     },
     "productsSection": {
@@ -584,71 +584,71 @@ export const translationsData: Record<string, Translations> = {
       "exploreAll": "VOLLSTÄNDIGEN KATALOG ENTDECKEN"
     },
     "companyIntro": {
-      "tag": "CORPORATE PROFILE",
-      "title": "Supplying Anatolia's Prime Pulses & Grains to Global Food Industries",
-      "p1": "Nilasya Agro Foods is an enterprise B2B agricultural commodity processor and exporter based at the strategic maritime hub of Mersin International Port, Türkiye. We specialize in Kabuli chickpeas (Koçbaşı), red and green lentils, dry white beans, peas, and durum wheat.",
-      "p2": "Equipped with cutting-edge Bühler Sortex optical sorting lines, gravity separators, and mechanical caliber grading drums, we process agricultural commodities to minimum 99.8% purity, strict moisture thresholds, and certified non-GMO standards.",
-      "pill1": "Bühler Sortex Optical Purity (99.8%)",
+      "tag": "UNTERNEHMENSPROFIL",
+      "title": "Lieferung von Anatoliens Top-Hülsenfrüchten und Getreide an globale Lebensmittelindustrien",
+      "p1": "Nilasya Agro Foods ist ein Unternehmen B2B Verarbeiter und Exporteur landwirtschaftlicher Waren mit Sitz im strategischen maritimen Zentrum Mersin International Port in Türkiye. Wir sind spezialisiert auf Kabuli-Kichererbsen (Koçbaşı), rote und grüne Linsen, trockene weiße Bohnen, Erbsen und Durumweizen.",
+      "p2": "Ausgestattet mit hochmodernen Bühler Sortex optischen Sortierlinien, Schwerkraftseparatoren und mechanischen Kaliber-Klassifiziertrommeln, verarbeiten wir landwirtschaftliche Produkte mit minimaler 99.8% Reinheit, strengen Feuchtigkeitsschwellen und zertifizierten GVO-Standards.",
+      "pill1": "Bühler Sortex Optische Reinheit (99.8%)",
       "pill2": "Direct Mersin Port Ocean Terminal",
       "pill3": "25/50kg PP Sacks & 1,000kg Big Bags",
-      "pill4": "ISO 22000, Halal & Non-GMO Certified",
-      "learnMore": "Explore Facility & Operations"
+      "pill4": "ISO 22000, Halal & Non-GMO zertifiziert",
+      "learnMore": "Anlage & Betrieb erkunden"
     },
     "farmToWorld": {
-      "tag": "INTEGRITY & VALUE CHAIN",
-      "title": "The Field-to-FCL Export Integrity Flow",
-      "subtitle": "Our 8-stage cleaning, optical sorting, and moisture-guarded logistics protocol guarantees market-leading purity, caliber uniformity, and culinary performance.",
+      "tag": "INTEGRITÄT & WERTSCHÖPFUNGSKETTE",
+      "title": "Der Field-to-FCL Exportintegritätsfluss",
+      "subtitle": "Unser 8-Stufen-Reinigungs-, optisches Sortier- und feuchtigkeitsgeschütztes Logistikprotokoll garantiert marktführende Reinheit, Qualität und kulinarische Leistung.",
       "steps": [
         {
           "num": "01",
-          "title": "Contracted Pulses Farming",
-          "desc": "Direct partnerships with certified growers across Anatolia's prime agricultural basins."
+          "title": "Vertraglicher Hülsenfrüchteanbau",
+          "desc": "Direkte Partnerschaften mit zertifizierten Erzeugern in Anatoliens wichtigsten Agrarbecken."
         },
         {
           "num": "02",
-          "title": "Combine Mechanical Harvest",
-          "desc": "Harvesting at peak physiological maturity with moisture strictly controlled below 14%."
+          "title": "Mechanische Mähdrescher-Ernte",
+          "desc": "Ernte bei maximaler physiologischer Reife mit streng kontrollierter Feuchtigkeit unter 14%."
         },
         {
           "num": "03",
-          "title": "Pre-Cleaning & Destoning",
-          "desc": "Air aspiration, scalping, and gravity separators removing agricultural chaff and stones."
+          "title": "Vorreinigung und Enttonung",
+          "desc": "Luftaspiration, Skalpieren und Gravitationsabscheider entfernen landwirtschaftliche Spreu und Steine."
         },
         {
           "num": "04",
-          "title": "Bühler Sortex Optical Sorting",
-          "desc": "Multi-camera laser sorting isolating discolored, broken, or spotted seeds to 99.8% purity."
+          "title": "Bühler Sortex Optische Sortierung",
+          "desc": "Multikamera-Lasersortierung isoliert verfärbte, gebrochene oder gefleckte Samen auf 99.8% Reinheit."
         },
         {
           "num": "05",
-          "title": "Precision Caliber Sizing",
-          "desc": "Rotary drum calibration delivering precise millimeter sizing (8mm, 9mm, 10mm)."
+          "title": "Präzisionskaliber Größenanpassung",
+          "desc": "Rotationstrommelkalibrierung liefert eine präzise Millimetergröße (8mm, 9mm, 10mm)."
         },
         {
           "num": "06",
-          "title": "Export-Grade Packaging",
-          "desc": "Double-stitched PP woven sacks, 1,000kg Big Bags, and container bulk liners."
+          "title": "Exportverpackung",
+          "desc": "Doppelt genähte PP gewebte Säcke, 1,000kg Big Bags und Container-Bulkliner."
         },
         {
           "num": "07",
-          "title": "Mersin Port Container Stuffing",
-          "desc": "FCL container loading with industrial desiccant bags to prevent condensation during sea transit."
+          "title": "Mersiner Hafen-Containerfüllung",
+          "desc": "FCL Containerbeladung mit industriellen Trockenmittelbeuteln, um Kondensation während der Seefahrt zu verhindern."
         },
         {
           "num": "08",
-          "title": "Global Ocean & Land Dispatch",
-          "desc": "FOB Mersin or CIF destination delivery with official phytosanitary and SGS quality audits."
+          "title": "Globale Ozean- und Land-Dispatch",
+          "desc": "FOB Mersin oder CIF Zielzustellung mit offiziellen phytosanitären und SGS Qualitätsprüfungen."
         }
       ]
     },
     "productionMap": {
-      "tag": "FERTILE AGRICULTURAL TERROIRS",
-      "title": "Prime Turkish Pulses & Grain Production Basins",
-      "subtitle": "Discover the microclimates and alluvial basins that cultivate Türkiye's world-renowned pulses and durum wheat.",
-      "exploreRegion": "Explore Basin Details",
-      "advantages": "Regional Advantages",
-      "climate": "Climate & Soil Conditions",
-      "mainProduce": "Primary Pulses & Grains"
+      "tag": "FRUCHTBARE LANDWIRTSCHAFTLICHE TERROIRS",
+      "title": "Erstklassige türkische Hülsenfrüchte und Getreideproduktionsbecken",
+      "subtitle": "Entdecken Sie die Mikroklimata und Schwemmbecken, in denen Türkiye's weltbekannte Hülsenfrüchte und Durumweizen angebaut werden.",
+      "exploreRegion": "Beckendetails erkunden",
+      "advantages": "Regionale Vorteile",
+      "climate": "Klima & Bodenbedingungen",
+      "mainProduce": "Primär-Hülsenfrüchte & Körner"
     },
     "harvestCalendar": {
       "tag": "12-MONATLICHE ERNTEMATRIX",
@@ -658,62 +658,62 @@ export const translationsData: Record<string, Translations> = {
       "legendStorage": "CA Cold Storage Supply",
       "legendNone": "Nebensaison",
       "viewFullCalendar": "Vollständigen technischen Kalender anzeigen",
-      "tableSummary": "Monatliche Exportverfügbarkeitsmatrix für Türkisch Obst und Gemüse"
+      "tableSummary": "Monatliche Exportverfügbarkeitsmatrix für türkische Hülsenfrüchte und Getreide"
     },
     "qualitySection": {
-      "tag": "STANDARDS & CERTIFICATIONS",
-      "title": "Uncompromising Quality, Lab Analysis & Sortex Precision",
-      "subtitle": "Every metric ton processed by Nilasya Agro Foods undergoes multi-point inspection for physical purity, caliber conformity, moisture, and non-GMO integrity.",
-      "traceabilityTitle": "Field-to-Container Traceability",
-      "traceabilitySubtitle": "Full backward lot tracking from contracted grower fields to sea container seal numbers.",
+      "tag": "STANDARDS & ZERTIFIZIERUNGEN",
+      "title": "Kompromisslose Qualität, Laboranalyse & Sortex Präzision",
+      "subtitle": "Jede metrische Tonne, die von Nilasya Agro Foods verarbeitet wird, wird einer mehrfachen Inspektion hinsichtlich physischer Reinheit, Kaliberkonformität, Feuchtigkeit und gentechnikfreier Integrität unterzogen.",
+      "traceabilityTitle": "Feld-zu-Container-Rückverfolgbarkeit",
+      "traceabilitySubtitle": "Vollständige Rückwärts-Lot-Verfolgung von vertraglichen Anbaufeldern bis zu Seecontainer-Siegelnummern.",
       "flow": [
-        "Certified Farm",
-        "Intake Lab Assay",
-        "Sortex Cleaning",
-        "Caliber Grading",
+        "Zertifizierter Hof",
+        "Aufnahmelabor-Assay",
+        "Sortex Reinigung",
+        "Kaliber-Grading",
         "Lot Barcoding",
-        "Container Seal"
+        "Container-Siegel"
       ],
-      "certificationsTitle": "International Food Safety Certifications",
-      "certificationsNotice": "All shipments are released with accredited ISO 17025 laboratory test certificates, Non-GMO declarations, and official Phytosanitary approval."
+      "certificationsTitle": "Internationale Zertifizierungen für Lebensmittelsicherheit",
+      "certificationsNotice": "Alle Sendungen werden mit akkreditierten ISO 17025 Laborprüfzertifikaten, GVO-nicht-GVO-Angaben und offizieller phytosanitärer Zulassung freigegeben."
     },
     "packagingSection": {
-      "tag": "EXPORT PACKAGING SOLUTIONS",
-      "title": "Heavy-Duty Bulk & Industrial Export Packaging",
-      "subtitle": "From 25kg & 50kg double-stitched PP sacks to 1,000kg FIBC Big Bags and 24 MT container bulk liners engineered for ocean freight.",
-      "privateLabelTitle": "Private Label & Retail Packaging Options",
-      "privateLabelSubtitle": "Ready-for-retail shelf solutions in 500g, 1kg, 2.5kg, and 5kg packs with customized multi-language branding.",
+      "tag": "EXPORTVERPACKUNGSLÖSUNGEN",
+      "title": "Schwerlast-Bulk- und Industrie-Exportverpackungen",
+      "subtitle": "Von 25kg & 50kg doppelt genähten PP Säcken zu 1,000kg FIBC Big Bags und 24 MT Container-Bulklinern, die für den Seefrachtverkehr entwickelt wurden.",
+      "privateLabelTitle": "Private-Label- und Einzelhandelsverpackungsoptionen",
+      "privateLabelSubtitle": "Fertige Regallösungen in 500g, 1kg, 2.5kg und 5kg Packs mit individueller mehrsprachiger Branding.",
       "featuresList": [
-        "UV-stabilized, moisture-resistant high-tenacity PP woven sacks",
-        "1,000kg FIBC Big Bags with discharge spouts for automated canneries",
-        "24 MT sea bulk container liners for high-volume grain transit",
-        "ISPM-15 heat-treated Euro and standard wooden pallets with strapping",
-        "Customized barcode integration, batch codes, and multi-language labeling"
+        "UV-stabilisierte, feuchtigkeitsbeständige, hochzählige PP gewebte Säcke",
+        "1,000kg FIBC Große Säcke mit Auslaufrohren für automatisierte Konservenfabriken",
+        "24 MT Großcontainerliner für Großvolumen Getreidetransporte",
+        "ISPM-15 wärmebehandelte europäische und Standard-Holzpaletten mit Gurten",
+        "Angepasste Barcode-Integration, Batch-Codes und mehrsprachige Kennzeichnung"
       ],
-      "viewSpecs": "View Packaging Technical Specs"
+      "viewSpecs": "Technische Spezifikationen der Verpackung anzeigen"
     },
     "logisticsSection": {
-      "tag": "GLOBAL FREIGHT & LOGISTICS",
-      "title": "Strategic Maritime & Overland Export Infrastructure",
-      "subtitle": "Direct deep-sea container lines from Mersin International Port (MIP) and express overland truck corridors connecting to Europe, the Gulf, and Asia.",
+      "tag": "GLOBALE FRACHT & LOGISTIK",
+      "title": "Strategische maritime und Überland-Exportinfrastruktur",
+      "subtitle": "Direkte Tiefsee-Containerlinien vom Mersin International Port (MIP) und Express-Überland-Lkw-Korridoren, die Europa, den Golf und Asien verbinden.",
       "road": {
-        "title": "Overland Freight Trailers (Europe & Middle East)",
-        "desc": "Direct dry cargo trucks reaching Central Europe in 3-5 days and Iraq/Middle East in 24-48 hours via border crossings."
+        "title": "Überland-Güteranhänger (Europa & Naher Osten)",
+        "desc": "Direkte Trockenfracht-Lkw erreichen Mitteleuropa in 3-5 Tagen und den Irak/den Nahen Osten in 24-48 Stunden über Grenzübergänge."
       },
       "sea": {
-        "title": "Ocean FCL Container & Bulk Vessel Charters",
-        "desc": "Weekly FCL dry container sailings and bulk vessel charters from Mersin to the Mediterranean, Red Sea, Gulf, and South Asia."
+        "title": "Ozean FCL Container- & Massengutfrachter-Charter",
+        "desc": "Wöchentliche FCL Trockencontainer-Abfahrten und Massengutfrachter-Charter von Mersin ins Mittelmeer, Rotes Meer, den Golf und Südasien."
       },
       "air": {
-        "title": "Rail & Intermodal Bulk Logistics",
-        "desc": "High-capacity hopper wagons and intermodal transport connecting inland silos to seaport container terminals."
+        "title": "Schienen- & Intermodale Massengutlogistik",
+        "desc": "Hochkapazitäts-Trichterwagen und intermodaler Transport verbinden Inland-Silos mit Containerterminals an Seehäfen."
       },
-      "coldChainTitle": "Cargo Moisture & Fumigation Protocol",
-      "coldChainDesc": "Strict moisture verification (<13.5%), heavy-duty container desiccant bags, and pre-shipment fumigation guarantee pristine cargo condition."
+      "coldChainTitle": "Frachtfeuchtigkeits- & Begaslungsprotokoll",
+      "coldChainDesc": "Strikte Feuchtigkeitsprüfung (<13.5%), robuste Trockenmittelbeutel im Container und Begasung vor dem Versand garantieren ein einwandfreies Frachtgut."
     },
     "insightsSection": {
-      "tag": "MARKET INTELLIGENCE",
-      "title": "B2B Sourcing Guides & Crop Insights",
+      "tag": "MARKTINFORMATIONEN",
+      "title": "B2B Beschaffungsleitfäden & Ernte-Einblicke",
       "subtitle": "Expertenanalyse zu türkischen Erntesaisonen, Exportstandards, Preistrends und Logistik.",
       "readMore": "Technischen Leitfaden lesen",
       "viewAll": "ALLE SOURCING ANZEIGEN LEITFADEN"
@@ -760,14 +760,14 @@ export const translationsData: Record<string, Translations> = {
       "closeBtn": "Fenster schließen"
     },
     "footer": {
-      "description": "Nilasya Agro Foods ist ein in Türkiye ansässiger Erzeuger, Verpacker und Exporteur von erstklassigem frischem Obst und Gemüse. Wir beliefern Weltmärkte mit zertifizierter Qualität, ununterbrochener Kühlkette und nahtloser Logistik.",
+      "description": "Nilasya Agro Foods ist ein führender türkischer Verarbeiter und Exporteur von hochwertigen Hülsenfrüchten, Getreide und Agrarrohstoffen. Wir beliefern Weltmärkte mit Bühler Sortex-optischer Reinheit und FCL-Seecontainern ab Hafen Mersin.",
       "quickLinks": "Navigation",
       "products": "Produkte exportieren",
       "company": "Unternehmen und Standards",
       "export": "Logistik",
       "insights": "Einblicke",
       "contact": "Export Büro",
-      "address": "Adana & Mersin Agricultural Export Zone, Türkiye",
+      "address": "Adana- & Mersin-Agrarreexportzone, Türkiye",
       "phone": "+90 533 684 01 75",
       "email": "export@nilasyaagrofoods.com.tr",
       "whatsapp": "+90 533 684 01 75",
@@ -917,7 +917,7 @@ export const translationsData: Record<string, Translations> = {
       "legendStorage": "Fourniture d'entrepôts frigorifiques en Californie",
       "legendNone": "Hors saison",
       "viewFullCalendar": "Voir le calendrier technique complet",
-      "tableSummary": "Matrice mensuelle de disponibilité à l'exportation pour les fruits et légumes turcs"
+      "tableSummary": "Matrice mensuelle de disponibilité à l'exportation pour les légumineuses et céréales turques"
     },
     "qualitySection": {
       "tag": "STANDARDS & CERTIFICATIONS",
@@ -1019,7 +1019,7 @@ export const translationsData: Record<string, Translations> = {
       "closeBtn": "Fermer la fenêtre"
     },
     "footer": {
-      "description": "Nilasya Agro Foods est un producteur, emballeur et exportateur de fruits et légumes frais de première qualité basé à Türkiye. Fournir aux marchés mondiaux une qualité certifiée, une chaîne du froid ininterrompue et une logistique transparente.",
+      "description": "Nilasya Agro Foods est un transformateur et exportateur turc de légumineuses, céréales et matières premières agricoles de première qualité. Fournir aux marchés mondiaux une pureté optique Bühler Sortex et des conteneurs maritimes depuis le port de Mersin.",
       "quickLinks": "Navigation",
       "products": "Produits d'exportation",
       "company": "Entreprise et normes",
@@ -1176,7 +1176,7 @@ export const translationsData: Record<string, Translations> = {
       "legendStorage": "Suministro de almacenamiento en frío de CA",
       "legendNone": "Fuera de temporada",
       "viewFullCalendar": "Ver calendario técnico completo",
-      "tableSummary": "Matriz de disponibilidad de exportación mensual para frutas y verduras turcas"
+      "tableSummary": "Matriz de disponibilidad de exportación mensual para legumbres y granos turcos"
     },
     "qualitySection": {
       "tag": "STANDARDS & CERTIFICATIONS",
@@ -1278,7 +1278,7 @@ export const translationsData: Record<string, Translations> = {
       "closeBtn": "Cerrar ventana"
     },
     "footer": {
-      "description": "Nilasya Agro Foods es un productor, empacador y exportador de frutas y verduras frescas de primera calidad con sede en Türkiye. Suministrar a los mercados mundiales calidad certificada, cadena de frío ininterrumpida y logística perfecta.",
+      "description": "Nilasya Agro Foods es un procesador y exportador turco de legumbres, cereales y materias primas agrícolas de primera calidad. Suministrando a los mercados mundiales pureza óptica Bühler Sortex y contenedores marítimos desde el puerto de Mersin.",
       "quickLinks": "Navegación",
       "products": "Exportación de productos",
       "company": "Corporativo y estándares",
@@ -1435,7 +1435,7 @@ export const translationsData: Record<string, Translations> = {
       "legendStorage": "Fornitura di celle frigorifere CA",
       "legendNone": "Fuori stagione",
       "viewFullCalendar": "Visualizza calendario tecnico completo",
-      "tableSummary": "Matrice mensile della disponibilità di esportazione per frutta e verdura turca"
+      "tableSummary": "Matrice mensile della disponibilità di esportazione per legumi e cereali turchi"
     },
     "qualitySection": {
       "tag": "STANDARDS & CERTIFICATIONS",
@@ -1537,7 +1537,7 @@ export const translationsData: Record<string, Translations> = {
       "closeBtn": "Chiudi finestra"
     },
     "footer": {
-      "description": "Nilasya Agro Foods è un coltivatore, confezionatore ed esportatore di frutta e verdura fresca di prima qualità con sede a Türkiye. Fornire ai mercati mondiali qualità certificata, catena del freddo ininterrotta e logistica senza interruzioni.",
+      "description": "Nilasya Agro Foods è un trasformatore ed esportatore turco di legumi, cereali e materie prime agricole di prima qualità. Fornendo ai mercati mondiali purezza ottica Bühler Sortex e container marittimi dal porto di Mersin.",
       "quickLinks": "Navigazione",
       "products": "Esportazione di prodotti",
       "company": "Corporate e standard",
@@ -1694,7 +1694,7 @@ export const translationsData: Record<string, Translations> = {
       "legendStorage": "Aanvoer van koude opslag in CA",
       "legendNone": "Buiten het seizoen",
       "viewFullCalendar": "Volledige technische kalender bekijken",
-      "tableSummary": "Matrix voor maandelijkse exportbeschikbaarheid voor Turkse groenten en fruit"
+      "tableSummary": "Maandelijkse exportbeschikbaarheidsmatrix voor Turkse peulvruchten en granen"
     },
     "qualitySection": {
       "tag": "STANDARDS & CERTIFICATIONS",
@@ -1796,7 +1796,7 @@ export const translationsData: Record<string, Translations> = {
       "closeBtn": "Venster sluiten"
     },
     "footer": {
-      "description": "Nilasya Agro Foods is een in Türkiye gevestigde teler, verpakker en exporteur van premium verse groenten en fruit. Wereldmarkten voorzien van gecertificeerde kwaliteit, ononderbroken koelketen en naadloze logistiek.",
+      "description": "Nilasya Agro Foods is een toonaangevende Turkse verwerker en exporteur van premium peulvruchten, granen en landbouwgrondstoffen. Levering aan wereldmarkten met Bühler Sortex optische zuiverheid en FCL-zeevracht vanuit Mersin.",
       "quickLinks": "Navigatie",
       "products": "Exporteren van producten",
       "company": "Bedrijf en standaarden",
@@ -6097,7 +6097,7 @@ export const translationsData: Record<string, Translations> = {
       "legendStorage": "CA Abastecimento de Armazenamento a Frio",
       "legendNone": "Fora de temporada",
       "viewFullCalendar": "Ver Calendário Técnico Completo",
-      "tableSummary": "Matriz de disponibilidade mensal de exportação de frutas e vegetais turcos"
+      "tableSummary": "Matriz de disponibilidade mensal de exportação de leguminosas e grãos turcos"
     },
     "qualitySection": {
       "tag": "STANDARDS & CERTIFICATIONS",
@@ -6199,7 +6199,7 @@ export const translationsData: Record<string, Translations> = {
       "closeBtn": "Fechar Janela"
     },
     "footer": {
-      "description": "Nilasya Agro Foods é um produtor, embalador e exportador de frutas e vegetais frescos premium baseado em Türkiye. Fornecendo mercados mundiais com qualidade certificada, cadeia de frio ininterrupta e logística eficiente.",
+      "description": "Nilasya Agro Foods é um processador e exportador turco de leguminosas, cereais e commodities agrícolas de alta qualidade. Fornecendo aos mercados globais pureza óptica Bühler Sortex e logística marítima a partir do porto de Mersin.",
       "quickLinks": "Navegação",
       "products": "Exportar Produtos",
       "company": "Corporativo & Padrões",

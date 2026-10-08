@@ -1,6 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { ArrowRight, Compass } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: '404 - Page Not Found',
+  description: 'The requested page could not be found on Nilasya Agro Foods.',
+  robots: { index: false, follow: false },
+};
 
 export default function NotFound() {
   return (

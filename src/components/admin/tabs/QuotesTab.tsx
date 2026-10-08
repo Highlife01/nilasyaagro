@@ -39,7 +39,7 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
 
   // Price Calculator state
   const [calcBasePrice, setCalcBasePrice] = useState<number>(1.25); // $/kg
-  const [calcFreight, setCalcFreight] = useState<number>(3800); // Reefer container $/40ft
+  const [calcFreight, setCalcFreight] = useState<number>(2400); // 40ft FCL container $/40ft
   const [calcMargin, setCalcMargin] = useState<number>(12); // % margin
 
   // New RFQ form state
@@ -67,12 +67,12 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
     email: '',
     phone: '',
     whatsapp: '',
-    product: 'pomegranate',
-    variety: 'Hicaz Nar',
-    caliber: 'Caliber 8-9 (350-450g)',
-    quantity: '22',
+    product: 'chickpeas',
+    variety: 'Koçbaşı Kabuli Nohut (9-10mm)',
+    caliber: '9mm - 10mm Jumbo (Sortex %99.8)',
+    quantity: '48',
     unit: 'Tons',
-    packaging: 'Telescopic Carton (4.5kg)',
+    packaging: 'PP Woven Bags (25kg Net)',
     destinationCountry: 'Germany',
     destinationCity: 'Hamburg',
     destinationPort: 'Hamburg Port',
@@ -178,7 +178,7 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
             Gelen İhracat Talepleri (RFQ Yönetimi)
           </h1>
           <p className="text-xs text-slate-500 mt-1">
-            Uluslararası B2B meyve-sebze alıcılarından gelen teklif istekleri, müşteri detayları ve proforma hazırlığı.
+            Uluslararası B2B bakliyat ve hububat alıcılarından gelen teklif istekleri, müşteri detayları ve proforma hazırlığı.
           </p>
         </div>
 
@@ -245,12 +245,13 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
           className="bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-700 focus:outline-none focus:border-emerald-500 cursor-pointer font-medium"
         >
           <option value="all">Tüm Ürünler</option>
-          <option value="pomegranate">Hicaz Nar</option>
-          <option value="apples">Elma Çeşitleri</option>
-          <option value="grapes">Sofralık Üzüm</option>
-          <option value="kiwi">Hayward Kivi</option>
-          <option value="oranges">Portakal</option>
-          <option value="tomatoes">Salkım Domates</option>
+          <option value="chickpeas">Koçbaşı Nohut</option>
+          <option value="red-lentils">Kırmızı Mercimek</option>
+          <option value="green-lentils">Yeşil Mercimek</option>
+          <option value="white-beans">Dermason Fasulye</option>
+          <option value="durum-wheat-bulgur">Durum Buğdayı & Bulgur</option>
+          <option value="dry-peas">Kuru Bezelye</option>
+          <option value="pasta-macaroni">Türk Makarnası</option>
         </select>
       </div>
 
@@ -562,7 +563,7 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
                     />
                   </div>
                   <div>
-                    <label className="block text-slate-600 mb-1 font-medium">Reefer Konteyner Navlun ($)</label>
+                    <label className="block text-slate-600 mb-1 font-medium">40ft FCL Konteyner Navlun ($)</label>
                     <input
                       type="number"
                       step="100"
@@ -673,12 +674,13 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
                     onChange={(e) => setNewForm({ ...newForm, product: e.target.value })}
                     className="w-full bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-slate-900 font-medium"
                   >
-                    <option value="pomegranate">Hicaz Nar</option>
-                    <option value="apples">Elma</option>
-                    <option value="grapes">Sofralık Üzüm</option>
-                    <option value="kiwi">Hayward Kivi</option>
-                    <option value="oranges">Portakal</option>
-                    <option value="tomatoes">Domates</option>
+                    <option value="chickpeas">Koçbaşı Nohut</option>
+                    <option value="red-lentils">Kırmızı Mercimek</option>
+                    <option value="green-lentils">Yeşil Mercimek</option>
+                    <option value="white-beans">Dermason Fasulye</option>
+                    <option value="durum-wheat-bulgur">Durum Buğdayı & Bulgur</option>
+                    <option value="dry-peas">Kuru Bezelye</option>
+                    <option value="pasta-macaroni">Türk Makarnası</option>
                   </select>
                 </div>
                 <div>

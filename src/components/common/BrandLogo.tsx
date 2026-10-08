@@ -24,12 +24,12 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     xl: { w: 72, h: 72, textMain: 'text-3xl sm:text-4xl', textSub: 'text-sm' },
   }[size];
 
-  const textColorMain = variant === 'light' ? 'text-white' : 'text-slate-950';
-  const textColorSub = variant === 'light' ? 'text-emerald-400' : 'text-emerald-700';
+  const textColorMain = variant === 'light' ? 'text-white' : 'text-[#0D3B2E]';
+  const textColorSub = variant === 'light' ? 'text-amber-400' : 'text-amber-600';
 
   return (
     <div className={`inline-flex items-center gap-3 ${className}`}>
-      {/* Scalable Vector Emblem */}
+      {/* Scalable Vector Emblem - Anatolian Grain & Pulse Ear */}
       <svg
         width={iconSizes.w}
         height={iconSizes.h}
@@ -40,83 +40,79 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         aria-hidden="true"
       >
         <defs>
-          {/* Emerald Gradient */}
-          <linearGradient id="nilasyaEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#10b981" />
-            <stop offset="60%" stopColor="#059669" />
-            <stop offset="100%" stopColor="#047857" />
+          {/* Deep Forest Gradient */}
+          <linearGradient id="agroForest" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#165643" />
+            <stop offset="60%" stopColor="#0D3B2E" />
+            <stop offset="100%" stopColor="#071F18" />
           </linearGradient>
 
-          {/* Golden Sun & Orbit Gradient */}
-          <linearGradient id="nilasyaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+          {/* Golden Harvest Gradient */}
+          <linearGradient id="agroGold" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#fbbf24" />
             <stop offset="50%" stopColor="#f59e0b" />
-            <stop offset="100%" stopColor="#d97706" />
-          </linearGradient>
-
-          {/* Vibrant Leaf Gradient */}
-          <linearGradient id="nilasyaLeaf" x1="0%" y1="100%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#059669" />
-            <stop offset="100%" stopColor="#34d399" />
+            <stop offset="100%" stopColor="#c8963e" />
           </linearGradient>
 
           {/* Subtle Glow Filter */}
-          <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
-            <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#059669" floodOpacity="0.25" />
+          <filter id="goldGlow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#f59e0b" floodOpacity="0.3" />
           </filter>
         </defs>
 
-        {/* Outer Circular Flow / Shield Base (Transparent Subtle Background) */}
+        {/* Shield Frame */}
         <rect
           x="4"
           y="4"
           width="92"
           height="92"
           rx="24"
-          fill={variant === 'light' ? 'rgba(5, 150, 105, 0.15)' : 'rgba(5, 150, 105, 0.08)'}
-          stroke="url(#nilasyaEmerald)"
+          fill="url(#agroForest)"
+          stroke="#f59e0b"
           strokeWidth="1.5"
-          strokeDasharray="4 2"
+          strokeOpacity="0.4"
         />
 
-        {/* Golden Global Orbital Arc (Symbolizing Worldwide Export Logistics) */}
+        {/* Golden Global Orbital Arc */}
         <path
-          d="M 16 68 C 12 40, 36 16, 70 18 C 84 19, 88 32, 82 44 C 74 60, 48 76, 22 72 C 18 71, 15 69, 16 68 Z"
+          d="M 18 70 C 14 42, 38 18, 72 20 C 86 21, 90 34, 84 46 C 76 62, 50 78, 24 74 Z"
           fill="none"
-          stroke="url(#nilasyaGold)"
-          strokeWidth="4.5"
+          stroke="url(#agroGold)"
+          strokeWidth="3.5"
           strokeLinecap="round"
-          filter="url(#subtleGlow)"
+          strokeDasharray="4 2"
+          filter="url(#goldGlow)"
         />
 
-        {/* Golden Sun Accent Sparkle */}
-        <circle cx="75" cy="24" r="3.5" fill="url(#nilasyaGold)" />
+        {/* Golden Sun Grain Accent */}
+        <circle cx="76" cy="24" r="3.5" fill="url(#agroGold)" />
 
-        {/* Letter 'N' - Left Pillar */}
+        {/* Stylized Grain Ear / N Monogram */}
+        {/* Left Column */}
         <path
-          d="M 28 72 L 28 28 C 28 25, 33 25, 34 28 L 34 72 C 34 75, 28 75, 28 72 Z"
-          fill="url(#nilasyaEmerald)"
+          d="M 30 72 L 30 28 C 30 25, 36 25, 36 28 L 36 72 C 36 75, 30 75, 30 72 Z"
+          fill="url(#agroGold)"
         />
 
-        {/* Letter 'N' - Diagonal Fresh Produce Leaf (Sprout of Anatolia) */}
+        {/* Diagonal Wheat Ear Blade */}
         <path
-          d="M 30 30 C 44 42, 54 54, 68 70 C 68 70, 72 50, 60 38 C 48 26, 32 29, 30 30 Z"
-          fill="url(#nilasyaLeaf)"
+          d="M 32 30 C 44 42, 56 54, 70 70 C 70 70, 74 52, 62 38 C 50 26, 34 29, 32 30 Z"
+          fill="url(#agroGold)"
         />
 
-        {/* Leaf Central Rib Line */}
+        {/* Grain Kernel Detail */}
         <path
-          d="M 32 31 C 42 42, 54 53, 66 69"
-          stroke="#ffffff"
+          d="M 34 32 C 44 43, 56 54, 68 68"
+          stroke="#071F18"
           strokeWidth="1.5"
           strokeLinecap="round"
-          strokeOpacity="0.75"
+          strokeOpacity="0.8"
         />
 
-        {/* Letter 'N' - Right Pillar */}
+        {/* Right Column */}
         <path
           d="M 64 72 L 64 28 C 64 25, 70 25, 70 28 L 70 72 C 70 75, 64 75, 64 72 Z"
-          fill="url(#nilasyaEmerald)"
+          fill="url(#agroGold)"
         />
       </svg>
 
@@ -124,17 +120,17 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       {showText && (
         <div className="flex flex-col leading-none">
           <div className="flex items-center gap-1.5 font-black tracking-tight">
-            <span className={`${iconSizes.textMain} ${textColorMain} tracking-tight`}>
+            <span className={`${iconSizes.textMain} ${textColorMain} tracking-tight font-black`}>
               NILASYA
             </span>
-            <span className={`${iconSizes.textMain} text-emerald-500 font-light tracking-wider`}>
-              GLOBAL
+            <span className={`${iconSizes.textMain} text-amber-500 font-bold tracking-wider`}>
+              AGRO FOODS
             </span>
           </div>
 
           {showTagline && (
-            <span className={`${iconSizes.textSub} font-bold uppercase tracking-widest mt-1 ${textColorSub}`}>
-              Fresh Produce Exporter • Türkiye
+            <span className={`${iconSizes.textSub} font-extrabold uppercase tracking-widest mt-1 ${textColorSub}`}>
+              B2B Pulses & Grains • Türkiye
             </span>
           )}
         </div>

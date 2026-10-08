@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { Product, Locale } from '@/types';
 import { Camera, ZoomIn, ChevronLeft, ChevronRight, X, ShieldCheck } from 'lucide-react';
@@ -19,83 +19,101 @@ interface ImageMeta {
 }
 
 const GALLERY_METADATA: Record<string, { titleTr: string; titleEn: string; descTr: string; descEn: string }> = {
-  'nil-asya-royal-gala-pallet-master-boxes.webp': {
-    titleTr: 'Nil Asya Markalı Paletli İhracat Kolileri',
-    titleEn: 'Nil Asya Branded Palletized Master Export Boxes',
-    descTr: 'Reefer konteyner yüklemesine hazır, palet üzerinde korumalı teleskopik ana kutular.',
-    descEn: 'Master telescopic boxes palletized and secured for refrigerated ocean container transit.',
+  'turkish-chickpeas-kabuli-nilasya.jpg': {
+    titleTr: 'Koçbaşı Nohut Kalibrasyon & Optik Boylama',
+    titleEn: 'Koçbaşı Chickpeas Caliber & Optical Sizing',
+    descTr: '8mm, 9mm ve 10mm kalibrelerde Sortex optik temizlikten geçmiş birinci sınıf Türk Koçbaşı nohutu.',
+    descEn: 'Grade 1 Turkish Kabuli chickpeas sorted to 99.8% purity across 8mm, 9mm, and 10mm calibers.',
   },
-  'nil-asya-royal-gala-export-box.webp': {
-    titleTr: 'Teleskopik İhracat Kolisi & Özel Mor Viyol',
-    titleEn: 'Telescopic Export Box & Molded Purple Pulp Tray',
-    descTr: 'Nil Asya logolu orijinal ihracat kolisi, etiketli ve homojen boylamalı Gala elmaları.',
-    descEn: 'Authentic Nil Asya export carton with calibrated, branded Gala apples on protective pulp tray.',
+  'turkish-red-lentils-nilasya.jpg': {
+    titleTr: 'Kırmızı Mercimek (Futbol & Yaprak) İşleme',
+    titleEn: 'Red Lentils (Football & Split) Processing',
+    descTr: 'Yüksek beta-karoten içerikli, parlak mercan renginde makine temizlemeli ve Sortex kırmızı mercimek.',
+    descEn: 'Machine-dressed and Sortex-cleaned whole and split red lentils with natural high-beta-carotene brilliance.',
   },
-  'nil-asya-gala-packing-operations.webp': {
-    titleTr: 'Paketleme & Manuel Kalite Kontrol Hattı',
-    titleEn: 'Packhouse Operators & Quality Inspection Line',
-    descTr: 'Uzman operatörler tarafından tek tek boylanan, etiketlenen ve kutulanan ihracat elmaları.',
-    descEn: 'Skilled packhouse team inspecting, stickering, and hand-packing export-grade apples.',
+  'turkish-green-lentils-nilasya.jpg': {
+    titleTr: 'İç Anadolu Yeşil Mercimek (Laird & Eston)',
+    titleEn: 'Central Anatolian Green Lentils (Laird & Eston)',
+    descTr: 'Sert hücresel yapılı, pişerken dağılmayan 5.5mm - 6.5mm birinci sınıf yeşil mercimek.',
+    descEn: 'Firm cellular structure, non-disintegrating cooking performance across 5.5mm–6.5mm calibers.',
   },
-  'nil-asya-gala-telescopic-carton.webp': {
-    titleTr: 'Rulolu Konveyör Üzerinde İhracat Kolisi',
-    titleEn: 'Export Box on Packhouse Roller Conveyor',
-    descTr: 'Hassas tartım ve kalibrasyon sonrası konveyör bandında ilerleyen birinci sınıf Nil Asya kolisi.',
-    descEn: 'Grade 1 Nil Asya carton advancing on the packhouse roller conveyor system.',
+  'turkish-white-beans-dermason-nilasya.jpg': {
+    titleTr: 'Dermason Kuru Fasulye (Konserve & Paketleme)',
+    titleEn: 'Dermason Dry White Beans (Canning & Retail Grade)',
+    descTr: 'İnce kabuklu, tereyağı kıvamında pişme performansına sahip Anadolu Dermason fasulyesi.',
+    descEn: 'Tender-skinned, buttery-textured Turkish Dermason white beans calibrated for canning and packaging.',
   },
-  'nil-asya-gala-pulp-tray-sorting.webp': {
-    titleTr: 'Viyol Üzerinde Kalibre Dizilimi',
-    titleEn: 'Calibrated Tray Layer on Sorting Belt',
-    descTr: 'Elektronik optik kalibratörden geçen elmaların darbe önleyici mor viyol tepsisine yerleşimi.',
-    descEn: 'Optical sorting line output with uniform caliber distribution on impact-absorbing pulp trays.',
+  'turkish-dry-peas-nilasya.jpg': {
+    titleTr: 'Sarı & Yeşil Kuru Bezelye (Bölünmüş & Bütün)',
+    titleEn: 'Yellow & Green Dry Peas (Split & Whole Sortex)',
+    descTr: 'Çorba bazları, püre üretimi ve konserve sanayisi için kalibre edilmiş kuru bezelye.',
+    descEn: 'Polished whole and divided dry split peas calibrated for soup bases, purees, and canning.',
   },
-  'nil-asya-gala-pallet-storage.webp': {
-    titleTr: 'Soğuk Depo & Plastik İhracat Kasaları',
-    titleEn: 'Cold Storage Facility & Blue Export Crates',
-    descTr: 'Hızlı ön soğutma ve ULO atmosfer kontrollü soğuk odalarda muhafaza edilen paletli kasalar.',
-    descEn: 'Ventilated export crates palletized inside pre-cooling and ULO controlled atmosphere storage.',
+  'turkish-durum-wheat-bulgur-nilasya.jpg': {
+    titleTr: 'Durum Makarnalık Buğday & Doğal Türk Bulguru',
+    titleEn: 'Durum Wheat & Traditional Stone-Milled Bulgur',
+    descTr: 'Yüksek proteinli kehribar durum buğdayı ve geleneksel pilavlık/köftelik Türk bulguru.',
+    descEn: 'High-protein vitreous amber durum wheat and pre-cooked stone-milled Turkish bulgur.',
   },
-  'nil-asya-gala-apples-blue-crates.webp': {
-    titleTr: 'Tek Sıra Mavi İhracat Kasaları',
-    titleEn: 'Single-Layer Blue Produce Export Crates',
-    descTr: 'Doğrudan süpermarket raflarına uygun, Nil Asya etiketli birinci sınıf Gala elmaları.',
-    descEn: 'Retail-ready presentation with Nil Asya brand stickers in heavy-duty ventilated export crates.',
+  'pulses-processing-factory-nilasya.jpg': {
+    titleTr: 'Bühler Sortex Optik Renk Ayırma & Eleme Hattı',
+    titleEn: 'Bühler Sortex Optical Color Sorting & Screening Line',
+    descTr: 'Taş ayırıcılar, hava aspirasyon sistemleri ve lazer kameralı Sortex ayıklama ünitesi.',
+    descEn: 'Advanced gravity destoners, aspirators, and laser optical sorters delivering 99.8% purity.',
   },
-  'nil-asya-gala-packhouse-conveyor.webp': {
-    titleTr: 'Optik Boylama & Paketleme Bandı',
-    titleEn: 'Grading Line Conveyor & Packing Stream',
-    descTr: 'Çap, ağırlık ve renk ayrımından geçen elmaların paketleme istasyonuna kesintisiz akışı.',
-    descEn: 'Continuous produce stream passing through electronic sizing, weighing, and color sorters.',
+  'pulses-export-warehouse-nilasya.jpg': {
+    titleTr: 'Mersin Liman Deposu & Konteyner Yükleme',
+    titleEn: 'Mersin Port Logistics Warehouse & FCL Container Stuffing',
+    descTr: '25kg/50kg PP çuvallar ve 1.000kg Big Bag jumbo torbaların paletli konteyner yüklemesi.',
+    descEn: 'Palletized 25kg/50kg PP sacks and 1,000kg FIBC Big Bags staged for direct container loading.',
   },
-  'nil-asya-granny-smith-export-box.webp': {
-    titleTr: 'Granny Smith İhracat Kutusu & Viyol Dizilimi',
-    titleEn: 'Granny Smith Export Carton & Molded Tray',
-    descTr: 'Nil Asya logolu zümrüt yeşili birinci sınıf Granny Smith elmalar, mor viyol korumasında.',
-    descEn: 'Emerald green Grade 1 Granny Smith apples with Nil Asya stickers on protective purple pulp trays.',
+  'pulses-export-jumbo-bags-nilasya.jpg': {
+    titleTr: '1.000 kg FIBC Big Bag Jumbo Torbalama',
+    titleEn: '1,000 kg FIBC Big Bag Bulk Export Sacks',
+    descTr: 'Endüstriyel işleyiciler ve konserve fabrikaları için neme dayanıklı boşaltma ventilli Big Bag torbalar.',
+    descEn: 'Heavy-duty discharge-spout Big Bags with moisture-barrier liners for industrial food processors.',
   },
-  'nil-asya-granny-smith-conveyor-line.webp': {
-    titleTr: 'Granny Smith Boylama & Konveyör Hattı',
-    titleEn: 'Granny Smith Grading & Conveyor Stream',
-    descTr: 'Sertlik ve asitlik dengesi yüksek Granny Smith elmaların boylama hattından geçişi.',
-    descEn: 'High-firmness Granny Smith apples advancing on the packhouse electronic grading line.',
+  'nilasya-2kg-nohut.jpg': {
+    titleTr: 'Nilasya 2 KG Koçbaşı Nohut Kilitli Mat Doypack Paket',
+    titleEn: 'Nilasya 2 KG Chickpeas Standing Zip-Lock Pouch Pack',
+    descTr: 'Şeffaf pencereli, altın yaldız detaylı, Sortex seçilmiş 9mm iri kalibre nohut perakende paketi.',
+    descEn: 'Premium 2 kg retail stand-up pouch with transparent window showing large 9mm Sortex chickpeas.',
   },
-  'nil-asya-granny-smith-pallet-crates.webp': {
-    titleTr: 'Mavi Kağıt Korumalı Palet Kasaları',
-    titleEn: 'Blue-Cushioned Export Crates on Wooden Pallet',
-    descTr: 'Mavi koruyucu sargılar içerisinde her biri etiketlenmiş Granny Smith elmalar.',
-    descEn: 'Individual blue tissue-cushioned Granny Smith apples palletized for zero-damage export.',
+  'nilasya-2kg-kirmizi-mercimek.jpg': {
+    titleTr: 'Nilasya 2 KG Kırmızı Mercimek Kilitli Mat Doypack Paket',
+    titleEn: 'Nilasya 2 KG Red Lentils Standing Zip-Lock Pouch Pack',
+    descTr: 'Şeffaf pencereli, parlak mercan renginde Sortex ayıklanmış kırmızı mercimek perakende paketi.',
+    descEn: 'Premium 2 kg retail stand-up pouch with clear window showcasing bright Sortex red lentils.',
   },
-  'nil-asya-granny-smith-stacked-crates.webp': {
-    titleTr: 'Paletli İstiflenmiş Havalandırmalı Kasalar',
-    titleEn: 'Palletized Ventilated Export Crates',
-    descTr: 'Soğuk zincirde optimum hava sirkülasyonu sağlayan havalandırmalı ihracat kasaları.',
-    descEn: 'High-ventilation export crates providing optimal air circulation across the cold chain.',
+  'nilasya-2kg-kuru-fasulye.jpg': {
+    titleTr: 'Nilasya 2 KG Dermason Kuru Fasulye Kilitli Mat Doypack Paket',
+    titleEn: 'Nilasya 2 KG Dermason White Beans Standing Pouch Pack',
+    descTr: 'İnce kabuklu Anadolu Dermason fasulyesi için özel tasarlanmış 2 kg kurumsal perakende ambalajı.',
+    descEn: 'Premium 2 kg retail package with bean-shaped window displaying tender-skinned Dermason beans.',
   },
-  'nil-asya-granny-smith-packhouse-overview.webp': {
-    titleTr: 'Granny Smith Tesis & Ön Soğutma Operasyonu',
-    titleEn: 'Granny Smith Packhouse & Pre-Cooling Operations',
-    descTr: 'Hasattan hemen sonra hızlı ön soğutma ve ULO CA depolama transfer süreçleri.',
-    descEn: 'Rapid hydro-cooling, grading, and ULO CA atmosphere storage transition at Nilasya packhouse.',
+  'nilasya-2kg-yesil-mercimek.jpg': {
+    titleTr: 'Nilasya 2 KG Yeşil Mercimek Kilitli Mat Doypack Paket',
+    titleEn: 'Nilasya 2 KG Green Lentils Standing Zip-Lock Pouch Pack',
+    descTr: 'Doğal lif kaynağı İç Anadolu yeşil mercimeği 2 kg kilitli tazelik korumalı lüks ambalajı.',
+    descEn: 'Premium 2 kg standing pouch preserving natural freshness and high fiber of Anatolian green lentils.',
+  },
+  'nilasya-2kg-pilavlik-bulgur.jpg': {
+    titleTr: 'Nilasya 2 KG Pilavlık Bulgur Kilitli Mat Doypack Paket',
+    titleEn: 'Nilasya 2 KG Durum Wheat Bulgur Standing Pouch Pack',
+    descTr: 'Geleneksel taş değirmende işlenmiş kehribar durum buğdayı bulguru 2 kg perakende paketi.',
+    descEn: 'Premium 2 kg retail packaging showcasing natural stone-milled golden amber durum wheat bulgur.',
+  },
+  'nilasya-2kg-kuru-bezelye.jpg': {
+    titleTr: 'Nilasya 2 KG Sarı & Yeşil Kuru Bezelye Kilitli Mat Doypack',
+    titleEn: 'Nilasya 2 KG Dry Split Peas Standing Pouch Pack',
+    descTr: 'Çorbalık ve yemeklik parlatılmış sarı ve yeşil bezelye 2 kg özel pencereli ambalajı.',
+    descEn: 'Premium 2 kg pouch with transparent window displaying calibrated yellow and green split peas.',
+  },
+  'nilasya-2kg-pulses-packaging-series.jpg': {
+    titleTr: 'Nilasya 2 KG Kurumsal Bakliyat Ambalaj Ailesi',
+    titleEn: 'Nilasya 2 KG Corporate Pulses Packaging Family',
+    descTr: 'Süpermarket zincirleri ve toptan alıcılar için tek tip, kilitli doypack lüks ambalaj serisi.',
+    descEn: 'Uniform luxury packaging line designed for international supermarket chains and wholesale buyers.',
   },
 };
 
@@ -124,8 +142,8 @@ export const ProductGallerySection: React.FC<ProductGallerySectionProps> = ({ pr
       src: imgPath,
       titleTr: defaultTitle,
       titleEn: defaultTitle,
-      descTr: isTr ? 'Nilasya Agro Foods tesislerinde çekilmiş orijinal fotoğraf.' : 'Authentic photograph from Nilasya Agro Foods packhouse.',
-      descEn: 'Authentic photograph from Nilasya Agro Foods packhouse.',
+      descTr: isTr ? 'Nilasya Agro Foods Mersin işleme ve ihracat tesislerinde çekilmiş orijinal fotoğraf.' : 'Authentic photograph from Nilasya Agro Foods Mersin processing and export facility.',
+      descEn: 'Authentic photograph from Nilasya Agro Foods Mersin processing and export facility.',
     };
   };
 

@@ -4,18 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Product, Variety, Locale } from '@/types';
-import { 
-  ShieldCheck, 
-  ThermometerSnowflake, 
-  Calendar, 
-  Sparkles, 
-  FileText, 
-  Send, 
-  ChevronRight, 
-  Scale, 
-  Gauge 
-} from 'lucide-react';
-import { company } from '@/data/company';
+import { ShieldCheck, Calendar, Sparkles, FileText, Send, ChevronRight, Scale } from 'lucide-react';
 
 interface VarietyHeroProps {
   product: Product;
@@ -118,11 +107,11 @@ export const VarietyHero: React.FC<VarietyHeroProps> = ({
 
               <div className="bg-white/5 border border-white/10 backdrop-blur-md p-3.5 rounded-2xl">
                 <div className="flex items-center gap-1.5 text-amber-400 text-xs font-semibold mb-1">
-                  <Gauge className="w-3.5 h-3.5" />
-                  <span>{isTr ? 'Şeker Oranı' : 'Brix Level'}</span>
+                  <ShieldCheck className="w-3.5 h-3.5" />
+                  <span>{isTr ? 'Saflık Oranı' : 'Purity / Sortex'}</span>
                 </div>
                 <div className="text-sm font-bold text-white truncate">
-                  {variety.brix}
+                  {variety.purity || (isTr ? 'Min. %99.5 Sortex' : 'Min. 99.5% Sortex')}
                 </div>
               </div>
 
@@ -138,7 +127,7 @@ export const VarietyHero: React.FC<VarietyHeroProps> = ({
 
               <div className="bg-white/5 border border-white/10 backdrop-blur-md p-3.5 rounded-2xl">
                 <div className="flex items-center gap-1.5 text-cyan-400 text-xs font-semibold mb-1">
-                  <ThermometerSnowflake className="w-3.5 h-3.5" />
+                  <ShieldCheck className="w-3.5 h-3.5" />
                   <span>{isTr ? 'Raf Ömrü' : 'Storage Life'}</span>
                 </div>
                 <div className="text-sm font-bold text-white truncate">

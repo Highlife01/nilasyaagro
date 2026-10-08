@@ -1,15 +1,17 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { X, CheckCircle, ArrowRight, ArrowLeft, ShieldCheck, Clock, Send, Sparkles } from 'lucide-react';
-import { Locale, RFQSubmission } from '@/types';
+import { Locale } from '@/types';
 import { getTranslations } from '@/data/translations';
 import { productsData } from '@/data/products';
 import { getProductCaliberOptions } from '@/data/productOptions';
 import { packagingData } from '@/data/packaging';
-import confetti from 'canvas-confetti';
-import { createWhatsAppUrl, formatInquiry } from '@/data/company';
-import { saveRFQInquiry } from '@/lib/adminAuth';
+import { useRFQForm } from '@/components/rfq/useRFQForm';
+import { FormFeedback, FormFieldError } from '@/components/rfq/FormFeedback';
+import { InquiryConsent } from '@/components/rfq/InquiryConsent';
+import { InquiryHoneypot } from '@/components/rfq/InquiryHoneypot';
+import { useDialogFocus } from '@/components/ui/useDialogFocus';
 
 interface RFQModalProps {
   isOpen: boolean;
@@ -25,116 +27,17 @@ export const RFQModal: React.FC<RFQModalProps> = ({
   preselectedProduct,
 }) => {
   const t = getTranslations(lang).rfq;
-  const [currentStep, setCurrentStep] = useState(1);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [generatedRef, setGeneratedRef] = useState('');
+  const { formData, currentStep, isSubmitting, isSuccess, generatedRef, errors, submitError,
+    formRef, fieldProps, fieldId, errorId, handleInputChange, handleNext, handlePrev, handleSubmit, whatsappHref,
+    consent, setConsent, websiteTrap, setWebsiteTrap,
+  } = useRFQForm(lang, preselectedProduct);
   const dialogRef = useRef<HTMLDivElement>(null);
 
-  const [formData, setFormData] = useState<Partial<RFQSubmission>>({
-    product: preselectedProduct || 'pomegranate',
-    variety: '',
-    caliber: '',
-    quantity: '40',
-    unit: 'Tons',
-    packaging: 'telescopic_carton',
-    destinationCountry: '',
-    destinationCity: '',
-    destinationPort: '',
-    incoterm: 'CIF',
-    companyName: '',
-    website: '',
-    contactPerson: '',
-    email: '',
-    phone: '',
-    whatsapp: '',
-    message: '',
-  });
-
-  useEffect(() => {
-    if (!isOpen) return;
-    const previousFocus = document.activeElement as HTMLElement | null;
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose();
-      if (event.key !== 'Tab' || !dialogRef.current) return;
-      const focusable = dialogRef.current.querySelectorAll<HTMLElement>('button, input, select, textarea, a[href]');
-      if (!focusable.length) return;
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-    };
-    document.body.style.overflow = 'hidden';
-    document.addEventListener('keydown', handleKeyDown);
-    dialogRef.current?.querySelector<HTMLElement>('button')?.focus();
-    return () => {
-      document.body.style.overflow = '';
-      document.removeEventListener('keydown', handleKeyDown);
-      previousFocus?.focus();
-    };
-  }, [isOpen, onClose]);
+  useDialogFocus(isOpen, dialogRef, onClose);
 
   if (!isOpen) return null;
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => name === 'product'
-      ? { ...prev, product: value, variety: '', caliber: '' }
-      : { ...prev, [name]: value }
-    );
-  };
-
-  const generateRefCode = () => {
-    const randomNum = Math.floor(1000 + Math.random() * 9000);
-    return `NG-RFQ-${randomNum}`;
-  };
-
-  const handleNext = () => {
-    if (currentStep < 5) {
-      setCurrentStep((prev) => prev + 1);
-    }
-  };
-
-  const handlePrev = () => {
-    if (currentStep > 1) {
-      setCurrentStep((prev) => prev - 1);
-    }
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    const refCode = generateRefCode();
-    try {
-      saveRFQInquiry({
-        ...formData,
-        referenceCode: refCode,
-      });
-    } catch {}
-    window.open(createWhatsAppUrl(formatInquiry(`Nilasya Agro Foods RFQ ${refCode}`, {
-      Product: formData.product, Variety: formData.variety, Caliber: formData.caliber,
-      Quantity: `${formData.quantity || ''} ${formData.unit || ''}`, Packaging: formData.packaging,
-      Destination: `${formData.destinationCity || ''}, ${formData.destinationCountry || ''}`,
-      Port: formData.destinationPort, Incoterm: formData.incoterm, Company: formData.companyName,
-      Website: formData.website, Contact: formData.contactPerson, Email: formData.email,
-      Phone: formData.phone, Message: formData.message,
-    })), '_blank', 'noopener,noreferrer');
-    setGeneratedRef(refCode);
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      try { confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } }); } catch {}
-    }
-  };
-
-  const resetForm = () => {
-    setIsSuccess(false);
-    setCurrentStep(1);
-    onClose();
-  };
+  const resetForm = onClose;
 
   const selectedProductObj = productsData.find((p) => p.id === formData.product);
 
@@ -147,7 +50,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
       />
 
       {/* Modal Card */}
-      <div ref={dialogRef} role="dialog" aria-modal="true" aria-labelledby="rfq-dialog-title" className="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden z-10 border border-emerald-900/10 my-8">
+      <div ref={dialogRef} role="dialog" aria-modal="true" tabIndex={-1} aria-labelledby="rfq-dialog-title" className="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden z-10 border border-emerald-900/10 my-8">
         {/* Header Strip */}
         <div className="bg-gradient-to-r from-emerald-950 via-emerald-900 to-teal-950 px-6 py-5 text-white flex items-center justify-between">
           <div>
@@ -235,6 +138,9 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                 <Clock className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>{t.successNote}</span>
               </div>
+              <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-semibold text-emerald-800 underline">
+                {lang === 'tr' ? 'WhatsApp ile takip edin' : 'Follow up via WhatsApp'}
+              </a>
 
               <button
                 onClick={resetForm}
@@ -245,35 +151,40 @@ export const RFQModal: React.FC<RFQModalProps> = ({
             </div>
           ) : (
             /* Step Form */
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form ref={formRef} noValidate aria-busy={isSubmitting} onSubmit={handleSubmit} className="space-y-5">
+              <FormFeedback errors={errors} submitError={submitError} lang={lang} />
+              <InquiryHoneypot value={websiteTrap} onChange={setWebsiteTrap} />
               {/* STEP 1: Select Produce */}
               {currentStep === 1 && (
                 <div className="space-y-4 animate-fadeIn">
                   <div>
-                    <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                    <label htmlFor={fieldId('product')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                       {t.productLabel}
                     </label>
                     <select
                       name="product"
+                        {...fieldProps('product')}
                       value={formData.product}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                     >
                       {productsData.map((p) => (
                         <option key={p.id} value={p.id}>
-                          {lang === 'tr' ? p.name.tr : p.name.en} ({p.scientificName})
+                          {p.name[lang] || p.name.en} ({p.scientificName})
                         </option>
                       ))}
                     </select>
+                      <FormFieldError error={errors.product} id={errorId('product')} />
                   </div>
 
                   {selectedProductObj && selectedProductObj.varieties.length > 0 && (
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('variety')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.varietyLabel}
                       </label>
                       <select
                         name="variety"
+                        {...fieldProps('variety')}
                         value={formData.variety}
                         onChange={handleInputChange}
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -287,16 +198,18 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                           </option>
                         ))}
                       </select>
+                      <FormFieldError error={errors.variety} id={errorId('variety')} />
                     </div>
                   )}
 
                   {selectedProductObj && (
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('caliber')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {lang === 'tr' ? 'Kalibre / Çap Seçimi' : 'Caliber / Size Selection'}
                       </label>
                       <select
                         name="caliber"
+                        {...fieldProps('caliber')}
                         value={formData.caliber}
                         onChange={handleInputChange}
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -306,6 +219,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                           <option key={option.value} value={option.value}>{option.label}</option>
                         ))}
                       </select>
+                      <FormFieldError error={errors.caliber} id={errorId('caliber')} />
                     </div>
                   )}
 
@@ -325,25 +239,31 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                 <div className="space-y-4 animate-fadeIn">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('quantity')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.quantityLabel}
                       </label>
                       <input
-                        type="text"
+                        type="number"
+                        min="0.001"
+                        step="any"
+                        inputMode="decimal"
                         name="quantity"
+                        {...fieldProps('quantity')}
                         required
                         value={formData.quantity}
                         onChange={handleInputChange}
                         placeholder="e.g. 20, 40, 100"
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       />
+                      <FormFieldError error={errors.quantity} id={errorId('quantity')} />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('unit')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.unitLabel}
                       </label>
                       <select
                         name="unit"
+                        {...fieldProps('unit')}
                         value={formData.unit}
                         onChange={handleInputChange}
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -353,15 +273,17 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                         <option value="Pallets">Pallets (Euro / Standard)</option>
                         <option value="Boxes">Carton Boxes / Crates</option>
                       </select>
+                      <FormFieldError error={errors.unit} id={errorId('unit')} />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                    <label htmlFor={fieldId('packaging')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                       {t.packagingLabel}
                     </label>
                     <select
                       name="packaging"
+                        {...fieldProps('packaging')}
                       value={formData.packaging}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -372,6 +294,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                         </option>
                       ))}
                     </select>
+                      <FormFieldError error={errors.packaging} id={errorId('packaging')} />
                   </div>
                 </div>
               )}
@@ -381,42 +304,47 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                 <div className="space-y-4 animate-fadeIn">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('destinationCountry')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.destCountryLabel}
                       </label>
                       <input
                         type="text"
                         name="destinationCountry"
+                        {...fieldProps('destinationCountry')}
                         required
                         value={formData.destinationCountry}
                         onChange={handleInputChange}
                         placeholder="e.g. Germany, UAE, India, UK"
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       />
+                      <FormFieldError error={errors.destinationCountry} id={errorId('destinationCountry')} />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('destinationCity')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.destCityLabel}
                       </label>
                       <input
                         type="text"
                         name="destinationCity"
+                        {...fieldProps('destinationCity')}
                         required
                         value={formData.destinationCity}
                         onChange={handleInputChange}
                         placeholder="e.g. Hamburg, Dubai, Mumbai, London"
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       />
+                      <FormFieldError error={errors.destinationCity} id={errorId('destinationCity')} />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('incoterm')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.incotermLabel}
                       </label>
                       <select
                         name="incoterm"
+                        {...fieldProps('incoterm')}
                         value={formData.incoterm}
                         onChange={handleInputChange}
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -428,19 +356,22 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                         <option value="EXW">EXW (Ex Works Packhouse)</option>
                         <option value="DAP">DAP (Delivered at Place)</option>
                       </select>
+                      <FormFieldError error={errors.incoterm} id={errorId('incoterm')} />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('destinationPort')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.destPortLabel}
                       </label>
                       <input
                         type="text"
                         name="destinationPort"
+                        {...fieldProps('destinationPort')}
                         value={formData.destinationPort}
                         onChange={handleInputChange}
                         placeholder="e.g. Rotterdam, Jebel Ali, Nhava Sheva"
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       />
+                      <FormFieldError error={errors.destinationPort} id={errorId('destinationPort')} />
                     </div>
                   </div>
                 </div>
@@ -450,46 +381,52 @@ export const RFQModal: React.FC<RFQModalProps> = ({
               {currentStep === 4 && (
                 <div className="space-y-4 animate-fadeIn">
                   <div>
-                    <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                    <label htmlFor={fieldId('companyName')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                       {t.companyNameLabel}
                     </label>
                     <input
                       type="text"
                       name="companyName"
+                        {...fieldProps('companyName')}
                       required
                       value={formData.companyName}
                       onChange={handleInputChange}
                       placeholder="e.g. Fresh Direct Global Ltd."
                       className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                     />
+                      <FormFieldError error={errors.companyName} id={errorId('companyName')} />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                    <label htmlFor={fieldId('website')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                       {t.websiteLabel}
                     </label>
                     <input
                       type="text"
                       name="website"
+                        {...fieldProps('website')}
                       value={formData.website}
                       onChange={handleInputChange}
                       placeholder="e.g. www.company.com"
                       className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                     />
+                      <FormFieldError error={errors.website} id={errorId('website')} />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                    <label htmlFor={fieldId('message')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                       {t.messageLabel}
                     </label>
                     <textarea
                       name="message"
+                        {...fieldProps('message')}
                       rows={3}
                       value={formData.message}
                       onChange={handleInputChange}
                       placeholder="Specific caliber requirements, target arrival date, MRL certifications or packaging remarks..."
                       className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                     />
+                      <FormFieldError error={errors.message} id={errorId('message')} />
                   </div>
                 </div>
               )}
@@ -498,48 +435,54 @@ export const RFQModal: React.FC<RFQModalProps> = ({
               {currentStep === 5 && (
                 <div className="space-y-4 animate-fadeIn">
                   <div>
-                    <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                    <label htmlFor={fieldId('contactPerson')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                       {t.contactPersonLabel}
                     </label>
                     <input
                       type="text"
                       name="contactPerson"
+                        {...fieldProps('contactPerson')}
                       required
                       value={formData.contactPerson}
                       onChange={handleInputChange}
                       placeholder="e.g. Mr. John Doe (Procurement Manager)"
                       className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                     />
+                      <FormFieldError error={errors.contactPerson} id={errorId('contactPerson')} />
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('email')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.emailLabel}
                       </label>
                       <input
                         type="email"
                         name="email"
+                        {...fieldProps('email')}
                         required
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="procurement@company.com"
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       />
+                      <FormFieldError error={errors.email} id={errorId('email')} />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('phone')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.phoneLabel}
                       </label>
                       <input
                         type="tel"
                         name="phone"
+                        {...fieldProps('phone')}
                         required
                         value={formData.phone}
                         onChange={handleInputChange}
                         placeholder="+49 170 1234567"
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       />
+                      <FormFieldError error={errors.phone} id={errorId('phone')} />
                     </div>
                   </div>
 
@@ -548,9 +491,11 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                     <span>
                       {lang === 'tr'
                         ? 'Verileriniz KVKK / GDPR kapsamında yalnızca resmi teklif hazırlanması amacıyla korunur.'
-                        : 'Your data is strictly protected under GDPR and used solely for generating formal export quotations.'}
+                        : 'We use your details to respond to your inquiry. See our privacy notice for details.'}
                     </span>
                   </div>
+                  <InquiryConsent lang={lang} id={fieldId('consent')} checked={consent} onChange={setConsent} errorId={errorId('consent')} invalid={!!errors.consent} />
+                  <FormFieldError error={errors.consent} id={errorId('consent')} />
                 </div>
               )}
 
@@ -595,6 +540,12 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                   </button>
                 )}
               </div>
+            
+              {submitError && (
+                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-xl bg-emerald-700 px-5 py-3 font-semibold text-white hover:bg-emerald-800">
+                  {lang === 'tr' ? 'WhatsApp ile g?nder' : 'Send via WhatsApp'}
+                </a>
+              )}
             </form>
           )}
         </div>

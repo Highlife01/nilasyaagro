@@ -2,17 +2,7 @@
 
 import React from 'react';
 import { Product, Variety, Locale } from '@/types';
-import { 
-  CheckCircle2, 
-  Package, 
-  Thermometer, 
-  Calendar, 
-  Scale, 
-  Droplets, 
-  Award,
-  Layers,
-  Sparkles
-} from 'lucide-react';
+import { CheckCircle2, Package, Scale, Award, Layers, Sparkles } from 'lucide-react';
 
 interface VarietySpecsProps {
   product: Product;
@@ -110,10 +100,10 @@ export const VarietySpecs: React.FC<VarietySpecsProps> = ({
 
             <div className="grid grid-cols-3 px-6 py-3.5 hover:bg-slate-50/70 transition-colors">
               <span className="text-slate-500 font-medium">
-                {isTr ? 'Şeker Oranı (Brix)' : 'Brix Content'}
+                {isTr ? 'Optik Saflık (Sortex)' : 'Optical Purity (Sortex)'}
               </span>
               <span className="col-span-2 font-semibold text-emerald-700">
-                {variety.brix}
+                {variety.purity || (isTr ? 'Min. %99.5 Sortex' : 'Min. 99.5% Sortex')}
               </span>
             </div>
 

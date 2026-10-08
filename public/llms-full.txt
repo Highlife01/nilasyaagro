@@ -1,101 +1,274 @@
-# Nilasya Agro Foods — Comprehensive Full AI & LLM Knowledge Base
+# Nilasya Agro Foods — Catalogue and export reference
 
-## 1. Company Profile & Corporate Identity
-Nilasya Agro Foods (Nilasya Agro Foods Tarım Ürünleri Dış Ticaret Ltd. Şti.) is a premier Turkish agricultural trading corporation specializing in the aggregation, optical Sortex cleaning, processing, packaging, and international export of pulses, grains, and agricultural commodities.
-
-- Brand Name: NILASYA AGRO FOODS
+- Brand: Nilasya Agro Foods
+- Legal entity: NİLASYA GLOBAL TARIM İTHALAT VE İHRACAT LİMİTED ŞİRKETİ
 - Website: https://www.nilasyaagrofoods.com.tr
-- Official B2B Email: export@nilasyaagrofoods.com.tr
-- International Trade Desk Phone / WhatsApp: +90 533 684 01 75
-- Processing Hub: Mersin Free Zone & Logistics Park, Akdeniz, Mersin / Türkiye
-- Primary Seaport: Mersin International Port (MIP) — Türkiye's main maritime gate for agricultural exports.
+- Trade desk: Toros Mah. Barış Manço Bulvarı, Çukurova / Adana / Türkiye
+- Email: export@nilasyaagrofoods.com.tr
+- Telephone / WhatsApp: +90 533 684 01 75
 
-## 2. Global Export Commodities
+This reference is generated from the same company, product, country and article data used by the website. For a transaction, request a current quotation and shipment-specific specifications.
 
-### Chickpeas (Cicer arietinum - Nohut)
-- Botanical Name: Cicer arietinum
-- Varieties: Koçbaşı Kabuli, Standard Kabuli, Desi Chickpeas, Split Chickpeas
-- Calibers: 10mm Jumbo, 9mm Extra, 8mm Standard, 7mm Medium
-- Origin: Central Anatolian Highlands (Konya, Karaman, Yozgat) & Southeastern Anatolia
-- Quality Standard: Turkish Food Codex / UNECE Standard DDP-15
-- Technical Specifications:
-  - Moisture: max 12.0%
-  - Purity (Sortex Cleaned): min 99.5%
-  - Foreign Matter: max 0.2%
-  - Broken / Split Kernels: max 1.0%
-  - Discolored / Damaged: max 1.0%
-  - Protein Content: 20% - 22% (dry basis)
-- Packaging: 25kg PP bags, 50kg PP bags, 1,000kg Big Bags, 24 MT Container Liner
+## Turkish Kabuli Chickpeas (Koçbaşı 7mm - 10mm)
 
-### Red Lentils (Lens culinaris - Kırmızı Mercimek)
-- Botanical Name: Lens culinaris
-- Varieties: Turkish Red Football Lentils, Turkish Red Split Lentils (Sortex cleaned and polished)
-- Calibers: 3.5mm - 4.5mm
-- Origin: Southeastern Anatolia (Gaziantep, Şanlıurfa, Mardin, Diyarbakır)
-- Technical Specifications:
-  - Moisture: max 12.0%
-  - Sortex Purity: min 99.8%
-  - Broken Kernels: max 0.5%
-  - Foreign Matter: max 0.1%
-  - Damage / Color Defects: max 0.5%
-  - Protein Content: 24% - 26%
-- Packaging: 25kg / 50kg PP sacks, 1000kg Big Bags, 1kg retail pillow packs
+Source: https://www.nilasyaagrofoods.com.tr/en/products/chickpeas/
 
-### Green Lentils (Lens culinaris - Yeşil Mercimek)
-- Varieties: Laird Type (large green, 6.0mm - 7.0mm), Eston Type (small green, 4.5mm - 5.5mm), Richlea
-- Origin: Central Anatolia (Yozgat, Çorum, Ankara)
-- Technical Specifications:
-  - Moisture: max 13.0%
-  - Purity: min 99.5%
-  - Bleached / Discolored: max 1.0%
-  - Foreign Matter: max 0.2%
-  - Protein Content: 23% - 25%
+Nilasya Agro Foods supplies calibrated Turkish Kabuli Chickpeas sourced directly from contracted farmers across Central and Southeastern Anatolia. After harvesting under dry sunny conditions, the crop is transported to our Mersin terminal for stone removal, density gravity separation, size grading (7mm, 8mm, 9mm, 10mm), and high-resolution Sortex optical color sorting. Packed in 25kg/50kg PP sacks or 1,000kg Jumbo Big Bags and shipped in 20ft ocean containers (24-26 MT) from Mersin International Port.
 
-### White Beans (Phaseolus vulgaris - Kuru Fasulye)
-- Varieties: Dermason (8mm - 9mm, thin skin, superior cooking quality), Horoz Beans, Şeker Beans, Cannellini, Great Northern
-- Origin: Erzincan, Konya, Niğde
-- Technical Specifications:
-  - Moisture: max 13.0%
-  - Purity: min 99.5%
-  - Foreign Matter: max 0.1%
-  - Broken: max 0.8%
-  - Protein Content: 21% - 23%
+Scientific name: Cicer arietinum
 
-### Dry Peas (Pisum sativum - Kuru Bezelye)
-- Varieties: Yellow Split Peas, Yellow Whole Peas, Green Split Peas, Green Whole Peas
-- Calibers: 6mm - 7mm
-- Specifications: Moisture max 13.0%, Purity min 99.5%, Foreign Matter max 0.2%
+- Origin: Türkiye (Konya / Karaman / Mersin)
+- Size: 7mm, 8mm, 9mm, 10mm
+- Caliber: 8mm, 9mm, 10mm (Koçbaşı Grade 1)
+- Purity: min 99.5% (Sortex Cleaned)
+- Moisture: max 12.0%
+- Protein: 20.5% – 22.0% (dry basis)
+- Broken kernels: max 1.0%
+- Foreign matter: max 0.1%
+- Damaged kernels: max 0.8%
+- Shelf life: 24 Months in cool dry storage
+- Storage temperature: Ambient (15°C – 22°C), <65% RH
+- Storage humidity: 55% – 65% RH
 
-### Durum Wheat, Grains & Bulgur (Hububat & Bulgur)
-- Durum Wheat: High vitreousness (>85%), min 13.5% protein, amber color, suitable for premium pasta and semolina.
-- Turkish Bulgur: Coarse Pilaf Bulgur, Mid-Fine Bulgur, Extra Fine Köftelik Bulgur, Brown Bulgur. Pre-cooked, de-branned, dried, and calibrated durum wheat.
-- Barley: Malting barley and feed barley.
-- Yellow Corn / Maize: Non-GMO, food grade and feed grade.
+### Varieties
 
-## 3. Processing Technology & Quality Assurance
-- Sorting: Multi-camera full-spectrum RGB + InGaAs optical Sortex sorting machines (Bühler and Sortex technology) removing discolored grains, foreign matter, and foreign seeds.
-- Destoning & Gravity Separation: Multi-deck vibrating gravity tables separating light grains, dust, and stones.
-- Polishing: High-efficiency friction polishers with food-grade vegetable oil (optional for red split lentils).
-- Metal Detection & X-Ray Inspection: Integrated ferrous and non-ferrous metal detection before final bagging.
-- Certifications: ISO 22000:2018 (Food Safety Management), HACCP, Halal Certification, Non-GMO Certification, Turkish Phytosanitary Inspection, Pre-shipment inspection by SGS / Bureau Veritas / Intertek upon buyer request.
+- [Koçbaşı 10mm Jumbo Chickpeas](https://www.nilasyaagrofoods.com.tr/en/products/chickpeas/kocbasi-10mm/): Extra large 10mm caliber Turkish Koçbaşı chickpeas. Selected for premium retail packs, gourmet gastronomy, and canning.
+- [Koçbaşı 9mm Extra Large Chickpeas](https://www.nilasyaagrofoods.com.tr/en/products/chickpeas/kocbasi-9mm/): The international benchmark for Turkish Kabuli chickpeas. Uniform 9mm round caliber, perfect skin integrity.
+- [Kabuli 8mm Standard Export Grade](https://www.nilasyaagrofoods.com.tr/en/products/chickpeas/kabuli-8mm/): High-volume export grade favored by industrial hummus manufacturers, canning factories, and supermarkets.
+- [Split Chickpeas (Chana Dal Grade)](https://www.nilasyaagrofoods.com.tr/en/products/chickpeas/split-chickpeas/): Hulled and split chickpeas produced for quick-cooking soups, curries, and industrial food ingredient applications.
 
-## 4. Packaging Configurations
-1. 25 kg & 50 kg Polypropylene (PP) Woven Sacks: UV stabilized, moisture resistant, optionally laminated or equipped with polyethylene (PE) inner liner.
-2. 1,000 kg / 1,200 kg Big Bags (FIBC / Jumbo Bags): 4-loop top lifting, discharge bottom spout, anti-sift seams.
-3. 500g, 800g, 1kg, 2.5kg, 5kg Retail Packing: Modern form-fill-seal (FFS) pillow bags, standing doypack with zipper, kraft window bags. Private label OEM packaging available.
-4. Container Bulk Liners (Sea Bulk): Food-grade polyethylene container liner bags installed inside standard 20ft dry containers for direct bulk discharge.
+### Packaging
 
-## 5. Shipping Routes & Incoterms
-- Supported Incoterms (ICC Incoterms 2020): FOB Mersin, CFR Destination Port, CIF Destination Port, FCA, EXW Mersin Warehouse, DAP Europe.
-- Global Export Corridors:
-  - Middle East & GCC: Direct container shipping from Mersin to Jebel Ali (UAE), Dammam (Saudi Arabia), Jeddah, Doha (Qatar), Kuwait, Salalah (Oman).
-  - European Union: Ro-Ro ferry from Mersin to Trieste (Italy), rail/road corridors to Germany, France, Netherlands, Spain, Poland, and the UK.
-  - North Africa: Direct shipping to Alexandria (Egypt), Casablanca (Morocco), Algiers (Algeria), Tunis (Tunisia).
-  - South & East Asia: Ocean lines to Mumbai / Nhava Sheva (India), Chittagong (Bangladesh), Colombo (Sri Lanka), Port Klang (Malaysia), Jakarta (Indonesia).
-  - Americas & CIS: Regular container routes.
+- Nilasya 2 KG Premium Retail Stand-up Pouch (Doypack / Quad-Seal): 2.0 kg e Net Weight; 1,200 – 1,400 cartons (approx. 18.0 – 22.0 MT) per 40ft High Cube Container
+- Polypropylene (PP) Woven Bag (25 kg & 50 kg): 25.0 kg or 50.0 kg Net; 24.0 – 26.0 Metric Tons per 20ft FCL container
+- FIBC Big Bag (1,000 kg Jumbo Bag): 1,000 kg – 1,200 kg Net; 20 to 24 Big Bags per 20ft / 40ft container
 
-## 6. Official Contact & Quotations
-- Website: https://www.nilasyaagrofoods.com.tr
-- Online RFQ Form: https://www.nilasyaagrofoods.com.tr/en/quote/
-- Export Email: export@nilasyaagrofoods.com.tr
-- WhatsApp / Mobile: +90 533 684 01 75
+## Turkish Red Lentils (Football & Split Sortex)
+
+Source: https://www.nilasyaagrofoods.com.tr/en/products/red-lentils/
+
+Nilasya Agro Foods is a key international exporter of milled and polished Turkish Red Lentils. We operate modern milling lines in Mersin where raw red lentils are de-hulled, calibrated, de-stoned, polished (with or without food-grade oil), and sorted using advanced optical sorters to eliminate all discolored kernels and weed seeds. Available in whole round (Football) and split (Yaprak) grades.
+
+Scientific name: Lens culinaris
+
+- Origin: Türkiye (Gaziantep / Şanlıurfa / Mersin)
+- Size: 3.5mm – 4.5mm
+- Caliber: Sortex Cleaned 99.8%
+- Purity: min 99.8% (Multi-Pass Sortex)
+- Moisture: max 12.0%
+- Protein: 24.5% – 26.0% (dry basis)
+- Broken kernels: max 0.5% (Football), max 1.0% (Split)
+- Foreign matter: max 0.1%
+- Damaged kernels: max 0.5%
+- Shelf life: 24 Months
+- Storage temperature: Cool dry warehouse (<20°C, <60% RH)
+- Storage humidity: 50% – 60% RH
+
+### Varieties
+
+- [Turkish Red Football Lentils (Whole Hulled)](https://www.nilasyaagrofoods.com.tr/en/products/red-lentils/red-football/): De-hulled whole round red lentils. Retains spherical shape during early cooking, ideal for canned soups and stews.
+- [Turkish Red Split Lentils (Yaprak Mercimek)](https://www.nilasyaagrofoods.com.tr/en/products/red-lentils/red-split/): Hulled and split into two halves. Rapid 15-minute cooking time, velvety consistency for red lentil soups, purees and curries.
+- [Oil-Polished Red Split Lentils](https://www.nilasyaagrofoods.com.tr/en/products/red-lentils/red-polished/): Lightly polished with food-grade vegetable oil to enhance vibrant luster and provide protection against humidity during ocean shipment.
+
+### Packaging
+
+- Nilasya 2 KG Premium Retail Stand-up Pouch (Doypack / Quad-Seal): 2.0 kg e Net Weight; 1,200 – 1,400 cartons (approx. 18.0 – 22.0 MT) per 40ft High Cube Container
+- Polypropylene (PP) Woven Sacks (25 kg & 50 kg): 25.0 kg & 50.0 kg Net; 24.0 – 26.0 Metric Tons per 20ft Container
+- 1,000 kg Jumbo Big Bags: 1,000 kg Net; 20 – 24 MT per 20ft Container
+
+## Turkish Green Lentils (Laird & Eston Type 5mm - 7mm)
+
+Source: https://www.nilasyaagrofoods.com.tr/en/products/green-lentils/
+
+Nilasya Agro Foods exports Sortex-cleaned Turkish green lentils in both large (Laird type, 6.0-7.0mm) and medium/small (Eston type, 4.5-5.5mm) calibers. Sourced from trusted agricultural cooperatives, each lot is machine-cleaned, destoned, optical-sorted to eliminate bleached or discolored grains, and packed for container export through Mersin Port.
+
+Scientific name: Lens culinaris
+
+- Origin: Türkiye (Yozgat / Çorum / Konya)
+- Size: 4.5mm – 7.0mm
+- Caliber: Laird (6-7mm) / Eston (4.5-5.5mm)
+- Purity: min 99.5% (Sortex Cleaned)
+- Moisture: max 13.0%
+- Protein: 23.0% – 25.0%
+- Broken kernels: max 0.8%
+- Foreign matter: max 0.1%
+- Damaged kernels: max 1.0% (Bleached max 1.5%)
+- Shelf life: 24 Months
+- Storage temperature: Dry ventilated storage (<22°C)
+- Storage humidity: 55% – 65% RH
+
+### Varieties
+
+- [Laird Large Green Lentils (6mm - 7mm)](https://www.nilasyaagrofoods.com.tr/en/products/green-lentils/laird-large/): Large, flat, disc-shaped green lentils. Holds shape firmly after cooking; ideal for cold salads, side dishes, and canning.
+- [Eston Medium Green Lentils (4.5mm - 5.5mm)](https://www.nilasyaagrofoods.com.tr/en/products/green-lentils/eston-small/): Smaller round green lentils with high nutrient density, quick-cooking characteristics, and rich savory flavor.
+
+### Packaging
+
+- Nilasya 2 KG Premium Retail Stand-up Pouch (Doypack / Quad-Seal): 2.0 kg e Net Weight; 1,200 – 1,400 cartons (approx. 18.0 – 22.0 MT) per 40ft High Cube Container
+- Polypropylene (PP) Woven Sacks (25 kg & 50 kg): 25.0 kg / 50.0 kg Net; 24.0 – 26.0 MT per 20ft FCL
+- 1,000 kg Jumbo Bags: 1,000 kg Net; 20.0 – 24.0 MT per 20ft container
+
+## Turkish Dry White Beans (Dermason, Horoz, Cannellini 8mm - 10mm)
+
+Source: https://www.nilasyaagrofoods.com.tr/en/products/white-beans/
+
+Nilasya Agro Foods aggregates, Sortex-cleans, and calibrates premier Turkish dry white bean varieties including Erzincan Dermason (8-9mm and 9-10mm), Horoz (long kidney-shaped), and Cannellini types. All shipments are strictly graded for zero stones, uniform brilliant white color, low moisture (<13%), and zero insect damage before containerization at Mersin Port.
+
+Scientific name: Phaseolus vulgaris
+
+- Origin: Türkiye (Erzincan / Konya / Mersin)
+- Size: 8mm – 10mm (Calibrated)
+- Caliber: 8mm - 9mm, 9mm - 10mm (Extra Large)
+- Purity: min 99.5% (Sortex Cleaned)
+- Moisture: max 13.0%
+- Protein: 21.5% – 23.5%
+- Broken kernels: max 0.5%
+- Foreign matter: max 0.1%
+- Damaged kernels: max 0.8%
+- Shelf life: 24 Months
+- Storage temperature: Dry warehouse (<20°C, <60% RH)
+- Storage humidity: 55% – 60% RH
+
+### Varieties
+
+- [Erzincan Dermason White Beans (8mm - 9mm)](https://www.nilasyaagrofoods.com.tr/en/products/white-beans/dermason-9mm/): The gold standard of Turkish dry beans. Flat oval shape, delicate thin skin, and melt-in-the-mouth texture.
+- [Horoz Long White Beans (Cannellini Type)](https://www.nilasyaagrofoods.com.tr/en/products/white-beans/horoz-beans/): Elongated cylindrical white beans with smooth glossy skin. Ideal for cold bean salads, stews, and gourmet canning.
+
+### Packaging
+
+- Nilasya 2 KG Premium Retail Stand-up Pouch (Doypack / Quad-Seal): 2.0 kg e Net Weight; 1,200 – 1,400 cartons (approx. 18.0 – 22.0 MT) per 40ft High Cube Container
+- Polypropylene (PP) Woven Sacks (25 kg & 50 kg): 25.0 kg / 50.0 kg Net; 24.0 – 26.0 MT per 20ft FCL container
+
+## Yellow & Green Dry Peas (Whole & Split Sortex)
+
+Source: https://www.nilasyaagrofoods.com.tr/en/products/dry-peas/
+
+Nilasya Agro Foods supplies Sortex-cleaned dry yellow whole peas, yellow split peas, green whole peas, and green split peas. Sourced from optimal growing basins and processed under strict ISO 22000 quality control, our dry peas are free of stones, dirt, and damaged seeds, packed in 25kg/50kg PP sacks or 1,000kg Big Bags.
+
+Scientific name: Pisum sativum
+
+- Origin: Türkiye / Mersin Hub
+- Size: 6.0mm – 7.5mm
+- Caliber: Split & Whole Grade 1
+- Purity: min 99.5% (Sortex Cleaned)
+- Moisture: max 13.0%
+- Protein: 21.0% – 23.0%
+- Broken kernels: max 1.5% (Whole), max 1.0% (Split)
+- Foreign matter: max 0.1%
+- Damaged kernels: max 1.0%
+- Shelf life: 24 Months
+- Storage temperature: Dry warehouse (<20°C)
+- Storage humidity: 55% – 65% RH
+
+### Varieties
+
+- [Yellow Split Peas (Chana / Matar Dal Substitute)](https://www.nilasyaagrofoods.com.tr/en/products/dry-peas/yellow-split-peas/): Hulled and split yellow peas. Dissolves rapidly into creamy stews, yellow pea soups, and purees.
+- [Green Split Peas](https://www.nilasyaagrofoods.com.tr/en/products/dry-peas/green-split-peas/): Vibrant natural green split peas. Popular in European and North American split pea soup formulations.
+
+### Packaging
+
+- Nilasya 2 KG Premium Retail Stand-up Pouch (Doypack / Quad-Seal): 2.0 kg e Net Weight; 1,200 – 1,400 cartons (approx. 18.0 – 22.0 MT) per 40ft High Cube Container
+- Polypropylene (PP) Woven Sacks (25 kg & 50 kg): 25.0 kg / 50.0 kg Net; 24.0 – 26.0 MT per 20ft FCL
+
+## Turkish Durum Wheat & Traditional Bulgur
+
+Source: https://www.nilasyaagrofoods.com.tr/en/products/durum-wheat-bulgur/
+
+Our durum wheat is cultivated in the fertile Central and Southeastern Anatolian plains where warm sunny grain-filling periods create high vitreousness (min 85%) and golden amber color. In addition to raw grain, we export parboiled bulgur made exclusively from 100% durum wheat: boiled in stainless steel cauldrons, dried in hygienic solar and hot air tunnels, and milled on stone disks. Available in bulk container liners or 25kg/50kg PP sacks.
+
+Scientific name: Triticum durum
+
+- Origin: Türkiye (Konya / Gaziantep / Mersin)
+- Size: Calibrated 2.5mm - 3.2mm grain / Calibrated Bulgur
+- Caliber: Grade 1 Amber Durum / Bulgur Grade 1
+- Purity: min 99.7%
+- Moisture: max 12.5%
+- Protein: 13.5% – 15.0% min (dry basis)
+- Broken kernels: max 1.0%
+- Foreign matter: max 0.1%
+- Shelf life: 24 Months
+- Storage temperature: Dry ventilated silo or warehouse (<22°C)
+- Storage humidity: 50% – 60% RH
+
+### Varieties
+
+- [Amber Durum Wheat Grain (Milling Grade 1)](https://www.nilasyaagrofoods.com.tr/en/products/durum-wheat-bulgur/amber-durum-grain/): Hard amber durum wheat with >85% vitreous kernels, high wet gluten, and superior semolina extraction yield.
+- [Coarse Pilaf Bulgur (Pilavlık Sarı Bulgur)](https://www.nilasyaagrofoods.com.tr/en/products/durum-wheat-bulgur/pilaf-bulgur/): 100% durum wheat, parboiled, dried, and stone-cracked to a coarse calibrated size. High-fiber Mediterranean staple.
+- [Fine Meatball Bulgur (Köftelik İnce Bulgur)](https://www.nilasyaagrofoods.com.tr/en/products/durum-wheat-bulgur/fine-bulgur/): Finely ground parboiled durum wheat. Pre-cooked; swells instantly in hot water without requiring boiling. Ideal for tabbouleh and kibbeh.
+
+### Packaging
+
+- Nilasya 2 KG Premium Retail Stand-up Pouch (Doypack / Quad-Seal): 2.0 kg e Net Weight; 1,200 – 1,400 cartons (approx. 18.0 – 22.0 MT) per 40ft High Cube Container
+- Polypropylene (PP) Sacks (25 kg & 50 kg): 25.0 kg / 50.0 kg Net; 24.0 – 26.0 MT per 20ft Container
+- Sea Bulk Container Liner (Direct Bulk In-Container): 24,000 kg – 26,500 kg Net; 26.0 MT per 20ft Container
+
+## Specialty Pulses & Seeds (Fava Beans, Black-Eyed Peas, Sesame, Sunflower)
+
+Source: https://www.nilasyaagrofoods.com.tr/en/products/other-pulses-seeds/
+
+Our specialty agricultural commodities portfolio caters to Mediterranean, Middle Eastern, and Asian cuisines. Fava beans (whole and split) for ful medames and falafel; black-eyed peas for traditional stews; premium natural and hulled sesame seeds (min 99.9% purity) for tahini and bakery; and plump striped confectionery sunflower seeds. Shipped in 25kg PP sacks or kraft bags.
+
+Scientific name: Vicia faba / Vigna unguiculata / Sesamum indicum
+
+- Origin: Türkiye (Mersin / Izmir / Adana)
+- Size: Varies by commodity
+- Caliber: Grade 1 Sortex Cleaned
+- Purity: min 99.5% (Sesame min 99.9%)
+- Moisture: max 12.0% (Sesame max 6.0%)
+- Protein: High protein and essential oils
+- Broken kernels: max 1.0%
+- Foreign matter: max 0.1%
+- Shelf life: 18 – 24 Months
+- Storage temperature: Dry warehouse (<20°C)
+- Storage humidity: 50% – 60% RH
+
+### Varieties
+
+- [Broad Beans / Fava Beans (Kuru Bakla)](https://www.nilasyaagrofoods.com.tr/en/products/other-pulses-seeds/fava-beans/): Large Turkish broad beans (whole and split) highly sought after across Egypt, GCC, and Southern Europe for ful medames and dips.
+- [Black-Eyed Peas / Cowpeas (Kuru Börülce)](https://www.nilasyaagrofoods.com.tr/en/products/other-pulses-seeds/black-eyed-peas/): Medium white beans with a distinctive black eye spot. Rapid boiling time, delicate nutty flavor.
+- [Hulled White Sesame Seeds (Sortex 99.9%)](https://www.nilasyaagrofoods.com.tr/en/products/other-pulses-seeds/hulled-sesame/): Premium mechanical and steam-hulled white sesame seeds with min 50% oil content. Ideal for tahini, confectionery, and bakeries.
+
+### Packaging
+
+- Nilasya 2 KG Premium Retail Stand-up Pouch Series: 2.0 kg e Net Weight; 1,200 – 1,400 cartons per 40ft HC Container
+- 25kg Multi-Ply Paper & Polypropylene Bags: 25.0 kg Net; 22.0 – 25.0 MT per 20ft Container
+
+## Export markets
+
+Destination routes, documents and Incoterms depend on the shipment and current import requirements. Published transit estimates are subject to carrier schedules and customs clearance.
+
+- [Germany](https://www.nilasyaagrofoods.com.tr/en/export/germany/): Nilasya Agro Foods supplies German organic wholesalers, food processing plants, and packaging distributors with Sortex-cleaned Turkish chickpeas, red lentils, and white beans shipped in 25kg PP bags, 1,000kg Big Bags, and FCL containers directly from Mersin International Port.
+- [United Kingdom](https://www.nilasyaagrofoods.com.tr/en/export/united-kingdom/): Supplying leading UK ethnic food distributors, canning manufacturers, and supermarket packers across London, Birmingham, and Manchester with high-protein Turkish pulses and durum wheat bulgur.
+- [Netherlands](https://www.nilasyaagrofoods.com.tr/en/export/netherlands/): Supplying Europe’s major agricultural trading hub at the Port of Rotterdam with prime Turkish pulses in 25kg PP bags, 1,000kg Big Bags, and bulk container liners.
+- [Russia](https://www.nilasyaagrofoods.com.tr/en/export/russia/): Direct high-volume pulses and grain supply to Russian federal retail distributors and industrial canneries via Black Sea direct maritime connections and overland corridors.
+- [United Arab Emirates (Dubai & Abu Dhabi)](https://www.nilasyaagrofoods.com.tr/en/export/united-arab-emirates/): High-volume pulses and grain exports to Dubai Al Ras commodity traders, GCC supermarket chains (LuLu, Carrefour Middle East), and food processing factories across the United Arab Emirates.
+- [Saudi Arabia](https://www.nilasyaagrofoods.com.tr/en/export/saudi-arabia/): Direct supply to Saudi Arabian wholesale food distributors, packaging houses, and retail groups in Riyadh, Jeddah, and Dammam with complete SFDA and SABER registration.
+- [Poland](https://www.nilasyaagrofoods.com.tr/en/export/poland/): Direct overland truck and sea container delivery to Polish supermarket distribution networks (Biedronka, Dino, Eurocash) and food packaging manufacturers.
+- [France](https://www.nilasyaagrofoods.com.tr/en/export/france/): Supplying French wholesale distributors, institutional caterers, and food processing plants with Sortex-grade pulses and durum wheat products with strict IFS and EU compliance.
+- [Italy](https://www.nilasyaagrofoods.com.tr/en/export/italy/): Premier supplier of high-vitreous Anatolian durum wheat for pasta semolina milling, alongside canning-grade chickpeas and white beans to Italian food industries.
+- [Spain](https://www.nilasyaagrofoods.com.tr/en/export/spain/): Supplying Spanish food processors, packaging groups, and wholesale markets (Mercamadrid, Mercabarna) with prime jumbo Kabuli chickpeas, canning-grade white beans, and lentils.
+- [India](https://www.nilasyaagrofoods.com.tr/en/export/india/): Substantial bulk container exports of jumbo Turkish Kabuli chickpeas (10mm+) and green lentils to major Indian commodity traders and dal millers across Mumbai, Delhi, and Gujarat.
+- [Qatar](https://www.nilasyaagrofoods.com.tr/en/export/qatar/): Direct pulses shipments to Qatari food distributors, hospitality catering providers, and hypermarket chains (Al Meera, LuLu Qatar) with strict MoPH food safety clearance.
+- [Singapore](https://www.nilasyaagrofoods.com.tr/en/export/singapore/): Supplying Singapore food processors, packaging houses, and international distributors with high-purity Turkish pulses fully certified to Singapore Food Agency (SFA) standards.
+- [Malaysia](https://www.nilasyaagrofoods.com.tr/en/export/malaysia/): Supplying Malaysian food packaging brands, canneries, and wholesale commodity traders through Port Klang with Halal-certified Turkish chickpeas and lentils.
+- [Romania](https://www.nilasyaagrofoods.com.tr/en/export/romania/): Rapid 24-36 hour direct overland delivery route connecting Turkish pulses processing plants directly to Romanian supermarket central warehouses and wholesale distribution hubs.
+- [Bulgaria](https://www.nilasyaagrofoods.com.tr/en/export/bulgaria/): Fast same-day and next-day overland freight delivery across the Kapıkule border directly to Bulgarian retail distribution centers and packaging plants.
+- [Greece](https://www.nilasyaagrofoods.com.tr/en/export/greece/): Direct overland and sea container deliveries to Greek canneries, food packaging houses, and wholesale markets across Athens (Rentis) and Thessaloniki.
+- [Ukraine](https://www.nilasyaagrofoods.com.tr/en/export/ukraine/): Dependable, high-volume pulses and durum wheat supply to Ukrainian retail chains (Silpo, ATB, Novus) and food processors via Black Sea and overland corridors.
+- [Iraq](https://www.nilasyaagrofoods.com.tr/en/export/iraq/): Daily high-tonnage overland pulses supply from Anatolian cleaning facilities through the Habur border crossing directly to wholesale markets and distributors in Erbil, Baghdad, and Basra.
+- [Indonesia](https://www.nilasyaagrofoods.com.tr/en/export/indonesia/): Supplying Indonesia’s vast consumer market of over 275 million with Halal-certified Turkish pulses, chickpeas, and lentils via Tanjung Priok Port.
+- [Czech Republic](https://www.nilasyaagrofoods.com.tr/en/export/czech-republic/): Scheduled road freight deliveries of Sortex-cleaned pulses directly to Czech supermarket distribution warehouses and food processors in Prague and Brno.
+- [Switzerland](https://www.nilasyaagrofoods.com.tr/en/export/switzerland/): Ultra-premium Sortex grade Turkish pulses customized for discerning Swiss supermarket buyers and organic processors, strictly non-GMO and certified.
+- [Belgium](https://www.nilasyaagrofoods.com.tr/en/export/belgium/): Direct shipping to the Port of Antwerp and Brussels food wholesale hubs, supplying Belgian canning factories and retail packers with certified Turkish pulses.
+- [Austria](https://www.nilasyaagrofoods.com.tr/en/export/austria/): Fast 2.5 to 3.5-day road freight logistics serving Austrian wholesale markets and supermarket chains (Spar, Rewe Austria, Hofer) with Sortex-cleaned pulses.
+- [Kuwait](https://www.nilasyaagrofoods.com.tr/en/export/kuwait/): Weekly container shipments to Shuwaikh Port supplying Kuwait’s cooperative societies, hypermarkets, and catering contractors with premium Turkish pulses.
+
+## Buying guides
+
+- [How to Source Premium Turkish Pulses & Grains: 2026 Complete B2B Buyer's Guide](https://www.nilasyaagrofoods.com.tr/en/insights/how-to-source-turkish-pulses-grains-b2b-guide/): A comprehensive strategic manual for international grain importers, canneries, and wholesale distributors covering Anatolian crop basins, Sortex optical sorting standards, container loading at Mersin Port, and GAFTA/SGS inspections.
+- [Turkish Kabuli Chickpeas (Koçbaşı): Calibers (8mm-10mm), Sortex Cleaning & Export Specifications](https://www.nilasyaagrofoods.com.tr/en/insights/turkish-chickpeas-kabuli-kocbasi-calibers-sortex/): Technical breakdown of Turkish Koçbaşı chickpeas: screen sizing (8mm, 9mm, 10mm), moisture tolerance, Bühler Sortex color separation, canning absorption ratios, and container palletizing options.
+- [Turkish Red & Green Lentils: Football, Split, Machine Dressed Standards & Bulk Shipping](https://www.nilasyaagrofoods.com.tr/en/insights/red-and-green-lentils-football-split-export-guide/): Sourcing Anatolian red and green lentils: dehulling recovery ratios, Sortex optical purity up to 99.8%, natural beta-carotene retention, 25kg PP bags, 1,000kg Big Bags, and bulk container liners from Mersin Seaport.
+
+## Quote requests
+
+Use https://www.nilasyaagrofoods.com.tr/en/quote/ or email export@nilasyaagrofoods.com.tr. Include product and variety, quantity, packaging, destination, requested delivery date and trade term. A submitted enquiry is not an order confirmation.

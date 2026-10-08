@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { 
@@ -16,6 +16,8 @@ import { Locale } from '@/types';
 import { getTranslations } from '@/data/translations';
 import { productsData } from '@/data/products';
 import { supportedLanguages, getLanguageInfo } from '@/data/languages';
+import { localizedPathname } from '@/lib/navigation';
+import { useDialogFocus } from '@/components/ui/useDialogFocus';
 
 interface NavbarProps {
   lang: Locale;
@@ -28,6 +30,11 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const [langModalOpen, setLangModalOpen] = useState(false);
   const [langSearch, setLangSearch] = useState('');
+  const languageDialogRef = useRef<HTMLDivElement>(null);
+  const productDropdownRef = useRef<HTMLDivElement>(null);
+  const productButtonRef = useRef<HTMLButtonElement>(null);
+  const closeLanguageDialog = useCallback(() => setLangModalOpen(false), []);
+  useDialogFocus(langModalOpen, languageDialogRef, closeLanguageDialog);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -42,38 +49,26 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
         setIsScrolled(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (!productsDropdownOpen) return;
+    const handleOutsideClick = (event: PointerEvent) => {
+      if (!productDropdownRef.current?.contains(event.target as Node)) setProductsDropdownOpen(false);
+    };
+    document.addEventListener('pointerdown', handleOutsideClick);
+    return () => document.removeEventListener('pointerdown', handleOutsideClick);
+  }, [productsDropdownOpen]);
 
   const switchLanguage = (newLang: Locale) => {
     setLangModalOpen(false);
     setMobileMenuOpen(false);
     if (newLang === lang) return;
 
-    const currentSegments = pathname.split('/').filter(Boolean);
-    if (currentSegments.length === 0) {
-      router.push(`/${newLang}/`);
-      return;
-    }
-
-    const subRoute = currentSegments[1];
-
-    if (subRoute === 'products' && currentSegments[2]) {
-      const currentSlug = currentSegments[2].toLowerCase();
-      const currentProduct = productsData.find(
-        (p) => Object.values(p.slug).includes(currentSlug) || p.id === currentSlug
-      );
-
-      if (currentProduct) {
-        const targetSlug = currentProduct.slug[newLang] || currentProduct.slug.en || currentProduct.id;
-        router.push(`/${newLang}/products/${targetSlug}/`);
-        return;
-      }
-    }
-
-    const restOfPath = currentSegments.slice(1).join('/');
-    router.push(`/${newLang}/${restOfPath ? restOfPath + '/' : ''}`);
+    router.push(`${localizedPathname(pathname, newLang, productsData)}${window.location.search}${window.location.hash}`);
   };
 
   const getProductHref = (slugObj: Record<string, string>, id: string) => {
@@ -138,7 +133,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
           </Link>
 
           {/* Desktop Multi-Page Navigation (Insights moved to Footer per user instruction) */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-6">
+          <nav aria-label={lang === 'tr' ? 'Ana menü' : 'Main navigation'} className="hidden lg:flex items-center gap-5 xl:gap-6">
             <Link
               href={`/${lang}/`}
               className={`text-[13px] font-extrabold uppercase tracking-wider transition-colors ${
@@ -152,13 +147,28 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
 
             {/* Products Mega Dropdown */}
             <div
+              ref={productDropdownRef}
               className="relative"
-              onMouseEnter={() => setProductsDropdownOpen(true)}
-              onMouseLeave={() => setProductsDropdownOpen(false)}
+              onPointerEnter={(event) => { if (event.pointerType === 'mouse') setProductsDropdownOpen(true); }}
+              onPointerLeave={(event) => {
+                if (event.pointerType === 'mouse' && !event.currentTarget.contains(document.activeElement)) setProductsDropdownOpen(false);
+              }}
+              onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setProductsDropdownOpen(false); }}
+              onKeyDown={(event) => {
+                if (event.key === 'Escape') { event.preventDefault(); setProductsDropdownOpen(false); productButtonRef.current?.focus(); }
+                if (event.key === 'ArrowDown' && event.target === productButtonRef.current) {
+                  event.preventDefault(); setProductsDropdownOpen(true);
+                  requestAnimationFrame(() => productDropdownRef.current?.querySelector<HTMLAnchorElement>('a')?.focus());
+                }
+              }}
             >
               <button
+                ref={productButtonRef}
                 type="button"
-                className={`flex items-center gap-1 text-[13px] font-extrabold uppercase tracking-wider transition-colors focus:outline-none ${
+                aria-expanded={productsDropdownOpen}
+                aria-controls="desktop-products-dropdown"
+                onClick={() => setProductsDropdownOpen((open) => !open)}
+                className={`flex items-center gap-1 text-[13px] font-extrabold uppercase tracking-wider transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-500 ${
                   isScrolled
                     ? 'text-slate-800 hover:text-emerald-600'
                     : 'text-slate-100 hover:text-emerald-300'
@@ -169,10 +179,11 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
               </button>
 
               {productsDropdownOpen && (
-                <div className="absolute top-full -left-6 w-88 pt-3 animate-fade-in z-50">
+                <div id="desktop-products-dropdown" className="absolute top-full -left-6 w-88 pt-3 animate-fade-in z-50">
                   <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 p-3 space-y-1 max-h-[75vh] overflow-y-auto scrollbar-thin">
                     <Link
                       href={`/${lang}/products/`}
+                      onNavigate={() => setProductsDropdownOpen(false)}
                       className="block px-4 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white font-black text-xs uppercase tracking-wider transition-colors shadow-md shadow-emerald-900/10"
                     >
                       {lang === 'tr' ? 'Tüm Ürünler Kataloğu →' : 'All Products Catalog →'}
@@ -182,6 +193,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
                       <Link
                         key={prod.id}
                         href={getProductHref(prod.slug, prod.id)}
+                        onNavigate={() => setProductsDropdownOpen(false)}
                         className="flex items-center justify-between px-3.5 py-2.5 rounded-2xl text-xs font-bold text-slate-800 hover:bg-emerald-50 hover:text-emerald-800 transition-colors"
                       >
                         <div className="flex items-center gap-2">
@@ -281,7 +293,10 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
             {/* 30 Languages Button */}
             <button
               type="button"
-              onClick={() => setLangModalOpen(true)}
+              onClick={() => { setLangSearch(''); setLangModalOpen(true); }}
+              aria-haspopup="dialog"
+              aria-expanded={langModalOpen}
+              aria-label={lang === 'tr' ? 'Dili değiştir' : 'Change language'}
               className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-black transition-all border ${
                 isScrolled
                   ? 'bg-slate-100 border-slate-300 text-slate-900 hover:bg-slate-200'
@@ -312,7 +327,10 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
           <div className="flex items-center gap-2 lg:hidden">
             <button
               type="button"
-              onClick={() => setLangModalOpen(true)}
+              onClick={() => { setLangSearch(''); setLangModalOpen(true); }}
+              aria-haspopup="dialog"
+              aria-expanded={langModalOpen}
+              aria-label={lang === 'tr' ? 'Dili değiştir' : 'Change language'}
               className={`min-h-11 min-w-14 touch-manipulation p-2.5 rounded-2xl border font-bold flex items-center justify-center gap-1.5 ${
                 isScrolled
                   ? 'bg-slate-100 border-slate-300 text-slate-900'
@@ -330,6 +348,8 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
                 isScrolled ? 'text-slate-950 bg-slate-100' : 'text-white bg-white/10'
               }`}
               aria-label="Toggle Navigation Menu"
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -337,10 +357,10 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
         </div>
       </div>
 
-      {/* 25 Languages Global Modal / Selector */}
+      {/* Language selector */}
       {langModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-lg animate-fade-in">
-          <div className="bg-white w-full max-w-3xl rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90vh]">
+        <div onClick={(event) => { if (event.target === event.currentTarget) closeLanguageDialog(); }} className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-lg animate-fade-in">
+          <div ref={languageDialogRef} role="dialog" aria-modal="true" aria-labelledby="language-dialog-title" tabIndex={-1} className="bg-white w-full max-w-3xl rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90vh]">
             {/* Modal Header */}
             <div className="px-6 py-5 bg-gradient-to-r from-slate-950 via-emerald-950 to-slate-950 text-white flex items-center justify-between border-b border-emerald-800/40">
               <div className="flex items-center gap-3">
@@ -348,7 +368,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
                   <Globe className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-base sm:text-lg font-black text-white">
+                  <h3 id="language-dialog-title" className="text-base sm:text-lg font-black text-white">
                     Select Your Language / Dil Seçiniz
                   </h3>
                   <p className="text-xs text-amber-300">
@@ -359,6 +379,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
               <button
                 type="button"
                 onClick={() => setLangModalOpen(false)}
+                aria-label={lang === 'tr' ? 'Dil seçimini kapat' : 'Close language selector'}
                 className="min-h-11 min-w-11 rounded-full bg-white/10 hover:bg-white/25 flex items-center justify-center text-white transition-colors touch-manipulation"
               >
                 <X className="w-4 h-4" />
@@ -370,6 +391,8 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
               <div className="relative">
                 <Search className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
                 <input
+                  data-dialog-autofocus
+                  aria-label={lang === 'tr' ? 'Dil ara' : 'Search languages'}
                   type="text"
                   value={langSearch}
                   onChange={(e) => setLangSearch(e.target.value)}
@@ -442,7 +465,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-slate-950/98 backdrop-blur-2xl border-b border-emerald-900/40 px-6 py-6 space-y-4 animate-fade-in text-white">
+        <nav id="mobile-navigation" aria-label={lang === 'tr' ? 'Mobil menü' : 'Mobile navigation'} className="lg:hidden bg-slate-950/98 backdrop-blur-2xl border-b border-emerald-900/40 px-6 py-6 space-y-4 animate-fade-in text-white">
           <div className="flex flex-col space-y-3 text-sm font-bold divide-y divide-white/10">
             <Link
               href={`/${lang}/`}
@@ -458,7 +481,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
               className="min-h-12 pt-3 pb-3 hover:text-emerald-400 flex items-center justify-between touch-manipulation"
             >
               <span>{t.products}</span>
-              <span className="text-emerald-400 text-xs">6 Produce</span>
+              <span className="text-emerald-400 text-xs">{productsData.length}</span>
             </Link>
             <Link
               href={`/${lang}/harvest-calendar/`}
@@ -523,7 +546,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
               {t.requestQuote}
             </button>
           </div>
-        </div>
+        </nav>
       )}
     </header>
   );

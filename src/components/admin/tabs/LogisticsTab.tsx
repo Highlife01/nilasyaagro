@@ -1,20 +1,7 @@
 'use client';
 
 import React from 'react';
-import { 
-  Ship, 
-  ThermometerSnowflake, 
-  MapPin, 
-  Clock, 
-  CheckCircle2, 
-  Anchor, 
-  ArrowRight, 
-  AlertTriangle,
-  Activity,
-  Layers,
-  ShieldCheck,
-  RefreshCw
-} from 'lucide-react';
+import { Ship, Thermometer, MapPin, CheckCircle2, Anchor, ArrowRight, RefreshCw } from 'lucide-react';
 import { ExportContainer } from '@/lib/adminAuth';
 
 interface LogisticsTabProps {
@@ -49,10 +36,10 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-black text-slate-950 tracking-tight">
-            Lojistik & Soğuk Zincir Radarı
+            Lojistik & Konteyner Radarı
           </h1>
           <p className="text-xs text-slate-500 mt-1">
-            Mersin ve İzmir limanlarından çıkan reefer konteynerlerin anlık sıcaklık takibi, gemi rotaları ve tahmini varış (ETA) süreleri.
+            Mersin Uluslararası Limanı çıkışlı FCL konteynerlerin sevkiyat takibi, gemi rotaları ve tahmini varış (ETA) süreleri.
           </p>
         </div>
 
@@ -79,13 +66,13 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
         </div>
         <div className="bg-emerald-50/80 border border-emerald-300 rounded-2xl p-4 shadow-xs">
           <div className="text-[11px] font-bold text-emerald-800 uppercase tracking-wider">Aşama 3 (Aktif)</div>
-          <div className="text-sm font-bold text-slate-950 mt-1">Reefer Deniz Transit</div>
+          <div className="text-sm font-bold text-slate-950 mt-1">FCL Konteyner Deniz Transit</div>
           <div className="text-xs text-amber-800 font-bold mt-1">{inTransitCount} Konteyner Rota Seyrinde</div>
         </div>
         <div className="bg-white border border-slate-200/80 rounded-2xl p-4 shadow-xs">
           <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Aşama 4</div>
           <div className="text-sm font-bold text-slate-900 mt-1">Hedef Liman & Dağıtım</div>
-          <div className="text-xs text-emerald-700 font-bold mt-1">Eylül Teslimat Başarısı: %100</div>
+          <div className="text-xs text-emerald-700 font-bold mt-1">Sevkiyat Başarısı: %100</div>
         </div>
       </div>
 
@@ -118,7 +105,7 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
                       Taşıyıcı: <span className="text-slate-800 font-semibold">{c.carrier}</span> • Booking: <span className="font-mono text-emerald-700 font-bold">{c.bookingRef}</span>
                     </div>
                     <div className="text-xs text-slate-900 font-bold mt-1">
-                      Kargo: {c.produce} ({c.tonnage} MT / 40ft High Cube Reefer)
+                      Kargo: {c.produce} ({c.tonnage} MT / 40ft Kuru Yük FCL)
                     </div>
                   </div>
                 </div>
@@ -126,11 +113,11 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
                 {/* Right: Telemetry indicators */}
                 <div className="flex flex-wrap items-center gap-4 bg-slate-50 p-3.5 rounded-2xl border border-slate-200/80 self-start lg:self-center">
                   <div className="flex items-center gap-2">
-                    <ThermometerSnowflake className="w-4 h-4 text-cyan-600" />
+                    <Thermometer className="w-4 h-4 text-emerald-600" />
                     <div>
-                      <div className="text-[10px] text-slate-500 uppercase font-semibold">Set / Anlık Isı</div>
+                      <div className="text-[10px] text-slate-500 uppercase font-semibold">Havalandırma / Sıcaklık</div>
                       <div className="text-xs font-mono font-bold text-slate-900">
-                        {c.setTemperature} <span className="text-cyan-700">({c.currentTemperature})</span>
+                        {c.setTemperature} <span className="text-emerald-700">({c.currentTemperature})</span>
                       </div>
                     </div>
                   </div>
@@ -146,7 +133,7 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
 
                   <div className="flex items-center gap-1.5 text-xs text-emerald-700 font-bold">
                     <CheckCircle2 className="w-4 h-4" />
-                    <span>Soğuk Zincir Tam</span>
+                    <span>Nem & Ambalaj Güvenli</span>
                   </div>
                 </div>
               </div>

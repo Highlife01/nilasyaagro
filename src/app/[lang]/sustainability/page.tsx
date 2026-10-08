@@ -5,7 +5,8 @@ import { ClientCalendarWrapper } from '../harvest-calendar/ClientCalendarWrapper
 import type { Metadata } from 'next';
 import { Leaf, Droplets, Sun, Recycle } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
-import { localizedSeoDescription } from '@/data/seo';
+import { localizedPageDescription } from '@/data/seo';
+import { pageMetadata } from '@/lib/metadata';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -22,10 +23,7 @@ export async function generateMetadata({
   const lang = resolvedParams.lang as Locale;
   const t = getTranslations(lang);
 
-  return {
-    title: t.nav.sustainability,
-    description: localizedSeoDescription(lang, t.nav.sustainability),
-  };
+  return pageMetadata(lang, 'sustainability', t.nav.sustainability, localizedPageDescription(lang, 'sustainability', t.nav.sustainability));
 }
 
 export default async function SustainabilityPage({

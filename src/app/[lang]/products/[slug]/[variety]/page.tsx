@@ -5,7 +5,10 @@ import { supportedLanguages } from '@/data/languages';
 import { Locale } from '@/types';
 import { ClientVarietyWrapper } from './ClientVarietyWrapper';
 import type { Metadata } from 'next';
-import { company } from '@/data/company';
+import { localizedAlternates, pageMetadata } from '@/lib/metadata';
+import { breadcrumbSchema, productSchema, serializeJsonLd } from '@/lib/structuredData';
+import { getTranslations } from '@/data/translations';
+import { getLocalizedVariety } from '@/lib/localizedContent';
 
 export function generateStaticParams() {
   const params: { lang: string; slug: string; variety: string }[] = [];
@@ -48,7 +51,7 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: 'Variety Not Found | Nilasya Agro Foods',
+      title: 'Variety Not Found',
     };
   }
 
@@ -61,60 +64,20 @@ export async function generateMetadata({
 
   if (!variety) {
     return {
-      title: 'Variety Not Found | Nilasya Agro Foods',
+      title: 'Variety Not Found',
     };
   }
 
-  const isTr = lang === 'tr';
+  const translatedVariety = getLocalizedVariety(variety, lang);
   const productName = product.name[lang] || product.name.en || product.id;
-  const varietyName = isTr ? (variety.nameTr || variety.name) : variety.name;
-  const varietyDesc = isTr ? (variety.descriptionTr || variety.description) : variety.description;
-  const metaTitle = `${varietyName} (${productName}) | Nilasya Agro Foods Export`;
-  const metaDesc = isTr
-    ? `${varietyName} ihracat şartnamesi, kalibre boylama, soğuk hava depolama ve toptan sevkiyat parametreleri. Nilasya Agro Foods güvencesiyle Türkiye'den dünya pazarlarına.`
-    : `Official export specifications, sizing, cold chain storage, and wholesale supply for ${varietyName} from Türkiye. Sourced by Nilasya Agro Foods.`;
-
-  const languageAlternates: Record<string, string> = {
-    'x-default': `${company.baseUrl}/en/products/${product.slug.en || product.id}/${varietySlug}/`,
-  };
-
-  supportedLanguages.forEach((l) => {
-    const s = product.slug[l.code] || product.slug.en || product.id;
-    languageAlternates[l.code] = `${company.baseUrl}/${l.code}/products/${s}/${varietySlug}/`;
+  const varietyName = lang === 'tr' ? translatedVariety.nameTr || translatedVariety.name : translatedVariety.name;
+  const description = lang === 'tr' ? translatedVariety.descriptionTr || translatedVariety.description : translatedVariety.description;
+  const path = `products/${productSlug}/${varietySlug}`;
+  const translatedPaths = Object.fromEntries(supportedLanguages.map(({ code }) => [code, `products/${product.slug[code] || product.slug.en || product.id}/${varietySlug}`]));
+  return pageMetadata(lang, path, `${varietyName} (${productName})`, description, {
+    alternates: localizedAlternates(lang, path, undefined, translatedPaths),
+    openGraph: { images: [{ url: variety.image || variety.heroImage || product.heroImage, alt: varietyName }] },
   });
-
-  const heroImg = variety.image || variety.heroImage || product.heroImage;
-
-  return {
-    title: metaTitle,
-    description: metaDesc,
-    keywords: [
-      varietyName,
-      `${varietyName} export`,
-      `${varietyName} supplier Turkey`,
-      `${productName} varieties`,
-      'Turkish pulses & grains export',
-      'Nilasya Agro Foods',
-      variety.color,
-      variety.brix,
-    ].filter((k): k is string => Boolean(k)),
-    alternates: {
-      canonical: `${company.baseUrl}/${lang}/products/${productSlug}/${varietySlug}/`,
-      languages: languageAlternates,
-    },
-    openGraph: {
-      title: `${varietyName} | Nilasya Agro Foods`,
-      description: metaDesc,
-      images: [
-        {
-          url: heroImg,
-          width: 1200,
-          height: 630,
-          alt: `${varietyName} Turkish Export Produce - Nilasya Agro Foods`,
-        },
-      ],
-    },
-  };
 }
 
 export default async function VarietyDetailPage({
@@ -146,44 +109,25 @@ export default async function VarietyDetailPage({
     notFound();
   }
 
-  const isTr = lang === 'tr';
+  const translatedVariety = getLocalizedVariety(variety, lang);
   const productName = product.name[lang] || product.name.en || product.id;
-  const varietyName = isTr ? (variety.nameTr || variety.name) : variety.name;
-  const varietyDesc = isTr ? (variety.descriptionTr || variety.description) : variety.description;
-  const heroImg = variety.image || variety.heroImage || product.heroImage;
-
-  // Schema.org Product JSON-LD for rich snippets
-  const varietyJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: `${varietyName} - ${productName} (Turkish Export Produce)`,
-    image: `${company.baseUrl}${heroImg}`,
-    description: varietyDesc,
-    sku: `NG-${product.id.toUpperCase()}-${(variety.id || varietySlug).toUpperCase()}`,
-    category: product.category[lang] || product.category.en,
-    brand: {
-      '@type': 'Brand',
-      name: 'Nilasya Agro Foods',
-    },
-    offers: {
-      '@type': 'AggregateOffer',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      itemCondition: 'https://schema.org/NewCondition',
-      seller: {
-        '@type': 'Organization',
-        name: 'Nilasya Agro Foods',
-      },
-    },
-  };
+  const varietyName = lang === 'tr' ? translatedVariety.nameTr || translatedVariety.name : translatedVariety.name;
+  const t = getTranslations(lang);
+  const varietyJsonLd = productSchema(product, lang, translatedVariety);
+  const breadcrumbJsonLd = breadcrumbSchema(lang, [
+    { name: t.nav.products, path: 'products' },
+    { name: productName, path: `products/${productSlug}` },
+    { name: varietyName, path: `products/${productSlug}/${varietySlug}` },
+  ]);
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(varietyJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(varietyJsonLd) }}
       />
-      <ClientVarietyWrapper product={product} variety={variety} lang={lang} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbJsonLd) }} />
+      <ClientVarietyWrapper product={product} variety={translatedVariety} lang={lang} />
     </>
   );
 }

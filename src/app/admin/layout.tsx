@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Süper Admin Paneli | Nilasya Agro Foods Tarım İhracat',
+  title: 'Süper Admin Paneli',
   description: 'Nilasya Agro Foods kurumsal yönetim, ihracat talepleri ve lojistik kontrol merkezi.',
   robots: {
     index: false,

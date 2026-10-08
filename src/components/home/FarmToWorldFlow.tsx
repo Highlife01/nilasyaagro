@@ -7,7 +7,7 @@ import {
   FlaskConical, 
   ScanLine, 
   PackageCheck, 
-  Snowflake, 
+  Warehouse, 
   Ship, 
   CheckCircle2, 
   Sparkles,
@@ -25,7 +25,7 @@ export const FarmToWorldFlow: React.FC<{ lang: Locale }> = ({ lang }) => {
     FlaskConical,
     ScanLine,
     PackageCheck,
-    Snowflake,
+    Warehouse,
     Ship,
     CheckCircle2,
   ];

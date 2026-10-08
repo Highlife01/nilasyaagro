@@ -57,7 +57,7 @@ export const ClientProductWrapper: React.FC<ClientProductWrapperProps> = ({ prod
         {/* Packaging Options & Container Capacities */}
         <ProductPackaging product={product} lang={lang} />
 
-        {/* Cold Chain & Logistics */}
+        {/* Storage Silos & Ocean Logistics */}
         <ProductLogistics product={product} lang={lang} />
 
         {/* B2B FAQ */}

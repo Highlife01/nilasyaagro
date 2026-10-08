@@ -1,6 +1,7 @@
 export const company = {
   name: 'Nilasya Agro Foods',
-  legalName: 'Nilasya Agro Foods Tarım Ürünleri Dış Ticaret Ltd. Şti.',
+  brandName: 'Nilasya Agro Foods',
+  legalName: 'NİLASYA GLOBAL TARIM İTHALAT VE İHRACAT LİMİTED ŞİRKETİ',
   baseUrl: 'https://www.nilasyaagrofoods.com.tr',
   domain: 'nilasyaagrofoods.com.tr',
   email: 'export@nilasyaagrofoods.com.tr',
@@ -8,12 +9,24 @@ export const company = {
   phoneDisplay: '+90 533 684 01 75',
   phoneE164: '+905336840175',
   whatsappNumber: '905336840175',
-  headquarters: 'Mersin International Port Logistics Zone & Akdeniz, Mersin / Türkiye',
+  taxOffice: 'Çukurova Vergi Dairesi',
+  headquarters: 'Toros Mah. Barış Manço Bulvarı, Çukurova / Adana / Türkiye',
+  exportTerminal: 'Mersin Uluslararası Liman Bölgesi (MIP) & Akdeniz Serbest Bölge, Mersin / Türkiye',
   hubLocations: [
-    'Mersin Optical Sorting, Milling & Export Terminal',
+    'Mersin Optical Sorting, Milling & Container Export Terminal',
+    'Adana & Çukurova Agricultural Trade & Financial Desk',
     'Konya & Central Anatolian Pulses Aggregation Center',
-    'Gaziantep & Southeast Anatolia Lentil Processing Hub'
+    'Gaziantep & Southeast Anatolia Lentil Milling Hub'
   ],
+  bankDetails: {
+    bankName: 'Türkiye Halk Bankası A.Ş.',
+    branchName: '1373 / Çukurova Şubesi / Adana',
+    accountNo: '53100308',
+    iban: 'TR560001200137300053100308',
+    accountName: 'NİLASYA GLOBAL TARIM İTHALAT VE İHRACAT LİMİTED ŞİRKETİ',
+    swiftCode: 'TRHBTR2A',
+    currencies: 'USD / EUR / TRY (Multi-Currency Export Account)',
+  },
   linkedin: 'https://www.linkedin.com/company/nilasyaagrofoods',
 } as const;
 
@@ -27,4 +40,3 @@ export function formatInquiry(title: string, fields: Record<string, unknown>) {
     .map(([label, value]) => `*${label}:* ${String(value).trim()}`);
   return [`*${title}*`, '', ...lines, '', `Source: ${company.baseUrl}`].join('\n');
 }
-

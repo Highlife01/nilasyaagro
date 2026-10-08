@@ -2,20 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Clock, 
-  ShieldCheck, 
-  CheckCircle2, 
-  MessageCircle,
-  Globe,
-  BookOpen,
-  ArrowRight,
-  Sparkles,
-  Lock
-} from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, ShieldCheck, CheckCircle2, MessageCircle, Globe, BookOpen, ArrowRight, Sparkles } from 'lucide-react';
 import { Locale } from '@/types';
 import { getTranslations } from '@/data/translations';
 import { productsData } from '@/data/products';
@@ -287,10 +274,6 @@ export const Footer: React.FC<FooterProps> = ({ lang, onOpenQuote }) => {
             <a href="/sitemap.xml" className="hover:text-white transition-colors" target="_blank">
               sitemap.xml
             </a>
-            <Link href="/admin/" className="hover:text-emerald-400 text-slate-500 hover:text-slate-300 transition-colors flex items-center gap-1 opacity-75 hover:opacity-100" title="Süper Admin Paneli">
-              <Lock className="w-3 h-3" />
-              <span>Admin</span>
-            </Link>
           </div>
         </div>
       </div>

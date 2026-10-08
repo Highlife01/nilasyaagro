@@ -6,9 +6,11 @@ import { Locale } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Clock, User, Calendar, ArrowLeft, Tag } from 'lucide-react';
-import { ClientCalendarWrapper } from '../../harvest-calendar/ClientCalendarWrapper';
 import type { Metadata } from 'next';
-import { localizedAlternates } from '@/lib/metadata';
+import { pageMetadata, localizedUrl } from '@/lib/metadata';
+import { breadcrumbSchema, organizationId, serializeJsonLd } from '@/lib/structuredData';
+import { getTranslations } from '@/data/translations';
+import { MarkdownContent } from '@/components/common/MarkdownContent';
 import { getPageTranslations } from '@/data/pageTranslations';
 import { company } from '@/data/company';
 
@@ -38,17 +40,9 @@ export async function generateMetadata({
     return { title: `Article Not Found | ${company.name}` };
   }
 
-  return {
-    title: article.title[lang] || article.title.en,
-    description: article.excerpt[lang] || article.excerpt.en,
-    alternates: localizedAlternates(lang, `insights/${slug}`),
-    robots: { index: true, follow: true },
-    openGraph: {
-      title: article.title[lang] || article.title.en,
-      description: article.excerpt[lang] || article.excerpt.en,
-      images: [{ url: article.image }],
-    },
-  };
+  return pageMetadata(lang, `insights/${slug}`, article.title[lang] || article.title.en, article.excerpt[lang] || article.excerpt.en, {
+    openGraph: { type: 'article', publishedTime: article.publishedAt, modifiedTime: article.updatedAt, images: [{ url: article.image, alt: article.title[lang] || article.title.en }] },
+  });
 }
 
 export default async function InsightDetailPage({
@@ -67,35 +61,29 @@ export default async function InsightDetailPage({
   const title = article.title[lang] || article.title.en;
   const content = article.content[lang] || article.content.en;
 
+  const url = localizedUrl(lang, `insights/${slug}`);
+  const t = getTranslations(lang);
   const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: title,
-    image: `${company.baseUrl}${article.image}`,
-    author: {
-      '@type': 'Organization',
-      name: 'Nilasya Agro Foods Export Desk',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Nilasya Agro Foods',
-      logo: {
-        '@type': 'ImageObject',
-        url: `${company.baseUrl}/images/hero/hero-orchard-panoramic.webp`,
-      },
-    },
-    datePublished: article.publishedAt,
-    dateModified: article.updatedAt,
+    '@context': 'https://schema.org', '@type': 'Article', '@id': `${url}#article`,
+    headline: title, image: `${company.baseUrl}${article.image}`,
+    url, mainEntityOfPage: { '@type': 'WebPage', '@id': url }, inLanguage: lang,
+    author: { '@type': 'Organization', name: article.author, url: company.baseUrl },
+    publisher: { '@id': organizationId },
+    datePublished: article.publishedAt, dateModified: article.updatedAt,
     description: article.excerpt[lang] || article.excerpt.en,
   };
+  const breadcrumbs = breadcrumbSchema(lang, [
+    { name: t.nav.insights, path: 'insights' }, { name: title, path: `insights/${slug}` },
+  ]);
 
   return (
     <article className="pt-28 pb-20 bg-white min-h-screen">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleJsonLd) }}
       />
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-6">
           <Link
@@ -142,8 +130,8 @@ export default async function InsightDetailPage({
           />
         </div>
 
-        <div className="prose prose-slate max-w-none prose-headings:font-bold prose-headings:text-slate-900 prose-p:text-slate-700 prose-p:leading-relaxed prose-li:text-slate-700 whitespace-pre-line text-sm sm:text-base">
-          {content}
+        <div className="prose prose-slate max-w-none prose-headings:font-bold prose-headings:text-slate-900 prose-p:text-slate-700 prose-p:leading-relaxed prose-li:text-slate-700 text-sm sm:text-base">
+          <MarkdownContent content={content} />
         </div>
 
         <div className="mt-12 pt-6 border-t border-slate-200 flex flex-wrap items-center gap-2">
@@ -159,7 +147,11 @@ export default async function InsightDetailPage({
         </div>
       </div>
 
-      <ClientCalendarWrapper lang={lang} />
+      <aside className="max-w-4xl mx-auto mt-12 px-4 sm:px-6 lg:px-8">
+        <Link href={`/${lang}/quote/`} className="inline-flex rounded-xl bg-emerald-900 px-6 py-3 text-sm font-bold text-white hover:bg-emerald-800">
+          {t.nav.requestQuote}
+        </Link>
+      </aside>
     </article>
   );
 }

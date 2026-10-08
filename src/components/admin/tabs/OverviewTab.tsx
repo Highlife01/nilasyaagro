@@ -1,23 +1,7 @@
 'use client';
 
 import React from 'react';
-import { 
-  TrendingUp, 
-  Package, 
-  DollarSign, 
-  Globe2, 
-  ThermometerSnowflake, 
-  ArrowUpRight, 
-  Clock, 
-  CheckCircle2, 
-  AlertCircle,
-  FileText,
-  Ship,
-  Sparkles,
-  ExternalLink,
-  PhoneCall,
-  Activity
-} from 'lucide-react';
+import { TrendingUp, DollarSign, ThermometerSnowflake, ArrowUpRight, Clock, CheckCircle2, FileText, Ship, Sparkles, ExternalLink, PhoneCall, Activity } from 'lucide-react';
 import { RFQSubmission } from '@/types';
 import { ExportContainer, ProductStockControl } from '@/lib/adminAuth';
 
@@ -32,7 +16,6 @@ interface OverviewTabProps {
 export const OverviewTab: React.FC<OverviewTabProps> = ({
   rfqs,
   containers,
-  stocks,
   currency,
   onNavigateToTab,
 }) => {
@@ -84,7 +67,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
               Hoş Geldiniz, Cebrail Bey
             </h1>
             <p className="text-sm text-slate-600 mt-1 max-w-2xl">
-              Uluslararası yaş meyve & sebze ihracat operasyonları, 25 dilli portal üzerinden gelen kurumsal B2B talepleri ve soğuk hava lojistik radarı aktif durumda.
+              Uluslararası bakliyat ve hububat ihracat operasyonları, 30 dilli portal üzerinden gelen kurumsal B2B talepleri ve Mersin Limanı konteyner lojistik radarı aktif durumda.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">
@@ -149,7 +132,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
         {/* Card 3: Logistics in Transit */}
         <div className="bg-white border border-slate-200/80 rounded-2xl p-5 hover:border-amber-400/80 hover:shadow-md transition-all group shadow-xs">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Seyirdeki Reefer Hacmi</span>
+            <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Seyirdeki FCL Hacmi</span>
             <div className="w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-700 group-hover:scale-110 transition-transform">
               <Ship className="w-5 h-5" />
             </div>
@@ -160,15 +143,15 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
             </div>
             <div className="flex items-center gap-1.5 text-xs text-amber-700 font-semibold mt-1">
               <Activity className="w-3.5 h-3.5" />
-              <span>{inTransitContainers} konteyner rotada (Sıcaklık OK)</span>
+              <span>{inTransitContainers} konteyner rotada (Nem & Ambalaj Güvenli)</span>
             </div>
           </div>
         </div>
 
-        {/* Card 4: Cold Chain Health */}
+        {/* Card 4: Silo & Terminal Capacity */}
         <div className="bg-white border border-slate-200/80 rounded-2xl p-5 hover:border-teal-400/80 hover:shadow-md transition-all group shadow-xs">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">ULO Soğuk Hava Deposu</span>
+            <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Mersin Silo Kapasitesi</span>
             <div className="w-9 h-9 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-700 group-hover:scale-110 transition-transform">
               <ThermometerSnowflake className="w-5 h-5" />
             </div>
@@ -179,7 +162,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
             </div>
             <div className="flex items-center gap-1.5 text-xs text-teal-700 font-semibold mt-1">
               <CheckCircle2 className="w-3.5 h-3.5" />
-              <span>-0.5°C / %94 Nem — ULO Dengeli</span>
+              <span>&lt;%14 Nem — Sortex & Silo Güvenli</span>
             </div>
           </div>
         </div>
@@ -195,7 +178,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
                 Aylık İhracat Hacmi & Sevk Trendi (2026)
               </h2>
               <p className="text-xs text-slate-500">
-                Mersin ve İzmir limanları çıkışlı doğrudan reefer gemi ve karayolu sevkiyatları (Metrik Ton)
+                Mersin Uluslararası Limanı çıkışlı FCL konteyner ve dökme deniz sevkiyatları (Metrik Ton)
               </p>
             </div>
             <div className="flex items-center gap-2 text-xs font-semibold">
@@ -361,7 +344,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
 
             <div className="space-y-3">
               <a
-                href="https://wa.me/905324108855"
+                href="https://wa.me/905336840175"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3 px-4 rounded-xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-emerald-800 font-bold text-xs flex items-center justify-between transition-all"

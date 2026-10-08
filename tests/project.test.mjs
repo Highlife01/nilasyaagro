@@ -18,7 +18,7 @@ await run('forms use a real WhatsApp handoff and no fake timer', async () => {
     '../src/components/rfq/RFQModal.tsx',
   ]) {
     const source = await readFile(new URL(path, import.meta.url), 'utf8');
-    assert.match(source, /createWhatsAppUrl/u);
+    assert.match(source, /whatsappHref/u);
     assert.doesNotMatch(source, /setTimeout\s*\(/u);
   }
 });

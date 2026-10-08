@@ -1,17 +1,7 @@
 'use client';
 
 import React from 'react';
-import { 
-  BookOpen, 
-  ExternalLink, 
-  Sparkles, 
-  CheckCircle2, 
-  Globe, 
-  TrendingUp, 
-  Clock, 
-  Tag, 
-  Search 
-} from 'lucide-react';
+import { ExternalLink, Sparkles, CheckCircle2, Clock } from 'lucide-react';
 import Link from 'next/link';
 import { insightArticles } from '@/data/insights';
 
@@ -58,7 +48,7 @@ export const InsightsTab: React.FC = () => {
 
       {/* Articles Grid */}
       <div className="space-y-4">
-        {insightArticles.map((article, index) => (
+        {insightArticles.map((article) => (
           <div
             key={article.slug}
             className="bg-white border border-slate-200/80 rounded-3xl p-6 hover:border-emerald-300 hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-xs"

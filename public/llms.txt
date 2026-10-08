@@ -1,108 +1,38 @@
-# Nilasya Agro Foods — AI & LLM Machine-Readable Overview
+# Nilasya Agro Foods
 
-> Nilasya Agro Foods is an enterprise Turkish grower, processor, and direct exporter of premium pulses, grains, and agricultural commodities (Kabuli Chickpeas, Turkish Red Lentils, Green Lentils, Dermason White Beans, Dry Peas, Durum Wheat, and Bulgur). Operating from Mersin Port and Central Anatolian agricultural basins, Nilasya Agro Foods supplies international supermarket brands, canned food manufacturers, wholesalers, and bulk commodity importers worldwide with Sortex optical cleaning, custom packaging, and strict food safety compliance.
+> Turkish B2B supplier and exporter of pulses, grains and agricultural commodities. Product specifications and trade information are available on the official pages below.
 
-- Brand Name: Nilasya Agro Foods
-- Legal Entity: Nilasya Agro Foods Tarım Ürünleri Dış Ticaret Ltd. Şti.
-- Official Website: https://www.nilasyaagrofoods.com.tr
-- Core Industry: B2B Pulses, Grains & Agricultural Commodities Trading / Commercial Export
-- Country of Origin: Türkiye (Turkey)
-- Slogan: "Premium Turkish Pulses & Grains. Delivered Worldwide."
-- Operations & Facilities: Mersin International Port Logistics Zone, Konya Pulses Hub, Gaziantep Milling Center, İzmir Export Hub
-- Official Export Desk WhatsApp / Phone: +90 533 684 01 75
-- Official B2B Email: export@nilasyaagrofoods.com.tr
-- Full Extended AI Knowledge Base: https://www.nilasyaagrofoods.com.tr/llms-full.txt
-- XML Sitemap: https://www.nilasyaagrofoods.com.tr/sitemap.xml
+## Company and contact
 
----
+- Brand: Nilasya Agro Foods
+- Legal entity: NİLASYA GLOBAL TARIM İTHALAT VE İHRACAT LİMİTED ŞİRKETİ
+- Website: https://www.nilasyaagrofoods.com.tr
+- Trade desk: Toros Mah. Barış Manço Bulvarı, Çukurova / Adana / Türkiye
+- Email: export@nilasyaagrofoods.com.tr
+- Telephone / WhatsApp: +90 533 684 01 75
 
-## 30 Supported Multilingual Portals
-Nilasya Agro Foods operates localized B2B portals across 30 international languages:
+## Product catalogue
 
-- [Türkçe İhracat Portalı](https://www.nilasyaagrofoods.com.tr/tr/): Türkiye'den bakliyat ve hububat ihracatı
-- [English B2B Portal](https://www.nilasyaagrofoods.com.tr/en/): International B2B pulses and grains wholesale trade portal
-- [العربية](https://www.nilasyaagrofoods.com.tr/ar/): تصدير البقوليات والحبوب التركية الفاخرة (حمص، عدس أحمر، فاصوليا بيضاء)
-- [Русский](https://www.nilasyaagrofoods.com.tr/ru/): Экспорт турецких бобовых и зерновых культур (нут, чечевица, фасоль)
-- [Deutsch](https://www.nilasyaagrofoods.com.tr/de/): Türkischer Exporteur von Hülsenfrüchten und Getreide
-- [Français](https://www.nilasyaagrofoods.com.tr/fr/): Exportateur de légumineuses et céréales de Turquie
-- [Español](https://www.nilasyaagrofoods.com.tr/es/): Exportador turco de legumbres y cereales al por mayor
-- [Italiano](https://www.nilasyaagrofoods.com.tr/it/): Esportatore di legumi e cereali dalla Turchia
-- [Português](https://www.nilasyaagrofoods.com.tr/pt/): Exportador de leguminosas e grãos da Turquia
-- [Nederlands](https://www.nilasyaagrofoods.com.tr/nl/): Exporteur van peulvruchten en granen uit Turkije
-- [Polski](https://www.nilasyaagrofoods.com.tr/pl/): Eksporter roślin strączkowych i zbóż z Turcji
-- [Română](https://www.nilasyaagrofoods.com.tr/ro/): Exportator de leguminoase și cereale din Turcia
-- [Български](https://www.nilasyaagrofoods.com.tr/bg/): Износител на бобови и зърнени култури от Турция
-- [Ελληνικά](https://www.nilasyaagrofoods.com.tr/el/): Εξαγωγέας οσπρίων και δημητριακών από την Τουρκία
-- [Srpski](https://www.nilasyaagrofoods.com.tr/sr/): Izvoznik mahunarki i žitarica iz Turske
-- [Українська](https://www.nilasyaagrofoods.com.tr/uk/): Експорт турецьких бобових і зернових культур
-- [ქართული](https://www.nilasyaagrofoods.com.tr/ka/): თურქული პარკოსნების და მარცვლეულის ექსპორტი
-- [Azərbaycan](https://www.nilasyaagrofoods.com.tr/az/): Türkiyədən paxlalılar və dənli bitkilər ixracı
-- [O'zbekcha](https://www.nilasyaagrofoods.com.tr/uz/): Turkiyadan dukkakli va don ekinlari eksporti
-- [Қазақша](https://www.nilasyaagrofoods.com.tr/kk/): Түркиядан бұршақ және астық дақылдарының экспорты
-- [فارسی](https://www.nilasyaagrofoods.com.tr/fa/): صادرات حبوبات و غلات درجه یک ترکیه
-- [हिन्दी](https://www.nilasyaagrofoods.com.tr/hi/): तुर्की दालों और अनाज का थोक निर्यात
-- [اردو](https://www.nilasyaagrofoods.com.tr/ur/): ترکی سے دالوں اور اناج کی بین الاقوامی برآمد
-- [বাংলা](https://www.nilasyaagrofoods.com.tr/bn/): তুরস্ক থেকে ডাল ও খাদ্যশস্য রপ্তানি
-- [简体中文](https://www.nilasyaagrofoods.com.tr/zh-cn/): 土耳其豆类和谷物出口贸易平台
-- [日本語](https://www.nilasyaagrofoods.com.tr/ja/): トルコ産豆類・穀物の輸出商社
-- [한국어](https://www.nilasyaagrofoods.com.tr/ko/): 터키산 두류 및 곡물 수출
-- [Bahasa Indonesia](https://www.nilasyaagrofoods.com.tr/id/): Eksportir kacang-kacangan dan biji-bijian Turki
-- [Bahasa Melayu](https://www.nilasyaagrofoods.com.tr/ms/): Pengeksport kekacang dan bijirin dari Turkiye
-- [Kiswahili](https://www.nilasyaagrofoods.com.tr/sw/): Msafirishaji wa mikunde na nafaka kutoka Uturuki
+- [Turkish Kabuli Chickpeas (Koçbaşı 7mm - 10mm)](https://www.nilasyaagrofoods.com.tr/en/products/chickpeas/): Grown in the high-altitude Central Anatolian plains (Konya, Karaman, Yozgat), Turkish Kabuli chickpeas are renowned for their plump round caliber, creamy texture, thin skin, and superior canning yield. Processed through state-of-the-art multi-stage Sortex optical sorters in Mersin.
+- [Turkish Red Lentils (Football & Split Sortex)](https://www.nilasyaagrofoods.com.tr/en/products/red-lentils/): Türkiye is the historic birthplace of red lentils. Renowned worldwide for their deep salmon-red hue, quick cooking time, velvety consistency, and rich plant protein (25%), our lentils are processed using multi-pass Sortex optical color sorters in Mersin.
+- [Turkish Green Lentils (Laird & Eston Type 5mm - 7mm)](https://www.nilasyaagrofoods.com.tr/en/products/green-lentils/): Cultivated in Central Anatolia (Yozgat, Çorum, Ankara), Turkish Green Lentils are known for their distinct earthy aroma, high dietary fiber, and ability to hold their shape during boiling without bursting. Calibrated in 5mm, 6mm, and 7mm sizes.
+- [Turkish Dry White Beans (Dermason, Horoz, Cannellini 8mm - 10mm)](https://www.nilasyaagrofoods.com.tr/en/products/white-beans/): Turkish Dermason white beans from Erzincan and Central Anatolia are internationally acclaimed as the finest dry beans in the world. Their paper-thin skin dissolves during cooking without splitting, producing a buttery, creamy texture ideal for canning, baked beans, and Mediterranean gastronomy.
+- [Yellow & Green Dry Peas (Whole & Split Sortex)](https://www.nilasyaagrofoods.com.tr/en/products/dry-peas/): High-grade dry yellow and green peas processed and split in Mersin. Valued by international food manufacturers for soup mixes, plant-based meat substitutes, protein isolates, and snack extrusion due to their uniform calibration and high protein (22%).
+- [Turkish Durum Wheat & Traditional Bulgur](https://www.nilasyaagrofoods.com.tr/en/products/durum-wheat-bulgur/): Anatolia is the ancestral cradle of durum wheat. Nilasya Agro Foods exports premium amber durum grain (high vitreousness, strong gluten, >13.5% protein) for semolina and pasta millers, alongside authentic parboiled Turkish bulgur (pilaf coarse, mid-coarse, fine köftelik) processed with clean artesian mountain water.
+- [Turkish Durum Wheat Pasta & Macaroni (100% Semolina)](https://www.nilasyaagrofoods.com.tr/en/products/pasta-macaroni/): Manufactured from 100% Anatolian hard amber durum wheat semolina. Premium export dry pasta (spaghetti, penne rigate, fusilli, elbow, farfalle) featuring vibrant golden amber color, outstanding cooking resistance, and superior al dente texture. Available in 500g, 2kg retail packs and private label OEM for global supermarket chains.
+- [Specialty Pulses & Seeds (Fava Beans, Black-Eyed Peas, Sesame, Sunflower)](https://www.nilasyaagrofoods.com.tr/en/products/other-pulses-seeds/): Expanding beyond core pulses, Nilasya Agro Foods exports broad beans (fava beans), black-eyed peas, sortex-cleaned white and golden sesame seeds, and Turkish confectionery sunflower seeds. All commodities are calibrated and certified for global food-service and snack manufacturing.
 
----
+## Buyer information
 
-## Core Product Categories
+- [Request an export quotation](https://www.nilasyaagrofoods.com.tr/en/quote/)
+- [Packaging](https://www.nilasyaagrofoods.com.tr/en/packaging/)
+- [Quality and traceability](https://www.nilasyaagrofoods.com.tr/en/quality/)
+- [Harvest calendar](https://www.nilasyaagrofoods.com.tr/en/harvest-calendar/)
+- [Export destinations](https://www.nilasyaagrofoods.com.tr/en/export/)
+- [Contact](https://www.nilasyaagrofoods.com.tr/en/contact/)
+- [Full catalogue context](https://www.nilasyaagrofoods.com.tr/llms-full.txt)
+- [XML sitemap](https://www.nilasyaagrofoods.com.tr/sitemap.xml)
 
-1. **Chickpeas (Nohut)**:
-   - Koçbaşı Kabuli Chickpeas (8mm, 9mm, 10mm caliber)
-   - Medium Kabuli Chickpeas (7mm - 8mm)
-   - Split Chickpeas (Chana Dal grade)
-   - Specs: Moisture max 12%, Sortex purity min 99.5%, Foreign matter max 0.2%, Broken seeds max 1.0%
+## Commercial context
 
-2. **Lentils (Mercimek)**:
-   - Turkish Red Football Lentils (Kırmızı Futbol Mercimek)
-   - Turkish Red Split Lentils (Kırmızı Yaprak Mercimek)
-   - Green Lentils (Yeşil Mercimek - Laird & Eston 5mm-7mm)
-   - Yellow Lentils & Brown/Pardina Lentils
-   - Specs: Moisture max 12%, Sortex purity min 99.8%, Broken max 0.5%, Foreign matter max 0.1%
-
-3. **Dry Beans (Kuru Fasulye)**:
-   - Dermason White Beans (8mm - 9mm)
-   - Horoz & Şeker White Beans
-   - Cannellini & Great Northern Beans
-   - Red Kidney Beans & Pinto Beans
-   - Specs: Moisture max 13%, Sortex purity min 99.5%, Foreign matter max 0.1%
-
-4. **Dry Peas (Kuru Bezelye)**:
-   - Yellow Whole Peas & Yellow Split Peas
-   - Green Whole Peas & Green Split Peas
-   - Specs: Moisture max 13%, Sortex purity min 99.5%
-
-5. **Grains, Cereals & Bulgur (Hububat & Bulgur)**:
-   - Durum Wheat (High vitreousness, min 13.5% protein)
-   - Milling Wheat & Feed Barley
-   - Turkish Bulgur (Pilaf Coarse Bulgur, Fine Meatball Bulgur)
-   - Yellow Corn / Maize
-
-6. **Other Pulses & Agricultural Seeds**:
-   - Broad Beans (Fava Beans / Bakla)
-   - Black-Eyed Peas (Börülce)
-   - Hulled & Natural White Sesame Seeds
-   - Confectionery Sunflower Seeds
-
----
-
-## Packaging & Logistics Solutions
-- 25 kg & 50 kg Polypropylene (PP) woven sacks (with optional PE inner lining)
-- 1,000 kg & 1,200 kg Big Bags (Jumbo Bags with bottom discharge spout)
-- 500g to 5kg Retail Kraft bags, Doypack, and Pillow packs
-- 20ft & 40ft Sea Bulk Container Liners (FCL sea freight)
-- Ocean shipping through Mersin International Port (MIP), Aegean ports (İzmir, Alsancak), and overland truck transport to Europe, CIS, and the Middle East.
-
----
-
-## Contact & Direct RFQ
-- Request an Export Quote: https://www.nilasyaagrofoods.com.tr/en/quote/
-- Official Email: export@nilasyaagrofoods.com.tr
-- Phone / WhatsApp: +90 533 684 01 75
+Specifications describe the published catalogue. Confirm the requested lot, origin, analytical results, documentation, availability, pricing and delivery terms with the trade desk. Transit times are estimates. These files provide reference context; they do not certify products or guarantee search visibility.

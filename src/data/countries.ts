@@ -64,7 +64,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Nilasya Agro Foods supplies German organic wholesalers, food processing plants, and packaging distributors with Sortex-cleaned Turkish chickpeas, red lentils, and white beans shipped in 25kg PP bags, 1,000kg Big Bags, and FCL containers directly from Mersin International Port.",
       "tr": "Nilasya Agro Foods, Almanya genelindeki toptancı gıda dağıtıcıları, paketleme tesisleri ve konserve fabrikalarına Mersin Uluslararası Limanı çıkışlı FCL konteynerler ve karayolu TIR seferleriyle Sortex temizliğinde Koçbaşı nohut, kırmızı mercimek ve Dermason kuru fasulye ihraç eder.",
-      "de": "Nilasya Agro Foods supplies German organic wholesalers, food processing plants, and packaging distributors with Sortex-cleaned Turkish chickpeas, red lentils, and white beans shipped in 25kg PP bags, 1,000kg Big Bags, and FCL containers directly from Mersin International Port.",
+      "de": "Nilasya Agro Foods liefert deutsche Bio-Großhändler, Lebensmittelverarbeitungsbetriebe und Verpackungsdistributoren Sortex gereinigte türkische Kichererbsen, rote Linsen und weiße Bohnen, die in 25kg PP Beuteln, 1,000kg Big Bags und FCL Behältern direkt aus Mersin International Port geliefert werden.",
       "fr": "Nilasya Agro Foods supplies German organic wholesalers, food processing plants, and packaging distributors with Sortex-cleaned Turkish chickpeas, red lentils, and white beans shipped in 25kg PP bags, 1,000kg Big Bags, and FCL containers directly from Mersin International Port.",
       "es": "Nilasya Agro Foods supplies German organic wholesalers, food processing plants, and packaging distributors with Sortex-cleaned Turkish chickpeas, red lentils, and white beans shipped in 25kg PP bags, 1,000kg Big Bags, and FCL containers directly from Mersin International Port.",
       "it": "Nilasya Agro Foods supplies German organic wholesalers, food processing plants, and packaging distributors with Sortex-cleaned Turkish chickpeas, red lentils, and white beans shipped in 25kg PP bags, 1,000kg Big Bags, and FCL containers directly from Mersin International Port.",
@@ -96,7 +96,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How does Nilasya Agro Foods export pulses to Germany? We dispatch regular FCL dry containers from Mersin Port to Hamburg and Bremen within 8-11 days and overland road trailers within 3-5 days, complete with EUR.1, Non-GMO, and ISO 22000 documentation.",
       "tr": "Nilasya Agro Foods Almanya'ya nasıl bakliyat ihraç ediyor? Mersin Limanı'ndan Hamburg ve Bremen limanlarına 8-11 günde konteyner, 3-5 günde doğrudan karayolu TIR sevkiyatı ile EUR.1 ve Non-GMO sertifikalı ürünler teslim ediyoruz.",
-      "de": "How does Nilasya Agro Foods export pulses to Germany? We dispatch regular FCL dry containers from Mersin Port to Hamburg and Bremen within 8-11 days and overland road trailers within 3-5 days, complete with EUR.1, Non-GMO, and ISO 22000 documentation.",
+      "de": "Wie exportiert Nilasya Agro Foods Hülsenfrüchte nach Deutschland? Wir versenden regelmäßig FCL Trockencontainer vom Mersin Hafen nach Hamburg und Bremen innerhalb von 8 bis 11 Tagen sowie Überland-Straßenanhänger innerhalb von 3 bis 5 Tagen, komplett mit EUR.1, Non-GMO und ISO 22000 Dokumentation.",
       "fr": "How does Nilasya Agro Foods export pulses to Germany? We dispatch regular FCL dry containers from Mersin Port to Hamburg and Bremen within 8-11 days and overland road trailers within 3-5 days, complete with EUR.1, Non-GMO, and ISO 22000 documentation.",
       "es": "How does Nilasya Agro Foods export pulses to Germany? We dispatch regular FCL dry containers from Mersin Port to Hamburg and Bremen within 8-11 days and overland road trailers within 3-5 days, complete with EUR.1, Non-GMO, and ISO 22000 documentation.",
       "it": "How does Nilasya Agro Foods export pulses to Germany? We dispatch regular FCL dry containers from Mersin Port to Hamburg and Bremen within 8-11 days and overland road trailers within 3-5 days, complete with EUR.1, Non-GMO, and ISO 22000 documentation.",
@@ -186,7 +186,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Supplying leading UK ethnic food distributors, canning manufacturers, and supermarket packers across London, Birmingham, and Manchester with high-protein Turkish pulses and durum wheat bulgur.",
       "tr": "İngiltere genelindeki gıda toptancıları, konserve üreticileri ve süpermarket tedarikçilerine Londra Gateway ve Felixstowe limanları üzerinden yüksek kaliteli Koçbaşı nohut, yaprak kırmızı mercimek ve Anadolu bulguru ihracatı.",
-      "de": "Supplying leading UK ethnic food distributors, canning manufacturers, and supermarket packers across London, Birmingham, and Manchester with high-protein Turkish pulses and durum wheat bulgur.",
+      "de": "Versorgung führender britischer ethnischer Lebensmittelhändler, Konservenhersteller und Supermarket-Verpacker in London, Birmingham und Manchester mit proteinreichen türkischen Hülsenfrüchten und Durumweizenbulgur.",
       "fr": "Supplying leading UK ethnic food distributors, canning manufacturers, and supermarket packers across London, Birmingham, and Manchester with high-protein Turkish pulses and durum wheat bulgur.",
       "es": "Supplying leading UK ethnic food distributors, canning manufacturers, and supermarket packers across London, Birmingham, and Manchester with high-protein Turkish pulses and durum wheat bulgur.",
       "it": "Supplying leading UK ethnic food distributors, canning manufacturers, and supermarket packers across London, Birmingham, and Manchester with high-protein Turkish pulses and durum wheat bulgur.",
@@ -218,7 +218,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "Does Nilasya Agro Foods export pulses to the UK? Yes, Nilasya Agro Foods exports 20ft/40ft dry containers of Kabuli chickpeas and red lentils to London Gateway and Felixstowe with full UK customs and phytosanitary clearance.",
       "tr": "Nilasya Agro Foods Birleşik Krallık'a bakliyat ihraç ediyor mu? Evet, Nilasya Agro Foods Londra Gateway ve Felixstowe limanlarına 9-12 günde FCL konteynerlerle Koçbaşı nohut ve kırmızı mercimek tedarik etmektedir.",
-      "de": "Does Nilasya Agro Foods export pulses to the UK? Yes, Nilasya Agro Foods exports 20ft/40ft dry containers of Kabuli chickpeas and red lentils to London Gateway and Felixstowe with full UK customs and phytosanitary clearance.",
+      "de": "Exportiert Nilasya Agro Foods Hülsenfrüchte in das Vereinigte Königreich? Ja, Nilasya Agro Foods exportiert 20ft/40ft Trockencontainer mit Kabuli-Kichererbsen und roten Linsen nach London Gateway und Felixstowe mit vollständiger UK-Zoll- und Pflanzenzertifizierung.",
       "fr": "Does Nilasya Agro Foods export pulses to the UK? Yes, Nilasya Agro Foods exports 20ft/40ft dry containers of Kabuli chickpeas and red lentils to London Gateway and Felixstowe with full UK customs and phytosanitary clearance.",
       "es": "Does Nilasya Agro Foods export pulses to the UK? Yes, Nilasya Agro Foods exports 20ft/40ft dry containers of Kabuli chickpeas and red lentils to London Gateway and Felixstowe with full UK customs and phytosanitary clearance.",
       "it": "Does Nilasya Agro Foods export pulses to the UK? Yes, Nilasya Agro Foods exports 20ft/40ft dry containers of Kabuli chickpeas and red lentils to London Gateway and Felixstowe with full UK customs and phytosanitary clearance.",
@@ -308,7 +308,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Supplying Europe’s major agricultural trading hub at the Port of Rotterdam with prime Turkish pulses in 25kg PP bags, 1,000kg Big Bags, and bulk container liners.",
       "tr": "Avrupa'nın en büyük lojistik ve ticaret kapısı olan Rotterdam Limanı üzerinden Hollanda ve Kuzeybatı Avrupa gıda dağıtım merkezlerine Sortex kalitesinde Türk nohut, mercimek ve fasulye sevkiyatı.",
-      "de": "Supplying Europe’s major agricultural trading hub at the Port of Rotterdam with prime Turkish pulses in 25kg PP bags, 1,000kg Big Bags, and bulk container liners.",
+      "de": "Versorgung des wichtigsten landwirtschaftlichen Handelszentrums Europas im Hafen von Rotterdam mit erstklassigen türkischen Hülsenfrüchten in 25kg PP-Säcken, 1,000kg Big Bags und Bulk-Container-Linern.",
       "fr": "Supplying Europe’s major agricultural trading hub at the Port of Rotterdam with prime Turkish pulses in 25kg PP bags, 1,000kg Big Bags, and bulk container liners.",
       "es": "Supplying Europe’s major agricultural trading hub at the Port of Rotterdam with prime Turkish pulses in 25kg PP bags, 1,000kg Big Bags, and bulk container liners.",
       "it": "Supplying Europe’s major agricultural trading hub at the Port of Rotterdam with prime Turkish pulses in 25kg PP bags, 1,000kg Big Bags, and bulk container liners.",
@@ -340,7 +340,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How to import Turkish pulses via Rotterdam? Nilasya Agro Foods provides weekly FCL container dispatches from Mersin to Rotterdam with complete EUR.1 and EU food safety certification.",
       "tr": "Rotterdam üzerinden Türk bakliyatı nasıl ithal edilir? Nilasya Agro Foods, Mersin'den Rotterdam'a 8-11 günde EUR.1 sertifikalı konteyner sevkiyatları gerçekleştirmektedir.",
-      "de": "How to import Turkish pulses via Rotterdam? Nilasya Agro Foods provides weekly FCL container dispatches from Mersin to Rotterdam with complete EUR.1 and EU food safety certification.",
+      "de": "Wie importiert man türkische Hülsenfrüchte über Rotterdam? Nilasya Agro Foods bietet wöchentliche FCL-Containerlieferungen von Mersin nach Rotterdam mit vollständiger EUR.1- und EU-Lebensmittelsicherheitszertifizierung.",
       "fr": "How to import Turkish pulses via Rotterdam? Nilasya Agro Foods provides weekly FCL container dispatches from Mersin to Rotterdam with complete EUR.1 and EU food safety certification.",
       "es": "How to import Turkish pulses via Rotterdam? Nilasya Agro Foods provides weekly FCL container dispatches from Mersin to Rotterdam with complete EUR.1 and EU food safety certification.",
       "it": "How to import Turkish pulses via Rotterdam? Nilasya Agro Foods provides weekly FCL container dispatches from Mersin to Rotterdam with complete EUR.1 and EU food safety certification.",
@@ -429,7 +429,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Direct high-volume pulses and grain supply to Russian federal retail distributors and industrial canneries via Black Sea direct maritime connections and overland corridors.",
       "tr": "Rusya Federasyonu genelindeki gıda sanayicileri ve toptancı dağıtım merkezlerine Karadeniz deniz hatları ve Kafkasya karayolu güzergahıyla yüksek tonajlı nohut, kırmızı mercimek ve kuru bezelye ihracatı.",
-      "de": "Direct high-volume pulses and grain supply to Russian federal retail distributors and industrial canneries via Black Sea direct maritime connections and overland corridors.",
+      "de": "Direkte Lieferung von Hülsenfrüchten und Getreide in großen Mengen an russische föderale Einzelhandelsverteiler und industrielle Konservenfabriken über direkte Seeverbindungen am Schwarzen Meer und Landkorridore.",
       "fr": "Direct high-volume pulses and grain supply to Russian federal retail distributors and industrial canneries via Black Sea direct maritime connections and overland corridors.",
       "es": "Direct high-volume pulses and grain supply to Russian federal retail distributors and industrial canneries via Black Sea direct maritime connections and overland corridors.",
       "it": "Direct high-volume pulses and grain supply to Russian federal retail distributors and industrial canneries via Black Sea direct maritime connections and overland corridors.",
@@ -461,7 +461,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How to import Turkish pulses into Russia? Nilasya Agro Foods ships bulk PP sacks and containers to Novorossiysk within 3-5 days with full Rosselkhoznadzor phytosanitary and EAC compliance.",
       "tr": "Türkiye'den Rusya'ya bakliyat nasıl sevk edilir? Nilasya Agro Foods, Novorossiysk limanına 3-5 günde deniz yoluyla ve Moskova'ya karayoluyla Rosselkhoznadzor onaylı ihracat gerçekleştirmektedir.",
-      "de": "How to import Turkish pulses into Russia? Nilasya Agro Foods ships bulk PP sacks and containers to Novorossiysk within 3-5 days with full Rosselkhoznadzor phytosanitary and EAC compliance.",
+      "de": "Wie importiert man türkische Hülsenfrüchte nach Russland? Nilasya Agro Foods liefert Großmengen PP-Säcke und Container nach Novorossiysk innerhalb von 3-5 Tagen mit vollständiger Rosselkhoznadzor-Phytosanitäraufsicht und EAC-Konformität.",
       "fr": "How to import Turkish pulses into Russia? Nilasya Agro Foods ships bulk PP sacks and containers to Novorossiysk within 3-5 days with full Rosselkhoznadzor phytosanitary and EAC compliance.",
       "es": "How to import Turkish pulses into Russia? Nilasya Agro Foods ships bulk PP sacks and containers to Novorossiysk within 3-5 days with full Rosselkhoznadzor phytosanitary and EAC compliance.",
       "it": "How to import Turkish pulses into Russia? Nilasya Agro Foods ships bulk PP sacks and containers to Novorossiysk within 3-5 days with full Rosselkhoznadzor phytosanitary and EAC compliance.",
@@ -551,7 +551,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "High-volume pulses and grain exports to Dubai Al Ras commodity traders, GCC supermarket chains (LuLu, Carrefour Middle East), and food processing factories across the United Arab Emirates.",
       "tr": "Dubai Al Ras toptancı piyasası, BAE ve Körfez genelindeki süpermarket zincirleri ve gıda sanayicilerine Mersin Limanı'ndan Jebel Ali Limanı'na haftalık kesintisiz kırmızı mercimek, Koçbaşı nohut ve bulgur ihracatı.",
-      "de": "High-volume pulses and grain exports to Dubai Al Ras commodity traders, GCC supermarket chains (LuLu, Carrefour Middle East), and food processing factories across the United Arab Emirates.",
+      "de": "Exporte von Hülsenfrüchten und Getreide in großen Mengen an Dubai Al Ras-Warehändler, GCC-Supermarktketten (LuLu, Carrefour Middle East) und Lebensmittelverarbeitungsbetriebe in den Vereinigten Arabischen Emiraten.",
       "fr": "High-volume pulses and grain exports to Dubai Al Ras commodity traders, GCC supermarket chains (LuLu, Carrefour Middle East), and food processing factories across the United Arab Emirates.",
       "es": "High-volume pulses and grain exports to Dubai Al Ras commodity traders, GCC supermarket chains (LuLu, Carrefour Middle East), and food processing factories across the United Arab Emirates.",
       "it": "High-volume pulses and grain exports to Dubai Al Ras commodity traders, GCC supermarket chains (LuLu, Carrefour Middle East), and food processing factories across the United Arab Emirates.",
@@ -583,7 +583,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How to order Turkish pulses for the UAE? Nilasya Agro Foods ships 20ft and 40ft containers directly from Mersin Port to Jebel Ali in 10-14 days with Dubai Municipality and Halal certification.",
       "tr": "BAE için Türk bakliyatı nasıl sipariş edilir? Nilasya Agro Foods, Mersin Limanı'ndan Jebel Ali'ye 10-14 günde FCL konteynerlerle Dubai Belediyesi standartlarına tam uygun ihracat sağlamaktadır.",
-      "de": "How to order Turkish pulses for the UAE? Nilasya Agro Foods ships 20ft and 40ft containers directly from Mersin Port to Jebel Ali in 10-14 days with Dubai Municipality and Halal certification.",
+      "de": "Wie bestellt man türkische Hülsenfrüchte für die VAE? Nilasya Agro Foods verschickt 20ft- und 40ft-Container direkt vom Hafen Mersin nach Jebel Ali in 10-14 Tagen mit Dubai Municipality- und Halal-Zertifizierung.",
       "fr": "How to order Turkish pulses for the UAE? Nilasya Agro Foods ships 20ft and 40ft containers directly from Mersin Port to Jebel Ali in 10-14 days with Dubai Municipality and Halal certification.",
       "es": "How to order Turkish pulses for the UAE? Nilasya Agro Foods ships 20ft and 40ft containers directly from Mersin Port to Jebel Ali in 10-14 days with Dubai Municipality and Halal certification.",
       "it": "How to order Turkish pulses for the UAE? Nilasya Agro Foods ships 20ft and 40ft containers directly from Mersin Port to Jebel Ali in 10-14 days with Dubai Municipality and Halal certification.",
@@ -673,7 +673,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Direct supply to Saudi Arabian wholesale food distributors, packaging houses, and retail groups in Riyadh, Jeddah, and Dammam with complete SFDA and SABER registration.",
       "tr": "Suudi Arabistan genelindeki (Riyad, Cidde, Dammam) toptancı gıda tüccarları ve bakliyat paketleyicilerine SFDA ve SABER standartlarına tam uyumlu kırmızı mercimek, Koçbaşı nohut ve bulgur ihracatı.",
-      "de": "Direct supply to Saudi Arabian wholesale food distributors, packaging houses, and retail groups in Riyadh, Jeddah, and Dammam with complete SFDA and SABER registration.",
+      "de": "Direkte Lieferung an saudische Großhändler von Lebensmitteln, Verpackungsbetriebe und Einzelhandelsgruppen in Riad, Dschidda und Dammam mit vollständiger SFDA- und SABER-Registrierung.",
       "fr": "Direct supply to Saudi Arabian wholesale food distributors, packaging houses, and retail groups in Riyadh, Jeddah, and Dammam with complete SFDA and SABER registration.",
       "es": "Direct supply to Saudi Arabian wholesale food distributors, packaging houses, and retail groups in Riyadh, Jeddah, and Dammam with complete SFDA and SABER registration.",
       "it": "Direct supply to Saudi Arabian wholesale food distributors, packaging houses, and retail groups in Riyadh, Jeddah, and Dammam with complete SFDA and SABER registration.",
@@ -705,7 +705,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "Does Nilasya Agro Foods ship pulses to Saudi Arabia? Yes, we provide regular FCL container shipments from Mersin Port to Jeddah Islamic Port and Dammam with 100% SFDA compliance.",
       "tr": "Nilasya Agro Foods Suudi Arabistan'a bakliyat gönderiyor mu? Evet, Mersin Limanı'ndan Cidde ve Dammam limanlarına SFDA onaylı konteynerlerle düzenli ihracat yapmaktayız.",
-      "de": "Does Nilasya Agro Foods ship pulses to Saudi Arabia? Yes, we provide regular FCL container shipments from Mersin Port to Jeddah Islamic Port and Dammam with 100% SFDA compliance.",
+      "de": "Liefert Nilasya Agro Foods Hülsenfrüchte nach Saudi-Arabien? Ja, wir bieten regelmäßige FCL-Containerlieferungen vom Hafen Mersin nach Jeddah Islamic Port und Dammam mit 100% SFDA-Konformität.",
       "fr": "Does Nilasya Agro Foods ship pulses to Saudi Arabia? Yes, we provide regular FCL container shipments from Mersin Port to Jeddah Islamic Port and Dammam with 100% SFDA compliance.",
       "es": "Does Nilasya Agro Foods ship pulses to Saudi Arabia? Yes, we provide regular FCL container shipments from Mersin Port to Jeddah Islamic Port and Dammam with 100% SFDA compliance.",
       "it": "Does Nilasya Agro Foods ship pulses to Saudi Arabia? Yes, we provide regular FCL container shipments from Mersin Port to Jeddah Islamic Port and Dammam with 100% SFDA compliance.",
@@ -794,7 +794,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Direct overland truck and sea container delivery to Polish supermarket distribution networks (Biedronka, Dino, Eurocash) and food packaging manufacturers.",
       "tr": "Polonya genelindeki süpermarket dağıtım merkezleri ve gıda fabrikalarına doğrudan karayolu TIR ve deniz yolu konteyner hatlarıyla Sortex temizliğinde nohut, kuru fasulye ve mercimek ihracatı.",
-      "de": "Direct overland truck and sea container delivery to Polish supermarket distribution networks (Biedronka, Dino, Eurocash) and food packaging manufacturers.",
+      "de": "Direkte Lieferungen per LKW und Seecontainer an polnische Supermarkt-Verteilernetze (Biedronka, Dino, Eurocash) und Lebensmittelverpackungshersteller.",
       "fr": "Direct overland truck and sea container delivery to Polish supermarket distribution networks (Biedronka, Dino, Eurocash) and food packaging manufacturers.",
       "es": "Direct overland truck and sea container delivery to Polish supermarket distribution networks (Biedronka, Dino, Eurocash) and food packaging manufacturers.",
       "it": "Direct overland truck and sea container delivery to Polish supermarket distribution networks (Biedronka, Dino, Eurocash) and food packaging manufacturers.",
@@ -826,7 +826,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How fast can Turkish pulses reach Poland? Overland freight trailers from Mersin arrive in Warsaw and Poznan within 3 to 4 days with complete EU phytosanitary documents.",
       "tr": "Türk bakliyatı Polonya'ya ne kadar sürede ulaşır? Karayolu yük araçlarımız 3-4 gün içinde Varşova ve Poznan lojistik merkezlerine teslimat yapmaktadır.",
-      "de": "How fast can Turkish pulses reach Poland? Overland freight trailers from Mersin arrive in Warsaw and Poznan within 3 to 4 days with complete EU phytosanitary documents.",
+      "de": "Wie schnell erreichen türkische Hülsenfrüchte Polen? Überland-Frachtanhänger aus Mersin erreichen Warschau und Posen innerhalb von 3 bis 4 Tagen mit vollständigen EU-Phytosanitätsdokumenten.",
       "fr": "How fast can Turkish pulses reach Poland? Overland freight trailers from Mersin arrive in Warsaw and Poznan within 3 to 4 days with complete EU phytosanitary documents.",
       "es": "How fast can Turkish pulses reach Poland? Overland freight trailers from Mersin arrive in Warsaw and Poznan within 3 to 4 days with complete EU phytosanitary documents.",
       "it": "How fast can Turkish pulses reach Poland? Overland freight trailers from Mersin arrive in Warsaw and Poznan within 3 to 4 days with complete EU phytosanitary documents.",
@@ -915,7 +915,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Supplying French wholesale distributors, institutional caterers, and food processing plants with Sortex-grade pulses and durum wheat products with strict IFS and EU compliance.",
       "tr": "Fransa genelindeki toptancı tüccarlar, konserve fabrikaları ve süpermarket dağıtıcılarına Fos-sur-Mer ve Le Havre limanları üzerinden yüksek saflıkta Koçbaşı nohut, yeşil mercimek ve kuru bezelye ihracatı.",
-      "de": "Supplying French wholesale distributors, institutional caterers, and food processing plants with Sortex-grade pulses and durum wheat products with strict IFS and EU compliance.",
+      "de": "Versorgung französischer Großhändler, institutioneller Caterer und Lebensmittelverarbeitungsbetriebe mit Sortex-Qualitäts-Hülsenfrüchten und Hartweizenprodukten unter strenger IFS- und EU-Konformität.",
       "fr": "Supplying French wholesale distributors, institutional caterers, and food processing plants with Sortex-grade pulses and durum wheat products with strict IFS and EU compliance.",
       "es": "Supplying French wholesale distributors, institutional caterers, and food processing plants with Sortex-grade pulses and durum wheat products with strict IFS and EU compliance.",
       "it": "Supplying French wholesale distributors, institutional caterers, and food processing plants with Sortex-grade pulses and durum wheat products with strict IFS and EU compliance.",
@@ -947,7 +947,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How does Nilasya Agro Foods deliver to France? We provide direct maritime container routes to Fos-sur-Mer in 6-8 days and overland road trailers in 3-5 days with full EUR.1 documentation.",
       "tr": "Nilasya Agro Foods Fransa'ya nasıl teslimat yapıyor? Mersin'den Fos-sur-Mer limanına 6-8 günde denizyolu konteyner veya 3-5 günde karayolu TIR teslimatı sağlıyoruz.",
-      "de": "How does Nilasya Agro Foods deliver to France? We provide direct maritime container routes to Fos-sur-Mer in 6-8 days and overland road trailers in 3-5 days with full EUR.1 documentation.",
+      "de": "Wie liefert Nilasya Agro Foods nach Frankreich? Wir bieten direkte Seecontainer-Routen nach Fos-sur-Mer in 6-8 Tagen und Überland-LKW-Anhänger in 3-5 Tagen mit vollständiger EUR.1-Dokumentation.",
       "fr": "How does Nilasya Agro Foods deliver to France? We provide direct maritime container routes to Fos-sur-Mer in 6-8 days and overland road trailers in 3-5 days with full EUR.1 documentation.",
       "es": "How does Nilasya Agro Foods deliver to France? We provide direct maritime container routes to Fos-sur-Mer in 6-8 days and overland road trailers in 3-5 days with full EUR.1 documentation.",
       "it": "How does Nilasya Agro Foods deliver to France? We provide direct maritime container routes to Fos-sur-Mer in 6-8 days and overland road trailers in 3-5 days with full EUR.1 documentation.",
@@ -1037,7 +1037,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Premier supplier of high-vitreous Anatolian durum wheat for pasta semolina milling, alongside canning-grade chickpeas and white beans to Italian food industries.",
       "tr": "İtalyan makarna ve irmik sanayicilerine yüksek proteinli Anadolu makarnalık buğdayı (durum wheat) ile konserve sektörüne birinci sınıf Koçbaşı nohut ve Dermason fasulye ihracatı.",
-      "de": "Premier supplier of high-vitreous Anatolian durum wheat for pasta semolina milling, alongside canning-grade chickpeas and white beans to Italian food industries.",
+      "de": "Führender Lieferant von hoch-glashaltigem anatolischen Durumweizen für die Pasta-Gießmühle, neben konservierten Kichererbsen und weißen Bohnen für die italienische Lebensmittelindustrie.",
       "fr": "Premier supplier of high-vitreous Anatolian durum wheat for pasta semolina milling, alongside canning-grade chickpeas and white beans to Italian food industries.",
       "es": "Premier supplier of high-vitreous Anatolian durum wheat for pasta semolina milling, alongside canning-grade chickpeas and white beans to Italian food industries.",
       "it": "Premier supplier of high-vitreous Anatolian durum wheat for pasta semolina milling, alongside canning-grade chickpeas and white beans to Italian food industries.",
@@ -1069,7 +1069,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How to import Turkish durum wheat and pulses to Italy? We ship FCL containers and bulk vessel charters from Mersin to Bari, Genoa, and Naples within 4-7 days.",
       "tr": "İtalya'ya Türk buğdayı ve bakliyatı nasıl ithal edilir? Mersin Limanı'ndan Bari ve Cenova limanlarına 4-7 gün transit süresiyle konteyner ve dökme gemi seferleri düzenliyoruz.",
-      "de": "How to import Turkish durum wheat and pulses to Italy? We ship FCL containers and bulk vessel charters from Mersin to Bari, Genoa, and Naples within 4-7 days.",
+      "de": "Wie importiert man türkischen Durumweizen und Hülsenfrüchte nach Italien? Wir versenden FCL Container und Bulkschiff-Charter von Mersin nach Bari, Genua und Neapel innerhalb von 4 bis 7 Tagen.",
       "fr": "How to import Turkish durum wheat and pulses to Italy? We ship FCL containers and bulk vessel charters from Mersin to Bari, Genoa, and Naples within 4-7 days.",
       "es": "How to import Turkish durum wheat and pulses to Italy? We ship FCL containers and bulk vessel charters from Mersin to Bari, Genoa, and Naples within 4-7 days.",
       "it": "How to import Turkish durum wheat and pulses to Italy? We ship FCL containers and bulk vessel charters from Mersin to Bari, Genoa, and Naples within 4-7 days.",
@@ -1158,7 +1158,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Supplying Spanish food processors, packaging groups, and wholesale markets (Mercamadrid, Mercabarna) with prime jumbo Kabuli chickpeas, canning-grade white beans, and lentils.",
       "tr": "İspanya'nın önde gelen gıda sanayicileri ve toptancı hallerine (Mercamadrid, Mercabarna) Mersin Limanı'ndan Valensiya ve Barselona limanlarına Sortex Koçbaşı nohut, kuru fasulye ve mercimek ihracatı.",
-      "de": "Supplying Spanish food processors, packaging groups, and wholesale markets (Mercamadrid, Mercabarna) with prime jumbo Kabuli chickpeas, canning-grade white beans, and lentils.",
+      "de": "Versorgung spanischer Lebensmittelverarbeiter, Verpackungsgruppen und Großmärkte (Mercamadrid, Mercabarna) mit erstklassigen Kabuli-Kichererbsen, weißen Bohnen in Konservenqualität und Linsen.",
       "fr": "Supplying Spanish food processors, packaging groups, and wholesale markets (Mercamadrid, Mercabarna) with prime jumbo Kabuli chickpeas, canning-grade white beans, and lentils.",
       "es": "Supplying Spanish food processors, packaging groups, and wholesale markets (Mercamadrid, Mercabarna) with prime jumbo Kabuli chickpeas, canning-grade white beans, and lentils.",
       "it": "Supplying Spanish food processors, packaging groups, and wholesale markets (Mercamadrid, Mercabarna) with prime jumbo Kabuli chickpeas, canning-grade white beans, and lentils.",
@@ -1190,7 +1190,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "Does Nilasya Agro Foods deliver pulses to Spain? Yes, we ship full container loads (FCL) to Valencia and Barcelona within 5-7 days with complete EUR.1 and EU certification.",
       "tr": "Nilasya Agro Foods İspanya'ya bakliyat teslimatı yapıyor mu? Evet, Valensiya ve Barselona limanlarına 5-7 günde FCL konteynerlerle EUR.1 onaylı ihracat sağlamaktayız.",
-      "de": "Does Nilasya Agro Foods deliver pulses to Spain? Yes, we ship full container loads (FCL) to Valencia and Barcelona within 5-7 days with complete EUR.1 and EU certification.",
+      "de": "Liefern Nilasya Agro Foods Hülsenfrüchte nach Spanien? Ja, wir versenden komplette Containerladungen (FCL) innerhalb von 5 bis 7 Tagen nach Valencia und Barcelona mit vollständiger EUR.1 und EU-Zertifizierung.",
       "fr": "Does Nilasya Agro Foods deliver pulses to Spain? Yes, we ship full container loads (FCL) to Valencia and Barcelona within 5-7 days with complete EUR.1 and EU certification.",
       "es": "Does Nilasya Agro Foods deliver pulses to Spain? Yes, we ship full container loads (FCL) to Valencia and Barcelona within 5-7 days with complete EUR.1 and EU certification.",
       "it": "Does Nilasya Agro Foods deliver pulses to Spain? Yes, we ship full container loads (FCL) to Valencia and Barcelona within 5-7 days with complete EUR.1 and EU certification.",
@@ -1279,7 +1279,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Substantial bulk container exports of jumbo Turkish Kabuli chickpeas (10mm+) and green lentils to major Indian commodity traders and dal millers across Mumbai, Delhi, and Gujarat.",
       "tr": "Hindistan emtia piyasalarına, Mumbai (Nhava Sheva) ve Mundra limanları üzerinden yüksek kalibreli Türk Koçbaşı nohudu (10mm jumbo), yeşil mercimek ve susam ihracatı.",
-      "de": "Substantial bulk container exports of jumbo Turkish Kabuli chickpeas (10mm+) and green lentils to major Indian commodity traders and dal millers across Mumbai, Delhi, and Gujarat.",
+      "de": "Erhebliche Exporte von Bulkcontainern von riesigen türkischen Kabuli-Kichererbsen (10mm+) und grünen Linsen an große indische Rohstoffhändler und Dalmillen in Mumbai, Delhi und Gujarat.",
       "fr": "Substantial bulk container exports of jumbo Turkish Kabuli chickpeas (10mm+) and green lentils to major Indian commodity traders and dal millers across Mumbai, Delhi, and Gujarat.",
       "es": "Substantial bulk container exports of jumbo Turkish Kabuli chickpeas (10mm+) and green lentils to major Indian commodity traders and dal millers across Mumbai, Delhi, and Gujarat.",
       "it": "Substantial bulk container exports of jumbo Turkish Kabuli chickpeas (10mm+) and green lentils to major Indian commodity traders and dal millers across Mumbai, Delhi, and Gujarat.",
@@ -1311,7 +1311,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How to import Turkish chickpeas to India? Nilasya Agro Foods ships 20ft containers (26 MT per box) from Mersin to Nhava Sheva and Mundra in 16-20 days, 100% compliant with FSSAI regulations.",
       "tr": "Hindistan'a Türk nohudu nasıl ihraç edilir? Nilasya Agro Foods, Mersin Limanı'ndan Nhava Sheva ve Mundra limanlarına 16-20 günde FSSAI ve fümigasyon onaylı 20ft FCL konteynerler sevk eder.",
-      "de": "How to import Turkish chickpeas to India? Nilasya Agro Foods ships 20ft containers (26 MT per box) from Mersin to Nhava Sheva and Mundra in 16-20 days, 100% compliant with FSSAI regulations.",
+      "de": "Wie importiert man türkische Kichererbsen nach Indien? Nilasya Agro Foods verschifft 20ft Container (26 MT pro Schachtel) von Mersin nach Nhava Sheva und Mundra in 16 bis 20 Tagen 100% den FSSAI-Vorschriften entsprechend.",
       "fr": "How to import Turkish chickpeas to India? Nilasya Agro Foods ships 20ft containers (26 MT per box) from Mersin to Nhava Sheva and Mundra in 16-20 days, 100% compliant with FSSAI regulations.",
       "es": "How to import Turkish chickpeas to India? Nilasya Agro Foods ships 20ft containers (26 MT per box) from Mersin to Nhava Sheva and Mundra in 16-20 days, 100% compliant with FSSAI regulations.",
       "it": "How to import Turkish chickpeas to India? Nilasya Agro Foods ships 20ft containers (26 MT per box) from Mersin to Nhava Sheva and Mundra in 16-20 days, 100% compliant with FSSAI regulations.",
@@ -1401,7 +1401,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Direct pulses shipments to Qatari food distributors, hospitality catering providers, and hypermarket chains (Al Meera, LuLu Qatar) with strict MoPH food safety clearance.",
       "tr": "Katar (Doha Hamad Limanı) genelindeki gıda toptancıları, otel ve catering tedarikçileri ile süpermarket zincirlerine Sortex temizliğinde Türk bakliyatı ve bulgur ihracatı.",
-      "de": "Direct pulses shipments to Qatari food distributors, hospitality catering providers, and hypermarket chains (Al Meera, LuLu Qatar) with strict MoPH food safety clearance.",
+      "de": "Direkte Lieferungen von Hülsenfrüchten an katarische Lebensmittelhändler, Gastgewerbe-Catering-Anbieter und Hypermarktketten (Al Meera, LuLu Qatar) mit strenger MoPH-Lebensmittelsicherheitsfreigabe.",
       "fr": "Direct pulses shipments to Qatari food distributors, hospitality catering providers, and hypermarket chains (Al Meera, LuLu Qatar) with strict MoPH food safety clearance.",
       "es": "Direct pulses shipments to Qatari food distributors, hospitality catering providers, and hypermarket chains (Al Meera, LuLu Qatar) with strict MoPH food safety clearance.",
       "it": "Direct pulses shipments to Qatari food distributors, hospitality catering providers, and hypermarket chains (Al Meera, LuLu Qatar) with strict MoPH food safety clearance.",
@@ -1433,7 +1433,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How to order pulses for Qatar? Nilasya Agro Foods ships 20ft and 40ft containers directly to Hamad Port within 12-15 days, fully compliant with Qatar MoPH standards.",
       "tr": "Katar için bakliyat siparişi nasıl verilir? Nilasya Agro Foods, Mersin Limanı'ndan Hamad Limanı'na 12-15 günde Katar Sağlık Bakanlığı normlarına tam uygun konteyner sevkiyatı yapmaktadır.",
-      "de": "How to order pulses for Qatar? Nilasya Agro Foods ships 20ft and 40ft containers directly to Hamad Port within 12-15 days, fully compliant with Qatar MoPH standards.",
+      "de": "Wie bestellt man Hülsenfrüchte für Katar? Nilasya Agro Foods verschifft innerhalb von 12 bis 15 Tagen 20ft und 40ft Container direkt zum Hamad-Hafen, vollständig gemäß den MoPH-Standards von Katar.",
       "fr": "How to order pulses for Qatar? Nilasya Agro Foods ships 20ft and 40ft containers directly to Hamad Port within 12-15 days, fully compliant with Qatar MoPH standards.",
       "es": "How to order pulses for Qatar? Nilasya Agro Foods ships 20ft and 40ft containers directly to Hamad Port within 12-15 days, fully compliant with Qatar MoPH standards.",
       "it": "How to order pulses for Qatar? Nilasya Agro Foods ships 20ft and 40ft containers directly to Hamad Port within 12-15 days, fully compliant with Qatar MoPH standards.",
@@ -1521,7 +1521,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Supplying Singapore food processors, packaging houses, and international distributors with high-purity Turkish pulses fully certified to Singapore Food Agency (SFA) standards.",
       "tr": "Singapur gıda ithalatçıları ve paketleme markalarına Singapur Gıda Ajansı (SFA) standartlarına uygun Sortex temizliğinde Türk nohut, mercimek ve fasulye ihracatı.",
-      "de": "Supplying Singapore food processors, packaging houses, and international distributors with high-purity Turkish pulses fully certified to Singapore Food Agency (SFA) standards.",
+      "de": "Versorgung singapurischer Lebensmittelverarbeiter, Verpackungsfirmen und internationalen Distributoren mit hochreinen türkischen Hülsenfrüchten, die vollständig nach den Standards der Singapore Food Agency (SFA) zertifiziert sind.",
       "fr": "Supplying Singapore food processors, packaging houses, and international distributors with high-purity Turkish pulses fully certified to Singapore Food Agency (SFA) standards.",
       "es": "Supplying Singapore food processors, packaging houses, and international distributors with high-purity Turkish pulses fully certified to Singapore Food Agency (SFA) standards.",
       "it": "Supplying Singapore food processors, packaging houses, and international distributors with high-purity Turkish pulses fully certified to Singapore Food Agency (SFA) standards.",
@@ -1553,7 +1553,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "Can Singapore import pulses from Türkiye? Yes, Nilasya Agro Foods ships 20ft and 40ft dry containers to the Port of Singapore in 18-22 days with full SFA import compliance.",
       "tr": "Singapur Türkiye'den bakliyat ithal edebilir mi? Evet, Nilasya Agro Foods Mersin Limanı'ndan Singapur Limanı'na 18-22 günde SFA onaylı FCL konteyner sevkiyatı yapmaktadır.",
-      "de": "Can Singapore import pulses from Türkiye? Yes, Nilasya Agro Foods ships 20ft and 40ft dry containers to the Port of Singapore in 18-22 days with full SFA import compliance.",
+      "de": "Kann Singapur Hülsenfrüchte aus Türkiye importieren? Ja, Nilasya Agro Foods verschifft 20ft und 40ft trockene Container in 18 bis 22 Tagen mit vollständiger SFA-Importkonformität.",
       "fr": "Can Singapore import pulses from Türkiye? Yes, Nilasya Agro Foods ships 20ft and 40ft dry containers to the Port of Singapore in 18-22 days with full SFA import compliance.",
       "es": "Can Singapore import pulses from Türkiye? Yes, Nilasya Agro Foods ships 20ft and 40ft dry containers to the Port of Singapore in 18-22 days with full SFA import compliance.",
       "it": "Can Singapore import pulses from Türkiye? Yes, Nilasya Agro Foods ships 20ft and 40ft dry containers to the Port of Singapore in 18-22 days with full SFA import compliance.",
@@ -1641,7 +1641,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Supplying Malaysian food packaging brands, canneries, and wholesale commodity traders through Port Klang with Halal-certified Turkish chickpeas and lentils.",
       "tr": "Malezya (Port Klang) genelindeki gıda paketleyicileri ve toptancı tüccarlara JAKIM uyumlu helal sertifikalı Koçbaşı nohut ve kırmızı mercimek ihracatı.",
-      "de": "Supplying Malaysian food packaging brands, canneries, and wholesale commodity traders through Port Klang with Halal-certified Turkish chickpeas and lentils.",
+      "de": "Beliefern malaysische Lebensmittelverpackungsmarken, Konservenfabriken und Großhandelswaren über Port Klang mit halal-zertifizierten türkischen Kichererbsen und Linsen.",
       "fr": "Supplying Malaysian food packaging brands, canneries, and wholesale commodity traders through Port Klang with Halal-certified Turkish chickpeas and lentils.",
       "es": "Supplying Malaysian food packaging brands, canneries, and wholesale commodity traders through Port Klang with Halal-certified Turkish chickpeas and lentils.",
       "it": "Supplying Malaysian food packaging brands, canneries, and wholesale commodity traders through Port Klang with Halal-certified Turkish chickpeas and lentils.",
@@ -1673,7 +1673,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How to import Turkish pulses to Malaysia? Nilasya Agro Foods ships containers to Port Klang in 18-22 days with complete MAFI permit and Halal documentation.",
       "tr": "Malezya'ya Türk bakliyatı nasıl ihraç edilir? Nilasya Agro Foods, Mersin'den Port Klang'a 18-22 günde MAFI ve helal belgeli konteyner sevkiyatları düzenlemektedir.",
-      "de": "How to import Turkish pulses to Malaysia? Nilasya Agro Foods ships containers to Port Klang in 18-22 days with complete MAFI permit and Halal documentation.",
+      "de": "Wie importiert man türkische Hülsenfrüchte nach Malaysia? Nilasya Agro Foods verschifft Container in 18 bis 22 Tagen mit vollständiger MAFI-Genehmigung und Halal-Dokumenten nach Port Klang.",
       "fr": "How to import Turkish pulses to Malaysia? Nilasya Agro Foods ships containers to Port Klang in 18-22 days with complete MAFI permit and Halal documentation.",
       "es": "How to import Turkish pulses to Malaysia? Nilasya Agro Foods ships containers to Port Klang in 18-22 days with complete MAFI permit and Halal documentation.",
       "it": "How to import Turkish pulses to Malaysia? Nilasya Agro Foods ships containers to Port Klang in 18-22 days with complete MAFI permit and Halal documentation.",
@@ -1762,7 +1762,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Rapid 24-36 hour direct overland delivery route connecting Turkish pulses processing plants directly to Romanian supermarket central warehouses and wholesale distribution hubs.",
       "tr": "Türkiye'den Romanya'ya (Bükreş ve Köstence) 24-36 saat içinde doğrudan karayolu TIR teslimatı ile Sortex temizliğinde kırmızı mercimek, Koçbaşı nohut ve Dermason fasulye tedariki.",
-      "de": "Rapid 24-36 hour direct overland delivery route connecting Turkish pulses processing plants directly to Romanian supermarket central warehouses and wholesale distribution hubs.",
+      "de": "Schnelle 24-36-stündige direkte Landlieferung, die türkische Hülsenfrüchteverarbeitungsanlagen direkt mit den zentralen Lagern und Großhandelszentren des rumänischen Supermarkts verbindet.",
       "fr": "Rapid 24-36 hour direct overland delivery route connecting Turkish pulses processing plants directly to Romanian supermarket central warehouses and wholesale distribution hubs.",
       "es": "Rapid 24-36 hour direct overland delivery route connecting Turkish pulses processing plants directly to Romanian supermarket central warehouses and wholesale distribution hubs.",
       "it": "Rapid 24-36 hour direct overland delivery route connecting Turkish pulses processing plants directly to Romanian supermarket central warehouses and wholesale distribution hubs.",
@@ -1794,7 +1794,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "What is the transit time for pulses from Türkiye to Romania? Just 24 to 36 hours by overland freight trailer, guaranteeing fast and reliable supply for retail and canning industries.",
       "tr": "Türkiye'den Romanya'ya bakliyat teslim süresi nedir? Karayolu TIR araçlarımızla yalnızca 24-36 saat içinde Bükreş ve Köstence dağıtım merkezlerine doğrudan teslimat yapılır.",
-      "de": "What is the transit time for pulses from Türkiye to Romania? Just 24 to 36 hours by overland freight trailer, guaranteeing fast and reliable supply for retail and canning industries.",
+      "de": "Wie lange transportieren Hülsenfrüchte von Türkiye nach Rumänien? Nur 24 bis 36 Stunden mit dem Landgüteranhänger, was eine schnelle und zuverlässige Lieferung für Einzelhandel und Konservenindustrie garantiert.",
       "fr": "What is the transit time for pulses from Türkiye to Romania? Just 24 to 36 hours by overland freight trailer, guaranteeing fast and reliable supply for retail and canning industries.",
       "es": "What is the transit time for pulses from Türkiye to Romania? Just 24 to 36 hours by overland freight trailer, guaranteeing fast and reliable supply for retail and canning industries.",
       "it": "What is the transit time for pulses from Türkiye to Romania? Just 24 to 36 hours by overland freight trailer, guaranteeing fast and reliable supply for retail and canning industries.",
@@ -1883,7 +1883,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Fast same-day and next-day overland freight delivery across the Kapıkule border directly to Bulgarian retail distribution centers and packaging plants.",
       "tr": "Kapıkule sınır kapısı üzerinden Bulgaristan genelindeki (Sofya, Filibe) gıda toptancılarına 12-24 saatte hızlı karayolu TIR teslimatı ile bakliyat ve bulgur ihracatı.",
-      "de": "Fast same-day and next-day overland freight delivery across the Kapıkule border directly to Bulgarian retail distribution centers and packaging plants.",
+      "de": "Schnelle Lieferung am selben Tag und am nächsten Tag über Land über die Kapıkule-Grenze direkt zu bulgarischen Einzelhandelsverteilzentren und Verpackungsanlagen.",
       "fr": "Fast same-day and next-day overland freight delivery across the Kapıkule border directly to Bulgarian retail distribution centers and packaging plants.",
       "es": "Fast same-day and next-day overland freight delivery across the Kapıkule border directly to Bulgarian retail distribution centers and packaging plants.",
       "it": "Fast same-day and next-day overland freight delivery across the Kapıkule border directly to Bulgarian retail distribution centers and packaging plants.",
@@ -1915,7 +1915,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How fast can Nilasya Agro Foods deliver pulses to Bulgaria? Within 12 to 24 hours via Kapıkule border crossing directly to wholesale distribution centers in Sofia.",
       "tr": "Nilasya Agro Foods Bulgaristan'a ne kadar sürede teslimat yapar? Kapıkule sınır kapısı üzerinden Sofya'daki dağıtım merkezlerine 12-24 saat içinde teslimat yapılır.",
-      "de": "How fast can Nilasya Agro Foods deliver pulses to Bulgaria? Within 12 to 24 hours via Kapıkule border crossing directly to wholesale distribution centers in Sofia.",
+      "de": "Wie schnell kann Nilasya Agro Foods Hülsenfrüchte nach Bulgarien liefern? Innerhalb von 12 bis 24 Stunden über den Grenzübergang Kapıkule direkt zu den Großhandelszentren in Sofia.",
       "fr": "How fast can Nilasya Agro Foods deliver pulses to Bulgaria? Within 12 to 24 hours via Kapıkule border crossing directly to wholesale distribution centers in Sofia.",
       "es": "How fast can Nilasya Agro Foods deliver pulses to Bulgaria? Within 12 to 24 hours via Kapıkule border crossing directly to wholesale distribution centers in Sofia.",
       "it": "How fast can Nilasya Agro Foods deliver pulses to Bulgaria? Within 12 to 24 hours via Kapıkule border crossing directly to wholesale distribution centers in Sofia.",
@@ -2004,7 +2004,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Direct overland and sea container deliveries to Greek canneries, food packaging houses, and wholesale markets across Athens (Rentis) and Thessaloniki.",
       "tr": "İpsala sınır kapısı ve Ege deniz hatlarıyla Selanik ve Atina toptancı piyasalarına ve konserve fabrikalarına yüksek kaliteli Koçbaşı nohut, kuru fasulye ve mercimek ihracatı.",
-      "de": "Direct overland and sea container deliveries to Greek canneries, food packaging houses, and wholesale markets across Athens (Rentis) and Thessaloniki.",
+      "de": "Direkte Land- und Seecontainerlieferungen an griechische Konservenfabriken, Lebensmittelverpackungsbetriebe und Großmärkte in Athen (Rentis) und Thessaloniki.",
       "fr": "Direct overland and sea container deliveries to Greek canneries, food packaging houses, and wholesale markets across Athens (Rentis) and Thessaloniki.",
       "es": "Direct overland and sea container deliveries to Greek canneries, food packaging houses, and wholesale markets across Athens (Rentis) and Thessaloniki.",
       "it": "Direct overland and sea container deliveries to Greek canneries, food packaging houses, and wholesale markets across Athens (Rentis) and Thessaloniki.",
@@ -2036,7 +2036,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How to import Turkish pulses to Greece? We deliver within 18-30 hours overland via İpsala or 2-4 days by sea container to Piraeus and Thessaloniki with EUR.1 certificates.",
       "tr": "Yunanistan'a Türk bakliyatı nasıl ihraç edilir? İpsala üzerinden 18-30 saatte karayoluyla veya Pire limanına deniz yoluyla EUR.1 onaylı teslimat sağlıyoruz.",
-      "de": "How to import Turkish pulses to Greece? We deliver within 18-30 hours overland via İpsala or 2-4 days by sea container to Piraeus and Thessaloniki with EUR.1 certificates.",
+      "de": "Wie importiert man türkische Hülsenfrüchte nach Griechenland? Wir liefern innerhalb von 18-30 Stunden über Land über İpsala oder 2-4 Tage per Seecontainer nach Piräus und Thessaloniki mit EUR.1 Zertifikaten.",
       "fr": "How to import Turkish pulses to Greece? We deliver within 18-30 hours overland via İpsala or 2-4 days by sea container to Piraeus and Thessaloniki with EUR.1 certificates.",
       "es": "How to import Turkish pulses to Greece? We deliver within 18-30 hours overland via İpsala or 2-4 days by sea container to Piraeus and Thessaloniki with EUR.1 certificates.",
       "it": "How to import Turkish pulses to Greece? We deliver within 18-30 hours overland via İpsala or 2-4 days by sea container to Piraeus and Thessaloniki with EUR.1 certificates.",
@@ -2125,7 +2125,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Dependable, high-volume pulses and durum wheat supply to Ukrainian retail chains (Silpo, ATB, Novus) and food processors via Black Sea and overland corridors.",
       "tr": "Ukrayna süpermarket zincirleri ve gıda sanayicilerine kesintisiz yüksek tonajlı Koçbaşı nohut, kırmızı mercimek ve makarnalık buğday ihracatı.",
-      "de": "Dependable, high-volume pulses and durum wheat supply to Ukrainian retail chains (Silpo, ATB, Novus) and food processors via Black Sea and overland corridors.",
+      "de": "Verlässliche, hochvolumige Hülsenfrüchte und Durumweizen liefern ukrainische Einzelhandelsketten (Silpo, ATB, Novus) und Lebensmittelverarbeiter über das Schwarze Meer und Überlandkorridore.",
       "fr": "Dependable, high-volume pulses and durum wheat supply to Ukrainian retail chains (Silpo, ATB, Novus) and food processors via Black Sea and overland corridors.",
       "es": "Dependable, high-volume pulses and durum wheat supply to Ukrainian retail chains (Silpo, ATB, Novus) and food processors via Black Sea and overland corridors.",
       "it": "Dependable, high-volume pulses and durum wheat supply to Ukrainian retail chains (Silpo, ATB, Novus) and food processors via Black Sea and overland corridors.",
@@ -2157,7 +2157,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "Does Nilasya Agro Foods export pulses to Ukraine? Yes, we supply Kyiv, Odesa, and western distribution hubs with regular shipments of Sortex-cleaned chickpeas and lentils.",
       "tr": "Nilasya Agro Foods Ukrayna'ya bakliyat ihraç ediyor mu? Evet, Kiev ve Odesa merkezlerine düzenli olarak Sortex nohut ve kırmızı mercimek sevkiyatı gerçekleştirmekteyiz.",
-      "de": "Does Nilasya Agro Foods export pulses to Ukraine? Yes, we supply Kyiv, Odesa, and western distribution hubs with regular shipments of Sortex-cleaned chickpeas and lentils.",
+      "de": "Exportiert Nilasya Agro Foods Hülsenfrüchte in die Ukraine? Ja, wir versorgen Kiew, Odessa und westliche Vertriebszentren regelmäßig mit Sortex gereinigten Kichererbsen und Linsen.",
       "fr": "Does Nilasya Agro Foods export pulses to Ukraine? Yes, we supply Kyiv, Odesa, and western distribution hubs with regular shipments of Sortex-cleaned chickpeas and lentils.",
       "es": "Does Nilasya Agro Foods export pulses to Ukraine? Yes, we supply Kyiv, Odesa, and western distribution hubs with regular shipments of Sortex-cleaned chickpeas and lentils.",
       "it": "Does Nilasya Agro Foods export pulses to Ukraine? Yes, we supply Kyiv, Odesa, and western distribution hubs with regular shipments of Sortex-cleaned chickpeas and lentils.",
@@ -2246,7 +2246,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Daily high-tonnage overland pulses supply from Anatolian cleaning facilities through the Habur border crossing directly to wholesale markets and distributors in Erbil, Baghdad, and Basra.",
       "tr": "Habur sınır kapısı üzerinden Erbil, Bağdat ve Basra toptancı hallerine ve paketleme tesislerine günlük yüksek tonajlı kesintisiz kırmızı mercimek, nohut, kuru fasulye ve bulgur ihracatı.",
-      "de": "Daily high-tonnage overland pulses supply from Anatolian cleaning facilities through the Habur border crossing directly to wholesale markets and distributors in Erbil, Baghdad, and Basra.",
+      "de": "Tägliche hochtonale Land-Hülsenfrüchte werden von anatolischen Reinigungsanlagen über den Habur-Grenzübergang direkt zu Großmärkten und Distributoren in Erbil, Bagdad und Basra geliefert.",
       "fr": "Daily high-tonnage overland pulses supply from Anatolian cleaning facilities through the Habur border crossing directly to wholesale markets and distributors in Erbil, Baghdad, and Basra.",
       "es": "Daily high-tonnage overland pulses supply from Anatolian cleaning facilities through the Habur border crossing directly to wholesale markets and distributors in Erbil, Baghdad, and Basra.",
       "it": "Daily high-tonnage overland pulses supply from Anatolian cleaning facilities through the Habur border crossing directly to wholesale markets and distributors in Erbil, Baghdad, and Basra.",
@@ -2278,7 +2278,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How fast can pulses be shipped to Iraq? Shipments to Erbil and Baghdad arrive within 24 to 48 hours via the Habur border crossing, fully certified with pre-shipment inspection.",
       "tr": "Türkiye'den Irak'a bakliyat ne kadar sürede ulaşır? Habur sınır kapısı üzerinden Erbil ve Bağdat'a 24-48 saat gibi kısa bir sürede doğrudan teslimat yapılmaktadır.",
-      "de": "How fast can pulses be shipped to Iraq? Shipments to Erbil and Baghdad arrive within 24 to 48 hours via the Habur border crossing, fully certified with pre-shipment inspection.",
+      "de": "Wie schnell können Hülsenfrüchte nach Irak verschifft werden? Lieferungen nach Erbil und Bagdad kommen innerhalb von 24 bis 48 Stunden über den Habur-Grenzübergang an, vollständig zertifiziert mit Vorabkontrolle.",
       "fr": "How fast can pulses be shipped to Iraq? Shipments to Erbil and Baghdad arrive within 24 to 48 hours via the Habur border crossing, fully certified with pre-shipment inspection.",
       "es": "How fast can pulses be shipped to Iraq? Shipments to Erbil and Baghdad arrive within 24 to 48 hours via the Habur border crossing, fully certified with pre-shipment inspection.",
       "it": "How fast can pulses be shipped to Iraq? Shipments to Erbil and Baghdad arrive within 24 to 48 hours via the Habur border crossing, fully certified with pre-shipment inspection.",
@@ -2367,7 +2367,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Supplying Indonesia’s vast consumer market of over 275 million with Halal-certified Turkish pulses, chickpeas, and lentils via Tanjung Priok Port.",
       "tr": "Endonezya genelindeki gıda üreticileri ve toptancı tüccarlara Cakarta (Tanjung Priok) Limanı üzerinden Barantan ve helal onaylı Türk bakliyatı ihracatı.",
-      "de": "Supplying Indonesia’s vast consumer market of over 275 million with Halal-certified Turkish pulses, chickpeas, and lentils via Tanjung Priok Port.",
+      "de": "Beliefern Indonesiens riesigen Verbrauchermarkt von über 275 Millionen mit halal-zertifizierten türkischen Hülsenfrüchten, Kichererbsen und Linsen über den Hafen Tanjung Priok.",
       "fr": "Supplying Indonesia’s vast consumer market of over 275 million with Halal-certified Turkish pulses, chickpeas, and lentils via Tanjung Priok Port.",
       "es": "Supplying Indonesia’s vast consumer market of over 275 million with Halal-certified Turkish pulses, chickpeas, and lentils via Tanjung Priok Port.",
       "it": "Supplying Indonesia’s vast consumer market of over 275 million with Halal-certified Turkish pulses, chickpeas, and lentils via Tanjung Priok Port.",
@@ -2399,7 +2399,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How to import Turkish pulses to Indonesia? Nilasya Agro Foods ships 20ft and 40ft containers to Jakarta with full Barantan quarantine and Halal compliance in 20-24 days.",
       "tr": "Endonezya'ya Türk bakliyatı nasıl ihraç edilir? Nilasya Agro Foods, Mersin'den Cakarta'ya 20-24 günde Barantan karantina onaylı konteyner sevkiyatları gerçekleştirmektedir.",
-      "de": "How to import Turkish pulses to Indonesia? Nilasya Agro Foods ships 20ft and 40ft containers to Jakarta with full Barantan quarantine and Halal compliance in 20-24 days.",
+      "de": "Wie importiert man türkische Hülsenfrüchte nach Indonesien? Nilasya Agro Foods schickt 20ft und 40ft Container nach Jakarta mit vollständiger Barantan-Quarantäne und Halal-Einhaltung in 20-24 Tagen.",
       "fr": "How to import Turkish pulses to Indonesia? Nilasya Agro Foods ships 20ft and 40ft containers to Jakarta with full Barantan quarantine and Halal compliance in 20-24 days.",
       "es": "How to import Turkish pulses to Indonesia? Nilasya Agro Foods ships 20ft and 40ft containers to Jakarta with full Barantan quarantine and Halal compliance in 20-24 days.",
       "it": "How to import Turkish pulses to Indonesia? Nilasya Agro Foods ships 20ft and 40ft containers to Jakarta with full Barantan quarantine and Halal compliance in 20-24 days.",
@@ -2488,7 +2488,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Scheduled road freight deliveries of Sortex-cleaned pulses directly to Czech supermarket distribution warehouses and food processors in Prague and Brno.",
       "tr": "Çek Cumhuriyeti genelindeki süpermarket dağıtım merkezleri ve gıda paketleyicilerine doğrudan karayolu TIR seferleriyle nohut, kırmızı mercimek ve fasulye tedariki.",
-      "de": "Scheduled road freight deliveries of Sortex-cleaned pulses directly to Czech supermarket distribution warehouses and food processors in Prague and Brno.",
+      "de": "Planmäßige Straßenfrachtlieferungen von Sortex gereinigten Hülsenfrüchten direkt an tschechische Supermarkt, Distributionslager und Lebensmittelverarbeiter in Prag und Brünn.",
       "fr": "Scheduled road freight deliveries of Sortex-cleaned pulses directly to Czech supermarket distribution warehouses and food processors in Prague and Brno.",
       "es": "Scheduled road freight deliveries of Sortex-cleaned pulses directly to Czech supermarket distribution warehouses and food processors in Prague and Brno.",
       "it": "Scheduled road freight deliveries of Sortex-cleaned pulses directly to Czech supermarket distribution warehouses and food processors in Prague and Brno.",
@@ -2520,7 +2520,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How does Nilasya Agro Foods export pulses to the Czech Republic? Weekly freight trucks arrive in Prague within 3 to 4 days with complete EU certification.",
       "tr": "Nilasya Agro Foods Çek Cumhuriyeti'ne nasıl bakliyat ihraç ediyor? Haftalık karayolu TIR seferlerimizle Prag ve Brno'ya 3-4 günde EUR.1 belgeli teslimat yapıyoruz.",
-      "de": "How does Nilasya Agro Foods export pulses to the Czech Republic? Weekly freight trucks arrive in Prague within 3 to 4 days with complete EU certification.",
+      "de": "Wie exportiert Nilasya Agro Foods Hülsenfrüchte in die Tschechische Republik? Wöchentliche Güterlkw kommen innerhalb von 3 bis 4 Tagen mit vollständiger EU-Zertifizierung in Prag an.",
       "fr": "How does Nilasya Agro Foods export pulses to the Czech Republic? Weekly freight trucks arrive in Prague within 3 to 4 days with complete EU certification.",
       "es": "How does Nilasya Agro Foods export pulses to the Czech Republic? Weekly freight trucks arrive in Prague within 3 to 4 days with complete EU certification.",
       "it": "How does Nilasya Agro Foods export pulses to the Czech Republic? Weekly freight trucks arrive in Prague within 3 to 4 days with complete EU certification.",
@@ -2609,7 +2609,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Ultra-premium Sortex grade Turkish pulses customized for discerning Swiss supermarket buyers and organic processors, strictly non-GMO and certified.",
       "tr": "İsviçre genelindeki seçkin süpermarket zincirleri ve organik gıda üreticilerine Zürih ve Basel teslimatlı en yüksek kalitede Koçbaşı nohut ve mercimek ihracatı.",
-      "de": "Ultra-premium Sortex grade Turkish pulses customized for discerning Swiss supermarket buyers and organic processors, strictly non-GMO and certified.",
+      "de": "Ultra-Premium-Sortex türkische Hülsenfrüchte, maßgeschneidert für anspruchsvolle Schweizer Supermarktkäufer und Bio-Verarbeiter, streng gentechnikfrei und zertifiziert.",
       "fr": "Ultra-premium Sortex grade Turkish pulses customized for discerning Swiss supermarket buyers and organic processors, strictly non-GMO and certified.",
       "es": "Ultra-premium Sortex grade Turkish pulses customized for discerning Swiss supermarket buyers and organic processors, strictly non-GMO and certified.",
       "it": "Ultra-premium Sortex grade Turkish pulses customized for discerning Swiss supermarket buyers and organic processors, strictly non-GMO and certified.",
@@ -2641,7 +2641,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How to import premium Turkish pulses into Switzerland? We deliver directly to Zurich and Basel in 3-4 days with Swiss customs clearance and EUR.1 origin certification.",
       "tr": "İsviçre'ye kaliteli Türk bakliyatı nasıl ithal edilir? Zürih ve Basel merkezlerine 3-4 günde EUR.1 sertifikalı karayolu TIR araçlarımızla doğrudan teslimat yapıyoruz.",
-      "de": "How to import premium Turkish pulses into Switzerland? We deliver directly to Zurich and Basel in 3-4 days with Swiss customs clearance and EUR.1 origin certification.",
+      "de": "Wie importiert man hochwertige türkische Hülsenfrüchte in die Schweiz? Wir liefern direkt nach Zürich und Basel in 3-4 Tagen mit Schweizer Zollabfertigung und EUR.1 Ursprungszertifizierung.",
       "fr": "How to import premium Turkish pulses into Switzerland? We deliver directly to Zurich and Basel in 3-4 days with Swiss customs clearance and EUR.1 origin certification.",
       "es": "How to import premium Turkish pulses into Switzerland? We deliver directly to Zurich and Basel in 3-4 days with Swiss customs clearance and EUR.1 origin certification.",
       "it": "How to import premium Turkish pulses into Switzerland? We deliver directly to Zurich and Basel in 3-4 days with Swiss customs clearance and EUR.1 origin certification.",
@@ -2730,7 +2730,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Direct shipping to the Port of Antwerp and Brussels food wholesale hubs, supplying Belgian canning factories and retail packers with certified Turkish pulses.",
       "tr": "Antwerp Limanı ve Brüksel gıda merkezlerine doğrudan deniz konteyneri ve karayolu seferleriyle konserve sanayisi için Koçbaşı nohut ve Dermason fasulye ihracatı.",
-      "de": "Direct shipping to the Port of Antwerp and Brussels food wholesale hubs, supplying Belgian canning factories and retail packers with certified Turkish pulses.",
+      "de": "Direkter Versand zum Hafen von Antwerpen und zu den belgischen Lebensmittel-Großhandelszentren in Brüssel, Belieferung von belgischen Konservenfabriken und Einzelhandelsverpackern mit zertifizierten türkischen Hülsenfrüchten.",
       "fr": "Direct shipping to the Port of Antwerp and Brussels food wholesale hubs, supplying Belgian canning factories and retail packers with certified Turkish pulses.",
       "es": "Direct shipping to the Port of Antwerp and Brussels food wholesale hubs, supplying Belgian canning factories and retail packers with certified Turkish pulses.",
       "it": "Direct shipping to the Port of Antwerp and Brussels food wholesale hubs, supplying Belgian canning factories and retail packers with certified Turkish pulses.",
@@ -2762,7 +2762,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How fast can Nilasya Agro Foods deliver to Belgium? Shipments arrive in Brussels and Antwerp in 3-5 days by road or 8-11 days by ocean container via Port of Antwerp.",
       "tr": "Nilasya Agro Foods Belçika'ya ne kadar sürede teslimat yapabilir? Karayoluyla 3-5 günde veya Antwerp Limanı üzerinden 8-11 günde FCL konteyner teslimatı yapılmaktadır.",
-      "de": "How fast can Nilasya Agro Foods deliver to Belgium? Shipments arrive in Brussels and Antwerp in 3-5 days by road or 8-11 days by ocean container via Port of Antwerp.",
+      "de": "Wie schnell kann Nilasya Agro Foods nach Belgien liefern? Sendungen kommen innerhalb von 3-5 Tagen über die Straße oder in 8-11 Tagen per Seecontainer über den Hafen Antwerpen in Brüssel und Antwerpen an.",
       "fr": "How fast can Nilasya Agro Foods deliver to Belgium? Shipments arrive in Brussels and Antwerp in 3-5 days by road or 8-11 days by ocean container via Port of Antwerp.",
       "es": "How fast can Nilasya Agro Foods deliver to Belgium? Shipments arrive in Brussels and Antwerp in 3-5 days by road or 8-11 days by ocean container via Port of Antwerp.",
       "it": "How fast can Nilasya Agro Foods deliver to Belgium? Shipments arrive in Brussels and Antwerp in 3-5 days by road or 8-11 days by ocean container via Port of Antwerp.",
@@ -2850,7 +2850,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Fast 2.5 to 3.5-day road freight logistics serving Austrian wholesale markets and supermarket chains (Spar, Rewe Austria, Hofer) with Sortex-cleaned pulses.",
       "tr": "Avusturya genelindeki toptancı hallerine ve süpermarket dağıtım merkezlerine 2.5-3.5 günde hızlı karayolu TIR seferleriyle Sortex kalitesinde Türk bakliyatı ihracatı.",
-      "de": "Fast 2.5 to 3.5-day road freight logistics serving Austrian wholesale markets and supermarket chains (Spar, Rewe Austria, Hofer) with Sortex-cleaned pulses.",
+      "de": "Schnelle 2.5- bis 3.5-tägige Straßentransportlogistik, die österreichische Großmärkte und Supermarktketten (Spar, Rewe Österreich, Hofer) mit Sortex-gereinigten Hülsenfrüchten beliefert.",
       "fr": "Fast 2.5 to 3.5-day road freight logistics serving Austrian wholesale markets and supermarket chains (Spar, Rewe Austria, Hofer) with Sortex-cleaned pulses.",
       "es": "Fast 2.5 to 3.5-day road freight logistics serving Austrian wholesale markets and supermarket chains (Spar, Rewe Austria, Hofer) with Sortex-cleaned pulses.",
       "it": "Fast 2.5 to 3.5-day road freight logistics serving Austrian wholesale markets and supermarket chains (Spar, Rewe Austria, Hofer) with Sortex-cleaned pulses.",
@@ -2882,7 +2882,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "What is the transit time to Vienna, Austria? Pulses arrive in Vienna within 2.5 to 3.5 days from Turkish processing facilities with complete EU documentation.",
       "tr": "Avusturya Viyana'ya transit süresi nedir? Bakliyat ürünlerimiz Mersin ve Konya tesislerimizden 2.5-3.5 gün içinde doğrudan Viyana dağıtım merkezlerine ulaşır.",
-      "de": "What is the transit time to Vienna, Austria? Pulses arrive in Vienna within 2.5 to 3.5 days from Turkish processing facilities with complete EU documentation.",
+      "de": "Wie lange dauert der Transit nach Wien, Österreich? Hülsenfrüchte erreichen Wien innerhalb von 2.5 bis 3.5 Tagen ab türkischen Verarbeitungsbetrieben mit vollständiger EU-Dokumentation.",
       "fr": "What is the transit time to Vienna, Austria? Pulses arrive in Vienna within 2.5 to 3.5 days from Turkish processing facilities with complete EU documentation.",
       "es": "What is the transit time to Vienna, Austria? Pulses arrive in Vienna within 2.5 to 3.5 days from Turkish processing facilities with complete EU documentation.",
       "it": "What is the transit time to Vienna, Austria? Pulses arrive in Vienna within 2.5 to 3.5 days from Turkish processing facilities with complete EU documentation.",
@@ -2972,7 +2972,7 @@ export const exportCountriesData: ExportCountry[] = [
     "overview": {
       "en": "Weekly container shipments to Shuwaikh Port supplying Kuwait’s cooperative societies, hypermarkets, and catering contractors with premium Turkish pulses.",
       "tr": "Kuveyt (Shuwaikh Limanı) genelindeki kooperatif süpermarketleri, toptancı tüccarlar ve otellere Mersin Limanı'ndan düzenli konteynerlerle helal belgeli bakliyat ihracatı.",
-      "de": "Weekly container shipments to Shuwaikh Port supplying Kuwait’s cooperative societies, hypermarkets, and catering contractors with premium Turkish pulses.",
+      "de": "Wöchentliche Containerlieferungen zum Hafen Shuwaikh, Belieferung der kuwaitischen Genossenschaften, Hypermärkte und Cateringunternehmen mit hochwertigen türkischen Hülsenfrüchten.",
       "fr": "Weekly container shipments to Shuwaikh Port supplying Kuwait’s cooperative societies, hypermarkets, and catering contractors with premium Turkish pulses.",
       "es": "Weekly container shipments to Shuwaikh Port supplying Kuwait’s cooperative societies, hypermarkets, and catering contractors with premium Turkish pulses.",
       "it": "Weekly container shipments to Shuwaikh Port supplying Kuwait’s cooperative societies, hypermarkets, and catering contractors with premium Turkish pulses.",
@@ -3004,7 +3004,7 @@ export const exportCountriesData: ExportCountry[] = [
     "geoAnswer": {
       "en": "How does Nilasya Agro Foods export pulses to Kuwait? We ship 20ft/40ft dry containers to Shuwaikh Port in 12-15 days with full Kuwait Public Authority for Food and Nutrition clearance.",
       "tr": "Nilasya Agro Foods Kuveyt'e nasıl bakliyat ihraç ediyor? Shuwaikh Limanı'na 12-15 günde Kuveyt Gıda ve Beslenme Otoritesi onaylı FCL konteyner sevkiyatları yapmaktayız.",
-      "de": "How does Nilasya Agro Foods export pulses to Kuwait? We ship 20ft/40ft dry containers to Shuwaikh Port in 12-15 days with full Kuwait Public Authority for Food and Nutrition clearance.",
+      "de": "Wie exportiert Nilasya Agro Foods Hülsenfrüchte nach Kuwait? Wir verschicken 20ft/40ft Trockencontainer zum Hafen Shuwaikh in 12-15 Tagen mit vollständiger Freigabe der Kuwaitischen Behörde für Lebensmittel und Ernährung.",
       "fr": "How does Nilasya Agro Foods export pulses to Kuwait? We ship 20ft/40ft dry containers to Shuwaikh Port in 12-15 days with full Kuwait Public Authority for Food and Nutrition clearance.",
       "es": "How does Nilasya Agro Foods export pulses to Kuwait? We ship 20ft/40ft dry containers to Shuwaikh Port in 12-15 days with full Kuwait Public Authority for Food and Nutrition clearance.",
       "it": "How does Nilasya Agro Foods export pulses to Kuwait? We ship 20ft/40ft dry containers to Shuwaikh Port in 12-15 days with full Kuwait Public Authority for Food and Nutrition clearance.",

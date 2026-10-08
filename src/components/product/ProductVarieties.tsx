@@ -68,7 +68,7 @@ export const ProductVarieties: React.FC<ProductVarietiesProps> = ({ product, lan
                       </h4>
                     </Link>
                     <div className="text-xs font-semibold text-emerald-700 mt-0.5">
-                      {v.color} • {v.brix}
+                      {v.color}{v.purity ? ` • ${v.purity}` : ''}
                     </div>
                   </div>
                   <span className="px-3 py-1 bg-emerald-50 text-emerald-800 rounded-full text-xs font-bold shrink-0">

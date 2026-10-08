@@ -38,7 +38,7 @@ export default function HomePage({
       <CompanyIntro lang={lang} />
       <FarmToWorldFlow lang={lang} />
       <ProductionMap lang={lang} />
-      <HarvestCalendarSection lang={lang} />
+      <HarvestCalendarSection lang={lang} onOpenQuoteWithProduct={openQuote} />
       <QualityTraceabilitySection lang={lang} />
       <PackagingShowcase lang={lang} />
       <ExportHeroSection lang={lang} onOpenQuote={() => openQuote()} />

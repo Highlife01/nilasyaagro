@@ -9,10 +9,10 @@ import Image from 'next/image';
 import { Truck, Ship, FileCheck2, ShieldCheck, MapPin, ArrowRight, CheckCircle2, HelpCircle } from 'lucide-react';
 import { CountryExportClientWrapper } from './CountryExportClientWrapper';
 import { productsData } from '@/data/products';
-import { localizedAlternates } from '@/lib/metadata';
+import { pageMetadata, localizedUrl } from '@/lib/metadata';
+import { breadcrumbSchema, organizationId, serializeJsonLd } from '@/lib/structuredData';
 import { getTranslations } from '@/data/translations';
 import { getPageTranslations } from '@/data/pageTranslations';
-import { company } from '@/data/company';
 
 export function generateStaticParams() {
   const params: { lang: string; country: string }[] = [];
@@ -44,12 +44,7 @@ export async function generateMetadata({
   const countryName = country.name[lang] || country.name.native || country.name.en;
   const t = getTranslations(lang);
 
-  return {
-    title: `${countryName} ${t.nav.export} | Nilasya Agro Foods`,
-    description: country.overview[lang] || country.overview.en,
-    alternates: localizedAlternates(lang, `export/${countrySlug}`),
-    robots: { index: true, follow: true },
-  };
+  return pageMetadata(lang, `export/${countrySlug}`, `${countryName} ${t.nav.export}`, country.overview[lang] || country.overview.en);
 }
 
 export default async function CountryExportPage({
@@ -71,13 +66,9 @@ export default async function CountryExportPage({
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: 'B2B Pulses, Grains & Agricultural Commodities Export',
-    provider: {
-      '@type': 'Organization',
-      name: company.name,
-      url: company.baseUrl,
-      telephone: company.phoneE164,
-      email: company.email,
-    },
+    '@id': `${localizedUrl(lang, `export/${countrySlug}`)}#service`,
+    url: localizedUrl(lang, `export/${countrySlug}`),
+    provider: { '@id': organizationId },
     areaServed: {
       '@type': 'Country',
       name: country.name.en,
@@ -89,9 +80,13 @@ export default async function CountryExportPage({
     <div className="pt-24 bg-white min-h-screen">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
       />
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbSchema(lang, [
+        { name: getTranslations(lang).nav.export, path: 'export' },
+        { name: countryName, path: `export/${countrySlug}` },
+      ])) }} />
       {/* Hero Header for Specific Country */}
       <section className="relative py-16 lg:py-24 bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950 text-white overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -115,8 +110,8 @@ export default async function CountryExportPage({
 
             <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
               {lang === 'tr'
-                ? `Türkiye'den ${countryName}'ya Taze Meyve ve Sebze İhracatı`
-                : `Turkish Fresh Produce Supplier & Exporter to ${countryName}`}
+                ? `Türkiye'den ${countryName}'ya Bakliyat ve Hububat İhracatı`
+                : `Turkish Pulses & Grains Supplier & Exporter to ${countryName}`}
             </h1>
 
             <p className="text-base sm:text-xl text-slate-200 leading-relaxed font-normal">
@@ -165,12 +160,12 @@ export default async function CountryExportPage({
         <div className="bg-emerald-950 text-white rounded-3xl p-8 sm:p-12 shadow-xl border border-emerald-800 space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-amber-400">
             <HelpCircle className="w-4 h-4" />
-            <span>GEO & AI Verified Sourcing Fact</span>
+            <span>{pt.globalExport}</span>
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-black text-white">
             {lang === 'tr' 
-              ? `${countryName} için Türk Yaş Meyve ve Sebze Tedariki Nasıl Yapılır?`
+              ? `${countryName} için Türk Bakliyat ve Hububat Tedariki Nasıl Yapılır?`
               : `How does Nilasya Agro Foods supply pulses & grains to ${countryName}?`}
           </h2>
 
@@ -237,12 +232,12 @@ export default async function CountryExportPage({
 
         </div>
 
-        {/* Popular Fresh Produce for This Market */}
+        {/* Popular Pulses & Grains for This Market */}
         <div className="space-y-6">
           <div className="flex items-center justify-between">
             <div>
               <h3 className="text-2xl font-black text-slate-950">
-                {lang === 'tr' ? `${countryName} Pazarında En Çok Talep Gören Ürünler` : `Top Demand Turkish Produce for ${countryName}`}
+                {lang === 'tr' ? `${countryName} Pazarında En Çok Talep Gören Bakliyat ve Hububatlar` : `Top Demand Turkish Pulses & Grains for ${countryName}`}
               </h3>
               <p className="text-xs text-slate-500 mt-1">
                 {pt.topProduceSub}
@@ -280,7 +275,7 @@ export default async function CountryExportPage({
                     {prod.name[lang] || prod.name.en}
                   </h4>
                   <p className="text-xs text-slate-500 truncate mt-0.5">
-                    {prod.specifications.brix} • {prod.seasonMonthsText[lang] || prod.seasonMonthsText.en}
+                    {prod.specifications.purity || prod.specifications.moisture} • {prod.seasonMonthsText[lang] || prod.seasonMonthsText.en}
                   </p>
                 </div>
                 <ArrowRight className="w-4 h-4 text-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity" />

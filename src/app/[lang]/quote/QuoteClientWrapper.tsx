@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
-import { Locale, RFQSubmission } from '@/types';
+import React from 'react';
+import { Locale } from '@/types';
 import { getTranslations } from '@/data/translations';
 import { productsData } from '@/data/products';
 import { getProductCaliberOptions } from '@/data/productOptions';
@@ -13,88 +13,19 @@ import {
   Send, 
   FileText 
 } from 'lucide-react';
-import confetti from 'canvas-confetti';
 import Link from 'next/link';
-import { createWhatsAppUrl, formatInquiry } from '@/data/company';
-import { saveRFQInquiry } from '@/lib/adminAuth';
+import { useRFQForm } from '@/components/rfq/useRFQForm';
+import { FormFeedback, FormFieldError } from '@/components/rfq/FormFeedback';
+import { InquiryConsent } from '@/components/rfq/InquiryConsent';
+import { InquiryHoneypot } from '@/components/rfq/InquiryHoneypot';
 
 export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
   const t = getTranslations(lang).rfq;
 
-  const [currentStep, setCurrentStep] = useState(1);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [generatedRef, setGeneratedRef] = useState('');
-
-  const [formData, setFormData] = useState<Partial<RFQSubmission>>({
-    product: 'pomegranate',
-    variety: '',
-    caliber: '',
-    quantity: '40',
-    unit: 'Tons',
-    packaging: 'telescopic_carton',
-    destinationCountry: '',
-    destinationCity: '',
-    destinationPort: '',
-    incoterm: 'CIF',
-    companyName: '',
-    website: '',
-    contactPerson: '',
-    email: '',
-    phone: '',
-    whatsapp: '',
-    message: '',
-  });
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => name === 'product'
-      ? { ...prev, product: value, variety: '', caliber: '' }
-      : { ...prev, [name]: value }
-    );
-  };
-
-  const generateRefCode = () => {
-    const randomNum = Math.floor(1000 + Math.random() * 9000);
-    return `NG-RFQ-${randomNum}`;
-  };
-
-  const handleNext = () => {
-    if (currentStep < 5) setCurrentStep((prev) => prev + 1);
-  };
-
-  const handlePrev = () => {
-    if (currentStep > 1) setCurrentStep((prev) => prev - 1);
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    const refCode = generateRefCode();
-    try {
-      saveRFQInquiry({
-        ...formData,
-        referenceCode: refCode,
-      });
-    } catch {}
-    window.open(createWhatsAppUrl(formatInquiry(`Nilasya Agro Foods RFQ ${refCode}`, {
-      Product: formData.product, Variety: formData.variety, Caliber: formData.caliber,
-      Quantity: `${formData.quantity || ''} ${formData.unit || ''}`, Packaging: formData.packaging,
-      Destination: `${formData.destinationCity || ''}, ${formData.destinationCountry || ''}`,
-      Port: formData.destinationPort, Incoterm: formData.incoterm, Company: formData.companyName,
-      Website: formData.website, Contact: formData.contactPerson, Email: formData.email,
-      Phone: formData.phone, Message: formData.message,
-    })), '_blank', 'noopener,noreferrer');
-    setGeneratedRef(refCode);
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      try { confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } }); } catch {}
-    }
-  };
+  const { formData, currentStep, isSubmitting, isSuccess, generatedRef, errors, submitError,
+    formRef, fieldProps, fieldId, errorId, handleInputChange, handleNext, handlePrev, handleSubmit, whatsappHref,
+    consent, setConsent, websiteTrap, setWebsiteTrap,
+  } = useRFQForm(lang);
 
   const selectedProductObj = productsData.find((p) => p.id === formData.product);
 
@@ -177,6 +108,9 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                 </div>
 
                 <p className="text-xs text-slate-500 max-w-md mx-auto">{t.successNote}</p>
+              <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-semibold text-emerald-800 underline">
+                {lang === 'tr' ? 'WhatsApp ile takip edin' : 'Follow up via WhatsApp'}
+              </a>
 
                 <div className="pt-4">
                   <Link
@@ -189,15 +123,18 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} noValidate aria-busy={isSubmitting} onSubmit={handleSubmit} className="space-y-6">
+              <FormFeedback errors={errors} submitError={submitError} lang={lang} />
+              <InquiryHoneypot value={websiteTrap} onChange={setWebsiteTrap} />
                 {currentStep === 1 && (
                   <div className="space-y-4">
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('product')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.productLabel}
                       </label>
                       <select
                         name="product"
+                        {...fieldProps('product')}
                         value={formData.product}
                         onChange={handleInputChange}
                         className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -208,15 +145,17 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                           </option>
                         ))}
                       </select>
+                      <FormFieldError error={errors.product} id={errorId('product')} />
                     </div>
 
                     {selectedProductObj && (
                       <div>
-                        <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                        <label htmlFor={fieldId('variety')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                           {t.varietyLabel}
                         </label>
                         <select
                           name="variety"
+                        {...fieldProps('variety')}
                           value={formData.variety}
                           onChange={handleInputChange}
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -230,16 +169,18 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                             </option>
                           ))}
                         </select>
+                      <FormFieldError error={errors.variety} id={errorId('variety')} />
                       </div>
                     )}
 
                     {selectedProductObj && (
                       <div>
-                        <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                        <label htmlFor={fieldId('caliber')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                           {lang === 'tr' ? 'Kalibre / Çap Seçimi' : 'Caliber / Size Selection'}
                         </label>
                         <select
                           name="caliber"
+                        {...fieldProps('caliber')}
                           value={formData.caliber}
                           onChange={handleInputChange}
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -249,6 +190,7 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                             <option key={option.value} value={option.value}>{option.label}</option>
                           ))}
                         </select>
+                      <FormFieldError error={errors.caliber} id={errorId('caliber')} />
                       </div>
                     )}
                   </div>
@@ -258,25 +200,31 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                   <div className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                        <label htmlFor={fieldId('quantity')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                           {t.quantityLabel}
                         </label>
                         <input
-                          type="text"
+                          type="number"
+                        min="0.001"
+                        step="any"
+                        inputMode="decimal"
                           name="quantity"
+                        {...fieldProps('quantity')}
                           required
                           value={formData.quantity}
                           onChange={handleInputChange}
                           placeholder="e.g. 40"
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                         />
+                      <FormFieldError error={errors.quantity} id={errorId('quantity')} />
                       </div>
                       <div>
-                        <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                        <label htmlFor={fieldId('unit')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                           {t.unitLabel}
                         </label>
                         <select
                           name="unit"
+                        {...fieldProps('unit')}
                           value={formData.unit}
                           onChange={handleInputChange}
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -286,15 +234,17 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                           <option value="Pallets">Pallets (Euro / Standard)</option>
                           <option value="Boxes">Carton Boxes / Crates</option>
                         </select>
+                      <FormFieldError error={errors.unit} id={errorId('unit')} />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('packaging')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.packagingLabel}
                       </label>
                       <select
                         name="packaging"
+                        {...fieldProps('packaging')}
                         value={formData.packaging}
                         onChange={handleInputChange}
                         className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -305,6 +255,7 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                           </option>
                         ))}
                       </select>
+                      <FormFieldError error={errors.packaging} id={errorId('packaging')} />
                     </div>
                   </div>
                 )}
@@ -313,42 +264,47 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                   <div className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                        <label htmlFor={fieldId('destinationCountry')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                           {t.destCountryLabel}
                         </label>
                         <input
                           type="text"
                           name="destinationCountry"
+                        {...fieldProps('destinationCountry')}
                           required
                           value={formData.destinationCountry}
                           onChange={handleInputChange}
                           placeholder="e.g. Germany, UAE, India"
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                         />
+                      <FormFieldError error={errors.destinationCountry} id={errorId('destinationCountry')} />
                       </div>
                       <div>
-                        <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                        <label htmlFor={fieldId('destinationCity')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                           {t.destCityLabel}
                         </label>
                         <input
                           type="text"
                           name="destinationCity"
+                        {...fieldProps('destinationCity')}
                           required
                           value={formData.destinationCity}
                           onChange={handleInputChange}
                           placeholder="e.g. Hamburg, Dubai, Mumbai"
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                         />
+                      <FormFieldError error={errors.destinationCity} id={errorId('destinationCity')} />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                        <label htmlFor={fieldId('incoterm')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                           {t.incotermLabel}
                         </label>
                         <select
                           name="incoterm"
+                        {...fieldProps('incoterm')}
                           value={formData.incoterm}
                           onChange={handleInputChange}
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
@@ -359,19 +315,22 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                           <option value="FCA">FCA (Free Carrier)</option>
                           <option value="EXW">EXW (Ex Works Packhouse)</option>
                         </select>
+                      <FormFieldError error={errors.incoterm} id={errorId('incoterm')} />
                       </div>
                       <div>
-                        <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                        <label htmlFor={fieldId('destinationPort')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                           {t.destPortLabel}
                         </label>
                         <input
                           type="text"
                           name="destinationPort"
+                        {...fieldProps('destinationPort')}
                           value={formData.destinationPort}
                           onChange={handleInputChange}
                           placeholder="e.g. Rotterdam, Jebel Ali"
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                         />
+                      <FormFieldError error={errors.destinationPort} id={errorId('destinationPort')} />
                       </div>
                     </div>
                   </div>
@@ -380,44 +339,50 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                 {currentStep === 4 && (
                   <div className="space-y-4">
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('companyName')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.companyNameLabel}
                       </label>
                       <input
                         type="text"
                         name="companyName"
+                        {...fieldProps('companyName')}
                         required
                         value={formData.companyName}
                         onChange={handleInputChange}
                         placeholder="Company Name"
                         className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       />
+                      <FormFieldError error={errors.companyName} id={errorId('companyName')} />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('website')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.websiteLabel}
                       </label>
                       <input
                         type="text"
                         name="website"
+                        {...fieldProps('website')}
                         value={formData.website}
                         onChange={handleInputChange}
                         placeholder="www.company.com"
                         className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       />
+                      <FormFieldError error={errors.website} id={errorId('website')} />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('message')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.messageLabel}
                       </label>
                       <textarea
                         name="message"
+                        {...fieldProps('message')}
                         rows={3}
                         value={formData.message}
                         onChange={handleInputChange}
                         placeholder="Specific caliber requirements, target delivery window..."
                         className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       />
+                      <FormFieldError error={errors.message} id={errorId('message')} />
                     </div>
                   </div>
                 )}
@@ -425,50 +390,58 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                 {currentStep === 5 && (
                   <div className="space-y-4">
                     <div>
-                      <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                      <label htmlFor={fieldId('contactPerson')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                         {t.contactPersonLabel}
                       </label>
                       <input
                         type="text"
                         name="contactPerson"
+                        {...fieldProps('contactPerson')}
                         required
                         value={formData.contactPerson}
                         onChange={handleInputChange}
                         placeholder="Contact Person Full Name"
                         className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       />
+                      <FormFieldError error={errors.contactPerson} id={errorId('contactPerson')} />
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                        <label htmlFor={fieldId('email')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                           {t.emailLabel}
                         </label>
                         <input
                           type="email"
                           name="email"
+                        {...fieldProps('email')}
                           required
                           value={formData.email}
                           onChange={handleInputChange}
                           placeholder="email@company.com"
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                         />
+                      <FormFieldError error={errors.email} id={errorId('email')} />
                       </div>
                       <div>
-                        <label className="block text-sm font-semibold text-slate-800 mb-1.5">
+                        <label htmlFor={fieldId('phone')} className="block text-sm font-semibold text-slate-800 mb-1.5">
                           {t.phoneLabel}
                         </label>
                         <input
                           type="tel"
                           name="phone"
+                        {...fieldProps('phone')}
                           required
                           value={formData.phone}
                           onChange={handleInputChange}
                           placeholder="+49 170 1234567"
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                         />
+                      <FormFieldError error={errors.phone} id={errorId('phone')} />
                       </div>
                     </div>
+                  <InquiryConsent lang={lang} id={fieldId('consent')} checked={consent} onChange={setConsent} errorId={errorId('consent')} invalid={!!errors.consent} />
+                  <FormFieldError error={errors.consent} id={errorId('consent')} />
                   </div>
                 )}
 
@@ -512,7 +485,13 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                     </button>
                   )}
                 </div>
-              </form>
+              
+              {submitError && (
+                <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-xl bg-emerald-700 px-5 py-3 font-semibold text-white hover:bg-emerald-800">
+                  {lang === 'tr' ? 'WhatsApp ile g?nder' : 'Send via WhatsApp'}
+                </a>
+              )}
+            </form>
             )}
           </div>
         </div>

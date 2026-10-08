@@ -1,4 +1,4 @@
-import { Locale } from '@/types';
+import { pageTranslationsData } from './pageTranslationsData';
 
 export interface PageTranslations {
   about: {
@@ -35,6 +35,21 @@ export interface PageTranslations {
     };
   };
   productDetail: {
+    purityLabel: string;
+    moistureLabel: string;
+    proteinLabel: string;
+    specificationLabels: Record<string, string>;
+    sourcingTitle: string;
+    sourcingQuestion: string;
+    sourcingAnswer: string;
+    packagingLabel: string;
+    specificationsNote: string;
+    galleryTitle: string;
+    previousPhoto: string;
+    nextPhoto: string;
+    closeGallery: string;
+    viewPhoto: string;
+    viewDetails: string;
     caliberDiameter: string;
     brixSweetness: string;
     standardGrade: string;
@@ -213,7 +228,11 @@ export interface PageTranslations {
   };
 }
 
-const baseEnglish: PageTranslations = {
+export type LocalizedPageTranslations = Omit<PageTranslations, 'whatsapp'> & {
+  whatsapp: Omit<PageTranslations['whatsapp'], 'msgProduct'> & { msgProductTemplate: string };
+};
+
+export const baseEnglish: PageTranslations = {
   about: {
     tag: 'TURKISH B2B COMMODITIES OPERATOR',
     title: 'Connecting Anatolian Agricultural Abundance with Global Markets',
@@ -247,6 +266,27 @@ const baseEnglish: PageTranslations = {
     },
   },
   productDetail: {
+    purityLabel: 'Purity',
+    moistureLabel: 'Moisture (maximum)',
+    proteinLabel: 'Protein (dry basis)',
+    specificationLabels: {
+      variety: 'Variety / Commercial Type', origin: 'Origin / Growing Basin', caliber: 'Caliber / Screen Size',
+      color: 'Natural Color & Appearance', foreignMatter: 'Foreign Matter / Stones', broken: 'Broken / Split Kernels',
+      damaged: 'Damaged / Discolored Seeds', class: 'Export Grade', storageTemp: 'Storage Temperature',
+      optimalHumidity: 'Relative Humidity', shelfLife: 'Shelf Life & Storage', harvest: 'Harvest Window',
+      storage: 'Storage Conditions', species: 'Botanical Species', characteristics: 'Product Characteristics',
+    },
+    sourcingTitle: 'Product sourcing information',
+    sourcingQuestion: 'What does Nilasya Agro Foods supply for {product}?',
+    sourcingAnswer: 'Nilasya Agro Foods supplies {product} from Türkiye for wholesale and food manufacturing buyers. Review the listed origins, product specifications, packaging options, and harvest periods below. Confirm the shipment specifications and availability with our export team before ordering.',
+    packagingLabel: 'Available packaging',
+    specificationsNote: 'Specifications describe the product range. The quotation and sales contract confirm the agreed values for each shipment.',
+    galleryTitle: 'Product gallery',
+    previousPhoto: 'Previous photo',
+    nextPhoto: 'Next photo',
+    closeGallery: 'Close gallery',
+    viewPhoto: 'View photo',
+    viewDetails: 'View specifications',
     caliberDiameter: 'Caliber / Size Grade',
     brixSweetness: 'Sortex Purity Rate',
     standardGrade: 'Standard & Export Grade',
@@ -275,13 +315,13 @@ const baseEnglish: PageTranslations = {
     optimumTemp: 'Optimum Storage Temp',
     humidity: 'Relative Humidity (RH)',
     maxPostHarvest: 'Shelf Life in Storage',
-    factBoxBadge: 'Machine-Readable Fact Box (Commodity Data & Specs)',
+    factBoxBadge: 'Product facts & sourcing overview',
     productCategory: 'Product & Category:',
     countryOrigin: 'Country of Origin & Hubs:',
     primaryVarieties: 'Primary Varieties & Calibers:',
     brixGrade: 'Purity & Grade:',
     supplyWindow: 'Harvest & Export Availability:',
-    verifiedSupplier: 'Verified Supplier & Processor:',
+    verifiedSupplier: 'Supplier:',
   },
   productionPage: {
     tag: 'ANATOLIAN AGRICULTURAL BASINS',
@@ -425,7 +465,7 @@ const baseEnglish: PageTranslations = {
   },
 };
 
-const baseTurkish: PageTranslations = {
+export const baseTurkish: PageTranslations = {
   about: {
     tag: 'B2B BAKLİYAT & HUBUBAT OPERATÖRÜ',
     title: 'Anadolu Tarımının Gücünü ve Bereketini Dünya Pazarlarıyla Buluşturuyoruz',
@@ -459,6 +499,27 @@ const baseTurkish: PageTranslations = {
     },
   },
   productDetail: {
+    purityLabel: 'Saflık',
+    moistureLabel: 'Nem (azami)',
+    proteinLabel: 'Protein (kuru bazda)',
+    specificationLabels: {
+      variety: 'Çeşit / Ticari Standart', origin: 'Menşe / Üretim Havzası', caliber: 'Kalibre / Elek Boyutu',
+      color: 'Doğal Renk ve Görünüm', foreignMatter: 'Yabancı Madde / Taş', broken: 'Kırık / Bölünmüş Tane',
+      damaged: 'Hasarlı / Lekeli Tane', class: 'İhracat Kalite Sınıfı', storageTemp: 'Depolama Sıcaklığı',
+      optimalHumidity: 'Bağıl Nem', shelfLife: 'Raf Ömrü ve Depolama', harvest: 'Hasat Dönemi',
+      storage: 'Depolama Koşulları', species: 'Botanik Tür', characteristics: 'Ürün Özellikleri',
+    },
+    sourcingTitle: 'Ürün tedarik bilgileri',
+    sourcingQuestion: 'Nilasya Agro Foods, {product} için ne sunuyor?',
+    sourcingAnswer: 'Nilasya Agro Foods, toptan ticaret ve gıda üretimi alıcılarına Türkiye menşeli {product} tedarik eder. Aşağıdaki menşe bölgelerini, ürün özelliklerini, ambalaj seçeneklerini ve hasat dönemlerini inceleyebilirsiniz. Sipariş öncesinde sevkiyat özelliklerini ve ürün bulunabilirliğini ihracat ekibimizle teyit ediniz.',
+    packagingLabel: 'Mevcut ambalaj seçenekleri',
+    specificationsNote: 'Teknik değerler ürün yelpazesini tanımlar. Her sevkiyat için geçerli değerler teklif ve satış sözleşmesinde teyit edilir.',
+    galleryTitle: 'Ürün galerisi',
+    previousPhoto: 'Önceki fotoğraf',
+    nextPhoto: 'Sonraki fotoğraf',
+    closeGallery: 'Galeriyi kapat',
+    viewPhoto: 'Fotoğrafı görüntüle',
+    viewDetails: 'Teknik özellikleri incele',
     caliberDiameter: 'Kalibre / Boyut Sınıfı',
     brixSweetness: 'Sortex Saflık Oranı',
     standardGrade: 'Standart & İhracat Sınıfı',
@@ -487,13 +548,13 @@ const baseTurkish: PageTranslations = {
     optimumTemp: 'Optimal Depo Sıcaklığı',
     humidity: 'Bağıl Nem (RH)',
     maxPostHarvest: 'Depolama Ömrü',
-    factBoxBadge: 'Makine Tarafından Okunabilir Emtia Özeti (GEO & AI)',
+    factBoxBadge: 'Ürün bilgileri ve tedarik özeti',
     productCategory: 'Ürün ve Kategori:',
     countryOrigin: 'Menşe ve Üretim Havzası:',
     primaryVarieties: 'Ana Çeşitler ve Kalibreler:',
     brixGrade: 'Saflık ve Kalite Sınıfı:',
     supplyWindow: 'Hasat ve Sevkiyat Dönemi:',
-    verifiedSupplier: 'Tescilli İhracatçı ve İşletmeci:',
+    verifiedSupplier: 'Tedarikçi:',
   },
   productionPage: {
     tag: 'ANADOLU TARIM HAVZALARI',
@@ -644,5 +705,13 @@ export const pageTranslationsMap: Record<string, Partial<PageTranslations>> = {
 
 export const getPageTranslations = (lang: string): PageTranslations => {
   if (lang === 'tr') return baseTurkish;
-  return baseEnglish;
+  const localized = pageTranslationsData[lang];
+  if (!localized) return baseEnglish;
+  return {
+    ...localized,
+    whatsapp: {
+      ...localized.whatsapp,
+      msgProduct: (productName: string) => localized.whatsapp.msgProductTemplate.replace('{product}', productName),
+    },
+  };
 };

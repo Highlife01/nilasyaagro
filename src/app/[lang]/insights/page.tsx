@@ -7,7 +7,8 @@ import Link from 'next/link';
 import { Clock, ArrowRight, BookOpen } from 'lucide-react';
 import type { Metadata } from 'next';
 import { getTranslations } from '@/data/translations';
-import { localizedSeoDescription } from '@/data/seo';
+import { localizedPageDescription } from '@/data/seo';
+import { pageMetadata } from '@/lib/metadata';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -24,10 +25,7 @@ export async function generateMetadata({
   const lang = resolvedParams.lang as Locale;
   const t = getTranslations(lang);
 
-  return {
-    title: t.insightsSection.title,
-    description: localizedSeoDescription(lang, t.insightsSection.title),
-  };
+  return pageMetadata(lang, 'insights', t.insightsSection.title, localizedPageDescription(lang, 'insights', t.insightsSection.title));
 }
 
 export default async function InsightsPage({

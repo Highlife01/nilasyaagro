@@ -1,11 +1,12 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { Product, Locale } from '@/types';
 import { FileText, Camera, ZoomIn, ChevronLeft, ChevronRight, X, ShieldCheck } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
 import { getPageTranslations } from '@/data/pageTranslations';
+import { getLocalizedSpecifications } from '@/lib/localizedContent';
 
 interface ProductHeroProps {
   product: Product;
@@ -16,6 +17,7 @@ interface ProductHeroProps {
 export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQuote }) => {
   const t = getTranslations(lang).productsSection;
   const pt = getPageTranslations(lang).productDetail;
+  const specs = getLocalizedSpecifications(product, lang);
 
   const prodName = product.name[lang] || product.name.en;
   const prodCategory = product.category[lang] || product.category.en;
@@ -28,6 +30,33 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const lightboxRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isLightboxOpen) return;
+    const previousFocus = document.activeElement as HTMLElement | null;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    lightboxRef.current?.querySelector<HTMLButtonElement>('button')?.focus();
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsLightboxOpen(false);
+      if (event.key === 'ArrowLeft') setActiveIndex(index => (index + gallery.length - 1) % gallery.length);
+      if (event.key === 'ArrowRight') setActiveIndex(index => (index + 1) % gallery.length);
+      if (event.key === 'Tab') {
+        const controls = lightboxRef.current?.querySelectorAll<HTMLButtonElement>('button');
+        if (!controls?.length) return;
+        const first = controls[0], last = controls[controls.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', onKeyDown);
+      previousFocus?.focus();
+    };
+  }, [isLightboxOpen, gallery.length]);
 
   const activeImage = gallery[activeIndex] || product.heroImage;
 
@@ -68,16 +97,16 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
             {/* Quick Metrics */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
               <div className="p-3 bg-white/5 border border-white/10 rounded-2xl">
-                <div className="text-xs text-slate-400 font-medium">{pt.brixSweetness}</div>
-                <div className="text-sm font-bold text-white mt-0.5">{product.specifications.brix}</div>
+                <div className="text-xs text-slate-400 font-medium">{pt.purityLabel}</div>
+                <div className="text-sm font-bold text-white mt-0.5">{specs.purity}</div>
               </div>
               <div className="p-3 bg-white/5 border border-white/10 rounded-2xl">
-                <div className="text-xs text-slate-400 font-medium">{pt.caliberDiameter}</div>
-                <div className="text-sm font-bold text-white mt-0.5">{product.specifications.caliber} ({product.specifications.size})</div>
+                <div className="text-xs text-slate-400 font-medium">{pt.moistureLabel}</div>
+                <div className="text-sm font-bold text-white mt-0.5">{specs.moisture}</div>
               </div>
               <div className="p-3 bg-white/5 border border-white/10 rounded-2xl col-span-2 sm:col-span-1">
-                <div className="text-xs text-slate-400 font-medium">{pt.standardGrade}</div>
-                <div className="text-sm font-bold text-emerald-400 mt-0.5">{product.specifications.class}</div>
+                <div className="text-xs text-slate-400 font-medium">{pt.proteinLabel}</div>
+                <div className="text-sm font-bold text-emerald-400 mt-0.5">{specs.protein}</div>
               </div>
             </div>
 
@@ -99,7 +128,7 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
                   className="min-h-12 px-5 py-4 bg-white/10 hover:bg-white/15 text-slate-200 hover:text-white font-bold text-xs uppercase tracking-wider rounded-xl border border-white/15 transition-all flex items-center gap-2"
                 >
                   <Camera className="w-4 h-4 text-emerald-400" />
-                  <span>{lang === 'tr' ? `Galeriyi İncele (${gallery.length})` : `View Gallery (${gallery.length})`}</span>
+                  <span>{pt.galleryTitle} ({gallery.length})</span>
                 </button>
               )}
             </div>
@@ -109,24 +138,25 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
           <div className="lg:col-span-5 relative space-y-3">
             {/* Main Showcase Image */}
             <div 
-              onClick={() => setIsLightboxOpen(true)}
               className="group relative h-[380px] sm:h-[460px] w-full rounded-3xl overflow-hidden shadow-2xl border border-white/10 cursor-pointer bg-slate-900"
             >
+              <button type="button" onClick={() => setIsLightboxOpen(true)} aria-label={`${pt.galleryTitle}: ${prodName}`} className="absolute inset-0 h-full w-full focus-visible:ring-4 focus-visible:ring-inset focus-visible:ring-emerald-400">
               <Image
                 src={activeImage}
-                alt={`${prodName} Turkish export packaging - Nilasya Agro Foods`}
+                alt={`${prodName} — Nilasya Agro Foods`}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
+              </button>
 
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/30 pointer-events-none" />
 
               {/* Verified Badge */}
               <div className="absolute top-4 left-4 z-10 flex items-center gap-1.5 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-emerald-500/40 text-emerald-300 text-xs font-semibold shadow-lg">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                <span>{lang === 'tr' ? 'Orijinal Tesis & Paketleme' : 'Verified Export Packaging'}</span>
+                <span>{prodName}</span>
               </div>
 
               {/* Zoom prompt */}
@@ -140,7 +170,7 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
                   <button
                     type="button"
                     onClick={handlePrev}
-                    aria-label="Previous photo"
+                    aria-label={pt.previousPhoto}
                     className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-slate-950/70 hover:bg-emerald-600 text-white flex items-center justify-center backdrop-blur-sm border border-white/10 opacity-80 hover:opacity-100 transition-all"
                   >
                     <ChevronLeft className="w-5 h-5" />
@@ -148,7 +178,7 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
                   <button
                     type="button"
                     onClick={handleNext}
-                    aria-label="Next photo"
+                    aria-label={pt.nextPhoto}
                     className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-slate-950/70 hover:bg-emerald-600 text-white flex items-center justify-center backdrop-blur-sm border border-white/10 opacity-80 hover:opacity-100 transition-all"
                   >
                     <ChevronRight className="w-5 h-5" />
@@ -172,6 +202,8 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
                     key={idx}
                     type="button"
                     onClick={() => setActiveIndex(idx)}
+                    aria-label={`${pt.viewPhoto} ${idx + 1}`}
+                    aria-pressed={idx === activeIndex}
                     className={`relative w-16 h-16 sm:w-18 sm:h-18 rounded-xl overflow-hidden shrink-0 border-2 transition-all ${
                       idx === activeIndex
                         ? 'border-emerald-400 ring-2 ring-emerald-400/40 scale-105'
@@ -180,7 +212,7 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
                   >
                     <Image
                       src={img}
-                      alt={`Thumbnail ${idx + 1}`}
+                      alt=""
                       fill
                       sizes="72px"
                       className="object-cover"
@@ -196,6 +228,10 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
       {/* Lightbox Modal */}
       {isLightboxOpen && (
         <div 
+          ref={lightboxRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${pt.galleryTitle}: ${prodName}`}
           className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex flex-col items-center justify-center p-4 sm:p-8"
           onClick={() => setIsLightboxOpen(false)}
         >
@@ -206,6 +242,7 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
             <button
               type="button"
               onClick={() => setIsLightboxOpen(false)}
+              aria-label={pt.closeGallery}
               className="p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
             >
               <X className="w-6 h-6" />
@@ -218,7 +255,7 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
           >
             <Image
               src={activeImage}
-              alt={`${prodName} Full Resolution Preview`}
+              alt={prodName}
               fill
               sizes="(max-width: 1280px) 100vw, 1280px"
               className="object-contain"
@@ -233,6 +270,7 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
               <button
                 type="button"
                 onClick={() => handlePrev()}
+                aria-label={pt.previousPhoto}
                 className="p-3 rounded-full bg-white/10 hover:bg-emerald-600 text-white transition-colors"
               >
                 <ChevronLeft className="w-6 h-6" />
@@ -243,19 +281,22 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
                     key={idx}
                     type="button"
                     onClick={() => setActiveIndex(idx)}
+                    aria-label={`${pt.viewPhoto} ${idx + 1}`}
+                    aria-pressed={idx === activeIndex}
                     className={`relative w-12 h-12 rounded-lg overflow-hidden shrink-0 border-2 transition-all ${
                       idx === activeIndex
                         ? 'border-emerald-400 scale-110'
                         : 'border-white/20 opacity-50 hover:opacity-100'
                     }`}
                   >
-                    <Image src={img} alt={`Modal thumb ${idx + 1}`} fill sizes="48px" className="object-cover" />
+                    <Image src={img} alt="" fill sizes="48px" className="object-cover" />
                   </button>
                 ))}
               </div>
               <button
                 type="button"
                 onClick={() => handleNext()}
+                aria-label={pt.nextPhoto}
                 className="p-3 rounded-full bg-white/10 hover:bg-emerald-600 text-white transition-colors"
               >
                 <ChevronRight className="w-6 h-6" />

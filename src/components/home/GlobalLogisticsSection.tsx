@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Truck, Ship, Plane, Snowflake } from 'lucide-react';
+import { Truck, Ship, Plane } from 'lucide-react';
 import { Locale } from '@/types';
 import { getTranslations } from '@/data/translations';
 

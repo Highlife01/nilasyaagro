@@ -8,7 +8,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Globe2, ArrowRight, Clock, MapPin, Sparkles } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
-import { localizedSeoDescription } from '@/data/seo';
+import { localizedPageDescription } from '@/data/seo';
+import { pageMetadata } from '@/lib/metadata';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -25,10 +26,7 @@ export async function generateMetadata({
   const lang = resolvedParams.lang as Locale;
   const t = getTranslations(lang);
 
-  return {
-    title: t.nav.export,
-    description: localizedSeoDescription(lang, t.nav.export),
-  };
+  return pageMetadata(lang, 'export', t.nav.export, localizedPageDescription(lang, 'export', t.nav.export));
 }
 
 export default async function ExportPage({

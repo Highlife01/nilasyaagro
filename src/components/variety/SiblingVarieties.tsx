@@ -80,7 +80,7 @@ export const SiblingVarieties: React.FC<SiblingVarietiesProps> = ({
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-800 shadow-sm">
-                    {v.brix}
+                    {v.purity || v.caliber || v.size}
                   </div>
                 </div>
 

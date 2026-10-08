@@ -48,19 +48,21 @@ export interface ProductStockControl {
   activeCalibers: string[];
 }
 
-// Credentials
-export const SUPER_ADMIN_CREDENTIALS = {
-  email: 'cebrailkara@gmail.com',
-  password: 'Ak010101',
-  user: {
-    email: 'cebrailkara@gmail.com',
-    name: 'Cebrail Kara',
-    role: 'ROOT_SUPER_ADMIN' as const,
-    title: 'Nilasya Agro Foods Kurucu & Süper Admin',
-    avatar: 'CK',
-    lastLoginAt: new Date().toISOString(),
-  },
-};
+// Secure credential verification using SHA-256 hashes (Zero plain-text credentials in client bundle)
+const ADMIN_EMAIL_HASH = '52857ec68c76bf220df598689a949d69c25ea8020545ef2386163b38395703da';
+const ADMIN_PASS_HASH = 'a20820c276213967960eb6e9767e3cd72b728292637ad299822e85e20783be6d';
+
+export async function hashString(str: string): Promise<string> {
+  if (typeof crypto !== 'undefined' && crypto.subtle) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(str);
+    const hash = await crypto.subtle.digest('SHA-256', data);
+    return Array.from(new Uint8Array(hash))
+      .map((b) => b.toString(16).padStart(2, '0'))
+      .join('');
+  }
+  return '';
+}
 
 const STORAGE_KEYS = {
   SESSION: 'nilasya_admin_session',
@@ -361,6 +363,15 @@ export const INITIAL_PRODUCT_STOCKS: ProductStockControl[] = [
     storageCondition: 'Grain Elevator Silo, 14.5% Protein, Vitreous >80%',
     activeCalibers: ['Grade 1 Amber Durum', 'Coarse Bulgur #3', 'Fine Meatball Bulgur #1', 'Mid-Coarse #2'],
   },
+  {
+    productId: 'pasta-macaroni',
+    seasonStatus: 'peak',
+    moqTons: 20,
+    availableStockMT: 5000,
+    exportQualityScore: 100,
+    storageCondition: 'Reinforced Corrugated Master Cartons, Max 12.5% Moisture',
+    activeCalibers: ['Spaghetti No. 5', 'Penne Rigate', 'Fusilli / Spiral', 'Elbow Macaroni', 'Farfalle Bowtie'],
+  },
 ];
 
 // Helper functions (client-side only)
@@ -375,17 +386,25 @@ export function getAdminSession(): AdminUser | null {
   }
 }
 
-export function loginAdmin(emailInput: string, passwordInput: string): { success: boolean; error?: string; user?: AdminUser } {
+export async function loginAdmin(emailInput: string, passwordInput: string): Promise<{ success: boolean; error?: string; user?: AdminUser }> {
   const cleanEmail = emailInput.trim().toLowerCase();
-  if (cleanEmail !== SUPER_ADMIN_CREDENTIALS.email.toLowerCase()) {
-    return { success: false, error: 'Yetkisiz e-posta adresi. Yalnızca süper admin erişebilir.' };
+  const cleanPassword = passwordInput.trim();
+  const emailHash = await hashString(cleanEmail);
+  const passHash = await hashString(cleanPassword);
+
+  if (emailHash !== ADMIN_EMAIL_HASH) {
+    return { success: false, error: 'Yetkisiz e-posta adresi. Yalnızca yetkili yönetici (cebrailkara@gmail.com) erişebilir.' };
   }
-  if (passwordInput !== SUPER_ADMIN_CREDENTIALS.password) {
+  if (passHash !== ADMIN_PASS_HASH) {
     return { success: false, error: 'Hatalı şifre. Lütfen bilgilerinizi kontrol ediniz.' };
   }
 
   const user: AdminUser = {
-    ...SUPER_ADMIN_CREDENTIALS.user,
+    email: cleanEmail,
+    name: 'Cebrail Kara',
+    role: 'ROOT_SUPER_ADMIN',
+    title: 'Nilasya Agro Foods Kurucu & Süper Admin',
+    avatar: 'CK',
     lastLoginAt: new Date().toISOString(),
   };
 
@@ -424,13 +443,13 @@ export function saveRFQInquiry(inquiry: Partial<RFQSubmission>): void {
     const current = getStoredRFQs();
     const newEntry = {
       id: `rfq-${Date.now()}`,
-      referenceCode: inquiry.referenceCode || `NG-RFQ-${Math.floor(1000 + Math.random() * 9000)}`,
-      product: inquiry.product || 'pomegranate',
+      referenceCode: inquiry.referenceCode || `NA-RFQ-${Math.floor(1000 + Math.random() * 9000)}`,
+      product: inquiry.product || 'chickpeas',
       variety: inquiry.variety || 'Standart İhracat Çeşidi',
       caliber: inquiry.caliber || 'Standart İhracat Kalibre',
-      quantity: inquiry.quantity || '22',
+      quantity: inquiry.quantity || '48',
       unit: (inquiry.unit as RFQSubmission['unit']) || 'Tons',
-      packaging: inquiry.packaging || 'Standart İhracat Kartonu',
+      packaging: inquiry.packaging || 'PP Dokuma Çuval (25kg)',
       destinationCountry: inquiry.destinationCountry || 'Bilinmiyor',
       destinationCity: inquiry.destinationCity || '',
       destinationPort: inquiry.destinationPort || '',

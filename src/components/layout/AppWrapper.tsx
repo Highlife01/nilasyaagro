@@ -6,6 +6,8 @@ import { Footer } from './Footer';
 import { WhatsAppFloat } from '../ui/WhatsAppFloat';
 import { RFQModal } from '../rfq/RFQModal';
 import { Locale } from '@/types';
+import { usePathname } from 'next/navigation';
+import { productsData } from '@/data/products';
 
 interface AppWrapperProps {
   children: React.ReactNode;
@@ -26,6 +28,11 @@ export const AppWrapper: React.FC<AppWrapperProps> = ({
 }) => {
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<string | undefined>(currentProduct);
+  const pathname = usePathname();
+  const pathSegments = pathname.split('/').filter(Boolean);
+  const activeProduct = currentProduct || (pathSegments[1] === 'products'
+    ? productsData.find((product) => Object.values(product.slug).includes(pathSegments[2]) || product.id === pathSegments[2])?.id
+    : undefined);
 
   useEffect(() => {
     if ('serviceWorker' in navigator) {
@@ -36,7 +43,7 @@ export const AppWrapper: React.FC<AppWrapperProps> = ({
   }, []);
 
   const openQuote = (productId?: string) => {
-    setSelectedProduct(productId || currentProduct);
+    setSelectedProduct(productId || activeProduct);
     setIsQuoteOpen(true);
   };
 
@@ -50,13 +57,14 @@ export const AppWrapper: React.FC<AppWrapperProps> = ({
         <Navbar lang={lang} onOpenQuote={() => openQuote()} />
         <main className="flex-1">{children}</main>
         <Footer lang={lang} onOpenQuote={() => openQuote()} />
-        <WhatsAppFloat lang={lang} productName={currentProduct} />
-        <RFQModal
+        <WhatsAppFloat lang={lang} productName={activeProduct} />
+        {isQuoteOpen && <RFQModal
+          key={`${lang}-${selectedProduct || 'default'}`}
           isOpen={isQuoteOpen}
           onClose={closeQuote}
           lang={lang}
           preselectedProduct={selectedProduct}
-        />
+        />}
       </div>
     </RFQContext.Provider>
   );

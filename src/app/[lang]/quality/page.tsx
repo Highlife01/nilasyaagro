@@ -6,7 +6,8 @@ import { ClientCalendarWrapper } from '../harvest-calendar/ClientCalendarWrapper
 import type { Metadata } from 'next';
 import { ShieldCheck } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
-import { localizedSeoDescription } from '@/data/seo';
+import { localizedPageDescription } from '@/data/seo';
+import { pageMetadata } from '@/lib/metadata';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -23,10 +24,7 @@ export async function generateMetadata({
   const lang = resolvedParams.lang as Locale;
   const t = getTranslations(lang);
 
-  return {
-    title: t.qualitySection.title,
-    description: localizedSeoDescription(lang, t.qualitySection.title),
-  };
+  return pageMetadata(lang, 'quality', t.qualitySection.title, localizedPageDescription(lang, 'quality', t.qualitySection.title));
 }
 
 export default async function QualityPage({

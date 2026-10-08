@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Variety, Locale } from '@/types';
-import { Camera, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Camera, CheckCircle2 } from 'lucide-react';
 
 interface VarietyGalleryProps {
   variety: Variety;

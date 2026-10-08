@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Product, Locale } from '@/types';
-import { Package, Truck, Ship, Plane, HelpCircle, Snowflake } from 'lucide-react';
+import { Package, Truck, Ship, Plane, HelpCircle } from 'lucide-react';
 import { packagingData } from '@/data/packaging';
 
 import { getPageTranslations } from '@/data/pageTranslations';
@@ -83,7 +83,7 @@ export const ProductLogistics: React.FC<ProductDetailSectionsProps> = ({ product
   return (
     <section className="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl space-y-6">
       <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-400">
-        <Snowflake className="w-4 h-4 text-emerald-400" />
+        <Ship className="w-4 h-4 text-emerald-400" />
         <span>{pt.coldChainLogisticsTitle}</span>
       </div>
 

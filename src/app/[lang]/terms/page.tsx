@@ -3,7 +3,8 @@ import { Locale } from '@/types';
 import { supportedLanguages } from '@/data/languages';
 import type { Metadata } from 'next';
 import { getTranslations } from '@/data/translations';
-import { localizedSeoDescription } from '@/data/seo';
+import { localizedPageDescription } from '@/data/seo';
+import { pageMetadata } from '@/lib/metadata';
 
 export function generateStaticParams() {
   return supportedLanguages.map((l) => ({ lang: l.code }));
@@ -12,10 +13,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const lang = (await params).lang;
   const t = getTranslations(lang);
-  return {
-    title: t.footer.terms,
-    description: localizedSeoDescription(lang, t.footer.terms),
-  };
+  return pageMetadata(lang, 'terms', t.footer.terms, localizedPageDescription(lang, 'terms', t.footer.terms));
 }
 
 export default async function TermsPage({

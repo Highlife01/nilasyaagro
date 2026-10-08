@@ -2,12 +2,14 @@ import React from 'react';
 import { Locale } from '@/types';
 import { supportedLanguages } from '@/data/languages';
 import { ProductGrid } from '@/components/home/ProductGrid';
+import { Nilasya2KgShowcase } from '@/components/packaging/Nilasya2KgShowcase';
 import { HarvestCalendarSection } from '@/components/home/HarvestCalendarSection';
 import { ClientProductsWrapper } from './ClientProductsWrapper';
 import type { Metadata } from 'next';
 import { Sparkles } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
-import { localizedSeoDescription } from '@/data/seo';
+import { localizedPageDescription } from '@/data/seo';
+import { pageMetadata } from '@/lib/metadata';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -24,10 +26,7 @@ export async function generateMetadata({
   const lang = resolvedParams.lang as Locale;
   const t = getTranslations(lang);
 
-  return {
-    title: t.productsSection.titleMain,
-    description: localizedSeoDescription(lang, `${t.productsSection.titleMain}: ${t.hero.productsList}`),
-  };
+  return pageMetadata(lang, 'products', t.productsSection.titleMain, localizedPageDescription(lang, 'products', `${t.productsSection.titleMain}: ${t.hero.productsList}`));
 }
 
 export default async function ProductsCatalogPage({
@@ -58,25 +57,25 @@ export default async function ProductsCatalogPage({
             {pt.subtitle}
           </p>
 
-          {/* 6 Fresh Produce Pills */}
-          <div className="flex flex-wrap items-center justify-center gap-2.5 mt-8 max-w-3xl mx-auto">
-            <span className="px-4 py-2 rounded-2xl bg-rose-600/90 text-white text-xs font-black shadow-md">
-              {pt.pills.pomegranate}
+          {/* 6 Core Pulses & Grains Category Badges */}
+          <div className="flex flex-wrap items-center justify-center gap-2.5 mt-8 max-w-4xl mx-auto">
+            <span className="px-4 py-2 rounded-2xl bg-amber-700/80 border border-amber-500/40 text-amber-100 text-xs font-black shadow-md backdrop-blur-sm">
+              {pt.pills.chickpeas}
             </span>
-            <span className="px-4 py-2 rounded-2xl bg-red-600/90 text-white text-xs font-black shadow-md">
-              {pt.pills.apples}
+            <span className="px-4 py-2 rounded-2xl bg-rose-800/80 border border-rose-500/40 text-rose-100 text-xs font-black shadow-md backdrop-blur-sm">
+              {pt.pills.redLentils}
             </span>
-            <span className="px-4 py-2 rounded-2xl bg-purple-600/90 text-white text-xs font-black shadow-md">
-              {pt.pills.grapes}
+            <span className="px-4 py-2 rounded-2xl bg-emerald-800/80 border border-emerald-500/40 text-emerald-100 text-xs font-black shadow-md backdrop-blur-sm">
+              {pt.pills.greenLentils}
             </span>
-            <span className="px-4 py-2 rounded-2xl bg-lime-600/90 text-white text-xs font-black shadow-md">
-              {pt.pills.kiwi}
+            <span className="px-4 py-2 rounded-2xl bg-stone-700/80 border border-stone-400/40 text-stone-100 text-xs font-black shadow-md backdrop-blur-sm">
+              {pt.pills.whiteBeans}
             </span>
-            <span className="px-4 py-2 rounded-2xl bg-amber-600/90 text-white text-xs font-black shadow-md">
-              {pt.pills.citrus}
+            <span className="px-4 py-2 rounded-2xl bg-yellow-800/80 border border-yellow-500/40 text-yellow-100 text-xs font-black shadow-md backdrop-blur-sm">
+              {pt.pills.dryPeas}
             </span>
-            <span className="px-4 py-2 rounded-2xl bg-emerald-600/90 text-white text-xs font-black shadow-md">
-              {pt.pills.tomatoes}
+            <span className="px-4 py-2 rounded-2xl bg-amber-600/90 border border-amber-400/50 text-white text-xs font-black shadow-md backdrop-blur-sm">
+              {pt.pills.durumWheat}
             </span>
           </div>
         </div>
@@ -84,6 +83,9 @@ export default async function ProductsCatalogPage({
 
       {/* Main Products Grid */}
       <ProductGrid lang={lang} />
+
+      {/* Nilasya 2 KG Retail & Export Packaging Showcase */}
+      <Nilasya2KgShowcase lang={lang} />
 
       {/* Harvest Calendar */}
       <HarvestCalendarSection lang={lang} />

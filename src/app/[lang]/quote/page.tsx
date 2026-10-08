@@ -4,7 +4,8 @@ import { supportedLanguages } from '@/data/languages';
 import { QuoteClientWrapper } from './QuoteClientWrapper';
 import type { Metadata } from 'next';
 import { getTranslations } from '@/data/translations';
-import { localizedSeoDescription } from '@/data/seo';
+import { localizedPageDescription } from '@/data/seo';
+import { pageMetadata } from '@/lib/metadata';
 
 export function generateStaticParams() {
   return supportedLanguages.map((l) => ({ lang: l.code }));
@@ -19,10 +20,7 @@ export async function generateMetadata({
   const lang = resolvedParams.lang as Locale;
   const t = getTranslations(lang);
 
-  return {
-    title: t.rfq.modalTitle,
-    description: localizedSeoDescription(lang, t.rfq.modalTitle),
-  };
+  return pageMetadata(lang, 'quote', t.rfq.modalTitle, localizedPageDescription(lang, 'quote', t.rfq.modalTitle));
 }
 
 export default async function QuotePage({

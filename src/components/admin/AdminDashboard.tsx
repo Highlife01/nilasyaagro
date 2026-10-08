@@ -107,7 +107,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     { id: 'products', label: 'Ürün & Stok Yönetimi', icon: Package, badge: '6 Ürün' },
     { 
       id: 'logistics', 
-      label: 'Lojistik & Soğuk Zincir', 
+      label: 'Lojistik & Konteyner Radarı', 
       icon: Ship, 
       badge: `${containers.filter((c) => c.status === 'in_transit').length} Rota`,
       badgeColor: 'bg-amber-100 text-amber-800'

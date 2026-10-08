@@ -31,20 +31,22 @@ export const HarvestCalendarSection: React.FC<{ lang: Locale; onOpenQuoteWithPro
 
   const getProduceColorBadge = (id: string) => {
     switch (id) {
-      case 'pomegranate':
-        return 'bg-rose-500/10 text-rose-700 border-rose-200';
-      case 'apple':
-        return 'bg-red-500/10 text-red-700 border-red-200';
-      case 'grapes':
-        return 'bg-purple-500/10 text-purple-700 border-purple-200';
-      case 'kiwi':
-        return 'bg-lime-500/10 text-lime-800 border-lime-200';
-      case 'orange':
-        return 'bg-amber-500/10 text-amber-800 border-amber-200';
-      case 'tomato':
-        return 'bg-emerald-500/10 text-emerald-800 border-emerald-200';
+      case 'chickpeas':
+        return 'bg-amber-500/10 text-amber-800 border-amber-300';
+      case 'red-lentils':
+        return 'bg-rose-500/10 text-rose-800 border-rose-300';
+      case 'green-lentils':
+        return 'bg-emerald-500/10 text-emerald-800 border-emerald-300';
+      case 'white-beans':
+        return 'bg-slate-200/80 text-slate-800 border-slate-300';
+      case 'durum-wheat-bulgur':
+        return 'bg-yellow-500/10 text-yellow-800 border-yellow-300';
+      case 'dry-peas':
+        return 'bg-teal-500/10 text-teal-800 border-teal-300';
+      case 'pasta-macaroni':
+        return 'bg-orange-500/10 text-orange-800 border-orange-300';
       default:
-        return 'bg-slate-100 text-slate-700 border-slate-200';
+        return 'bg-emerald-50 text-emerald-900 border-emerald-200';
     }
   };
 
@@ -192,7 +194,7 @@ export const HarvestCalendarSection: React.FC<{ lang: Locale; onOpenQuoteWithPro
                               <div className="flex items-center justify-center">
                                 <span
                                   className="w-8 h-8 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 text-white font-black text-xs flex items-center justify-center shadow-md shadow-emerald-500/30 transition-transform hover:scale-110 cursor-help"
-                                  title={`${prodName} — ${lang === 'tr' ? 'Doğrudan Bahçe Hasadı (Ağaç / Tarla)' : 'Direct Peak Orchard Harvest'}`}
+                                  title={`${prodName} — ${lang === 'tr' ? 'Tarlada Yeni Mahsul Hasat Dönemi' : 'Direct Field Harvest (New Crop)'}`}
                                 >
                                   H
                                 </span>
@@ -202,7 +204,7 @@ export const HarvestCalendarSection: React.FC<{ lang: Locale; onOpenQuoteWithPro
                               <div className="flex items-center justify-center">
                                 <span
                                   className="w-8 h-8 rounded-xl bg-gradient-to-br from-amber-400 to-amber-500 text-slate-950 font-black text-xs flex items-center justify-center shadow-md shadow-amber-400/30 transition-transform hover:scale-110 cursor-help"
-                                  title={`${prodName} — ${lang === 'tr' ? 'Kontrollü Atmosfer (CA / ULO) Soğuk Depo Tedariki' : 'Controlled Atmosphere (CA) Cold Storage Supply'}`}
+                                  title={`${prodName} — ${lang === 'tr' ? 'İklim Kontrollü Çelik Silo & Depolardan Yıl Boyu Kesintisiz Tedarik' : 'Climate-Controlled Silo Storage & Year-Round Supply'}`}
                                 >
                                   CA
                                 </span>

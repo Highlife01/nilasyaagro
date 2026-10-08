@@ -16,6 +16,7 @@ export interface PackagingDetail {
   palletConfigEuro: string;
   palletConfigStandard: string;
   containerReefer40FCL: string; // Or standard 20ft/40ft container capacity
+  image?: string;
   features: {
     en: string[];
     tr: string[];
@@ -23,6 +24,74 @@ export interface PackagingDetail {
 }
 
 export const packagingData: PackagingDetail[] = [
+  {
+    id: 'nilasya_2kg_retail_series',
+    name: {
+      en: 'Nilasya 2 KG Premium Retail Stand-up Pouch Series',
+      tr: 'Nilasya 2 KG Lüks Perakende Pencereli Paket Serisi',
+    },
+    suitableFor: {
+      en: 'Koçbaşı Chickpeas, Red Lentils, Green Lentils, White Beans, Dry Peas, Bulgur',
+      tr: 'Koçbaşı Nohut, Kırmızı Mercimek, Yeşil Mercimek, Kuru Fasulye, Bezelye, Bulgur',
+    },
+    netWeightRange: '2.0 kg e Net Weight',
+    material: {
+      en: 'Triple-layer barrier matte film with clear bean inspection window, resealable zip-lock, and nitrogen-flush MAP protection',
+      tr: 'Şeffaf fasulye pencereli, kilitli (zipper), yüksek bariyerli mat laminasyon ve azot gazı (MAP) korumalı ambalaj',
+    },
+    palletConfigEuro: '72 master cartons per Euro Pallet (6 or 8 x 2kg packs per box)',
+    palletConfigStandard: '84 master cartons per Industrial Pallet (100x120 cm) with edge protection',
+    containerReefer40FCL: '1,200 – 1,400 cartons (18.0 – 22.0 Metric Tons) per 40ft High Cube Container',
+    image: '/images/packaging/nilasya-2kg-pulses-packaging-series.jpg',
+    features: {
+      en: [
+        'Custom uniform luxury brand design engineered for international supermarket shelves',
+        'Large front bean-shaped transparent window showcasing pristine Sortex quality and caliber',
+        'High-barrier foil laminated for zero moisture penetration and 24 to 36 months shelf life',
+        'Certified ISO 22000, Halal, Kosher and EU Food Contact Grade compliant',
+      ],
+      tr: [
+        'Uluslararası süpermarket rafları için geliştirilmiş yeknesak, prestijli kurumsal tasarım',
+        'Sortex saflığını ve kalibresini doğrudan sergileyen geniş fasulye formunda şeffaf pencere',
+        'Sıfır nem geçirgenliği ve 24-36 ay tazelik sağlayan çok katmanlı koruyucu laminasyon',
+        'ISO 22000, Helal, Kosher ve AB Gıda Temas Yönetmeliğine tam uyumlu sertifikalı üretim',
+      ],
+    },
+  },
+  {
+    id: 'nilasya_pasta_packaging',
+    name: {
+      en: 'Nilasya Premium Turkish Pasta & Macaroni Series (500g, 2kg & Catering)',
+      tr: 'Nilasya Lüks Türk Makarnası Ambalaj Serisi (500g, 2kg ve Catering)',
+    },
+    suitableFor: {
+      en: 'Spaghetti, Penne Rigate, Fusilli, Elbow Macaroni, Farfalle, 100% Durum Semolina Shapes',
+      tr: 'Spagetti, Kalem Makarna, Burgu, Dirsek, Kelebek, %100 Durum İrmik Çeşitleri',
+    },
+    netWeightRange: '500g, 2.0 kg & 5.0 kg',
+    material: {
+      en: 'Multi-layer high-barrier BOPP/CPP pillow & stand-up gusseted pouch with clear product window, packed in reinforced 5-ply export master cartons',
+      tr: 'Şeffaf ürün pencereli, yüksek bariyerli BOPP/CPP lamine yastık ve körüklü paket; 5 katlı oluklu ihracat master kolisinde',
+    },
+    palletConfigEuro: '72 – 84 master cartons per Euro Pallet (8x2kg or 20x500g)',
+    palletConfigStandard: '90 – 100 master cartons per Industrial Pallet (100x120 cm)',
+    containerReefer40FCL: '2,000 – 2,200 cartons (22.0 – 24.5 MT) per 40ft High Cube Container',
+    image: '/images/packaging/nilasya-pasta-packaging.jpg',
+    features: {
+      en: [
+        'Private label OEM custom branded packaging available for international supermarket chains',
+        'Transparent front viewing window highlighting vibrant golden amber semolina color',
+        'Moisture-resistant hermetic seal preserving pasta cooking firmness up to 36 months',
+        'Certified ISO 22000, FSSC 22000, Halal, Kosher and EU food migration compliant',
+      ],
+      tr: [
+        'Uluslararası süpermarket zincirleri için özel marka (Private Label) fason üretim ve baskı imkanı',
+        'İrmiğin doğal canlı kehribar sarısı rengini gösteren şeffaf ön kontrol penceresi',
+        '36 aya kadar tazelik ve pişme diriliğini koruyan neme dayanıklı hermetik kaynaklı ambalaj',
+        'ISO 22000, FSSC 22000, Helal, Kosher ve AB gıda temas standartlarına tam uyumluluk',
+      ],
+    },
+  },
   {
     id: 'pp_woven_bag_25kg_50kg',
     name: {

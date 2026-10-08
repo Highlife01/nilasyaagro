@@ -1,21 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  Lock, 
-  Mail, 
-  Eye, 
-  EyeOff, 
-  ShieldCheck, 
-  ArrowRight, 
-  AlertCircle, 
-  Sparkles,
-  Globe,
-  CheckCircle2,
-  KeyRound
-} from 'lucide-react';
+import { Mail, Eye, EyeOff, ShieldCheck, ArrowRight, AlertCircle, Globe, CheckCircle2, KeyRound } from 'lucide-react';
 import Link from 'next/link';
-import { loginAdmin, SUPER_ADMIN_CREDENTIALS, AdminUser } from '@/lib/adminAuth';
+import { loginAdmin, AdminUser } from '@/lib/adminAuth';
 
 interface AdminLoginProps {
   onSuccess: (user: AdminUser) => void;
@@ -29,26 +17,23 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMsg('');
     setIsLoading(true);
 
-    setTimeout(() => {
-      const result = loginAdmin(email, password);
+    try {
+      const result = await loginAdmin(email, password);
       setIsLoading(false);
       if (result.success && result.user) {
         onSuccess(result.user);
       } else {
         setErrorMsg(result.error || 'Giriş başarısız. Lütfen bilgilerinizi kontrol ediniz.');
       }
-    }, 400);
-  };
-
-  const handleQuickFill = () => {
-    setEmail(SUPER_ADMIN_CREDENTIALS.email);
-    setPassword(SUPER_ADMIN_CREDENTIALS.password);
-    setErrorMsg('');
+    } catch {
+      setIsLoading(false);
+      setErrorMsg('Giriş yapılırken bir hata oluştu. Lütfen tekrar deneyiniz.');
+    }
   };
 
   return (
@@ -88,20 +73,8 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess }) => {
             Süper Admin Yönetim Merkezi
           </p>
           <p className="text-xs text-slate-500 mt-2">
-            İhracat talepleri, ürün stokları ve uluslararası reefer lojistiği yönetim paneli.
+            İhracat talepleri, ürün stokları ve uluslararası bakliyat & tahıl lojistiği yönetim paneli.
           </p>
-        </div>
-
-        {/* Quick Demo Autofill Button */}
-        <div className="mb-6">
-          <button
-            type="button"
-            onClick={handleQuickFill}
-            className="w-full py-2.5 px-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 hover:bg-emerald-100 text-xs font-semibold flex items-center justify-center gap-2 transition-all group shadow-xs cursor-pointer"
-          >
-            <Sparkles className="w-4 h-4 text-emerald-600 group-hover:rotate-12 transition-transform" />
-            <span>Süper Admin Bilgilerini Otomatik Doldur</span>
-          </button>
         </div>
 
         {/* Error Notification */}

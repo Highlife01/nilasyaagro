@@ -2,12 +2,14 @@ import React from 'react';
 import { Locale } from '@/types';
 import { supportedLanguages } from '@/data/languages';
 import { PackagingShowcase } from '@/components/home/PackagingShowcase';
+import { Nilasya2KgShowcase } from '@/components/packaging/Nilasya2KgShowcase';
 import { packagingData } from '@/data/packaging';
 import { ClientCalendarWrapper } from '../harvest-calendar/ClientCalendarWrapper';
 import type { Metadata } from 'next';
 import { Package } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
-import { localizedSeoDescription } from '@/data/seo';
+import { localizedPageDescription } from '@/data/seo';
+import { pageMetadata } from '@/lib/metadata';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -24,10 +26,7 @@ export async function generateMetadata({
   const lang = resolvedParams.lang as Locale;
   const t = getTranslations(lang);
 
-  return {
-    title: t.packagingSection.title,
-    description: localizedSeoDescription(lang, t.packagingSection.title),
-  };
+  return pageMetadata(lang, 'packaging', t.packagingSection.title, localizedPageDescription(lang, 'packaging', t.packagingSection.title));
 }
 
 export default async function PackagingPage({
@@ -57,6 +56,9 @@ export default async function PackagingPage({
       </div>
 
       <PackagingShowcase lang={lang} />
+
+      {/* 2 KG Individual Pulse Packaging Showcase */}
+      <Nilasya2KgShowcase lang={lang} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-200">

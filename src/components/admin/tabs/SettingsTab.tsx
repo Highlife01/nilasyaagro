@@ -1,26 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  ShieldCheck, 
-  KeyRound, 
-  User, 
-  Mail, 
-  DollarSign, 
-  Download, 
-  RotateCcw, 
-  LogOut, 
-  CheckCircle2, 
-  Clock, 
-  Eye, 
-  EyeOff, 
-  AlertTriangle,
-  Sparkles,
-  Lock
-} from 'lucide-react';
+import { DollarSign, Download, RotateCcw, LogOut, CheckCircle2, Clock } from 'lucide-react';
 import { 
   AdminUser, 
-  SUPER_ADMIN_CREDENTIALS, 
   getAuditLogs, 
   resetAllAdminData, 
   getStoredRFQs, 
@@ -43,7 +26,6 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
   onLogout,
   onRefreshData,
 }) => {
-  const [showPassword, setShowPassword] = useState(false);
   const [resetSuccess, setResetSuccess] = useState(false);
   const auditLogs = getAuditLogs();
 
@@ -128,18 +110,10 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
                 <span className="font-semibold text-slate-900">Sınırsız (Full Access)</span>
               </div>
               <div className="flex justify-between py-1 border-b border-slate-200/60 items-center">
-                <span className="text-slate-500">Kayıtlı Şifre:</span>
-                <div className="flex items-center gap-2">
-                  <span className="font-mono text-slate-800 font-semibold">
-                    {showPassword ? SUPER_ADMIN_CREDENTIALS.password : '••••••••'}
-                  </span>
-                  <button
-                    onClick={() => setShowPassword(!showPassword)}
-                    className="text-slate-400 hover:text-slate-600 transition-colors cursor-pointer"
-                  >
-                    {showPassword ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
-                  </button>
-                </div>
+                <span className="text-slate-500">Güvenlik Doğrulaması:</span>
+                <span className="font-mono text-xs text-emerald-800 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                  SHA-256 Hash Korumalı
+                </span>
               </div>
               <div className="flex justify-between py-1">
                 <span className="text-slate-500">Son Başarılı Giriş:</span>

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Locale } from '@/types';
 import { supportedLanguages } from '@/data/languages';
-import { HarvestCalendarSection } from '@/components/home/HarvestCalendarSection';
+import { HarvestCalendarWithQuote } from '@/components/home/HarvestCalendarWithQuote';
 import { ClientCalendarWrapper } from './ClientCalendarWrapper';
 import type { Metadata } from 'next';
 import { Calendar, Snowflake, ShieldCheck, Sun } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
 import { localizedSeoDescription } from '@/data/seo';
+import { pageMetadata } from '@/lib/metadata';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -23,10 +24,7 @@ export async function generateMetadata({
   const lang = resolvedParams.lang as Locale;
   const t = getTranslations(lang);
 
-  return {
-    title: t.harvestCalendar.title,
-    description: localizedSeoDescription(lang, t.harvestCalendar.title),
-  };
+  return pageMetadata(lang, '/harvest-calendar/', t.harvestCalendar.title, localizedSeoDescription(lang, t.harvestCalendar.title));
 }
 
 export default async function HarvestCalendarPage({
@@ -93,7 +91,7 @@ export default async function HarvestCalendarPage({
       </section>
 
       {/* Main Light Harvest Calendar Section */}
-      <HarvestCalendarSection lang={lang} />
+      <HarvestCalendarWithQuote lang={lang} />
 
       {/* RFQ Call to Action Wrapper */}
       <ClientCalendarWrapper lang={lang} />

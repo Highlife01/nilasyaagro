@@ -40,6 +40,7 @@ export interface LanguageInfo {
 }
 
 export interface Variety {
+  localized?: Record<string, Partial<Pick<Variety, 'name' | 'description' | 'tagline' | 'color' | 'harvestMonths' | 'storage' | 'shelfLife' | 'packagingTypes' | 'characteristics'>>>;
   id?: string;
   slug?: Record<string, string> | string;
   name: string;
@@ -52,7 +53,6 @@ export interface Variety {
   colorTr?: string;
   size: string;
   caliber?: string;
-  brix?: string;
   moisture?: string;
   purity?: string;
   harvestMonths: string;
@@ -71,6 +71,7 @@ export interface Variety {
 }
 
 export interface PackagingOption {
+  localized?: Record<string, Partial<Omit<PackagingOption, 'localized'>>>;
   type: string;
   typeTr?: string;
   netWeight: string;
@@ -83,6 +84,7 @@ export interface PackagingOption {
 }
 
 export interface ProductSpec {
+  localized?: Record<string, Partial<Omit<ProductSpec, 'localized'>>>;
   variety: string;
   origin: string;
   originTr?: string;
@@ -96,9 +98,7 @@ export interface ProductSpec {
   foreignMatter?: string;
   damaged?: string;
   protein?: string;
-  brix?: string;
   class: string;
-  weight?: string;
   shelfLife: string;
   shelfLifeTr?: string;
   storageTemp: string;
@@ -106,6 +106,7 @@ export interface ProductSpec {
 }
 
 export interface FAQItem {
+  localized?: Record<string, { question: string; answer: string }>;
   question: string;
   questionTr?: string;
   answer: string;
@@ -135,6 +136,7 @@ export interface Product {
   varieties: Variety[];
   packagingOptions: PackagingOption[];
   logistics: {
+    localized?: Record<string, { transitTimeEU?: string; transitTimeGulf?: string; transitTimeAsia?: string; storageMethod?: string }>;
     modes: ('road' | 'sea' | 'air')[];
     transitTimeEU: string;
     transitTimeGulf: string;

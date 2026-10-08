@@ -1,0 +1,43 @@
+{
+  "products": [
+    "chickpeas",
+    "red-lentils",
+    "green-lentils",
+    "white-beans",
+    "dry-peas",
+    "durum-wheat-bulgur",
+    "other-pulses-seeds"
+  ],
+  "languages": [
+    "tr",
+    "en",
+    "ar",
+    "ru",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "pl",
+    "ro",
+    "bg",
+    "el",
+    "sr",
+    "uk",
+    "ka",
+    "az",
+    "uz",
+    "kk",
+    "fa",
+    "hi",
+    "ur",
+    "bn",
+    "zh-cn",
+    "ja",
+    "ko",
+    "id",
+    "ms",
+    "sw"
+  ]
+}
