@@ -112,8 +112,49 @@ export default async function LangLayout({
   const lang = resolvedParams.lang as Locale;
   const isRtl = isRtlLang(lang);
 
+  const organizationJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${company.baseUrl}/#organization`,
+    name: company.name,
+    legalName: company.legalName,
+    url: company.baseUrl,
+    logo: `${company.baseUrl}/logo.png`,
+    description: lang === 'tr' 
+      ? 'Türkiye\'den bakliyat ve hububat ihracatı - Nohut, mercimek, fasulye, bezelye, durum buğdayı ve bulgur ihracatçısı'
+      : 'Turkish pulses and grains exporter - Chickpeas, lentils, beans, peas, durum wheat and bulgur from Türkiye',
+    email: company.email,
+    telephone: company.phoneDisplay,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Mersin',
+      addressCountry: 'TR',
+    },
+    sameAs: [company.linkedin],
+  };
+
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${company.baseUrl}/#website`,
+    url: company.baseUrl,
+    name: 'Nilasya Agro Foods',
+    publisher: {
+      '@id': `${company.baseUrl}/#organization`,
+    },
+    inLanguage: supportedLanguages.map(l => l.code === 'zh-cn' ? 'zh-CN' : l.code),
+  };
+
   return (
     <div dir={isRtl ? 'rtl' : 'ltr'} lang={lang} className={isRtl ? 'font-sans rtl' : 'font-sans'}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
       <AppWrapper lang={lang}>{children}</AppWrapper>
     </div>
   );

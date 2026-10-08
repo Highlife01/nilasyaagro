@@ -25,9 +25,9 @@ export const translationsData: Record<string, Translations> = {
       "ctaPrimary": "EXPLORE OUR PRODUCTS",
       "ctaSecondary": "REQUEST AN EXPORT QUOTE",
       "stats": {
-        "countries": "35+",
-        "countriesLabel": "Global Export Markets",
-        "supply": "120,000 MT",
+        "countries": "Global",
+        "countriesLabel": "Export Markets Worldwide",
+        "supply": "100,000+ MT",
         "supplyLabel": "Annual Produce Handled",
         "regions": "6 Major",
         "regionsLabel": "Turkish Growing Terroirs",
@@ -49,8 +49,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -308,7 +308,7 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Tarladan liman yüklemesine kadar tam sertifikalı ve izlenebilir üretim."
       },
       "global": {
-        "title": "50+ Ülkeye Küresel İhracat",
+        "title": "Dünya Pazarlarına İhracat",
         "desc": "Avrupa, Körfez, Asya ve Amerika genelindeki gıda sanayicilerine teslimat."
       }
     },
@@ -567,8 +567,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -826,8 +826,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -1085,8 +1085,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -1344,8 +1344,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -1603,8 +1603,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -1862,8 +1862,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -2121,8 +2121,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -2380,8 +2380,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -2639,8 +2639,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -2898,8 +2898,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -3157,8 +3157,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -3416,8 +3416,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -3675,8 +3675,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -3934,8 +3934,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -4193,8 +4193,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -4452,8 +4452,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -4711,8 +4711,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -4970,8 +4970,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -5229,8 +5229,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -5488,8 +5488,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -5747,8 +5747,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -6006,8 +6006,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -6265,8 +6265,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -6524,8 +6524,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -6783,8 +6783,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -7042,8 +7042,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -7301,8 +7301,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -7560,8 +7560,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -7819,8 +7819,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
@@ -8078,8 +8078,8 @@ export const translationsData: Record<string, Translations> = {
         "desc": "Full farm-to-vessel traceability from certified Anatolian agricultural basins."
       },
       "global": {
-        "title": "Exporting to 50+ Countries",
-        "desc": "Supplying food processors, canneries, and wholesale importers worldwide."
+        "title": "Exporting to Global Markets",
+        "desc": "Supplying food processors, canneries, wholesale importers and supermarket chains worldwide."
       }
     },
     "productsSection": {
