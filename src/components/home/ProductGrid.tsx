@@ -15,6 +15,28 @@ interface ProductGridProps {
 
 export const ProductGrid: React.FC<ProductGridProps> = ({ lang, onOpenQuoteWithProduct }) => {
   const t = getTranslations(lang).productsSection;
+  const [activeTab, setActiveTab] = React.useState<'all' | 'pulses' | 'grains' | 'specialty'>('all');
+
+  const filterTabs = [
+    { id: 'all', label: lang === 'tr' ? 'Tüm Emtialar' : 'All Commodities' },
+    { id: 'pulses', label: lang === 'tr' ? 'Kuru Bakliyat (Nohut, Mercimek, Fasulye, Bezelye)' : 'Pulses (Chickpeas, Lentils, Beans, Peas)' },
+    { id: 'grains', label: lang === 'tr' ? 'Hububat, Bulgur & Makarna' : 'Grains, Bulgur & Pasta' },
+    { id: 'specialty', label: lang === 'tr' ? 'Bakla, Börülce & Yağlı Tohumlar' : 'Broad Beans, Cowpeas & Oilseeds' },
+  ] as const;
+
+  const filteredProducts = productsData.filter((product) => {
+    if (activeTab === 'all') return true;
+    if (activeTab === 'pulses') {
+      return ['chickpeas', 'red-lentils', 'green-lentils', 'white-beans', 'dry-peas'].includes(product.id);
+    }
+    if (activeTab === 'grains') {
+      return ['durum-wheat-bulgur', 'pasta-macaroni'].includes(product.id);
+    }
+    if (activeTab === 'specialty') {
+      return ['other-pulses-seeds'].includes(product.id);
+    }
+    return true;
+  });
 
   const getProductHref = (slugObj: Record<string, string>, id: string) => {
     const slug = slugObj[lang] || slugObj.en || id;
@@ -24,7 +46,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ lang, onOpenQuoteWithP
   return (
     <section id="products" className="relative bg-[#f5f7f3] py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto mb-12 max-w-3xl space-y-4 text-center lg:mb-14">
+        <div className="mx-auto mb-10 max-w-3xl space-y-4 text-center lg:mb-12">
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200/80 bg-white/70 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-emerald-800 shadow-sm">
             <Sparkles className="h-3.5 w-3.5 text-[#c99745]" />
             <span>{t.titleSmall}</span>
@@ -33,8 +55,26 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ lang, onOpenQuoteWithP
           <p className="text-base font-normal leading-relaxed text-slate-600 sm:text-lg">{t.subtitle}</p>
         </div>
 
+        {/* B2B Export Category Tabs */}
+        <div className="mb-10 flex flex-wrap items-center justify-center gap-2">
+          {filterTabs.map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              onClick={() => setActiveTab(tab.id)}
+              className={`rounded-full px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition-all shadow-sm ${
+                activeTab === tab.id
+                  ? 'bg-emerald-900 text-white shadow-emerald-950/20 shadow-md'
+                  : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 hover:text-emerald-900'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {productsData.map((product) => {
+          {filteredProducts.map((product) => {
             const prodName = product.name[lang] || product.name.en;
             const prodTagline = product.tagline[lang] || product.tagline.en;
             const prodCategory = product.category[lang] || product.category.en;
@@ -110,6 +150,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ lang, onOpenQuoteWithP
                   <div className="flex items-center gap-3 border-t border-[#e7eee8] pt-4">
                     <Link
                       href={getProductHref(product.slug, product.id)}
+                      aria-label={`${t.viewProduct}: ${prodName}`}
                       className="flex min-h-12 flex-1 touch-manipulation items-center justify-center gap-1.5 rounded-xl bg-[#0f5341] px-4 py-3 text-center text-sm font-bold uppercase tracking-[0.1em] text-white transition-all hover:bg-[#117a5c] hover:shadow-lg hover:shadow-emerald-900/15"
                     >
                       <span>{t.viewProduct}</span>
@@ -119,8 +160,9 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ lang, onOpenQuoteWithP
                     <button
                       type="button"
                       onClick={() => onOpenQuoteWithProduct?.(product.id)}
+                      aria-label={`${t.requestPrice}: ${prodName}`}
                       className="flex min-h-12 min-w-12 touch-manipulation items-center justify-center rounded-xl border border-emerald-200 bg-[#eef7f1] px-4 py-3 text-emerald-900 transition-colors hover:bg-[#dcefe3]"
-                      title={t.requestPrice}
+                      title={`${t.requestPrice}: ${prodName}`}
                     >
                       <FileText className="h-4 w-4" />
                     </button>

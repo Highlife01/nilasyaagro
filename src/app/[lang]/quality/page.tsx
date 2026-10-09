@@ -2,6 +2,7 @@ import React from 'react';
 import { Locale } from '@/types';
 import { supportedLanguages } from '@/data/languages';
 import { QualityTraceabilitySection } from '@/components/home/QualityTraceabilitySection';
+import { FacilityGallery } from '@/components/quality/FacilityGallery';
 import { ClientCalendarWrapper } from '../harvest-calendar/ClientCalendarWrapper';
 import type { Metadata } from 'next';
 import { ShieldCheck } from 'lucide-react';
@@ -54,6 +55,7 @@ export default async function QualityPage({
       </div>
 
       <QualityTraceabilitySection lang={lang} />
+      <FacilityGallery lang={lang} />
       <ClientCalendarWrapper lang={lang} />
     </div>
   );

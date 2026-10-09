@@ -18,6 +18,8 @@ import { useRFQForm } from '@/components/rfq/useRFQForm';
 import { FormFeedback, FormFieldError } from '@/components/rfq/FormFeedback';
 import { InquiryConsent } from '@/components/rfq/InquiryConsent';
 import { InquiryHoneypot } from '@/components/rfq/InquiryHoneypot';
+import { RFQDeliveryFields } from '@/components/rfq/RFQDeliveryFields';
+import { RFQSummary } from '@/components/rfq/RFQSummary';
 
 export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
   const t = getTranslations(lang).rfq;
@@ -47,7 +49,7 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
 
         <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden">
           {!isSuccess && (
-            <div className="bg-emerald-950 text-white px-8 py-5 border-b border-emerald-900">
+            <div className="bg-emerald-950 text-white px-8 py-5 border-b border-emerald-900" role="progressbar" aria-label={lang === 'tr' ? 'Başvuru ilerlemesi' : 'Inquiry progress'} aria-valuemin={1} aria-valuemax={5} aria-valuenow={currentStep}>
               <div className="flex items-center justify-between max-w-md mx-auto">
                 {[1, 2, 3, 4, 5].map((step) => (
                   <div key={step} className="flex items-center">
@@ -73,7 +75,7 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                 ))}
               </div>
               <div className="text-center mt-3 text-xs font-bold text-emerald-300 uppercase tracking-wider">
-                Step {currentStep}:{' '}
+                {lang === 'tr' ? 'Adım' : 'Step'} {currentStep}:{' '}
                 {currentStep === 1 && t.step1Title}
                 {currentStep === 2 && t.step2Title}
                 {currentStep === 3 && t.step3Title}
@@ -85,29 +87,33 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
 
           <div className="p-8 sm:p-12">
             {isSuccess ? (
-              <div className="text-center py-8 space-y-6">
+              <div className="text-center py-8 space-y-6" role="status">
                 <div className="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto ring-8 ring-emerald-50">
                   <CheckCircle className="w-12 h-12" />
                 </div>
                 <div>
                   <h2 className="text-3xl font-black text-slate-900">
-                    {lang === 'tr' ? 'WhatsApp Teklif Mesajınız Hazır' : 'Your WhatsApp RFQ Is Ready'}
+                    {t.successTitle}
                   </h2>
                   <p className="text-slate-600 mt-2 max-w-md mx-auto">
-                    {lang === 'tr' ? 'Teklifiniz WhatsApp\'ta hazırlandı. İletilmesi için açılan pencerede Gönder düğmesine basın.' : 'Your RFQ is ready in WhatsApp. Press Send in the opened window to deliver it.'}
+                    {t.successDesc}
                   </p>
                 </div>
 
-                <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 max-w-md mx-auto">
+                <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 max-w-md mx-auto space-y-3">
                   <div className="text-xs uppercase font-bold text-emerald-800 tracking-wider">
                     {t.refCodeLabel}
                   </div>
                   <div className="text-3xl font-mono font-black text-emerald-950 mt-1">
                     {generatedRef}
                   </div>
+                  <div className="pt-2 text-xs font-semibold text-emerald-900 flex items-center justify-center gap-1.5 border-t border-emerald-200/70">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span>{t.successNote}</span>
+                  </div>
                 </div>
 
-                <p className="text-xs text-slate-500 max-w-md mx-auto">{t.successNote}</p>
+                <p className="text-xs text-slate-500 max-w-md mx-auto">{lang === 'tr' ? 'İhracat ekibimiz gereksinimlerinizi inceleyerek sizinle iletişime geçecektir.' : 'Our export team will review your requirements and contact you.'}</p>
               <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-semibold text-emerald-800 underline">
                 {lang === 'tr' ? 'WhatsApp ile takip edin' : 'Follow up via WhatsApp'}
               </a>
@@ -124,8 +130,43 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
               </div>
             ) : (
               <form ref={formRef} noValidate aria-busy={isSubmitting} onSubmit={handleSubmit} className="space-y-6">
+              <fieldset disabled={isSubmitting} className="min-w-0 space-y-6">
               <FormFeedback errors={errors} submitError={submitError} lang={lang} />
               <InquiryHoneypot value={websiteTrap} onChange={setWebsiteTrap} />
+              {currentStep > 1 && selectedProductObj && (
+                <div className="bg-emerald-50/80 border border-emerald-200/80 rounded-2xl p-4 mb-6 flex flex-wrap items-center justify-between gap-3 text-xs">
+                  <div className="flex items-center gap-2.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse" />
+                    <div>
+                      <span className="text-slate-500 font-medium">{lang === 'tr' ? 'Seçili Ürün:' : 'Selected Product:'} </span>
+                      <strong className="text-slate-900 font-bold">{selectedProductObj.name[lang] || selectedProductObj.name.en}</strong>
+                      {formData.variety && (
+                        <span className="text-slate-600 font-medium"> ({formData.variety})</span>
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3 text-slate-700">
+                    {formData.caliber && formData.caliber !== 'recommendation' && (
+                      <div className="bg-white/80 px-2.5 py-1 rounded-lg border border-emerald-200/60">
+                        <span className="text-slate-500">{lang === 'tr' ? 'Kalibre:' : 'Caliber:'} </span>
+                        <span className="font-semibold text-emerald-900">{formData.caliber}</span>
+                      </div>
+                    )}
+                    {formData.quantity && (
+                      <div className="bg-white/80 px-2.5 py-1 rounded-lg border border-emerald-200/60">
+                        <span className="text-slate-500">{lang === 'tr' ? 'Miktar:' : 'Qty:'} </span>
+                        <span className="font-semibold text-emerald-900">{formData.quantity} {formData.unit}</span>
+                      </div>
+                    )}
+                    {formData.destinationCountry && (
+                      <div className="bg-white/80 px-2.5 py-1 rounded-lg border border-emerald-200/60">
+                        <span className="text-slate-500">{lang === 'tr' ? 'Varış:' : 'Dest:'} </span>
+                        <span className="font-semibold text-emerald-900">{formData.destinationCountry}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
                 {currentStep === 1 && (
                   <div className="space-y-4">
                     <div>
@@ -139,6 +180,7 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                         onChange={handleInputChange}
                         className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                       >
+                          <option value="">{lang === 'tr' ? 'Ürün seçin' : 'Select a product'}</option>
                         {productsData.map((p) => (
                           <option key={p.id} value={p.id}>
                             {p.name[lang] || p.name.en} ({p.scientificName})
@@ -160,12 +202,13 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                           onChange={handleInputChange}
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                         >
-                          <option value="">
+                          <option value="">{lang === 'tr' ? 'Çeşit seçin veya öneri isteyin' : 'Select a variety or request a recommendation'}</option>
+                          <option value="recommendation">
                             {lang === 'tr' ? 'Tüm Çeşitler / Tavsiye İstiyorum' : 'All Varieties / Supplier Recommendation'}
                           </option>
                           {selectedProductObj.varieties.map((v) => (
                             <option key={v.name} value={v.name}>
-                              {lang === 'tr' ? v.nameTr : v.name}
+                              {lang === 'tr' ? v.nameTr || v.name : v.name}
                             </option>
                           ))}
                         </select>
@@ -205,8 +248,9 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                         </label>
                         <input
                           type="number"
-                        min="0.001"
-                        step="any"
+                        min={formData.unit === 'container' ? '1' : '0.001'}
+                        max={formData.unit === 'container' ? '10000' : '1000000'}
+                        step={formData.unit === 'container' ? '1' : '0.001'}
                         inputMode="decimal"
                           name="quantity"
                         {...fieldProps('quantity')}
@@ -229,10 +273,9 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                           onChange={handleInputChange}
                           className="w-full px-4 py-3.5 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none"
                         >
-                          <option value="Tons">Metric Tons (MT)</option>
-                          <option value="Containers (40ft FCL)">40ft HC Reefer Containers</option>
-                          <option value="Pallets">Pallets (Euro / Standard)</option>
-                          <option value="Boxes">Carton Boxes / Crates</option>
+                          <option value="MT">Metric Tons (MT)</option>
+                          <option value="kg">Kilograms (kg)</option>
+                          <option value="container">Containers (FCL)</option>
                         </select>
                       <FormFieldError error={errors.unit} id={errorId('unit')} />
                       </div>
@@ -311,9 +354,10 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                         >
                           <option value="CIF">CIF (Cost, Insurance and Freight)</option>
                           <option value="CFR">CFR (Cost and Freight)</option>
-                          <option value="FOB">FOB (Free on Board - Mersin/Izmir)</option>
+                          <option value="FOB">FOB (Free on Board)</option>
                           <option value="FCA">FCA (Free Carrier)</option>
-                          <option value="EXW">EXW (Ex Works Packhouse)</option>
+                          <option value="EXW">EXW (Ex Works)</option>
+                          <option value="DAP">DAP (Delivered at Place)</option>
                         </select>
                       <FormFieldError error={errors.incoterm} id={errorId('incoterm')} />
                       </div>
@@ -333,6 +377,7 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                       <FormFieldError error={errors.destinationPort} id={errorId('destinationPort')} />
                       </div>
                     </div>
+                  <RFQDeliveryFields lang={lang} formData={formData} errors={errors} fieldProps={fieldProps} fieldId={fieldId} errorId={errorId} onChange={handleInputChange} />
                   </div>
                 )}
 
@@ -440,6 +485,7 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
                       <FormFieldError error={errors.phone} id={errorId('phone')} />
                       </div>
                     </div>
+                  <RFQSummary lang={lang} values={formData} />
                   <InquiryConsent lang={lang} id={fieldId('consent')} checked={consent} onChange={setConsent} errorId={errorId('consent')} invalid={!!errors.consent} />
                   <FormFieldError error={errors.consent} id={errorId('consent')} />
                   </div>
@@ -488,9 +534,10 @@ export const QuoteClientWrapper: React.FC<{ lang: Locale }> = ({ lang }) => {
               
               {submitError && (
                 <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-xl bg-emerald-700 px-5 py-3 font-semibold text-white hover:bg-emerald-800">
-                  {lang === 'tr' ? 'WhatsApp ile g?nder' : 'Send via WhatsApp'}
+                  {lang === 'tr' ? 'WhatsApp ile gönder' : 'Send via WhatsApp'}
                 </a>
               )}
+              </fieldset>
             </form>
             )}
           </div>

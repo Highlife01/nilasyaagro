@@ -212,7 +212,7 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
                   >
                     <Image
                       src={img}
-                      alt=""
+                      alt={`${prodName} detail gallery photo ${idx + 1}`}
                       fill
                       sizes="72px"
                       className="object-cover"
@@ -289,7 +289,7 @@ export const ProductHero: React.FC<ProductHeroProps> = ({ product, lang, onOpenQ
                         : 'border-white/20 opacity-50 hover:opacity-100'
                     }`}
                   >
-                    <Image src={img} alt="" fill sizes="48px" className="object-cover" />
+                    <Image src={img} alt={`${prodName} lightbox thumbnail ${idx + 1}`} fill sizes="48px" className="object-cover" />
                   </button>
                 ))}
               </div>

@@ -1,4 +1,6 @@
 {
+  "functions": [{ "source": "functions", "codebase": "nilasya", "runtime": "nodejs22", "ignore": ["node_modules", ".git", "*.log", ".env.local"] }],
+  "firestore": [{ "database": "nilasyaagrofoods", "rules": "firestore.rules" }],
   "hosting": [
     {
       "target": "nilasyaagrofoods",
@@ -61,7 +63,7 @@
             },
             {
               "key": "Content-Security-Policy",
-              "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; upgrade-insecure-requests"
+              "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com; upgrade-insecure-requests"
             },
             {
               "key": "Cross-Origin-Opener-Policy",
@@ -70,6 +72,7 @@
           ]
         }
       ],
+      "rewrites": [{ "source": "/api/**", "function": { "functionId": "nilasyaApi", "region": "europe-west1" } }],
       "redirects": [
         {
           "source": "/",

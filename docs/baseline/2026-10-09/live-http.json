@@ -1,0 +1,75 @@
+{
+  "capturedAt": "2026-10-09T08:53:00.219Z",
+  "observations": [
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://nilasyaagrofoods.com.tr/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "http://nilasyaagrofoods.com.tr/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "http://www.nilasyaagrofoods.com.tr/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/en/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/en/products/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/en/products/chickpeas/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/en/quality/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/en/production/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/en/export/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/en/contact/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/en/quote/",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/robots.txt",
+      "chain": [],
+      "error": "fetch failed"
+    },
+    {
+      "originalUrl": "https://www.nilasyaagrofoods.com.tr/sitemap.xml",
+      "chain": [],
+      "error": "fetch failed"
+    }
+  ]
+}

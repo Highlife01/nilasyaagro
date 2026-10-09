@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../";
 
 /* Lighter global palette: every utility referencing these shades site-wide
    (bg-, text-, from-, via-, to-, border- …) resolves from these variables. */
@@ -50,6 +51,32 @@
     background: #d8eedf;
     color: #0d3b2e;
   }
+
+  :focus-visible {
+    outline: 3px solid #b47a1e;
+    outline-offset: 4px;
+  }
+
+  [id] {
+    scroll-margin-top: 8rem;
+  }
+}
+
+.skip-link {
+  position: fixed;
+  inset-block-start: .75rem;
+  inset-inline-start: .75rem;
+  z-index: 100;
+  padding: .75rem 1rem;
+  border-radius: .75rem;
+  background: #fff;
+  color: #0d3b2e;
+  font-weight: 700;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
 }
 
 /* Quiet, premium utility surfaces shared across the site. */

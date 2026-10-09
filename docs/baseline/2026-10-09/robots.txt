@@ -1,0 +1,66 @@
+User-Agent: *
+Allow: /
+Disallow: /admin/
+
+User-Agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+User-Agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+
+User-Agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+
+User-Agent: Google-Extended
+Allow: /
+Disallow: /admin/
+
+User-Agent: Googlebot
+Allow: /
+Disallow: /admin/
+
+User-Agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+
+User-Agent: Claude-Web
+Allow: /
+Disallow: /admin/
+
+User-Agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+
+User-Agent: Applebot
+Allow: /
+Disallow: /admin/
+
+User-Agent: Applebot-Extended
+Allow: /
+Disallow: /admin/
+
+User-Agent: Amazonbot
+Allow: /
+Disallow: /admin/
+
+User-Agent: cohere-ai
+Allow: /
+Disallow: /admin/
+
+User-Agent: Meta-ExternalAgent
+Allow: /
+Disallow: /admin/
+
+User-Agent: Bytespider
+Allow: /
+Disallow: /admin/
+
+User-Agent: Diffbot
+Allow: /
+Disallow: /admin/
+
+Host: https://www.nilasyaagrofoods.com.tr
+Sitemap: https://www.nilasyaagrofoods.com.tr/sitemap.xml

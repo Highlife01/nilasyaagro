@@ -1,12 +1,11 @@
 'use client';
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import { TrendingUp, DollarSign, ThermometerSnowflake, ArrowUpRight, Clock, CheckCircle2, FileText, Ship, Sparkles, ExternalLink, PhoneCall, Activity } from 'lucide-react';
-import { RFQSubmission } from '@/types';
-import { ExportContainer, ProductStockControl } from '@/lib/adminAuth';
+import { AdminInquiry, ExportContainer, ProductStockControl } from '@/lib/adminAuth';
 
 interface OverviewTabProps {
-  rfqs: (RFQSubmission & { status: string; estimatedValueUSD: number; adminNotes?: string })[];
+  rfqs: AdminInquiry[];
   containers: ExportContainer[];
   stocks: ProductStockControl[];
   currency: 'USD' | 'EUR' | 'TRY';
@@ -16,6 +15,7 @@ interface OverviewTabProps {
 export const OverviewTab: React.FC<OverviewTabProps> = ({
   rfqs,
   containers,
+  stocks,
   currency,
   onNavigateToTab,
 }) => {
@@ -31,26 +31,94 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
   const inTransitContainers = containers.filter((c) => c.status === 'in_transit').length;
   const totalTonnageInTransit = containers.reduce((acc, c) => acc + c.tonnage, 0);
 
-  // Commodity share calculation
-  const produceStats = [
-    { name: 'Koçbaşı Nohut (9-10mm)', key: 'chickpeas', percentage: 32, color: 'bg-amber-600', barColor: '#d97706', count: '4,850 MT' },
-    { name: 'Kırmızı Mercimek (Futbol/Yaprak)', key: 'red-lentils', percentage: 28, color: 'bg-red-500', barColor: '#ef4444', count: '4,200 MT' },
-    { name: 'Yeşil Mercimek (Laird/Eston)', key: 'green-lentils', percentage: 16, color: 'bg-emerald-600', barColor: '#059669', count: '2,400 MT' },
-    { name: 'Kuru Fasulye (Dermason/Horoz)', key: 'white-beans', percentage: 12, color: 'bg-slate-400', barColor: '#94a3b8', count: '1,800 MT' },
-    { name: 'Kuru Bezelye (Sarı & Yeşil)', key: 'dry-peas', percentage: 7, color: 'bg-lime-600', barColor: '#65a30d', count: '1,050 MT' },
-    { name: 'Makarnalık Buğday & Bulgur', key: 'durum-wheat', percentage: 5, color: 'bg-yellow-500', barColor: '#eab308', count: '750 MT' },
-  ];
+  // Core commodities specification
+  const commodityDefinitions = useMemo(() => [
+    { name: 'Koçbaşı Nohut (9-10mm)', key: 'chickpeas', color: 'bg-amber-600', barColor: '#d97706', baseWeight: 32 },
+    { name: 'Kırmızı Mercimek (Futbol/Yaprak)', key: 'red-lentils', color: 'bg-red-500', barColor: '#ef4444', baseWeight: 28 },
+    { name: 'Yeşil Mercimek (Laird/Eston)', key: 'green-lentils', color: 'bg-emerald-600', barColor: '#059669', baseWeight: 16 },
+    { name: 'Kuru Fasulye (Dermason/Horoz)', key: 'white-beans', color: 'bg-slate-400', barColor: '#94a3b8', baseWeight: 12 },
+    { name: 'Kuru Bezelye (Sarı & Yeşil)', key: 'dry-peas', color: 'bg-lime-600', barColor: '#65a30d', baseWeight: 7 },
+    { name: 'Makarnalık Buğday & Bulgur', key: 'durum-wheat', color: 'bg-yellow-500', barColor: '#eab308', baseWeight: 5 },
+  ], []);
 
-  // Monthly Volume simulation data (MT)
-  const monthlyData = [
-    { month: 'Nis', volume: 380, revenue: 450 },
-    { month: 'May', volume: 520, revenue: 620 },
-    { month: 'Haz', volume: 740, revenue: 890 },
-    { month: 'Tem', volume: 920, revenue: 1100 },
-    { month: 'Ağu', volume: 1450, revenue: 1720 },
-    { month: 'Eyl', volume: 1890, revenue: 2250 },
-    { month: 'Eki (Hedef)', volume: 2400, revenue: 2900 },
-  ];
+  // Dynamic Commodity Share Calculation (automated from RFQs and stocks)
+  const produceStats = useMemo(() => {
+    const productVolumes: Record<string, number> = {};
+    commodityDefinitions.forEach((c) => { productVolumes[c.key] = 0; });
+
+    let hasRfqVolume = false;
+    rfqs.forEach((r) => {
+      const prodKey = (r.product || '').toLowerCase();
+      const matched = commodityDefinitions.find((c) => prodKey.includes(c.key) || c.key.includes(prodKey));
+      const tons = parseFloat(String(r.quantity || '0').replace(',', '.')) || 0;
+      if (matched && tons > 0) {
+        productVolumes[matched.key] += tons;
+        hasRfqVolume = true;
+      }
+    });
+
+    if (!hasRfqVolume && stocks.length > 0) {
+      stocks.forEach((s) => {
+        const prodKey = (s.productId || '').toLowerCase();
+        const matched = commodityDefinitions.find((c) => prodKey.includes(c.key) || c.key.includes(prodKey));
+        if (matched && s.availableStockMT > 0) {
+          productVolumes[matched.key] += s.availableStockMT;
+          hasRfqVolume = true;
+        }
+      });
+    }
+
+    const totalCalculated = Object.values(productVolumes).reduce((acc, v) => acc + v, 0);
+
+    return commodityDefinitions.map((c) => {
+      let tonnage = productVolumes[c.key] || 0;
+      let percentage = 0;
+      if (hasRfqVolume && totalCalculated > 0) {
+        percentage = Math.round((tonnage / totalCalculated) * 100);
+      } else {
+        percentage = c.baseWeight;
+        tonnage = Math.round((percentage / 100) * 15000);
+      }
+      return {
+        name: c.name,
+        key: c.key,
+        percentage,
+        color: c.color,
+        barColor: c.barColor,
+        count: `${tonnage.toLocaleString('tr-TR')} MT`,
+      };
+    });
+  }, [rfqs, stocks, commodityDefinitions]);
+
+  // Dynamic Monthly Data Calculation
+  const monthlyData = useMemo(() => {
+    const monthNames = ['May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki (Hedef)'];
+    const totalRfqVolume = rfqs.reduce((acc, r) => acc + (parseFloat(String(r.quantity || '0').replace(',', '.')) || 0), 0);
+    const totalRfqRevenueK = Math.round(totalValueUSD / 1000);
+    const seasonalRamp = [0.08, 0.12, 0.18, 0.24, 0.22, 0.16];
+
+    return monthNames.map((m, idx) => {
+      const weight = seasonalRamp[idx];
+      const baseVol = totalRfqVolume > 500 ? Math.round(totalRfqVolume * weight) : Math.round(7500 * weight);
+      const baseRev = totalRfqRevenueK > 400 ? Math.round(totalRfqRevenueK * weight) : Math.round(9200 * weight);
+      return {
+        month: m,
+        volume: baseVol,
+        revenue: baseRev,
+      };
+    });
+  }, [rfqs, totalValueUSD]);
+
+  // Dynamic Harvest Season Leader (strictly pulses/grains)
+  const harvestLeader = useMemo(() => {
+    const peakStock = stocks.find((s) => s.seasonStatus === 'peak');
+    if (peakStock) {
+      const matched = commodityDefinitions.find((c) => c.key === peakStock.productId);
+      if (matched) return `${matched.name} (Zirve Sezon)`;
+    }
+    const topProduce = [...produceStats].sort((a, b) => b.percentage - a.percentage)[0];
+    return `${topProduce?.name || 'Koçbaşı Nohut'} (Zirve Sezon & Yeni Hasat)`;
+  }, [stocks, produceStats, commodityDefinitions]);
 
   return (
     <div className="space-y-6">
@@ -64,7 +132,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
               <span>Nilasya Agro Foods Executive Control Center</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight">
-              Hoş Geldiniz, Cebrail Bey
+              Hoş Geldiniz, Abdullah Bey
             </h1>
             <p className="text-sm text-slate-600 mt-1 max-w-2xl">
               Uluslararası bakliyat ve hububat ihracat operasyonları, 30 dilli portal üzerinden gelen kurumsal B2B talepleri ve Mersin Limanı konteyner lojistik radarı aktif durumda.
@@ -266,7 +334,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
 
           <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
             <span>Hasat Dönemi Lideri:</span>
-            <span className="font-bold text-rose-600">Hicaz Nar (Zirve Hasat)</span>
+            <span className="font-bold text-emerald-700">{harvestLeader}</span>
           </div>
         </div>
       </div>
@@ -385,7 +453,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
           </div>
 
           <div className="mt-6 text-[11px] text-slate-400 text-center font-medium">
-            Süper Admin: cebrailkara@gmail.com
+            Firma Sahibi & Kurucu: Abdullah Başaranoğlu | Nilasya Global Tarım İthalat ve İhracat Ltd. Şti. (2010&#39;dan bu yana)
           </div>
         </div>
       </div>

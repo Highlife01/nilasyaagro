@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": null,
+  "records": [
+    {
+      "id": "food-safety",
+      "kind": "facility-certificate",
+      "claim": "ISO 22000 / HACCP",
+      "issuer": null,
+      "documentNumber": null,
+      "scope": null,
+      "validUntil": null,
+      "publicationPermission": false,
+      "redacted": false,
+      "documentUrl": null,
+      "status": "pending"
+    },
+    {
+      "id": "laboratory",
+      "kind": "shipment-analysis",
+      "claim": "ISO/IEC 17025 accredited laboratory report",
+      "issuer": null,
+      "documentNumber": null,
+      "scope": null,
+      "validUntil": null,
+      "publicationPermission": false,
+      "redacted": false,
+      "documentUrl": null,
+      "status": "pending"
+    },
+    {
+      "id": "inspection",
+      "kind": "third-party-inspection",
+      "claim": "SGS / GAFTA pre-shipment inspection",
+      "issuer": null,
+      "documentNumber": null,
+      "scope": null,
+      "validUntil": null,
+      "publicationPermission": false,
+      "redacted": false,
+      "documentUrl": null,
+      "status": "pending"
+    },
+    {
+      "id": "religious",
+      "kind": "product-certificate",
+      "claim": "Halal / Kosher",
+      "issuer": null,
+      "documentNumber": null,
+      "scope": null,
+      "validUntil": null,
+      "publicationPermission": false,
+      "redacted": false,
+      "documentUrl": null,
+      "status": "pending"
+    },
+    {
+      "id": "non-gmo",
+      "kind": "declaration",
+      "claim": "Non-GMO",
+      "issuer": null,
+      "documentNumber": null,
+      "scope": null,
+      "validUntil": null,
+      "publicationPermission": false,
+      "redacted": false,
+      "documentUrl": null,
+      "status": "pending"
+    },
+    {
+      "id": "optical-purity",
+      "kind": "product-specification",
+      "claim": "99.8% guaranteed optical purity",
+      "issuer": null,
+      "documentNumber": null,
+      "scope": null,
+      "validUntil": null,
+      "publicationPermission": false,
+      "redacted": false,
+      "documentUrl": null,
+      "status": "pending"
+    },
+    {
+      "id": "company-role",
+      "kind": "company-registration",
+      "claim": "grower / processor / packer / exporter roles",
+      "issuer": null,
+      "documentNumber": null,
+      "scope": null,
+      "validUntil": null,
+      "publicationPermission": false,
+      "redacted": false,
+      "documentUrl": null,
+      "status": "pending"
+    }
+  ]
+}

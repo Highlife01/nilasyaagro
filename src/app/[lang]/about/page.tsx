@@ -2,6 +2,7 @@ import React from 'react';
 import { Locale } from '@/types';
 import { supportedLanguages } from '@/data/languages';
 import { CompanyIntro } from '@/components/home/CompanyIntro';
+import { FounderSection } from '@/components/about/FounderSection';
 import { TrustStrip } from '@/components/home/TrustStrip';
 import { ClientCalendarWrapper } from '../harvest-calendar/ClientCalendarWrapper';
 import type { Metadata } from 'next';
@@ -39,7 +40,8 @@ export default async function AboutPage({
 
   return (
     <div className="pt-28 bg-white min-h-screen">
-      <CompanyIntro lang={lang} />
+      <CompanyIntro lang={lang} isH1 />
+      <FounderSection lang={lang} />
       <TrustStrip lang={lang} />
 
       <section className="py-20 bg-slate-50">

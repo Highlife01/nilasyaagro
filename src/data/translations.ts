@@ -189,9 +189,26 @@ export interface Translations {
 
 // Master Base English & Turkish
 import { translationsData } from './translationsData';
+import { getCompanyFactLabels } from './companyFacts';
 
 export const translations: Record<string, Translations> = translationsData;
 
 export const getTranslations = (lang: string): Translations => {
-  return translations[lang] || translations['en'];
+  const t = translations[lang] || translations['en'];
+  const facts = getCompanyFactLabels(lang);
+  return {
+    ...t,
+    hero: { ...t.hero, badge: facts.exportMarkets, subtitle: facts.description, stats: { ...t.hero.stats, countries: 'B2B', countriesLabel: facts.exportMarkets, supply: 'RFQ', supplyLabel: facts.annualCapacity, products: 'B2B', productsLabel: t.nav.products } },
+    trustStrip: {
+      fresh: { title: facts.opticalPurity, desc: facts.documentation },
+      reliable: { title: facts.annualCapacity, desc: facts.responseTime },
+      traceable: { title: t.nav.quality, desc: facts.documentation },
+      global: { title: facts.exportMarkets, desc: facts.description },
+    },
+    companyIntro: { ...t.companyIntro, p1: facts.description, p2: facts.documentation, pill1: facts.opticalPurity, pill2: facts.exportMarkets, pill4: facts.documentation },
+    qualitySection: { ...t.qualitySection, tag: t.nav.quality, title: t.nav.quality, subtitle: facts.documentation, traceabilitySubtitle: facts.documentation, certificationsTitle: t.nav.quality, certificationsNotice: facts.documentation },
+    finalCta: { ...t.finalCta, subtitle: facts.responseTime },
+    rfq: { ...t.rfq, modalSubtitle: facts.responseTime, successNote: facts.responseTime },
+    footer: { ...t.footer, description: facts.description, entityStatement: facts.documentation },
+  };
 };

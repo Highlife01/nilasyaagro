@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DollarSign, Download, RotateCcw, LogOut, CheckCircle2, Clock } from 'lucide-react';
 import { 
   AdminUser, 
+  AdminAuditLog,
   getAuditLogs, 
-  resetAllAdminData, 
   getStoredRFQs, 
   getStoredContainers, 
   getStoredProductStocks 
@@ -27,33 +27,50 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
   onRefreshData,
 }) => {
   const [resetSuccess, setResetSuccess] = useState(false);
-  const auditLogs = getAuditLogs();
+  const [auditLogs, setAuditLogs] = useState<AdminAuditLog[]>([]);
+  const [isBackingUp, setIsBackingUp] = useState(false);
 
-  const handleBackup = () => {
-    const backupData = {
-      exportDate: new Date().toISOString(),
-      superAdmin: user.email,
-      rfqs: getStoredRFQs(),
-      containers: getStoredContainers(),
-      stocks: getStoredProductStocks(),
-      auditLogs,
-    };
-    const jsonString = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(backupData, null, 2))}`;
-    const downloadAnchor = document.createElement('a');
-    downloadAnchor.setAttribute('href', jsonString);
-    downloadAnchor.setAttribute('download', `nilasya_admin_backup_${new Date().toISOString().split('T')[0]}.json`);
-    document.body.appendChild(downloadAnchor);
-    downloadAnchor.click();
-    downloadAnchor.remove();
+  useEffect(() => {
+    let mounted = true;
+    getAuditLogs()
+      .then((logs) => { if (mounted) setAuditLogs(logs); })
+      .catch((err) => { console.error('Failed to load audit logs:', err); });
+    return () => { mounted = false; };
+  }, [onRefreshData]);
+
+  const handleBackup = async () => {
+    setIsBackingUp(true);
+    try {
+      const [rfqs, containers, stocks, logs] = await Promise.all([
+        getStoredRFQs(),
+        getStoredContainers(),
+        getStoredProductStocks(),
+        getAuditLogs().catch(() => auditLogs),
+      ]);
+      const backupData = {
+        exportDate: new Date().toISOString(),
+        superAdmin: user.email,
+        rfqs,
+        containers,
+        stocks,
+        auditLogs: logs,
+      };
+      const jsonString = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(backupData, null, 2))}`;
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute('href', jsonString);
+      downloadAnchor.setAttribute('download', `nilasya_admin_backup_${new Date().toISOString().split('T')[0]}.json`);
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    } catch (err) {
+      alert('Yedekleme verileri alınırken bir hata oluştu: ' + (err instanceof Error ? err.message : String(err)));
+    } finally {
+      setIsBackingUp(false);
+    }
   };
 
   const handleReset = () => {
-    if (confirm('Tüm teklif, konteyner ve stok verilerini başlangıç durumuna döndürmek istediğinize emin misiniz?')) {
-      resetAllAdminData();
-      setResetSuccess(true);
-      setTimeout(() => setResetSuccess(false), 3000);
-      onRefreshData();
-    }
+    alert('Üretim ortamında veriler güvenli bulut API üzerinden yönetilmektedir. Doğrudan sıfırlama işlemi güvenlik gerekçesiyle devre dışıdır.');
   };
 
   return (
@@ -190,7 +207,7 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
           </div>
 
           <div className="mt-6 text-[11px] text-slate-400 text-center">
-            Veriler tarayıcınızın güvenli depolama alanında tutulmaktadır.
+            Veriler güvenli bulut API ve Firestore veritabanı üzerinde tutulmaktadır.
           </div>
         </div>
 

@@ -9,12 +9,48 @@ export const QualityTraceabilitySection: React.FC<{ lang: Locale }> = ({ lang })
   const t = getTranslations(lang).qualitySection;
 
   const certBadges = [
-    { name: 'ISO 22000 & HACCP', desc: 'Food Safety Management in Pulses Milling & Processing' },
-    { name: 'Bühler Sortex Optical Sorting', desc: 'Laser & Multi-Camera 99.8% Purity Color Selection' },
-    { name: 'Non-GMO Verified', desc: '100% Natural Anatolian Non-Genetically Modified Grains' },
-    { name: 'Phytosanitary & Pest-Free', desc: 'Official Ministry of Agriculture Export Inspection' },
-    { name: 'Halal & Kosher Standards', desc: 'Compliant with Global Religious Dietary Requirements' },
-    { name: 'SGS & GAFTA Inspection', desc: 'Independent Third-Party Pre-Shipment Grade & Weight Audit' },
+    {
+      name: 'ISO 22000:2018 & HACCP',
+      authority: lang === 'tr' ? 'TÜRKAK Akreditasyonlu Belgelendirme Kuruluşu' : 'TÜRKAK Accredited Certification Body',
+      type: lang === 'tr' ? 'Tesis Yönetim Standardı' : 'Facility Management Standard',
+      scope: lang === 'tr' ? 'Bakliyat eleme, optik ayıklama, boylama ve paketleme tesisi' : 'Pulses milling, optical screening, sizing & packing facility',
+      protocol: 'FSMS / HACCP Food Safety Management Audit',
+    },
+    {
+      name: 'Bühler Sortex Optical Sizing',
+      authority: lang === 'tr' ? 'Bühler Sortex Proses Platformu' : 'Bühler Sortex Optical Technology Platform',
+      type: lang === 'tr' ? 'Proses Teknolojisi & Saflık' : 'Industrial Process Standard',
+      scope: lang === 'tr' ? '%99.8 saflık, yabancı madde ve renk anomalisi ayıklama' : '99.8% minimum purity, color defects & stone extraction',
+      protocol: 'Laser & InGaAs Multi-Camera Optical Sorting',
+    },
+    {
+      name: 'Non-GMO Testing Protocol',
+      authority: lang === 'tr' ? 'Akredite Gıda & Tohum Analiz Laboratuvarları' : 'Accredited Food & Grain Testing Laboratories',
+      type: lang === 'tr' ? 'Sevkiyat & Lot Bazlı Analiz' : 'Lot-Based Laboratory Certificate',
+      scope: lang === 'tr' ? '%100 yerli Anadolu tohumları, sıfır genetik modifikasyon' : '100% native Anatolian varieties, zero GMO contamination',
+      protocol: 'Real-Time PCR DNA Screening Protocol',
+    },
+    {
+      name: 'Phytosanitary Health Certificate',
+      authority: lang === 'tr' ? 'T.C. Tarım ve Orman Bakanlığı Zirai Karantina' : 'Ministry of Agriculture & Forestry Directorate',
+      type: lang === 'tr' ? 'Resmi Devlet İhracat Belgesi' : 'Official Government Export Clearance',
+      scope: lang === 'tr' ? 'Zararlı, böcek ve karantina etmenlerinden ari sevk onayı' : 'Inspection for pest-free & fumigated containerized cargo',
+      protocol: 'Pre-Loading Port Quarantine Inspection & Official Seal',
+    },
+    {
+      name: 'HALAL & Kosher Export Standards',
+      authority: lang === 'tr' ? 'HAK / SMIIC Akredite Helal Denetim' : 'HAK & SMIIC Accredited Halal Bodies',
+      type: lang === 'tr' ? 'Dini & Hijyenik Uygunluk' : 'Dietary & Religious Compliance',
+      scope: lang === 'tr' ? 'Tüm bakliyat ve tahıllarda katkısız %100 bitkisel üretim' : 'All pulses and grains: 100% plant-based clean production',
+      protocol: 'OIC/SMIIC 1:2019 General Requirements for Halal Food',
+    },
+    {
+      name: 'SGS & GAFTA Pre-Shipment Audit',
+      authority: lang === 'tr' ? 'SGS, Bureau Veritas veya GAFTA Gözetmenliği' : 'SGS, Bureau Veritas or GAFTA Superintendent',
+      type: lang === 'tr' ? 'Bağımsız 3. Taraf Sevkiyat Muayenesi' : 'Independent Pre-Shipment Inspection',
+      scope: lang === 'tr' ? 'Konteyner yükleme öncesi nem (<%14), kalibre, saflık ve kantar tespiti' : 'Moisture (<14%), screen size, purity & weighbridge tally',
+      protocol: 'Official Certificate of Quality, Weight & Container Sealing',
+    },
   ];
 
   return (
@@ -80,14 +116,23 @@ export const QualityTraceabilitySection: React.FC<{ lang: Locale }> = ({ lang })
             {certBadges.map((cert, idx) => (
               <div
                 key={idx}
-                className="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 shadow-sm flex items-start gap-4"
+                className="p-6 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-sm flex flex-col justify-between space-y-4 hover:border-emerald-300 transition-colors"
               >
-                <div className="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
-                  <FileCheck2 className="w-5 h-5" />
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">
+                      {cert.type}
+                    </span>
+                    <FileCheck2 className="w-4 h-4 text-emerald-700" />
+                  </div>
+                  <div>
+                    <h4 className="text-base font-bold text-slate-900 leading-snug">{cert.name}</h4>
+                    <p className="text-xs text-emerald-900 font-semibold mt-1">{cert.authority}</p>
+                  </div>
+                  <p className="text-xs text-slate-600 leading-relaxed">{cert.scope}</p>
                 </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">{cert.name}</h4>
-                  <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">{cert.desc}</p>
+                <div className="pt-2 border-t border-slate-200/70 text-[11px] text-slate-500 font-mono">
+                  {cert.protocol}
                 </div>
               </div>
             ))}

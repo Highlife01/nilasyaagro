@@ -56,7 +56,7 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
         <div className="bg-white border border-slate-200/80 rounded-2xl p-4 shadow-xs">
           <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Aşama 1</div>
-          <div className="text-sm font-bold text-slate-900 mt-1">Paketleme & Pre-Cooling</div>
+          <div className="text-sm font-bold text-slate-900 mt-1">Eleme, Paketleme & Konteyner Hazırlığı</div>
           <div className="text-xs text-purple-700 font-semibold mt-1">{packhouseCount} Konteyner Hazırlanıyor</div>
         </div>
         <div className="bg-white border border-slate-200/80 rounded-2xl p-4 shadow-xs">

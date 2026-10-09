@@ -2,6 +2,39 @@ import type { Metadata } from 'next';
 import { supportedLanguages } from '@/data/languages';
 import { company } from '@/data/company';
 
+export const ogLocaleMap: Record<string, string> = {
+  tr: 'tr_TR',
+  en: 'en_US',
+  ar: 'ar_SA',
+  ru: 'ru_RU',
+  de: 'de_DE',
+  fr: 'fr_FR',
+  es: 'es_ES',
+  it: 'it_IT',
+  pt: 'pt_PT',
+  nl: 'nl_NL',
+  pl: 'pl_PL',
+  ro: 'ro_RO',
+  bg: 'bg_BG',
+  el: 'el_GR',
+  sr: 'sr_RS',
+  uk: 'uk_UA',
+  ka: 'ka_GE',
+  az: 'az_AZ',
+  uz: 'uz_UZ',
+  kk: 'kk_KZ',
+  fa: 'fa_IR',
+  hi: 'hi_IN',
+  ur: 'ur_PK',
+  bn: 'bn_BD',
+  'zh-cn': 'zh_CN',
+  ja: 'ja_JP',
+  ko: 'ko_KR',
+  id: 'id_ID',
+  ms: 'ms_MY',
+  sw: 'sw_KE',
+};
+
 export const defaultSocialImage = '/images/og/nilasya-export-1200x630.jpg';
 
 export function localizedUrl(lang: string, pathname = '') {
@@ -39,7 +72,7 @@ export function pageMetadata(
     ...extra,
     // Next.js replaces nested metadata rather than deeply merging it.
     openGraph: {
-      type: 'website', siteName: company.name, locale: lang.replace('-', '_'),
+      type: 'website', siteName: company.name, locale: ogLocaleMap[lang] || lang.replace('-', '_'),
       url: localizedUrl(lang, pathname), title: brandedTitle, description, images,
       ...extra.openGraph,
     },

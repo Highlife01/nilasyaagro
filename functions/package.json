@@ -6,7 +6,7 @@
   "engines": { "node": "22" },
   "scripts": {
     "test": "node --test ../tests/backend.test.mjs",
-    "check": "node --check index.mjs && node --check api.mjs && node --check validation.mjs"
+    "check": "node --check index.mjs && node --check api.mjs && node --check validation.mjs && node --check store.mjs && node --check notifications.mjs"
   },
   "dependencies": {
     "firebase-admin": "^14.5.0",

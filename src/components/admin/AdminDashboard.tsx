@@ -20,6 +20,7 @@ import {
 import Link from 'next/link';
 import { 
   AdminUser, 
+  AdminInquiry,
   getStoredRFQs, 
   getStoredContainers, 
   getStoredProductStocks, 
@@ -27,7 +28,6 @@ import {
   ExportContainer,
   ProductStockControl
 } from '@/lib/adminAuth';
-import { RFQSubmission } from '@/types';
 import { OverviewTab } from './tabs/OverviewTab';
 import { QuotesTab } from './tabs/QuotesTab';
 import { ProductsTab } from './tabs/ProductsTab';
@@ -58,27 +58,36 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   const [currentTime, setCurrentTime] = useState('');
 
   // Data states
-  const [rfqs, setRfqs] = useState<(RFQSubmission & { status: string; estimatedValueUSD: number; adminNotes?: string })[]>([]);
+  const [rfqs, setRfqs] = useState<AdminInquiry[]>([]);
   const [containers, setContainers] = useState<ExportContainer[]>([]);
   const [stocks, setStocks] = useState<ProductStockControl[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const refreshAllData = () => {
-    setRfqs(getStoredRFQs());
-    setContainers(getStoredContainers());
-    setStocks(getStoredProductStocks());
+  const refreshAllData = async () => {
+    setIsLoading(true);
+    try {
+      const [fetchedRfqs, fetchedContainers, fetchedStocks] = await Promise.all([
+        getStoredRFQs(),
+        getStoredContainers(),
+        getStoredProductStocks(),
+      ]);
+      setRfqs(fetchedRfqs);
+      setContainers(fetchedContainers);
+      setStocks(fetchedStocks);
+    } catch (err) {
+      console.error('Failed to load admin data:', err);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   useEffect(() => {
     let mounted = true;
-    Promise.resolve().then(() => {
-      if (mounted) {
-        refreshAllData();
-      }
-    });
+    refreshAllData();
     const updateTime = () => {
       const now = new Date();
       const trTime = now.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-      setCurrentTime(trTime);
+      if (mounted) setCurrentTime(trTime);
     };
     updateTime();
     const interval = setInterval(updateTime, 1000);

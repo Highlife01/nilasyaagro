@@ -1,0 +1,149 @@
+{
+  "source": "local baseline export; viewport screenshots",
+  "results": [
+    {
+      "route": "/en/",
+      "device": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "file": "desktop-en.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/products/",
+      "device": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "file": "desktop-en-products.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/products/chickpeas/",
+      "device": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "file": "desktop-en-products-chickpeas.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/quality/",
+      "device": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "file": "desktop-en-quality.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/production/",
+      "device": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "file": "desktop-en-production.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/export/",
+      "device": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "file": "desktop-en-export.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/contact/",
+      "device": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "file": "desktop-en-contact.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/quote/",
+      "device": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "file": "desktop-en-quote.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/",
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "file": "mobile-en.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/products/",
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "file": "mobile-en-products.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/products/chickpeas/",
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "file": "mobile-en-products-chickpeas.png",
+      "captured": false,
+      "result": "exit 4294967295"
+    },
+    {
+      "route": "/en/quality/",
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "file": "mobile-en-quality.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/production/",
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "file": "mobile-en-production.png",
+      "captured": false,
+      "result": "timeout"
+    },
+    {
+      "route": "/en/export/",
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "file": "mobile-en-export.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/contact/",
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "file": "mobile-en-contact.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    },
+    {
+      "route": "/en/quote/",
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "file": "mobile-en-quote.png",
+      "captured": false,
+      "result": "exit 2147483651"
+    }
+  ]
+}

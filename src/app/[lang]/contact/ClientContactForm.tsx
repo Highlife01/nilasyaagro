@@ -6,8 +6,8 @@ import { Send, CheckCircle2 } from 'lucide-react';
 import { createWhatsAppUrl, formatInquiry } from '@/data/company';
 
 import { getPageTranslations } from '@/data/pageTranslations';
-import { submitInquiry } from '@/lib/inquiries';
-import { validateContact } from '@/lib/rfqValidation';
+import { ApiError, inquirySourcePage, submitInquiry } from '@/lib/inquiries';
+import { inquiryFieldLimits, validateContact } from '@/lib/rfqValidation';
 import type { FieldErrors } from '@/lib/rfqValidation';
 import { FormFeedback, FormFieldError } from '@/components/rfq/FormFeedback';
 import { InquiryConsent } from '@/components/rfq/InquiryConsent';
@@ -20,17 +20,18 @@ export const ClientContactForm: React.FC<{ lang: Locale }> = ({ lang }) => {
   const [generatedRef, setGeneratedRef] = useState('');
   const [errors, setErrors] = useState<FieldErrors>({});
   const [submitError, setSubmitError] = useState('');
-  const [consent, setConsent] = useState(false);
+  const [consent, updateConsent] = useState(false);
   const [websiteTrap, setWebsiteTrap] = useState('');
   const formRef = useRef<HTMLFormElement>(null);
   const submitInFlight = useRef(false);
+  const requestId = useRef<string | undefined>(undefined);
   const idPrefix = useId();
   const fieldId = (name: string) => `${idPrefix}-${name}`;
   const errorId = (name: string) => `${idPrefix}-${name}-error`;
   const fieldProps = (name: string) => ({
     id: fieldId(name), 'aria-invalid': errors[name] ? true as const : undefined,
     'aria-describedby': errors[name] ? errorId(name) : undefined,
-    maxLength: name === 'message' ? 5000 : 254,
+    maxLength: inquiryFieldLimits[name] || 250,
   });
   const [formData, setFormData] = useState({
     name: '',
@@ -45,8 +46,17 @@ export const ClientContactForm: React.FC<{ lang: Locale }> = ({ lang }) => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
+    requestId.current = undefined;
+    setGeneratedRef('');
     setFormData((previous) => ({ ...previous, [name]: value }));
     setErrors((previous) => { const next = { ...previous }; delete next[name]; return next; });
+    setSubmitError('');
+  };
+
+  const setConsent = (checked: boolean) => {
+    requestId.current = undefined;
+    updateConsent(checked);
+    setErrors((previous) => { const next = { ...previous }; delete next.consent; return next; });
     setSubmitError('');
   };
 
@@ -59,22 +69,25 @@ export const ClientContactForm: React.FC<{ lang: Locale }> = ({ lang }) => {
     event.preventDefault();
     if (submitInFlight.current) return;
     const nextErrors = validateContact(formData, lang);
-    if (!consent) nextErrors.consent = lang === 'tr' ? 'Devam etmek i?in gizlilik bildirimini onaylay?n.' : 'Acknowledge the privacy notice to continue.';
+    if (!consent) nextErrors.consent = lang === 'tr' ? 'Devam etmek için gizlilik bildirimini onaylayın.' : 'Acknowledge the privacy notice to continue.';
     setErrors(nextErrors);
     const firstField = Object.keys(nextErrors)[0];
-    if (firstField) { formRef.current?.querySelector<HTMLElement>(`[name="${firstField}"
-            {...fieldProps('${firstField}')}]`)?.focus(); return; }
+    if (firstField) { formRef.current?.querySelector<HTMLElement>(`[name="${firstField}"]`)?.focus(); return; }
     submitInFlight.current = true;
     setIsSubmitting(true);
     setSubmitError('');
     try {
-      const result = await submitInquiry({ kind: 'contact', language: lang, data: { ...formData, consent, websiteTrap } });
+      requestId.current ||= crypto.randomUUID();
+      const result = await submitInquiry({ kind: 'contact', language: lang, data: { ...formData, consent, websiteTrap }, requestId: requestId.current, metadata: inquirySourcePage() });
       setGeneratedRef(result.referenceCode);
       setSubmitted(true);
-    } catch {
-      setSubmitError(lang === 'tr'
-        ? 'Mesaj?n?z kaydedilemedi. L?tfen tekrar deneyin veya a?a??daki WhatsApp ba?lant?s?yla g?nderin.'
-        : 'Your message could not be saved. Please retry or send it using the WhatsApp link below.');
+    } catch (error) {
+      const pending = error instanceof ApiError && error.details?.saved;
+      const reference = error instanceof ApiError ? error.details?.referenceCode : undefined;
+      if (reference) setGeneratedRef(reference);
+      setSubmitError(pending
+        ? (lang === 'tr' ? `Mesajınız ${reference || ''} referansıyla kaydedildi; bildirim gönderilemedi. Aynı mesajı tekrar deneyin veya WhatsApp ile takip edin.` : `Your message was saved with reference ${reference || ''}; notification could not be sent. Retry the same message or follow up via WhatsApp.`)
+        : (lang === 'tr' ? 'Mesajınız şu anda işlenemedi. Lütfen tekrar deneyin veya WhatsApp üzerinden iletişime geçin.' : 'Your message could not be processed right now. Please retry or contact us via WhatsApp.'));
     } finally {
       submitInFlight.current = false;
       setIsSubmitting(false);
@@ -83,7 +96,7 @@ export const ClientContactForm: React.FC<{ lang: Locale }> = ({ lang }) => {
 
   if (submitted) {
     return (
-      <div className="bg-white p-8 sm:p-12 rounded-3xl border border-emerald-100 shadow-xl text-center space-y-4">
+      <div role="status" className="bg-white p-8 sm:p-12 rounded-3xl border border-emerald-100 shadow-xl text-center space-y-4">
         <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
           <CheckCircle2 className="w-10 h-10" />
         </div>
@@ -109,6 +122,7 @@ export const ClientContactForm: React.FC<{ lang: Locale }> = ({ lang }) => {
       onSubmit={handleSubmit}
       className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl space-y-4"
     >
+      <fieldset disabled={isSubmitting} className="min-w-0 space-y-4">
       <FormFeedback errors={errors} submitError={submitError} lang={lang} />
       <InquiryHoneypot value={websiteTrap} onChange={setWebsiteTrap} />
       <h3 className="text-xl font-bold text-slate-900 mb-2">
@@ -235,13 +249,14 @@ export const ClientContactForm: React.FC<{ lang: Locale }> = ({ lang }) => {
         className="w-full py-4 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm tracking-wider uppercase rounded-xl shadow-lg transition-colors flex items-center justify-center gap-2"
       >
         <Send className="w-4 h-4" />
-        <span>{isSubmitting ? (lang === 'tr' ? 'G?nderiliyor?' : 'Sending?') : pt.submitBtn}</span>
+        <span>{isSubmitting ? (lang === 'tr' ? 'Gönderiliyor…' : 'Sending…') : pt.submitBtn}</span>
       </button>
       {submitError && (
         <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-xl bg-emerald-700 px-5 py-3 font-semibold text-white hover:bg-emerald-800">
-          {lang === 'tr' ? 'WhatsApp ile g?nder' : 'Send via WhatsApp'}
+          {lang === 'tr' ? 'WhatsApp ile gönder' : 'Send via WhatsApp'}
         </a>
       )}
+      </fieldset>
     </form>
   );
 };

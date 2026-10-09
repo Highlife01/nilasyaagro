@@ -17,10 +17,10 @@ import {
   MessageSquare
 } from 'lucide-react';
 import { RFQSubmission } from '@/types';
-import { updateRFQ, deleteRFQ, saveRFQInquiry } from '@/lib/adminAuth';
+import { AdminInquiry, updateRFQ, deleteRFQ, saveRFQInquiry } from '@/lib/adminAuth';
 
 interface QuotesTabProps {
-  rfqs: (RFQSubmission & { status: string; estimatedValueUSD: number; adminNotes?: string })[];
+  rfqs: AdminInquiry[];
   currency: 'USD' | 'EUR' | 'TRY';
   onRefreshData: () => void;
 }
@@ -98,38 +98,54 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
     return matchesSearch && matchesStatus && matchesProduct;
   });
 
-  const handleStatusChange = (id: string, newStatus: 'new' | 'quoted' | 'negotiation' | 'approved' | 'archived') => {
-    updateRFQ(id, { status: newStatus });
-    if (selectedRFQ && selectedRFQ.id === id) {
-      setSelectedRFQ({ ...selectedRFQ, status: newStatus });
-    }
-    onRefreshData();
-  };
-
-  const handleNotesChange = (id: string, notes: string) => {
-    updateRFQ(id, { adminNotes: notes });
-    if (selectedRFQ && selectedRFQ.id === id) {
-      setSelectedRFQ({ ...selectedRFQ, adminNotes: notes });
-    }
-    onRefreshData();
-  };
-
-  const handleDelete = (id: string) => {
-    if (confirm('Bu teklif kaydını silmek istediğinize emin misiniz?')) {
-      deleteRFQ(id);
-      if (selectedRFQ?.id === id) setSelectedRFQ(null);
+  const handleStatusChange = async (id: string, newStatus: 'new' | 'quoted' | 'negotiation' | 'approved' | 'archived') => {
+    try {
+      await updateRFQ(id, { status: newStatus });
+      if (selectedRFQ && selectedRFQ.id === id) {
+        setSelectedRFQ({ ...selectedRFQ, status: newStatus });
+      }
       onRefreshData();
+    } catch (err) {
+      alert('Durum güncellenirken hata oluştu: ' + (err instanceof Error ? err.message : String(err)));
     }
   };
 
-  const handleCreateNewRFQ = (e: React.FormEvent) => {
+  const handleNotesChange = async (id: string, notes: string) => {
+    try {
+      await updateRFQ(id, { adminNotes: notes });
+      if (selectedRFQ && selectedRFQ.id === id) {
+        setSelectedRFQ({ ...selectedRFQ, adminNotes: notes });
+      }
+      onRefreshData();
+    } catch (err) {
+      alert('Not güncellenirken hata oluştu: ' + (err instanceof Error ? err.message : String(err)));
+    }
+  };
+
+  const handleDelete = async (id: string) => {
+    if (confirm('Bu teklif kaydını silmek istediğinize emin misiniz?')) {
+      try {
+        await deleteRFQ(id);
+        if (selectedRFQ?.id === id) setSelectedRFQ(null);
+        onRefreshData();
+      } catch (err) {
+        alert('Teklif silinirken hata oluştu: ' + (err instanceof Error ? err.message : String(err)));
+      }
+    }
+  };
+
+  const handleCreateNewRFQ = async (e: React.FormEvent) => {
     e.preventDefault();
-    saveRFQInquiry({
-      ...newForm,
-      referenceCode: `NG-RFQ-${Math.floor(1000 + Math.random() * 9000)}`,
-    });
-    setIsNewRFQModalOpen(false);
-    onRefreshData();
+    try {
+      await saveRFQInquiry({
+        ...newForm,
+        referenceCode: `NG-RFQ-${Math.floor(1000 + Math.random() * 9000)}`,
+      });
+      setIsNewRFQModalOpen(false);
+      onRefreshData();
+    } catch (err) {
+      alert('Teklif oluşturulurken hata oluştu: ' + (err instanceof Error ? err.message : String(err)));
+    }
   };
 
   const handleExportCSV = () => {

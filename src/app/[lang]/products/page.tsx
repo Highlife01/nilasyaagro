@@ -57,8 +57,8 @@ export default async function ProductsCatalogPage({
             {pt.subtitle}
           </p>
 
-          {/* 6 Core Pulses & Grains Category Badges */}
-          <div className="flex flex-wrap items-center justify-center gap-2.5 mt-8 max-w-4xl mx-auto">
+          {/* 9 Core Agricultural Export Category Badges */}
+          <div className="flex flex-wrap items-center justify-center gap-2.5 mt-8 max-w-5xl mx-auto">
             <span className="px-4 py-2 rounded-2xl bg-amber-700/80 border border-amber-500/40 text-amber-100 text-xs font-black shadow-md backdrop-blur-sm">
               {pt.pills.chickpeas}
             </span>
@@ -74,8 +74,17 @@ export default async function ProductsCatalogPage({
             <span className="px-4 py-2 rounded-2xl bg-yellow-800/80 border border-yellow-500/40 text-yellow-100 text-xs font-black shadow-md backdrop-blur-sm">
               {pt.pills.dryPeas}
             </span>
+            <span className="px-4 py-2 rounded-2xl bg-teal-800/80 border border-teal-500/40 text-teal-100 text-xs font-black shadow-md backdrop-blur-sm">
+              {pt.pills.broadBeans || (lang === 'tr' ? '🫘 Kuru Bakla' : '🫘 Broad Beans / Fava')}
+            </span>
+            <span className="px-4 py-2 rounded-2xl bg-cyan-800/80 border border-cyan-500/40 text-cyan-100 text-xs font-black shadow-md backdrop-blur-sm">
+              {pt.pills.blackEyedPeas || (lang === 'tr' ? '👁️ Börülce' : '👁️ Black-Eyed Peas')}
+            </span>
             <span className="px-4 py-2 rounded-2xl bg-amber-600/90 border border-amber-400/50 text-white text-xs font-black shadow-md backdrop-blur-sm">
               {pt.pills.durumWheat}
+            </span>
+            <span className="px-4 py-2 rounded-2xl bg-orange-800/80 border border-orange-500/40 text-orange-100 text-xs font-black shadow-md backdrop-blur-sm">
+              {pt.pills.seedsOilseeds || (lang === 'tr' ? '🌻 Tohumlar ve Yağlı Tohumlar' : '🌻 Seeds & Oilseeds')}
             </span>
           </div>
         </div>

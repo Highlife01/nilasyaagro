@@ -8,6 +8,8 @@ import { RFQModal } from '../rfq/RFQModal';
 import { Locale } from '@/types';
 import { usePathname } from 'next/navigation';
 import { productsData } from '@/data/products';
+import { AnalyticsConsent } from '@/components/common/AnalyticsConsent';
+import { trackEvent } from '@/lib/analytics';
 
 interface AppWrapperProps {
   children: React.ReactNode;
@@ -43,6 +45,7 @@ export const AppWrapper: React.FC<AppWrapperProps> = ({
   }, []);
 
   const openQuote = (productId?: string) => {
+    if (productId || activeProduct) trackEvent('product_to_rfq_click', { product_slug: productId || activeProduct });
     setSelectedProduct(productId || activeProduct);
     setIsQuoteOpen(true);
   };
@@ -54,10 +57,12 @@ export const AppWrapper: React.FC<AppWrapperProps> = ({
   return (
     <RFQContext.Provider value={{ openQuote }}>
       <div className="min-h-screen flex flex-col justify-between selection:bg-emerald-600 selection:text-white">
+        <a href="#main-content" className="skip-link">{lang === 'tr' ? 'Ana içeriğe geç' : lang === 'ar' ? 'انتقل إلى المحتوى الرئيسي' : 'Skip to main content'}</a>
         <Navbar lang={lang} onOpenQuote={() => openQuote()} />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" tabIndex={-1} className="flex-1">{children}</main>
         <Footer lang={lang} onOpenQuote={() => openQuote()} />
-        <WhatsAppFloat lang={lang} productName={activeProduct} />
+        <AnalyticsConsent lang={lang} />
+        <WhatsAppFloat lang={lang} productName={productsData.find((product) => product.id === activeProduct)?.name[lang]} />
         {isQuoteOpen && <RFQModal
           key={`${lang}-${selectedProduct || 'default'}`}
           isOpen={isQuoteOpen}

@@ -1,4 +1,6 @@
 import { pageTranslationsData } from './pageTranslationsData';
+import { getCompanyFactLabels } from './companyFacts';
+import { company } from './company';
 
 export interface PageTranslations {
   about: {
@@ -25,12 +27,9 @@ export interface PageTranslations {
       whiteBeans: string;
       dryPeas: string;
       durumWheat: string;
-      pomegranate?: string;
-      apples?: string;
-      grapes?: string;
-      kiwi?: string;
-      citrus?: string;
-      tomatoes?: string;
+      broadBeans?: string;
+      blackEyedPeas?: string;
+      seedsOilseeds?: string;
       [key: string]: string | undefined;
     };
   };
@@ -257,12 +256,9 @@ export const baseEnglish: PageTranslations = {
       whiteBeans: '⚪ Dermason White Beans',
       dryPeas: '🥣 Yellow & Green Dry Peas',
       durumWheat: '🌾 Durum Wheat & Bulgur',
-      pomegranate: '🟡 Koçbaşı Chickpeas',
-      apples: '🔴 Red Lentils',
-      grapes: '🟢 Green Lentils',
-      kiwi: '⚪ Dermason Beans',
-      citrus: '🥣 Dry Peas',
-      tomatoes: '🌾 Durum Bulgur',
+      broadBeans: '🫘 Broad Beans / Fava',
+      blackEyedPeas: '👁️ Black-Eyed Peas',
+      seedsOilseeds: '🌻 Seeds & Oilseeds',
     },
   },
   productDetail: {
@@ -342,7 +338,7 @@ export const baseEnglish: PageTranslations = {
     material: 'Material Specs:',
   },
   exportPage: {
-    tag: 'EXPORTING TO 40+ COUNTRIES',
+    tag: 'EXPORTING TO 50+ COUNTRIES',
     title: 'Worldwide Pulses & Agricultural Export Destinations',
     subtitle: 'Direct shipping corridors from Mersin International Port (MIP) to the Middle East, Europe, North Africa, and Asia with full phytosanitary clearance.',
     corridorDirTag: 'GLOBAL TRADE CORRIDORS',
@@ -427,8 +423,8 @@ export const baseEnglish: PageTranslations = {
     messageLabel: 'Target Specifications & Quantity *',
     messagePlaceholder: 'Specify required metric tons, preferred Incoterm (FOB/CIF), destination port, packaging...',
     submitBtn: 'Submit Inquiry',
-    successTitle: 'Inquiry Ready on WhatsApp',
-    successDesc: 'Your quotation details are prepared. Send your message in WhatsApp to connect directly with our export trader.',
+    successTitle: 'Message received',
+    successDesc: 'Your message has been saved. You can follow up on your enquiry using the reference number.',
   },
   quotePage: {
     pageTitle: 'B2B REQUEST FOR QUOTATION (RFQ)',
@@ -446,11 +442,11 @@ export const baseEnglish: PageTranslations = {
     termsP2: 'All logos, trademarks, photography, product specifications, and proprietary data displayed on this website are the property of Nilasya Agro Foods.',
     termsH2: '2. Commercial Offers & Quotations',
     termsP3: 'Information displayed on this website is for commercial marketing. Binding contractual commitments are formalized through signed sales contracts and proforma invoices.',
-    privacyP1: 'Nilasya Agro Foods Tarım Ürünleri Dış Ticaret Ltd. Şti. is committed to protecting the privacy and commercial information of our international partners.',
+    privacyP1: '{companyLegalName} is committed to protecting the privacy and commercial information of our international partners.',
     privacyH1: '1. Data Collection & Processing',
     privacyP2: 'Information submitted through our RFQ and contact forms is processed solely for preparing formal export quotations and conducting legitimate international trade.',
-    privacyH2: '2. Data Security & Retention',
-    privacyP3: 'We do not sell or share buyer details with third parties. Form data is transmitted via encrypted HTTPS and secured against unauthorized access.',
+    privacyH2: '2. Data processing and external services',
+    privacyP3: 'Inquiry data is stored in Firebase and processed by Resend for email notifications. WhatsApp links open an external service. Optional usage analytics runs only after consent.',
   },
   whatsapp: {
     tooltip: 'WhatsApp Trade Desk (+90 533 684 01 75)',
@@ -489,13 +485,10 @@ export const baseTurkish: PageTranslations = {
       greenLentils: '🟢 Yeşil Mercimek (Laird & Eston)',
       whiteBeans: '⚪ Dermason Kuru Fasulye',
       dryPeas: '🥣 Sarı & Yeşil Bezelye',
-      durumWheat: '🌾 Durum Buğdayı & Bulgur',
-      pomegranate: '🟡 Koçbaşı Nohut',
-      apples: '🔴 Kırmızı Mercimek',
-      grapes: '🟢 Yeşil Mercimek',
-      kiwi: '⚪ Dermason Fasulye',
-      citrus: '🥣 Kuru Bezelye',
-      tomatoes: '🌾 Durum Bulgur',
+      durumWheat: '🌾 Hububat ve Bulgur',
+      broadBeans: '🫘 Kuru Bakla',
+      blackEyedPeas: '👁️ Börülce',
+      seedsOilseeds: '🌻 Tohumlar ve Yağlı Tohumlar',
     },
   },
   productDetail: {
@@ -575,7 +568,7 @@ export const baseTurkish: PageTranslations = {
     material: 'Malzeme Özellikleri:',
   },
   exportPage: {
-    tag: '40+ ÜLKEYE DİREKT İHRACAT',
+    tag: '50+ ÜLKEYE DİREKT İHRACAT',
     title: 'Dünya Pazarlarına Bakliyat ve Hububat İhracatı',
     subtitle: 'Mersin Uluslararası Limanı\'ndan (MIP) Orta Doğu, Avrupa, Kuzey Afrika ve Asya\'ya direkt hatlarla konteyner ihracatı ve tam fitosaniter uygunluk.',
     corridorDirTag: 'İHRACAT KORİDORLARI',
@@ -660,8 +653,8 @@ export const baseTurkish: PageTranslations = {
     messageLabel: 'Talep Detayları ve İstenen Tonaj *',
     messagePlaceholder: 'Metrik ton miktarı, istenen Incoterm (FOB/CIF), varış limanı ve ambalaj tercihinizi belirtiniz...',
     submitBtn: 'Teklif Talebini Gönder',
-    successTitle: 'Teklif Bilgileriniz WhatsApp İçin Hazır',
-    successDesc: 'Teklif detaylarınız hazırlandı. WhatsApp üzerinden dış ticaret uzmanımıza doğrudan iletmek için Gönder butonuna basınız.',
+    successTitle: 'Mesajınız alındı',
+    successDesc: 'Mesajınız kaydedildi. Talebinizi referans numaranızla takip edebilirsiniz.',
   },
   quotePage: {
     pageTitle: 'B2B İHRACAT FİYAT TEKLİFİ (RFQ)',
@@ -679,11 +672,11 @@ export const baseTurkish: PageTranslations = {
     termsP2: 'Sitede yer alan tüm metinler, fotoğraflar, teknik şartnameler ve ticari logolar Nilasya Agro Foods şirketine aittir.',
     termsH2: '2. Teklif ve Bağlayıcılık',
     termsP3: 'Web sitesindeki ürün açıklamaları ve kalibre bilgileri tanıtım amaçlıdır. Bağlayıcı ticari taahhütler imzalı proforma fatura ve satış sözleşmesiyle gerçekleşir.',
-    privacyP1: 'Nilasya Agro Foods Tarım Ürünleri Dış Ticaret Ltd. Şti. olarak iş ortaklarımızın ticari ve kişisel verilerinin korunmasına tam özen göstermekteyiz.',
+    privacyP1: '{companyLegalName} olarak iş ortaklarımızın ticari ve kişisel verilerinin korunmasına tam özen göstermekteyiz.',
     privacyH1: '1. Toplanan Veriler ve Kullanım Amacı',
     privacyP2: 'Teklif (RFQ) ve iletişim formlarımız aracılığıyla iletilen bilgiler yalnızca ihracat tekliflerinin hazırlanması amacıyla işlenir.',
-    privacyH2: '2. Veri Güvenliği ve Saklama',
-    privacyP3: 'Verileriniz üçüncü taraflarla paylaşılmaz. İletilen bilgiler SSL şifreleme ve güvenli sunucu altyapısıyla korunmaktadır.',
+    privacyH2: '2. Veri işleme ve harici hizmetler',
+    privacyP3: 'Talep verileri Firebase üzerinde kaydedilir ve e-posta bildirimleri için Resend tarafından işlenir. WhatsApp bağlantıları harici bir hizmet açar. İsteğe bağlı kullanım analitiği yalnızca izin verildikten sonra çalışır.',
   },
   whatsapp: {
     tooltip: 'WhatsApp İhracat Masası (+90 533 684 01 75)',
@@ -704,14 +697,22 @@ export const pageTranslationsMap: Record<string, Partial<PageTranslations>> = {
 };
 
 export const getPageTranslations = (lang: string): PageTranslations => {
-  if (lang === 'tr') return baseTurkish;
-  const localized = pageTranslationsData[lang];
-  if (!localized) return baseEnglish;
-  return {
+  const localized = lang === 'tr' ? baseTurkish : pageTranslationsData[lang] || baseEnglish;
+  const facts = getCompanyFactLabels(lang);
+  const result: PageTranslations = {
     ...localized,
     whatsapp: {
       ...localized.whatsapp,
-      msgProduct: (productName: string) => localized.whatsapp.msgProductTemplate.replace('{product}', productName),
+      msgProduct: (productName: string) => 'msgProductTemplate' in localized.whatsapp
+        ? localized.whatsapp.msgProductTemplate.replace('{product}', productName)
+        : (localized as PageTranslations).whatsapp.msgProduct(productName),
     },
+  };
+  return {
+    ...result,
+    about: { ...result.about, subtitle: facts.description, valQualityTitle: facts.opticalPurity, valQualityDesc: facts.documentation, valGrowerTitle: facts.annualCapacity, valGrowerDesc: facts.description, valExportTitle: facts.exportMarkets, valExportDesc: facts.documentation },
+    exportPage: { ...result.exportPage, tag: facts.exportMarkets, proforma24hTitle: facts.responseTime },
+    calendarPage: { ...result.calendarPage, traceabilityDesc: facts.opticalPurity },
+    legal: { ...result.legal, privacyP1: result.legal.privacyP1.replace('{companyLegalName}', company.legalName) },
   };
 };

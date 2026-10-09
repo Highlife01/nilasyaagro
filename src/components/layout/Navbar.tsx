@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { 
   Globe, 
@@ -31,10 +32,13 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
   const [langModalOpen, setLangModalOpen] = useState(false);
   const [langSearch, setLangSearch] = useState('');
   const languageDialogRef = useRef<HTMLDivElement>(null);
+  const mobileDialogRef = useRef<HTMLDivElement>(null);
   const productDropdownRef = useRef<HTMLDivElement>(null);
   const productButtonRef = useRef<HTMLButtonElement>(null);
   const closeLanguageDialog = useCallback(() => setLangModalOpen(false), []);
+  const closeMobileDialog = useCallback(() => setMobileMenuOpen(false), []);
   useDialogFocus(langModalOpen, languageDialogRef, closeLanguageDialog);
+  useDialogFocus(mobileMenuOpen, mobileDialogRef, closeMobileDialog);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -62,6 +66,14 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
     document.addEventListener('pointerdown', handleOutsideClick);
     return () => document.removeEventListener('pointerdown', handleOutsideClick);
   }, [productsDropdownOpen]);
+
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const desktop = window.matchMedia('(min-width: 1280px)');
+    const closeOnDesktop = () => { if (desktop.matches) closeMobileDialog(); };
+    desktop.addEventListener('change', closeOnDesktop);
+    return () => desktop.removeEventListener('change', closeOnDesktop);
+  }, [mobileMenuOpen, closeMobileDialog]);
 
   const switchLanguage = (newLang: Locale) => {
     setLangModalOpen(false);
@@ -92,38 +104,45 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-40 transition-[background-color,box-shadow,padding] duration-300 ${
         isScrolled
           ? 'bg-white/98 backdrop-blur-xl shadow-lg shadow-slate-900/5 border-b border-emerald-900/10 py-2.5'
-          : 'bg-gradient-to-b from-slate-950/90 via-slate-950/60 to-transparent py-4'
+          : 'bg-gradient-to-b from-slate-950/90 via-slate-950/60 to-transparent py-3'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
           {/* Brand Logo */}
           <Link
             href={`/${lang}/`}
-            className="flex items-center gap-3 group focus:outline-none shrink-0"
+            className="flex min-w-0 items-center gap-2 group flex-1 xl:flex-none"
             aria-label="Nilasya Agro Foods Homepage"
           >
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-[#0D3B2E] via-[#165643] to-[#071F18] flex items-center justify-center shadow-lg shadow-emerald-950/40 group-hover:scale-105 transition-transform duration-300 border border-amber-400/40">
-              <span className="text-amber-400 font-black text-xl sm:text-2xl tracking-tighter">N</span>
+            <div className="w-9 h-9 sm:w-11 sm:h-11 shrink-0 rounded-2xl bg-white p-1 flex items-center justify-center shadow-lg shadow-emerald-950/30 group-hover:scale-105 transition-transform duration-300 border border-amber-400/40 overflow-hidden">
+              <Image
+                src="/images/logo/nilasya-emblem-transparent.png"
+                alt="Nilasya Agro Foods Logo"
+                width={44}
+                height={44}
+                className="w-full h-full object-contain"
+                priority
+              />
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5 leading-none">
+            <div className="flex min-w-0 flex-col" translate="no">
+              <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1 leading-none">
                 <span
-                  className={`text-xl sm:text-2xl font-black tracking-tight ${
+                  className={`text-base sm:text-xl font-black tracking-tight ${
                     isScrolled ? 'text-[#0D3B2E]' : 'text-white'
                   }`}
                 >
                   NILASYA
                 </span>
-                <span className="text-xl sm:text-2xl font-bold text-amber-500 tracking-wider">
+                <span className="text-xs sm:text-xl font-bold text-amber-500 tracking-wide whitespace-nowrap">
                   AGRO FOODS
                 </span>
               </div>
               <span
-                className={`text-[10px] uppercase tracking-widest font-extrabold mt-0.5 ${
+                className={`text-[8px] sm:text-[10px] uppercase tracking-wide font-extrabold mt-1 ${
                   isScrolled ? 'text-amber-700' : 'text-amber-300'
                 }`}
               >
@@ -133,7 +152,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
           </Link>
 
           {/* Desktop Multi-Page Navigation (Insights moved to Footer per user instruction) */}
-          <nav aria-label={lang === 'tr' ? 'Ana menü' : 'Main navigation'} className="hidden lg:flex items-center gap-5 xl:gap-6">
+          <nav aria-label={lang === 'tr' ? 'Ana menü' : 'Main navigation'} className="order-3 hidden w-full xl:flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
             <Link
               href={`/${lang}/`}
               className={`text-[13px] font-extrabold uppercase tracking-wider transition-colors ${
@@ -179,7 +198,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
               </button>
 
               {productsDropdownOpen && (
-                <div id="desktop-products-dropdown" className="absolute top-full -left-6 w-88 pt-3 animate-fade-in z-50">
+                <div id="desktop-products-dropdown" className="absolute top-full start-0 w-88 pt-3 animate-fade-in z-50">
                   <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 p-3 space-y-1 max-h-[75vh] overflow-y-auto scrollbar-thin">
                     <Link
                       href={`/${lang}/products/`}
@@ -289,11 +308,11 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
           </nav>
 
           {/* Right Action Buttons */}
-          <div className="hidden lg:flex items-center gap-3 shrink-0">
+          <div className="hidden xl:flex items-center gap-3 shrink-0">
             {/* 30 Languages Button */}
             <button
               type="button"
-              onClick={() => { setLangSearch(''); setLangModalOpen(true); }}
+              onClick={() => { setMobileMenuOpen(false); setLangSearch(''); setLangModalOpen(true); }}
               aria-haspopup="dialog"
               aria-expanded={langModalOpen}
               aria-label={lang === 'tr' ? 'Dili değiştir' : 'Change language'}
@@ -308,7 +327,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
               <span className="text-sm">{currentLangInfo.flag}</span>
               <span className="uppercase tracking-wide">{currentLangInfo.code}</span>
               <span className="text-[10px] bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded font-mono hidden xl:inline">
-                30 DİL
+                {supportedLanguages.length}
               </span>
             </button>
 
@@ -324,10 +343,10 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
           </div>
 
           {/* Mobile Menu & Lang Toggle */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex shrink-0 items-center gap-2 xl:hidden">
             <button
               type="button"
-              onClick={() => { setLangSearch(''); setLangModalOpen(true); }}
+              onClick={() => { setMobileMenuOpen(false); setLangSearch(''); setLangModalOpen(true); }}
               aria-haspopup="dialog"
               aria-expanded={langModalOpen}
               aria-label={lang === 'tr' ? 'Dili değiştir' : 'Change language'}
@@ -344,10 +363,11 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`min-h-11 min-w-11 touch-manipulation p-2.5 rounded-2xl focus:outline-none ${
+              className={`min-h-11 min-w-11 touch-manipulation p-2.5 rounded-2xl ${
                 isScrolled ? 'text-slate-950 bg-slate-100' : 'text-white bg-white/10'
               }`}
-              aria-label="Toggle Navigation Menu"
+              aria-label={lang === 'tr' ? 'Mobil menüyü aç' : 'Open mobile navigation'}
+              aria-haspopup="dialog"
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-navigation"
             >
@@ -359,8 +379,8 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
 
       {/* Language selector */}
       {langModalOpen && (
-        <div onClick={(event) => { if (event.target === event.currentTarget) closeLanguageDialog(); }} className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-lg animate-fade-in">
-          <div ref={languageDialogRef} role="dialog" aria-modal="true" aria-labelledby="language-dialog-title" tabIndex={-1} className="bg-white w-full max-w-3xl rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90vh]">
+        <div ref={languageDialogRef} onClick={(event) => { if (event.target === event.currentTarget) closeLanguageDialog(); }} className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-lg animate-fade-in">
+          <div role="dialog" aria-modal="true" aria-labelledby="language-dialog-title" tabIndex={-1} className="bg-white w-full max-w-3xl rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90dvh]">
             {/* Modal Header */}
             <div className="px-6 py-5 bg-gradient-to-r from-slate-950 via-emerald-950 to-slate-950 text-white flex items-center justify-between border-b border-emerald-800/40">
               <div className="flex items-center gap-3">
@@ -372,7 +392,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
                     Select Your Language / Dil Seçiniz
                   </h3>
                   <p className="text-xs text-amber-300">
-                    30 Global Export Markets • 30 Uluslararası Dil Desteği
+                    {supportedLanguages.length} Languages • {supportedLanguages.length} Dil
                   </p>
                 </div>
               </div>
@@ -393,6 +413,8 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
                 <input
                   data-dialog-autofocus
                   aria-label={lang === 'tr' ? 'Dil ara' : 'Search languages'}
+                  name="language-search"
+                  autoComplete="off"
                   type="text"
                   value={langSearch}
                   onChange={(e) => setLangSearch(e.target.value)}
@@ -403,7 +425,8 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
             </div>
 
             {/* Language Grid by Region */}
-            <div className="p-6 overflow-y-auto space-y-6 flex-1 bg-slate-50/50">
+            <div className="p-4 sm:p-6 overflow-y-auto overscroll-contain space-y-6 flex-1 bg-slate-50/50">
+              {filteredLanguages.length === 0 && <p role="status" className="text-sm text-slate-600">{lang === 'tr' ? 'Dil bulunamadı.' : 'No languages found.'}</p>}
               {regions.map((reg) => {
                 const groupLangs = filteredLanguages.filter((l) => l.region === reg);
                 if (groupLangs.length === 0) return null;
@@ -465,7 +488,14 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <nav id="mobile-navigation" aria-label={lang === 'tr' ? 'Mobil menü' : 'Mobile navigation'} className="lg:hidden bg-slate-950/98 backdrop-blur-2xl border-b border-emerald-900/40 px-6 py-6 space-y-4 animate-fade-in text-white">
+        <div ref={mobileDialogRef} id="mobile-navigation" role="dialog" aria-modal="true" aria-labelledby="mobile-navigation-title" tabIndex={-1} className="xl:hidden bg-slate-950/98 backdrop-blur-2xl border-b border-emerald-900/40 px-6 py-5 animate-fade-in text-white max-h-[calc(100dvh-5rem)] overflow-y-auto overscroll-contain">
+          <div className="flex items-center justify-between mb-4">
+            <h2 id="mobile-navigation-title" className="text-base font-bold">{lang === 'tr' ? 'Mobil menü' : 'Mobile navigation'}</h2>
+            <button type="button" onClick={closeMobileDialog} aria-label={lang === 'tr' ? 'Mobil menüyü kapat' : 'Close mobile navigation'} className="min-h-11 min-w-11 rounded-xl flex items-center justify-center bg-white/10">
+              <X className="w-6 h-6" aria-hidden="true" />
+            </button>
+          </div>
+          <nav aria-label={lang === 'tr' ? 'Ana menü' : 'Main navigation'} className="space-y-4">
           <div className="flex flex-col space-y-3 text-sm font-bold divide-y divide-white/10">
             <Link
               href={`/${lang}/`}
@@ -546,7 +576,8 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onOpenQuote }) => {
               {t.requestQuote}
             </button>
           </div>
-        </nav>
+          </nav>
+        </div>
       )}
     </header>
   );

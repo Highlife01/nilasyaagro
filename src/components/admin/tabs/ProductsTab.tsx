@@ -41,12 +41,22 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
     setSaveSuccessMsg('');
   };
 
-  const handleSave = (productId: string) => {
-    updateProductStock(productId, editForm);
-    setEditingId(null);
-    setSaveSuccessMsg(`${productId} ürününün hasat ve stok bilgileri başarıyla güncellendi.`);
-    setTimeout(() => setSaveSuccessMsg(''), 3000);
-    onRefreshData();
+  const handleSave = async (productId: string) => {
+    try {
+      const current = getStockData(productId);
+      const updated: ProductStockControl = {
+        ...current,
+        ...editForm,
+        productId,
+      };
+      await updateProductStock(productId, updated);
+      setEditingId(null);
+      setSaveSuccessMsg(`${productId} ürününün hasat ve stok bilgileri başarıyla güncellendi.`);
+      setTimeout(() => setSaveSuccessMsg(''), 3000);
+      onRefreshData();
+    } catch (err) {
+      alert('Stok güncellenirken hata oluştu: ' + (err instanceof Error ? err.message : String(err)));
+    }
   };
 
   return (

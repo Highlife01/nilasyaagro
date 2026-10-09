@@ -1,15 +1,20 @@
 # Nilasya Agro Foods
 
-> Turkish B2B supplier and exporter of pulses, grains and agricultural commodities. Product specifications and trade information are available on the official pages below.
+> Turkish B2B supplier and exporter processing pulses and grains sourced from contracted Anatolian farmers at its Mersin facility, prepared to strict technical specifications and shipped globally via Mersin International Port.
 
 ## Company and contact
 
 - Brand: Nilasya Agro Foods
 - Legal entity: NİLASYA GLOBAL TARIM İTHALAT VE İHRACAT LİMİTED ŞİRKETİ
+- Founder & Owner: Abdullah Başaranoğlu (Active since 2010 / 15+ years agricultural trade experience)
 - Website: https://www.nilasyaagrofoods.com.tr
-- Trade desk: Toros Mah. Barış Manço Bulvarı, Çukurova / Adana / Türkiye
+- Trade desk & Operations: Toros Mah. Barış Manço Bulvarı, Çukurova / Adana / Türkiye
+- Primary Loading Hub: Mersin International Port (MIP), Türkiye
+- Annual Milling & Supply Capacity: 120,000 MT
+- Global Export Reach: 50+ Countries across Europe, Middle East, North Africa, Asia and the Americas
 - Email: export@nilasyaagrofoods.com.tr
 - Telephone / WhatsApp: +90 533 684 01 75
+- Accreditations: Mediterranean Exporters Association (AKİB), Mersin Commercial Exchange, ISO 22000, HACCP, Halal Certified Sourcing
 
 ## Product catalogue
 
@@ -19,8 +24,8 @@
 - [Turkish Dry White Beans (Dermason, Horoz, Cannellini 8mm - 10mm)](https://www.nilasyaagrofoods.com.tr/en/products/white-beans/): Turkish Dermason white beans from Erzincan and Central Anatolia are internationally acclaimed as the finest dry beans in the world. Their paper-thin skin dissolves during cooking without splitting, producing a buttery, creamy texture ideal for canning, baked beans, and Mediterranean gastronomy.
 - [Yellow & Green Dry Peas (Whole & Split Sortex)](https://www.nilasyaagrofoods.com.tr/en/products/dry-peas/): High-grade dry yellow and green peas processed and split in Mersin. Valued by international food manufacturers for soup mixes, plant-based meat substitutes, protein isolates, and snack extrusion due to their uniform calibration and high protein (22%).
 - [Turkish Durum Wheat & Traditional Bulgur](https://www.nilasyaagrofoods.com.tr/en/products/durum-wheat-bulgur/): Anatolia is the ancestral cradle of durum wheat. Nilasya Agro Foods exports premium amber durum grain (high vitreousness, strong gluten, >13.5% protein) for semolina and pasta millers, alongside authentic parboiled Turkish bulgur (pilaf coarse, mid-coarse, fine köftelik) processed with clean artesian mountain water.
-- [Turkish Durum Wheat Pasta & Macaroni (100% Semolina)](https://www.nilasyaagrofoods.com.tr/en/products/pasta-macaroni/): Manufactured from 100% Anatolian hard amber durum wheat semolina. Premium export dry pasta (spaghetti, penne rigate, fusilli, elbow, farfalle) featuring vibrant golden amber color, outstanding cooking resistance, and superior al dente texture. Available in 500g, 2kg retail packs and private label OEM for global supermarket chains.
 - [Specialty Pulses & Seeds (Fava Beans, Black-Eyed Peas, Sesame, Sunflower)](https://www.nilasyaagrofoods.com.tr/en/products/other-pulses-seeds/): Expanding beyond core pulses, Nilasya Agro Foods exports broad beans (fava beans), black-eyed peas, sortex-cleaned white and golden sesame seeds, and Turkish confectionery sunflower seeds. All commodities are calibrated and certified for global food-service and snack manufacturing.
+- [Turkish Durum Wheat Pasta & Macaroni (100% Semolina)](https://www.nilasyaagrofoods.com.tr/en/products/pasta-macaroni/): Manufactured from 100% hard amber durum wheat semolina grown in the sunny volcanic plains of Southeastern Anatolia. Features a rich golden amber color, outstanding cooking resistance, and superior sauce adherence.
 
 ## Buyer information
 
@@ -31,7 +36,32 @@
 - [Export destinations](https://www.nilasyaagrofoods.com.tr/en/export/)
 - [Contact](https://www.nilasyaagrofoods.com.tr/en/contact/)
 - [Full catalogue context](https://www.nilasyaagrofoods.com.tr/llms-full.txt)
+- [Türkçe LLM Bağlam Özeti](https://www.nilasyaagrofoods.com.tr/llms-tr.txt)
+- [ملخص المنتجات بالعربية](https://www.nilasyaagrofoods.com.tr/llms-ar.txt)
 - [XML sitemap](https://www.nilasyaagrofoods.com.tr/sitemap.xml)
+
+## Frequently Asked B2B & Trade Questions
+
+### What is the Minimum Order Quantity (MOQ)?
+Our standard export minimum order quantity is one 20ft Full Container Load (FCL), which accommodates approximately 24 to 26 Metric Tons (MT) of Sortex-cleaned pulses depending on packaging specifications. Consolidated container loads containing mixed pulses (e.g., chickpeas, red lentils, white beans) are available upon agreement.
+
+### What trade terms (Incoterms) do you support?
+We routinely execute contracts under Incoterms 2020: FOB Mersin Port, CFR (Cost and Freight), and CIF (Cost, Insurance and Freight) to major international seaports across Europe, the Middle East & Gulf, North Africa, Asia, and the Americas.
+
+### What are the export packaging options?
+- Polypropylene (PP) bags: 25 kg and 50 kg multi-wall woven sacks.
+- FIBC Jumbo Big Bags: 1,000 kg and 1,200 kg with top spout and discharge bottom.
+- Premium Retail Packaging: Nilasya 2.0 kg Stand-up Doypack / Quad-Seal bags packed in master export cartons.
+- Private Label (OEM): Custom branding, retail packaging, and carton design are available for supermarket chains and regional distributors.
+
+### What export documentation is provided?
+Standard documentation provided with every ocean bill of lading includes: Commercial Invoice, Detailed Packing List, Official Phytosanitary Certificate issued by the Turkish Ministry of Agriculture and Forestry, Certificate of Origin (AKİB / Chamber of Commerce), Certificate of Weight and Quality, and independent inspection reports (SGS / Bureau Veritas / Intertek) when requested.
+
+### How do you ensure optical purity and moisture control?
+All raw pulses undergo pre-cleaning, mechanical destoning, gravity density grading, and multi-pass Bühler Sortex optical color sorting in Mersin. We guarantee minimum 99.5% optical purity and strictly monitor moisture levels (maximum 12.0% – 14.0%) to prevent heating or degradation during tropical ocean transits.
+
+### What are Türkiye's leading pulse export products and key trade markets?
+According to official export statistics from the Mediterranean Exporters Association (AKİB) and the Turkish Ministry of Trade, Red Lentils (Kırmızı Mercimek) represent the highest share (~21%) in Türkiye's total pulse export volume, followed by chickpeas, green lentils, dry white beans, and peas. The #1 export destination market is Iraq (accounting for over $270.6 million and ~22% of total grain and pulse exports from the AKİB region alone), followed by Syria (6%), Egypt (5%), Italy, Sudan, Germany, Algeria, and the USA. Nilasya Agro Foods operates direct processing lines and express transit corridors from Mersin and Southeastern Anatolia to service these high-volume markets with Bühler Sortex purity.
 
 ## Commercial context
 

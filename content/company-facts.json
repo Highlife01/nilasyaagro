@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": null,
+  "facts": {
+    "exportMarkets": {
+      "status": "pending",
+      "value": null,
+      "definition": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "evidence": null,
+      "legacyCandidates": [
+        "35+",
+        "40+",
+        "50+"
+      ]
+    },
+    "annualCapacity": {
+      "status": "pending",
+      "value": null,
+      "definition": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "evidence": null,
+      "unit": "MT",
+      "legacyCandidates": [
+        "100,000",
+        "120,000"
+      ]
+    },
+    "opticalPurity": {
+      "status": "pending",
+      "value": null,
+      "definition": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "evidence": null,
+      "legacyCandidates": [
+        "99.5%",
+        "99.8%"
+      ]
+    },
+    "responseHours": {
+      "status": "pending",
+      "value": null,
+      "definition": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "evidence": null,
+      "legacyCandidates": [
+        "24 hours"
+      ]
+    },
+    "companyRole": {
+      "status": "pending",
+      "value": null,
+      "definition": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "evidence": null,
+      "legacyCandidates": [
+        "grower",
+        "processor",
+        "packer",
+        "exporter"
+      ]
+    }
+  },
+  "productScope": {
+    "status": "pending",
+    "source": "src/data/products.ts",
+    "ids": []
+  },
+  "canonicalHost": {
+    "status": "existing",
+    "value": "https://www.nilasyaagrofoods.com.tr",
+    "source": "README.md and src/data/company.ts"
+  },
+  "labels": {
+    "en": {
+      "description": "Pulses and grains trade enquiries from Türkiye. Contact Nilasya Agro Foods for product specifications, packaging and delivery requirements.",
+      "exportMarkets": "Export enquiries",
+      "annualCapacity": "Supply on request",
+      "opticalPurity": "Agreed specifications",
+      "responseTime": "Quotation on request",
+      "documentation": "Ask for the documents applicable to your product and shipment."
+    },
+    "tr": {
+      "description": "Türkiye’den bakliyat ve tahıl ticareti talepleri. Ürün şartnamesi, ambalaj ve teslimat gereksinimleri için Nilasya Agro Foods ile iletişime geçin.",
+      "exportMarkets": "İhracat talepleri",
+      "annualCapacity": "Talebe göre tedarik",
+      "opticalPurity": "Mutabık kalınan şartname",
+      "responseTime": "Talebe göre teklif",
+      "documentation": "Ürününüze ve sevkiyatınıza uygun belgeleri ekibimizden isteyin."
+    },
+    "ar": {
+      "description": "استفسارات تجارة البقوليات والحبوب من تركيا. تواصل مع نيلاسيا لتحديد مواصفات المنتج والتعبئة ومتطلبات التسليم.",
+      "exportMarkets": "طلبات التصدير",
+      "annualCapacity": "توريد حسب الطلب",
+      "opticalPurity": "مواصفات متفق عليها",
+      "responseTime": "عرض سعر حسب الطلب",
+      "documentation": "اطلب المستندات المناسبة للمنتج والشحنة."
+    },
+    "de": {
+      "description": "Handelsanfragen für Hülsenfrüchte und Getreide aus der Türkei. Kontaktieren Sie Nilasya Agro Foods zu Produktspezifikationen, Verpackung und Lieferung.",
+      "exportMarkets": "Exportanfragen",
+      "annualCapacity": "Lieferung auf Anfrage",
+      "opticalPurity": "Vereinbarte Spezifikationen",
+      "responseTime": "Angebot auf Anfrage",
+      "documentation": "Fordern Sie die für Produkt und Lieferung geltenden Unterlagen an."
+    },
+    "fr": {
+      "description": "Demandes commerciales de légumineuses et céréales de Turquie. Contactez Nilasya Agro Foods pour les spécifications, l’emballage et la livraison.",
+      "exportMarkets": "Demandes d’exportation",
+      "annualCapacity": "Approvisionnement sur demande",
+      "opticalPurity": "Spécifications convenues",
+      "responseTime": "Devis sur demande",
+      "documentation": "Demandez les documents applicables au produit et à l’expédition."
+    },
+    "it": {
+      "description": "Richieste commerciali di legumi e cereali dalla Turchia. Contatta Nilasya Agro Foods per specifiche, imballaggio e consegna.",
+      "exportMarkets": "Richieste di esportazione",
+      "annualCapacity": "Fornitura su richiesta",
+      "opticalPurity": "Specifiche concordate",
+      "responseTime": "Preventivo su richiesta",
+      "documentation": "Richiedi i documenti applicabili al prodotto e alla spedizione."
+    },
+    "es": {
+      "description": "Consultas comerciales de legumbres y cereales de Turquía. Contacte con Nilasya Agro Foods para especificaciones, embalaje y entrega.",
+      "exportMarkets": "Solicitudes de exportación",
+      "annualCapacity": "Suministro bajo consulta",
+      "opticalPurity": "Especificaciones acordadas",
+      "responseTime": "Cotización bajo consulta",
+      "documentation": "Solicite los documentos aplicables al producto y al envío."
+    },
+    "ru": {
+      "description": "Запросы на торговлю бобовыми и зерновыми из Турции. Свяжитесь с Nilasya Agro Foods по вопросам спецификаций, упаковки и доставки.",
+      "exportMarkets": "Экспортные запросы",
+      "annualCapacity": "Поставка по запросу",
+      "opticalPurity": "Согласованные спецификации",
+      "responseTime": "Предложение по запросу",
+      "documentation": "Запросите документы для вашего продукта и поставки."
+    },
+    "pt": {
+      "description": "Consultas comerciais de leguminosas e cereais da Turquia. Contacte a Nilasya Agro Foods para especificações, embalagem e entrega.",
+      "exportMarkets": "Consultas de exportação",
+      "annualCapacity": "Fornecimento sob consulta",
+      "opticalPurity": "Especificações acordadas",
+      "responseTime": "Cotação sob consulta",
+      "documentation": "Solicite os documentos aplicáveis ao produto e à remessa."
+    },
+    "nl": {
+      "description": "Handelsaanvragen voor peulvruchten en granen uit Turkije. Neem contact op met Nilasya Agro Foods voor specificaties, verpakking en levering.",
+      "exportMarkets": "Exportaanvragen",
+      "annualCapacity": "Levering op aanvraag",
+      "opticalPurity": "Afgesproken specificaties",
+      "responseTime": "Offerte op aanvraag",
+      "documentation": "Vraag de documenten voor uw product en zending aan."
+    },
+    "pl": {
+      "description": "Zapytania handlowe o rośliny strączkowe i zboża z Turcji. Skontaktuj się z Nilasya Agro Foods w sprawie specyfikacji, opakowania i dostawy.",
+      "exportMarkets": "Zapytania eksportowe",
+      "annualCapacity": "Dostawa na zapytanie",
+      "opticalPurity": "Uzgodnione specyfikacje",
+      "responseTime": "Wycena na zapytanie",
+      "documentation": "Poproś o dokumenty dotyczące produktu i wysyłki."
+    },
+    "ro": {
+      "description": "Cereri comerciale pentru leguminoase și cereale din Turcia. Contactați Nilasya Agro Foods pentru specificații, ambalare și livrare.",
+      "exportMarkets": "Cereri de export",
+      "annualCapacity": "Furnizare la cerere",
+      "opticalPurity": "Specificații convenite",
+      "responseTime": "Ofertă la cerere",
+      "documentation": "Solicitați documentele aplicabile produsului și transportului."
+    },
+    "bg": {
+      "description": "Търговски запитвания за бобови и зърнени култури от Турция. Свържете се с Nilasya Agro Foods за спецификации, опаковка и доставка.",
+      "exportMarkets": "Запитвания за износ",
+      "annualCapacity": "Доставка при запитване",
+      "opticalPurity": "Договорени спецификации",
+      "responseTime": "Оферта при запитване",
+      "documentation": "Поискайте документите за продукта и пратката."
+    },
+    "el": {
+      "description": "Εμπορικά αιτήματα για όσπρια και δημητριακά από την Τουρκία. Επικοινωνήστε με τη Nilasya Agro Foods για προδιαγραφές, συσκευασία και παράδοση.",
+      "exportMarkets": "Αιτήματα εξαγωγής",
+      "annualCapacity": "Προμήθεια κατόπιν αιτήματος",
+      "opticalPurity": "Συμφωνημένες προδιαγραφές",
+      "responseTime": "Προσφορά κατόπιν αιτήματος",
+      "documentation": "Ζητήστε τα έγγραφα που αφορούν το προϊόν και την αποστολή."
+    },
+    "sr": {
+      "description": "Trgovinski upiti za mahunarke i žitarice iz Turske. Kontaktirajte Nilasya Agro Foods za specifikacije, pakovanje i isporuku.",
+      "exportMarkets": "Izvozni upiti",
+      "annualCapacity": "Snabdevanje na upit",
+      "opticalPurity": "Dogovorene specifikacije",
+      "responseTime": "Ponuda na upit",
+      "documentation": "Zatražite dokumente za proizvod i pošiljku."
+    },
+    "uk": {
+      "description": "Торговельні запити щодо бобових і зернових з Туреччини. Зверніться до Nilasya Agro Foods щодо специфікацій, пакування та доставки.",
+      "exportMarkets": "Експортні запити",
+      "annualCapacity": "Постачання за запитом",
+      "opticalPurity": "Узгоджені специфікації",
+      "responseTime": "Пропозиція за запитом",
+      "documentation": "Запитайте документи для вашого продукту й поставки."
+    },
+    "ka": {
+      "description": "თურქეთიდან პარკოსნებისა და მარცვლეულის სავაჭრო მოთხოვნები. დაუკავშირდით Nilasya Agro Foods-ს სპეციფიკაციის, შეფუთვისა და მიწოდების შესახებ.",
+      "exportMarkets": "საექსპორტო მოთხოვნები",
+      "annualCapacity": "მიწოდება მოთხოვნით",
+      "opticalPurity": "შეთანხმებული სპეციფიკაციები",
+      "responseTime": "შეთავაზება მოთხოვნით",
+      "documentation": "მოითხოვეთ პროდუქტსა და გადაზიდვასთან დაკავშირებული დოკუმენტები."
+    },
+    "az": {
+      "description": "Türkiyədən paxlalılar və taxıl ticarəti sorğuları. Məhsul spesifikasiyası, qablaşdırma və çatdırılma üçün Nilasya Agro Foods ilə əlaqə saxlayın.",
+      "exportMarkets": "İxrac sorğuları",
+      "annualCapacity": "Sorğuya əsasən təchizat",
+      "opticalPurity": "Razılaşdırılmış spesifikasiyalar",
+      "responseTime": "Sorğuya əsasən təklif",
+      "documentation": "Məhsul və göndəriş üçün uyğun sənədləri istəyin."
+    },
+    "uz": {
+      "description": "Turkiyadan dukkakli va don mahsulotlari bo‘yicha savdo so‘rovlari. Spetsifikatsiya, qadoqlash va yetkazish uchun Nilasya Agro Foods bilan bog‘laning.",
+      "exportMarkets": "Eksport so‘rovlari",
+      "annualCapacity": "So‘rov bo‘yicha ta’minot",
+      "opticalPurity": "Kelishilgan spetsifikatsiyalar",
+      "responseTime": "So‘rov bo‘yicha taklif",
+      "documentation": "Mahsulot va jo‘natma uchun tegishli hujjatlarni so‘rang."
+    },
+    "kk": {
+      "description": "Түркиядан бұршақ және астық саудасы туралы сұраулар. Сипаттамалар, қаптама және жеткізу үшін Nilasya Agro Foods компаниясына хабарласыңыз.",
+      "exportMarkets": "Экспорт сұраулары",
+      "annualCapacity": "Сұрау бойынша жеткізу",
+      "opticalPurity": "Келісілген сипаттамалар",
+      "responseTime": "Сұрау бойынша ұсыныс",
+      "documentation": "Өнім мен жөнелтілімге қатысты құжаттарды сұраңыз."
+    },
+    "fa": {
+      "description": "درخواست‌های تجاری حبوبات و غلات از ترکیه. برای مشخصات محصول، بسته‌بندی و تحویل با Nilasya Agro Foods تماس بگیرید.",
+      "exportMarkets": "درخواست صادرات",
+      "annualCapacity": "تأمین بنا بر درخواست",
+      "opticalPurity": "مشخصات توافق‌شده",
+      "responseTime": "پیشنهاد بنا بر درخواست",
+      "documentation": "مدارک مربوط به محصول و محموله را درخواست کنید."
+    },
+    "hi": {
+      "description": "तुर्किये से दालों और अनाज के व्यापार संबंधी पूछताछ। उत्पाद विवरण, पैकिंग और डिलीवरी के लिए Nilasya Agro Foods से संपर्क करें।",
+      "exportMarkets": "निर्यात संबंधी पूछताछ",
+      "annualCapacity": "अनुरोध पर आपूर्ति",
+      "opticalPurity": "सहमत विनिर्देश",
+      "responseTime": "अनुरोध पर प्रस्ताव",
+      "documentation": "उत्पाद और शिपमेंट से संबंधित दस्तावेज़ माँगें।"
+    },
+    "ur": {
+      "description": "ترکیہ سے دالوں اور اناج کی تجارتی درخواستیں۔ مصنوعات کی تفصیل، پیکنگ اور ترسیل کے لیے Nilasya Agro Foods سے رابطہ کریں۔",
+      "exportMarkets": "برآمدی درخواستیں",
+      "annualCapacity": "درخواست پر فراہمی",
+      "opticalPurity": "متفقہ تفصیلات",
+      "responseTime": "درخواست پر پیشکش",
+      "documentation": "مصنوعات اور کھیپ سے متعلق دستاویزات طلب کریں۔"
+    },
+    "bn": {
+      "description": "তুরস্ক থেকে ডাল ও শস্যের বাণিজ্যিক অনুসন্ধান। পণ্যের বিবরণ, প্যাকেজিং ও সরবরাহের জন্য Nilasya Agro Foods-এর সঙ্গে যোগাযোগ করুন।",
+      "exportMarkets": "রপ্তানি অনুসন্ধান",
+      "annualCapacity": "অনুরোধে সরবরাহ",
+      "opticalPurity": "সম্মত পণ্যের বিবরণ",
+      "responseTime": "অনুরোধে প্রস্তাব",
+      "documentation": "পণ্য ও চালানের প্রযোজ্য নথি চাইুন।"
+    },
+    "zh-cn": {
+      "description": "土耳其豆类和谷物贸易咨询。请联系 Nilasya Agro Foods 了解产品规格、包装和交付要求。",
+      "exportMarkets": "出口咨询",
+      "annualCapacity": "按需供应",
+      "opticalPurity": "商定规格",
+      "responseTime": "按需报价",
+      "documentation": "请索取适用于产品和货运的文件。"
+    },
+    "ja": {
+      "description": "トルコ産豆類・穀物の取引に関するお問い合わせ。仕様、包装、配送要件についてNilasya Agro Foodsまでご連絡ください。",
+      "exportMarkets": "輸出のお問い合わせ",
+      "annualCapacity": "ご要望に応じた供給",
+      "opticalPurity": "合意した仕様",
+      "responseTime": "ご要望に応じた見積もり",
+      "documentation": "製品と出荷に適用される書類をご依頼ください。"
+    },
+    "ko": {
+      "description": "튀르키예산 두류 및 곡물 거래 문의. 제품 사양, 포장 및 배송 요건은 Nilasya Agro Foods에 문의하세요.",
+      "exportMarkets": "수출 문의",
+      "annualCapacity": "요청에 따른 공급",
+      "opticalPurity": "합의된 사양",
+      "responseTime": "요청에 따른 견적",
+      "documentation": "제품과 선적에 적용되는 서류를 요청하세요."
+    },
+    "id": {
+      "description": "Pertanyaan perdagangan kacang-kacangan dan biji-bijian dari Türkiye. Hubungi Nilasya Agro Foods untuk spesifikasi, kemasan dan pengiriman.",
+      "exportMarkets": "Pertanyaan ekspor",
+      "annualCapacity": "Pasokan sesuai permintaan",
+      "opticalPurity": "Spesifikasi yang disepakati",
+      "responseTime": "Penawaran sesuai permintaan",
+      "documentation": "Minta dokumen yang berlaku untuk produk dan pengiriman."
+    },
+    "ms": {
+      "description": "Pertanyaan perdagangan kekacang dan bijirin dari Türkiye. Hubungi Nilasya Agro Foods untuk spesifikasi, pembungkusan dan penghantaran.",
+      "exportMarkets": "Pertanyaan eksport",
+      "annualCapacity": "Bekalan atas permintaan",
+      "opticalPurity": "Spesifikasi yang dipersetujui",
+      "responseTime": "Sebut harga atas permintaan",
+      "documentation": "Minta dokumen yang berkenaan dengan produk dan penghantaran."
+    },
+    "sw": {
+      "description": "Maswali ya biashara ya mikunde na nafaka kutoka Uturuki. Wasiliana na Nilasya Agro Foods kuhusu vipimo, ufungaji na usafirishaji.",
+      "exportMarkets": "Maswali ya mauzo ya nje",
+      "annualCapacity": "Ugavi kwa ombi",
+      "opticalPurity": "Vipimo vilivyokubaliwa",
+      "responseTime": "Bei kwa ombi",
+      "documentation": "Omba nyaraka zinazohusu bidhaa na usafirishaji."
+    }
+  }
+}

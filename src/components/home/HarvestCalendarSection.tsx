@@ -133,18 +133,18 @@ export const HarvestCalendarSection: React.FC<{ lang: Locale; onOpenQuoteWithPro
 
         {/* Main Clean Light Table */}
         <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xl shadow-slate-900/5 overflow-hidden mb-12">
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto" tabIndex={0} role="region" aria-label={t.tableSummary}>
             <table className="w-full text-left border-collapse min-w-[760px]">
               <caption className="sr-only">{t.tableSummary}</caption>
               <thead>
                 <tr className="bg-slate-100/90 border-b border-slate-200 text-slate-800 text-xs font-black uppercase tracking-wider">
-                  <th scope="col" className="py-4 px-4 sm:px-6 w-56 sticky left-0 bg-slate-100/95 z-20 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">
+                  <th scope="col" className="py-4 px-4 sm:px-6 w-56 sticky start-0 bg-slate-100/95 z-20 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">
                     {pt.exportProduce}
                   </th>
                   {monthsList.map((m) => (
                     <th key={m.id} scope="col" className="py-4 px-2 text-center font-black text-slate-900">
-                      <span className="block text-[10px] text-slate-400 font-mono font-bold">0{m.id}</span>
-                      <span className="text-xs font-black text-slate-800">{lang === 'tr' ? m.tr : m.en}</span>
+                      <span className="block text-[10px] text-slate-400 font-mono font-bold">{String(m.id).padStart(2, '0')}</span>
+                      <span className="text-xs font-black text-slate-800">{new Intl.DateTimeFormat(lang, { month: 'short', timeZone: 'UTC' }).format(new Date(Date.UTC(2026, m.id - 1, 1)))}</span>
                     </th>
                   ))}
                 </tr>
@@ -160,7 +160,7 @@ export const HarvestCalendarSection: React.FC<{ lang: Locale; onOpenQuoteWithPro
                       {/* Product Header sticky column */}
                       <th
                         scope="row"
-                        className="py-4 px-4 sm:px-6 font-bold text-slate-900 sticky left-0 bg-white group-hover:bg-emerald-50/40 z-10 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]"
+                        className="py-4 px-4 sm:px-6 font-bold text-slate-900 sticky start-0 bg-white group-hover:bg-emerald-50/40 z-10 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]"
                       >
                         <Link
                           href={getProductHref(product.slug, product.id)}

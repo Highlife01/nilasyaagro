@@ -187,13 +187,15 @@ export interface RFQSubmission {
   variety?: string;
   caliber?: string;
   quantity: string;
-  unit: 'MT' | 'Tons' | 'Pallets' | 'Containers (40ft FCL)' | 'Boxes';
+  unit: 'MT' | 'kg' | 'container' | 'Tons' | 'Pallets' | 'Containers (40ft FCL)' | 'Boxes';
   packaging: string;
   destinationCountry: string;
   destinationCity: string;
   destinationPort?: string;
+  deliveryAddress?: string;
   incoterm: 'EXW' | 'FCA' | 'FOB' | 'CFR' | 'CIF' | 'DAP';
   targetDeliveryDate?: string;
+  requestedDeliveryDate?: string;
   companyName: string;
   website?: string;
   contactPerson: string;

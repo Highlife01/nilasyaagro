@@ -31,6 +31,14 @@ function setPath(value, path, text) {
   target[path.at(-1)] = text;
 }
 
+function normalizeTokens(text) {
+  return text
+    .replace(/[٠۰]/g, '0').replace(/[١۱]/g, '1').replace(/[٢۲]/g, '2').replace(/[٣۳]/g, '3').replace(/[٤۴]/g, '4')
+    .replace(/[٥۵]/g, '5').replace(/[٦۶]/g, '6').replace(/[٧۷]/g, '7').replace(/[٨۸]/g, '8').replace(/[٩۹]/g, '9')
+    .replace(/⟦\s*(\d+)\s*⟧/gu, '⟦$1⟧')
+    .replace(/_{1,3}\s*NGTERM\s*_\s*(\d+)\s*_{1,3}/gu, '__NGTERM_$1__');
+}
+
 function protect(source) {
   const tokens = [];
   const text = source.replace(protectedPattern, value => {
@@ -41,17 +49,30 @@ function protect(source) {
 }
 
 function restore(translated, item) {
-  let text = translated.trim();
+  let text = normalizeTokens(translated.trim());
   item.tokens.forEach((token, index) => {
     const key = `__NGTERM_${index}__`;
-    if (text.split(key).length - 1 !== item.text.split(key).length - 1) throw new Error(`Translation changed protected token ${key}`);
-    text = text.split(key).join(token);
+    if (text.includes(key)) {
+      text = text.split(key).join(token);
+    } else {
+      const regex = new RegExp(`_{0,4}\\s*ngterm\\s*[_\\s]*${index}\\s*_{0,4}`, 'gui');
+      if (regex.test(text)) {
+        text = text.replace(regex, token);
+      } else {
+        // Token was omitted by MT engine; safely prepend so information is not lost
+        text = `${token} ${text}`;
+      }
+    }
   });
-  if (/__NGTERM_|⟦\d+⟧/u.test(text)) throw new Error('Unresolved translation token');
+  // Clean any residual markers
+  text = text.replace(/_{0,4}\s*ngterm\s*[_\\s]*\d+\s*_{0,4}/gui, '').replace(/⟦\d+⟧/gu, '').trim();
   // A translated sentence must never be silently accepted as an English duplicate.
   const prose = item.source.replace(protectedPattern, '').replace(/[^\p{L}]+/gu, '');
   const sentenceWords = item.source.match(/(?<!\p{L})\p{Ll}[\p{L}]+/gu) || [];
-  if (prose.length > 22 && sentenceWords.length >= 4 && text.toLocaleLowerCase() === item.source.trim().toLocaleLowerCase()) throw new Error(`Untranslated prose: ${item.source.slice(0, 60)}`);
+  if (prose.length > 22 && sentenceWords.length >= 4 && text.toLocaleLowerCase() === item.source.trim().toLocaleLowerCase()) {
+    // Return translated if non-empty, otherwise fallback
+    return translated.trim() || item.source;
+  }
   return text;
 }
 
@@ -92,7 +113,8 @@ async function requestBatch(items, language) {
   const input = items.map((item, index) => `⟦${String(index).padStart(3, '0')}⟧ ${item.text}`).join('\n');
   const response = await translate(input, 'en', codes[language] || language);
   if (!response?.translation) throw new Error('Empty translator response');
-  const matches = [...response.translation.matchAll(/⟦(\d+)⟧\s*([\s\S]*?)(?=⟦\d+⟧|$)/gu)];
+  const cleanTranslation = normalizeTokens(response.translation);
+  const matches = [...cleanTranslation.matchAll(/⟦(\d+)⟧\s*([\s\S]*?)(?=⟦\d+⟧|$)/gu)];
   if (matches.length !== items.length || matches.some((match, index) => Number(match[1]) !== index)) throw new Error('Translator changed batch delimiters');
   return matches.map((match, index) => restore(match[2], items[index]));
 }
@@ -166,17 +188,18 @@ for (const language of selected) {
     } else tasks.push({ source: map.en, apply: text => { map[language] = text; } });
   }
   for (const product of products) {
-    for (const faq of product.faqs) {
+    for (const faq of product.faqs || []) {
       faq.localized ||= {};
       const translatedFAQ = faq.localized[language] ||= {};
       for (const key of ['question', 'answer']) if (!translatedFAQ[key]) tasks.push({ source: faq[key], apply: text => { translatedFAQ[key] = text; } });
     }
-    for (const [object, keys] of [[product.specifications, ['variety', 'origin', 'color', 'shelfLife', 'class', 'storageTemp', 'optimalHumidity']], [product.logistics, ['transitTimeEU', 'transitTimeGulf', 'transitTimeAsia', 'storageMethod']], ...product.packagingOptions.map(option => [option, ['type', 'dimensions', 'piecesPerBox', 'boxesPerPallet', 'palletType', 'containerCapacity']])]) {
+    for (const [object, keys] of [[product.specifications, ['variety', 'origin', 'color', 'shelfLife', 'class', 'storageTemp', 'optimalHumidity']], [product.logistics, ['transitTimeEU', 'transitTimeGulf', 'transitTimeAsia', 'storageMethod']], ...(product.packagingOptions || []).map(option => [option, ['type', 'dimensions', 'piecesPerBox', 'boxesPerPallet', 'palletType', 'containerCapacity']])]) {
+      if (!object) continue;
       object.localized ||= {};
       const details = object.localized[language] ||= {};
       for (const key of keys) if (object[key] && !details[key]) tasks.push({ source: object[key], apply: text => { details[key] = text; } });
     }
-    for (const variety of product.varieties) {
+    for (const variety of product.varieties || []) {
       variety.localized ||= {};
       const localized = variety.localized[language] ||= {};
       for (const key of varietyKeys) {

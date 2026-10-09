@@ -10,7 +10,7 @@ import { Truck, Ship, FileCheck2, ShieldCheck, MapPin, ArrowRight, CheckCircle2,
 import { CountryExportClientWrapper } from './CountryExportClientWrapper';
 import { productsData } from '@/data/products';
 import { pageMetadata, localizedUrl } from '@/lib/metadata';
-import { breadcrumbSchema, organizationId, serializeJsonLd } from '@/lib/structuredData';
+import { breadcrumbSchema, faqSchema, organizationId, serializeJsonLd } from '@/lib/structuredData';
 import { getTranslations } from '@/data/translations';
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -76,11 +76,50 @@ export default async function CountryExportPage({
     description: country.overview[lang] || country.overview.en,
   };
 
+  const faqItems = [
+    {
+      question: lang === 'tr'
+        ? `${countryName} için Türk bakliyat ve hububat tedariki nasıl yapılır?`
+        : `How does Nilasya Agro Foods supply Turkish pulses & grains to ${countryName}?`,
+      answer: country.geoAnswer[lang] || country.geoAnswer.en,
+    },
+    {
+      question: lang === 'tr'
+        ? `${countryName} sevkiyatlarında hangi gümrük ve ihracat belgeleri hazırlanır?`
+        : `What export documents are provided for shipments to ${countryName}?`,
+      answer: lang === 'tr'
+        ? `${countryName} ithalat standartlarına tam uyumlu olarak: ${country.documents.join(', ')} hazırlanmaktadır.`
+        : `All official documents including ${country.documents.join(', ')} are prepared in full compliance with ${countryName} import regulations.`,
+    },
+    {
+      question: lang === 'tr'
+        ? `${countryName} için geçerli teslim şekilleri (Incoterms) nelerdir?`
+        : `What Incoterms trade terms are supported for ${countryName}?`,
+      answer: lang === 'tr'
+        ? `Nilasya Agro Foods, ${countryName} teslimatları için ${country.incoterms.join(', ')} teslim koşullarını desteklemektedir.`
+        : `Nilasya Agro Foods supports ${country.incoterms.join(', ')} delivery terms for ${countryName}.`,
+    },
+    ...(country.transitTime.sea || country.transitTime.road ? [{
+      question: lang === 'tr'
+        ? `Mersin Limanı'ndan ${countryName}'ya tahmini transit süreleri nedir?`
+        : `What are the estimated transit times from Mersin Port to ${countryName}?`,
+      answer: [
+        country.transitTime.road ? (lang === 'tr' ? `Karayolu: ${country.transitTime.road}` : `Road Freight: ${country.transitTime.road}`) : null,
+        country.transitTime.sea ? (lang === 'tr' ? `Denizyolu Konteyner: ${country.transitTime.sea}` : `Sea Freight Container: ${country.transitTime.sea}`) : null,
+      ].filter(Boolean).join(' | '),
+    }] : []),
+  ];
+
   return (
     <div className="pt-24 bg-white min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqSchema(faqItems)) }}
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbSchema(lang, [

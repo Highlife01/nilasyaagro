@@ -1,0 +1,260 @@
+{
+  "results": [
+    {
+      "route": "/en/",
+      "width": 320,
+      "scrollWidth": 320,
+      "lang": "en",
+      "dir": "ltr",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "class": "flex items-center gap-2 lg:hidden",
+          "text": "🇬🇧en"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "min-h-11 min-w-14 touch-manipulation p-2.5 rounded-2xl border font-bold flex items-center justify-center gap-1.5 bg-white/15 border-white/25 text-white",
+          "text": "🇬🇧en"
+        },
+        {
+          "tag": "SPAN",
+          "class": "text-base",
+          "text": "🇬🇧"
+        },
+        {
+          "tag": "SPAN",
+          "class": "text-xs uppercase",
+          "text": "en"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "min-h-11 min-w-11 touch-manipulation p-2.5 rounded-2xl text-white bg-white/10",
+          "text": ""
+        },
+        {
+          "tag": "TABLE",
+          "class": "w-full text-left border-collapse min-w-[760px]",
+          "text": "Monthly export availability matrix for Turkish pulses, grains & agricu"
+        }
+      ]
+    },
+    {
+      "route": "/tr/",
+      "width": 390,
+      "scrollWidth": 390,
+      "lang": "tr",
+      "dir": "ltr",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "class": "flex items-center gap-2 lg:hidden",
+          "text": "🇹🇷tr"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "min-h-11 min-w-11 touch-manipulation p-2.5 rounded-2xl text-white bg-white/10",
+          "text": ""
+        },
+        {
+          "tag": "TABLE",
+          "class": "w-full text-left border-collapse min-w-[760px]",
+          "text": "Türkiye menşeili bakliyat, hububat ve tarımsal emtialar için aylık ihr"
+        },
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "İhraç Emtiası01Oca02Şub03Mar04Nis05May06Haz07Tem08Ağu09Eyl010Eki011Kas"
+        },
+        {
+          "tag": "TR",
+          "class": "bg-slate-100/90 border-b border-slate-200 text-slate-800 text-xs font-black uppercase tracking-wider",
+          "text": "İhraç Emtiası01Oca02Şub03Mar04Nis05May06Haz07Tem08Ağu09Eyl010Eki011Kas"
+        },
+        {
+          "tag": "TH",
+          "class": "py-4 px-2 text-center font-black text-slate-900",
+          "text": "04Nis"
+        }
+      ]
+    },
+    {
+      "route": "/ar/",
+      "width": 390,
+      "scrollWidth": 390,
+      "lang": "ar",
+      "dir": "rtl",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "class": "flex items-center gap-2 lg:hidden",
+          "text": "🇸🇦ar"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "min-h-11 min-w-11 touch-manipulation p-2.5 rounded-2xl text-white bg-white/10",
+          "text": ""
+        },
+        {
+          "tag": "TABLE",
+          "class": "w-full text-left border-collapse min-w-[760px]",
+          "text": "مصفوفة التوافر الشهري لتصدير البقوليات والحبوب والسلع الزراعية التركية"
+        },
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "سلعة تصدير01Jan02Feb03Mar04Apr05May06Jun07Jul08Aug09Sep010Oct011Nov012"
+        },
+        {
+          "tag": "TR",
+          "class": "bg-slate-100/90 border-b border-slate-200 text-slate-800 text-xs font-black uppercase tracking-wider",
+          "text": "سلعة تصدير01Jan02Feb03Mar04Apr05May06Jun07Jul08Aug09Sep010Oct011Nov012"
+        },
+        {
+          "tag": "TH",
+          "class": "py-4 px-2 text-center font-black text-slate-900",
+          "text": "04Apr"
+        }
+      ]
+    },
+    {
+      "route": "/de/",
+      "width": 1024,
+      "scrollWidth": 1009,
+      "lang": "de",
+      "dir": "ltr",
+      "overflow": [
+        {
+          "tag": "NAV",
+          "class": "hidden lg:flex items-center gap-5 xl:gap-6",
+          "text": "StartseiteProdukteErntekalenderProduktion und TerroirsQualität und Sta"
+        },
+        {
+          "tag": "A",
+          "class": "text-[13px] font-extrabold uppercase tracking-wider transition-colors text-slate-100 hover:text-emerald-300",
+          "text": "Verpackungslösungen"
+        },
+        {
+          "tag": "A",
+          "class": "text-[13px] font-extrabold uppercase tracking-wider transition-colors text-slate-100 hover:text-emerald-300",
+          "text": "Globaler Export"
+        },
+        {
+          "tag": "A",
+          "class": "text-[13px] font-extrabold uppercase tracking-wider transition-colors text-slate-100 hover:text-emerald-300",
+          "text": "Über uns"
+        },
+        {
+          "tag": "A",
+          "class": "text-[13px] font-extrabold uppercase tracking-wider transition-colors text-slate-100 hover:text-emerald-300",
+          "text": "Kontaktieren Sie uns"
+        },
+        {
+          "tag": "DIV",
+          "class": "hidden lg:flex items-center gap-3 shrink-0",
+          "text": "🇩🇪de30 DİLANGEBOT ANFRAGEN"
+        }
+      ]
+    },
+    {
+      "route": "/en/",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "lang": "en",
+      "dir": "ltr",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "class": "hidden lg:flex items-center gap-3 shrink-0",
+          "text": "🇬🇧en30 DİLREQUEST A QUOTE"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-black transition-all border bg-white/15 border-white/25 text-white hover:bg-white/25",
+          "text": "🇬🇧en30 DİL"
+        },
+        {
+          "tag": "SPAN",
+          "class": "text-[10px] bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded font-mono hidden xl:inline",
+          "text": "30 DİL"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-600 to-[#0D3B2E] hover:from-amber-400 hover:to-amber-500 text-white text-xs font-black uppercase tracking-wider shadow-lg shadow-emerald-950/40 hover:shadow-amber-500/30 transition-all hover:scale-105 active:scale-95",
+          "text": "REQUEST A QUOTE"
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "REQUEST A QUOTE"
+        }
+      ]
+    },
+    {
+      "route": "/tr/contact/",
+      "width": 390,
+      "scrollWidth": 390,
+      "lang": "tr",
+      "dir": "ltr",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "class": "flex items-center gap-2 lg:hidden",
+          "text": "🇹🇷tr"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "min-h-11 min-w-11 touch-manipulation p-2.5 rounded-2xl text-white bg-white/10",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "route": "/tr/quote/",
+      "width": 390,
+      "scrollWidth": 390,
+      "lang": "tr",
+      "dir": "ltr",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "class": "flex items-center gap-2 lg:hidden",
+          "text": "🇹🇷tr"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "min-h-11 min-w-11 touch-manipulation p-2.5 rounded-2xl text-white bg-white/10",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "route": "/en/products/chickpeas/",
+      "width": 390,
+      "scrollWidth": 390,
+      "lang": "en",
+      "dir": "ltr",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "class": "flex items-center gap-2 lg:hidden",
+          "text": "🇬🇧en"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "min-h-11 min-w-11 touch-manipulation p-2.5 rounded-2xl text-white bg-white/10",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "check": "contact-invalid-submit",
+      "focus": "",
+      "requests": 0
+    }
+  ],
+  "errors": [
+    "SyntaxError: Failed to execute 'querySelector' on 'Element': '[name=\"name\"\n            {...fieldProps('name')}]' is not a valid selector.\n    at q (http://127.0.0.1:55795/_next/static/chunks/3nu76bn-b0_4w.js:1:1351)\n    at s5 (http://127.0.0.1:55795/_next/static/chunks/0s7mvllxht1mo.js:1:174585)\n    at http://127.0.0.1:55795/_next/static/chunks/0s7mvllxht1mo.js:1:180433\n    at tU (http://127.0.0.1:55795/_next/static/chunks/0s7mvllxht1mo.js:1:40938)\n    at cn (http://127.0.0.1:55795/_next/static/chunks/0s7mvllxht1mo.js:1:175818)\n    at fq (http://127.0.0.1:55795/_next/static/chunks/0s7mvllxht1mo.js:1:214046)\n    at fQ (http://127.0.0.1:55795/_next/static/chunks/0s7mvllxht1mo.js:1:213868)\n    at <anonymous>:1:32",
+    "invalid contact submit should focus first field\n\n'' !== 'companyName'\n"
+  ]
+}

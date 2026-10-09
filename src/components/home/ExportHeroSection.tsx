@@ -41,7 +41,7 @@ export function ExportHeroSection({ lang, onOpenQuote }: ExportHeroSectionProps)
       <div className={styles.background} aria-hidden="true">
         <Image
           src="/images/hero/pulses-export-warehouse-nilasya.jpg"
-          alt=""
+          alt="Nilasya Agro Foods modern pulses export terminal and warehouse at Mersin International Port"
           fill
           sizes="100vw"
           className={styles.photo}

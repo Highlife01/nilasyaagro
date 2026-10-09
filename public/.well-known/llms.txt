@@ -1,45 +1,67 @@
-# Nilasya Global — AI & LLM Machine-Readable Overview
+# Nilasya Agro Foods
 
-> Nilasya Global is a premier Türkiye-based grower, packer, and exporter of certified fresh fruits and vegetables (Pomegranate, Highland Apples, Table Grapes, Hayward Kiwi, Citrus & Oranges, Greenhouse Tomatoes) serving international supermarket chains, importers, and B2B produce wholesalers across Europe, the Gulf / Middle East, the UK, Asia, and North America.
+> Turkish B2B supplier and exporter processing pulses and grains sourced from contracted Anatolian farmers at its Mersin facility, prepared to strict technical specifications and shipped globally via Mersin International Port.
 
-- Brand Name: Nilasya Global
-- Legal Entity: Nilasya Global Tarım Dış Ticaret Ltd.
-- Official Website: https://nilasyaglobal.com.tr
-- Core Industry: Fresh Fruit & Vegetable Agriculture / B2B Commercial Export & Wholesale Supply
-- Country of Origin: Türkiye (Turkey)
-- Slogan: "Fresh from Türkiye. Delivered Worldwide."
-- Headquarters: Istanbul, Türkiye
-- Operations & Packhouse Basins: Adana & Mersin Agricultural Export Zone, Antalya, Manisa, Isparta, Afyon, Türkiye
-- Official Export Desk WhatsApp / Phone: +90 533 684 01 75
-- Official B2B Email: export@nilasyaglobal.com.tr
-- Full Extended AI Knowledge Base: https://nilasyaglobal.com.tr/llms-full.txt
-- XML Sitemap: https://nilasyaglobal.com.tr/sitemap.xml
+## Company and contact
 
----
+- Brand: Nilasya Agro Foods
+- Legal entity: NİLASYA GLOBAL TARIM İTHALAT VE İHRACAT LİMİTED ŞİRKETİ
+- Website: https://www.nilasyaagrofoods.com.tr
+- Trade desk & Operations: Toros Mah. Barış Manço Bulvarı, Çukurova / Adana / Türkiye
+- Primary Loading Hub: Mersin International Port (MIP), Türkiye
+- Annual Milling & Supply Capacity: 120,000 MT
+- Global Export Reach: 50+ Countries across Europe, Middle East, North Africa, Asia and the Americas
+- Email: export@nilasyaagrofoods.com.tr
+- Telephone / WhatsApp: +90 533 684 01 75
+- Accreditations: Mediterranean Exporters Association (AKİB), Mersin Commercial Exchange, ISO 22000, HACCP, Halal Certified Sourcing
 
-## 25 Supported Multilingual Portals
-- [English B2B Portal](https://nilasyaglobal.com.tr/en/)
-- [Türkçe İhracat Portalı](https://nilasyaglobal.com.tr/tr/)
-- [Deutsch Portal](https://nilasyaglobal.com.tr/de/)
-- [Français Portail](https://nilasyaglobal.com.tr/fr/)
-- [Español Portal](https://nilasyaglobal.com.tr/es/)
-- [Italiano Portale](https://nilasyaglobal.com.tr/it/)
-- [Nederlands Portaal](https://nilasyaglobal.com.tr/nl/)
-- [Polski Portal](https://nilasyaglobal.com.tr/pl/)
-- [Română Portal](https://nilasyaglobal.com.tr/ro/)
-- [Български Портал](https://nilasyaglobal.com.tr/bg/)
-- [Ελληνικά](https://nilasyaglobal.com.tr/el/)
-- [Русский Портал](https://nilasyaglobal.com.tr/ru/)
-- [Українська](https://nilasyaglobal.com.tr/uk/)
-- [العربية](https://nilasyaglobal.com.tr/ar/)
-- [فارسی](https://nilasyaglobal.com.tr/fa/)
-- [עברית](https://nilasyaglobal.com.tr/he/)
-- [हिन्दी](https://nilasyaglobal.com.tr/hi/)
-- [اردو](https://nilasyaglobal.com.tr/ur/)
-- [简体中文](https://nilasyaglobal.com.tr/zh-cn/)
-- [日本語](https://nilasyaglobal.com.tr/ja/)
-- [한국어](https://nilasyaglobal.com.tr/ko/)
-- [Bahasa Indonesia](https://nilasyaglobal.com.tr/id/)
-- [Bahasa Melayu](https://nilasyaglobal.com.tr/ms/)
-- [Português](https://nilasyaglobal.com.tr/pt/)
-- [Čeština](https://nilasyaglobal.com.tr/cs/)
+## Product catalogue
+
+- [Turkish Kabuli Chickpeas (Koçbaşı 7mm - 10mm)](https://www.nilasyaagrofoods.com.tr/en/products/chickpeas/): Grown in the high-altitude Central Anatolian plains (Konya, Karaman, Yozgat), Turkish Kabuli chickpeas are renowned for their plump round caliber, creamy texture, thin skin, and superior canning yield. Processed through state-of-the-art multi-stage Sortex optical sorters in Mersin.
+- [Turkish Red Lentils (Football & Split Sortex)](https://www.nilasyaagrofoods.com.tr/en/products/red-lentils/): Türkiye is the historic birthplace of red lentils. Renowned worldwide for their deep salmon-red hue, quick cooking time, velvety consistency, and rich plant protein (25%), our lentils are processed using multi-pass Sortex optical color sorters in Mersin.
+- [Turkish Green Lentils (Laird & Eston Type 5mm - 7mm)](https://www.nilasyaagrofoods.com.tr/en/products/green-lentils/): Cultivated in Central Anatolia (Yozgat, Çorum, Ankara), Turkish Green Lentils are known for their distinct earthy aroma, high dietary fiber, and ability to hold their shape during boiling without bursting. Calibrated in 5mm, 6mm, and 7mm sizes.
+- [Turkish Dry White Beans (Dermason, Horoz, Cannellini 8mm - 10mm)](https://www.nilasyaagrofoods.com.tr/en/products/white-beans/): Turkish Dermason white beans from Erzincan and Central Anatolia are internationally acclaimed as the finest dry beans in the world. Their paper-thin skin dissolves during cooking without splitting, producing a buttery, creamy texture ideal for canning, baked beans, and Mediterranean gastronomy.
+- [Yellow & Green Dry Peas (Whole & Split Sortex)](https://www.nilasyaagrofoods.com.tr/en/products/dry-peas/): High-grade dry yellow and green peas processed and split in Mersin. Valued by international food manufacturers for soup mixes, plant-based meat substitutes, protein isolates, and snack extrusion due to their uniform calibration and high protein (22%).
+- [Turkish Durum Wheat & Traditional Bulgur](https://www.nilasyaagrofoods.com.tr/en/products/durum-wheat-bulgur/): Anatolia is the ancestral cradle of durum wheat. Nilasya Agro Foods exports premium amber durum grain (high vitreousness, strong gluten, >13.5% protein) for semolina and pasta millers, alongside authentic parboiled Turkish bulgur (pilaf coarse, mid-coarse, fine köftelik) processed with clean artesian mountain water.
+- [Specialty Pulses & Seeds (Fava Beans, Black-Eyed Peas, Sesame, Sunflower)](https://www.nilasyaagrofoods.com.tr/en/products/other-pulses-seeds/): Expanding beyond core pulses, Nilasya Agro Foods exports broad beans (fava beans), black-eyed peas, sortex-cleaned white and golden sesame seeds, and Turkish confectionery sunflower seeds. All commodities are calibrated and certified for global food-service and snack manufacturing.
+- [Turkish Durum Wheat Pasta & Macaroni (100% Semolina)](https://www.nilasyaagrofoods.com.tr/en/products/pasta-macaroni/): Manufactured from 100% hard amber durum wheat semolina grown in the sunny volcanic plains of Southeastern Anatolia. Features a rich golden amber color, outstanding cooking resistance, and superior sauce adherence.
+
+## Buyer information
+
+- [Request an export quotation](https://www.nilasyaagrofoods.com.tr/en/quote/)
+- [Packaging](https://www.nilasyaagrofoods.com.tr/en/packaging/)
+- [Quality and traceability](https://www.nilasyaagrofoods.com.tr/en/quality/)
+- [Harvest calendar](https://www.nilasyaagrofoods.com.tr/en/harvest-calendar/)
+- [Export destinations](https://www.nilasyaagrofoods.com.tr/en/export/)
+- [Contact](https://www.nilasyaagrofoods.com.tr/en/contact/)
+- [Full catalogue context](https://www.nilasyaagrofoods.com.tr/llms-full.txt)
+- [Türkçe LLM Bağlam Özeti](https://www.nilasyaagrofoods.com.tr/llms-tr.txt)
+- [ملخص المنتجات بالعربية](https://www.nilasyaagrofoods.com.tr/llms-ar.txt)
+- [XML sitemap](https://www.nilasyaagrofoods.com.tr/sitemap.xml)
+
+## Frequently Asked B2B & Trade Questions
+
+### What is the Minimum Order Quantity (MOQ)?
+Our standard export minimum order quantity is one 20ft Full Container Load (FCL), which accommodates approximately 24 to 26 Metric Tons (MT) of Sortex-cleaned pulses depending on packaging specifications. Consolidated container loads containing mixed pulses (e.g., chickpeas, red lentils, white beans) are available upon agreement.
+
+### What trade terms (Incoterms) do you support?
+We routinely execute contracts under Incoterms 2020: FOB Mersin Port, CFR (Cost and Freight), and CIF (Cost, Insurance and Freight) to major international seaports across Europe, the Middle East & Gulf, North Africa, Asia, and the Americas.
+
+### What are the export packaging options?
+- Polypropylene (PP) bags: 25 kg and 50 kg multi-wall woven sacks.
+- FIBC Jumbo Big Bags: 1,000 kg and 1,200 kg with top spout and discharge bottom.
+- Premium Retail Packaging: Nilasya 2.0 kg Stand-up Doypack / Quad-Seal bags packed in master export cartons.
+- Private Label (OEM): Custom branding, retail packaging, and carton design are available for supermarket chains and regional distributors.
+
+### What export documentation is provided?
+Standard documentation provided with every ocean bill of lading includes: Commercial Invoice, Detailed Packing List, Official Phytosanitary Certificate issued by the Turkish Ministry of Agriculture and Forestry, Certificate of Origin (AKİB / Chamber of Commerce), Certificate of Weight and Quality, and independent inspection reports (SGS / Bureau Veritas / Intertek) when requested.
+
+### How do you ensure optical purity and moisture control?
+All raw pulses undergo pre-cleaning, mechanical destoning, gravity density grading, and multi-pass Bühler Sortex optical color sorting in Mersin. We guarantee minimum 99.5% optical purity and strictly monitor moisture levels (maximum 12.0% – 14.0%) to prevent heating or degradation during tropical ocean transits.
+
+### What are Türkiye's leading pulse export products and key trade markets?
+According to official export statistics from the Mediterranean Exporters Association (AKİB) and the Turkish Ministry of Trade, Red Lentils (Kırmızı Mercimek) represent the highest share (~21%) in Türkiye's total pulse export volume, followed by chickpeas, green lentils, dry white beans, and peas. The #1 export destination market is Iraq (accounting for over $270.6 million and ~22% of total grain and pulse exports from the AKİB region alone), followed by Syria (6%), Egypt (5%), Italy, Sudan, Germany, Algeria, and the USA. Nilasya Agro Foods operates direct processing lines and express transit corridors from Mersin and Southeastern Anatolia to service these high-volume markets with Bühler Sortex purity.
+
+## Commercial context
+
+Specifications describe the published catalogue. Confirm the requested lot, origin, analytical results, documentation, availability, pricing and delivery terms with the trade desk. Transit times are estimates. These files provide reference context; they do not certify products or guarantee search visibility.

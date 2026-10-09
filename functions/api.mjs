@@ -1,5 +1,5 @@
-import { randomUUID } from 'node:crypto';
-import { HttpError, roles, text, validateInquiry, validateRfqUpdates, validateStock } from './validation.mjs';
+import { createHash, randomUUID } from 'node:crypto';
+import { HttpError, roles, text, validateInquiry, validateRequestId, validateRfqUpdates, validateStock } from './validation.mjs';
 
 const cookieName = '__session';
 const resourceName = { rfqs: 'inquiries', stocks: 'stocks', containers: 'containers', audit: 'audit' };
@@ -9,7 +9,13 @@ export function adminProfile(claims) {
   return { email: claims.email || '', name, role: claims.nilasyaRole, title: 'Nilasya Agro Foods Yönetici', avatar: name.slice(0, 2).toUpperCase(), lastLoginAt: new Date((claims.auth_time || 0) * 1000).toISOString() };
 }
 
-export function createApiHandler({ auth, store, catalog, signIn, allowedOrigins, emulator = false, now = () => Date.now(), logError = () => {} }) {
+export function referenceFor(kind, id, timestamp) {
+  const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Istanbul', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date(timestamp));
+  const date = ['year', 'month', 'day'].map((type) => parts.find((part) => part.type === type).value).join('');
+  return `${kind === 'rfq' ? 'RFQ' : 'CONTACT'}-${date}-${id.slice(0, 8).toUpperCase()}`;
+}
+
+export function createApiHandler({ auth, store, catalog, signIn, notify, allowedOrigins, emulator = false, now = () => Date.now(), logError = () => {} }) {
   async function session(req) {
     const cookie = (req.headers.cookie || '').split(';').map((part) => part.trim()).find((part) => part.startsWith(`${cookieName}=`))?.slice(cookieName.length + 1);
     if (!cookie) throw new HttpError(401, 'Please sign in again.');
@@ -33,15 +39,29 @@ export function createApiHandler({ auth, store, catalog, signIn, allowedOrigins,
       if (method !== 'GET') {
         if (!allowedOrigins.includes(req.headers.origin)) throw new HttpError(403, 'Request origin is not allowed.');
         if (!/^application\/json(?:;|$)/iu.test(req.headers['content-type'] || '')) throw new HttpError(415, 'JSON is required.');
-        if ((req.rawBody?.length || JSON.stringify(req.body || {}).length) > 32000) throw new HttpError(413, 'Request is too large.');
+        if ((req.rawBody?.length || Buffer.byteLength(JSON.stringify(req.body || {}), 'utf8')) > 32000) throw new HttpError(413, 'Request is too large.');
       }
       if (path === '/api/inquiries' && method === 'POST') {
-        const inquiry = validateInquiry(req.body, catalog);
+        const timestamp = now();
+        const inquiry = validateInquiry(req.body, catalog, { now: timestamp });
+        const requestId = validateRequestId(req.body.requestId);
         await store.rateLimit('inquiry', req.ip, 5, 60 * 60 * 1000);
         const id = randomUUID();
-        const referenceCode = `NA-${inquiry.kind === 'rfq' ? 'RFQ' : 'CONTACT'}-${id.slice(0, 8).toUpperCase()}`;
-        await store.create('inquiries', id, { ...inquiry, referenceCode, createdAt: new Date(now()).toISOString(), status: 'new', estimatedValueUSD: 0, adminNotes: '' });
-        return res.status(201).json({ referenceCode });
+        // The record and both notification tasks must be committed together before any send.
+        const saved = await store.saveInquiry({
+          id,
+          requestKey: createHash('sha256').update(requestId || id).digest('hex'),
+          fingerprint: createHash('sha256').update(JSON.stringify(inquiry)).digest('hex'),
+          inquiry: { ...inquiry, referenceCode: referenceFor(inquiry.kind, id, timestamp), createdAt: new Date(timestamp).toISOString(), status: 'new', estimatedValueUSD: 0, adminNotes: '' },
+          timestamp,
+        });
+        let deliveryStatus = 'pending';
+        try { deliveryStatus = (await notify?.(saved.id))?.status || 'pending'; }
+        catch (error) { logError(error); }
+        if (deliveryStatus !== 'sent') {
+          return res.status(503).json({ error: 'Your inquiry was saved, but its notifications could not be sent yet. Keep this reference and retry or contact our export desk.', saved: true, referenceCode: saved.referenceCode, deliveryStatus });
+        }
+        return res.status(201).json({ referenceCode: saved.referenceCode, deliveryStatus });
       }
       if (path === '/api/admin/login' && method === 'POST') {
         await store.rateLimit('login', req.ip, 10, 15 * 60 * 1000);
@@ -72,9 +92,9 @@ export function createApiHandler({ auth, store, catalog, signIn, allowedOrigins,
       const collection = resourceName[resource];
       if (method === 'GET' && !id) return res.status(200).json({ items: await store.list(collection) });
       if (resource === 'rfqs' && method === 'POST' && !id) {
-        const inquiry = validateInquiry({ kind: 'rfq', language: 'tr', data: { ...req.body, consent: true } }, catalog);
+        const inquiry = validateInquiry({ kind: 'rfq', language: 'tr', data: { ...req.body, consent: true } }, catalog, { now: now(), admin: true });
         const recordId = randomUUID();
-        await store.create(collection, recordId, { ...inquiry, referenceCode: `NA-RFQ-${recordId.slice(0, 8).toUpperCase()}`, createdAt: new Date(now()).toISOString(), status: 'new', estimatedValueUSD: 0, adminNotes: '' });
+        await store.create(collection, recordId, { ...inquiry, referenceCode: referenceFor('rfq', recordId, now()), createdAt: new Date(now()).toISOString(), status: 'new', estimatedValueUSD: 0, adminNotes: '' });
         await store.audit(claims, 'Teklif oluşturuldu', recordId);
         return res.status(201).json({ id: recordId });
       }

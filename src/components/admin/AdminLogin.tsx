@@ -23,16 +23,12 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess }) => {
     setIsLoading(true);
 
     try {
-      const result = await loginAdmin(email, password);
+      const user = await loginAdmin(email, password, rememberMe);
+      onSuccess(user);
+    } catch (error) {
+      setErrorMsg(error instanceof Error ? error.message : 'Giriş yapılırken bir hata oluştu. Lütfen tekrar deneyiniz.');
+    } finally {
       setIsLoading(false);
-      if (result.success && result.user) {
-        onSuccess(result.user);
-      } else {
-        setErrorMsg(result.error || 'Giriş başarısız. Lütfen bilgilerinizi kontrol ediniz.');
-      }
-    } catch {
-      setIsLoading(false);
-      setErrorMsg('Giriş yapılırken bir hata oluştu. Lütfen tekrar deneyiniz.');
     }
   };
 
@@ -100,7 +96,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess }) => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="cebrailkara@gmail.com"
+                placeholder="export@nilasyaagrofoods.com.tr"
                 className="w-full pl-10 pr-4 py-3 bg-slate-50/80 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 focus:bg-white transition-all"
               />
             </div>

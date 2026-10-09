@@ -2,8 +2,9 @@ import type { Metadata, Viewport } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import { company } from '@/data/company';
+import { getCompanyFactLabels } from '@/data/companyFacts';
 import { supportedLanguages, isRtlLang } from '@/data/languages';
-import { organizationSchema, serializeJsonLd } from '@/lib/structuredData';
+import { organizationSchema, websiteSchema, serializeJsonLd } from '@/lib/structuredData';
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -40,8 +41,7 @@ export const metadata: Metadata = {
     default: 'Nilasya Agro Foods — B2B Pulses, Grains & Agricultural Commodities Exporter',
     template: '%s | Nilasya Agro Foods',
   },
-  description:
-    'Nilasya Agro Foods is an enterprise Turkish processor and exporter of premium pulses and grains (Kabuli Chickpeas, Red Lentils, Green Lentils, White Beans, Dry Peas, Durum Wheat & Bulgur) shipped globally via Mersin Port.',
+  description: getCompanyFactLabels('en').description,
   keywords: [
     'Turkish pulses exporter',
     'chickpeas supplier Turkey',
@@ -57,9 +57,8 @@ export const metadata: Metadata = {
   creator: 'Nilasya Agro Foods',
   publisher: company.legalName,
   openGraph: {
-    title: 'Nilasya Agro Foods — Premium Turkish Pulses & Grains. Delivered Worldwide.',
-    description:
-      'Enterprise B2B exporter of premium Turkish chickpeas, red lentils, green lentils, dry beans, peas, and durum wheat from Mersin Port.',
+    title: 'Nilasya Agro Foods — Pulses & Grains Trade Enquiries',
+    description: getCompanyFactLabels('en').description,
     url: company.baseUrl,
     siteName: 'Nilasya Agro Foods',
     locale: 'en_US',
@@ -76,8 +75,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Nilasya Agro Foods — B2B Pulses & Grains Exporter',
-    description:
-      'Direct Turkish processor and bulk exporter of Sortex-cleaned pulses and grains with strict quality assurance.',
+    description: getCompanyFactLabels('en').description,
     images: ['/images/og/nilasya-export-1200x630.jpg'],
   },
   robots: {
@@ -102,19 +100,21 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={`${jakarta.variable} scroll-smooth`}>
       <head>
         {/* Machine-Readable AI & LLM Discovery Standards (llms.txt & llms-full.txt) */}
-        <link rel="alternate" type="text/markdown" href="/llms.txt" title="Nilasya Agro Foods LLM Context Summary (Markdown)" />
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="Nilasya Agro Foods LLM Context Summary (English Markdown)" />
         <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Nilasya Agro Foods Full Knowledge Base (Markdown)" />
+        <link rel="alternate" type="text/markdown" href="/llms-tr.txt" title="Nilasya Agro Foods LLM Bağlam Özeti (Türkçe Markdown)" />
+        <link rel="alternate" type="text/markdown" href="/llms-ar.txt" title="Nilasya Agro Foods LLM سياق وملخص المنتجات (العربية Markdown)" />
 
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){var l=location.pathname.split('/')[1];var s=${JSON.stringify(supportedLanguages.map(({ code }) => code))};if(s.indexOf(l)<0)l='en';document.documentElement.lang=l;document.documentElement.dir=${JSON.stringify(supportedLanguages.filter(({ code }) => isRtlLang(code)).map(({ code }) => code))}.indexOf(l)>=0?'rtl':'ltr'})();`,
           }}
         />
-        {/* Organization JSON-LD Schema with Extended AI & Entity Signals */}
+        {/* Organization & WebSite JSON-LD Schema with Extended AI & Entity Signals */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: serializeJsonLd(organizationSchema()),
+            __html: serializeJsonLd([organizationSchema(), websiteSchema()]),
           }}
         />
       </head>

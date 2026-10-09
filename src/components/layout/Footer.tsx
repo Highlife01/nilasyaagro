@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin, Clock, ShieldCheck, CheckCircle2, MessageCircle, Globe, BookOpen, ArrowRight, Sparkles } from 'lucide-react';
 import { Locale } from '@/types';
 import { getTranslations } from '@/data/translations';
@@ -9,6 +10,7 @@ import { productsData } from '@/data/products';
 import { supportedLanguages } from '@/data/languages';
 import { insightArticles } from '@/data/insights';
 import { company } from '@/data/company';
+import { getCompanyFactLabels } from '@/data/companyFacts';
 
 interface FooterProps {
   lang: Locale;
@@ -18,6 +20,7 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({ lang, onOpenQuote }) => {
   const t = getTranslations(lang).footer;
   const navT = getTranslations(lang).nav;
+  const facts = getCompanyFactLabels(lang);
 
   const getProductHref = (slugObj: Record<string, string>, id: string) => {
     const slug = slugObj[lang] || slugObj.en || id;
@@ -35,8 +38,8 @@ export const Footer: React.FC<FooterProps> = ({ lang, onOpenQuote }) => {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
-                <div className="text-sm font-black text-white">ISO 22000 & HACCP / HALAL</div>
-                <div className="text-xs text-slate-300 font-medium">Sortex Cleaned Food Safety</div>
+                <div className="text-sm font-black text-white">{navT.quality}</div>
+                <div className="text-xs text-slate-300 font-medium">{facts.documentation}</div>
               </div>
             </div>
 
@@ -45,8 +48,8 @@ export const Footer: React.FC<FooterProps> = ({ lang, onOpenQuote }) => {
                 <CheckCircle2 className="w-6 h-6" />
               </div>
               <div>
-                <div className="text-sm font-black text-white">Bühler Sortex Optical Sizing</div>
-                <div className="text-xs text-slate-300 font-medium">99.8% Purity & Caliber Sizing</div>
+                <div className="text-sm font-black text-white">{navT.products}</div>
+                <div className="text-xs text-slate-300 font-medium">{facts.opticalPurity}</div>
               </div>
             </div>
 
@@ -56,7 +59,7 @@ export const Footer: React.FC<FooterProps> = ({ lang, onOpenQuote }) => {
               </div>
               <div>
                 <div className="text-sm font-black text-white">Mersin Seaport Departure</div>
-                <div className="text-xs text-slate-300 font-medium">24h Official Proforma Offer</div>
+                <div className="text-xs text-slate-300 font-medium">{facts.responseTime}</div>
               </div>
             </div>
 
@@ -78,13 +81,24 @@ export const Footer: React.FC<FooterProps> = ({ lang, onOpenQuote }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           {/* Column 1: Brand & Official Positioning (Span 4) */}
           <div className="lg:col-span-4 space-y-5">
-            <Link href={`/${lang}/`} className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-600 to-[#071F18] flex items-center justify-center text-amber-400 font-black text-2xl shadow-lg shadow-emerald-900/40 border border-amber-400/30">
-                N
+            <Link href={`/${lang}/`} className="flex items-center gap-3.5 group">
+              <div className="w-14 h-14 rounded-2xl bg-white p-1.5 flex items-center justify-center shadow-lg shadow-emerald-900/40 border border-amber-400/40 group-hover:scale-105 transition-transform duration-300 overflow-hidden shrink-0">
+                <Image
+                  src="/images/logo/nilasya-emblem-transparent.png"
+                  alt="Nilasya Agro Foods Logo"
+                  width={56}
+                  height={56}
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <div className="flex items-center gap-1.5 text-2xl font-black tracking-tight text-white">
-                <span>NILASYA</span>
-                <span className="text-amber-400 font-bold tracking-wider">AGRO FOODS</span>
+              <div className="flex flex-col">
+                <div className="flex items-center gap-1.5 text-2xl font-black tracking-tight text-white">
+                  <span>NILASYA</span>
+                  <span className="text-amber-400 font-bold tracking-wider">AGRO FOODS</span>
+                </div>
+                <span className="text-[11px] text-amber-300/90 font-serif italic tracking-wide">
+                  From Türkiye to the World
+                </span>
               </div>
             </Link>
 

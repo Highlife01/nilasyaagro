@@ -50,3 +50,7 @@ firebase-debug.log*
 /gala/
 /granny/
 /golden/
+
+# browser audit temp profiles
+**/browser-check/
+
