@@ -114,7 +114,7 @@ export const HarvestCalendarSection: React.FC<{ lang: Locale; onOpenQuoteWithPro
 
           <div className="flex items-center gap-2.5">
             <span className="w-6 h-6 rounded-lg bg-amber-400 text-slate-950 flex items-center justify-center font-black text-[10px] shadow-sm shadow-amber-400/40">
-              CA
+              S
             </span>
             <div className="leading-tight">
               <span className="text-slate-900 block">{t.legendStorage}</span>
@@ -206,7 +206,7 @@ export const HarvestCalendarSection: React.FC<{ lang: Locale; onOpenQuoteWithPro
                                   className="w-8 h-8 rounded-xl bg-gradient-to-br from-amber-400 to-amber-500 text-slate-950 font-black text-xs flex items-center justify-center shadow-md shadow-amber-400/30 transition-transform hover:scale-110 cursor-help"
                                   title={`${prodName} — ${lang === 'tr' ? 'İklim Kontrollü Çelik Silo & Depolardan Yıl Boyu Kesintisiz Tedarik' : 'Climate-Controlled Silo Storage & Year-Round Supply'}`}
                                 >
-                                  CA
+                                  S
                                 </span>
                               </div>
                             )}

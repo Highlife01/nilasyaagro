@@ -84,9 +84,9 @@ export default async function PackagingPage({
 
                 <div className="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-200">
                   <div><strong>{pt.material}</strong> {lang === 'tr' ? pkg.material.tr : pkg.material.en}</div>
-                  <div><strong>Euro Pallet (80x120):</strong> {pkg.palletConfigEuro}</div>
-                  <div><strong>Standard Pallet (100x120):</strong> {pkg.palletConfigStandard}</div>
-                  <div><strong>40ft High Cube Reefer:</strong> {pkg.containerReefer40FCL}</div>
+                  <div><strong>{lang === 'tr' ? 'Euro Palet (80x120):' : 'Euro Pallet (80x120):'}</strong> {pkg.palletConfigEuro}</div>
+                  <div><strong>{lang === 'tr' ? 'Standart Palet (100x120):' : 'Standard Pallet (100x120):'}</strong> {pkg.palletConfigStandard}</div>
+                  <div><strong>{lang === 'tr' ? '20ft / 40ft FCL Kuru Konteyner:' : '20ft / 40ft FCL Dry Container:'}</strong> {pkg.containerReefer40FCL}</div>
                 </div>
               </div>
             ))}

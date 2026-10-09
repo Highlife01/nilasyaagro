@@ -55,8 +55,8 @@ export const PackagingShowcase: React.FC<{ lang: Locale }> = ({ lang }) => {
               </div>
 
               <div className="pt-4 border-t border-slate-100 mt-4 text-[11px] text-slate-600 space-y-1">
-                <div><strong>Suitable for:</strong> {lang === 'tr' ? pkg.suitableFor.tr : pkg.suitableFor.en}</div>
-                <div><strong>Euro Pallet:</strong> {pkg.palletConfigEuro}</div>
+                <div><strong>{lang === 'tr' ? 'Uygun Ürünler:' : 'Suitable for:'}</strong> {lang === 'tr' ? pkg.suitableFor.tr : pkg.suitableFor.en}</div>
+                <div><strong>{lang === 'tr' ? 'Euro Palet Kapasitesi:' : 'Euro Pallet:'}</strong> {pkg.palletConfigEuro}</div>
               </div>
             </div>
           ))}

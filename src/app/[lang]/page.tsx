@@ -6,6 +6,7 @@ import { HeroSection } from '@/components/home/HeroSection';
 import { TrustStrip } from '@/components/home/TrustStrip';
 import { ProductGrid } from '@/components/home/ProductGrid';
 import { CompanyIntro } from '@/components/home/CompanyIntro';
+import { FounderSection } from '@/components/about/FounderSection';
 import { FarmToWorldFlow } from '@/components/home/FarmToWorldFlow';
 import { ProductionMap } from '@/components/home/ProductionMap';
 import { HarvestCalendarSection } from '@/components/home/HarvestCalendarSection';
@@ -36,6 +37,7 @@ export default function HomePage({
       <TrustStrip lang={lang} />
       <ProductGrid lang={lang} onOpenQuoteWithProduct={(productId) => openQuote(productId)} />
       <CompanyIntro lang={lang} />
+      <FounderSection lang={lang} />
       <FarmToWorldFlow lang={lang} />
       <ProductionMap lang={lang} />
       <HarvestCalendarSection lang={lang} onOpenQuoteWithProduct={openQuote} />

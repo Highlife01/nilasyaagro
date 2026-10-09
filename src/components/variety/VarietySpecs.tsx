@@ -185,14 +185,14 @@ export const VarietySpecs: React.FC<VarietySpecsProps> = ({
             ) : (
               <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600">
                 {isTr 
-                  ? 'Standart teleskopik koli, plastik viyollü kasa ve müşteri talebine özel etiketli ambalaj.'
-                  : 'Telescopic export carton, molded pulp tray boxes, and custom branded retail packaging.'}
+                  ? '25kg / 50kg PP Çuval, 1.000kg FIBC Big Bag ve müşteri talebine özel etiketli perakende doypack paketleme.'
+                  : '25kg / 50kg PP Woven Sacks, 1,000kg FIBC Big Bags, and custom branded retail packaging.'}
               </div>
             )}
 
             <div className="text-[11px] text-slate-500 pt-2 border-t border-slate-100 flex items-center justify-between">
               <span>{isTr ? 'Palet Standardı' : 'Pallet Standard'}: Euro (80x120) / Block (100x120)</span>
-              <span className="font-semibold text-emerald-700">40ft Reefer</span>
+              <span className="font-semibold text-emerald-700">{isTr ? '20ft / 40ft Kuru Konteyner' : '20ft / 40ft FCL Dry Container'}</span>
             </div>
           </div>
         </div>

@@ -31,8 +31,8 @@ export const company = {
   bankDetails: {
     bankName: 'Türkiye Halk Bankası A.Ş.',
     branchName: '1373 / Çukurova Şubesi / Adana',
-    accountNo: '53100308',
-    iban: 'TR560001200137300053100308',
+    accountNo: '53100308 (Resmi Proforma Faturada İletilir)',
+    iban: 'TR** 0001 **** **** **** **53 1003 08',
     accountName: 'NİLASYA GLOBAL TARIM İTHALAT VE İHRACAT LİMİTED ŞİRKETİ',
     swiftCode: 'TRHBTR2A',
     currencies: 'USD / EUR / TRY (Multi-Currency Export Account)',
