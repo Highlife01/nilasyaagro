@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
+  poweredByHeader: false,
+  compress: true,
   experimental: {
     cpus: 1,
     workerThreads: false,
