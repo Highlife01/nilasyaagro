@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { analyticsConsent, setAnalyticsConsent, subscribeAnalyticsConsent, trackEvent } from '@/lib/analytics';
 import type { Locale } from '@/types';
 
-const measurementId = process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || '';
+const measurementId = process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || 'G-ST5MWN0FR3';
 const enabled = /^G-[A-Z0-9]+$/.test(measurementId);
 const copy: Record<string, [string, string, string, string]> = {
   en: ['Allow anonymous usage measurement? We never send your form details to analytics.', 'Allow', 'Decline', 'Analytics preferences'],

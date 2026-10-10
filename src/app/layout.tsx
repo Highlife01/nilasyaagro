@@ -104,6 +104,13 @@ export default function RootLayout({
         <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Nilasya Agro Foods Full Knowledge Base (Markdown)" />
         <link rel="alternate" type="text/markdown" href="/llms-tr.txt" title="Nilasya Agro Foods LLM Bağlam Özeti (Türkçe Markdown)" />
         <link rel="alternate" type="text/markdown" href="/llms-ar.txt" title="Nilasya Agro Foods LLM سياق وملخص المنتجات (العربية Markdown)" />
+        {/* Google tag (gtag.js) */}
+        <script async id="nilasya-ga4" src="https://www.googletagmanager.com/gtag/js?id=G-ST5MWN0FR3" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ST5MWN0FR3');`,
+          }}
+        />
 
         <script
           dangerouslySetInnerHTML={{
