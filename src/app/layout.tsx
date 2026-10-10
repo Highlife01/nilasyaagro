@@ -89,6 +89,11 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    other: {
+      'msvalidate.01': 'C8E68649B6F1550CF94F3C3FF30C9F7F',
+    },
+  },
 };
 
 export default function RootLayout({
@@ -99,6 +104,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${jakarta.variable} scroll-smooth`}>
       <head>
+        {/* Bing Webmaster Tools Site Verification */}
+        <meta name="msvalidate.01" content="C8E68649B6F1550CF94F3C3FF30C9F7F" />
         {/* Machine-Readable AI & LLM Discovery Standards (llms.txt & llms-full.txt) */}
         <link rel="alternate" type="text/markdown" href="/llms.txt" title="Nilasya Agro Foods LLM Context Summary (English Markdown)" />
         <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Nilasya Agro Foods Full Knowledge Base (Markdown)" />
