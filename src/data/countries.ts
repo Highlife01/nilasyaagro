@@ -684,7 +684,7 @@ export const exportCountriesData: ExportCountry[] = [
       "ka": "საუდის არაბეთი",
       "sr": "Saudijska Arabija",
       "bn": "সৌদি আরব",
-      "sw": "Saudi Arabia"
+      "sw": "Saudia"
     },
     "flag": "🇸🇦",
     "region": "Middle East & Gulf",
@@ -813,7 +813,7 @@ export const exportCountriesData: ExportCountry[] = [
       "ka": "პოლონეთი",
       "sr": "Poljska",
       "bn": "পোল্যান্ড",
-      "sw": "Poland"
+      "sw": "Polandi"
     },
     "flag": "🇵🇱",
     "region": "Europe / EU",
@@ -2084,7 +2084,7 @@ export const exportCountriesData: ExportCountry[] = [
       "ja": "ギリシャ",
       "ko": "그리스",
       "id": "Yunani",
-      "ms": "Greece",
+      "ms": "Yunani",
       "pt": "Grécia",
       "cs": "Řecko",
       "az": "Yunanıstan",
@@ -2221,7 +2221,7 @@ export const exportCountriesData: ExportCountry[] = [
       "ka": "უკრაინა",
       "sr": "Ukrajina",
       "bn": "ইউক্রেন",
-      "sw": "Ukraine"
+      "sw": "Ukraini"
     },
     "flag": "🇺🇦",
     "region": "CIS & Eastern Europe",

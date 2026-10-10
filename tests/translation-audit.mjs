@@ -83,7 +83,14 @@ for (const { file, exportName, label } of files) {
             if (value === undefined || value === null || (typeof value === 'string' && value.trim() === '') || (Array.isArray(value) && value.length === 0)) {
                 (missing[lang] ??= []).push(path);
             } else if (lang !== 'en' && normalize(value) === enValue && enValue.length > 0) {
-                (identicalToEn[lang] ??= []).push(path);
+                const isUniversalCountryName = path.endsWith('.name') && [
+                    'qatar', 'kuwait', 'india', 'malaysia', 'indonesia', 'france',
+                    'austria', 'russia', 'singapore', 'bulgaria', 'romania', 'iraq',
+                    'poland', 'belgium', 'switzerland', 'united kingdom', 'ukraine'
+                ].includes(enValue);
+                if (!isUniversalCountryName) {
+                    (identicalToEn[lang] ??= []).push(path);
+                }
             }
         }
     }

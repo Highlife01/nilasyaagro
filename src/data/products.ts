@@ -98,7 +98,7 @@ export const productsData: Product[] = [
       "ko": "병아리콩과 가반조",
       "id": "Kacang Chickpea & Garbanzo",
       "ms": "Kacang kuda & Garbanzo",
-      "sw": "Chickpeas & Garbanzo"
+      "sw": "Dengu & Garbanzo"
     },
     "tagline": {
       "en": "Sortex Optical Cleaned, Calibrated 8mm-10mm Koçbaşı Chickpeas for Global Canning, Packaging and Wholesale",
