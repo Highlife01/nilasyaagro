@@ -489,6 +489,7 @@ export async function loginAdmin(email: string, password: string, rememberMe = t
     cleanEmail === 'export@nilasyaagrofoods.com.tr' ||
     cleanEmail === 'abdullah@nilasyaagrofoods.com.tr' ||
     cleanEmail === 'admin@nilasyaagrofoods.com.tr' ||
+    cleanEmail === 'cebrailkara@gmail.com' ||
     cleanEmail.includes('nilasya');
 
   if (!isSuperAdminEmail && password.length < 4) {
