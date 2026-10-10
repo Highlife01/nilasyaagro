@@ -26,7 +26,6 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
   onLogout,
   onRefreshData,
 }) => {
-  const [resetSuccess, setResetSuccess] = useState(false);
   const [auditLogs, setAuditLogs] = useState<AdminAuditLog[]>([]);
   const [isBackingUp, setIsBackingUp] = useState(false);
 
@@ -84,13 +83,6 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
           Yönetici yetkileri, para birimi tercihleri, güvenlik denetim kayıtları ve sistem yedekleme merkezi.
         </p>
       </div>
-
-      {resetSuccess && (
-        <div className="p-3 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold flex items-center gap-2 animate-in fade-in">
-          <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-          <span>Veriler başarıyla fabrika ayarlarına döndürüldü ve senkronize edildi.</span>
-        </div>
-      )}
 
       {/* Grid: Admin Profile Card & System Preferences */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -190,10 +182,11 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
               <div className="flex flex-col gap-2.5">
                 <button
                   onClick={handleBackup}
-                  className="w-full py-2.5 px-4 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-2xs"
+                  disabled={isBackingUp}
+                  className="w-full py-2.5 px-4 rounded-xl bg-slate-50 hover:bg-slate-100 disabled:opacity-50 text-slate-700 border border-slate-200 text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-2xs"
                 >
                   <Download className="w-4 h-4 text-emerald-600" />
-                  <span>Verileri Dışa Aktar (JSON Yedek)</span>
+                  <span>{isBackingUp ? 'Yedekleme Hazırlanıyor...' : 'Verileri Dışa Aktar (JSON Yedek)'}</span>
                 </button>
                 <button
                   onClick={handleReset}

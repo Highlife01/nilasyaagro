@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Locale } from '@/types';
-import { Camera, CheckCircle2, Play, Sparkles, Video } from 'lucide-react';
+import { Camera, CheckCircle2, Sparkles, Video } from 'lucide-react';
 
 interface FacilityGalleryProps {
   lang: Locale;

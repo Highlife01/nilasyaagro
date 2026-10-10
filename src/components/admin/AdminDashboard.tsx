@@ -61,10 +61,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   const [rfqs, setRfqs] = useState<AdminInquiry[]>([]);
   const [containers, setContainers] = useState<ExportContainer[]>([]);
   const [stocks, setStocks] = useState<ProductStockControl[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
 
   const refreshAllData = async () => {
-    setIsLoading(true);
     try {
       const [fetchedRfqs, fetchedContainers, fetchedStocks] = await Promise.all([
         getStoredRFQs(),
@@ -76,14 +74,25 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       setStocks(fetchedStocks);
     } catch (err) {
       console.error('Failed to load admin data:', err);
-    } finally {
-      setIsLoading(false);
     }
   };
 
   useEffect(() => {
     let mounted = true;
-    refreshAllData();
+
+    Promise.all([
+      getStoredRFQs(),
+      getStoredContainers(),
+      getStoredProductStocks(),
+    ]).then(([fetchedRfqs, fetchedContainers, fetchedStocks]) => {
+      if (!mounted) return;
+      setRfqs(fetchedRfqs);
+      setContainers(fetchedContainers);
+      setStocks(fetchedStocks);
+    }).catch((err) => {
+      console.error('Failed to load admin data:', err);
+    });
+
     const updateTime = () => {
       const now = new Date();
       const trTime = now.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });

@@ -3,9 +3,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Award, Building2, CheckCircle2, Globe2, Quote, ShieldCheck, ArrowRight, Sparkles } from 'lucide-react';
+import { Award, Building2, CheckCircle2, Quote, ShieldCheck, ArrowRight, Sparkles } from 'lucide-react';
 import { Locale } from '@/types';
-import { company } from '@/data/company';
 
 interface FounderSectionProps {
   lang: Locale;
