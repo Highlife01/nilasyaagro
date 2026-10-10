@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { 
   LayoutDashboard, 
   FileText, 
@@ -15,7 +15,9 @@ import {
   ChevronRight, 
   Clock, 
   ExternalLink,
-  ShieldCheck
+  ShieldCheck,
+  RefreshCw,
+  Sparkles
 } from 'lucide-react';
 import Link from 'next/link';
 import { 
@@ -56,13 +58,15 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   const [currency, setCurrency] = useState<'USD' | 'EUR' | 'TRY'>('USD');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState('');
+  const [isRefreshing, setIsRefreshing] = useState(false);
 
   // Data states
   const [rfqs, setRfqs] = useState<AdminInquiry[]>([]);
   const [containers, setContainers] = useState<ExportContainer[]>([]);
   const [stocks, setStocks] = useState<ProductStockControl[]>([]);
 
-  const refreshAllData = async () => {
+  const refreshAllData = useCallback(async () => {
+    setIsRefreshing(true);
     try {
       const [fetchedRfqs, fetchedContainers, fetchedStocks] = await Promise.all([
         getStoredRFQs(),
@@ -74,8 +78,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       setStocks(fetchedStocks);
     } catch (err) {
       console.error('Failed to load admin data:', err);
+    } finally {
+      setTimeout(() => setIsRefreshing(false), 400);
     }
-  };
+  }, []);
 
   useEffect(() => {
     let mounted = true;
@@ -95,14 +101,34 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
     const updateTime = () => {
       const now = new Date();
-      const trTime = now.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      const trTime = now.toLocaleTimeString('tr-TR', { 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit',
+        timeZone: 'Europe/Istanbul' 
+      });
       if (mounted) setCurrentTime(trTime);
     };
     updateTime();
     const interval = setInterval(updateTime, 1000);
+
+    // Keyboard shortcuts listener (1-6 for tab switching)
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+      if (e.key === '1') setActiveTab('overview');
+      if (e.key === '2') setActiveTab('quotes');
+      if (e.key === '3') setActiveTab('products');
+      if (e.key === '4') setActiveTab('logistics');
+      if (e.key === '5') setActiveTab('insights');
+      if (e.key === '6') setActiveTab('settings');
+      if (e.key === 'Escape') setIsSidebarOpen(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
     return () => {
       mounted = false;
       clearInterval(interval);
+      window.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
 
@@ -113,24 +139,27 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     }
   };
 
+  const newRfqsCount = rfqs.filter((r) => r.status === 'new').length;
+  const inTransitCount = containers.filter((c) => c.status === 'in_transit').length;
+
   const navItems: NavItem[] = [
     { id: 'overview', label: 'Genel Bakış & KPI', icon: LayoutDashboard },
     { 
       id: 'quotes', 
       label: 'İhracat Talepleri (RFQ)', 
       icon: FileText, 
-      badge: rfqs.filter((r) => r.status === 'new').length > 0 ? `${rfqs.filter((r) => r.status === 'new').length} Yeni` : undefined,
+      badge: newRfqsCount > 0 ? `${newRfqsCount} Yeni` : undefined,
       badgeColor: 'bg-rose-500 text-white' 
     },
-    { id: 'products', label: 'Ürün & Stok Yönetimi', icon: Package, badge: '6 Ürün' },
+    { id: 'products', label: 'Ürün & Silo Stokları', icon: Package, badge: '6 İhraç Ürünü' },
     { 
       id: 'logistics', 
       label: 'Lojistik & Konteyner Radarı', 
       icon: Ship, 
-      badge: `${containers.filter((c) => c.status === 'in_transit').length} Rota`,
+      badge: `${inTransitCount} Seyirde`,
       badgeColor: 'bg-amber-100 text-amber-800'
     },
-    { id: 'insights', label: 'Pazar Rehberleri & GEO', icon: BookOpen },
+    { id: 'insights', label: 'Pazar Rehberleri & GEO', icon: BookOpen, badge: '30 Dil' },
     { id: 'settings', label: 'Süper Admin & Ayarlar', icon: Settings },
   ];
 
@@ -139,21 +168,34 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       {/* Mobile Top Header */}
       <div className="md:hidden bg-white border-b border-slate-200 p-4 flex items-center justify-between sticky top-0 z-40 shadow-xs">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-black shadow-sm">
-            NG
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 p-0.5 shadow-sm">
+            <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center text-emerald-700 font-black text-xs">
+              AB
+            </div>
           </div>
           <div>
-            <div className="text-sm font-black text-slate-900">NILASYA AGRO FOODS</div>
-            <div className="text-[10px] text-emerald-700 font-bold uppercase">Süper Admin</div>
+            <div className="text-sm font-black text-slate-900 leading-none">NILASYA AGRO FOODS</div>
+            <div className="text-[10px] text-emerald-700 font-bold uppercase tracking-wider mt-0.5">
+              Abdullah Başaranoğlu Masası
+            </div>
           </div>
         </div>
 
-        <button
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          className="p-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer"
-        >
-          {isSidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={refreshAllData}
+            title="Verileri Yenile"
+            className="p-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer"
+          >
+            <RefreshCw className={`w-4 h-4 text-emerald-600 ${isRefreshing ? 'animate-spin' : ''}`} />
+          </button>
+          <button
+            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+            className="p-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer"
+          >
+            {isSidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
       </div>
 
       {/* Sidebar Navigation */}
@@ -166,14 +208,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
           <div className="flex items-center justify-between pb-4 border-b border-slate-100">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 p-0.5 shadow-md shadow-emerald-600/20">
-                <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center text-emerald-600">
-                  <ShieldCheck className="w-5 h-5" />
+                <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center text-emerald-700 font-black text-xs">
+                  AB
                 </div>
               </div>
               <div>
                 <h1 className="text-sm font-black text-slate-950 tracking-tight">NILASYA AGRO FOODS</h1>
                 <div className="text-[10px] font-bold text-emerald-700 uppercase tracking-wider">
-                  Süper Admin Masası
+                  Yönetim Masası
                 </div>
               </div>
             </div>
@@ -188,7 +230,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
           {/* Navigation Links */}
           <nav className="space-y-1.5">
-            {navItems.map((item) => {
+            {navItems.map((item, index) => {
               const Icon = item.icon;
               const isActive = activeTab === item.id;
 
@@ -212,11 +254,16 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     <span>{item.label}</span>
                   </div>
 
-                  {item.badge && (
-                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${item.badgeColor || (isActive ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-700')}`}>
-                      {item.badge}
+                  <div className="flex items-center gap-1.5">
+                    {item.badge && (
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${item.badgeColor || (isActive ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-700')}`}>
+                        {item.badge}
+                      </span>
+                    )}
+                    <span className={`text-[10px] font-mono opacity-0 group-hover:opacity-40 ${isActive ? 'text-white' : 'text-slate-400'}`}>
+                      {index + 1}
                     </span>
-                  )}
+                  </div>
                 </button>
               );
             })}
@@ -229,7 +276,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
           <Link
             href="/tr/"
             target="_blank"
-            className="w-full py-2 px-3 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-700 hover:text-emerald-700 text-xs font-medium flex items-center justify-between transition-colors shadow-2xs"
+            className="w-full py-2.5 px-3 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-700 hover:text-emerald-700 text-xs font-medium flex items-center justify-between transition-colors shadow-2xs"
           >
             <div className="flex items-center gap-2">
               <Globe className="w-3.5 h-3.5 text-emerald-600" />
@@ -242,17 +289,21 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
           <div className="bg-slate-50 p-3 rounded-2xl border border-slate-200/80 flex items-center justify-between">
             <div className="flex items-center gap-2.5 overflow-hidden">
               <div className="w-8 h-8 rounded-xl bg-emerald-100 border border-emerald-300 flex items-center justify-center text-xs font-bold text-emerald-800 shrink-0">
-                {user.avatar || 'CK'}
+                {user.avatar || 'AB'}
               </div>
               <div className="overflow-hidden">
-                <div className="text-xs font-bold text-slate-900 truncate">{user.name}</div>
-                <div className="text-[10px] text-emerald-700 font-mono truncate">{user.email}</div>
+                <div className="text-xs font-bold text-slate-900 truncate">
+                  {user.name || 'Abdullah Başaranoğlu'}
+                </div>
+                <div className="text-[10px] text-emerald-700 font-mono truncate">
+                  {user.email}
+                </div>
               </div>
             </div>
 
             <button
               onClick={handleLogoutClick}
-              title="Çıkış Yap"
+              title="Güvenli Çıkış Yap"
               className="p-1.5 rounded-lg text-slate-400 hover:text-rose-600 hover:bg-rose-50 transition-colors cursor-pointer"
             >
               <LogOut className="w-4 h-4" />
@@ -267,7 +318,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
         <header className="hidden md:flex h-16 bg-white/80 border-b border-slate-200/90 px-8 items-center justify-between sticky top-0 z-30 backdrop-blur-md">
           {/* Breadcrumb / Section Name */}
           <div className="flex items-center gap-2 text-xs">
-            <span className="text-slate-400 font-medium">Nilasya Agro Foods Masası</span>
+            <span className="text-slate-400 font-medium">Nilasya Agro Foods İhracat Masası</span>
             <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
             <span className="text-emerald-700 font-bold capitalize">
               {navItems.find((n) => n.id === activeTab)?.label}
@@ -276,10 +327,21 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
           {/* Right Controls */}
           <div className="flex items-center gap-4 text-xs">
+            {/* Refresh Data Button */}
+            <button
+              onClick={refreshAllData}
+              disabled={isRefreshing}
+              title="Tüm Telemetri ve Verileri Yenile"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold cursor-pointer transition-colors shadow-2xs border border-slate-200"
+            >
+              <RefreshCw className={`w-3.5 h-3.5 text-emerald-600 ${isRefreshing ? 'animate-spin' : ''}`} />
+              <span>{isRefreshing ? 'Yenileniyor...' : 'Verileri Yenile'}</span>
+            </button>
+
             {/* Live Clock */}
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-100 border border-slate-200 text-slate-700 font-mono font-medium">
               <Clock className="w-3.5 h-3.5 text-emerald-600" />
-              <span>{currentTime || '08:00:00'} TR</span>
+              <span>{currentTime || '09:00:00'} TR</span>
             </div>
 
             {/* Currency Selector */}
