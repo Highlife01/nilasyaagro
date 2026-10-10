@@ -17,13 +17,11 @@ import {
   MessageSquare,
   Copy,
   Check,
-  Printer,
-  ChevronRight,
-  Sparkles,
-  DollarSign,
-  Package,
-  Ship,
-  Clock
+  Clock,
+  Inbox,
+  Send,
+  HelpCircle,
+  Filter
 } from 'lucide-react';
 import { RFQSubmission } from '@/types';
 import { AdminInquiry, updateRFQ, deleteRFQ, saveRFQInquiry } from '@/lib/adminAuth';
@@ -41,6 +39,7 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('all');
+  const [typeFilter, setTypeFilter] = useState<'all' | 'rfq' | 'contact'>('all');
   const [productFilter, setProductFilter] = useState<string>('all');
   const [selectedRFQ, setSelectedRFQ] = useState<AdminInquiry | null>(null);
   const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
@@ -103,6 +102,10 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
   const calculatedCIFPriceMT = calculatedFOBPriceMT + freightPerMT;
   const calculatedTotalShipmentValue = calculatedCIFPriceMT * calcTonnage;
 
+  // Type Counts
+  const rfqCount = rfqs.filter((r) => r.kind !== 'contact').length;
+  const contactCount = rfqs.filter((r) => r.kind === 'contact').length;
+
   // Status Counts
   const counts = {
     all: rfqs.length,
@@ -121,12 +124,14 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
       (r.referenceCode || '').toLowerCase().includes(term) ||
       (r.destinationCountry || '').toLowerCase().includes(term) ||
       (r.contactPerson || '').toLowerCase().includes(term) ||
+      (r.subject || '').toLowerCase().includes(term) ||
       (r.product || '').toLowerCase().includes(term);
 
     const matchesStatus = statusFilter === 'all' || r.status === statusFilter;
+    const matchesType = typeFilter === 'all' || (typeFilter === 'contact' ? r.kind === 'contact' : r.kind !== 'contact');
     const matchesProduct = productFilter === 'all' || r.product === productFilter;
 
-    return matchesSearch && matchesStatus && matchesProduct;
+    return matchesSearch && matchesStatus && matchesType && matchesProduct;
   });
 
   const handleStatusChange = async (id: string, newStatus: AdminInquiry['status']) => {
@@ -154,13 +159,13 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
   };
 
   const handleDelete = async (id: string) => {
-    if (confirm('Bu teklif kaydını silmek istediğinize emin misiniz?')) {
+    if (confirm('Bu kaydı silmek istediğinize emin misiniz?')) {
       try {
         await deleteRFQ(id);
         if (selectedRFQ?.id === id) setSelectedRFQ(null);
         onRefreshData();
       } catch (err) {
-        alert('Teklif silinirken hata oluştu: ' + (err instanceof Error ? err.message : String(err)));
+        alert('Silinirken hata oluştu: ' + (err instanceof Error ? err.message : String(err)));
       }
     }
   };
@@ -180,7 +185,15 @@ export const QuotesTab: React.FC<QuotesTabProps> = ({
   };
 
   const handleCopyDetails = (rfq: AdminInquiry) => {
-    const text = `NİLASYA AGRO FOODS - TEKLİF ÖZETİ
+    const isContact = rfq.kind === 'contact';
+    const text = isContact 
+      ? `NİLASYA AGRO FOODS - İLETİŞİM MESAJI
+Ref Kodu: ${rfq.referenceCode}
+Firma: ${rfq.companyName}
+Yetkili: ${rfq.contactPerson} (${rfq.email} / ${rfq.phone})
+Konu: ${rfq.subject || 'Genel İletişim'}
+Mesaj: ${rfq.message || ''}`
+      : `NİLASYA AGRO FOODS - TEKLİF ÖZETİ
 Ref Kodu: ${rfq.referenceCode}
 Firma: ${rfq.companyName}
 Yetkili: ${rfq.contactPerson} (${rfq.email} / ${rfq.phone})
@@ -197,17 +210,18 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
   };
 
   const handleExportCSV = () => {
-    const headers = ['Ref Kodu', 'Şirket', 'Yetkili', 'Ülke', 'Şehir', 'Ürün', 'Miktar', 'Birim', 'Incoterm', 'Durum', 'Değer (USD)', 'E-Posta', 'Telefon', 'Tarih'];
+    const headers = ['Ref Kodu', 'Tür', 'Şirket', 'Yetkili', 'Ülke', 'Şehir', 'Ürün / Konu', 'Miktar', 'Birim', 'Incoterm', 'Durum', 'Değer (USD)', 'E-Posta', 'Telefon', 'Tarih'];
     const rows = filteredRFQs.map((r) => [
       r.referenceCode,
+      r.kind === 'contact' ? 'İletişim Mesajı' : 'Teklif Talebi (RFQ)',
       `"${r.companyName || ''}"`,
       `"${r.contactPerson || ''}"`,
       `"${r.destinationCountry || ''}"`,
       `"${r.destinationCity || ''}"`,
-      r.product,
-      r.quantity,
-      r.unit || 'Tons',
-      r.incoterm || 'CIF',
+      `"${r.kind === 'contact' ? (r.subject || 'İletişim') : (r.product || '')}"`,
+      r.quantity || '',
+      r.unit || '',
+      r.incoterm || '',
       r.status,
       r.estimatedValueUSD || 0,
       r.email,
@@ -220,7 +234,7 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.setAttribute('href', url);
-    link.setAttribute('download', `nilasya_ihracat_talepleri_${new Date().toISOString().split('T')[0]}.csv`);
+    link.setAttribute('download', `nilasya_talepler_ve_mesajlar_${new Date().toISOString().split('T')[0]}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -228,9 +242,14 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
 
   const createBuyerWhatsAppUrl = (rfq: AdminInquiry) => {
     const phone = (rfq.whatsapp || rfq.phone || '').replace(/[^0-9]/g, '');
-    const text = encodeURIComponent(
-      `Sayın ${rfq.contactPerson} (${rfq.companyName}),\n\nNilasya Agro Foods Tarım İhracat Deski'nden aldığımız ${rfq.referenceCode} referanslı talebiniz için resmi proforma teklifimiz hazırlanmıştır.\n\nDetaylar:\n- Ürün: ${rfq.product} (${rfq.variety || ''})\n- Miktar: ${rfq.quantity} ${rfq.unit || 'Tons'}\n- Teslimat Şekli: ${rfq.incoterm || 'CIF'} ${rfq.destinationPort || rfq.destinationCity || rfq.destinationCountry}\n- Sevkiyat Çıkışı: Mersin Uluslararası Limanı (MIP)\n\nFiyat teklifini ve teknik spektlerimizi görüşmek üzere hazırız.`
-    );
+    const isContact = rfq.kind === 'contact';
+    const text = isContact
+      ? encodeURIComponent(
+          `Sayın ${rfq.contactPerson} (${rfq.companyName}),\n\nNilasya Agro Foods Tarım web sitemiz üzerinden ilettiğiniz "${rfq.subject || 'İletişim Talebi'}" konulu mesajınız (${rfq.referenceCode}) alınmıştır.\n\nKonuyla ilgili ihracat yetkilimiz size yardımcı olmak için hazırdır.`
+        )
+      : encodeURIComponent(
+          `Sayın ${rfq.contactPerson} (${rfq.companyName}),\n\nNilasya Agro Foods Tarım İhracat Deski'nden aldığımız ${rfq.referenceCode} referanslı talebiniz için resmi proforma teklifimiz hazırlanmıştır.\n\nDetaylar:\n- Ürün: ${rfq.product} (${rfq.variety || ''})\n- Miktar: ${rfq.quantity} ${rfq.unit || 'Tons'}\n- Teslimat Şekli: ${rfq.incoterm || 'CIF'} ${rfq.destinationPort || rfq.destinationCity || rfq.destinationCountry}\n- Sevkiyat Çıkışı: Mersin Uluslararası Limanı (MIP)\n\nFiyat teklifini ve teknik spektlerimizi görüşmek üzere hazırız.`
+        );
     return `https://wa.me/${phone}?text=${text}`;
   };
 
@@ -240,10 +259,10 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-black text-slate-950 tracking-tight">
-            İhracat Talepleri (RFQ Yönetimi)
+            Gelen Talepler & İletişim Mesajları
           </h1>
           <p className="text-xs text-slate-500 mt-1">
-            30 dilli web portalı teklif sihirbazı ve doğrudan temaslardan gelen uluslararası B2B alıcı kayıtları.
+            30 dilli web portalı teklif sihirbazı ve doğrudan temas formundan gelen tüm uluslararası B2B mesaj kayıtları.
           </p>
         </div>
 
@@ -253,7 +272,7 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
             className="px-3.5 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 text-xs font-semibold flex items-center gap-2 transition-colors cursor-pointer shadow-xs"
           >
             <Calculator className="w-4 h-4 text-emerald-600" />
-            <span>İhracat Fiyat Sihirbazı</span>
+            <span>Fiyat Sihirbazı</span>
           </button>
 
           <button
@@ -274,35 +293,77 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
         </div>
       </div>
 
-      {/* Status Filter Tab Pills */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-1 text-xs">
-        {[
-          { id: 'all', label: 'Tüm Talepler', count: counts.all },
-          { id: 'new', label: 'Yeni Alınan', count: counts.new, color: 'bg-rose-500 text-white' },
-          { id: 'quoted', label: 'Teklif Verildi', count: counts.quoted, color: 'bg-blue-600 text-white' },
-          { id: 'negotiation', label: 'Müzakerede', count: counts.negotiation, color: 'bg-amber-600 text-white' },
-          { id: 'approved', label: 'Sözleşme / Onay', count: counts.approved, color: 'bg-emerald-600 text-white' },
-          { id: 'archived', label: 'Arşiv', count: counts.archived },
-        ].map((tab) => (
+      {/* Main Filter Section: Type Toggle + Status Pills */}
+      <div className="space-y-3">
+        {/* Form Type Selector: All vs RFQ vs Contact */}
+        <div className="flex items-center gap-2 border-b border-slate-200/80 pb-3">
           <button
-            key={tab.id}
-            onClick={() => setStatusFilter(tab.id)}
-            className={`px-3.5 py-2 rounded-xl font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap ${
-              statusFilter === tab.id
-                ? 'bg-slate-900 text-white shadow-xs'
-                : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200/80'
+            onClick={() => setTypeFilter('all')}
+            className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-2 ${
+              typeFilter === 'all'
+                ? 'bg-emerald-700 text-white shadow-xs'
+                : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
             }`}
           >
-            <span>{tab.label}</span>
-            <span className={`px-1.5 py-0.2 rounded-full text-[10px] font-mono ${
-              statusFilter === tab.id 
-                ? 'bg-white/20 text-white' 
-                : tab.color || 'bg-slate-100 text-slate-600'
-            }`}>
-              {tab.count}
-            </span>
+            <Inbox className="w-3.5 h-3.5" />
+            <span>Tüm Mesajlar & Talepler ({rfqs.length})</span>
           </button>
-        ))}
+
+          <button
+            onClick={() => setTypeFilter('rfq')}
+            className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-2 ${
+              typeFilter === 'rfq'
+                ? 'bg-emerald-700 text-white shadow-xs'
+                : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
+            }`}
+          >
+            <FileText className="w-3.5 h-3.5 text-emerald-600" />
+            <span>Yalnızca Teklif Talepleri ({rfqCount})</span>
+          </button>
+
+          <button
+            onClick={() => setTypeFilter('contact')}
+            className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-2 ${
+              typeFilter === 'contact'
+                ? 'bg-purple-700 text-white shadow-xs'
+                : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
+            }`}
+          >
+            <Send className="w-3.5 h-3.5 text-purple-600" />
+            <span>İletişim Formu Mesajları ({contactCount})</span>
+          </button>
+        </div>
+
+        {/* Status Filter Tab Pills */}
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 text-xs">
+          {[
+            { id: 'all', label: 'Tüm Aşamalar', count: counts.all },
+            { id: 'new', label: 'Yeni Alınan', count: counts.new, color: 'bg-rose-500 text-white' },
+            { id: 'quoted', label: 'Teklif Verildi', count: counts.quoted, color: 'bg-blue-600 text-white' },
+            { id: 'negotiation', label: 'Müzakerede', count: counts.negotiation, color: 'bg-amber-600 text-white' },
+            { id: 'approved', label: 'Sözleşme / Onay', count: counts.approved, color: 'bg-emerald-600 text-white' },
+            { id: 'archived', label: 'Arşiv', count: counts.archived },
+          ].map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setStatusFilter(tab.id)}
+              className={`px-3.5 py-2 rounded-xl font-bold flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap ${
+                statusFilter === tab.id
+                  ? 'bg-slate-900 text-white shadow-xs'
+                  : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200/80'
+              }`}
+            >
+              <span>{tab.label}</span>
+              <span className={`px-1.5 py-0.2 rounded-full text-[10px] font-mono ${
+                statusFilter === tab.id 
+                  ? 'bg-white/20 text-white' 
+                  : tab.color || 'bg-slate-100 text-slate-600'
+              }`}>
+                {tab.count}
+              </span>
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Search & Product Dropdown Bar */}
@@ -313,7 +374,7 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Firma, ülke, ref kodu veya yetkili ara..."
+            placeholder="Firma, konu, ülke, ref kodu veya yetkili ara..."
             className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-emerald-500 focus:bg-white transition-all"
           />
         </div>
@@ -324,7 +385,7 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
             onChange={(e) => setProductFilter(e.target.value)}
             className="px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-700 focus:outline-none focus:border-emerald-500 font-medium cursor-pointer"
           >
-            <option value="all">Tüm Ürünler (6 Kategori)</option>
+            <option value="all">Tüm Ürün / Konu Kategorileri</option>
             <option value="chickpeas">Koçbaşı Nohut</option>
             <option value="red-lentils">Kırmızı Mercimek</option>
             <option value="green-lentils">Yeşil Mercimek</option>
@@ -339,16 +400,16 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
         </div>
       </div>
 
-      {/* RFQ Table */}
+      {/* RFQ & Contact Table */}
       <div className="bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-xs">
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs">
             <thead className="bg-slate-50 border-b border-slate-200/80 text-slate-500 font-bold uppercase tracking-wider text-[11px]">
               <tr>
-                <th className="py-3.5 px-4">Ref Kodu & Tarih</th>
-                <th className="py-3.5 px-4">İthalatçı Firma & Ülke</th>
-                <th className="py-3.5 px-4">Talep Edilen Ürün & Miktar</th>
-                <th className="py-3.5 px-4">Teslimat Şekli</th>
+                <th className="py-3.5 px-4">Tür & Ref Kodu</th>
+                <th className="py-3.5 px-4">Gönderen / Firma</th>
+                <th className="py-3.5 px-4">Talep Edilen Ürün / Konu</th>
+                <th className="py-3.5 px-4">Lojistik & Teslimat</th>
                 <th className="py-3.5 px-4">Tahmini Değer</th>
                 <th className="py-3.5 px-4">Durum</th>
                 <th className="py-3.5 px-4 text-right">İşlemler</th>
@@ -358,18 +419,19 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
               {filteredRFQs.length === 0 ? (
                 <tr>
                   <td colSpan={7} className="py-12 text-center text-slate-400">
-                    <FileText className="w-8 h-8 mx-auto mb-2 text-slate-300" />
-                    <p className="font-semibold text-slate-600">Aradığınız kriterlere uygun teklif bulunamadı.</p>
-                    <p className="text-[11px] text-slate-400 mt-0.5">Filtreleri sıfırlayabilir veya yeni bir talep ekleyebilirsiniz.</p>
+                    <Inbox className="w-8 h-8 mx-auto mb-2 text-slate-300" />
+                    <p className="font-semibold text-slate-600">Aradığınız kriterlere uygun kayıt bulunamadı.</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">Filtreleri sıfırlayarak tüm gelen talepleri görebilirsiniz.</p>
                   </td>
                 </tr>
               ) : (
                 filteredRFQs.map((rfq) => {
+                  const isContact = rfq.kind === 'contact';
                   const statusBadge = {
-                    new: { label: 'Yeni Talep', color: 'bg-rose-50 text-rose-700 border-rose-200' },
-                    quoted: { label: 'Teklif Verildi', color: 'bg-blue-50 text-blue-700 border-blue-200' },
+                    new: { label: 'Yeni Alınan', color: 'bg-rose-50 text-rose-700 border-rose-200' },
+                    quoted: { label: 'Teklif / Yanıt İletildi', color: 'bg-blue-50 text-blue-700 border-blue-200' },
                     negotiation: { label: 'Müzakerede', color: 'bg-amber-50 text-amber-700 border-amber-200' },
-                    approved: { label: 'Onaylandı', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+                    approved: { label: 'Onaylandı / Anlaşıldı', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
                     archived: { label: 'Arşiv', color: 'bg-slate-100 text-slate-600 border-slate-200' },
                   }[rfq.status] || { label: rfq.status, color: 'bg-slate-100 text-slate-600 border-slate-200' };
 
@@ -380,10 +442,21 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
                       onClick={() => setSelectedRFQ(rfq)}
                     >
                       <td className="py-3.5 px-4">
-                        <div className="font-mono font-bold text-emerald-800 bg-emerald-50 inline-block px-2 py-0.5 rounded border border-emerald-200 text-[11px]">
+                        <div className="flex items-center gap-1.5 mb-1">
+                          {isContact ? (
+                            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200">
+                              İletişim Formu
+                            </span>
+                          ) : (
+                            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
+                              Teklif Talebi (RFQ)
+                            </span>
+                          )}
+                        </div>
+                        <div className="font-mono font-bold text-slate-800 text-[11px]">
                           {rfq.referenceCode}
                         </div>
-                        <div className="text-[11px] text-slate-400 mt-1 flex items-center gap-1 font-mono">
+                        <div className="text-[10px] text-slate-400 mt-0.5 flex items-center gap-1 font-mono">
                           <Clock className="w-3 h-3 text-slate-400" />
                           <span>{new Date(rfq.createdAt).toLocaleDateString('tr-TR')}</span>
                         </div>
@@ -393,32 +466,62 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
                         <div className="font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
                           {rfq.companyName}
                         </div>
-                        <div className="text-[11px] text-slate-500 mt-0.5 flex items-center gap-1">
+                        <div className="text-[11px] text-slate-600 font-medium">
+                          {rfq.contactPerson}
+                        </div>
+                        <div className="text-[10px] text-slate-400 mt-0.5 flex items-center gap-1">
                           <MapPin className="w-3 h-3 text-slate-400" />
-                          <span>{rfq.destinationCountry} {rfq.destinationCity ? `(${rfq.destinationCity})` : ''}</span>
+                          <span>{rfq.destinationCountry || 'Bilinmiyor'} {rfq.destinationCity ? `(${rfq.destinationCity})` : ''}</span>
                         </div>
                       </td>
 
                       <td className="py-3.5 px-4">
-                        <div className="font-bold text-slate-800 capitalize">
-                          {rfq.product}
-                        </div>
-                        <div className="text-[11px] text-slate-500 mt-0.5">
-                          {rfq.quantity} {rfq.unit || 'Tons'} • {rfq.variety || 'Sortex'}
-                        </div>
+                        {isContact ? (
+                          <div>
+                            <div className="font-bold text-purple-900 line-clamp-1">
+                              {rfq.subject || 'Genel İletişim Talebi'}
+                            </div>
+                            <div className="text-[11px] text-slate-500 line-clamp-1 mt-0.5 italic">
+                              &ldquo;{rfq.message}&rdquo;
+                            </div>
+                          </div>
+                        ) : (
+                          <div>
+                            <div className="font-bold text-slate-800 capitalize">
+                              {rfq.product}
+                            </div>
+                            <div className="text-[11px] text-slate-500 mt-0.5">
+                              {rfq.quantity} {rfq.unit || 'Tons'} • {rfq.variety || 'Sortex'}
+                            </div>
+                          </div>
+                        )}
                       </td>
 
                       <td className="py-3.5 px-4">
-                        <span className="font-mono font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
-                          {rfq.incoterm || 'CIF'}
-                        </span>
-                        <div className="text-[10px] text-slate-500 mt-1 truncate max-w-[140px]">
-                          {rfq.destinationPort || 'Hedef Liman'}
-                        </div>
+                        {isContact ? (
+                          <span className="text-[11px] text-slate-400 italic">
+                            Doğrudan İletişim
+                          </span>
+                        ) : (
+                          <div>
+                            <span className="font-mono font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                              {rfq.incoterm || 'CIF'}
+                            </span>
+                            <div className="text-[10px] text-slate-500 mt-1 truncate max-w-[140px]">
+                              {rfq.destinationPort || 'Hedef Liman'}
+                            </div>
+                          </div>
+                        )}
                       </td>
 
                       <td className="py-3.5 px-4 font-mono font-bold text-slate-900">
-                        {currencySymbol}{((rfq.estimatedValueUSD || 0) * currencyMultiplier).toLocaleString('tr-TR', { maximumFractionDigits: 0 })}
+                        {isContact ? (
+                          <span className="text-slate-400 font-normal">—</span>
+                        ) : (
+                          <span>
+                            {currencySymbol}{((rfq.estimatedValueUSD || 0) * currencyMultiplier).toLocaleString('tr-TR', { maximumFractionDigits: 0 })}
+                          </span>
+                        )}
                       </td>
 
                       <td className="py-3.5 px-4">
@@ -431,7 +534,7 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
                         <div className="flex items-center justify-end gap-1.5">
                           <button
                             onClick={() => handleCopyDetails(rfq)}
-                            title="Teklif Özetini Kopyala"
+                            title="Özeti Kopyala"
                             className="p-1.5 rounded-lg text-slate-400 hover:text-emerald-700 hover:bg-emerald-50 transition-colors cursor-pointer"
                           >
                             {copiedId === rfq.id ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
@@ -442,7 +545,7 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
                               href={createBuyerWhatsAppUrl(rfq)}
                               target="_blank"
                               rel="noopener noreferrer"
-                              title="Alıcıya WhatsApp Teklifi İlet"
+                              title="WhatsApp İle İletişim Kur"
                               className="p-1.5 rounded-lg text-slate-400 hover:text-emerald-700 hover:bg-emerald-50 transition-colors"
                             >
                               <MessageSquare className="w-4 h-4 text-emerald-600" />
@@ -467,24 +570,28 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
         </div>
       </div>
 
-      {/* RFQ Dossier / Detail Modal */}
+      {/* Detail Modal: RFQ or Contact Dossier */}
       {selectedRFQ && (
         <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
           <div className="bg-white rounded-3xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative animate-in fade-in zoom-in-95">
             <div className="flex items-center justify-between pb-4 border-b border-slate-100">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 font-bold">
-                  <FileText className="w-5 h-5" />
+                <div className={`w-10 h-10 rounded-2xl border flex items-center justify-center font-bold ${
+                  selectedRFQ.kind === 'contact' 
+                    ? 'bg-purple-50 border-purple-200 text-purple-700' 
+                    : 'bg-emerald-50 border-emerald-200 text-emerald-700'
+                }`}>
+                  {selectedRFQ.kind === 'contact' ? <Send className="w-5 h-5" /> : <FileText className="w-5 h-5" />}
                 </div>
                 <div>
                   <h2 className="text-base font-bold text-slate-950 flex items-center gap-2">
                     <span>{selectedRFQ.companyName}</span>
-                    <span className="text-xs font-mono bg-emerald-50 text-emerald-800 px-2 py-0.5 rounded border border-emerald-200">
+                    <span className="text-xs font-mono bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-slate-200">
                       {selectedRFQ.referenceCode}
                     </span>
                   </h2>
                   <p className="text-xs text-slate-500">
-                    Alınma Tarihi: {new Date(selectedRFQ.createdAt).toLocaleString('tr-TR')}
+                    {selectedRFQ.kind === 'contact' ? 'İletişim Formu Kaydı' : 'İhracat Teklif Formu (RFQ)'} • {new Date(selectedRFQ.createdAt).toLocaleString('tr-TR')}
                   </p>
                 </div>
               </div>
@@ -510,30 +617,42 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
                 </div>
 
                 <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
-                  <div className="font-bold text-slate-700 uppercase tracking-wider text-[10px]">Lojistik & Teslimat</div>
-                  <div><strong>Ürün:</strong> {selectedRFQ.product} ({selectedRFQ.variety || 'Sortex'})</div>
-                  <div><strong>Miktar:</strong> {selectedRFQ.quantity} {selectedRFQ.unit || 'Tons'}</div>
-                  <div><strong>Ambalaj:</strong> {selectedRFQ.packaging || '25kg PP Torba'}</div>
-                  <div><strong>Incoterm:</strong> {selectedRFQ.incoterm || 'CIF'} - {selectedRFQ.destinationPort || selectedRFQ.destinationCity || selectedRFQ.destinationCountry}</div>
-                  <div><strong>Tahmini Değer:</strong> ${selectedRFQ.estimatedValueUSD?.toLocaleString()} USD</div>
+                  <div className="font-bold text-slate-700 uppercase tracking-wider text-[10px]">
+                    {selectedRFQ.kind === 'contact' ? 'Mesaj Detayları' : 'Lojistik & Teslimat'}
+                  </div>
+                  {selectedRFQ.kind === 'contact' ? (
+                    <>
+                      <div><strong>Konu:</strong> {selectedRFQ.subject || 'Genel İletişim'}</div>
+                      <div><strong>Ülke:</strong> {selectedRFQ.destinationCountry || 'Bilinmiyor'}</div>
+                      <div><strong>Kanal:</strong> Doğrudan Web İletişim Formu</div>
+                    </>
+                  ) : (
+                    <>
+                      <div><strong>Ürün:</strong> {selectedRFQ.product} ({selectedRFQ.variety || 'Sortex'})</div>
+                      <div><strong>Miktar:</strong> {selectedRFQ.quantity} {selectedRFQ.unit || 'Tons'}</div>
+                      <div><strong>Ambalaj:</strong> {selectedRFQ.packaging || '25kg PP Torba'}</div>
+                      <div><strong>Incoterm:</strong> {selectedRFQ.incoterm || 'CIF'} - {selectedRFQ.destinationPort || selectedRFQ.destinationCity || selectedRFQ.destinationCountry}</div>
+                      <div><strong>Tahmini Değer:</strong> ${selectedRFQ.estimatedValueUSD?.toLocaleString()} USD</div>
+                    </>
+                  )}
                 </div>
               </div>
 
-              {/* Message from Buyer */}
+              {/* Message from Client */}
               {selectedRFQ.message && (
-                <div className="p-3.5 rounded-2xl bg-emerald-50/50 border border-emerald-200 text-xs">
-                  <div className="font-bold text-emerald-900 mb-1 flex items-center gap-1.5">
+                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs">
+                  <div className="font-bold text-slate-800 mb-1.5 flex items-center gap-1.5">
                     <MessageSquare className="w-3.5 h-3.5 text-emerald-700" />
-                    <span>Alıcının Talep Notu & Özel İstekleri:</span>
+                    <span>{selectedRFQ.kind === 'contact' ? 'Gelen İletişim Mesajı Metni:' : 'Alıcının Talep Notu:'}</span>
                   </div>
-                  <p className="text-slate-700 italic leading-relaxed">&ldquo;{selectedRFQ.message}&rdquo;</p>
+                  <p className="text-slate-700 leading-relaxed whitespace-pre-wrap">{selectedRFQ.message}</p>
                 </div>
               )}
 
               {/* Status Advancement Buttons */}
               <div className="space-y-2">
                 <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
-                  Teklif Aşaması Değiştir
+                  Süreç Aşaması Değiştir
                 </label>
                 <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
                   {(['new', 'quoted', 'negotiation', 'approved', 'archived'] as const).map((st) => (
@@ -546,7 +665,7 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
                           : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
                       }`}
                     >
-                      {st === 'new' ? 'Yeni' : st === 'quoted' ? 'Teklif Verildi' : st === 'negotiation' ? 'Müzakere' : st === 'approved' ? 'Onaylandı' : 'Arşiv'}
+                      {st === 'new' ? 'Yeni' : st === 'quoted' ? 'Yanıtlandı' : st === 'negotiation' ? 'Müzakere' : st === 'approved' ? 'Anlaşıldı' : 'Arşiv'}
                     </button>
                   ))}
                 </div>
@@ -555,13 +674,13 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
               {/* Admin Internal Notes */}
               <div className="space-y-1.5">
                 <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
-                  Yönetici İhracat Notları
+                  Yönetici İhracat Masası Notları
                 </label>
                 <textarea
                   rows={3}
                   defaultValue={selectedRFQ.adminNotes || ''}
                   onBlur={(e) => handleNotesChange(selectedRFQ.id, e.target.value)}
-                  placeholder="Navlun teklifi, SGS analiz şartları, akreditif görüşmeleri..."
+                  placeholder="Görüşme notları, arama saati, alıcı özel şartları..."
                   className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-800 focus:outline-none focus:border-emerald-500 focus:bg-white"
                 />
               </div>
@@ -578,6 +697,14 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
               </button>
 
               <div className="flex items-center gap-2">
+                <a
+                  href={`mailto:${selectedRFQ.email}?subject=Re:%20Nilasya%20Agro%20Foods%20-%20${encodeURIComponent(selectedRFQ.referenceCode)}`}
+                  className="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                >
+                  <Mail className="w-3.5 h-3.5" />
+                  <span>E-Posta Yaz</span>
+                </a>
+
                 {(selectedRFQ.whatsapp || selectedRFQ.phone) && (
                   <a
                     href={createBuyerWhatsAppUrl(selectedRFQ)}
@@ -586,7 +713,7 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
                     className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center gap-1.5 transition-colors shadow-xs"
                   >
                     <MessageSquare className="w-3.5 h-3.5" />
-                    <span>WhatsApp Proforma İlet</span>
+                    <span>WhatsApp İle İletişim</span>
                   </a>
                 )}
                 <button

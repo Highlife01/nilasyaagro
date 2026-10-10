@@ -146,7 +146,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     { id: 'overview', label: 'Genel Bakış & KPI', icon: LayoutDashboard },
     { 
       id: 'quotes', 
-      label: 'İhracat Talepleri (RFQ)', 
+      label: 'Talepler & İletişim Mesajları', 
       icon: FileText, 
       badge: newRfqsCount > 0 ? `${newRfqsCount} Yeni` : undefined,
       badgeColor: 'bg-rose-500 text-white' 
