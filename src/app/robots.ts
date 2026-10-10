@@ -4,31 +4,13 @@ import { company } from '@/data/company';
 export const dynamic = 'force-static';
 
 export default function robots(): MetadataRoute.Robots {
-  const aiAgents = [
-    '*',
-    'GPTBot',
-    'ChatGPT-User',
-    'OAI-SearchBot',
-    'Google-Extended',
-    'Googlebot',
-    'ClaudeBot',
-    'Claude-Web',
-    'PerplexityBot',
-    'Applebot',
-    'Applebot-Extended',
-    'Amazonbot',
-    'cohere-ai',
-    'Meta-ExternalAgent',
-    'Bytespider',
-    'Diffbot',
-  ];
-
   return {
-    rules: aiAgents.map((userAgent) => ({
-      userAgent,
+    rules: {
+      userAgent: '*',
       allow: '/',
-      disallow: ['/admin/'],
-    })),
+      disallow: ['/api/'],
+      // Admin and error pages remain crawlable so their noindex can be read.
+    },
     sitemap: `${company.baseUrl}/sitemap.xml`,
     host: company.baseUrl,
   };
