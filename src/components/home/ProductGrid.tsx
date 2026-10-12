@@ -123,31 +123,31 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ lang, onOpenQuoteWithP
 
                 <div className="flex flex-1 flex-col justify-between space-y-6 p-6">
                   <div className="space-y-4">
-                    <p className="text-[15px] font-normal leading-relaxed text-slate-600">{prodTagline}</p>
+                    <p className="text-[15px] font-normal leading-relaxed text-slate-800">{prodTagline}</p>
 
                     <div className="grid grid-cols-2 gap-2 text-xs font-medium">
-                      <div className="flex items-center gap-2 rounded-xl border border-[#e6eee8] bg-[#f7faf7] p-2.5">
-                        <Calendar className="h-3.5 w-3.5 shrink-0 text-emerald-700" />
+                      <div className="flex items-center gap-2 rounded-xl border border-[#d6e3d9] bg-[#f5f9f6] p-2.5">
+                        <Calendar className="h-3.5 w-3.5 shrink-0 text-emerald-800" />
                         <div className="truncate">
-                          <span className="block text-[11px] font-bold uppercase tracking-[0.08em] text-slate-400">{t.season}</span>
-                          <span className="block truncate text-xs font-semibold text-slate-800">{prodSeason}</span>
+                          <span className="block text-[11px] font-bold uppercase tracking-[0.08em] text-slate-600">{t.season}</span>
+                          <span className="block truncate text-xs font-bold text-slate-950">{prodSeason}</span>
                         </div>
                       </div>
 
-                      <div className="flex items-center gap-2 rounded-xl border border-[#e6eee8] bg-[#f7faf7] p-2.5">
-                        <MapPin className="h-3.5 w-3.5 shrink-0 text-emerald-700" />
+                      <div className="flex items-center gap-2 rounded-xl border border-[#d6e3d9] bg-[#f5f9f6] p-2.5">
+                        <MapPin className="h-3.5 w-3.5 shrink-0 text-emerald-800" />
                         <div className="truncate">
-                          <span className="block text-[11px] font-bold uppercase tracking-[0.08em] text-slate-400">{t.origin}</span>
-                          <span className="block truncate text-xs font-semibold text-slate-800">{prodOrigins[0]}</span>
+                          <span className="block text-[11px] font-bold uppercase tracking-[0.08em] text-slate-600">{t.origin}</span>
+                          <span className="block truncate text-xs font-bold text-slate-950">{prodOrigins[0]}</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="space-y-1.5 pt-1">
-                      <span className="block text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{t.varieties}:</span>
+                      <span className="block text-xs font-extrabold uppercase tracking-[0.14em] text-slate-700">{t.varieties}:</span>
                       <div className="flex flex-wrap gap-1.5">
                         {product.varieties.map((v) => (
-                          <span key={v.name} className="rounded-lg bg-[#eef7f1] px-2.5 py-1 text-xs font-semibold text-emerald-900">
+                          <span key={v.name} className="rounded-lg bg-[#e3f2e7] border border-emerald-300/60 px-2.5 py-1 text-xs font-bold text-emerald-950">
                             {lang === 'tr' ? v.nameTr : v.name}
                           </span>
                         ))}

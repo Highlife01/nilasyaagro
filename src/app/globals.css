@@ -19,9 +19,9 @@
 
 @layer base {
   :root {
-    --color-primary: #0d3b2e;
-    --color-primary-dark: #071f18;
-    --color-primary-light: #165643;
+    --color-primary: #092e24;
+    --color-primary-dark: #041410;
+    --color-primary-light: #124d3c;
     --color-gold-accent: #c8963e;
     --color-gold-hover: #b47a1e;
     --color-cream-bg: #fdfbf7;
@@ -32,7 +32,7 @@
     --color-lentil-green: #5b7e45;
     --color-bean-white: #e9e4d8;
     --surface-quiet: #fbf9f4;
-    --ink-strong: #172421;
+    --ink-strong: #091412;
   }
 
   html {
@@ -81,7 +81,7 @@
 
 /* Quiet, premium utility surfaces shared across the site. */
 .text-high-contrast {
-  color: #102a26;
+  color: #061914;
 }
 
 .bg-fresh-glow {
@@ -92,7 +92,7 @@
 
 .card-vibrant {
   background: #ffffff;
-  border: 1px solid #dfe8e1;
+  border: 1px solid #bfd5c6;
   box-shadow: 0 12px 30px -18px rgba(16, 42, 38, 0.28);
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
 }

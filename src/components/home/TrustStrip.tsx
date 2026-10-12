@@ -45,8 +45,8 @@ export const TrustStrip: React.FC<{ lang: Locale }> = ({ lang }) => {
                   <Icon className="h-5 w-5" />
                 </div>
                 <div className="space-y-1">
-                  <h3 className="text-[15px] font-bold leading-tight text-[#102a26]">{pillar.title}</h3>
-                  <p className="text-sm leading-relaxed text-slate-500">{pillar.desc}</p>
+                  <h3 className="text-[15px] font-extrabold leading-tight text-slate-950">{pillar.title}</h3>
+                  <p className="text-sm font-medium leading-relaxed text-slate-700">{pillar.desc}</p>
                 </div>
               </div>
             );
