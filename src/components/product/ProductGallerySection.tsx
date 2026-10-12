@@ -115,6 +115,42 @@ const GALLERY_METADATA: Record<string, { titleTr: string; titleEn: string; descT
     descTr: 'Süpermarket zincirleri ve toptan alıcılar için tek tip, kilitli doypack lüks ambalaj serisi.',
     descEn: 'Uniform luxury packaging line designed for international supermarket chains and wholesale buyers.',
   },
+  'turkish-sesame-seeds-nilasya.jpg': {
+    titleTr: 'Doğal & Buharlı Soyulmuş Türk Susamı (Sortex %99.98)',
+    titleEn: 'Natural & Aqua-Hulled Turkish Sesame Seeds (Sortex 99.98%)',
+    descTr: 'Akdeniz ve Ege havzalarından taze toplanmış, %50-%54 yüksek yağ oranına sahip altın ve beyaz susam.',
+    descEn: 'Freshly harvested from Mediterranean and Aegean basins, offering 50%-54% high natural oil content.',
+  },
+  'turkish-roasted-sesame-nilasya.jpg': {
+    titleTr: 'Çifte Kavrulmuş Altın Sarısı Susam (Tahin & Fırıncılık)',
+    titleEn: 'Double-Roasted Golden Sesame Seeds (Tahini & Bakery)',
+    descTr: 'Simit, pasta, helva ve lüks unlu mamuller için kontrollü fırınlarda homojen kavrulmuş aromatik susam.',
+    descEn: 'Evenly roasted in temperature-controlled ovens for gourmet bakeries, bagels, tahini, and confectionery.',
+  },
+  'turkish-nuts-kuruyemis-nilasya.jpg': {
+    titleTr: 'Seçkin Türk Kuruyemiş & Kuru Meyve İhracat Koleksiyonu',
+    titleEn: 'Premium Turkish Nuts & Dried Fruits Export Assortment',
+    descTr: 'Fındık, Antep fıstığı, ceviz, Ege inciri ve Malatya gün kurusu kayısıdan oluşan birinci sınıf ihracat serisi.',
+    descEn: 'Grade 1 Turkish export line comprising calibrated hazelnuts, pistachios, walnuts, figs, and sun-dried apricots.',
+  },
+  'turkish-antep-pistachio-nilasya.jpg': {
+    titleTr: 'Gaziantep Antep Fıstığı (Boz İç & Çıtlatılmış Kabuklu)',
+    titleEn: 'Gaziantep Antep Pistachios (Emerald Green Kernels & In-Shell)',
+    descTr: 'Baklava ve lüks pastacılık için zümrüt yeşili erken hasat Boz İç ve çıtlatılmış kavrulmuş kabuklu fıstık.',
+    descEn: 'Vibrant emerald-green Boz İç raw kernels for premium confectionery alongside roasted in-shell pistachios.',
+  },
+  'turkish-hazelnuts-giresun-nilasya.jpg': {
+    titleTr: 'Giresun & Levant Tombul Fındık İçi (Çiğ, Kavrulmuş, Beyazlatılmış)',
+    titleEn: 'Giresun & Levant Round Hazelnut Kernels (Raw, Roasted, Blanched)',
+    descTr: 'Dünyanın en yüksek yağ ve aroma profiline sahip Karadeniz Türk fındığı; çikolata sanayisi kalibresi.',
+    descEn: 'World-renowned Black Sea hazelnuts with unmatched oil profile and rich aroma calibrated for premium chocolatiers.',
+  },
+  'turkish-walnuts-apricots-figs-nilasya.jpg': {
+    titleTr: 'Açık Kelebek Ceviz, Ege Kuru İnciri & Malatya Gün Kurusu',
+    titleEn: 'Light Walnut Halves, Aegean Dried Figs & Malatya Apricots' ,
+    descTr: 'Doğal güneşte kurutulmuş, kükürtsüz gün kurusu kayısı, ballı dağ inciri ve seçilmiş açık renk ceviz kelebeği.',
+    descEn: 'Naturally sun-cured Malatya apricots, golden mountain figs, and extra-light tender walnut halves.',
+  },
 };
 
 export const ProductGallerySection: React.FC<ProductGallerySectionProps> = ({ product, lang }) => {

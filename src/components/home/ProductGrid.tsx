@@ -15,13 +15,15 @@ interface ProductGridProps {
 
 export const ProductGrid: React.FC<ProductGridProps> = ({ lang, onOpenQuoteWithProduct }) => {
   const t = getTranslations(lang).productsSection;
-  const [activeTab, setActiveTab] = React.useState<'all' | 'pulses' | 'grains' | 'specialty'>('all');
+  const [activeTab, setActiveTab] = React.useState<'all' | 'pulses' | 'grains' | 'nuts' | 'seeds' | 'specialty'>('all');
 
   const filterTabs = [
     { id: 'all', label: lang === 'tr' ? 'Tüm Emtialar' : 'All Commodities' },
     { id: 'pulses', label: lang === 'tr' ? 'Kuru Bakliyat (Nohut, Mercimek, Fasulye, Bezelye)' : 'Pulses (Chickpeas, Lentils, Beans, Peas)' },
     { id: 'grains', label: lang === 'tr' ? 'Hububat, Bulgur & Makarna' : 'Grains, Bulgur & Pasta' },
-    { id: 'specialty', label: lang === 'tr' ? 'Bakla, Börülce & Yağlı Tohumlar' : 'Broad Beans, Cowpeas & Oilseeds' },
+    { id: 'nuts', label: lang === 'tr' ? 'Kuruyemiş & Kuru Meyveler (Fındık, Antep Fıstığı, Ceviz)' : 'Nuts & Dried Fruits (Hazelnuts, Pistachios, Walnuts)' },
+    { id: 'seeds', label: lang === 'tr' ? 'Susam & Yağlı Tohumlar' : 'Sesame Seeds & Oilseeds' },
+    { id: 'specialty', label: lang === 'tr' ? 'Bakla, Börülce & Özel Tohumlar' : 'Broad Beans, Cowpeas & Specialty Seeds' },
   ] as const;
 
   const filteredProducts = productsData.filter((product) => {
@@ -31,6 +33,12 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ lang, onOpenQuoteWithP
     }
     if (activeTab === 'grains') {
       return ['durum-wheat-bulgur', 'pasta-macaroni'].includes(product.id);
+    }
+    if (activeTab === 'nuts') {
+      return ['nuts-dried-fruits'].includes(product.id);
+    }
+    if (activeTab === 'seeds') {
+      return ['sesame-seeds'].includes(product.id);
     }
     if (activeTab === 'specialty') {
       return ['other-pulses-seeds'].includes(product.id);

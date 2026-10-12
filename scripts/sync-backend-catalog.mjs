@@ -15,6 +15,12 @@ const productsSource = await readFile(new URL('../src/data/products.ts', import.
 const languagesSource = await readFile(new URL('../src/data/languages.ts', import.meta.url), 'utf8');
 const source = ts.createSourceFile('products.ts', productsSource, ts.ScriptTarget.Latest, true);
 const declaration = source.statements.find(ts.isVariableStatement)?.declarationList.declarations[0];
-const products = declaration.initializer.elements.map((element) => element.properties.find((property) => property.name?.getText(source) === 'id').initializer.text);
+const products = declaration.initializer.elements.map((element) => {
+  const prop = element.properties.find((property) => {
+    const text = property.name?.getText(source);
+    return text === 'id' || text === '"id"';
+  });
+  return prop?.initializer?.text;
+}).filter(Boolean);
 await writeFile(new URL('../functions/catalog.json', import.meta.url), `${JSON.stringify({ products, languages: propertyStrings(languagesSource, 'code') }, null, 2)}\n`);
 console.log(`Synced backend catalog: ${products.length} products, ${propertyStrings(languagesSource, 'code').length} languages.`);

@@ -25,7 +25,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Grüne Linsen (Laird & Eston)",
         "whiteBeans": "⚪ Dermason-Weiße Bohnen",
         "dryPeas": "🥣 Gelbe & Grüne Trockenerbsen",
-        "durumWheat": "🌾 Durum-Weizen & Bulgur"
+        "durumWheat": "🌾 Durum-Weizen & Bulgur",
+        "broadBeans": "🫘 Saubohnen / Fava",
+        "blackEyedPeas": "👁️ Schwarzäugige Erbsen",
+        "seedsOilseeds": "🌻 Samen & Ölsaaten"
       }
     },
     "productDetail": {
@@ -200,8 +203,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "Zielspezifikationen & Menge *",
       "messagePlaceholder": "Spezifizieren Sie erforderliche metrische Tonnen, bevorzugtes Incoterm (FOB/CIF), Zielhafen, Verpackung...",
       "submitBtn": "Anfrage einreichen",
-      "successTitle": "Nachricht erhalten",
-      "successDesc": "Ihre Nachricht wurde gespeichert. Sie können Ihre Anfrage mit der Referenznummer verfolgen."
+      "successTitle": "Nachricht empfangen",
+      "successDesc": "Ihre Nachricht wurde gespeichert. Sie können Ihre Anfrage über die Referenznummer beantworten."
     },
     "quotePage": {
       "pageTitle": "B2B ANGEBOTSANFRAGE (RFQ)",
@@ -219,11 +222,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "Alle Logos, Marken, Fotografien, Produktspezifikationen und proprietäre Daten, die auf dieser Website angezeigt werden, sind Eigentum Nilasya Agro Foods.",
       "termsH2": "2. Kommerzielle Angebote & Angebote",
       "termsP3": "Die auf dieser Website angezeigten Informationen dienen dem kommerziellen Marketing. Verbindliche vertragliche Verpflichtungen werden durch unterzeichnete Kaufverträge und Proforma-Rechnungen formalisiert.",
-      "privacyP1": "{companyLegalName} verpflichtet sich zum Schutz der Privatsphäre und der Geschäftsinformationen unserer internationalen Partner.",
+      "privacyP1": "{companyLegalName} verpflichtet sich, die Privatsphäre und kommerziellen Informationen unserer internationalen Partner zu schützen.",
       "privacyH1": "1. Datenerhebung und -verarbeitung",
       "privacyP2": "Informationen, die über unsere RFQ- und Kontaktformulare eingereicht werden, werden ausschließlich zur Erstellung formeller Exportangebote und zur Durchführung von legitimem internationalen Handel verarbeitet.",
       "privacyH2": "2. Datenverarbeitung und externe Dienste",
-      "privacyP3": "Anfragedaten werden in Firebase gespeichert und von Resend für E-Mail-Benachrichtigungen verarbeitet. WhatsApp-Links öffnen einen externen Dienst. Die optionale Nutzungsanalyse erfolgt nur nach Ihrer Zustimmung."
+      "privacyP3": "Anfragedaten werden in Firebase gespeichert und von Resend für E-Mail-Benachrichtigungen verarbeitet. WhatsApp Links öffnen einen externen Dienst. Optionale Nutzungsanalysen werden nur nach Zustimmung durchgeführt."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Trade Desk (+90 533 684 01 75)",
@@ -261,7 +264,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 العدس الأخضر (ليرد & إيستون)",
         "whiteBeans": "⚪ فاصوليا بيضاء ديرميسون",
         "dryPeas": "🥣 البازلاء الجافة الصفراء والخضراء",
-        "durumWheat": "🌾 قمح دوروم والبرجر"
+        "durumWheat": "🌾 قمح دوروم والبرجر",
+        "broadBeans": "🫘 فول / فافا",
+        "blackEyedPeas": "👁️ البازلاء ذات العين السوداء",
+        "seedsOilseeds": "🌻 البذور والبذور الزيتية"
       }
     },
     "productDetail": {
@@ -351,7 +357,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "material": "مواصفات المادة:"
     },
     "exportPage": {
-      "tag": "التصدير إلى دول 50+",
+      "tag": "التصدير إلى 50+ دول",
       "title": "البقوليات العالمية ووجهات التصدير الزراعية",
       "subtitle": "ممرات شحن مباشرة من ميناء ميرسين الدولي (MIP) إلى الشرق الأوسط وأوروبا وشمال أفريقيا وآسيا مع تصريح كامل للصحة النباتية.",
       "corridorDirTag": "ممرات التجارة العالمية",
@@ -436,8 +442,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "المواصفات المستهدفة والكمية *",
       "messagePlaceholder": "حدد الأطنان المتريّة المطلوبة، إنكوتيرم المفضل (FOB/CIF), ميناء الوجهة، التغليف...",
       "submitBtn": "إرسال الاستفسار",
-      "successTitle": "تم استلام رسالتك",
-      "successDesc": "تم حفظ رسالتك. يمكنك متابعة طلبك باستخدام الرقم المرجعي."
+      "successTitle": "تم استلام الرسالة",
+      "successDesc": "تم حفظ رسالتك. يمكنك متابعة استفسارك باستخدام رقم المرجع."
     },
     "quotePage": {
       "pageTitle": "B2B طلب عرض السعر (RFQ)",
@@ -455,11 +461,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "جميع الشعارات والعلامات التجارية والصور ومواصفات المنتجات والبيانات المملوكة المعروضة على هذا الموقع هي ملك لـ Nilasya Agro Foods.",
       "termsH2": "2. العروض التجارية وطلبات الأسعار",
       "termsP3": "المعلومات المعروضة على هذا الموقع لغرض التسويق التجاري. الالتزامات التعاقدية الملزمة تتم عبر العقود الموقعة والفواتير الأولية.",
-      "privacyP1": "شركة {companyLegalName} ملتزمة بحماية خصوصية المعلومات التجارية لشركائنا الدوليين.",
+      "privacyP1": "{companyLegalName} ملتزم بحماية خصوصية المعلومات التجارية وشركائنا الدوليين.",
       "privacyH1": "1. جمع ومعالجة البيانات",
       "privacyP2": "المعلومات المقدمة من خلال RFQ ونماذج الاتصال تُعالج فقط لإعداد عروض تصدير رسمية ولإجراء التجارة الدولية المشروعة.",
       "privacyH2": "2. معالجة البيانات والخدمات الخارجية",
-      "privacyP3": "تُحفظ بيانات الطلبات في Firebase وتعالجها Resend لإرسال إشعارات البريد الإلكتروني. تفتح روابط WhatsApp خدمة خارجية. لا تعمل تحليلات الاستخدام الاختيارية إلا بعد الموافقة."
+      "privacyP3": "يتم تخزين بيانات الاستفسار في Firebase ومعالجتها بواسطة Resend لإشعارات البريد الإلكتروني. روابط WhatsApp تفتح خدمة خارجية. يتم تشغيل تحليلات الاستخدام الاختيارية فقط بعد الموافقة."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Trade Desk (+90 533 684 01 75)",
@@ -497,7 +503,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Зелёная чечевица (Лэрд и Эстон)",
         "whiteBeans": "⚪ Белая фасоль дермейсона",
         "dryPeas": "🥣 Жёлтый и зелёный сухой горох",
-        "durumWheat": "🌾 Дурум Пшеница и Булгур"
+        "durumWheat": "🌾 Дурум Пшеница и Булгур",
+        "broadBeans": "🫘 Броуд Бобс / Фава",
+        "blackEyedPeas": "👁️ Черноглазый Горох",
+        "seedsOilseeds": "🌻 Семена и масличные культуры"
       }
     },
     "productDetail": {
@@ -672,8 +681,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "Целевые характеристики и количество *",
       "messagePlaceholder": "Укажите требуемые метрические тонны, предпочтительный Incoterm (FOB/CIF), порт назначения, упаковку...",
       "submitBtn": "Отправить запрос",
-      "successTitle": "Сообщение получено",
-      "successDesc": "Ваше сообщение сохранено. Используйте номер обращения, чтобы уточнить его статус."
+      "successTitle": "Получено сообщение",
+      "successDesc": "Ваше сообщение сохранено. Вы можете продолжить запрос, используя номер ссылки."
     },
     "quotePage": {
       "pageTitle": "B2B ЗАПРОС ПРЕДЛОЖЕНИЯ (RFQ)",
@@ -695,7 +704,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyH1": "1. Сбор и обработка данных",
       "privacyP2": "Информация, предоставляемая через наши формы RFQ и контактной связи, обрабатывается исключительно для подготовки официальных экспортных котировок и ведения легальной международной торговли.",
       "privacyH2": "2. Обработка данных и внешние сервисы",
-      "privacyP3": "Данные запросов хранятся в Firebase и обрабатываются Resend для отправки уведомлений по электронной почте. Ссылки WhatsApp открывают внешний сервис. Дополнительная аналитика использования работает только после согласия."
+      "privacyP3": "Данные запроса хранятся в Firebase и обрабатываются Resend для уведомлений по электронной почте. WhatsApp ссылки открывают внешний сервис. Необязательная аналитика использования запускается только после согласия."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Торговый отдел (+90 533 684 01 75)",
@@ -733,7 +742,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Lentilles vertes (Laird & Eston)",
         "whiteBeans": "⚪ Haricots blancs Dermason",
         "dryPeas": "🥣 Pois secs jaunes et verts",
-        "durumWheat": "🌾 Blé dur & boulgour"
+        "durumWheat": "🌾 Blé dur & boulgour",
+        "broadBeans": "🫘 Fèves / Fava",
+        "blackEyedPeas": "👁️ Pois à yeux noirs",
+        "seedsOilseeds": "🌻 Graines & Oléagineux"
       }
     },
     "productDetail": {
@@ -909,7 +921,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "Précisez les tonnes métriques requises, Incoterm préféré (FOB/CIF), port de destination, emballage...",
       "submitBtn": "Soumettre la demande",
       "successTitle": "Message reçu",
-      "successDesc": "Votre message a été enregistré. Vous pouvez suivre votre demande avec le numéro de référence."
+      "successDesc": "Votre message a été enregistré. Vous pouvez suivre votre demande en utilisant le numéro de référence."
     },
     "quotePage": {
       "pageTitle": "DEMANDE DE DEVIS B2B (RFQ)",
@@ -927,11 +939,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "Tous les logos, marques, photographies, spécifications de produits et données propriétaires affichés sur ce site sont la propriété de Nilasya Agro Foods.",
       "termsH2": "2. Offres commerciales et devis",
       "termsP3": "Les informations affichées sur ce site sont destinées au marketing commercial. Les engagements contractuels contraignants sont formalisés par des contrats de vente signés et des factures proforma.",
-      "privacyP1": "{companyLegalName} s'engage à protéger la confidentialité et les informations commerciales de nos partenaires internationaux.",
+      "privacyP1": "{companyLegalName} s'engage à protéger la vie privée et les informations commerciales de nos partenaires internationaux.",
       "privacyH1": "1. Collecte et traitement des données",
       "privacyP2": "Les informations soumises via nos formulaires RFQ et de contact sont traitées uniquement pour la préparation de devis d'exportation officiels et la réalisation de commerce international légitime.",
       "privacyH2": "2. Traitement des données et services externes",
-      "privacyP3": "Les données des demandes sont stockées dans Firebase et traitées par Resend pour les notifications par e-mail. Les liens WhatsApp ouvrent un service externe. Les analyses facultatives d’utilisation fonctionnent uniquement après consentement."
+      "privacyP3": "Les données de la demande sont stockées dans Firebase et traitées par Resend pour les notifications par e-mail. Les liens WhatsApp ouvrent un service externe. L'analyse optionnelle de l'utilisation ne fonctionne qu'après consentement."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Trade Desk (+90 533 684 01 75)",
@@ -969,7 +981,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Lentejas verdes (Laird & Eston)",
         "whiteBeans": "⚪ Judías blancas Dermason",
         "dryPeas": "🥣 Guisantes secos amarillos y verdes",
-        "durumWheat": "🌾 Trigo duro y bulgur"
+        "durumWheat": "🌾 Trigo duro y bulgur",
+        "broadBeans": "🫘 Judías / Fava",
+        "blackEyedPeas": "👁️ Guisantes de ojo negro",
+        "seedsOilseeds": "🌻 Semillas y oleaginosas"
       }
     },
     "productDetail": {
@@ -1004,7 +1019,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "closeGallery": "Cerrar galería",
       "viewPhoto": "Ver foto",
       "viewDetails": "Especificaciones de visualización\nGrado de calibre / tamaño",
-      "caliberDiameter": "",
+      "caliberDiameter": "Calibre / Grado de tamaño",
       "brixSweetness": "Sortex Tasa de pureza",
       "standardGrade": "Grado Estándar y de Exportación",
       "specsTitle": "Especificaciones técnicas de exportación",
@@ -1145,7 +1160,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "Especificar toneladas métricas requeridas, Incoterm preferido (FOB/CIF), puerto de destino, embalaje...",
       "submitBtn": "Enviar consulta",
       "successTitle": "Mensaje recibido",
-      "successDesc": "Su mensaje se ha guardado. Puede consultar su solicitud con el número de referencia."
+      "successDesc": "Tu mensaje ha sido guardado. Puedes hacer seguimiento a tu consulta usando el número de referencia."
     },
     "quotePage": {
       "pageTitle": "B2B SOLICITUD DE PRESUPUESTO (RFQ)",
@@ -1166,8 +1181,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyP1": "{companyLegalName} está comprometida con la protección de la privacidad y la información comercial de nuestros socios internacionales.",
       "privacyH1": "1. Recogida y procesamiento de datos",
       "privacyP2": "La información enviada a través de nuestros formularios de RFQ y contacto se procesa únicamente para preparar presupuestos formales de exportación y realizar comercio internacional legítimo.",
-      "privacyH2": "2. Tratamiento de datos y servicios externos",
-      "privacyP3": "Los datos de las consultas se almacenan en Firebase y Resend los procesa para las notificaciones por correo electrónico. Los enlaces de WhatsApp abren un servicio externo. El análisis opcional de uso funciona solo tras el consentimiento."
+      "privacyH2": "2. Procesamiento de datos y servicios externos",
+      "privacyP3": "Los datos de consulta se almacenan en Firebase y se procesan mediante Reenvío para notificaciones por correo electrónico. WhatsApp enlaces abren un servicio externo. El análisis de uso opcional solo se ejecuta tras el consentimiento."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Trade Desk (+90 533 684 01 75)",
@@ -1205,7 +1220,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Lenticchie Verdi (Laird & Eston)",
         "whiteBeans": "⚪ Fagioli Bianchi Dermason",
         "dryPeas": "🥣 Piselli secchi gialli e verdi",
-        "durumWheat": "🌾 Grano duro & bulgur"
+        "durumWheat": "🌾 Grano duro & bulgur",
+        "broadBeans": "🫘 Fave",
+        "blackEyedPeas": "👁️ Fagioli dall'occhio nero",
+        "seedsOilseeds": "🌻 Semi e oliose"
       }
     },
     "productDetail": {
@@ -1240,7 +1258,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "closeGallery": "Chiudi la galleria",
       "viewPhoto": "Visualizza foto",
       "viewDetails": "Visualizza specifiche\nCalibro / Dimensione di grado",
-      "caliberDiameter": "",
+      "caliberDiameter": "Calibro / Classe di dimensione",
       "brixSweetness": "Sortex Tasso di purezza",
       "standardGrade": "Standard & Export Grade",
       "specsTitle": "Specifiche tecniche di esportazione",
@@ -1295,7 +1313,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "material": "Specifiche materiali:"
     },
     "exportPage": {
-      "tag": "ESPORTAZIONE VERSO 50+ PAESI",
+      "tag": "ESPORTAZIONE IN 50+ PAESI",
       "title": "Destinazioni di Esportazione Globale di Legumi e Agricoltura",
       "subtitle": "Corridoi diretti di navigazione dal porto internazionale di Mersin (MIP) verso Medio Oriente, Europa, Nord Africa e Asia con piena autorizzazione fitosanitaria.",
       "corridorDirTag": "CORRIDOI COMMERCIALI GLOBALI",
@@ -1381,7 +1399,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "Specificare tonnellate metriche richieste, Incoterm preferito (FOB/CIF), porta di destinazione, imballaggio...",
       "submitBtn": "Invia richiesta",
       "successTitle": "Messaggio ricevuto",
-      "successDesc": "Il messaggio è stato salvato. Puoi seguire la richiesta con il numero di riferimento."
+      "successDesc": "Il tuo messaggio è stato salvato. Puoi seguire la tua richiesta utilizzando il numero di riferimento."
     },
     "quotePage": {
       "pageTitle": "B2B RICHIESTA DI PREVENTIVO (RFQ)",
@@ -1402,8 +1420,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyP1": "{companyLegalName} si impegna a proteggere la privacy e le informazioni commerciali dei nostri partner internazionali.",
       "privacyH1": "1. Raccolta e elaborazione dei dati",
       "privacyP2": "Le informazioni inviate tramite i nostri moduli di RFQ e di contatto sono elaborate esclusivamente per la preparazione di preventivi formali all'esportazione e per la conduzione di un commercio internazionale legittimo.",
-      "privacyH2": "2. Trattamento dei dati e servizi esterni",
-      "privacyP3": "I dati delle richieste sono salvati in Firebase e trattati da Resend per le notifiche via e-mail. I link WhatsApp aprono un servizio esterno. Le analisi facoltative dell’utilizzo si attivano solo dopo il consenso."
+      "privacyH2": "2. Elaborazione dei dati e servizi esterni",
+      "privacyP3": "I dati della richiesta sono archiviati in Firebase e elaborati da Resend per le notifiche email. I link WhatsApp aprono un servizio esterno. L'analisi opzionale dell'uso viene eseguita solo dopo il consenso."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Trade Desk (+90 533 684 01 75)",
@@ -1441,7 +1459,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Groene Linzen (Laird & Eston)",
         "whiteBeans": "⚪ Dermason Witte Bonen",
         "dryPeas": "🥣 Gele & Groene Droge Erwten",
-        "durumWheat": "🌾 Durumtarwe & Bulgur"
+        "durumWheat": "🌾 Durumtarwe & Bulgur",
+        "broadBeans": "🫘 Tuinbonen / Fava",
+        "blackEyedPeas": "👁️ Zwarte-oogbonen",
+        "seedsOilseeds": "🌻 Zaden & Oliehoudende zaden"
       }
     },
     "productDetail": {
@@ -1531,7 +1552,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "material": "Materiaalspecificaties:"
     },
     "exportPage": {
-      "tag": "EXPORTEERT NAAR 50+ LANDEN",
+      "tag": "EXPORT NAAR 50+ LANDEN",
       "title": "Wereldwijde peulvruchten & Landbouwexportbestemmingen",
       "subtitle": "Directe scheepvaartcorridors van Mersin International Port (MIP) naar het Midden-Oosten, Europa, Noord-Afrika en Azië met volledige fytosanitaire goedkeuring.",
       "corridorDirTag": "WERELDWIJDE HANDELSCORRIDORS",
@@ -1617,7 +1638,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "Specificeer de vereiste metrische ton, voorkeur Incoterm (FOB/CIF), bestemmingshaven, verpakking...",
       "submitBtn": "Dien Aanvraag in",
       "successTitle": "Bericht ontvangen",
-      "successDesc": "Uw bericht is opgeslagen. U kunt uw aanvraag volgen met het referentienummer."
+      "successDesc": "Uw bericht is opgeslagen. U kunt uw vraag vervolgen met behulp van het referentienummer."
     },
     "quotePage": {
       "pageTitle": "B2B VERZOEK OM OFFERTE (RFQ)",
@@ -1635,11 +1656,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "Alle logo's, handelsmerken, fotografie, productspecificaties en gepatenteerde gegevens die op deze website worden weergegeven, zijn eigendom van Nilasya Agro Foods.",
       "termsH2": "2. Commerciële Aanbiedingen & Offertes",
       "termsP3": "De informatie die op deze website wordt weergegeven, is bedoeld voor commerciële marketing. Bindende contractuele verplichtingen worden geformaliseerd via ondertekende verkoopcontracten en proformafacturen.",
-      "privacyP1": "{companyLegalName} zet zich in voor de bescherming van de privacy en commerciële informatie van onze internationale partners.",
+      "privacyP1": "{companyLegalName} zet zich in om de privacy en commerciële informatie van onze internationale partners te beschermen.",
       "privacyH1": "1. Gegevensverzameling en -verwerking",
       "privacyP2": "Informatie die via onze RFQ- en contactformulieren wordt ingediend, wordt uitsluitend verwerkt voor het opstellen van formele exportoffertes en het uitvoeren van legitieme internationale handel.",
       "privacyH2": "2. Gegevensverwerking en externe diensten",
-      "privacyP3": "Aanvraaggegevens worden opgeslagen in Firebase en door Resend verwerkt voor e-mailmeldingen. WhatsApp-links openen een externe dienst. Optionele gebruiksanalyses werken alleen na toestemming."
+      "privacyP3": "Vraaggegevens worden opgeslagen in Firebase en verwerkt door Resend voor e-mailmeldingen. WhatsApp-links openen een externe dienst. Optionele gebruiksanalyses worden alleen uitgevoerd na toestemming."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Handelsbureau (+90 533 684 01 75)",
@@ -1677,7 +1698,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Lentilhas Verdes (Laird & Eston)",
         "whiteBeans": "⚪ Feijão Branco Dermason",
         "dryPeas": "🥣 Ervilhas Amarelas e Verdes Secas",
-        "durumWheat": "🌾 Trigo Duro & Bulgur"
+        "durumWheat": "🌾 Trigo Duro & Bulgur",
+        "broadBeans": "🫘 Favas / Fava",
+        "blackEyedPeas": "👁️ Feijão-Fradinho",
+        "seedsOilseeds": "🌻 Sementes e Oleaginosas"
       }
     },
     "productDetail": {
@@ -1712,7 +1736,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "closeGallery": "Fechar galeria",
       "viewPhoto": "Ver foto",
       "viewDetails": "Visualizar especificações\nGrau de calibre / tamanho",
-      "caliberDiameter": "",
+      "caliberDiameter": "Calibre / Classe de Tamanho",
       "brixSweetness": "Sortex Taxa de Pureza",
       "standardGrade": "Grau Padrão e Exportação",
       "specsTitle": "Especificações Técnicas de Exportação",
@@ -1767,7 +1791,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "material": "Especificações do Material:"
     },
     "exportPage": {
-      "tag": "EXPORTANDO PARA PAÍSES 50+",
+      "tag": "EXPORTANDO PARA 50+ PAÍSES",
       "title": "Destinos Globais de Exportação de Leguminosas e Agrícolas",
       "subtitle": "Corredores diretos de navegação do Porto Internacional de Mersin (MIP) para o Oriente Médio, Europa, Norte da África e Ásia com total autorização fitossanitária.",
       "corridorDirTag": "CORREDORES DE COMÉRCIO GLOBAL",
@@ -1853,7 +1877,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "Especificar toneladas métricas exigidas, Incoterm preferencial (FOB/CIF), porta de destino, embalagem...",
       "submitBtn": "Enviar Consulta",
       "successTitle": "Mensagem recebida",
-      "successDesc": "A sua mensagem foi guardada. Pode acompanhar o pedido com o número de referência."
+      "successDesc": "Sua mensagem foi salva. Você pode acompanhar sua consulta usando o número de referência."
     },
     "quotePage": {
       "pageTitle": "B2B PEDIDO DE COTAÇÃO (RFQ)",
@@ -1874,8 +1898,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyP1": "{companyLegalName} está comprometida em proteger a privacidade e as informações comerciais de nossos parceiros internacionais.",
       "privacyH1": "1. Coleta e Processamento de Dados",
       "privacyP2": "As informações enviadas por meio de nossos formulários de RFQ e contato são processadas exclusivamente para preparar cotações formais de exportação e conduzir comércio internacional legítimo.",
-      "privacyH2": "2. Tratamento de dados e serviços externos",
-      "privacyP3": "Os dados dos pedidos são guardados no Firebase e tratados pelo Resend para notificações por e-mail. As ligações do WhatsApp abrem um serviço externo. A análise opcional de utilização funciona apenas após consentimento."
+      "privacyH2": "2. Processamento de dados e serviços externos",
+      "privacyP3": "Os dados da consulta são armazenados no Firebase e processados pelo Resend para notificações por e-mail. Links WhatsApp abrem um serviço externo. A análise de uso opcional ocorre apenas após consentimento."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Trade Desk (+90 533 684 01 75)",
@@ -1913,7 +1937,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Zielona soczewica (Laird & Eston)",
         "whiteBeans": "⚪ Dermason White Beans",
         "dryPeas": "🥣 Żółto-zielone suche groszki",
-        "durumWheat": "🌾 Pszenica durum i bulgur"
+        "durumWheat": "🌾 Pszenica durum i bulgur",
+        "broadBeans": "🫘 Bob / Fava",
+        "blackEyedPeas": "👁️ Czarnooki Groszek",
+        "seedsOilseeds": "🌻 Nasiona i oleiste"
       }
     },
     "productDetail": {
@@ -2088,8 +2115,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "Specyfikacje i ilość celu *",
       "messagePlaceholder": "Określ wymagane tony metryczne, preferowany Incoterm (FOB/CIF), port docelowy, opakowanie...",
       "submitBtn": "Wyślij zapytanie",
-      "successTitle": "Wiadomość otrzymana",
-      "successDesc": "Twoja wiadomość została zapisana. Możesz sprawdzić status zapytania, podając numer referencyjny."
+      "successTitle": "Wiadomość odebrana",
+      "successDesc": "Twoja wiadomość została zapisana. Możesz kontynuować swoje zapytanie, korzystając z numeru referencyjnego."
     },
     "quotePage": {
       "pageTitle": "B2B PROŚBA O WYCENĘ (RFQ)",
@@ -2111,7 +2138,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyH1": "1. Zbieranie i przetwarzanie danych",
       "privacyP2": "Informacje przesyłane za pośrednictwem naszych formularzy RFQ i kontaktowych są przetwarzane wyłącznie w celu przygotowania formalnych ofert eksportowych i prowadzenia legalnego handlu międzynarodowego.",
       "privacyH2": "2. Przetwarzanie danych i usługi zewnętrzne",
-      "privacyP3": "Dane zapytań są zapisywane w Firebase i przetwarzane przez Resend w celu wysyłania powiadomień e-mail. Linki WhatsApp otwierają usługę zewnętrzną. Opcjonalna analiza użytkowania działa wyłącznie po uzyskaniu zgody."
+      "privacyP3": "Dane zapytań są przechowywane w Firebase i przetwarzane przez ponowne wysłanie na powiadomienia e-mailowe. WhatsApp linki otwierają zewnętrzną usługę. Opcjonalna analiza użytkowania działa dopiero po uzyskaniu zgody."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Biuro Handlowe (+90 533 684 01 75)",
@@ -2149,7 +2176,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Lintea verde (Laird & Eston)",
         "whiteBeans": "⚪ Fasole albă Dermason",
         "dryPeas": "🥣 Mazăre Uscată Galbenă & Verde",
-        "durumWheat": "🌾 Grâu dur & Bulgur"
+        "durumWheat": "🌾 Grâu dur & Bulgur",
+        "broadBeans": "🫘 Fasole / Fava",
+        "blackEyedPeas": "👁️ Mazăre cu ochi negri",
+        "seedsOilseeds": "🌻 Semințe și semințe oleaginoase"
       }
     },
     "productDetail": {
@@ -2325,7 +2355,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "Specifică tonele metrice necesare, Incoterm preferat (FOB/CIF), port de destinație, ambalare...",
       "submitBtn": "Trimite o solicitare",
       "successTitle": "Mesaj primit",
-      "successDesc": "Mesajul a fost salvat. Puteți urmări cererea folosind numărul de referință."
+      "successDesc": "Mesajul dumneavoastră a fost salvat. Puteți urmări solicitarea folosind numărul de referință."
     },
     "quotePage": {
       "pageTitle": "B2B SOLICITARE DE OFERTĂ (RFQ)",
@@ -2347,7 +2377,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyH1": "1. Colectarea și procesarea datelor",
       "privacyP2": "Informațiile transmise prin formularele noastre de RFQ și de contact sunt procesate exclusiv pentru pregătirea unor oferte formale la export și desfășurarea unui comerț internațional legitim.",
       "privacyH2": "2. Prelucrarea datelor și servicii externe",
-      "privacyP3": "Datele cererilor sunt stocate în Firebase și prelucrate de Resend pentru notificările prin e-mail. Linkurile WhatsApp deschid un serviciu extern. Analiza opțională a utilizării funcționează numai după acord."
+      "privacyP3": "Datele de interogare sunt stocate în Firebase și procesate de Resend pentru notificări prin email. WhatsApp linkuri deschid un serviciu extern. Analiza opțională a utilizării rulează doar după consimțământ."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Biroul de Comerț (+90 533 684 01 75)",
@@ -2385,7 +2415,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Πράσινες φακές (Laird & Eston)",
         "whiteBeans": "⚪ Λευκά φασόλια Dermason",
         "dryPeas": "🥣 Κίτρινος & Πράσινος Ξηρός Αρακάς",
-        "durumWheat": "🌾 Σκληρό σιτάρι & πλιγούρι"
+        "durumWheat": "🌾 Σκληρό σιτάρι & πλιγούρι",
+        "broadBeans": "🫘 Κουκιά / Φάβα",
+        "blackEyedPeas": "👁️ Μαυρομάτικα μπιζέλια",
+        "seedsOilseeds": "🌻 Σπόροι & Ελαιούχοι σπόροι"
       }
     },
     "productDetail": {
@@ -2561,7 +2594,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "Προσδιορίστε τους απαιτούμενους μετρικούς τόνους, τον προτιμώμενο Incoterm (FOB/CIF), τη θύρα προορισμού, τη συσκευασία...",
       "submitBtn": "Υποβολή ερώτησής",
       "successTitle": "Το μήνυμα ελήφθη",
-      "successDesc": "Το μήνυμά σας αποθηκεύτηκε. Μπορείτε να παρακολουθήσετε το αίτημά σας με τον αριθμό αναφοράς."
+      "successDesc": "Το μήνυμά σας αποθηκεύτηκε. Μπορείτε να παρακολουθήσετε το ερώτημά σας χρησιμοποιώντας τον αριθμό αναφοράς."
     },
     "quotePage": {
       "pageTitle": "B2B ΑΊΤΗΜΑ ΓΙΑ ΠΡΟΣΦΟΡΆ (RFQ)",
@@ -2579,11 +2612,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "Όλα τα λογότυπα, τα εμπορικά σήματα, οι φωτογραφίες, οι προδιαγραφές προϊόντων και τα ιδιόκτητα δεδομένα που εμφανίζονται σε αυτόν τον ιστότοπο αποτελούν ιδιοκτησία της Nilasya Agro Foods.",
       "termsH2": "2. Εμπορικές Προσφορές & Προσφορές",
       "termsP3": "Οι πληροφορίες που εμφανίζονται σε αυτόν τον ιστότοπο προορίζονται για εμπορικό μάρκετινγκ. Οι δεσμευτικές συμβατικές δεσμεύσεις επισημοποιούνται μέσω υπογεγραμμένων συμβάσεων πώλησης και προτιμολογίων.",
-      "privacyP1": "{companyLegalName} δεσμεύεται να προστατεύει το απόρρητο και τις εμπορικές πληροφορίες των διεθνών συνεργατών μας.",
+      "privacyP1": "Η {companyLegalName} δεσμεύεται να προστατεύει το απόρρητο και τις εμπορικές πληροφορίες των διεθνών συνεργατών μας.",
       "privacyH1": "1. Συλλογή & Επεξεργασία Δεδομένων",
       "privacyP2": "Οι πληροφορίες που υποβάλλονται μέσω των RFQ και των φορμών επικοινωνίας μας υποβάλλονται σε επεξεργασία αποκλειστικά για την προετοιμασία επίσημων εξαγωγικών προσφορών και τη διεξαγωγή νόμιμου διεθνούς εμπορίου.",
       "privacyH2": "2. Επεξεργασία δεδομένων και εξωτερικές υπηρεσίες",
-      "privacyP3": "Τα δεδομένα αιτημάτων αποθηκεύονται στο Firebase και υποβάλλονται σε επεξεργασία από το Resend για ειδοποιήσεις email. Οι σύνδεσμοι WhatsApp ανοίγουν εξωτερική υπηρεσία. Η προαιρετική ανάλυση χρήσης λειτουργεί μόνο μετά από συγκατάθεση."
+      "privacyP3": "Τα δεδομένα ερωτήματος αποθηκεύονται στο Firebase και υποβάλλονται σε επεξεργασία από το Resend για ειδοποιήσεις μέσω email. WhatsApp σύνδεσμοι ανοίγουν μια εξωτερική υπηρεσία. Τα προαιρετικά αναλυτικά στοιχεία χρήσης εκτελούνται μόνο μετά από συγκατάθεση."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Γραφείο Εμπορίου (+90 533 684 01 75)",
@@ -2621,7 +2654,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Зелени леща (Лерд и Естън)",
         "whiteBeans": "⚪ Дермейсън бял боб",
         "dryPeas": "🥣 Жълт и зелен сух грах",
-        "durumWheat": "🌾 Дюрум пшеница и булгур"
+        "durumWheat": "🌾 Дюрум пшеница и булгур",
+        "broadBeans": "🫘 Широки бобчета / Фава",
+        "blackEyedPeas": "👁️ Чернооки грахчета",
+        "seedsOilseeds": "🌻 Семена и маслени култури"
       }
     },
     "productDetail": {
@@ -2796,8 +2832,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "Целеви спецификации и количество *",
       "messagePlaceholder": "Посочете необходимите метрични тонове, предпочитан Incoterm (FOB/CIF), дестинационен порт, опаковане...",
       "submitBtn": "Изпрати запитване",
-      "successTitle": "Съобщението е получено",
-      "successDesc": "Вашето съобщение е запазено. Можете да проследите запитването с референтния номер."
+      "successTitle": "Получено съобщение",
+      "successDesc": "Вашето съобщение е запазено. Можете да последвате запитването си, използвайки референтния номер."
     },
     "quotePage": {
       "pageTitle": "B2B ЗАЯВКА ЗА ОФЕРТА (RFQ)",
@@ -2819,7 +2855,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyH1": "1. Събиране и обработка на данни",
       "privacyP2": "Информацията, подадена чрез нашите формуляри за RFQ и контакт, се обработва единствено за изготвяне на официални износни оферти и осъществяване на легитимна международна търговия.",
       "privacyH2": "2. Обработка на данни и външни услуги",
-      "privacyP3": "Данните от запитванията се съхраняват във Firebase и се обработват от Resend за известия по имейл. Връзките към WhatsApp отварят външна услуга. Незадължителният анализ на използването работи само след съгласие."
+      "privacyP3": "Данните за запитване се съхраняват във Firebase и обработват чрез Resend за имейл известия. WhatsApp връзки отварят външна услуга. Опционалната аналитика на използването се изпълнява само след съгласие."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Търговско бюро (+90 533 684 01 75)",
@@ -2857,7 +2893,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Зелена сочевиця (Лерд і Естон)",
         "whiteBeans": "⚪ Білі боби дермейсона",
         "dryPeas": "🥣 Жовтий і зелений сухий горох",
-        "durumWheat": "🌾 Тверда пшениця та булгур"
+        "durumWheat": "🌾 Тверда пшениця та булгур",
+        "broadBeans": "🫘 Броуд Бобс / Фава",
+        "blackEyedPeas": "👁️ Чорноокий горох",
+        "seedsOilseeds": "🌻 Насіння та олійні культури"
       }
     },
     "productDetail": {
@@ -3032,8 +3071,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "Цільові характеристики та кількість *",
       "messagePlaceholder": "Вкажіть необхідні метричні тонни, пріоритетний Incoterm (FOB/CIF), порт призначення, упаковку...",
       "submitBtn": "Надіслати запит",
-      "successTitle": "Повідомлення отримано",
-      "successDesc": "Ваше повідомлення збережено. Використовуйте номер звернення, щоб уточнити його стан."
+      "successTitle": "Отримано повідомлення",
+      "successDesc": "Ваше повідомлення збережено. Ви можете відповісти на запит, використовуючи номер посилання."
     },
     "quotePage": {
       "pageTitle": "B2B ЗАПИТ НА ПРОПОЗИЦІЮ (RFQ)",
@@ -3054,8 +3093,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyP1": "{companyLegalName} прагне захисту приватності та комерційної інформації наших міжнародних партнерів.",
       "privacyH1": "1. Збір і обробка даних",
       "privacyP2": "Інформація, подана через наші форми RFQ та контакту, обробляється виключно для підготовки офіційних експортних котирувань та ведення легітимної міжнародної торгівлі.",
-      "privacyH2": "2. Обробка даних і зовнішні сервіси",
-      "privacyP3": "Дані звернень зберігаються у Firebase та обробляються Resend для сповіщень електронною поштою. Посилання WhatsApp відкривають зовнішній сервіс. Додаткова аналітика використання працює лише після згоди."
+      "privacyH2": "2. Обробка даних та зовнішні послуги",
+      "privacyP3": "Дані запиту зберігаються у Firebase і обробляються Resend для електронних сповіщень. WhatsApp посилання відкривають зовнішню службу. Додаткова аналітика використання виконується лише після згоди."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Торговий відділ (+90 533 684 01 75)",
@@ -3093,7 +3132,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 عدس سبز (لرد و استون)",
         "whiteBeans": "⚪ لوبیاهای سفید درمیسون",
         "dryPeas": "🥣 نخود زرد و سبز خشک",
-        "durumWheat": "🌾 گندم دوروم و بلغور"
+        "durumWheat": "🌾 گندم دوروم و بلغور",
+        "broadBeans": "🫘 لوبیا پهن / باقلا",
+        "blackEyedPeas": "👁️ نخود چشم سیاه",
+        "seedsOilseeds": "🌻 دانه ها و دانه های روغنی"
       }
     },
     "productDetail": {
@@ -3268,8 +3310,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "مشخصات هدف و کمیت *",
       "messagePlaceholder": "تن متریک مورد نیاز، Incoterm ترجیحی (FOB/CIF)، پورت مقصد، بسته بندی...",
       "submitBtn": "ارسال درخواست",
-      "successTitle": "پیام شما دریافت شد",
-      "successDesc": "پیام شما ذخیره شد. می‌توانید درخواست خود را با شماره پیگیری دنبال کنید."
+      "successTitle": "پیام دریافت شد",
+      "successDesc": "پیام شما ذخیره شد. می توانید با استفاده از شماره مرجع پیگیری کنید."
     },
     "quotePage": {
       "pageTitle": "B2B درخواست نقل قول (RFQ)",
@@ -3290,8 +3332,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyP1": "{companyLegalName} متعهد به حفاظت از حریم خصوصی و اطلاعات تجاری شرکای بین المللی خود است.",
       "privacyH1": "1. جمع آوری و پردازش داده",
       "privacyP2": "اطلاعات ارسال شده از طریق فرم های RFQ و تماس ما صرفا برای تهیه قیمت رسمی صادرات و انجام تجارت بین المللی مشروع پردازش می شود.",
-      "privacyH2": "2. پردازش داده‌ها و خدمات خارجی",
-      "privacyP3": "داده‌های درخواست در Firebase ذخیره می‌شوند و Resend آن‌ها را برای اعلان‌های ایمیلی پردازش می‌کند. پیوندهای WhatsApp یک سرویس خارجی را باز می‌کنند. تحلیل اختیاری استفاده فقط پس از رضایت فعال می‌شود."
+      "privacyH2": "2. پردازش داده و خدمات خارجی",
+      "privacyP3": "داده های استعلام در فایربیس ذخیره شده و توسط ارسال مجدد برای اعلان های ایمیل پردازش می شوند. WhatsApp لینک ها یک سرویس خارجی را باز می کنند. تحلیل های اختیاری استفاده فقط پس از رضایت اجرا می شوند."
     },
     "whatsapp": {
       "tooltip": "میز تجارت WhatsApp (+90 533 684 01 75)",
@@ -3329,7 +3371,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Yaşıl Mərcimək (Laird & Eston)",
         "whiteBeans": "⚪ Dermason White Beans",
         "dryPeas": "🥣 Sarı və Yaşıl Quru Noxud",
-        "durumWheat": "🌾 Durum Buğda və Bulgur"
+        "durumWheat": "🌾 Durum Buğda və Bulgur",
+        "broadBeans": "🫘 Geniş Lobya / Fava",
+        "blackEyedPeas": "👁️ Qara Gözlü Noxud",
+        "seedsOilseeds": "🌻 Toxumlar və Yağlı Toxumlar"
       }
     },
     "productDetail": {
@@ -3504,8 +3549,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "Hədəf Spesifikasiyaları və Miqdarı *",
       "messagePlaceholder": "Tələb olunan metrik tonları, üstünlük verilən Incoterm (FOB/CIF), təyinat portu, qablaşdırma...",
       "submitBtn": "Sorğu Göndər",
-      "successTitle": "Mesajınız alındı",
-      "successDesc": "Mesajınız qeydə alındı. Sorğunuzu istinad nömrəsi ilə izləyə bilərsiniz."
+      "successTitle": "Mesaj alındı",
+      "successDesc": "Mesajınız yadda saxlanıldı. Sorğunuzu referans nömrəsi ilə davam etdirə bilərsiniz."
     },
     "quotePage": {
       "pageTitle": "B2B TƏKLIF SORĞUSU (RFQ)",
@@ -3526,8 +3571,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyP1": "{companyLegalName} beynəlxalq tərəfdaşlarımızın məxfiliyini və kommersiya məlumatlarını qorumağa sadiqdir.",
       "privacyH1": "1. Məlumatların Toplanması və Emalı",
       "privacyP2": "RFQ və əlaqə formalarımız vasitəsilə təqdim olunan məlumatlar yalnız rəsmi ixrac təkliflərinin hazırlanması və qanuni beynəlxalq ticarətin aparılması üçün emal olunur.",
-      "privacyH2": "2. Məlumatların emalı və xarici xidmətlər",
-      "privacyP3": "Sorğu məlumatları Firebase-də saxlanılır və e-poçt bildirişləri üçün Resend tərəfindən emal olunur. WhatsApp keçidləri xarici xidməti açır. İsteğe bağlı istifadə analitikası yalnız razılıqdan sonra işləyir."
+      "privacyH2": "2. Məlumatların işlənməsi və xarici xidmətlər",
+      "privacyP3": "Sorğu məlumatları Firebase-də saxlanılır və Resend tərəfindən e-poçt bildirişləri üçün işlənir. WhatsApp keçidlər xarici xidmət açır. İstəyə bağlı istifadə analitikası yalnız razılıqdan sonra işləyir."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Ticarət Masası (+90 533 684 01 75)",
@@ -3565,7 +3610,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Жасыл жасымық (Лэрд және Эстон)",
         "whiteBeans": "⚪ Дермейсон Ақ Бұршақ",
         "dryPeas": "🥣 Сары және жасыл құрғақ бұршақ",
-        "durumWheat": "🌾 Дурум бидай және булгур"
+        "durumWheat": "🌾 Дурум бидай және булгур",
+        "broadBeans": "🫘 Broad Beans / Fava",
+        "blackEyedPeas": "👁️ Қара Көзді Бұршақ",
+        "seedsOilseeds": "🌻 Тұқымдар мен майлы тұқымдар"
       }
     },
     "productDetail": {
@@ -3740,8 +3788,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "Мақсатты сипаттамалар мен көлем *",
       "messagePlaceholder": "Қажетті метрлік тонналарды, таңдаулы Incoterm-ді (FOB/CIF), мақсатты портты, қаптама...",
       "submitBtn": "Сұраныс жіберу",
-      "successTitle": "Хабарламаңыз қабылданды",
-      "successDesc": "Хабарламаңыз сақталды. Сұрауыңызды тіркеу нөмірі арқылы қадағалай аласыз."
+      "successTitle": "Хабарлама алынды",
+      "successDesc": "Сіздің хабарламаңыз сақталды. Сұрауыңызды анықтама нөмірі арқылы жалғастыра аласыз."
     },
     "quotePage": {
       "pageTitle": "B2B БАҒА СҰРАНЫСЫ (RFQ)",
@@ -3763,7 +3811,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyH1": "1. Деректерді жинау және өңдеу",
       "privacyP2": "Біздің RFQ және байланыс формаларымыз арқылы берілген ақпарат тек ресми экспорттық бағалар дайындау және заңды халықаралық сауда жүргізу үшін өңделеді.",
       "privacyH2": "2. Деректерді өңдеу және сыртқы қызметтер",
-      "privacyP3": "Сұрау деректері Firebase жүйесінде сақталады және электрондық пошта хабарламалары үшін Resend арқылы өңделеді. WhatsApp сілтемелері сыртқы қызметті ашады. Қосымша пайдалану талдауы тек келісім берілгеннен кейін жұмыс істейді."
+      "privacyP3": "Сұраныс деректері Firebase-те сақталады және Resend арқылы электрондық пошта хабарламалары үшін өңделеді. WhatsApp сілтемелер сыртқы қызмет ашады. Қосымша пайдалану аналитикасы тек келісімнен кейін ғана іске қосылады."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Сауда бөлімі (+90 533 684 01 75)",
@@ -3801,7 +3849,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Yashil Masur (Laird & Eston)",
         "whiteBeans": "⚪ Dermason Oq Loviya",
         "dryPeas": "🥣 Sariq & Yashil Quritilgan No‘xat",
-        "durumWheat": "🌾 Durum Bug‘doy & Bulgur"
+        "durumWheat": "🌾 Durum Bug‘doy & Bulgur",
+        "broadBeans": "🫘 Kattakon Loviya / Fava",
+        "blackEyedPeas": "👁️ Qora-ko‘zli loviya",
+        "seedsOilseeds": "🌻 Urug‘lar va yog‘li urug‘lar"
       }
     },
     "productDetail": {
@@ -3891,7 +3942,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "material": "Material spetsifikatsiyalari:"
     },
     "exportPage": {
-      "tag": "50+ mamlakatlarga eksport qilish uchun",
+      "tag": "50+ mamlakatlarga eksport qilinmoqda",
       "title": "Butun dunyo loviya va qishloq xo‘jaligi mahsulotlarini eksport qilish manzillari",
       "subtitle": "Mersin Xalqaro Portidan (MIP) Yaqin Sharq, Evropa, Shimoliy Afrika va Osiyoga to‘g‘ridan-to‘g‘ri jo‘natish yo‘llari, to‘liq fitosanitar ruxsatnoma bilan.",
       "corridorDirTag": "GLOBAL SAVDO YO‘LLARI",
@@ -3976,8 +4027,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "Maqsadli Texnik Ko‘rsatkichlar va Miqdor *",
       "messagePlaceholder": "Kerakli metr tonnani, afzal ko‘rilgan Incoterm (FOB/CIF), manzil portini, qadoqlashni ko‘rsating...",
       "submitBtn": "So‘rovni Yuborish",
-      "successTitle": "Xabaringiz qabul qilindi",
-      "successDesc": "Xabaringiz saqlandi. So‘rovingizni murojaat raqami orqali kuzatishingiz mumkin."
+      "successTitle": "Xabar qabul qilindi",
+      "successDesc": "Sizning xabaringiz saqlandi. So‘rovingizni ma’lumot raqami yordamida kuzatishingiz mumkin."
     },
     "quotePage": {
       "pageTitle": "B2B NARX SO‘ROVI (RFQ)",
@@ -3995,11 +4046,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "Ushbu veb-saytda ko‘rsatilgan barcha logotiplar, savdo belgilar, fotografiya, mahsulot spetsifikatsiyalari va mulk ma'lumotlari Nilasya Agro Foods mulkidir.",
       "termsH2": "2. Tijorat takliflari & Narx so‘rovlari",
       "termsP3": "Ushbu veb-saytda ko‘rsatilgan ma’lumotlar tijorat marketingi uchun mo‘ljallangan. Majburiy shartnomaviy kelishuvlar imzolangan savdo shartnomalari va proforma hisob-fakturalar orqali rasmiylashtiriladi.",
-      "privacyP1": "{companyLegalName} xalqaro hamkorlarimizning maxfiylik va tijorat ma’lumotlarini himoya qilishga sodiqdir.",
+      "privacyP1": "{companyLegalName} xalqaro hamkorlarimizning shaxsiy va tijorat ma’lumotlarini himoya qilishga sodiqdir.",
       "privacyH1": "1. Ma’lumotlarni yig‘ish va qayta ishlash",
       "privacyP2": "Bizning RFQ va aloqa shakllari orqali yuborilgan ma’lumotlar faqat rasmiy eksport takliflarini tayyorlash va qonuniy xalqaro savdoni amalga oshirish uchun qayta ishlanadi.",
       "privacyH2": "2. Ma’lumotlarni qayta ishlash va tashqi xizmatlar",
-      "privacyP3": "So‘rov ma’lumotlari Firebase’da saqlanadi va elektron pochta bildirishnomalari uchun Resend tomonidan qayta ishlanadi. WhatsApp havolalari tashqi xizmatni ochadi. Ixtiyoriy foydalanish tahlili faqat rozilikdan keyin ishlaydi."
+      "privacyP3": "So‘rov ma’lumotlari Firebase’da saqlanadi va elektron pochta xabarnomalari uchun Resend tomonidan qayta ishlanadi. WhatsApp havolalari tashqi xizmatni ochadi. Ixtiyoriy foydalanish tahlili faqat rozilikdan keyin ishlaydi."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Savdo Stolig‘i (+90 533 684 01 75)",
@@ -4037,7 +4088,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 მწვანე წიწაკა (Laird & Eston)",
         "whiteBeans": "⚪ დერმასონის თეთრი ლობიო",
         "dryPeas": "🥣 ყვითელი და მწვანე მშრალი სწორედი ბარდა",
-        "durumWheat": "🌾 დურუმის ხორბალი & ბულგური"
+        "durumWheat": "🌾 დურუმის ხორბალი & ბულგური",
+        "broadBeans": "🫘 ფაფა / გუნდური ბარდა",
+        "blackEyedPeas": "👁️ შავი თვალის ბარდა",
+        "seedsOilseeds": "🌻 თესლი და ზეთიანი თესლი"
       }
     },
     "productDetail": {
@@ -4127,7 +4181,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "material": "მასალის სპეციფიკაციები:"
     },
     "exportPage": {
-      "tag": "ექსპორტი 50+ ქვეყნების მიმართულებით",
+      "tag": "ექსპორტი 50+ ქვეყნებში",
       "title": "მსოფლიო ბურღულეული და სასოფლო-სამეურნეო ექსპორტის მიმართულებები",
       "subtitle": "პირდაპირი გადაზიდვის კორიდორები მერსინის საერთაშორისო პორტიდან (MIP) შუა აღმოსავლეთში, ევროპის, ჩრდილოეთ აფრიკასა და აზიაში სრული ფიტოსანიტარული კლარირებით.",
       "corridorDirTag": "გლობალური მოვაჭრე კორიდორები",
@@ -4213,7 +4267,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "მიუთითეთ საჭირო მეტრიკული ტონაჟი, სასურველი ინკოტერმი (FOB/CIF), დანიშნულების პორტი, პაკეტირება...",
       "submitBtn": "გაგზავნეთ მოთხოვნა",
       "successTitle": "შეტყობინება მიღებულია",
-      "successDesc": "თქვენი შეტყობინება შენახულია. მოთხოვნის სტატუსის გასაგებად გამოიყენეთ სარეგისტრაციო ნომერი."
+      "successDesc": "თქვენი შეტყობინება შენახულია. შეგიძლიათ მიჰყევით თქვენს მოთხოვნას რეფერენც-ნომრით."
     },
     "quotePage": {
       "pageTitle": "B2B ფასის მოთხოვნა (RFQ)",
@@ -4231,11 +4285,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "ყველა ლოგო, სავაჭრო ნიშანი, ფოტოგრაფია, პროდუქტის სპეციფიკაციები და საკუთრების მონაცემები, რომლებიც მოცემულია ამ ვებგვერდზე, მეკუთვნის Nilasya Agro Foods.",
       "termsH2": "2. კომერციული შეთავაზებები & ფასის შემოთავაზებები",
       "termsP3": "ამ ვებგვერდზე წარმოდგენილი ინფორმაცია არის კომერციული მარკეტინგისთვის. ურთიერთდაგეგმარებითი კონტაქტები ოფიციალურად ფორმირდება ხელმოწერილი საგამომავალი კონტრაქტებისა და პროფორმა ინვოისების მეშვეობით.",
-      "privacyP1": "{companyLegalName} დარწმუნებულია ჩვენი საერთაშორისო პარტნიორების კონფიდენციალურობისა და კომერციული ინფორმაციის დაცვაში.",
+      "privacyP1": "{companyLegalName} იცავს ჩვენს საერთაშორისო პარტნიორებს შორის კონფიდენციალურობას და კომერციულ ინფორმაციას.",
       "privacyH1": "1. მონაცემების შეგროვება და დამუშავება",
       "privacyP2": "RFQ და საკონტაქტო ფორმების საშუალებით მიწოდებული ინფორმაცია დამუშავდება მხოლოდ ოფიციალური ექსპორტის შეთავაზებების მომზადებისა და ლეგიტიმური საერთაშორისო ვაჭრობის წარმართვისთვის.",
-      "privacyH2": "2. მონაცემთა დამუშავება და გარე სერვისები",
-      "privacyP3": "მოთხოვნის მონაცემები ინახება Firebase-ში და ელფოსტის შეტყობინებებისთვის მუშავდება Resend-ის მიერ. WhatsApp-ის ბმულები ხსნის გარე სერვისს. გამოყენების არჩევითი ანალიტიკა მუშაობს მხოლოდ თანხმობის შემდეგ."
+      "privacyH2": "2. მონაცემების დამუშავება და გარე სერვისები",
+      "privacyP3": "მოთხოვნის მონაცემები ინახება Firebase-ში და დამუშავებულია Resend-ის მიერ ელ.ფოსტის შეტყობინებებისთვის. WhatsApp ლინკები ხსნის გარე სერვისს. ანალიტიკა რიგ შემთხვევაში ხდება მხოლოდ შეთანხმების შემდეგ."
     },
     "whatsapp": {
       "tooltip": "WhatsApp ვაჭრობის მაგიდა (+90 533 684 01 75)",
@@ -4273,7 +4327,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Zelene sočivo (Laird & Eston)",
         "whiteBeans": "⚪ Dermason beli pasulj",
         "dryPeas": "🥣 Žute i zelene suve grašak",
-        "durumWheat": "🌾 Pšenica durum i bulgur"
+        "durumWheat": "🌾 Pšenica durum i bulgur",
+        "broadBeans": "🫘 Bob / Fava",
+        "blackEyedPeas": "👁️ Crnooki grašak",
+        "seedsOilseeds": "🌻 Seme i uljarice"
       }
     },
     "productDetail": {
@@ -4363,7 +4420,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "material": "Specifikacije materijala:"
     },
     "exportPage": {
-      "tag": "IZVOZ U 50+ ZEMALJA",
+      "tag": "IZVOZ U 50+ ZEMLJE",
       "title": "Globalna odredišta za izvoz mahunarki i poljoprivrednih proizvoda",
       "subtitle": "Direktni transportni koridori iz Međunarodne luke Mersin (MIP) ka Bliskom istoku, Evropi, Severnoj Africi i Aziji sa potpunim fitosanitarnim odobrenjem.",
       "corridorDirTag": "GLOBALNI TRGOVAČKI KORIDORI",
@@ -4448,8 +4505,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "Ciljne specifikacije i količina *",
       "messagePlaceholder": "Navedite potrebne metričke tone, željeni Incoterm (FOB/CIF), odredišnu luku, pakovanje...",
       "submitBtn": "Pošalji upit",
-      "successTitle": "Poruka je primljena",
-      "successDesc": "Vaša poruka je sačuvana. Možete pratiti upit pomoću referentnog broja."
+      "successTitle": "Poruka primljena",
+      "successDesc": "Vaša poruka je sačuvana. Možete pratiti svoj upit koristeći referentni broj."
     },
     "quotePage": {
       "pageTitle": "B2B ZAHTEV ZA PONUDU (RFQ)",
@@ -4467,11 +4524,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "Svi logotipi, zaštitni znakovi, fotografije, specifikacije proizvoda i vlasnički podaci prikazani na ovom vebsajtu su vlasništvo Nilasya Agro Foods.",
       "termsH2": "2. Komercijalne Ponude i Koteacije",
       "termsP3": "Informacije prikazane na ovom veb-sajtu su za komercijalni marketing. Obavezne ugovorne obaveze se formalizuju kroz potpisane ugovore o prodaji i proforma fakture.",
-      "privacyP1": "{companyLegalName} je posvećena zaštiti privatnosti i poslovnih informacija naših međunarodnih partnera.",
+      "privacyP1": "{companyLegalName} je posvećena zaštiti privatnosti i komercijalnih informacija naših međunarodnih partnera.",
       "privacyH1": "1. Prikupljanje i obrada podataka",
       "privacyP2": "Informacije poslate putem naših RFQ i kontakt obrazaca obrađuju se isključivo radi pripreme formalnih izvoznih ponuda i vođenja legitimne međunarodne trgovine.",
-      "privacyH2": "2. Obrada podataka i spoljne usluge",
-      "privacyP3": "Podaci iz upita čuvaju se u Firebase-u i obrađuju preko Resend-a za obaveštenja e-poštom. WhatsApp linkovi otvaraju spoljnu uslugu. Opciona analiza korišćenja radi samo nakon pristanka."
+      "privacyH2": "2. Obrada podataka i eksterne usluge",
+      "privacyP3": "Podaci upita se čuvaju u Firebase-u i obrađuju ih Resend za obaveštenja putem e-pošte. WhatsApp veze otvaraju spoljnu uslugu. Opciona analitika korišćenja radi samo nakon saglasnosti."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Trade Desk (+90 533 684 01 75)",
@@ -4509,7 +4566,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 हरी दाल (लेयर्ड और एस्टन)",
         "whiteBeans": "⚪ डर्मासन व्हाइट बीन्स",
         "dryPeas": "🥣 पीले और हरे सूखे मटर",
-        "durumWheat": "🌾 ड्यूरम गेहूं और बुलगुर"
+        "durumWheat": "🌾 ड्यूरम गेहूं और बुलगुर",
+        "broadBeans": "🫘 ब्रॉड बीन्स/फवा",
+        "blackEyedPeas": "👁️ काली आंखों वाले मटर",
+        "seedsOilseeds": "🌻 बीज और तिलहन"
       }
     },
     "productDetail": {
@@ -4684,8 +4744,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "लक्ष्य विनिर्देश और मात्रा *",
       "messagePlaceholder": "आवश्यक मीट्रिक टन, पसंदीदा इनकोटर्म (FOB/CIF), गंतव्य पोर्ट, पैकेजिंग निर्दिष्ट करें...",
       "submitBtn": "पूछताछ सबमिट करें",
-      "successTitle": "आपका संदेश प्राप्त हुआ",
-      "successDesc": "आपका संदेश सहेज लिया गया है। संदर्भ संख्या से आप अपने अनुरोध की स्थिति पूछ सकते हैं।"
+      "successTitle": "संदेश प्राप्त हुआ",
+      "successDesc": "आपका संदेश सहेजा गया है। आप संदर्भ संख्या का उपयोग करके अपनी पूछताछ का पालन कर सकते हैं।"
     },
     "quotePage": {
       "pageTitle": "उद्धरण के लिए B2B अनुरोध (RFQ)",
@@ -4703,11 +4763,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "इस वेबसाइट पर प्रदर्शित सभी लोगो, ट्रेडमार्क, फोटोग्राफी, उत्पाद विनिर्देश और मालिकाना डेटा Nilasya Agro Foods की संपत्ति हैं।",
       "termsH2": "2. वाणिज्यिक प्रस्ताव और कोटेशन",
       "termsP3": "इस वेबसाइट पर प्रदर्शित जानकारी वाणिज्यिक विपणन के लिए है। बाध्यकारी संविदात्मक प्रतिबद्धताओं को हस्ताक्षरित बिक्री अनुबंधों और प्रोफार्मा चालान के माध्यम से औपचारिक रूप दिया जाता है।",
-      "privacyP1": "{companyLegalName} हमारे अंतरराष्ट्रीय भागीदारों की गोपनीयता और वाणिज्यिक जानकारी की सुरक्षा के लिए प्रतिबद्ध है।",
+      "privacyP1": "{companyLegalName} अपने अंतरराष्ट्रीय भागीदारों की गोपनीयता और वाणिज्यिक जानकारी की रक्षा के लिए प्रतिबद्ध है।",
       "privacyH1": "1. डेटा संग्रह और प्रसंस्करण",
       "privacyP2": "हमारे RFQ और संपर्क फ़ॉर्म के माध्यम से प्रस्तुत की गई जानकारी को पूरी तरह से औपचारिक निर्यात कोटेशन तैयार करने और वैध अंतर्राष्ट्रीय व्यापार करने के लिए संसाधित किया जाता है।",
-      "privacyH2": "2. डेटा का उपयोग और बाहरी सेवाएँ",
-      "privacyP3": "अनुरोध का डेटा Firebase में सहेजा जाता है और ईमेल सूचनाओं के लिए Resend द्वारा संसाधित किया जाता है। WhatsApp लिंक एक बाहरी सेवा खोलते हैं। वैकल्पिक उपयोग विश्लेषण केवल सहमति के बाद काम करता है।"
+      "privacyH2": "2. डेटा प्रोसेसिंग और बाहरी सेवाएं",
+      "privacyP3": "पूछताछ डेटा फायरबेस में संग्रहीत किया जाता है और ईमेल सूचनाओं के लिए रीसेंड द्वारा संसाधित किया जाता है। WhatsApp लिंक एक बाहरी सेवा खोलते हैं। वैकल्पिक उपयोग विश्लेषण सहमति के बाद ही चलता है।"
     },
     "whatsapp": {
       "tooltip": "WhatsApp ट्रेड डेस्क (+90 533 684 01 75)",
@@ -4745,7 +4805,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 گرین لینٹلز (لیئرڈ اینڈ ایسٹن)",
         "whiteBeans": "⚪ ڈرمیسن وائٹ بینز",
         "dryPeas": "🥣 پیلا اور سبز خشک مٹر",
-        "durumWheat": "🌾 دورم گندم اور بلغور"
+        "durumWheat": "🌾 دورم گندم اور بلغور",
+        "broadBeans": "🫘 براڈ بینز / فاوا",
+        "blackEyedPeas": "👁️ بلیک آئیڈ پیز",
+        "seedsOilseeds": "🌻 بیج اور تیل کے بیج"
       }
     },
     "productDetail": {
@@ -4920,8 +4983,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "ہدف کی تفصیلات اور مقدار *",
       "messagePlaceholder": "مطلوبہ میٹرک ٹن، ترجیحی انکو ٹرم (FOB/CIF)، منزل پورٹ، پیکیجنگ...",
       "submitBtn": "انکوائری جمع کروائیں",
-      "successTitle": "آپ کا پیغام موصول ہو گیا",
-      "successDesc": "آپ کا پیغام محفوظ ہو گیا ہے۔ حوالہ نمبر کے ذریعے اپنی درخواست کی پیش رفت معلوم کر سکتے ہیں۔"
+      "successTitle": "پیغام موصول ہو گیا",
+      "successDesc": "آپ کا پیغام محفوظ کر لیا گیا ہے۔ آپ ریفرنس نمبر کے ذریعے اپنی انکوائری پر فالو اپ کر سکتے ہیں۔"
     },
     "quotePage": {
       "pageTitle": "B2B کوٹیشن کی درخواست (RFQ)",
@@ -4942,8 +5005,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyP1": "{companyLegalName} اپنے بین الاقوامی شراکت داروں کی پرائیویسی اور تجارتی معلومات کے تحفظ کے لیے پرعزم ہے۔",
       "privacyH1": "1. ڈیٹا جمع کرنا اور پراسیسنگ",
       "privacyP2": "ہمارے RFQ اور رابطہ فارم کے ذریعے جمع کرائی گئی معلومات صرف رسمی برآمدی کوٹس تیار کرنے اور جائز بین الاقوامی تجارت کے لیے پروسیس کی جاتی ہیں۔",
-      "privacyH2": "2. ڈیٹا کی کارروائی اور بیرونی خدمات",
-      "privacyP3": "درخواست کا ڈیٹا Firebase میں محفوظ ہوتا ہے اور ای میل اطلاعات کے لیے Resend کے ذریعے استعمال ہوتا ہے۔ WhatsApp کے لنکس بیرونی خدمت کھولتے ہیں۔ اختیاری استعمال کا تجزیہ صرف رضامندی کے بعد چلتا ہے۔"
+      "privacyH2": "2. ڈیٹا پروسیسنگ اور بیرونی خدمات",
+      "privacyP3": "انکوائری ڈیٹا فائر بیس میں محفوظ کیا جاتا ہے اور ری سینڈ کے ذریعے ای میل نوٹیفکیشنز کے لیے پراسیس کیا جاتا ہے۔ WhatsApp لنکس ایک بیرونی سروس کھولتے ہیں۔ اختیاری استعمال کی تجزیات صرف رضامندی کے بعد چلتی ہے۔"
     },
     "whatsapp": {
       "tooltip": "WhatsApp ٹریڈ ڈیسک (+90 533 684 01 75)",
@@ -4981,7 +5044,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 সবুজ মসুর ডাল (লেয়ার্ড এবং এস্টন)",
         "whiteBeans": "⚪ ডার্ম্যাসন হোয়াইট মটরশুটি",
         "dryPeas": "🥣 হলুদ এবং সবুজ শুকনো মটর",
-        "durumWheat": "🌾 ডুরাম গম এবং বুলগুর"
+        "durumWheat": "🌾 ডুরাম গম এবং বুলগুর",
+        "broadBeans": "🫘 ব্রড মটরশুটি / ফাভা",
+        "blackEyedPeas": "👁️ ব্ল্যাক-আইড মটর",
+        "seedsOilseeds": "🌻 বীজ ও তৈলবীজ"
       }
     },
     "productDetail": {
@@ -5156,8 +5222,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "টার্গেট স্পেসিফিকেশন এবং পরিমাণ *",
       "messagePlaceholder": "প্রয়োজনীয় মেট্রিক টন, পছন্দসই ইনকোটার্ম (FOB/CIF), গন্তব্য পোর্ট, প্যাকেজিং...",
       "submitBtn": "তদন্ত জমা দিন",
-      "successTitle": "আপনার বার্তা পাওয়া গেছে",
-      "successDesc": "আপনার বার্তা সংরক্ষণ করা হয়েছে। রেফারেন্স নম্বর দিয়ে আপনার অনুরোধের অবস্থা জানতে পারেন।"
+      "successTitle": "বার্তা প্রাপ্ত হয়েছে",
+      "successDesc": "আপনার বার্তাটি সংরক্ষণ করা হয়েছে। আপনি রেফারেন্স নম্বর ব্যবহার করে আপনার অনুসন্ধানটি অনুসরণ করতে পারেন।"
     },
     "quotePage": {
       "pageTitle": "উদ্ধৃতির জন্য B2B অনুরোধ (RFQ)",
@@ -5178,8 +5244,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyP1": "{companyLegalName} আমাদের আন্তর্জাতিক অংশীদারদের গোপনীয়তা এবং বাণিজ্যিক তথ্য রক্ষা করতে প্রতিশ্রুতিবদ্ধ।",
       "privacyH1": "1. ডেটা সংগ্রহ ও প্রক্রিয়াকরণ",
       "privacyP2": "আমাদের RFQ এবং যোগাযোগ ফর্মগুলির মাধ্যমে জমা দেওয়া তথ্য কেবলমাত্র আনুষ্ঠানিক রফতানি উদ্ধৃতি প্রস্তুত এবং বৈধ আন্তর্জাতিক বাণিজ্য পরিচালনার জন্য প্রক্রিয়া করা হয়।",
-      "privacyH2": "2. তথ্য প্রক্রিয়াকরণ ও বাহ্যিক পরিষেবা",
-      "privacyP3": "অনুরোধের তথ্য Firebase-এ সংরক্ষিত হয় এবং ইমেল বিজ্ঞপ্তির জন্য Resend তা প্রক্রিয়া করে। WhatsApp লিঙ্ক একটি বাহ্যিক পরিষেবা খোলে। ঐচ্ছিক ব্যবহার বিশ্লেষণ কেবল সম্মতির পরে চালু হয়।"
+      "privacyH2": "2. ডেটা প্রসেসিং এবং বহিরাগত পরিষেবাদি",
+      "privacyP3": "অনুসন্ধানের ডেটা ফায়ারবেসে সংরক্ষণ করা হয় এবং ইমেল বিজ্ঞপ্তিগুলির জন্য পুনরায় প্রেরণ দ্বারা প্রক্রিয়া করা হয়। WhatsApp লিঙ্কগুলি একটি বাহ্যিক পরিষেবা খোলে। ঐচ্ছিক ব্যবহার বিশ্লেষণগুলি কেবল সম্মতির পরেই চলে।"
     },
     "whatsapp": {
       "tooltip": "WhatsApp ট্রেড ডেস্ক (+90 533 684 01 75)",
@@ -5217,7 +5283,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 绿扁豆（莱尔德与埃斯顿）",
         "whiteBeans": "⚪ 德梅森白豆",
         "dryPeas": "🥣 黄豌豆和绿干豌豆",
-        "durumWheat": "🌾 杜鲁姆小麦与布格尔"
+        "durumWheat": "🌾 杜鲁姆小麦与布格尔",
+        "broadBeans": "🫘 蚕豆 / 蚕豆",
+        "blackEyedPeas": "👁️ 黑眼豆",
+        "seedsOilseeds": "🌻 种子和油料种子"
       }
     },
     "productDetail": {
@@ -5307,7 +5376,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "material": "材料规格："
     },
     "exportPage": {
-      "tag": "出口至50+国家",
+      "tag": "出口至 50+ 个国家",
       "title": "全球豆类及农产品出口目的地",
       "subtitle": "从梅尔辛国际港（MIP）直达中东、欧洲、北非和亚洲的航运走廊，享有完整的植物检疫许可。",
       "corridorDirTag": "全球贸易走廊",
@@ -5392,8 +5461,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "目标规格及数量 *",
       "messagePlaceholder": "指定所需公吨数、首选贸易条款 (FOB/CIF)、目的港、包装...",
       "submitBtn": "提交询价",
-      "successTitle": "已收到您的消息",
-      "successDesc": "您的消息已保存。您可以使用参考编号查询请求的进展。"
+      "successTitle": "消息已接收",
+      "successDesc": "您的消息已保存。您可以使用参考编号跟进您的咨询。"
     },
     "quotePage": {
       "pageTitle": "B2B 请求报价 (RFQ)",
@@ -5411,11 +5480,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "本网站上显示的所有标识、商标、摄影、产品规格及专有数据均为 Nilasya Agro Foods 所有。",
       "termsH2": "2. 商业报价与报价单",
       "termsP3": "本网站显示的信息用于商业营销。具有约束力的合同承诺须通过签署销售合同和形式发票正式确定。",
-      "privacyP1": "{companyLegalName} 致力于保护我们国际合作伙伴的隐私及商业信息。",
+      "privacyP1": "{companyLegalName} 致力于保护我们国际合作伙伴的隐私和商业信息。",
       "privacyH1": "1. 数据收集与处理",
       "privacyP2": "通过我们的 RFQ 和联系表提交的信息仅用于准备正式出口报价及进行合法的国际贸易。",
-      "privacyH2": "2. 数据处理和外部服务",
-      "privacyP3": "请求数据存储在 Firebase 中，由 Resend 处理以发送电子邮件通知。WhatsApp 链接会打开外部服务。可选的使用分析仅在获得同意后运行。"
+      "privacyH2": "2. 数据处理与外部服务",
+      "privacyP3": "询价数据存储在 Firebase 中，并由 Resend 处理邮件通知。WhatsApp 链接会打开外部服务。可选使用的分析仅在获得同意后运行。"
     },
     "whatsapp": {
       "tooltip": "WhatsApp 贸易台（+90 533 684 01 75）",
@@ -5453,7 +5522,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 グリーンレンズ豆(レアード&エストン)",
         "whiteBeans": "⚪ ダーメイソン・ホワイトビーンズ",
         "dryPeas": "🥣 黄色と緑のドライピース",
-        "durumWheat": "🌾 デュラム小麦とブルグル"
+        "durumWheat": "🌾 デュラム小麦とブルグル",
+        "broadBeans": "🫘 そば豆 / ファバ",
+        "blackEyedPeas": "👁️ ブラックアイドピーズ",
+        "seedsOilseeds": "🌻 種子と油糧種子"
       }
     },
     "productDetail": {
@@ -5628,8 +5700,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "目標仕様と数量 *",
       "messagePlaceholder": "必要なメトリックトン、推奨インコターム(FOB/CIF)、目的地港、梱包...",
       "submitBtn": "問い合わせを送信",
-      "successTitle": "メッセージを受け付けました",
-      "successDesc": "メッセージを保存しました。受付番号を使ってお問い合わせの状況をご確認いただけます。"
+      "successTitle": "メッセージ受信",
+      "successDesc": "メッセージは保存されました。参照番号を使ってお問い合わせをフォローアップできます。"
     },
     "quotePage": {
       "pageTitle": "B2B 見積もり依頼(RFQ)",
@@ -5647,11 +5719,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "本ウェブサイトに掲載されているすべてのロゴ、商標、写真、製品仕様、および独自データの所有物は、すべてNilasya Agro Foodsの所有物です。",
       "termsH2": "2. 商業オファーと見積もり",
       "termsP3": "このウェブサイトに表示されている情報は商業マーケティングのためです。拘束力のある契約契約は、署名済みの販売契約書や見積もり請求書を通じて正式に定められています。",
-      "privacyP1": "{companyLegalName}国際パートナーのプライバシーおよび商業情報の保護に取り組んでいます。",
+      "privacyP1": "{companyLegalName}は国際パートナーのプライバシーおよび商業情報の保護に尽力しています。",
       "privacyH1": "1. データ収集と処理",
       "privacyP2": "RFQおよび連絡フォームを通じて提出された情報は、正式な輸出見積もりの作成および正当な国際貿易の実施のみに使用されます。",
-      "privacyH2": "2. データ処理と外部サービス",
-      "privacyP3": "お問い合わせデータはFirebaseに保存され、メール通知のためにResendで処理されます。WhatsAppのリンクは外部サービスを開きます。任意の利用分析は同意をいただいた後にのみ実行されます。"
+      "privacyH2": "2. データ処理および外部サービス",
+      "privacyP3": "問い合わせデータはFirebaseに保存され、Resendによってメール通知として処理されます。WhatsAppリンクは外部サービスを開きます。オプションの使用分析は同意後にのみ実行されます。"
     },
     "whatsapp": {
       "tooltip": "WhatsApp トレードデスク(+90 533 684 01 75)",
@@ -5689,7 +5761,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 그린 렌틸콩 (레어드 & 에스턴)",
         "whiteBeans": "⚪ 더메이슨 화이트빈",
         "dryPeas": "🥣 노란 및 초록 건조 완두콩",
-        "durumWheat": "🌾 듀럼 밀과 불구르"
+        "durumWheat": "🌾 듀럼 밀과 불구르",
+        "broadBeans": "🫘 브로드빈 / 파바",
+        "blackEyedPeas": "👁️ 검은 눈 완두콩",
+        "seedsOilseeds": "🌻 씨앗과 유채종"
       }
     },
     "productDetail": {
@@ -5864,8 +5939,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messageLabel": "목표 사양 및 수량 *",
       "messagePlaceholder": "필요한 메트릭 톤, 선호 인코텀 (FOB/CIF), 목적지 항구, 포장 등 기재",
       "submitBtn": "문의 제출",
-      "successTitle": "메시지가 접수되었습니다",
-      "successDesc": "메시지가 저장되었습니다. 참조 번호로 문의 진행 상황을 확인할 수 있습니다."
+      "successTitle": "메시지 수신",
+      "successDesc": "귀하의 메시지가 저장되었습니다. 참조 번호를 이용해 문의를 진행하실 수 있습니다."
     },
     "quotePage": {
       "pageTitle": "B2B 견적 요청 (RFQ)",
@@ -5883,11 +5958,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "이 웹사이트에 표시된 모든 로고, 상표, 사진, 제품 사양 및 독점 데이터는 Nilasya Agro Foods 소유입니다.",
       "termsH2": "2. 상업 제안 및 견적",
       "termsP3": "이 웹사이트에 표시된 정보는 상업적 마케팅용입니다. 구속력 있는 계약은 서명된 판매 계약서와 프로포르마 인보이스를 통해 공식화됩니다.",
-      "privacyP1": "{companyLegalName}는 국제 파트너의 개인정보와 상업 정보를 보호하기 위해 최선을 다하고 있습니다.",
+      "privacyP1": "{companyLegalName} 국제 파트너들의 개인정보 보호와 상업 정보를 보호하는 데 전념하고 있습니다.",
       "privacyH1": "1. 데이터 수집 및 처리",
       "privacyP2": "RFQ과 문의 양식을 통해 제출된 정보는 정식 수출 견적 준비 및 합법적 국제 거래 수행 목적으로만 처리됩니다.",
       "privacyH2": "2. 데이터 처리 및 외부 서비스",
-      "privacyP3": "문의 데이터는 Firebase에 저장되며 이메일 알림을 위해 Resend에서 처리됩니다. WhatsApp 링크는 외부 서비스를 엽니다. 선택적 사용 분석은 동의 후에만 실행됩니다."
+      "privacyP3": "문의 데이터는 Firebase에 저장되며 이메일 알림을 위해 Resend로 처리됩니다. WhatsApp 링크는 외부 서비스를 엽니다. 선택적 사용 분석은 동의 후에만 실행됩니다."
     },
     "whatsapp": {
       "tooltip": "WhatsApp 트레이드 데스크 (+90 533 684 01 75)",
@@ -5925,7 +6000,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Kacang Lentil Hijau (Laird & Eston)",
         "whiteBeans": "⚪ Kacang Putih Dermason",
         "dryPeas": "🥣 Kacang Kering Kuning & Hijau",
-        "durumWheat": "🌾 Gandum Durum & Bulgur"
+        "durumWheat": "🌾 Gandum Durum & Bulgur",
+        "broadBeans": "🫘 Kacang Fava / Broad Beans",
+        "blackEyedPeas": "👁️ Kacang Mata Hitam",
+        "seedsOilseeds": "🌻 Biji-Bijian & Biji Minyak"
       }
     },
     "productDetail": {
@@ -6101,7 +6179,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "Tentukan ton metrik yang diperlukan, Incoterm pilihan (FOB/CIF), pelabuhan tujuan, pengemasan...",
       "submitBtn": "Ajukan Pertanyaan",
       "successTitle": "Pesan diterima",
-      "successDesc": "Pesan Anda telah disimpan. Anda dapat menanyakan status permintaan dengan nomor referensi."
+      "successDesc": "Pesan Anda telah disimpan. Anda dapat menindaklanjuti pertanyaan Anda menggunakan nomor referensi."
     },
     "quotePage": {
       "pageTitle": "B2B PERMINTAAN PENAWARAN (RFQ)",
@@ -6123,7 +6201,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyH1": "1. Pengumpulan & Pengolahan Data",
       "privacyP2": "Informasi yang dikirimkan melalui formulir RFQ dan kontak kami diproses semata-mata untuk menyiapkan penawaran ekspor formal dan melakukan perdagangan internasional yang sah.",
       "privacyH2": "2. Pemrosesan data dan layanan eksternal",
-      "privacyP3": "Data permintaan disimpan di Firebase dan diproses oleh Resend untuk pemberitahuan email. Tautan WhatsApp membuka layanan eksternal. Analisis penggunaan opsional hanya berjalan setelah persetujuan."
+      "privacyP3": "Data pertanyaan disimpan di Firebase dan diproses oleh Resend untuk notifikasi email. Tautan WhatsApp membuka layanan eksternal. Analisis penggunaan opsional hanya dilakukan setelah persetujuan."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Meja Perdagangan (+90 533 684 01 75)",
@@ -6161,7 +6239,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Kacang Dal Hijau (Laird & Eston)",
         "whiteBeans": "⚪ Kacang Putih Dermason",
         "dryPeas": "🥣 Kacang Kering Kuning & Hijau",
-        "durumWheat": "🌾 Gandum Durum & Bulgur"
+        "durumWheat": "🌾 Gandum Durum & Bulgur",
+        "broadBeans": "🫘 Kacang Lebar / Fava",
+        "blackEyedPeas": "👁️ Kacang Mata Hitam",
+        "seedsOilseeds": "🌻 Biji & Biji Minyak"
       }
     },
     "productDetail": {
@@ -6337,7 +6418,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "Nyatakan tan metrik yang diperlukan, Incoterm pilihan (FOB/CIF), pelabuhan destinasi, pembungkusan...",
       "submitBtn": "Hantar Pertanyaan",
       "successTitle": "Mesej diterima",
-      "successDesc": "Mesej anda telah disimpan. Anda boleh menyemak status permintaan dengan nombor rujukan."
+      "successDesc": "Mesej anda telah disimpan. Anda boleh menindaklanjuti pertanyaan anda menggunakan nombor rujukan."
     },
     "quotePage": {
       "pageTitle": "B2B PERMINTAAN SEBUT HARGA (RFQ)",
@@ -6358,8 +6439,8 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "privacyP1": "{companyLegalName} komited untuk melindungi privasi dan maklumat komersial rakan antarabangsa kami.",
       "privacyH1": "1. Pengumpulan & Pemprosesan Data",
       "privacyP2": "Maklumat yang dihantar melalui borang RFQ dan hubungan kami diproses semata-mata untuk menyediakan sebut harga eksport rasmi dan menjalankan perdagangan antarabangsa yang sah.",
-      "privacyH2": "2. Pemprosesan data dan perkhidmatan luar",
-      "privacyP3": "Data permintaan disimpan dalam Firebase dan diproses oleh Resend untuk pemberitahuan e-mel. Pautan WhatsApp membuka perkhidmatan luar. Analisis penggunaan pilihan hanya berjalan selepas persetujuan."
+      "privacyH2": "2. Pemprosesan data dan perkhidmatan luaran",
+      "privacyP3": "Data pertanyaan disimpan dalam Firebase dan diproses oleh Resend untuk pemberitahuan emel. WhatsApp pautan membuka perkhidmatan luaran. Analitik penggunaan pilihan hanya dijalankan selepas persetujuan."
     },
     "whatsapp": {
       "tooltip": "WhatsApp Meja Perdagangan (+90 533 684 01 75)",
@@ -6397,7 +6478,10 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
         "greenLentils": "🟢 Dengu za Kijani (Laird & Eston)",
         "whiteBeans": "⚪ Maharagwe Nyeupe ya Dermason",
         "dryPeas": "🥣 Mbaazi Kavu za Njano na Kijani",
-        "durumWheat": "🌾 Ngano ya Durum na Bulgur"
+        "durumWheat": "🌾 Ngano ya Durum na Bulgur",
+        "broadBeans": "🫘 Maharagwe mapana / Fava",
+        "blackEyedPeas": "👁️ Mbaazi zenye macho meusi",
+        "seedsOilseeds": "🌻 Mbegu na Mbegu za Mafuta"
       }
     },
     "productDetail": {
@@ -6487,7 +6571,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "material": "Vipimo vya Nyenzo:"
     },
     "exportPage": {
-      "tag": "KUUZA NJE KWA NCHI 50+",
+      "tag": "KUSAFIRISHA KWA NCHI 50+",
       "title": "Kunde duniani kote na maeneo ya kuuza nje ya kilimo",
       "subtitle": "Korido za usafirishaji wa moja kwa moja kutoka Bandari ya Kimataifa ya Mersin (MIP) hadi Mashariki ya Kati, Ulaya, Afrika Kaskazini, na Asia na kibali kamili cha phytosanitary.",
       "corridorDirTag": "UKANDA WA BIASHARA YA KIMATAIFA",
@@ -6573,7 +6657,7 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "messagePlaceholder": "Bainisha tani za metri zinazohitajika, Incoterm inayopendekezwa (FOB/CIF), bandari lengwa, ufungaji...",
       "submitBtn": "Peana Uchunguzi",
       "successTitle": "Ujumbe umepokelewa",
-      "successDesc": "Ujumbe wako umehifadhiwa. Unaweza kufuatilia ombi lako kwa kutumia namba ya kumbukumbu."
+      "successDesc": "Ujumbe wako umehifadhiwa. Unaweza kufuatilia uchunguzi wako kwa kutumia nambari ya kumbukumbu."
     },
     "quotePage": {
       "pageTitle": "B2B OMBI LA NUKUU (RFQ)",
@@ -6591,11 +6675,11 @@ export const pageTranslationsData: Record<string, LocalizedPageTranslations> = {
       "termsP2": "Nembo zote, alama za biashara, upigaji picha, vipimo vya bidhaa, na data ya umiliki inayoonyeshwa kwenye tovuti hii ni mali ya Nilasya Agro Foods.",
       "termsH2": "2. Ofa za Kibiashara na Nukuu",
       "termsP3": "Taarifa iliyoonyeshwa kwenye tovuti hii ni ya uuzaji wa kibiashara. Ahadi za kimkataba zinazofunga zinarasimishwa kupitia mikataba ya mauzo iliyosainiwa na ankara za proforma.",
-      "privacyP1": "{companyLegalName} imejitolea kulinda taarifa za faragha na kibiashara za washirika wetu wa kimataifa.",
+      "privacyP1": "{companyLegalName} imejitolea kulinda faragha na taarifa za kibiashara za washirika wetu wa kimataifa.",
       "privacyH1": "1. Ukusanyaji na Usindikaji wa Data",
       "privacyP2": "Taarifa zilizowasilishwa kupitia RFQ zetu na fomu za mawasiliano huchakatwa kwa ajili ya kuandaa nukuu rasmi za mauzo ya nje na kufanya biashara halali ya kimataifa.",
-      "privacyH2": "2. Uchakataji wa data na huduma za nje",
-      "privacyP3": "Data za maombi huhifadhiwa kwenye Firebase na kuchakatwa na Resend kwa arifa za barua pepe. Viungo vya WhatsApp hufungua huduma ya nje. Uchambuzi wa matumizi wa hiari hufanya kazi baada ya idhini pekee."
+      "privacyH2": "2. Usindikaji wa data na huduma za nje",
+      "privacyP3": "Data ya uchunguzi huhifadhiwa katika Firebase na kuchakatwa na Tuma tena kwa arifa za barua pepe. WhatsApp viungo hufungua huduma ya nje. Uchanganuzi wa matumizi ya hiari huendeshwa tu baada ya idhini."
     },
     "whatsapp": {
       "tooltip": "Dawati la Biashara WhatsApp (+90 533 684 01 75)",

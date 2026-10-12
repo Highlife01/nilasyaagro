@@ -9,7 +9,8 @@ export type AnalyticsParameters = {
 };
 const productIds = new Set([
   'chickpeas', 'red-lentils', 'green-lentils', 'white-beans', 'dry-peas',
-  'durum-wheat-bulgur', 'other-pulses-seeds', 'broad-beans', 'rice', 'pasta',
+  'durum-wheat-bulgur', 'other-pulses-seeds', 'broad-beans', 'rice', 'pasta', 'pasta-macaroni',
+  'sesame-seeds', 'nuts-dried-fruits',
 ]);
 const fields = new Set([
   'product', 'variety', 'caliber', 'quantity', 'unit', 'packaging', 'destinationCountry',

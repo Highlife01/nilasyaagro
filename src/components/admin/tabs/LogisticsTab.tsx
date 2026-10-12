@@ -4,17 +4,12 @@ import React, { useState } from 'react';
 import { 
   Ship, 
   Thermometer, 
-  MapPin, 
   CheckCircle2, 
   Anchor, 
-  ArrowRight, 
-  RefreshCw, 
   Plus, 
   Search, 
   X, 
   Trash2, 
-  Clock, 
-  Activity, 
   Compass 
 } from 'lucide-react';
 import { ExportContainer, saveContainer, updateContainerStatus, deleteContainer } from '@/lib/adminAuth';
@@ -33,7 +28,7 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
   // New container form
-  const [newContainerForm, setNewContainerForm] = useState({
+  const [newContainerForm, setNewContainerForm] = useState(() => ({
     containerNo: 'MSCU-',
     bookingRef: 'BKG-TR-2026-',
     carrier: 'MSC (Mediterranean Shipping Co.)',
@@ -50,7 +45,7 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
     departureDate: new Date().toISOString().split('T')[0],
     eta: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
     vesselName: 'MSC Gülsün / V.2610',
-  });
+  }));
 
   const inTransitCount = containers.filter((c) => c.status === 'in_transit').length;
   const customsCount = containers.filter((c) => c.status === 'customs').length;

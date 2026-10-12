@@ -97,27 +97,57 @@ export const productionRegionsData: ProductionRegion[] = [
       en: 'Aegean & Mediterranean Oilseeds and Specialty Pulses',
       tr: 'Ege ve Akdeniz Yağlı Tohum ve Özel Bakliyat Kuşağı',
     },
-    location: 'İzmir, Manisa, Denizli, Adana',
+    location: 'İzmir, Manisa, Denizli, Adana, Antalya, Mersin',
     climate: {
-      en: 'Warm Mediterranean microclimates providing optimal conditions for oilseeds and legume crops.',
-      tr: 'Yağlı tohumlar ve baklagiller için ideal sıcak Akdeniz ve Ege mikrokliması.',
+      en: 'Warm Mediterranean microclimates providing optimal conditions for sesame seeds, oilseeds and specialty legume crops.',
+      tr: 'Susam, yağlı tohumlar ve baklagiller için ideal sıcak Akdeniz ve Ege mikrokliması.',
     },
-    products: ['Broad Beans / Fava Beans', 'Black-Eyed Peas (Börülce)', 'Hulled White Sesame Seeds', 'Confectionery Sunflower Seeds'],
-    productsTr: ['Kuru Bakla (Fava)', 'Kuru Börülce', 'Soyulmuş Beyaz Susam', 'Çerezlik Ayçekirdeği'],
+    products: ['Natural & Hulled Sesame Seeds', 'Broad Beans / Fava Beans', 'Black-Eyed Peas (Börülce)', 'Confectionery Sunflower Seeds'],
+    productsTr: ['Doğal & Soyulmuş Beyaz Susam', 'Kuru Bakla (Fava)', 'Kuru Börülce', 'Çerezlik Ayçekirdeği'],
     peakMonths: {
-      en: 'May – October',
-      tr: 'Mayıs – Ekim',
+      en: 'May – November',
+      tr: 'Mayıs – Kasım',
     },
     advantages: {
       en: [
+        'High-oil content (>52%) premium white sesame seeds for tahini and gourmet bakery industries',
         'Large-seeded Turkish fava beans favored across Middle Eastern and Mediterranean markets',
-        'High-oil content (>50%) premium white sesame seeds for tahini and bakery industries',
         'Direct export proximity to both İzmir Alsancak Port and Mersin Port',
       ],
       tr: [
+        'Tahin ve gurme fırıncılık sanayisi için %52 üzeri yağ oranına sahip soyulmuş beyaz susam',
         'Orta Doğu ve Akdeniz pazarlarının aradığı iri daneli Türk kuru baklası',
-        'Tahin ve fırıncılık sanayisi için %50 üzeri yağ oranına sahip soyulmuş beyaz susam',
         'Hem İzmir Limanı hem Mersin Limanı üzerinden çift yönlü esnek ihracat imkanı',
+      ],
+    },
+  },
+  {
+    id: 'black_sea_anatolian_nuts_hub',
+    name: {
+      en: 'Black Sea & Anatolian Premium Nuts and Dried Fruits Basin',
+      tr: 'Karadeniz ve Anadolu Seçkin Kuruyemiş ve Kuru Meyve Havzası',
+    },
+    location: 'Giresun, Ordu, Gaziantep, Malatya, Aydın, Çorum',
+    climate: {
+      en: 'Rich biodiversity spanning the temperate humid Black Sea coast to the sun-drenched orchards of Southeastern and Aegean Anatolia.',
+      tr: 'Karadeniz’in ılıman yağışlı yamaçlarından Ege ve Güneydoğu’nun bol güneşli vadilerine uzanan zengin mikroklima.',
+    },
+    products: ['Turkish Hazelnuts (Giresun & Levant)', 'Antep Pistachios (Boz İç & In-Shell)', 'Light Walnut Halves', 'Sun-Dried Figs & Apricots', 'Çorum Leblebi'],
+    productsTr: ['Giresun & Levant İç Fındık', 'Gaziantep Antep Fıstığı (Boz İç & Kabuklu)', 'Açık Renk Kelebek Ceviz', 'Kuru İncir & Gün Kurusu Kayısı', 'Çorum Çifte Kavrulmuş Leblebi'],
+    peakMonths: {
+      en: 'August – November (12-Month Climate-Controlled Supply)',
+      tr: 'Ağustos – Kasım (12 Ay Soğuk Hava Depolarından Tedarik)',
+    },
+    advantages: {
+      en: [
+        'World-leading Turkish hazelnuts with superior natural oil profile, thin skin, and unmatched aroma for premium chocolatiers',
+        'Authentic Gaziantep emerald-green pistachios (Boz İç) and natural sun-dried apricots and figs',
+        'State-of-the-art optical laser sorting, vacuum and nitrogen-flushed protective packaging',
+      ],
+      tr: [
+        'Lüks çikolata ve gıda sanayisi için eşsiz aroması ve yüksek yağ oranıyla dünyanın 1 numaralı Türk fındığı',
+        'Orijinal Gaziantep zümrüt yeşili iç fıstığı, doğal Ege kuru inciri ve Malatya gün kurusu kayısısı',
+        'Lazer tarayıcılarla yabancı madde ayıklama, vakumlu ve azot gazlı koruyucu atmosferli ihracat ambalajı',
       ],
     },
   },

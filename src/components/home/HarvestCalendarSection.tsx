@@ -45,6 +45,10 @@ export const HarvestCalendarSection: React.FC<{ lang: Locale; onOpenQuoteWithPro
         return 'bg-teal-500/10 text-teal-800 border-teal-300';
       case 'pasta-macaroni':
         return 'bg-orange-500/10 text-orange-800 border-orange-300';
+      case 'sesame-seeds':
+        return 'bg-amber-500/20 text-amber-900 border-amber-300';
+      case 'nuts-dried-fruits':
+        return 'bg-amber-900/15 text-amber-950 border-amber-500';
       default:
         return 'bg-emerald-50 text-emerald-900 border-emerald-200';
     }

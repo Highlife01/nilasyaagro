@@ -22213,5 +22213,8096 @@ export const productsData: Product[] = [
       "100% semolina pasta manufacturer"
     ],
     "accentColor": "#D97706"
+  },
+  {
+    "id": "sesame-seeds",
+    "slug": {
+      "tr": "susam",
+      "en": "sesame-seeds",
+      "ar": "simsim",
+      "ru": "kunzhut",
+      "de": "sesamsaat",
+      "fr": "graines-de-sesame",
+      "es": "semillas-de-sesamo",
+      "it": "semi-di-sesamo",
+      "pt": "sementes-de-gergelim",
+      "nl": "sesamzaad",
+      "pl": "ziarno-sezamu",
+      "ro": "seminte-de-susan",
+      "bg": "susamovi-semena",
+      "el": "sousami",
+      "sr": "susam",
+      "uk": "kunzhut",
+      "ka": "sezami",
+      "az": "kuncut",
+      "uz": "kunjut",
+      "kk": "kunzhit",
+      "fa": "konjed",
+      "hi": "til-ke-beej",
+      "ur": "til-ke-beej",
+      "bn": "til-beej",
+      "zh-cn": "zhima",
+      "ja": "goma",
+      "ko": "chamkkae",
+      "id": "biji-wijen",
+      "ms": "biji-bijan",
+      "sw": "mbegu-za-ufuta"
+    },
+    "name": {
+      "tr": "Doğal, Soyulmuş ve Kavrulmuş Susam (Sortex %99.9)",
+      "en": "Turkish & Selected Sesame Seeds (Natural, Hulled & Roasted Sortex 99.9%)",
+      "ar": "بذور سمسم تركية مختارة (طبيعي، مقشور ومحمص سورتكس 99.9%)",
+      "ru": "Турецкий кунжут (натуральный, очищенный и жареный Sortex 99.9%)",
+      "de": "Türkische Sesamsaat (Natur, geschält & geröstet Sortex 99.9%)",
+      "fr": "Graines de Sésame Turques (Naturel, Décortiqué & Grillé Sortex 99.9%)",
+      "es": "Semillas de Sésamo Turcas (Natural, Pelado y Tostado Sortex 99.9%)",
+      "it": "Semi di Sesamo Turchi (Naturale, Decorticato e Tostato Sortex 99.9%)",
+      "pt": "Sementes de Gergelim Turcas (Natural, Descascado e Torrado Sortex 99.9%)",
+      "nl": "Turks Sesamzaad (Natuurlijk, Gepeld & Geroosterd Sortex 99.9%)",
+      "pl": "Turecki Sezam (Naturalny, Łuskany i Prażony Sortex 99.9%)",
+      "ro": "Semințe de Susan Turcesc (Natural, Decojit și Prăjit Sortex 99.9%)",
+      "bg": "Турски сусамови семена (натурални, белени и печени Sortex 99.9%)",
+      "el": "Τουρκικό Σουσάμι (Φυσικό, Αποφλοιωμένο & Καβουρδισμένο Sortex 99.9%)",
+      "sr": "Turski susam (prirodni, oljušteni i pečeni Sortex 99.9%)",
+      "uk": "Турецький кунжут (натуральний, очищений та обсмажений Sortex 99.9%)",
+      "ka": "თურქული სეზამის მარცვლები (ნატურალური, ქერქმომდინარე და მოხალული 99.9%)",
+      "az": "Türk Küncütü (Təbii, Qabıqsız və Qovrulmuş Sortex 99.9%)",
+      "uz": "Turk kunjut urug'lari (Tabiiy, tozalangan va qovurilgan Sortex 99.9%)",
+      "kk": "Түркиялық күнжіт тұқымдары (табиғи, тазартылған және қуырылған Sortex 99.9%)",
+      "fa": "کنجد درجه یک ترکیه (طبیعی، پوست کنده و بوداده سورتکس 99.9%)",
+      "hi": "तुर्की तिल के बीज (प्राकृतिक, छिलके वाले और भुने हुए सॉर्टेक्स 99.9%)",
+      "ur": "ترک تل کے بیج (قدرتی، چھلکے دار اور بھنے ہوئے سورٹیکس 99.9%)",
+      "bn": "তুর্কি তিল বীজ (প্রাকৃতিক, খোসা ছাড়ানো এবং রোস্টেড সর্টেক্স ৯৯.৯%)",
+      "zh-cn": "土耳其特级芝麻 (原味生芝麻、脱皮白芝麻与熟芝麻 Sortex 99.9%)",
+      "ja": "トルコ産厳選ごま (生白ごま、脱皮ごま、焙煎ごま Sortex 99.9%)",
+      "ko": "터키산 프리미엄 참깨 (자연산, 탈피 참깨 및 볶은 참깨 Sortex 99.9%)",
+      "id": "Biji Wijen Turki Pilihan (Alami, Kupas & Panggang Sortex 99.9%)",
+      "ms": "Biji Bijan Turki Pilihan (Semula Jadi, Dikupas & Dipanggang Sortex 99.9%)",
+      "sw": "Mbegu za Ufuta za Uturuki (Asili, Zilizomenywa na Kuchomwa Sortex 99.9%)"
+    },
+    "scientificName": "Sesamum indicum",
+    "category": {
+      "tr": "Susam ve Yağlı Tohumlar",
+      "en": "Sesame Seeds & Oilseeds",
+      "ar": "السمسم والبذور الزيتية",
+      "ru": "Кунжут и масличные семена",
+      "de": "Sesamsaat & Ölsaaten",
+      "fr": "Sésame & Graines Oléagineuses",
+      "es": "Sésamo y Semillas Oleaginosas",
+      "it": "Sesamo & Semi Oleosi",
+      "pt": "Gergelim e Sementes Oleaginosas",
+      "nl": "Sesamzaad & Oliezaden",
+      "pl": "Sezam i Nasiona Oleiste",
+      "ro": "Susan și Semințe Oleaginoase",
+      "bg": "Сусам и маслодайни семена",
+      "el": "Σουσάμι & Ελαιούχοι Σπόροι",
+      "sr": "Susam i uljarice",
+      "uk": "Кунжут та олійні культури",
+      "ka": "სეზამი და ზეთოვანი თესლები",
+      "az": "Küncüt və Yağlı Toxumlar",
+      "uz": "Kunjut va moyli urug'lar",
+      "kk": "Күнжіт және майлы тұқымдар",
+      "fa": "کنجد و دانه‌های روغنی",
+      "hi": "तिल और तिलहन",
+      "ur": "تل اور تیل کے بیج",
+      "bn": "তিল এবং তৈলবীজ",
+      "zh-cn": "芝麻与油料种子",
+      "ja": "胡麻・油糧種子",
+      "ko": "참깨 및 유지 종자",
+      "id": "Wijen & Biji Penghasil Minyak",
+      "ms": "Bijan & Biji Minyak",
+      "sw": "Ufuta na Mbegu za Mafuta"
+    },
+    "tagline": {
+      "tr": "Doğal Beyaz, Buharla Soyulmuş Tahinlik ve Fırıncılık Simit Susamı - Mersin Tesislerinden Konteyner Bazlı İhracat",
+      "en": "Natural White, Aqua-Hulled Tahini Grade & Golden Roasted Bakery Sesame - Bulk Ocean Container Export from Mersin",
+      "ar": "سمسم أبيض طبيعي، مقشور مائياً للطحينة ومحمص ذهبي للمخابز - تصدير بحري بالحاويات من مرسين",
+      "ru": "Натуральный белый, очищенный паром для тахини и золотистый жареный кунжут для выпечки - экспорт контейнерами из Мерсина",
+      "de": "Natürlicher weißer, aqua-geschälter Tahini-Sesam & goldener Röstsesam für Bäckereien - Container-Export ab Mersin",
+      "fr": "Sésame blanc naturel, décortiqué pour tahini et doré grillé pour boulangerie - Export conteneur depuis Mersin",
+      "es": "Sésamo blanco natural, pelado al vapor para tahini y tostado dorado para panadería - Exportación en contenedor desde Mersin",
+      "it": "Sesamo bianco naturale, decorticato per tahina e tostato dorato per panificazione - Esportazione container da Mersin",
+      "pt": "Gergelim branco natural, descascado para tahine e torrado dourado para panificação - Exportação em contêineres de Mersin",
+      "nl": "Natuurlijk wit, gestoomd gepeld tahin-sesamzaad & geroosterd bakkerssesam - Container export vanuit Mersin",
+      "pl": "Naturalny biały, łuskany parowo sezam do tahini i złocisty prażony dla piekarnictwa - Eksport kontenerowy z Mersin",
+      "ro": "Susan alb natural, decojit cu abur pentru tahini și prăjit auriu pentru brutărie - Export în containere din Mersin",
+      "bg": "Натурален бял, белен на пара за тахан и златист печен сусам за печива - Контейнерен износ от Мерсин",
+      "el": "Φυσικό λευκό, αποφλοιωμένο με ατμό για ταχίνι και χρυσαφένιο καβουρδισμένο σουσάμι - Εξαγωγή κοντέινερ από Μερσίνα",
+      "sr": "Prirodni beli, oljušteni za tahini i zlatno pečeni pekarski susam - Izvoz u kontejnerima iz Mersina",
+      "uk": "Натуральний білий, очищений для тахіні та золотистий обсмажений кунжут для пекарень - Експорт контейнерами з Мерсіна",
+      "ka": "ნატურალური თეთრი, ქერქმომდინარე ტაჰინისთვის და ოქროსფერი მოხალული სეზამი - კონტეინერული ექსპორტი მერსინიდან",
+      "az": "Təbii ağ, buxarla soyulmuş tahinlik və qızılı qovrulmuş çörəkçilik küncütü - Mersindən konteyner ixracı",
+      "uz": "Tabiiy oq, bug'da tozalangan taxinbop va qovurilgan oltin rangli nonvoychilik kunjut - Mersindan konteyner eksporti",
+      "kk": "Табиғи ақ, бумен тазартылған тахиниге арналған және қуырылған алтын күнжіт - Мерсиннен контейнерлік экспорт",
+      "fa": "کنجد سفید طبیعی، پوست کنده برای ارده و بوداده طلایی برای نانوایی - صادرات کانتینری از بندر مرسین",
+      "hi": "प्राकृतिक सफेद, ताहिनी ग्रेड और बेकरी के लिए भुने हुए सुनहरे तिल - मेर्सिन से कंटेनर निर्यात",
+      "ur": "قدرتی سفید، تہینی کے لیے چھلکا اترا اور بیکری کے لیے بھنا ہوا سنہری تل - مرسین سے بلک کنٹینر برآمد",
+      "bn": "প্রাকৃতিক সাদা, তাহিনির জন্য খোসামুক্ত এবং বেকারির জন্য সোনালী রোস্টেড তিল - মেরসিন থেকে কন্টেইনার রপ্তানি",
+      "zh-cn": "天然白芝麻、水洗脱皮芝麻酱级熟白芝麻与烘焙金黄芝麻 - 麦尔辛港整柜散装出口",
+      "ja": "天然白ごま、タヒニ用脱皮ごま、ベーカリー用焙煎金ごま - メルシン港からの海上コンテナ輸出",
+      "ko": "천연 백참깨, 타히니용 탈피 참깨 및 베이커리용 볶은 황금참깨 - 메르신발 해상 컨테이너 수출",
+      "id": "Wijen putih alami, kupas uap untuk tahini & wijen panggang emas untuk roti - Ekspor kontainer dari Mersin",
+      "ms": "Bijan putih semula jadi, dikupas untuk tahini & bijan panggang keemasan untuk bakeri - Eksport kontena dari Mersin",
+      "sw": "Ufuta mweupe wa asili, uliomenywa kwa tahini na uliokaushwa kwa mikate - Usafirishaji wa kontena kutoka Mersin"
+    },
+    "shortDescription": {
+      "tr": "Nilasya Agro Foods; tahin sanayisi, unlu mamuller, simit üreticileri ve küresel gıda ithalatçıları için Sortex optik temizlikte doğal beyaz susam, soyulmuş beyaz susam ve kavrulmuş susam tedarik etmektedir. Yüksek yağ oranı (%50-%54), düşük nem ve %99.98 saflık garantisi.",
+      "en": "Nilasya Agro Foods supplies premium natural white, aqua-hulled, and golden roasted sesame seeds for tahini processors, commercial bakeries, bagel makers, and food manufacturers worldwide. Offering 50%-54% high natural oil content, ultra-low moisture (<4.5%), and up to 99.98% Sortex optical purity.",
+      "ar": "توفر Nilasya Agro Foods بذور السمسم الأبيض الطبيعي والمقشور والمحمص الذهبي لمصانع الطحينة والمخابز التجارية حول العالم. نسبة زيت طبيعي عالية (50%-54%)، رطوبة منخفضة ونقاوة بصرية تصل إلى 99.98% سورتكس.",
+      "ru": "Nilasya Agro Foods поставляет натуральный белый, очищенный и жареный кунжут для производителей тахини, кондитерских и хлебопекарных предприятий по всему миру. Высокое содержание масла (50%-54%), чистота до 99.98% Sortex.",
+      "de": "Nilasya Agro Foods liefert natürlichen weißen, geschälten und gerösteten Sesam für Tahini-Hersteller, Großbäckereien und Snackproduzenten weltweit. Hoher Ölgehalt (50-54%), Reinheit bis 99.98% Sortex.",
+      "fr": "Nilasya Agro Foods fournit des graines de sésame blanches naturelles, décortiquées et grillées pour l'industrie du tahini et les boulangeries industrielles. Teneur en huile élevée (50-54%), pureté Sortex 99.98%.",
+      "es": "Nilasya Agro Foods suministra semillas de sésamo natural, pelado y tostado dorado para la industria del tahini y panaderías comerciales en todo el mundo. Alto contenido de aceite (50-54%) y pureza del 99.98% Sortex.",
+      "it": "Nilasya Agro Foods fornisce semi di sesamo naturali, decorticati e tostati per produttori di tahina e panifici industriali. Elevato contenuto di olio (50-54%) e purezza ottica fino al 99.98% Sortex.",
+      "pt": "A Nilasya Agro Foods fornece sementes de gergelim natural, descascado e torrado para processadores de tahine e padarias comerciais globais. Teor de óleo de 50%-54% e pureza de até 99.98% Sortex.",
+      "nl": "Nilasya Agro Foods levert natuurlijk wit, gepeld en geroosterd sesamzaad voor tahini-verwerkers en commerciële bakkerijen wereldwijd. Hoog oliegehalte (50%-54%) en 99.98% Sortex zuiverheid.",
+      "pl": "Nilasya Agro Foods dostarcza naturalny, łuskany i prażony sezam dla producentów tahini i piekarzy na całym świecie. Wysoka zawartość oleju (50-54%) i czystość do 99.98% Sortex.",
+      "ro": "Nilasya Agro Foods furnizează semințe de susan naturale, decojite și prăjite pentru producători de tahini și brutării comerciale globale. Conținut ridicat de ulei (50-54%) și puritate Sortex 99.98%.",
+      "bg": "Nilasya Agro Foods доставя натурален, белен и печен сусам за таханени фабрики и пекарни по целия свят. Високо съдържание на масло (50-54%) и чистота 99.98% Sortex.",
+      "el": "Η Nilasya Agro Foods προμηθεύει φυσικό, αποφλοιωμένο και καβουρδισμένο σουσάμι για βιομηχανίες ταχινιού και αρτοποιίας παγκοσμίως. Υψηλή περιεκτικότητα σε έλαιο (50-54%) και καθαρότητα 99.98% Sortex.",
+      "sr": "Nilasya Agro Foods snabdeva prirodnim, oljuštenim i pečenim susamom za tahini industriju i pekare širom sveta. Visok sadržaj ulja (50-54%) i čistoća do 99.98% Sortex.",
+      "uk": "Nilasya Agro Foods постачає натуральний, очищений та обсмажений кунжут для виробників тахіні та пекарень по всьому світу. Високий вміст олії (50-54%) і чистота 99.98% Sortex.",
+      "ka": "Nilasya Agro Foods აწვდის ნატურალურ, ქერქმომდინარე და მოხალულ სეზამს ტაჰინისა და პურ-ფუნთუშეულის მწარმოებლებს მსოფლიოში. მაღალი ცხიმიანობა (50-54%) და 99.98% სისუფთავე.",
+      "az": "Nilasya Agro Foods tahin sənayesi və qlobal unlu məmulat istehsalçıları üçün təbii, soyulmuş və qovrulmuş küncüt tədarük edir. Yüksək yağ tərkibi (50%-54%) və 99.98% Sortex saflığı.",
+      "uz": "Nilasya Agro Foods jahon bo'ylab taxin ishlab chiqaruvchilar va nonvoyxonalar uchun tabiiy, tozalangan va qovurilgan kunjut yetkazib beradi. Yuqori moy miqdori (50-54%) va 99.98% soflik.",
+      "kk": "Nilasya Agro Foods тахини және наубайхана өндірушілеріне табиғи, қабығы аршылған және қуырылған күнжіт жеткізеді. Майлылығы жоғары (50-54%) және 99.98% Sortex тазалығы.",
+      "fa": "نیلاسیا آگرو فودز کنجد سفید طبیعی، پوست کنده و بوداده ممتاز را برای کارخانجات ارده سازی و صنایع نان و شیرینی صادر می کند. روغن دهی بالا (50-54%) و خلوص 99.98% سورتکس.",
+      "hi": "Nilasya Agro Foods दुनिया भर में ताहिनी निर्माताओं और वाणिज्यिक बेकरियों के लिए प्राकृतिक, छिलके वाले और भुने हुए तिल की आपूर्ति करता है। 50%-54% प्राकृतिक तेल सामग्री और 99.98% सॉर्टेक्स शुद्धता।",
+      "ur": "Nilasya Agro Foods دنیا بھر میں تہینی پروسیسرز اور بیکریوں کے لیے قدرتی سفید، چھلکا اترا اور بھنا ہوا تل فراہم کرتا ہے۔ 50%-54% تیل کا تناسب اور 99.98% تک پاکیزگی۔",
+      "bn": "Nilasya Agro Foods বিশ্বব্যাপী তাহিনি প্রস্তুতকারক এবং বাণিজ্যিক বেকারির জন্য প্রাকৃতিক, খোসামুক্ত এবং রোস্টেড তিল সরবরাহ করে। ৫০%-৫৪% তেল এবং ৯৯.৯৮% সর্টেক্স বিশুদ্ধতা।",
+      "zh-cn": "Nilasya Agro Foods 为全球麻酱生产商、大型烘焙连锁及食品工厂供应原味白芝麻、脱皮芝麻及烤熟芝麻。含油量高达50%-54%，含水量低于4.5%，Sortex纯度高达99.98%。",
+      "ja": "Nilasya Agro Foodsはタヒニ製造業者、業務用ベーカリー、食品加工メーカー向けに、天然白ごま、脱皮ごま、焙煎ごまを世界中に供給しています。油分50-54%、純度99.98% Sortex。",
+      "ko": "Nilasya Agro Foods는 전 세계 타히니 가공업체, 제과제빵 공장에 천연 백참깨, 수증기 탈피 참깨 및 볶은 참깨를 공급합니다. 50%-54% 고유분 및 99.98% Sortex 순도 보증.",
+      "id": "Nilasya Agro Foods memasok biji wijen putih alami, kupas uap, dan panggang untuk industri pasta wijen (tahini) dan toko roti komersial. Kandungan minyak 50%-54% dan kemurnian 99.98% Sortex.",
+      "ms": "Nilasya Agro Foods membekalkan bijan putih semula jadi, dikupas dan dipanggang untuk industri tahini dan bakeri komersial di seluruh dunia. Kandungan minyak 50%-54% dan ketulenan 99.98% Sortex.",
+      "sw": "Nilasya Agro Foods inasambaza ufuta mweupe wa asili, uliomenywa na kuchomwa kwa viwanda vya tahini na mikate duniani. Mafuta 50%-54% na usafi wa 99.98% Sortex."
+    },
+    "fullDescription": {
+      "tr": "Akdeniz ve Ege'nin güneşli ikliminde yetiştirilen ve Mersin liman terminallerimizde en modern Bühler Sortex optik renk ayırıcılar, gravite masaları ve buharlı kabuk soyma ünitelerinden geçen susamlarımız; unlu mamuller, fırıncılık, bisküvi, helva ve tahin endüstrisinin en yüksek kalite standartlarını karşılar. 25 kg çok katlı kraft torba, 50 kg PP çuval ve 1.000 kg Big Bag ambalajlarda 20ft deniz konteynerleriyle (19-21 MT) Mersin Uluslararası Limanı'ndan (MIP) sevk edilmektedir.",
+      "en": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP). We utilize multi-pass optical color sorters, density gravity tables, and chemical-free steam dehulling systems to deliver uniform creamy kernels with rich nutty sweetness. Ideal for premium tahini, artisanal bagels, confectioneries, and industrial burger buns. Shipped globally in 25kg multi-ply kraft bags with PE liner, 50kg PP bags, or 1,000kg FIBC jumbo bags via Mersin International Port.",
+      "ar": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "ru": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "de": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "fr": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "es": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "it": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "pt": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "nl": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "pl": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "ro": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "bg": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "el": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "sr": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "uk": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "ka": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "az": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "uz": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "kk": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "fa": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "hi": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "ur": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "bn": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "zh-cn": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "ja": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "ko": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "id": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "ms": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP).",
+      "sw": "Cultivated in the sun-drenched coastal basins of the Mediterranean and processed in our state-of-the-art Mersin cleaning and dehulling facilities, Nilasya sesame seeds meet the most rigorous food safety and purity standards (ISO 22000, HACCP)."
+    },
+    "heroImage": "/images/products/turkish-sesame-seeds-nilasya.jpg",
+    "galleryImages": [
+      "/images/products/turkish-sesame-seeds-nilasya.jpg",
+      "/images/products/turkish-roasted-sesame-nilasya.jpg",
+      "/images/products/pulses-export-jumbo-bags-nilasya.jpg",
+      "/images/process/pulses-processing-factory-nilasya.jpg"
+    ],
+    "origins": {
+      "en": [
+        "Mediterranean Coast (Antalya & Adana)",
+        "Aegean Agricultural Basin",
+        "Mersin Processing Terminal"
+      ],
+      "tr": [
+        "Akdeniz Kuşağı (Antalya & Adana)",
+        "Ege Tarım Havzası",
+        "Mersin İşleme Terminali"
+      ],
+      "ar": [
+        "الساحل المتوسطي (أنطاليا وأضنة)",
+        "حوض الزراعة في إيجة",
+        "محطة تجهيز مرسين"
+      ],
+      "ru": [
+        "Средиземное побережье (Анталия и Адана)",
+        "Эгейский сельскохозяйственный бассейн",
+        "Терминал обработки Мерсина"
+      ],
+      "de": [
+        "Mittelmeerküste (Antalya & Adana)",
+        "Ägäisches Agrarbecken",
+        "Mersin Verarbeitungsterminal"
+      ],
+      "fr": [
+        "Côte Méditerranéenne (Antalya & Adana)",
+        "Bassin Agricole Égéen",
+        "Terminal de Transformation de Mersin"
+      ],
+      "es": [
+        "Costa Mediterránea (Antalya y Adana)",
+        "Cuenca agrícola del Egeo",
+        "Terminal de procesamiento Mersin"
+      ],
+      "it": [
+        "Costa Mediterranea (Antalya & Adana)",
+        "Bacino Agricolo Egeo",
+        "Terminale di Lavorazione di Mersin"
+      ],
+      "pt": [
+        "Costa do Mediterrâneo (Antália e Adana)",
+        "Bacia Agrícola do Egeu",
+        "Terminal de Processamento de Mersin"
+      ],
+      "nl": [
+        "Middellandse Zeekust (Antalya & Adana)",
+        "Egeïsche Landbouwbekken",
+        "Mersin Verwerkingsterminal"
+      ],
+      "pl": [
+        "Wybrzeże Morza Śródziemnego (Antalya i Adana)",
+        "Egejska Basen Rolniczy",
+        "Terminal przetwarzający Mersin"
+      ],
+      "ro": [
+        "Coasta Mediteraneană (Antalya & Adana)",
+        "Bazinul Agricol Egee",
+        "Terminal de procesare Mersin"
+      ],
+      "bg": [
+        "Средиземноморско крайбрежие (Анталия и Адана)",
+        "Егейски земеделски басейн",
+        "Терминал за обработка на Мерсин"
+      ],
+      "el": [
+        "Ακτές της Μεσογείου (Αττάλεια & Άδανα)",
+        "Λεκάνη Γεωργίας Αιγαίου",
+        "Τερματικό επεξεργασίας Μερσίνας"
+      ],
+      "sr": [
+        "Mediteranska obala (Antalija i Adana)",
+        "Egejsko Poljoprivredni basen",
+        "Mersin Obrada terminal"
+      ],
+      "uk": [
+        "Середземноморське узбережжя (Анталія та Адана)",
+        "Егейський сільськогосподарський басейн",
+        "Термінал обробки Мерсіна"
+      ],
+      "ka": [
+        "ხმელთაშუა ზღვის სანაპირო (ანტალია & ადანა)",
+        "ეგეოსის სასოფლო-სამეურნეო აუზი",
+        "მერსინის გადამუშავების ტერმინალი"
+      ],
+      "az": [
+        "Aralıq dənizi sahili (Antalya və Adana)",
+        "Egey Kənd Təsərrüfatı Hövzəsi",
+        "Mersin Emal Terminalı"
+      ],
+      "uz": [
+        "O‘rta yer dengizi qirg‘oqlari (Antalya va Adana)",
+        "Egey qishloq xo‘jaligi havzasi",
+        "Mersin Qayta ishlash terminali"
+      ],
+      "kk": [
+        "Жерорта теңізі жағалауы (Анталия және Адана)",
+        "Эгей ауыл шаруашылығы алабы",
+        "Мерсин өңдеу терминалы"
+      ],
+      "fa": [
+        "ساحل مدیترانه (آنتالیا و آدانا)",
+        "حوضه کشاورزی اژه",
+        "ترمینال پردازش مرسین"
+      ],
+      "hi": [
+        "भूमध्यसागरीय तट (अंताल्या और अदाना)",
+        "एजियन कृषि बेसिन",
+        "मेर्सिन प्रोसेसिंग टर्मिनल"
+      ],
+      "ur": [
+        "بحیرہ روم کا ساحل (انطالیہ اور آدانا)",
+        "ایجیئن زرعی حوض",
+        "مرسن پروسیسنگ ٹرمینل"
+      ],
+      "bn": [
+        "ভূমধ্যসাগরীয় উপকূল (আন্টালিয়া এবং আদানা)",
+        "এজিয়ান কৃষি অববাহিকা",
+        "মার্সিন প্রসেসিং টার্মিনাল"
+      ],
+      "zh-cn": [
+        "地中海沿岸（安塔利亚 & 阿达纳）",
+        "爱琴农业流域",
+        "梅尔辛加工终端"
+      ],
+      "ja": [
+        "地中海沿岸(アンタルヤおよびアダナ)",
+        "エーゲ海農業盆地",
+        "メルシン処理ターミナル"
+      ],
+      "ko": [
+        "지중해 연안 (안탈리아 및 아다나)",
+        "에게 해 농업 분지",
+        "메르신 처리 터미널"
+      ],
+      "id": [
+        "Pantai Mediterania (Antalya & Adana)",
+        "Cekungan Pertanian Aegean",
+        "Terminal Pengolahan Mersin"
+      ],
+      "ms": [
+        "Pantai Mediterranean (Antalya & Adana)",
+        "Lembangan Pertanian Aegean",
+        "Terminal Pemprosesan Mersin"
+      ],
+      "sw": [
+        "Pwani ya Mediterania (Antalya na Adana)",
+        "Bonde la Kilimo la Aegean",
+        "Kituo cha Usindikaji cha Mersin"
+      ]
+    },
+    "seasonMonths": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "seasonMonthsText": {
+      "tr": "Eylül – Kasım (Silolardan Yıl Boyu Kesintisiz Tedarik)",
+      "en": "September – November (Year-Round Silo Supply)",
+      "ar": "سبتمبر – نوفمبر (توريد صوامع على مدار السنة)",
+      "ru": "сентябрь – ноябрь (круглогодичное снабжение силосом)",
+      "de": "September – November (ganzjährige Siloversorgung)",
+      "fr": "Septembre – Novembre (Approvisionnement en silo toute l'année)",
+      "es": "Septiembre – Noviembre (Suministro de Silo durante todo el año)",
+      "it": "Settembre – Novembre (Rifornimento silo durante tutto l'anno)",
+      "pt": "Setembro – Novembro (Fornecimento de Silo o Ano Todo)",
+      "nl": "September – November (Het hele jaar door silo-aanvoer)",
+      "pl": "wrzesień – listopad (całoroczne zaopatrzenie w silosy)",
+      "ro": "Septembrie – Noiembrie (Aprovizionare cu silozuri pe tot parcursul anului)",
+      "bg": "септември – ноември (целогодишно снабдяване на силози)",
+      "el": "Σεπτέμβριος – Νοέμβριος (Προμήθεια σιλό όλο το χρόνο)",
+      "sr": "Septembar – novembar (snabdevanje silosa tokom cele godine)",
+      "uk": "вересень – листопад (цілорічне постачання силосів)",
+      "ka": "სექტემბერი – ნოემბერი (წელიწადის განმავლობაში სილოს მომარაგება)",
+      "az": "Sentyabr – Noyabr (İlboyu Silo Təchizatı)",
+      "uz": "Sentyabr – Noyabr (Yil bo‘yi silo ta’minoti)",
+      "kk": "қыркүйек – қараша (жыл бойы силосқа жеткізу)",
+      "fa": "سپتامبر – نوامبر (تأمین سیلو در تمام طول سال)",
+      "hi": "सितंबर - नवंबर (साल भर साइलो आपूर्ति)",
+      "ur": "ستمبر – نومبر (سال بھر سائلو سپلائی)",
+      "bn": "সেপ্টেম্বর - নভেম্বর (বছরব্যাপী সাইলো সরবরাহ)",
+      "zh-cn": "九月 – 十一月（全年筒仓供应）",
+      "ja": "9月〜11月(通年サイロ供給)",
+      "ko": "9월 – 11월 (연중 사일로 공급)",
+      "id": "September – November (Pasokan Silo Sepanjang Tahun)",
+      "ms": "September – November (bekalan silo sepanjang tahun)",
+      "sw": "Septemba - Novemba (Ugavi wa Silo wa Mwaka Mzima)"
+    },
+    "specifications": {
+      "variety": "Natural White, Hulled Aqua, Golden Roasted & Black",
+      "origin": "Türkiye (Mediterranean / Aegean) & Mersin Processing Terminal",
+      "originTr": "Türkiye (Akdeniz / Ege) & Mersin İşleme Terminali",
+      "size": "2.5mm - 3.2mm Uniform Sortex",
+      "caliber": "Grade 1 Sortex 99.9%",
+      "color": "Natural Pearly White, Golden Roasted, Deep Black",
+      "colorTr": "Doğal Sedef Beyazı, Altın Kavrulmuş, Parlak Siyah",
+      "moisture": "Max 4.5% - 5.0%",
+      "purity": "Min 99.9% - 99.98%",
+      "broken": "Max 0.5%",
+      "foreignMatter": "Max 0.02%",
+      "damaged": "Max 0.3%",
+      "protein": "18% - 22% (Oil: 50% - 54%)",
+      "class": "Extra Class Food Grade",
+      "shelfLife": "24 Months in cool dry climate storage",
+      "shelfLifeTr": "24 Ay serin ve nemsiz depolamada",
+      "storageTemp": "15°C - 20°C",
+      "optimalHumidity": "< 55% RH",
+      "localized": {
+        "ar": {
+          "variety": "أبيض طبيعي، مقشور مائي، محمص ذهبي وأسود",
+          "origin": "Türkiye (البحر الأبيض المتوسط / إيجة) ومحطة تجهيز مرسين",
+          "color": "أبيض لؤلؤي طبيعي، محمص ذهبي، أسود عميق",
+          "shelfLife": "24 شهور في تخزين بارد وجاف",
+          "class": "درجة غذاء فئة ممتازة",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% نسبة الرطوبة"
+        },
+        "ru": {
+          "variety": "Натуральный белый, Хуллд Аква, Золотистый жареный и Чёрный",
+          "origin": "Türkiye (Средиземноморье / Эгейское море) и терминал переработки Мерсина",
+          "color": "Натуральный жемчужно-белый, золотистый жареный, глубокий чёрный",
+          "shelfLife": "24 Месяцы хранения в прохладном сухом климате",
+          "class": "Пищевой класс дополнительного класса",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "de": {
+          "variety": "Natürliches Weiß, Schäl Aqua, Golden Roasted & Schwarz",
+          "origin": "Türkiye (Mittelmier / Ägäis) & Mersin-Verarbeitungsterminal",
+          "color": "Natürlich perlmuttweiß, goldgeröstet, tiefschwarz",
+          "shelfLife": "24 Monate in kühlem, trockenem Klima Lagerung",
+          "class": "Extra Klasse Lebensmittelqualität",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "fr": {
+          "variety": "Blanc naturel, dépouillé aqua, doré rôti & noir",
+          "origin": "Türkiye (Méditerranée / Égée) & Terminal de Transformation de Mersin",
+          "color": "Blanc perlé naturel, doré rôti, noir profond",
+          "shelfLife": "24 mois en stockage en climat frais et sec",
+          "class": "Classe Extra Qualité Alimentaire",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% HR"
+        },
+        "es": {
+          "variety": "Blanco natural, Aqua con cáscar, Dorado Tostado y Negro",
+          "origin": "Türkiye (Mediterráneo / Egeo) y Terminal de Procesamiento de Mersin",
+          "color": "Blanco perlado natural, dorado tostado, negro profundo",
+          "shelfLife": "24 Meses en almacenamiento en clima fresco y seco",
+          "class": "Clase Extra Grado Alimentario",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "it": {
+          "variety": "Bianco naturale, sbucciato ad acqua, tostato dorato e nero",
+          "origin": "Türkiye (Mediterraneo / Egeo) e terminale di lavorazione di Mersin",
+          "color": "Bianco perla naturale, tostato dorato, nero intenso",
+          "shelfLife": "24 mesi in deposito a clima fresco e asciutto",
+          "class": "Extra Classe alimentare",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% UR"
+        },
+        "pt": {
+          "variety": "Branco Natural, Descascado Aqua, Dourado Torrado e Preto",
+          "origin": "Türkiye (Mediterrâneo / Egeu) & Terminal de Processamento de Mersin",
+          "color": "Branco Pérola Natural, Dourado Torrado, Preto Intenso",
+          "shelfLife": "24 Meses em armazenamento seco e fresco",
+          "class": "Grau Alimentício Extra",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% UR"
+        },
+        "nl": {
+          "variety": "Natuurlijk wit, Geschaald Aqua, Goud geroosterd & Zwart",
+          "origin": "Türkiye (Middellandse Zee / Egeïsche Zee) & Mersin Verwerkingsterminal",
+          "color": "Natuurlijk parelwit, Goud geroosterd, Diep zwart",
+          "shelfLife": "24 maanden in koele droge klimaatopslag",
+          "class": "Extra klasse voedselkwaliteit",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RV"
+        },
+        "pl": {
+          "variety": "Naturalna biała, łuskana akwamaryzna, złocista prażona i",
+          "origin": "Türkiye (Morze Śródziemne / Morze Egejskie) i terminal przetwórstwa Mersin",
+          "color": "Naturalnie perłowobiały, złocisty prażony, głęboko",
+          "shelfLife": "24 Miesiące w chłodnym, suchym klimacie",
+          "class": "Klasa Extra Class Jedzenie",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "ro": {
+          "variety": "Alb natural, Aqua cu coajă, Golden Roasted & Negru",
+          "origin": "Türkiye (Marea Mediteraneană / Egee) & Terminalul de Procesare Mersin",
+          "color": "Alb natural perlat, prăjit auriu, negru intens",
+          "shelfLife": "24 Luni în depozitare în climat rece și uscat",
+          "class": "Clasă suplimentară de grad alimentar",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "bg": {
+          "variety": "Натурално бяло, Hulled Aqua, златисто печено и черно",
+          "origin": "Türkiye (Средиземноморско / Егейско море) и терминал за обработка на Мерсин",
+          "color": "Натурално перлено бяло, златисто печено, дълбоко черно",
+          "shelfLife": "24 Месеци в съхранение при хладен и сух климат",
+          "class": "Допълнителен клас хранителен клас",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "el": {
+          "variety": "Φυσικό Λευκό, Αποφλοιωμένο Aqua, Χρυσό Ψητό & Μαύρο",
+          "origin": "Türkiye (Μεσόγειος / Αιγαίο) & Τερματικός Σταθμός Επεξεργασίας Μερσίνας",
+          "color": "Φυσικό Μαργαριταρένιο Λευκό, Χρυσό Ψητό, Βαθύ Μαύρο",
+          "shelfLife": "24 Μήνες σε αποθήκευση σε δροσερό ξηρό κλίμα",
+          "class": "Βαθμός τροφίμων Extra Class",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "sr": {
+          "variety": "Prirodna bela, oljuštena Akua, zlatno pečena i crna",
+          "origin": "Türkiye (Mediteran / Egejsko more) & Mersin Obrada terminal",
+          "color": "Prirodna biserno bela, zlatno pečena, duboko crna",
+          "shelfLife": "24 Meseci u hladnom i suvom klimatskom skladištenju",
+          "class": "Ekstra klasa hrane razreda",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "uk": {
+          "variety": "Натуральний білий, масивний аква, золотистий обсмажений і чорний",
+          "origin": "Türkiye (Середземноморське / Егейське море) та Мерсінський переробний термінал",
+          "color": "Натуральний перлинно-білий, золотистий обсмажений, глибокий чорний",
+          "shelfLife": "24 Місяці зберігання в прохолодному сухому кліматі",
+          "class": "Додатковий клас харчування",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "ka": {
+          "variety": "ბუნებრივი თეთრი, აკვა-მხრებიანი, ოქროსფერი შეწურული და შავი",
+          "origin": "Türkiye (მედიტერანული / ეგეისური) და მერსინის გადამუშავების ტერმინალი",
+          "color": "ბუნებრივი ლაქლაქა თეთრი, ოქროსფერი შეწურული, ღრმა შავი",
+          "shelfLife": "24 თვეებზე სუფთა, მშრალ კლიმატში შენახვა",
+          "class": "დამატებითი კლასის სასურსათო ხარისხი",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% სველიანიობა"
+        },
+        "az": {
+          "variety": "Təbii Ağ, Qabıqlı Aqua, Qızılı Qovrulmuş və Qara",
+          "origin": "Türkiye (Aralıq dənizi / Egey) və Mersin Emal Terminalı",
+          "color": "Təbii inci ağ, qızılı qovrulmuş, dərin qara",
+          "shelfLife": "24 Aylar sərin və quru iqlimdə saxlanılır",
+          "class": "Əlavə Sinif Yemək Dərəcəsi",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "uz": {
+          "variety": "Tabiiy Oq, Hulled Aqua, Oltin Qovurilgan & Qora",
+          "origin": "Türkiye (O‘rta Yer / Egey) va Mersin Ishlab chiqarish Terminali",
+          "color": "Tabiiy Marjon Oq, Oltin Qovurilgan, Chuqur Qora",
+          "shelfLife": "Sovuq quruq iqlim sharoitida 24 oy",
+          "class": "Qo‘shimcha sinf oziq-ovqat darajasi",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "kk": {
+          "variety": "Табиғи Ақ, Hulled Aqua, Алтын Қуырылған және Қара",
+          "origin": "Türkiye (Жерорта теңізі / Эгей теңізі) және Мерсин өңдеу терминалы",
+          "color": "Табиғи маржан ақ, алтын түсті, терең қара",
+          "shelfLife": "24 Салқын құрғақ климатты сақтау айлары",
+          "class": "Қосымша сынып тағам",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "fa": {
+          "variety": "سفید طبیعی، آبی پوست دار، طلایی برشته و مشکی",
+          "origin": "ترمینال پردازش Türkiye (مدیترانه / اژه) و مرسین",
+          "color": "سفید مرواریدی طبیعی، طلایی برشته شده، سیاه تیره",
+          "shelfLife": "24 ماه ها در ذخیره سازی آب و هوای خنک و خشک",
+          "class": "درجه غذای فوق کلاس",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "hi": {
+          "variety": "नेचुरल व्हाइट, हुल्ड एक्वा, गोल्डन रोस्टेड और ब्लैक",
+          "origin": "Türkiye (भूमध्यसागरीय/एजियन) और मर्सिन प्रसंस्करण टर्मिनल",
+          "color": "प्राकृतिक मोती सफेद, गोल्डन भुना हुआ, गहरा काला",
+          "shelfLife": "24 ठंडी शुष्क जलवायु भंडारण में महीने",
+          "class": "अतिरिक्त वर्ग खाद्य ग्रेड",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% आरएच"
+        },
+        "ur": {
+          "variety": "قدرتی سفید، ہلڈ ایکوا، گولڈن روسٹڈ اور بلیک",
+          "origin": "Türkiye (بحیرہ روم / ایجیئن) اور مرسن پروسیسنگ ٹرمینل",
+          "color": "قدرتی موتی سفید، سنہری بھنا ہوا، گہرا سیاہ",
+          "shelfLife": "24 ٹھنڈی خشک آب و ہوا کی ذخیرہ اندوزی میں مہینے",
+          "class": "ایکسٹرا کلاس فوڈ گریڈ",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "bn": {
+          "variety": "প্রাকৃতিক সাদা, হালড অ্যাকোয়া, সোনালী রোস্টেড এবং কালো",
+          "origin": "Türkiye (ভূমধ্যসাগর / এজিয়ান) এবং মার্সিন প্রসেসিং টার্মিনাল",
+          "color": "প্রাকৃতিক মুক্তোর সাদা, সোনালী ভাজা, গভীর কালো",
+          "shelfLife": "শীতল শুষ্ক জলবায়ু স্টোরেজে 24 মাস",
+          "class": "অতিরিক্ত শ্রেণীর খাদ্য গ্রেড",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% আরএইচ"
+        },
+        "zh-cn": {
+          "variety": "天然白、剥壳水剥、金色烘焙 & 黑色",
+          "origin": "Türkiye（地中海 / 爱琴） & 梅尔辛加工终端",
+          "color": "天然珍珠白、金色烘焙、深黑",
+          "shelfLife": "在清凉干燥环境中储存 24 个月",
+          "class": "特级食品级",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% 相对湿度"
+        },
+        "ja": {
+          "variety": "ナチュラルホワイト、ハルドアクア、ゴールデンロースト&ブラック",
+          "origin": "Türkiye(地中海/エーゲ海)およびメルシン加工ターミナル",
+          "color": "ナチュラルパーリーホワイト、ゴールデンロースト、ディープブラック",
+          "shelfLife": "涼しく乾燥した気候の貯蔵24ヶ月",
+          "class": "エクストラクラス フードグレード",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "ko": {
+          "variety": "내추럴 화이트, 선체 아쿠아, 골든 로스트 & 블랙",
+          "origin": "Türkiye (지중해 / 에게해) 및 메르신 가공 터미널",
+          "color": "자연스러운 진주빛, 황금빛 구운 진정색, 깊은 검정",
+          "shelfLife": "24 건조한 기후 보관 기간",
+          "class": "추가 반 음식 등급",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% 편"
+        },
+        "id": {
+          "variety": "Putih Alami, Aqua-Hulled, Panggang Emas & Hitam",
+          "origin": "Türkiye (Mediterania / Aegean) & Terminal Pengolahan Mersin",
+          "color": "Putih Mutiara Alami, Panggang Emas, Hitam Gelap",
+          "shelfLife": "24 Bulan dalam penyimpanan iklim sejuk dan kering",
+          "class": "Kelas Ekstra Grade Makanan",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "ms": {
+          "variety": "Putih Semula Jadi, Aqua Berkulit, Panggang Emas & Hitam",
+          "origin": "Türkiye (Mediterranean / Aegean) & Terminal Pemprosesan Mersin",
+          "color": "Putih mutiara semula jadi, panggang keemasan, hitam pekat",
+          "shelfLife": "24 Bulan dalam penyimpanan iklim sejuk dan kering",
+          "class": "Gred Makanan Kelas Tambahan",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        },
+        "sw": {
+          "variety": "Nyeupe ya Asili, Aqua Iliyopigwa, Dhahabu Iliyochomwa na Nyeusi",
+          "origin": "Türkiye (Mediterranean / Aegean) & Kituo cha Usindikaji cha Mersin",
+          "color": "Nyeupe ya Asili ya Lulu, Iliyochomwa Dhahabu, Nyeusi Nyeusi",
+          "shelfLife": "24 Miezi katika uhifadhi wa hali ya hewa kavu",
+          "class": "Daraja la Chakula cha Darasa la Ziada",
+          "storageTemp": "15°C - 20°C",
+          "optimalHumidity": "< 55% RH"
+        }
+      }
+    },
+    "varieties": [
+      {
+        "id": "natural-white-sesame",
+        "slug": "natural-white-sesame",
+        "name": "Natural White Sesame Seeds (Sortex 99.9%)",
+        "image": "/images/products/turkish-sesame-seeds-nilasya.jpg",
+        "nameTr": "Doğal Beyaz Susam (Sortex %99.9)",
+        "description": "Unpeeled natural white sesame seeds cleaned via triple-pass optical sorters. Preserves natural nutrients, minerals, and rich crunch for bakery toppings and cold-pressed oil extraction.",
+        "descriptionTr": "Üç kademeli optik ayırıcılardan geçirilmiş kabuklu doğal beyaz susam. Fırıncılık üst süslemeleri ve soğuk sıkım susam yağı üretimi için zengin mineral ve aromaya sahiptir.",
+        "color": "Natural Creamy White",
+        "colorTr": "Doğal Krem Beyazı",
+        "size": "2.5mm - 3.2mm",
+        "caliber": "Standard Natural Grain",
+        "moisture": "< 5.0%",
+        "purity": "99.9%",
+        "harvestMonths": "September – November",
+        "harvestMonthsTr": "Eylül – Kasım",
+        "storage": "Cool, dry ventilated warehouse (<20°C, <55% RH)",
+        "storageTr": "Serin, kuru ve havalandırmalı depo (<20°C, <%55 Nem)",
+        "shelfLife": "24 Months",
+        "shelfLifeTr": "24 Ay",
+        "packagingTypes": [
+          "25kg Multi-wall Kraft Bags",
+          "50kg PP Woven Bags",
+          "1000kg Big Bags"
+        ],
+        "packagingTypesTr": [
+          "25kg Çok Katlı Kraft Torba",
+          "50kg PP Çuval",
+          "1000kg Big Bag"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "25kg حقائب كرافت متعددة الجدران",
+              "50kg PP الحقائب المنسوجة",
+              "1000kg الحقائب الكبيرة"
+            ],
+            "name": "بذور السمسم الأبيض الطبيعي (Sortex 99.9%)",
+            "description": "بذور السمسم الأبيض الطبيعية غير المقشرة التي تنظف باستخدام أجهزة فرز بصرية ثلاثية المرات. تحافظ على العناصر الغذائية الطبيعية والمعادن والقرمشة الغنية لإضافات المخبز واستخراج الزيت المضغوط على البارد.",
+            "color": "أبيض كريمي طبيعي",
+            "harvestMonths": "سبتمبر – نوفمبر",
+            "storage": "مستودع بارد وجاف ومهوي (<20°C، <55% RH)",
+            "shelfLife": "24 شهور"
+          },
+          "ru": {
+            "packagingTypes": [
+              "25kg Многостенные крафт-мешки",
+              "50kg PP Плетёные мешки",
+              "1000kg Большие сумки"
+            ],
+            "name": "Натуральные белые кунжуты (Sortex 99.9%)",
+            "description": "Неочищенные натуральные белые кунжутные семена, очищенные с помощью трёхкратных оптических сортировок. Сохраняют натуральные питательные вещества, минералы и насыщенную хрустящую текстуру для выпечки и холодного отжимания масла.",
+            "color": "Натуральный кремово-белый",
+            "harvestMonths": "сентябрь – ноябрь",
+            "storage": "Прохладный, сухой вентилируемый склад (<20°C, <55% RH)",
+            "shelfLife": "24 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "25kg Multiwand-Kraftbeutel",
+              "50kg PP Gewebte Taschen",
+              "1000kg große Säcke"
+            ],
+            "name": "Natürliche weiße Sesamsamen (Sortex 99.9%)",
+            "description": "Ungeschälte natürliche weiße Sesamsamen, gereinigt mit Triple-Pass-Optischen Sortierern. Konserviert natürliche Nährstoffe, Mineralien und reichhaltigen Knusprigkeit für Bäckereibeläge und kaltgepresstes Öl.",
+            "color": "Natürliches Cremiges Weiß",
+            "harvestMonths": "September – November",
+            "storage": "Kühles, trockenes belüftetes Lagerhaus (<20°C, <55% RH)",
+            "shelfLife": "24 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "25kg Sacs Kraft multi-murs",
+              "50kg PP Sacs tressés",
+              "1000kg Gros Sacs"
+            ],
+            "name": "Graines de sésame blanches naturelles (Sortex 99.9%)",
+            "description": "Graines de sésame blanc naturelles non pelées, nettoyées à l’aide de trieurs optiques triple passe. Préserve les nutriments naturels, les minéraux et le croquant riche pour les garnitures de boulangerie et l’extraction d’huile pressée à froid.",
+            "color": "Blanc Naturel Crémeux",
+            "harvestMonths": "Septembre – Novembre",
+            "storage": "Entrepôt frais, sec et ventilé (<20°C, <55% RH)",
+            "shelfLife": "24 mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "25kg Bolsas Kraft Multipared",
+              "50kg PP Bolsas tejidas",
+              "1000kg Grandes Bolsas"
+            ],
+            "name": "Semillas de Sésamo Blancas Naturales (Sortex 99.9%)",
+            "description": "Semillas naturales de sésamo blanco sin pelar limpiadas mediante clasificadores ópticos de triple paso. Conserva nutrientes naturales, minerales y crujiente rico para ingredientes de panadería y extracción de aceite prensado en frío.",
+            "color": "Blanco cremoso natural",
+            "harvestMonths": "Septiembre – Noviembre",
+            "storage": "Almacén fresco y ventilado en seco (<20°C, <55% RH)",
+            "shelfLife": "24 Meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "25kg Borse Kraft Multiparete",
+              "50kg PP Borse Intrecciate",
+              "1000kg Grandi Borse"
+            ],
+            "name": "Semi di sesamo bianchi naturali (Sortex 99.9%)",
+            "description": "Semi naturali di sesamo bianco non sbucciati, puliti tramite selezionatori ottici a tripla passatura. Conserva nutrienti naturali, minerali e ricco croccante per condimenti da forno e estrazione a freddo dell'olio.",
+            "color": "Bianco Cremoso Naturale",
+            "harvestMonths": "Settembre – Novembre",
+            "storage": "Magazzino fresco, ventilato a secco (<20°C, <55% RH)",
+            "shelfLife": "24 Mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "25kg Sacolas Kraft Multi-parede",
+              "50kg PP Bolsas Trançadas",
+              "1000kg Grandes Sacos"
+            ],
+            "name": "Sementes de gergelim branco natural (Sortex 99.9%)",
+            "description": "Sementes naturais de gergelim branco não descascadas, limpas por triadores ópticos de tripla passagem. Preserva nutrientes naturais, minerais e crocância rica para coberturas de padaria e extração de óleo prensado a frio.",
+            "color": "Branco Natural Cremoso",
+            "harvestMonths": "Setembro – Novembro",
+            "storage": "Armazém fresco, seco e ventilado (<20°C, <55% RH)",
+            "shelfLife": "24 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "25kg Multi-wand Kraft Bags",
+              "50kg PP Geweven Zakken",
+              "1000kg Grote Zakken"
+            ],
+            "name": "Natuurlijke Witte Sesamzaad (Sortex 99.9%)",
+            "description": "Ongepelde natuurlijke witte sesamzaadjes gereinigd met triple-pass optische sorters. Conserveert natuurlijke voedingsstoffen, mineralen en rijke crunch voor bakkerijtoppings en koudgeperste olie-extractie.",
+            "color": "Natuurlijk Creamy White",
+            "harvestMonths": "September – november",
+            "storage": "Koel, droog geventileerd magazijn (<20°C, <55% RH)",
+            "shelfLife": "24 Maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "25kg Wielościenne torby kraftowe",
+              "50kg PP Plecione torby",
+              "1000kg Duże Worki"
+            ],
+            "name": "Naturalne białe nasiona sezamu (Sortex 99.9%)",
+            "description": "Nieobrięte naturalne białe nasiona sezamu czyszczone za pomocą trójprzepustowych sorterów optycznych. Zachowują naturalne składniki odżywcze, minerały i bogatą chrupkość do dodatków piekarniczych oraz ekstrakcję olejem tłoczonym na zimno.",
+            "color": "Naturalna kremowa biel",
+            "harvestMonths": "Wrzesień – listopad",
+            "storage": "Chłodny, suchy, wentylowany magazyn (<20°C, <55% RH)",
+            "shelfLife": "24 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "25kg Genți Kraft multi-perete",
+              "50kg PP Genți țesute",
+              "1000kg Saci Mari"
+            ],
+            "name": "Semințe de susan alb natural (Sortex 99.9%)",
+            "description": "Semințe naturale de susan alb necurățate, curățate cu sortatoare optice triple-pass. Păstrează nutrienți naturali, minerale și crocant bogat pentru topping-uri de brutărie și extracția uleiului presat la rece.",
+            "color": "Alb cremos natural",
+            "harvestMonths": "Septembrie – Noiembrie",
+            "storage": "Depozit răcoros, ventilat uscat (<20°C, <55% RH)",
+            "shelfLife": "24 Luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "25kg Многостенни крафт торбички",
+              "50kg PP Тъкани чанти",
+              "1000kg Големи торби"
+            ],
+            "name": "Естествени бели сусамови семки (Sortex 99.9%)",
+            "description": "Небелени естествени бели сусамови семена, почистени чрез тройни оптични сортери. Запазват естествени хранителни вещества, минерали и богата хрупкавост за топинги от пекарни и извличане на студено пресовано олио.",
+            "color": "Натурално кремообразно бяло",
+            "harvestMonths": "септември – ноември",
+            "storage": "Хладен, сух вентилиран склад (<20°C, <55% ДС)",
+            "shelfLife": "24 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "25kg Τσάντες Kraft πολλαπλών τοιχωμάτων",
+              "50kg PP Υφαντές Τσάντες",
+              "1000kg Μεγασάκοι"
+            ],
+            "name": "Φυσικό Λευκό Σουσάμι (Sortex 99.9%)",
+            "description": "Μη αποφλοιωμένο φυσικό λευκό σουσάμι καθαρισμένο μέσω οπτικών διαλογέων τριπλής διέλευσης. Διατηρεί φυσικά θρεπτικά συστατικά, μέταλλα και πλούσια τραγανή γεύση για γαρνιτούρες αρτοποιίας και εκχύλιση λαδιού ψυχρής έκθλιψης.",
+            "color": "Φυσικό κρεμώδες λευκό",
+            "harvestMonths": "Σεπτέμβριος – Νοέμβριος",
+            "storage": "Δροσερή, ξηρή αεριζόμενη αποθήκη (<20°C, <55% RH)",
+            "shelfLife": "24 Μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "25kg Kraft torbe sa više zidova",
+              "50kg PP Tkane torbe",
+              "1000kg Velike torbe"
+            ],
+            "name": "Prirodni beli susam (Sortex 99.9%)",
+            "description": "Neolupljeno prirodno belo seme susama očišćeno preko trostrukih optičkih sortera. Čuva prirodne hranljive materije, minerale i bogatu krckanje za pekarski preljeve i hladno presovanu ekstrakciju ulja.",
+            "color": "Prirodna kremasto bela",
+            "harvestMonths": "septembar – novembar",
+            "storage": "Hladno, suvo provetrenim skladištem (<20°C, <55% RH)",
+            "shelfLife": "24 meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "25kg Багатостінні крафтові сумки",
+              "50kg PP Ткані сумки",
+              "1000kg Великі сумки"
+            ],
+            "name": "Натуральне біле насіння кунжуту (Sortex 99.9%)",
+            "description": "Неочищене натуральне біле кунжутне насіння, очищене за допомогою потрійних оптичних сортерів. Зберігає природні поживні речовини, мінерали та насичений хрусткий смак для випічки та холодного віджиму олії.",
+            "color": "Натуральний кремово-білий",
+            "harvestMonths": "вересень – листопад",
+            "storage": "Прохолодний, сухий вентильований склад (<20°C, <55% RH)",
+            "shelfLife": "24 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "25kg მრავალსიზარდიანი კრაფტის ჩანთები",
+              "50kg PP ნაქსოვი ჩანთები",
+              "1000kg დიდი ჩანთები"
+            ],
+            "name": "ბუნებრივი ცივი თეთრი სესამის თესლი (Sortex 99.9%)",
+            "description": "არშეწვეწილი ბუნებრივი თეთრი სესამის თესლი, გაწმენდილი სამჯერადი ოპტიკური სორტირების საშუალებით. ინარჩუნებს ბუნებრივ საკვებს, მინერალებს და მდიდარ ქრომზე სტრუქტურას ბეკერის ზედა მანჯებზე და ზეთის წნეხით დაჭრისთვის.",
+            "color": "ბუნებრივი კრემისფერი თეთრი",
+            "harvestMonths": "სექტემბერი – ნოემბერი",
+            "storage": "გრილი, მშრალი, ვენტილირებული საწყობი (<20°C, <55% RH)",
+            "shelfLife": "24 თვე"
+          },
+          "az": {
+            "packagingTypes": [
+              "25kg Çoxdivarlı Kraft Çantaları",
+              "50kg PP toxunmuş çantalar",
+              "1000kg Böyük Çantalar"
+            ],
+            "name": "Təbii Ağ Küncüt Toxumları (Sortex 99.9%)",
+            "description": "Soyulmamış təbii ağ küncüt toxumları üçqat keçid optik çeşidləyicilərlə təmizlənir. Təbii qida maddələrini, mineralları və zəngin xırtıltıları çörək əlavələri və soyuq preslənmiş yağ çıxarışı üçün qoruyur.",
+            "color": "Təbii Kremli Ağ",
+            "harvestMonths": "Sentyabr – Noyabr",
+            "storage": "Sərin, quru havalandırılan anbar (<20°C, <55% RH)",
+            "shelfLife": "24 Ay"
+          },
+          "uz": {
+            "packagingTypes": [
+              "25kg Ko‘p-qavatli Kraft Sumkalar",
+              "50kg PP To‘qilgan Sumkalar",
+              "1000kg Katta Sumkalar"
+            ],
+            "name": "Tabiiy Oq Chiy Normalari (Sortex 99.9%)",
+            "description": "Uch martali optik tasniflagichlar orqali tozalangan toʻqilmagan tabiiy oq chiy. Tabiiy oziqa moddalarini, mineral moddalarni va non pishirish ustki qatlami hamda sovuq bosilgan yogʻni olish uchun boy qirib turadigan qobiliyatini saqlaydi.",
+            "color": "Tabiiy Yengil Oq",
+            "harvestMonths": "Sentyabr – Noyabr",
+            "storage": "Salqin, quruq, shamollatiladigan ombor (<20°C, <55% RH)",
+            "shelfLife": "24 Oy"
+          },
+          "kk": {
+            "packagingTypes": [
+              "25kg Көп қабырғалы Kraft сөмкелері",
+              "50kg PP Тоқылған сөмкелер",
+              "1000kg Үлкен сөмкелер"
+            ],
+            "name": "Табиғи ақ күнжіт тұқымдары (Sortex 99.9%)",
+            "description": "Тазаланбаған табиғи ақ кунжут тұқымдары үш айналмалы оптикалық сұрыптағыштар арқылы тазартылады. Табиғи қоректік заттар, минералдар және бай қытырлақ тәрізді наубайханаға арналған үстімдер мен суық сығылған май экстракциялары үшін сақталады.",
+            "color": "Табиғи кремді ақ",
+            "harvestMonths": "Қыркүйек – Қараша",
+            "storage": "Салқын, құрғақ желдетілетін қойма (<20°C, <55% оң жақ)",
+            "shelfLife": "24 ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "25kg کیف های کرافت چندجداره",
+              "50kg PP کیسه های بافته شده",
+              "1000kg کیسه های بزرگ"
+            ],
+            "name": "دانه کنجد سفید طبیعی (Sortex 99.9%)",
+            "description": "دانه های کنجد سفید طبیعی بدون پوست که با مرتب کننده های نوری سه مرحله تمیز می شوند. مواد مغذی طبیعی، مواد معدنی و تردی غنی را برای تاپینگ های نانوایی و استخراج روغن سرد حفظ می کند.",
+            "color": "سفید کرمی طبیعی",
+            "harvestMonths": "سپتامبر – نوامبر",
+            "storage": "انبار خنک و خشک تهویه شده (<20°C، <55% RH)",
+            "shelfLife": "24 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "25kg मल्टी-वॉल क्राफ्ट बैग",
+              "50kg PP बुने हुए बैग",
+              "1000kg बड़े बैग"
+            ],
+            "name": "प्राकृतिक सफेद तिल (Sortex 99.9%)",
+            "description": "बिना छिलके वाले प्राकृतिक सफेद तिल को ट्रिपल-पास ऑप्टिकल सॉर्टर के माध्यम से साफ किया जाता है। बेकरी टॉपिंग और कोल्ड-प्रेस्ड तेल निष्कर्षण के लिए प्राकृतिक पोषक तत्वों, खनिजों और समृद्ध क्रंच को संरक्षित करता है।",
+            "color": "प्राकृतिक मलाईदार सफेद",
+            "harvestMonths": "सितंबर - नवंबर",
+            "storage": "ठंडा, सूखा हवादार गोदाम (<20°C, <55% आरएच)",
+            "shelfLife": "24 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "25kg ملٹی وال کرافٹ بیگز",
+              "50kg PP بنے ہوئے تھیلے",
+              "1000kg بڑے تھیلے"
+            ],
+            "name": "قدرتی سفید تل کے بیج (Sortex 99.9%)",
+            "description": "بغیر چھلکے، قدرتی سفید تل کے بیج جو ٹرپل پاس آپٹیکل سورٹرز کے ذریعے صاف کیے جاتے ہیں۔ قدرتی غذائی اجزاء، معدنیات اور بیکری ٹاپنگز اور کولڈ پریسڈ آئل نکالنے کے لیے بھرپور کرنچ کو محفوظ رکھتا ہے۔",
+            "color": "قدرتی کریمی وائٹ",
+            "harvestMonths": "ستمبر – نومبر",
+            "storage": "ٹھنڈا، خشک ہوا دار گودام (<20°C، <55% RH)",
+            "shelfLife": "24 مہینے"
+          },
+          "bn": {
+            "packagingTypes": [
+              "25kg মাল্টি-ওয়াল ক্রাফ্ট ব্যাগ",
+              "50kg PP বোনা ব্যাগ",
+              "1000kg বড় ব্যাগ"
+            ],
+            "name": "প্রাকৃতিক সাদা তিল বীজ (Sortex 99.9%)",
+            "description": "ট্রিপল-পাস অপটিক্যাল সর্টারের মাধ্যমে পরিষ্কার করা প্রাকৃতিক সাদা তিল বীজ। বেকারি টপিংস এবং কোল্ড-প্রেসড তেল নিষ্কাশনের জন্য প্রাকৃতিক পুষ্টি, খনিজ এবং সমৃদ্ধ ক্রাঞ্চ সংরক্ষণ করে।",
+            "color": "প্রাকৃতিক ক্রিমি সাদা",
+            "harvestMonths": "সেপ্টেম্বর - নভেম্বর",
+            "storage": "শীতল, শুকনো বায়ুচলাচল গুদাম (<20°C, <55% আরএইচ)",
+            "shelfLife": "24 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "25kg 多层牛皮包",
+              "50kg PP 编织袋",
+              "1000kg大袋子"
+            ],
+            "name": "天然白芝麻（Sortex 99.9%）",
+            "description": "未剥皮的天然白芝麻通过三次光学分拣机清洗。保留天然营养、矿物质和丰富的酥脆感，用于烘焙配料和冷压榨油提取。",
+            "color": "天然奶油白",
+            "harvestMonths": "9月至11月",
+            "storage": "凉爽干燥的通风仓库（<20°C，<55% 右）",
+            "shelfLife": "24个月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "25kg マルチウォールクラフトバッグ",
+              "50kg PP 織り袋",
+              "1000kg ビッグバッグ"
+            ],
+            "name": "ナチュラルホワイトゴマ(Sortex 99.9%)",
+            "description": "皮を剥いていない天然の白ごまをトリプルパス光学選別機で洗浄。ベーカリートッピングやコールドプレスオイル抽出に適した天然の栄養素、ミネラル、豊かなカリカリ感を保存します。",
+            "color": "ナチュラルクリーミーホワイト",
+            "harvestMonths": "9月〜11月",
+            "storage": "涼しく乾燥した換気性のある倉庫(<20°C、<55% RH)",
+            "shelfLife": "24ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "25kg 멀티월 크래프트 백",
+              "50kg PP 직조 가방",
+              "1000kg 빅 백"
+            ],
+            "name": "천연 흰참깨 (Sortex 99.9%)",
+            "description": "껍질을 벗기지 않은 천연 흰참깨를 트리플 패스 광학 분류기로 세척합니다. 천연 영양소, 미네랄, 그리고 베이커리 토핑과 냉압착 오일 추출에 적합한 풍부한 아삭함을 보존합니다.",
+            "color": "내추럴 크리미 화이트",
+            "harvestMonths": "9월 – 11월",
+            "storage": "서늘하고 건조한 환기 창고 (<20°C, <55% RH)",
+            "shelfLife": "24개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "25kg Kantong Kraft Multi-dinding",
+              "50kg PP Tas Tenun",
+              "1000kg Tas Besar"
+            ],
+            "name": "Biji Wijen Putih Alami (Sortex 99.9%)",
+            "description": "Biji wijen putih alami yang belum dikupas yang dibersihkan dengan triple-pass optical sorter. Menjaga nutrisi alami, mineral, dan kerenyahan yang kaya untuk topping roti dan ekstraksi minyak yang ditekan dingin.",
+            "color": "Putih Krim Alami",
+            "harvestMonths": "September – November",
+            "storage": "Gudang berventilasi dingin dan kering (<20°C, <55% RH)",
+            "shelfLife": "24 Bulan"
+          },
+          "ms": {
+            "packagingTypes": [
+              "25kg Beg Kraft Multi-dinding",
+              "50kg PP Beg Tenunan",
+              "1000kg Beg Besar"
+            ],
+            "name": "Bijan Putih Semula Jadi (Sortex 99.9%)",
+            "description": "Bijan putih semula jadi yang tidak dikupas dibersihkan menggunakan pengayir optik triple-pass. Memelihara nutrien semula jadi, mineral, dan rangup yang kaya untuk topping bakeri dan pengekstrakan minyak sejuk.",
+            "color": "Putih Krim Semula Jadi",
+            "harvestMonths": "September – November",
+            "storage": "Gudang berpengudaraan sejuk dan kering (<20°C, <55% RH)",
+            "shelfLife": "24 Bulan"
+          },
+          "sw": {
+            "packagingTypes": [
+              "25kg Mifuko ya Kraft ya kuta nyingi",
+              "50kg PP Mifuko ya Kusuka",
+              "1000kg Mifuko Mikubwa"
+            ],
+            "name": "Mbegu za Ufuta Mweupe Asilia (Sortex 99.9%)",
+            "description": "Mbegu za ufuta nyeupe ambazo hazijasafishwa kupitia vipanga macho vya kupita mara tatu. Huhifadhi virutubisho asilia, madini, na mkunjo mwingi kwa nyongeza za mkate na uchimbaji wa mafuta yaliyoshinikizwa kwa baridi.",
+            "color": "Nyeupe ya Asili ya Cream",
+            "harvestMonths": "Septemba - Novemba",
+            "storage": "Ghala baridi, kavu lenye uingizaji hewa (<20°C, <55% RH)",
+            "shelfLife": "Miezi 24"
+          }
+        }
+      },
+      {
+        "id": "hulled-white-sesame",
+        "slug": "hulled-white-sesame",
+        "name": "Hulled White Sesame Seeds (Aqua Dehulled - Tahini & Bakery)",
+        "image": "/images/products/turkish-roasted-sesame-nilasya.jpg",
+        "nameTr": "Kabuksuz Soyulmuş Beyaz Susam (Fırıncılık & Tahinlik)",
+        "description": "Chemical-free steam-dehulling produces snow-white kernels with 99.98% purity. The global benchmark grade for velvety tahini paste, premium halva, and gourmet hamburger buns.",
+        "descriptionTr": "Kimyasal kullanılmadan buhar teknolojisiyle kabuğu soyulmuş kar beyazı susam taneleri. İpeksi tahin, helva ve lüks hamburger ekmekleri için küresel standart kalitedir.",
+        "color": "Pristine Snow White",
+        "colorTr": "Kar Beyazı",
+        "size": "Cleaned Hulled Kernel",
+        "caliber": "Aqua Steam Hulled (99.98% Purity)",
+        "moisture": "< 4.5%",
+        "purity": "99.98%",
+        "harvestMonths": "Continuous Year-Round Milling",
+        "harvestMonthsTr": "Yıl Boyu Kesintisiz Üretim",
+        "storage": "Moisture-barrier climate controlled storage",
+        "storageTr": "Neme karşı korumalı iklimlendirmeli depo",
+        "shelfLife": "24 Months",
+        "shelfLifeTr": "24 Ay",
+        "packagingTypes": [
+          "25kg Kraft Bags with PE Liner",
+          "50kg PP Bags",
+          "1000kg FIBC"
+        ],
+        "packagingTypesTr": [
+          "25kg İçi Polietilenli Kraft Torba",
+          "50kg PP Çuval",
+          "1000kg FIBC"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "25kg حقائب كرافت مع بطانة PE",
+              "50kg PP حقائب",
+              "1000kg FIBC"
+            ],
+            "name": "بذور السمسم الأبيض المقشرة (Aqua dehuled - الطحينة & المخبز)",
+            "description": "إزالة القشرة بالبخار الخالية من المواد الكيميائية تنتج حبيبات بيضاء كالثلج بنقاء 99.98%. الدرجة العالمية القياسية لمعجون الطحينة المخملي، الحلفة الفاخرة، وخبز البرغر الفاخر.",
+            "color": "سنو وايت النقية",
+            "harvestMonths": "الطحن المستمر على مدار السنة",
+            "storage": "تخزين مناخي متحكم فيه بحاجز الرطوبة",
+            "shelfLife": "24 شهور"
+          },
+          "ru": {
+            "packagingTypes": [
+              "25kg Крафт-сумки с PE лайнером",
+              "50kg PP Bags",
+              "1000kg FIBC"
+            ],
+            "name": "Крупные белые кунжутные семена (Aqua Dehulled - Tahini & Bakery)",
+            "description": "Безхимическое паровое обезоболивание даёт снежно-белые зерна с 99.98% чистотой. Мировой эталонный сорт бархатистой тахини-пасты, премиальной халвы и изысканных булочек для гамбургеров.",
+            "color": "Безупречная Белоснежка",
+            "harvestMonths": "Непрерывная круглогодичная фрезерная обработка",
+            "storage": "Климат-контролируемое хранение с влагозащитой",
+            "shelfLife": "24 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "25kg Kraft-Taschen mit PE Innenfutter",
+              "50kg PP Taschen",
+              "1000kg FIBC"
+            ],
+            "name": "Geschälte Weiße Sesamsamen (Aqua Deshelled - Tahini & Bakery)",
+            "description": "Chemiefreie Dampfentschählung ergibt schneeweiße Körner mit 99.98% Reinheit. Die weltweite Benchmark-Klasse für samtige Tahini-Paste, Premium-Halva und Gourmet-Hamburgerbrötchen.",
+            "color": "Makellose Schneewittchen",
+            "harvestMonths": "Kontinuierliches ganzjähriges Fräsen",
+            "storage": "Klimakontrollierte Feuchtigkeitsbarriere",
+            "shelfLife": "24 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "25kg Sacs Kraft avec doublure PE",
+              "50kg PP Sacs",
+              "1000kg FIBC"
+            ],
+            "name": "Graines de sésame blanches décortiquées (Aqua Décoque - Tahini & Boulangerie)",
+            "description": "Le décoquelage sans produits chimiques produit des grains blancs comme neige avec 99.98% pureté. La note de référence mondiale pour la pâte de tahini veloutée, la halva premium et les petits pains hamburgers gastronomiques.",
+            "color": "Blanche-Neige immaculée",
+            "harvestMonths": "Mouture continue toute l’année",
+            "storage": "Stockage climatisé à barrière d’humidité",
+            "shelfLife": "24 mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "25kg Bolsas Kraft con forro PE",
+              "50kg PP Bolsas",
+              "1000kg FIBC"
+            ],
+            "name": "Semillas de Sésamo Blancas Descascaradas (Aqua Dehulled - Tahini & Panadería)",
+            "description": "El descascarado al vapor sin químicos produce granos blancos como la nieve con 99.98% pureza. La categoría de referencia mundial para pasta de tahini aterciopelada, halva premium y panes gourmet de hamburguesa.",
+            "color": "Blancanieves prístina",
+            "harvestMonths": "Molienda continua durante todo el año",
+            "storage": "Almacenamiento climatizado con barrera de humedad controlada",
+            "shelfLife": "24 Meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "25kg Borse Kraft con fodera PE",
+              "50kg PP Borse",
+              "1000kg FIBC"
+            ],
+            "name": "Semi di sesamo bianchi scorchiati (Aqua Dehulled - Tahini & Bakery)",
+            "description": "La sfumatura a vapore senza sostanze chimiche produce chicchi bianchi come la neve con 99.98% purezza. Il livello di riferimento mondiale per la pasta di tahini vellutata, la halva premium e i panini gourmet per hamburger.",
+            "color": "Biancaneve Immacolata",
+            "harvestMonths": "Fresatura continua tutto l'anno",
+            "storage": "Stoccaggio a controllo climatico a barriera all'umidità",
+            "shelfLife": "24 Mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "25kg Sacolas Kraft com PE Liner",
+              "50kg PP Bolsas",
+              "1000kg FIBC"
+            ],
+            "name": "Sementes de Gergelim Branco Descascado (Aqua Dehulled - Tahini & Padaria)",
+            "description": "A descasca a vapor sem químicos produz grãos brancos como a neve com pureza 99.98%. A classificação global de referência para pasta de tahine aveludada, halva premium e pãezinhos gourmet de hambúrguer.",
+            "color": "Branca de Neve Imaculada",
+            "harvestMonths": "Moagem Contínua durante o Ano Todo",
+            "storage": "Armazenamento com controle climático com barreira de umidade",
+            "shelfLife": "24 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "25kg Kraft Bags met PE voering",
+              "50kg PP Tassen",
+              "1000kg FIBC"
+            ],
+            "name": "Gepelde Witte Sesamzaad (Aqua Ontpeld - Tahini & Bakkerij)",
+            "description": "Chemievrije stoomdehulling levert sneeuwwitte korrels met 99.98% zuiverheid op. De wereldwijde benchmarkkwaliteit voor fluweelzachte tahinipasta, premium halva en gourmet hamburgerbroodjes.",
+            "color": "Ongerepte Sneeuwwitje",
+            "harvestMonths": "Continu Jaarrond Maalen",
+            "storage": "Vochtbarrière, klimaatgecontroleerde opslag",
+            "shelfLife": "24 Maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "25kg Kraft Bags z PE Liner",
+              "50kg PP Bags",
+              "1000kg FIBC"
+            ],
+            "name": "Łuskane białe nasiona sezamu (Aqua Dehulled - tahini & Piekarnia)",
+            "description": "Bezchemiczne odklejanie łuskań parą daje śnieżnobiałe ziarna o 99.98% czystości. Światowa klasa referencyjna dla aksamitnej pasty tahini, wysokiej klasy halwy i wykwintnych bułeczek na hamburgery.",
+            "color": "Nieskazitelna Królewna Śnieżka",
+            "harvestMonths": "Ciągłe mielenie przez cały rok",
+            "storage": "Przechowywanie z barierą przeciwwilgociową z klimatem",
+            "shelfLife": "24 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "25kg Genți Kraft cu căptușeală PE",
+              "50kg PP Genți",
+              "1000kg FIBC"
+            ],
+            "name": "Semințe albe de susan cu coajă (Aqua Decalat - Tahini & Bakery)",
+            "description": "Decojitura cu abur fără substanțe chimice produce boabe albe ca zăpada cu puritate 99.98%. Gradul de referință global pentru pastă catifelată de tahini, halva premium și chiflele gourmet pentru hamburgeri.",
+            "color": "Albă ca Zăpada Imaculată",
+            "harvestMonths": "Măcinare continuă pe tot parcursul anului",
+            "storage": "Depozitare cu barieră de umiditate cu control climatic",
+            "shelfLife": "24 Luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "25kg Крафт чанти с PE лайнер",
+              "50kg PP чанти",
+              "1000kg FIBC"
+            ],
+            "name": "Масивни бели сусамови семки (Aqua Dehulled - Tahini & Bakery)",
+            "description": "Безхимикалното парно обезкарване произвежда снежнобяли ядки с 99.98% чистота. Световният еталонен клас за кадифена таханова паста, премиум халва и гурме хлебчета за хамбургери.",
+            "color": "Безупречна Снежанка",
+            "harvestMonths": "Непрекъснато целогодишно фрезоване",
+            "storage": "Климатично контролирано съхранение с бариера за влага",
+            "shelfLife": "24 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "Τσάντες Kraft 25kg με επένδυση PE",
+              "50kg PP Τσάντες",
+              "1000kg FIBC"
+            ],
+            "name": "Αποφλοιωμένο Λευκό Σουσάμι (Aqua Depeelled - Tahini & Bakery)",
+            "description": "Η αποφλοίωση με ατμό χωρίς χημικά παράγει λευκούς πυρήνες με 99.98% καθαρότητα. Ο παγκόσμιος βαθμός αναφοράς για βελούδινη πάστα ταχίνι, χαλβά υψηλής ποιότητας και γκουρμέ ψωμάκια χάμπουργκερ.",
+            "color": "Παρθένα Χιονάτη",
+            "harvestMonths": "Συνεχής άλεση όλο το χρόνο",
+            "storage": "Αποθήκευση ελεγχόμενη από το κλίμα με φράγμα υγρασίας",
+            "shelfLife": "24 Μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "25kg Kraft torbe sa PE oblogom",
+              "50kg PP Torbe",
+              "1000kg FIBC"
+            ],
+            "name": "Oljušteno belo seme susama (Akua Dehulled - Tahini & Bakeri)",
+            "description": "Hemijsko-free parno ljuštenje proizvodi snežno bela zrna sa 99.98% čistoće. Globalni benčmark razred za baršunastu tahini pastu, premijum halva, i gurmanski hamburger lepinje.",
+            "color": "Netaknuta Snežana",
+            "harvestMonths": "Kontinuirano tokom cele godine glodanje",
+            "storage": "Skladište sa kontrolisanom klimom sa vlagom",
+            "shelfLife": "24 meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "25kg Крафтові сумки з PE підкладкою",
+              "50kg PP Bags",
+              "1000kg FIBC"
+            ],
+            "name": "Пухкі білі кунжутні насіння (Aqua Dehulled - Tahini & Bakery)",
+            "description": "Безхімічне зняття парової оболонки дає сніжно-білі зерна з 99.98% чистотою. Світовий еталонний сорт оксамитової пасти тахіні, преміальної халви та вишуканих булочок для гамбургерів.",
+            "color": "Бездоганна Білосніжка",
+            "harvestMonths": "Безперервне цілорічне помилування",
+            "storage": "Вологозахисне клімат-контрольоване зберігання",
+            "shelfLife": "24 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "25kg კრაფტის ჩანთები PE შრეით",
+              "50kg PP ჩანთები",
+              "1000kg FIBC"
+            ],
+            "name": "გაწმენდილი თეთრი სესამის ზამთარი (Aqua Dehulled - ტახინი & საცხობი)",
+            "description": "ქიმიკატების გარეშე ორთქლით გაწმენდა წარმოქმნის თოვლივით თეთრ მარცვლებს 99.98% სისუფთავით. გლობალური ნორმა ნაზ ტახინის პასტისთვის, პრემიუმ ხალვასთვის და გურმე ჰამბურგერის პურისთვის.",
+            "color": "უკონფლიქტო თოვლივით თეთრი",
+            "harvestMonths": "უწყვეტი წლიური მარცვლეულის დამუშავება",
+            "storage": "ტენიანობის ბარიერებით კლიმატურად რეგულირებული შენახვა",
+            "shelfLife": "24 თვე"
+          },
+          "az": {
+            "packagingTypes": [
+              "25kg Kraft Çantaları PE Liner ilə",
+              "50kg PP Çantalar",
+              "1000kg FIBC"
+            ],
+            "name": "Qabıqlı Ağ Susam Toxumları (Aqua Qabıqsız - Tahini və Çörəkçilik)",
+            "description": "Kimyəvi maddəsiz buxarla qabıqdan təmizlənmə 99.98% təmizliklə qar kimi ağ dənələr yaradır. Məxməri tahin pastası, premium helva və gurme hamburger bulkaları üçün qlobal standart keyfiyyət.",
+            "color": "Təmiz Qar Qız",
+            "harvestMonths": "İlboyu fasiləsiz üyütmə",
+            "storage": "Rütubət baryeri ilə iqlimə nəzarət olunan saxlama",
+            "shelfLife": "24 Ay"
+          },
+          "uz": {
+            "packagingTypes": [
+              "25kg Kraft Sumkalar PE Lina bilan",
+              "50kg PP Sumkalar",
+              "1000kg FIBC"
+            ],
+            "name": "Qobig‘i tozalangan Oq Kunjut Urug‘lari (Aqua Dehulled - Tahini va Nonvoyxona uchun)",
+            "description": "Kimyovsiz bug‘ bilan qobiqni tozalash bilan 99.98% sof oq yadrolar olinadi. Yumshoq tahini pastasi, premium xalva va gastronomik gamburger bulkalari uchun global sifat mezoni.",
+            "color": "Sof Oq Qor",
+            "harvestMonths": "Yil bo‘yi Doimiy Qayta Ishlash",
+            "storage": "Namlik-barrierli iqlim nazoratli saqlash",
+            "shelfLife": "24 Oy"
+          },
+          "kk": {
+            "packagingTypes": [
+              "25kg Крафт сөмкелері PE лайнері бар",
+              "50kg PP Сөмкелер",
+              "1000kg FIBC"
+            ],
+            "name": "Үлкен ақ күнжіт тұқымдары (Aqua Dehulled - Tahini & Bakery)",
+            "description": "Химиялық заттарсыз бу қабығын алып тастау 99.98% тазалықтағы қар аппақ дәндерді өндіреді. Бұл барқыт тахини пастасы, премиум халва және дәмді гамбургер бәліштері бойынша әлемдік стандарт сорты.",
+            "color": "Тап-таза Ақшақар",
+            "harvestMonths": "Жыл бойы үздіксіз өңдеу",
+            "storage": "Ылғал қорғанысы бар климаттық басқарылатын сақтау",
+            "shelfLife": "24 ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "25kg کیف های کرفت با PE لاینر",
+              "50kg PP کیف ها",
+              "1000kg FIBC"
+            ],
+            "name": "دانه کنجد سفید پوست دار (Aqua dehulled - Tahini & Bakery)",
+            "description": "پاک سازی بخار بدون مواد شیمیایی دانه های سفید برفی با خلوص 99.98% تولید می کند. درجه معیار جهانی برای خمیر مخملی تاهینی، حلوا ممتاز و نان های همبرگر گورمه.",
+            "color": "سفیدبرفی بی نقص",
+            "harvestMonths": "فرزکاری پیوسته در تمام طول سال",
+            "storage": "ذخیره سازی کنترل شده اقلیمی با مانع رطوبت",
+            "shelfLife": "24 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "PE लाइनर के साथ 25kg क्राफ्ट बैग",
+              "50kg PP बैग",
+              "1000kg FIBC"
+            ],
+            "name": "छिलदार सफेद तिल के बीज (एक्वा डीहुल्ड - ताहिनी और बेकरी)",
+            "description": "रसायन-मुक्त भाप-डीहलिंग 99.98% शुद्धता के साथ बर्फ-सफेद गुठली पैदा करता है। मखमली ताहिनी पेस्ट, प्रीमियम हलवा और पेटू हैमबर्गर बन्स के लिए वैश्विक बेंचमार्क ग्रेड।",
+            "color": "प्रिस्टिन स्नो व्हाइट",
+            "harvestMonths": "लगातार साल भर मिलिंग",
+            "storage": "नमी-अवरोधक जलवायु नियंत्रित भंडारण",
+            "shelfLife": "24 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "25kg کرافٹ بیگز ود PE لائنر",
+              "50kg PP بیگز",
+              "1000kg FIBC"
+            ],
+            "name": "ہلڈ وائٹ تل سیڈز (Aqua Dehuulled - تہینی & بیکری)",
+            "description": "کیمیکل فری اسٹیم ڈی ہلنگ برف کی طرح سفید دانے 99.98% پاکیزگی کے ساتھ پیدا کرتی ہے۔ مخملی تہینی پیسٹ، پریمیم حلوہ، اور گورمیٹ ہیمبرگر بنز کے لیے عالمی معیار درجہ۔",
+            "color": "صاف ستھرا سنو وائٹ",
+            "harvestMonths": "سال بھر مسلسل ملنگ",
+            "storage": "نمی کی رکاوٹ والا موسمیاتی کنٹرول ذخیرہ",
+            "shelfLife": "24 مہینے"
+          },
+          "bn": {
+            "packagingTypes": [
+              "PE লাইনার সহ 25kg ক্রাফ্ট ব্যাগ",
+              "50kg PP ব্যাগ",
+              "1000kg FIBC"
+            ],
+            "name": "হালড হোয়াইট তিল বীজ (অ্যাকোয়া ডিহুল্ড - তাহিনি এবং বেকারি)",
+            "description": "রাসায়নিক-মুক্ত বাষ্প-ডিহুলিং 99.98% বিশুদ্ধতার সাথে তুষার-সাদা কার্নেল তৈরি করে। মখমল তাহিনি পেস্ট, প্রিমিয়াম হালভা এবং গুরমেট হ্যামবার্গার বানগুলির জন্য গ্লোবাল বেঞ্চমার্ক গ্রেড।",
+            "color": "প্রিস্টাইন স্নো হোয়াইট",
+            "harvestMonths": "একটানা বছরব্যাপী মিলিং",
+            "storage": "আর্দ্রতা-বাধা জলবায়ু নিয়ন্ত্রিত স্টোরেজ",
+            "shelfLife": "24 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "25kg 带PE内衬的牛皮纸袋",
+              "50kg PP包",
+              "1000kg FIBC"
+            ],
+            "name": "去壳白芝麻（Aqua Dehulled - 芝麻酱与烘焙）",
+            "description": "无化学蒸汽去壳工艺可产出纯度99.98%雪白的玉米粒。这是丝滑芝麻酱、优质哈尔瓦和美食汉堡面包的全球基准等级。",
+            "color": "纯净的白雪公主",
+            "harvestMonths": "全年连续磨粉",
+            "storage": "防潮隔离气候控制储存",
+            "shelfLife": "24个月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "25kg クラフトバッグ(PEライナー付き)",
+              "50kg PP バッグ",
+              "1000kg FIBC"
+            ],
+            "name": "殻を剥いた白ごま(アクア脱殻 - タヒニ&ベーカリー)",
+            "description": "化学物質を使わない蒸気脱皮で、純度の高い雪のように白い粒99.98%できます。ベルベットのようなタヒニペースト、プレミアムハルヴァ、グルメハンバーガーバンズの世界基準グレードです。",
+            "color": "純粋な白雪姫",
+            "harvestMonths": "年間を通じた連続製粉",
+            "storage": "湿気障壁型気候制御貯蔵",
+            "shelfLife": "24ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "PE 라이너가 있는 크래프트 백 25kg",
+              "50kg PP 가방",
+              "1000kg FIBC"
+            ],
+            "name": "허드 화이트 씨드 (아쿠아 탈피 - 타히니 & 베이커리)",
+            "description": "화학 성분 없는 증기 껍질 제거는 99.98% 순도의 눈처럼 하얀 알갱이를 생산합니다. 벨벳 타히니 페이스트, 프리미엄 할바, 고급 햄버거 번의 글로벌 기준 등급입니다.",
+            "color": "순백설공주",
+            "harvestMonths": "연중 연속 제분",
+            "storage": "습기 차단 기후 제어 저장",
+            "shelfLife": "24개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "25kg Tas Kraft dengan Liner PE",
+              "50kg PP Tas",
+              "1000kg FIBC"
+            ],
+            "name": "Biji Wijen Putih Terkupas (Aqua Dehulled - Tahini & Roti)",
+            "description": "Pengupasan uap tanpa bahan kimia menghasilkan biji putih salju dengan kemurnian 99.98%. Grade standar global untuk pasta tahini beludru, halva premium, dan roti hamburger gourmet.",
+            "color": "Putih Salju Bersih",
+            "harvestMonths": "Penggilingan Berkelanjutan Sepanjang Tahun",
+            "storage": "Penyimpanan dengan penghalang kelembapan dengan kontrol iklim",
+            "shelfLife": "24 Bulan"
+          },
+          "ms": {
+            "packagingTypes": [
+              "Beg Kraft 25kg dengan Lapisan PE",
+              "50kg PP Beg",
+              "1000kg FIBC"
+            ],
+            "name": "Bijan Putih Dikupas (Aqua Deskin - Tahini & Bakery)",
+            "description": "Pengupasan wap tanpa bahan kimia menghasilkan biji putih salji dengan ketulenan 99.98%. Gred penanda aras global untuk pes tahini beludru, halva premium, dan roti hamburger gourmet.",
+            "color": "Putih Salji Bersih",
+            "harvestMonths": "Pengilangan Berterusan Sepanjang Tahun",
+            "storage": "Penyimpanan kawalan iklim penghalang kelembapan",
+            "shelfLife": "24 Bulan"
+          },
+          "sw": {
+            "packagingTypes": [
+              "25kg Mifuko ya Kraft yenye Mjengo wa PE",
+              "50kg PP Mifuko",
+              "1000kg FIBC"
+            ],
+            "name": "Mbegu Nyeupe za Ufuta (Aqua Dehulled - Tahini & Bakery)",
+            "description": "Upunguzaji wa mvuke usio na kemikali hutoa punje nyeupe-theluji na usafi 99.98%. Daraja la kimataifa la kuweka tahini ya velvety, halva ya hali ya juu, na mikate ya hamburger ya gourmet.",
+            "color": "Nyeupe ya theluji safi",
+            "harvestMonths": "Kusaga Mwaka Mzima",
+            "storage": "Hifadhi ya hali ya hewa inayodhibitiwa na kizuizi cha unyevu",
+            "shelfLife": "Miezi 24"
+          }
+        }
+      },
+      {
+        "id": "golden-roasted-sesame",
+        "slug": "golden-roasted-sesame",
+        "name": "Golden Roasted Sesame Seeds (Traditional Simit & Bakery Grade)",
+        "image": "/images/products/turkish-roasted-sesame-nilasya.jpg",
+        "nameTr": "Kavrulmuş Altın Susam (Simitlik & Pastacılık Özel)",
+        "description": "Slow convection roasted to develop a deep, aromatic nutty profile and crunchy texture. Specially graded for authentic Turkish Simit, artisanal bagels, pretzels, and Asian culinary seasoning.",
+        "descriptionTr": "Geleneksel fırınlarda dengeli kavrularak yoğun fındıksı aroma ve çıtır doku kazandırılmış altın susam. Hakiki Türk simidi, çıtır gevrek ve pastacılık için özel üretimdir.",
+        "color": "Warm Golden Amber",
+        "colorTr": "Sıcak Altın Kehribar",
+        "size": "Evenly Roasted Grain",
+        "caliber": "Convection Roasted Grade",
+        "moisture": "< 2.5%",
+        "purity": "99.9%",
+        "harvestMonths": "Continuous Production in Mersin",
+        "harvestMonthsTr": "Mersin'de Yıl Boyu Sürekli Üretim",
+        "storage": "Airtight dry sealed warehouse",
+        "storageTr": "Hava almayan kuru sızdırmaz depolama",
+        "shelfLife": "18 Months",
+        "shelfLifeTr": "18 Ay",
+        "packagingTypes": [
+          "25kg Multi-wall Kraft Bags",
+          "50kg PP Bags"
+        ],
+        "packagingTypesTr": [
+          "25kg Çok Katlı Kraft Torba",
+          "50kg PP Çuval"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "25kg حقائب كرافت متعددة الجدران",
+              "50kg PP حقائب"
+            ],
+            "name": "بذور السمسم المشوي بالذهب (درجة سيميت والمخبز التقليدية)",
+            "description": "تحميص ببطء بالحرار لتطوير مظهر جوزي عميق وعطري وقوام مقرمش. مصنف خصيصا لسيميت التركي الأصيل، والبيغل الحرفي، والبريتزل، والتوابل الآسيوية.",
+            "color": "العنبر الذهبي الدافئ",
+            "harvestMonths": "الإنتاج المستمر في مرسين",
+            "storage": "مستودع جاف مغلق بإحكام الهواء",
+            "shelfLife": "18 شهور"
+          },
+          "ru": {
+            "packagingTypes": [
+              "25kg Многостенные крафт-мешки",
+              "50kg PP Bags"
+            ],
+            "name": "Золотистые обжаренные кунжутные семена (традиционный сорт Simit и Bakery)",
+            "description": "Медленное конвекционное обжаривание для приобретения глубокого, ароматного орехового профиля и хрустящей текстуры. Специально сортировано для аутентичного турецкого симита, ремесленных бубликов, кренделей и азиатских кулинарных приправ.",
+            "color": "Тёплый золотистый янтарь",
+            "harvestMonths": "Непрерывное производство в Мерсине",
+            "storage": "Герметичный сухой герметичный склад",
+            "shelfLife": "18 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "25kg Multiwand-Kraftbeutel",
+              "50kg PP Taschen"
+            ],
+            "name": "Goldgeröstete Sesamsamen (Traditioneller Simit- und Bäckerqualität)",
+            "description": "Langsame Konvektion geröstet, um ein tiefes, aromatisches, nussiges Profil und eine knusprige Textur zu entwickeln. Speziell bewertet für authentische türkische Simit, handgemachte Bagels, Brezeln und asiatische kulinarische Gewürze.",
+            "color": "Warmes Goldenes Bernstein",
+            "harvestMonths": "Kontinuierliche Produktion in Mersin",
+            "storage": "Luftdichtes, trockenversiegeltes Lagerhaus",
+            "shelfLife": "18 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "25kg Sacs Kraft multi-murs",
+              "50kg PP Sacs"
+            ],
+            "name": "Graines de sésame dorées torréfiées (qualité traditionnelle Simit & Boulangerie)",
+            "description": "Torréfié par convection lente pour développer un profil profond, aromatique et une texture croustillante. Spécialement classé pour le Simit turc authentique, les bagels artisanaux, les bretzels et les assaisonnements culinaires asiatiques.",
+            "color": "Ambre doré chaud",
+            "harvestMonths": "Production continue à Mersin",
+            "storage": "Entrepôt hermétique à sec et scellé",
+            "shelfLife": "18 Mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "25kg Bolsas Kraft Multipared",
+              "50kg PP Bolsas"
+            ],
+            "name": "Semillas de Sésamo Doradas Tostadas (Grado tradicional de Simit y Panadería)",
+            "description": "Tuesta por convección lenta para desarrollar un perfil profundo, aromático y de frutos secos y textura crujiente. Especialmente clasificado para auténtico Turkish Simit, bagels artesanales, pretzels y condimentos culinarios asiáticos.",
+            "color": "Cálido ámbar dorado",
+            "harvestMonths": "Producción continua en Mersin",
+            "storage": "Almacén hermético y sellado en seco",
+            "shelfLife": "18 Meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "25kg Borse Kraft Multiparete",
+              "50kg PP Borse"
+            ],
+            "name": "Semi di sesamo tostato dorato (Tradizionale Simit & Bakery Grade)",
+            "description": "Tostato lentamente a convezione per sviluppare un profilo profondo, aromatico e nocciolato e una consistenza croccante. Valutato appositamente per autentico Turkish Simit, bagel artigianali, pretzel e condimenti culinari asiatici.",
+            "color": "Caldo Amra Dorata",
+            "harvestMonths": "Produzione continua a Mersin",
+            "storage": "Magazzino sigillato a secco ermetico",
+            "shelfLife": "18 mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "25kg Sacolas Kraft Multi-parede",
+              "50kg PP Bolsas"
+            ],
+            "name": "Sementes de gergelim torradas douradas (Grau tradicional Simit & Padaria)",
+            "description": "Torrado lentamente por convecção para desenvolver um perfil profundo, aromático e textura crocante. Especialmente classificado para autêntico Turkish Simit, bagels artesanais, pretzels e temperos culinários asiáticos.",
+            "color": "Âmbar Dourado Quente",
+            "harvestMonths": "Produção contínua em Mersin",
+            "storage": "Armazém hermético e selado a seco",
+            "shelfLife": "18 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "25kg Multi-wand Kraft Bags",
+              "50kg PP Tassen"
+            ],
+            "name": "Goudgeroosterde Sesamzaad (Traditionele Simit & Bakkerijkwaliteit)",
+            "description": "Langzaam convectiegeroosterd om een diep, aromatisch nootachtig profiel en knapperige textuur te ontwikkelen. Speciaal beoordeeld op authentieke Turkse Simit, ambachtelijke bagels, pretzels en Aziatische culinaire kruiden.",
+            "color": "Warme Gouden Barnsteen",
+            "harvestMonths": "Continue productie in Mersin",
+            "storage": "Luchtdicht droog afgesloten magazijn",
+            "shelfLife": "18 Maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "25kg Wielościenne torby kraftowe",
+              "50kg PP Bags"
+            ],
+            "name": "Złote Pieczone Nasiona Sezamu (tradycyjna klasa Simit i Piekarnia)",
+            "description": "Powolna konwekcja pieczona, by uzyskać głęboki, aromatyczny orzechowy profil i chrupiącą konsystencję. Specjalnie przystosowany do autentycznego tureckiego simitu, rzemieślniczych bajgli, precli i azjatyckich przypraw kulinarnych.",
+            "color": "Ciepły złoty bursztyn",
+            "harvestMonths": "Ciągła produkcja w Mersin",
+            "storage": "Szczelny, suchy, zamknięty magazyn",
+            "shelfLife": "18 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "25kg Genți Kraft multi-perete",
+              "50kg PP Genți"
+            ],
+            "name": "Semințe de susan prăjite aurii (grad tradițional Simit & Bakery)",
+            "description": "Prăjit lent prin convecție pentru a dezvolta un profil profund, aromat, de nuci și o textură crocantă. Clasificat special pentru autentic Turkish Simit, covrigi artizanali, covrigei și condimente culinare asiatice.",
+            "color": "Chihlimbar auriu cald",
+            "harvestMonths": "Producție continuă în Mersin",
+            "storage": "Depozit etanș și sigilat la aer",
+            "shelfLife": "18 Luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "25kg Многостенни крафт торбички",
+              "50kg PP чанти"
+            ],
+            "name": "Златно печени сусамови семки (традиционен Simit и Bakery клас)",
+            "description": "Бавно конвективно печено, за да се развие дълбок, ароматен ядков профил и хрупкава текстура. Специално оценено за автентичен турски Симит, занаятчийски бейгъли, гевреци и азиатски кулинарни подправки.",
+            "color": "Топъл златен кехлибар",
+            "harvestMonths": "Непрекъснато производство в Мерсин",
+            "storage": "Херметически затворен склад",
+            "shelfLife": "18 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "25kg Τσάντες Kraft πολλαπλών τοιχωμάτων",
+              "50kg PP Τσάντες"
+            ],
+            "name": "Χρυσοί καβουρδισμένοι σπόροι σουσαμιού (παραδοσιακός βαθμός Simit & Bakery)",
+            "description": "Αργή μεταφορά ψημένο για να αναπτύξει ένα βαθύ, αρωματικό προφίλ ξηρών καρπών και τραγανή υφή. Ειδικά βαθμολογημένο για αυθεντικό τουρκικό Simit, χειροποίητα bagels, κουλούρια και ασιατικά γαστρονομικά καρυκεύματα.",
+            "color": "Ζεστό Χρυσό Κεχριμπάρι",
+            "harvestMonths": "Συνεχής Παραγωγή στη Μερσίνα",
+            "storage": "Αεροστεγής ξηρή σφραγισμένη αποθήκη",
+            "shelfLife": "18 Μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "25kg Kraft torbe sa više zidova",
+              "50kg PP Torbe"
+            ],
+            "name": "Zlatno pečeno seme susama (tradicionalni Simit & Bakeri Grade)",
+            "description": "Sporo konvekcija pečena da se razvije dubok, aromatičan orašasti profil i hrskava tekstura. Specijalno ocenjen za autentične turske Simit, zanatske peciva, perece, i azijske kulinarske začine.",
+            "color": "Topla zlatni ćilibar",
+            "harvestMonths": "Kontinuirana proizvodnja u Mersinu",
+            "storage": "Hermetički zatvoreno suvo zatvoreno skladište",
+            "shelfLife": "18 meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "25kg Багатостінні крафтові сумки",
+              "50kg PP Bags"
+            ],
+            "name": "Золотисті обсмажені кунжутні насіння (традиційний сорт Simit і Bakery)",
+            "description": "Повільна конвекція обсмажується для розвитку глибокого, ароматного горіхового профілю та хрусткої текстури. Спеціально оцінено для автентичного турецького Симіт, ремісничих бейглів, кренделей і азійських кулінарних спецій.",
+            "color": "Теплий золотистий бурштин",
+            "harvestMonths": "Безперервне виробництво в Мерсіні",
+            "storage": "Герметичний сухий герметичний склад",
+            "shelfLife": "18 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "25kg მრავალსიზარდიანი კრაფტის ჩანთები",
+              "50kg PP ჩანთები"
+            ],
+            "name": "ოქროსფრად შეწვა სესამის მარცვლები (ტრადიციული სიმიტსა და საცხობი ხარისხი)",
+            "description": "ნელი კონვექციური შემწვარი, ღრმა, არომატული ნუშის გემის და хрустიანი ტექსტურის აღსადგენად. სპეციალურად შეფასებული ავთენტიკური თურქული სიმიტის, ხელნაკეთი ბეიგლების, პრეცელების და აზიური სამზარეულოს სანელებლებისათვის.",
+            "color": "თბილი ოქროსმაგიური ანბერი",
+            "harvestMonths": "უწყვეტი წარმოება მერسينში",
+            "storage": "ჰერმეტულად დახურული მშრალი საწყობი",
+            "shelfLife": "18 თვე"
+          },
+          "az": {
+            "packagingTypes": [
+              "25kg Çoxdivarlı Kraft Çantaları",
+              "50kg PP Çantalar"
+            ],
+            "name": "Qızıl Qovrulmuş Susam Toxumları (Ənənəvi Simit və Çörəkçi Dərəcəsi)",
+            "description": "Yavaş-yavaş konveksiya ilə qovrularaq dərin, ətirli qozlu profil və xırtıldayan tekstura yaranır. Xüsusi olaraq orijinal Türk Simit, sənətkar bagellər, pretzel və Asiya kulinariya ədviyyatları üçün hazırlanıb.",
+            "color": "İsti Qızılı Kəhrəba",
+            "harvestMonths": "Mersində fasiləsiz istehsal",
+            "storage": "Hava keçirməz quru möhürlənmiş anbar",
+            "shelfLife": "18 Ay"
+          },
+          "uz": {
+            "packagingTypes": [
+              "25kg Ko‘p-qavatli Kraft Sumkalar",
+              "50kg PP Sumkalar"
+            ],
+            "name": "Oltin Qovurilgan Kunjut Urug‘lari (An’anaviy Simit va Nonvoyxona Sifati)",
+            "description": "Sekin issiq havo bilan qovurilgan, chuqur, aromatik yong‘oq taʼm profilini va xushbo‘y, qarsillagan tuzilishini rivojlantirish uchun. Maxsus turk Simiti, artisan bagel, pretzel va Osiyo oshxona ziravorlari uchun tasniflangan.",
+            "color": "Iliq Oltin Amber",
+            "harvestMonths": "Mersinda doimiy ishlab chiqarish",
+            "storage": "Havo o'tkazmaydigan quruq yopiq ombor",
+            "shelfLife": "18 Oy"
+          },
+          "kk": {
+            "packagingTypes": [
+              "25kg Көп қабырғалы Kraft сөмкелері",
+              "50kg PP Сөмкелер"
+            ],
+            "name": "Алтын түсті қуырылған кунжут тұқымдары (дәстүрлі Simit және наубайхана сапасы)",
+            "description": "Баяу конвекциямен қуырылып, терең, хош иісті жаңғақ профилі мен қытырлақ текстурасын қалыптастырады. Арнайы шынайы түрік Симит, қолөнерлік багелдер, крендельдер және азиялық аспаздық дәмдеуіштерге арналған.",
+            "color": "Жылы алтын янтарь",
+            "harvestMonths": "Мерсинде үздіксіз өндіріс",
+            "storage": "Ауа өткізбейтін құрғақ қойма",
+            "shelfLife": "18 ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "25kg کیف های کرافت چندجداره",
+              "50kg PP کیف ها"
+            ],
+            "name": "دانه کنجد طلایی برشته شده (درجه سنتی سیمیت و نانوایی)",
+            "description": "برشته سازی آهسته برای ایجاد پروفایل عمیق و معطر مغزدار و بافت ترد. به طور ویژه برای سیمیت ترکی اصیل، بیگل های دست ساز، پرتزل ها و چاشنی های آشپزی آسیایی درجه بندی شده است.",
+            "color": "کهربای طلایی گرم",
+            "harvestMonths": "تولید پیوسته در مرسین",
+            "storage": "انبار خشک و مهر و موم شده با هوابند",
+            "shelfLife": "18 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "25kg मल्टी-वॉल क्राफ्ट बैग",
+              "50kg PP बैग"
+            ],
+            "name": "गोल्डन रोस्टेड तिल के बीज (पारंपरिक सिमिट और बेकरी ग्रेड)",
+            "description": "धीमी गति से संवहन एक गहरी, सुगंधित अखरोट प्रोफ़ाइल और कुरकुरे बनावट विकसित करने के लिए भुना हुआ। प्रामाणिक तुर्की सिमिट, कारीगर बैगेल, प्रेट्ज़ेल और एशियाई पाक मसाला के लिए विशेष रूप से श्रेणीबद्ध।",
+            "color": "गर्म सुनहरा एम्बर",
+            "harvestMonths": "मेर्सिन में निरंतर उत्पादन",
+            "storage": "एयरटाइट ड्राई सीलबंद गोदाम",
+            "shelfLife": "18 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "25kg ملٹی وال کرافٹ بیگز",
+              "50kg PP بیگز"
+            ],
+            "name": "سنہری بھنے ہوئے تل کے بیج (روایتی سمیت اور بیکری گریڈ)",
+            "description": "آہستہ آہستہ روسٹ کیا جاتا ہے تاکہ گہری، خوشبودار نٹ پروفائل اور کرنچی ساخت پیدا ہو سکے۔ خاص طور پر اصلی ترک سمٹ، دستکاری شدہ بیگلز، پریٹزلز، اور ایشیائی کھانوں کے مصالحے کے لیے گریڈ کیا گیا ہے۔",
+            "color": "گرم سنہری عنبر",
+            "harvestMonths": "مرسن میں مسلسل پیداوار",
+            "storage": "ہوا بند خشک بند گودام",
+            "shelfLife": "18 مہینے"
+          },
+          "bn": {
+            "packagingTypes": [
+              "25kg মাল্টি-ওয়াল ক্রাফ্ট ব্যাগ",
+              "50kg PP ব্যাগ"
+            ],
+            "name": "গোল্ডেন রোস্টেড তিল বীজ (ট্র্যাডিশনাল সিমিট এবং বেকারি গ্রেড)",
+            "description": "একটি গভীর, সুগন্ধযুক্ত বাদাম প্রোফাইল এবং মুচমুচে টেক্সচার বিকাশের জন্য ধীর পরিচলন ভাজা। খাঁটি তুর্কি সিমিট, কারিগর ব্যাগেলস, প্রেটজেল এবং এশিয়ান রন্ধনসম্পর্কীয় মশলাগুলির জন্য বিশেষভাবে গ্রেড করা হয়েছে।",
+            "color": "উষ্ণ সোনার অ্যাম্বার",
+            "harvestMonths": "মেরসিনে অবিচ্ছিন্ন উত্পাদন",
+            "storage": "এয়ারটাইট ড্রাই সিলড ওয়্যারহাউজ",
+            "shelfLife": "18 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "25kg 多层牛皮包",
+              "50kg PP包"
+            ],
+            "name": "金色烤芝麻（传统烤肉店级）",
+            "description": "慢速对流烘焙，形成深沉芳香的坚果口感和酥脆口感。经过特别分级，适合正宗土耳其西米特、手工百吉饼、椒盐卷饼和亚洲烹饪调味料。",
+            "color": "温暖的金色琥珀",
+            "harvestMonths": "梅尔辛持续生产",
+            "storage": "密封干密封仓库",
+            "shelfLife": "18个月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "25kg マルチウォールクラフトバッグ",
+              "50kg PP バッグ"
+            ],
+            "name": "黄金焼きごま(伝統式シミット&ベーカリーグレード)",
+            "description": "ゆっくりと対流で焙煎され、深く芳香のあるナッツのプロファイルとカリカリとした食感が生まれます。本格トルコのシミット、職人ベーグル、プレッツェル、アジア料理の調味料のために特別にグレードされています。",
+            "color": "温かい黄金の琥珀",
+            "harvestMonths": "メルシンでの継続的な生産",
+            "storage": "気密乾燥密封倉庫",
+            "shelfLife": "18ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "25kg 멀티월 크래프트 백",
+              "50kg PP 가방"
+            ],
+            "name": "황금 볶은 참깨 (전통 시밋 및 베이커리 등급)",
+            "description": "천천히 대류로 로스팅하여 깊고 향기로운 견과류 모양과 바삭한 식감을 개발합니다. 정통 터키 시밋, 장인 베이글, 프레첼, 아시아 요리 양념을 위해 특별히 등급이 지정되었습니다.",
+            "color": "따뜻한 황금 호박",
+            "harvestMonths": "메르신에서의 지속적인 생산",
+            "storage": "밀폐 건조 밀봉 창고",
+            "shelfLife": "18개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "25kg Kantong Kraft Multi-dinding",
+              "50kg PP Tas"
+            ],
+            "name": "Biji Wijen Panggang Emas (Simit & Bakery Grade Tradisional)",
+            "description": "Konveksi perlahan dipanggang untuk mengembangkan profil kacang yang dalam dan aromatik serta tekstur renyah. Khusus digradasi untuk Simit Turki asli, bagel artisanal, pretzel, dan bumbu kuliner Asia.",
+            "color": "Amber Emas Hangat",
+            "harvestMonths": "Produksi berkelanjutan di Mersin",
+            "storage": "Gudang kering rapat udara tertutup",
+            "shelfLife": "18 Bulan"
+          },
+          "ms": {
+            "packagingTypes": [
+              "25kg Beg Kraft Multi-dinding",
+              "50kg PP Beg"
+            ],
+            "name": "Bijan Panggang Emas (Gred Simit & Bakery Tradisional)",
+            "description": "Panggang perlahan dengan konveksi untuk menghasilkan profil kacang yang dalam dan aromatik serta tekstur rangup. Diklasifikasikan khas untuk Simit Turki asli, bagel artisanal, pretzel, dan perasa masakan Asia.",
+            "color": "Amber Emas Hangat",
+            "harvestMonths": "Pengeluaran berterusan di Mersin",
+            "storage": "Gudang kering kedap udara",
+            "shelfLife": "18 Bulan"
+          },
+          "sw": {
+            "packagingTypes": [
+              "25kg Mifuko ya Kraft ya kuta nyingi",
+              "50kg PP Mifuko"
+            ],
+            "name": "Mbegu za ufuta zilizochomwa za dhahabu (Simit ya Jadi na Daraja la Mkate)",
+            "description": "Convection polepole iliyochomwa ili kukuza wasifu wa kina na wenye harufu nzuri na umbile la crunchy. Imepangwa mahususi kwa Simit halisi ya Kituruki, bagels za ufundi, pretzels, na kitoweo cha upishi cha Asia.",
+            "color": "Kahawia ya Dhahabu ya Joto",
+            "harvestMonths": "Uzalishaji unaoendelea huko Mersin",
+            "storage": "Ghala kavu lililofungwa kwa hewa",
+            "shelfLife": "Miezi 18"
+          }
+        }
+      },
+      {
+        "id": "tahini-grade-sesame",
+        "slug": "tahini-grade-sesame",
+        "name": "High-Oil Tahini Grade Sesame Seeds (52%+ Oil Content)",
+        "image": "/images/products/turkish-sesame-seeds-nilasya.jpg",
+        "nameTr": "Tahinlik Ekstra Yağlı Susam (%52+ Doğal Yağ Oranı)",
+        "description": "Specially selected high-oil seed blend delivering superior milling yields, low natural bitterness, and buttery stability that resists oil-separation in packaged tahini.",
+        "descriptionTr": "Yüksek yağ randımanı sağlayan, acılığı giderilmiş ve kavanozda yağ ayrışmasını önleyen kremamsı stabiliteye sahip tahinlik seleksiyon susam.",
+        "color": "Creamy Ivory",
+        "colorTr": "Krem Fildişi",
+        "size": "Selected High-Oil Seed",
+        "caliber": "Industrial Tahini Grade",
+        "moisture": "< 4.0%",
+        "purity": "99.95%",
+        "harvestMonths": "September – November",
+        "harvestMonthsTr": "Eylül – Kasım",
+        "storage": "Climate-controlled silo",
+        "storageTr": "İklimlendirmeli çelik silo",
+        "shelfLife": "24 Months",
+        "shelfLifeTr": "24 Ay",
+        "packagingTypes": [
+          "25kg Kraft Bags",
+          "1000kg Big Bags"
+        ],
+        "packagingTypesTr": [
+          "25kg Kraft Torba",
+          "1000kg Big Bag"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "25kg حقائب كرافت",
+              "1000kg الحقائب الكبيرة"
+            ],
+            "name": "بذور السمسم عالية الزيوت بدرجة الطحينة (52%+ محتوى الزيت)",
+            "description": "مزيج بذور عالي الزيت مختارة خصيصا يوفر إنتاجية طحن عالية، مرارة طبيعية منخفضة، وثباتا زبديا يقاوم انفصال الزيت في الطحينة المعبأة.",
+            "color": "العاج الكريمي",
+            "harvestMonths": "سبتمبر – نوفمبر",
+            "storage": "صومعة مناخية",
+            "shelfLife": "24 شهور"
+          },
+          "ru": {
+            "packagingTypes": [
+              "25kg Kraft Bags",
+              "1000kg Большие сумки"
+            ],
+            "name": "Кунжут высокомасляного тахини (52%+ содержание масла)",
+            "description": "Специально подобранная смесь масляных семян с высоким содержанием маслин, обеспечивающая превосходный урожай при помоле, низкую естественную горечь и маслянистую устойчивость, устойчивую к отделению масла в упакованном тахини.",
+            "color": "Кремовая слоновая кость",
+            "harvestMonths": "сентябрь – ноябрь",
+            "storage": "Климат-контролируемый силос",
+            "shelfLife": "24 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "25kg Kraftsäcke",
+              "1000kg große Säcke"
+            ],
+            "name": "Sesamsamen der Tahini-Qualität mit hohem Öl (52%+ Ölgehalt)",
+            "description": "Speziell ausgewählte Samenmischung mit hohem Ölgehalt, die überlegene Mahlergebnisse liefert, geringe natürliche Bitterkeit aufweist und eine buttrige Stabilität besitzt, die Ölabscheidung in verpacktem Tahini verhindert.",
+            "color": "Cremiges Elfenbein",
+            "harvestMonths": "September – November",
+            "storage": "Klimatisiertes Silo",
+            "shelfLife": "24 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "25kg Sacs Kraft",
+              "1000kg Gros Sacs"
+            ],
+            "name": "Graines de sésame de qualité tahini à haute teneur en huile (52%+ Teneur en huile)",
+            "description": "Mélange de graines à haute teneur en huile spécialement sélectionné, offrant des rendements de mouture supérieurs, une faible amertume naturelle et une stabilité beurreuse résistant à la séparation des huiles dans le tahini emballé.",
+            "color": "Ivoire Crémeux",
+            "harvestMonths": "Septembre – Novembre",
+            "storage": "Silo à contrôle climatique",
+            "shelfLife": "24 mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "Bolsas Kraft 25kg",
+              "1000kg Grandes Bolsas"
+            ],
+            "name": "Semillas de sésamo de grado alto en aceite (52%+ Contenido de aceite)",
+            "description": "Mezcla de semillas especialmente seleccionadas con alto contenido de aceite que ofrece rendimientos superiores de molienda, baja amargura natural y estabilidad de mantequilla que resiste la separación de aceite en tahini envasado.",
+            "color": "Marfil Cremoso",
+            "harvestMonths": "Septiembre – Noviembre",
+            "storage": "Silo con control climático",
+            "shelfLife": "24 Meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "25kg Borse Kraft",
+              "1000kg Grandi Borse"
+            ],
+            "name": "Semi di sesamo ad alto contenuto di olio (52%+ Contenuto di olio)",
+            "description": "Miscela di semi ad alto contenuto di olio appositamente selezionata che offre rese di macinatura superiori, bassa amarezza naturale e stabilità burrosa che resiste alla separazione dell'olio nella tahina confezionata.",
+            "color": "Avorio Cremoso",
+            "harvestMonths": "Settembre – Novembre",
+            "storage": "Silo a controllo climatico",
+            "shelfLife": "24 Mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "25kg Sacolas Kraft",
+              "1000kg Grandes Sacos"
+            ],
+            "name": "Sementes de gergelim grau tahini com alto teor de óleo (52%+ Conteúdo de óleo)",
+            "description": "Mistura de sementes especialmente selecionada com alto teor de óleo, que oferece rendimentos superiores na moagem, baixa amargura natural e estabilidade manteigosa, que resiste à separação de óleo em tahini embalado.",
+            "color": "Marfim cremoso",
+            "harvestMonths": "Setembro – Novembro",
+            "storage": "Silo com controle climático",
+            "shelfLife": "24 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "25kg Kraft Bags",
+              "1000kg Grote Zakken"
+            ],
+            "name": "Sesamzaad van hoge oliekwaliteit Tahini (52%+ oliegehalte)",
+            "description": "Speciaal geselecteerde zaadmix met hoge olie, die superieure maalopbrengsten, lage natuurlijke bitterheid en boterachtige stabiliteit levert en weerstand biedt aan olie-scheiding in verpakte tahini.",
+            "color": "Romige Ivoor",
+            "harvestMonths": "September – november",
+            "storage": "Klimaatgereguleerde silo",
+            "shelfLife": "24 Maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "25kg Kraft Bags",
+              "1000kg Duże Worki"
+            ],
+            "name": "Sezamowe nasiona tahini o wysokiej zawartości oleju (52%+ zawartość oleju)",
+            "description": "Specjalnie dobrana mieszanka nasion o wysokiej zawartości oleju, zapewniająca doskonałe plony mielenia, niską naturalną goryczkę oraz maślaną stabilność, która nie rozdziela oleju w pakowanym tahini.",
+            "color": "Kremowa kość słoniowa",
+            "harvestMonths": "Wrzesień – listopad",
+            "storage": "Silos z kontrolowaną klimatyzacją",
+            "shelfLife": "24 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "25kg Genți Kraft",
+              "1000kg Saci Mari"
+            ],
+            "name": "Semințe de susan cu conținut ridicat de ulei (52%+ conținut de ulei)",
+            "description": "Amestec special selectat de semințe cu conținut ridicat de ulei, care oferă randamente superioare la măcinare, amărăciune naturală scăzută și stabilitate untoasă care rezistă separării uleiului în tahini ambalat.",
+            "color": "Fildeș cremos",
+            "harvestMonths": "Septembrie – Noiembrie",
+            "storage": "Siloz cu control climatic",
+            "shelfLife": "24 Luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "25kg Kraft чанти",
+              "1000kg Големи торби"
+            ],
+            "name": "Сусамови семена с високо съдържание на тахини (52%+ съдържание на масло)",
+            "description": "Специално подбрана смес с високо съдържание на масло, осигуряваща отлични добиви при мелене, ниска естествена горчивина и маслена стабилност, която устоява на разделяне на масло в пакетирано тахан.",
+            "color": "Кремообразна слонова кост",
+            "harvestMonths": "септември – ноември",
+            "storage": "климатизиран силоз",
+            "shelfLife": "24 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "25kg Kraft Τσάντες",
+              "1000kg Μεγασάκοι"
+            ],
+            "name": "Σουσάμι υψηλής περιεκτικότητας σε ταχίνι (περιεκτικότητα σε λάδι 52%+)",
+            "description": "Ειδικά επιλεγμένο μείγμα σπόρων υψηλής περιεκτικότητας σε λάδι που προσφέρει ανώτερες αποδόσεις άλεσης, χαμηλή φυσική πικράδα και βουτυρώδη σταθερότητα που αντιστέκεται στον διαχωρισμό του λαδιού στο συσκευασμένο ταχίνι.",
+            "color": "Κρεμώδες ελεφαντόδοντο",
+            "harvestMonths": "Σεπτέμβριος – Νοέμβριος",
+            "storage": "Κλιματιζόμενο σιλό",
+            "shelfLife": "24 Μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "25kg Kraft torbe",
+              "1000kg Velike torbe"
+            ],
+            "name": "Tahini razred semena susama sa visokim sadržajem ulja (52%+ sadržaj ulja)",
+            "description": "Specijalno odabrana mešavina semena sa visokim sadržajem ulja koja pruža vrhunske prinose mlevenja, nisku prirodnu gorčinu i stabilnost maslaca koja se odupire razdvajanju ulja u upakovanim tahini.",
+            "color": "Kremasta slonovače",
+            "harvestMonths": "septembar – novembar",
+            "storage": "Silos sa kontrolisanom klimom",
+            "shelfLife": "24 meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "25kg Kraft Bags",
+              "1000kg Великі сумки"
+            ],
+            "name": "Кунжутне насіння тахіні високої олії (52%+ вміст олії)",
+            "description": "Спеціально відібрана олійна суміш насіння, що забезпечує відмінний вихід помелу, низьку природну гіркоту та маслянисту стабільність, що не піддається розділенню олії в упакованому тахіні.",
+            "color": "Кремовий слонова кістка",
+            "harvestMonths": "вересень – листопад",
+            "storage": "Клімат-контрольований силос",
+            "shelfLife": "24 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "25kg კრეფტი ჩანთები",
+              "1000kg დიდი ჩანთები"
+            ],
+            "name": "მაღალი ზეთის თაჰინის ხარისხის სეზამი (52%+ ზეთის შემცველობა)",
+            "description": "სპეციალურად შერჩეული მაღალი ზეთის თესლის ნაზავი, რომელიც უზრუნველყოფს უმაღლეს საფქვავის მოსავალსა, დაბალ ბუნებრივ ცოფიანობის დონეს და კარაქივით სტაბილურობას, რომელიც ართმევს ზეთის გაყოფას შეფუთულ თაჰინში.",
+            "color": "კრემისფერი ივორი",
+            "harvestMonths": "სექტემბერი – ნოემბერი",
+            "storage": "კლიმატ-კონტროლირებადი სილო",
+            "shelfLife": "24 თვე"
+          },
+          "az": {
+            "packagingTypes": [
+              "25kg Kraft Çantaları",
+              "1000kg Böyük Çantalar"
+            ],
+            "name": "Yüksək Yağlı Tahin Dərəcəli Küncüt Toxumları (52%+ Yağ Tərkibi)",
+            "description": "Xüsusi seçilmiş yüksək yağlı toxum qarışığı yüksək üyütmə məhsuldarlığı, aşağı təbii acılıq və qablaşdırılmış tahində yağ ayrılmasına davamlı yağ sabitliyi təmin edir.",
+            "color": "Kremli Fildişi",
+            "harvestMonths": "Sentyabr – Noyabr",
+            "storage": "İqlim nəzarətli silo",
+            "shelfLife": "24 Ay"
+          },
+          "uz": {
+            "packagingTypes": [
+              "25kg Kraft sumkalar",
+              "1000kg Katta Sumkalar"
+            ],
+            "name": "Yuqori yog‘li tahini darajasidagi kunjut urug‘lari (52%+ yog‘ miqdori)",
+            "description": "Maxsus tanlangan yuqori yog‘li urug‘ aralashmasi, mukammal maydalash hosildorligini, past tabiiy achchiqlikni va paketlangan tahinidagi yog‘ ajralishiga chidamli sariyog‘ barqarorligini taʼminlaydi.",
+            "color": "Kremli Marjon",
+            "harvestMonths": "Sentyabr – Noyabr",
+            "storage": "Iqlim nazoratidagi silos",
+            "shelfLife": "24 Oy"
+          },
+          "kk": {
+            "packagingTypes": [
+              "25kg Kraft сөмкелері",
+              "1000kg Үлкен сөмкелер"
+            ],
+            "name": "Жоғары майлы тахини дәрежелі кунжут тұқымдары (52%+ май мөлшері)",
+            "description": "Арнайы таңдалған жоғары майлы тұқым қоспасы, жоғары ұнтақтау өнімділігі, төмен табиғи ащы дәм және майлы тұрақтылықты қамтамасыз етеді, бұл қапталған тахиниде майдың бөлінуіне төтеп береді.",
+            "color": "Кремді піл сүйегі",
+            "harvestMonths": "Қыркүйек – Қараша",
+            "storage": "Климаттық бақыланатын силос",
+            "shelfLife": "24 ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "25kg کیف های کرافت",
+              "1000kg کیسه های بزرگ"
+            ],
+            "name": "دانه کنجد درجه تهینی با روغن بالا (52%+ محتوای روغن)",
+            "description": "ترکیب بذر با روغن بالا که به طور ویژه انتخاب شده و بازده آسیاب برتر، تلخی طبیعی پایین و پایداری کره ای را ارائه می دهد و در تاهینی بسته بندی شده در برابر جداسازی روغن مقاومت می کند.",
+            "color": "عاجی خامه ای",
+            "harvestMonths": "سپتامبر – نوامبر",
+            "storage": "سیلوی کنترل شده با دما",
+            "shelfLife": "24 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "25kg क्राफ्ट बैग",
+              "1000kg बड़े बैग"
+            ],
+            "name": "उच्च तेल ताहिनी ग्रेड तिल के बीज (52%+ तेल सामग्री)",
+            "description": "विशेष रूप से चयनित उच्च तेल बीज मिश्रण बेहतर मिलिंग पैदावार, कम प्राकृतिक कड़वाहट, और मक्खन जैसी स्थिरता प्रदान करता है जो पैक किए गए ताहिनी में तेल-पृथक्करण का प्रतिरोध करता है।",
+            "color": "मलाईदार आइवरी",
+            "harvestMonths": "सितंबर - नवंबर",
+            "storage": "जलवायु-नियंत्रित साइलो",
+            "shelfLife": "24 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "25kg کرافٹ بیگز",
+              "1000kg بڑے تھیلے"
+            ],
+            "name": "ہائی آئل تہینی گریڈ تل کے بیج (52%+ تیل کی مقدار)",
+            "description": "خاص طور پر منتخب کردہ ہائی آئل سیڈ مکسچر جو اعلیٰ ملنگ کی پیداوار، کم قدرتی تلخی، اور مکھن کی استحکام فراہم کرتا ہے جو پیک شدہ تہینی میں تیل کی علیحدگی سے بچاؤ کرتا ہے۔",
+            "color": "کریمی ہاتھی دانت",
+            "harvestMonths": "ستمبر – نومبر",
+            "storage": "آب و ہوا پر قابو پانے والا سائلو",
+            "shelfLife": "24 مہینے"
+          },
+          "bn": {
+            "packagingTypes": [
+              "25kg ক্রাফ্ট ব্যাগ",
+              "1000kg বড় ব্যাগ"
+            ],
+            "name": "উচ্চ-তেল তাহিনি গ্রেড তিল বীজ (52%+ তেলের সামগ্রী)",
+            "description": "বিশেষভাবে নির্বাচিত উচ্চ-তেল বীজ মিশ্রণ উচ্চতর মিলিং ফলন, কম প্রাকৃতিক তিক্ততা এবং মাখনের স্থিতিশীলতা সরবরাহ করে যা প্যাকেজযুক্ত তাহিনিতে তেল-পৃথকীকরণ প্রতিরোধ করে।",
+            "color": "ক্রিমি আইভরি",
+            "harvestMonths": "সেপ্টেম্বর - নভেম্বর",
+            "storage": "জলবায়ু-নিয়ন্ত্রিত সাইলো",
+            "shelfLife": "24 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "25kg牛皮纸袋",
+              "1000kg大袋子"
+            ],
+            "name": "高油芝麻级芝麻（含油量52%+）",
+            "description": "特别挑选的高油籽混合，提供优越的磨粉产量、低天然苦味和黄油稳定性，在包装芝麻酱中不易被油分离。",
+            "color": "奶油象牙",
+            "harvestMonths": "9月至11月",
+            "storage": "气候控制筒仓",
+            "shelfLife": "24个月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "25kgクラフトバッグ",
+              "1000kg ビッグバッグ"
+            ],
+            "name": "高油タヒニグレードごま(52%+油含有量)",
+            "description": "特別に選ばれた高油種ブレンドで、優れた製粉収量、低い自然苦味、そして包装されたタヒニでの油分離に強いバターの安定性を提供します。",
+            "color": "クリーミーなアイボリー",
+            "harvestMonths": "9月〜11月",
+            "storage": "気候制御サイロ",
+            "shelfLife": "24ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "25kg 크래프트 백",
+              "1000kg 빅 백"
+            ],
+            "name": "고유 타히니 등급 참깨 (52%+ 오일 함량)",
+            "description": "특별히 선별된 고유분 씨앗 혼합물로, 우수한 제분 수율, 낮은 천연 쓴맛, 그리고 포장된 타히니에서 기름 분리에 강한 버터 안정성을 제공합니다.",
+            "color": "크리미 아이보리",
+            "harvestMonths": "9월 – 11월",
+            "storage": "기후 제어 사일로",
+            "shelfLife": "24개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "25kg Kantong Kraft",
+              "1000kg Tas Besar"
+            ],
+            "name": "Biji Wijen Tahini Berkualitas Tinggi (52%+ Kandungan Minyak)",
+            "description": "Campuran biji minyak tinggi yang dipilih khusus memberikan hasil penggilingan unggul, kepahitan alami rendah, dan stabilitas mentega yang tahan terhadap pemisahan minyak pada tahini kemasan.",
+            "color": "Gading Krim",
+            "harvestMonths": "September – November",
+            "storage": "Silo ber-iklim terkendali",
+            "shelfLife": "24 Bulan"
+          },
+          "ms": {
+            "packagingTypes": [
+              "Beg Kraft 25kg",
+              "1000kg Beg Besar"
+            ],
+            "name": "Bijan Gred Tahini Tinggi Minyak (52%+ Kandungan Minyak)",
+            "description": "Campuran biji berminyak tinggi yang dipilih khas memberikan hasil pengisaran yang unggul, kepahitan semula jadi yang rendah, dan kestabilan mentega yang menahan pemisahan minyak dalam tahini yang dibungkus.",
+            "color": "Gading Berkrim",
+            "harvestMonths": "September – November",
+            "storage": "Silo terkawal iklim",
+            "shelfLife": "24 Bulan"
+          },
+          "sw": {
+            "packagingTypes": [
+              "25kg Mifuko ya Kraft",
+              "1000kg Mifuko Mikubwa"
+            ],
+            "name": "Mbegu za ufuta za daraja la Tahini zenye mafuta mengi (52%+ Maudhui ya Mafuta)",
+            "description": "Mchanganyiko maalum wa mbegu za juu za mafuta hutoa mavuno bora ya kusaga, uchungu wa chini wa asili, na uthabiti wa siagi ambao hupinga kutenganishwa kwa mafuta katika tahini iliyowekwa kwenye vifurushi.",
+            "color": "Pembe za ndovu za cream",
+            "harvestMonths": "Septemba - Novemba",
+            "storage": "Silo inayodhibitiwa na hali ya hewa",
+            "shelfLife": "Miezi 24"
+          }
+        }
+      },
+      {
+        "id": "black-sesame-seeds",
+        "slug": "black-sesame-seeds",
+        "name": "Black Sesame Seeds & Nigella Sativa (Sortex Cleaned 99.9%)",
+        "image": "/images/products/turkish-sesame-seeds-nilasya.jpg",
+        "nameTr": "Siyah Susam ve Çörek Otu (Sortex Temizlenmiş %99.9)",
+        "description": "Intense earthy aroma, rich in antioxidants and anthocyanins. Popular in premium bakery, sushi rolls, gourmet seasoning blends, and traditional culinary heritage recipes.",
+        "descriptionTr": "Yoğun aromatik tat, zengin antioksidan içeriği. Gurme fırıncılık, sushi, baharat karışımları ve şifalı geleneksel lezzetler için Sortex temizlikte siyah tohumlar.",
+        "color": "Deep Obsidian Black",
+        "colorTr": "Parlak Obsidyen Siyah",
+        "size": "2.0mm - 2.8mm",
+        "caliber": "Specialty Topping Grade",
+        "moisture": "< 5.0%",
+        "purity": "99.9%",
+        "harvestMonths": "August – October",
+        "harvestMonthsTr": "Ağustos – Ekim",
+        "storage": "Cool dry warehouse",
+        "storageTr": "Serin ve kuru depo",
+        "shelfLife": "24 Months",
+        "shelfLifeTr": "24 Ay",
+        "packagingTypes": [
+          "25kg Kraft Bags",
+          "50kg PP Bags"
+        ],
+        "packagingTypesTr": [
+          "25kg Kraft Torba",
+          "50kg PP Çuval"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "25kg حقائب كرافت",
+              "50kg PP حقائب"
+            ],
+            "name": "بذور السمسم الأسود & نيجيلا ساتيفا (Sortex منظف 99.9%)",
+            "description": "رائحة ترابية قوية، غنية بمضادات الأكسدة والأنثوسيانينات. شائعة في المخابز الفاخرة، ولفائف السوشي، وخلطات التوابل الفاخرة، ووصفات التراث الطهوي التقليدية.",
+            "color": "الأسود العميق",
+            "harvestMonths": "أغسطس – أكتوبر",
+            "storage": "مستودع جاف بارد",
+            "shelfLife": "24 شهور"
+          },
+          "ru": {
+            "packagingTypes": [
+              "25kg Kraft Bags",
+              "50kg PP Bags"
+            ],
+            "name": "Черный кунжут и нигелла сатива (Sortex очищено 99.9%)",
+            "description": "Насыщенный землистый аромат, богатый антиоксидантами и антоцианами. Популярен в премиальных пекарнях, суши-роллах, изысканных смесях приправ и традиционных кулинарных рецептах.",
+            "color": "Глубокий обсидиановый чёрный",
+            "harvestMonths": "август – октябрь",
+            "storage": "Холодный сухой склад",
+            "shelfLife": "24 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "25kg Kraftsäcke",
+              "50kg PP Taschen"
+            ],
+            "name": "Schwarze Sesamsamen & Nigella Sativa (Sortex gereinigt 99.9%)",
+            "description": "Intensives erdiges Aroma, reich an Antioxidantien und Anthocyanen. Beliebt in Premium-Bäckerei, Sushi-Rollen, Gourmet-Gewürzmischungen und traditionellen kulinarischen Rezepten.",
+            "color": "Tiefes obsidianschwarz",
+            "harvestMonths": "August – Oktober",
+            "storage": "Kühles, trockenes Lager",
+            "shelfLife": "24 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "25kg Sacs Kraft",
+              "50kg PP Sacs"
+            ],
+            "name": "Graines de sésame noir & Nigella sativa (Sortex nettoyé 99.9%)",
+            "description": "Arôme terreux intense, riche en antioxydants et en anthocyanines. Populaire dans les boulangeries haut de gamme, les rouleaux à sushi, les mélanges d’assaisonnement gastronomique et les recettes traditionnelles du patrimoine culinaire.",
+            "color": "Noir d’Obsidienne Profonde",
+            "harvestMonths": "Août – Octobre",
+            "storage": "Entrepôt sec et frais",
+            "shelfLife": "24 mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "Bolsas Kraft 25kg",
+              "50kg PP Bolsas"
+            ],
+            "name": "Semillas de Sésamo Negro y Nigella Sativa (Sortex Limpias 99.9%)",
+            "description": "Aroma terroso intenso, rico en antioxidantes y antocianinas. Popular en panadería premium, rollos de sushi, mezclas de condimentos gourmet y recetas de patrimonio culinario tradicional.",
+            "color": "Negro Obsidiana Profundo",
+            "harvestMonths": "Agosto – Octubre",
+            "storage": "Almacén fresco y seco",
+            "shelfLife": "24 Meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "25kg Borse Kraft",
+              "50kg PP Borse"
+            ],
+            "name": "Semi di sesamo nero & Nigella Sativa (Sortex Pulito 99.9%)",
+            "description": "Aroma intenso e terroso, ricco di antiossidanti e antociani. Popolare in panificazioni premium, sushi rolls, miscele gourmet di condimenti e ricette tradizionali di storietà culina.",
+            "color": "Nero Ossidiana Profonda",
+            "harvestMonths": "Agosto – Ottobre",
+            "storage": "Magazzino fresco e secco",
+            "shelfLife": "24 Mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "25kg Sacolas Kraft",
+              "50kg PP Bolsas"
+            ],
+            "name": "Sementes de Gergelim Preto & Nigella Sativa (Sortex Limpo 99.9%)",
+            "description": "Aroma intenso e terroso, rico em antioxidantes e antocianinas. Popular em padarias premium, rolinhos de sushi, misturas gourmet de temperos e receitas tradicionais de herança culinária.",
+            "color": "Preto Profundo de Obsidiana",
+            "harvestMonths": "Agosto – Outubro",
+            "storage": "Armazém seco e fresco",
+            "shelfLife": "24 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "25kg Kraft Bags",
+              "50kg PP Tassen"
+            ],
+            "name": "Zwarte Sesamzaad & Nigella Sativa (Sortex Schoongemaakt 99.9%)",
+            "description": "Intense aardse geur, rijk aan antioxidanten en anthocyanen. Populair in premium bakkerijen, sushirolletjes, gastronomische kruidenmixen en traditionele culinaire recepten.",
+            "color": "Diep Obsidiaan Zwart",
+            "harvestMonths": "augustus – oktober",
+            "storage": "Koel droog magazijn",
+            "shelfLife": "24 Maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "25kg Kraft Bags",
+              "50kg PP Bags"
+            ],
+            "name": "Czarne nasiona sezamu i Nigella Sativa (Sortex Oczyszczone 99.9%)",
+            "description": "Intensywny, ziemisty aromat, bogaty w antyoksydanty i antocyjany. Popularny w ekskluzywnych piekarnictwach, bułeczkach sushi, mieszankach przypraw gourmet oraz tradycyjnych przepisach kulinarnych.",
+            "color": "Głęboka Obsydian Black",
+            "harvestMonths": "Sierpień – październik",
+            "storage": "Chłodny, suchy magazyn",
+            "shelfLife": "24 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "25kg Genți Kraft",
+              "50kg PP Genți"
+            ],
+            "name": "Semințe de susan negru & Nigella Sativa (Sortex Curățat 99.9%)",
+            "description": "Aromă intensă, pământioasă, bogată în antioxidanți și antocianine. Populară în brutărie premium, rulouri de sushi, amestecuri gourmet de condimente și rețete tradiționale de patrimoniu culinar.",
+            "color": "Obsidian Negru Adânc",
+            "harvestMonths": "August – octombrie",
+            "storage": "Depozit răcoros și uscat",
+            "shelfLife": "24 Luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "25kg Kraft чанти",
+              "50kg PP чанти"
+            ],
+            "name": "Черни сусамови семки и Нигела Сатива (Sortex Почистени 99.9%)",
+            "description": "Интензивен земен аромат, богат на антиоксиданти и антоцианини. Популярен в премиум пекари, суши рулца, гурме подправки и традиционни кулинарни рецепти.",
+            "color": "Дълбоко обсидианово черно",
+            "harvestMonths": "август – октомври",
+            "storage": "Хладен сух склад",
+            "shelfLife": "24 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "25kg Kraft Τσάντες",
+              "50kg PP Τσάντες"
+            ],
+            "name": "Μαύρο Σουσάμι & Nigella Sativa (Sortex Καθαρισμένο 99.9%)",
+            "description": "Έντονο γήινο άρωμα, πλούσιο σε αντιοξειδωτικά και ανθοκυανίνες. Δημοφιλές σε premium αρτοποιεία, ρολά σούσι, γκουρμέ μείγματα καρυκευμάτων και παραδοσιακές συνταγές γαστρονομικής κληρονομιάς.",
+            "color": "Βαθύ Οψιδιανό Μαύρο",
+            "harvestMonths": "Αύγουστος – Οκτώβριος",
+            "storage": "Δροσερή ξηρή αποθήκη",
+            "shelfLife": "24 Μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "25kg Kraft torbe",
+              "50kg PP Torbe"
+            ],
+            "name": "Crni susam i Nigella Sativa (Sortex očišćena 99.9%)",
+            "description": "Intenzivna zemljana aroma, bogata antioksidansima i antocijaninima. Popularan u vrhunskoj pekari, suši rolnicama, gurmanskim mešavinama začina i tradicionalnim receptima kulinarskog nasleđa.",
+            "color": "Duboko Obsidian Crna",
+            "harvestMonths": "Avgust – Oktobar",
+            "storage": "Hladno suvo skladište",
+            "shelfLife": "24 meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "25kg Kraft Bags",
+              "50kg PP Bags"
+            ],
+            "name": "Чорний кунжут і Нігелла Сатіва (Sortex Очищено 99.9%)",
+            "description": "Насичений земляний аромат, багатий на антиоксиданти та антоціани. Популярний у преміальних пекарнях, суші-ролах, гурманських сумішах спецій та традиційних рецептах кулінарної спадщини.",
+            "color": "Глибокий обсидіановий чорний",
+            "harvestMonths": "Серпень – жовтень",
+            "storage": "Холодний сухий склад",
+            "shelfLife": "24 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "25kg კრეფტი ჩანთები",
+              "50kg PP ჩანთები"
+            ],
+            "name": "შავი სეზამი & ნიგელა სატივა (Sortex სუფთა 99.9%)",
+            "description": "ინტენსიური მიწიერი სუნი, მდიდარი ანტიოქსიდანტებსა და ანთოციანინებში. პოპულარული პრემიუმ სასურსათო პეკრებში, სასური როლებში, გურმანური სანელებლების ნაზავებში და ტრადიციული კულინარული მემკვიდრეობის რეცეპტებში.",
+            "color": "ღრმა ობსიდიანური შავი",
+            "harvestMonths": "აგვისტო – ოქტომბერი",
+            "storage": "სენსაციური მშრალი საწყობი",
+            "shelfLife": "24 თვე"
+          },
+          "az": {
+            "packagingTypes": [
+              "25kg Kraft Çantaları",
+              "50kg PP Çantalar"
+            ],
+            "name": "Qara Küncüt Toxumları & Nigella Sativa (Sortex Təmizlənmiş 99.9%)",
+            "description": "Güclü torpaq qoxusu, antioksidantlar və antosiyaninlərlə zəngin. Premium çörək zavodlarında, suşi rulonlarında, gurme ədviyyat qarışıqlarında və ənənəvi kulinariya irsi reseptlərində məşhurdur.",
+            "color": "Dərin Obsidian Qara",
+            "harvestMonths": "Avqust – Oktyabr",
+            "storage": "Soyuq, quru anbar",
+            "shelfLife": "24 Ay"
+          },
+          "uz": {
+            "packagingTypes": [
+              "25kg Kraft sumkalar",
+              "50kg PP Sumkalar"
+            ],
+            "name": "Qora kunjut urug‘lari va Nigella Sativa (Sortex tozalangan 99.9%)",
+            "description": "Kuchli erga xos hid, antioksidantlar va antotsianinlarga boy. Premium pechene, sushi rulonlari, gastronomik ziravor aralashmalari va an'anaviy oshxona merosi retseptlarida mashhur.",
+            "color": "Chuqur obsidian qora",
+            "harvestMonths": "Avgust – Oktyabr",
+            "storage": "Salqin va quruq ombor",
+            "shelfLife": "24 Oy"
+          },
+          "kk": {
+            "packagingTypes": [
+              "25kg Kraft сөмкелері",
+              "50kg PP Сөмкелер"
+            ],
+            "name": "Қара кунжут тұқымдары және Nigella Sativa (Sortex тазартылған 99.9%)",
+            "description": "Антиоксиданттар мен антоциандарға бай күшті жер иісі. Премиум наубайханаларда, суши роллдарында, дәмді дәмдеуіштер қоспаларында және дәстүрлі аспаздық мұра рецепттерінде танымал.",
+            "color": "Терең Обсидиан Қара",
+            "harvestMonths": "Тамыз – Қазан",
+            "storage": "Салқын құрғақ қойма",
+            "shelfLife": "24 ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "25kg کیف های کرافت",
+              "50kg PP کیف ها"
+            ],
+            "name": "دانه کنجد سیاه و نیجلا ساتیوا (Sortex تمیز 99.9%)",
+            "description": "عطر خاکی شدید، سرشار از آنتی اکسیدان ها و آنتوسیانین ها. محبوب در نانوایی های ممتاز، رول های سوشی، ترکیبات ادویه های گورمه و دستورهای سنتی آشپزی.",
+            "color": "سیاه ابسیدین عمیق",
+            "harvestMonths": "اوت – اکتبر",
+            "storage": "انبار خنک و خشک",
+            "shelfLife": "24 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "25kg क्राफ्ट बैग",
+              "50kg PP बैग"
+            ],
+            "name": "काले तिल और कलौंजी सैटिवा (Sortex साफ 99.9%)",
+            "description": "तीव्र मिट्टी की सुगंध, एंटीऑक्सिडेंट और एंथोसायनिन से भरपूर। प्रीमियम बेकरी, सुशी रोल, पेटू मसाला मिश्रणों और पारंपरिक पाक विरासत व्यंजनों में लोकप्रिय।",
+            "color": "डीप ओब्सीडियन ब्लैक",
+            "harvestMonths": "अगस्त - अक्टूबर",
+            "storage": "ठंडा सूखा गोदाम",
+            "shelfLife": "24 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "25kg کرافٹ بیگز",
+              "50kg PP بیگز"
+            ],
+            "name": "بلیک سیسمی سیڈز اور نیجیلا سیٹیوا (Sortex صاف 99.9%)",
+            "description": "شدید زمینی خوشبو، اینٹی آکسیڈینٹس اور اینتھوسیاننز سے بھرپور۔ پریمیم بیکری، سوشی رولز، گورمیٹ مصالحہ جات اور روایتی کھانوں کی وراثتی ترکیبوں میں مقبول۔",
+            "color": "گہرا اوبسڈین بلیک",
+            "harvestMonths": "اگست – اکتوبر",
+            "storage": "ٹھنڈی خشک گودام",
+            "shelfLife": "24 مہینے"
+          },
+          "bn": {
+            "packagingTypes": [
+              "25kg ক্রাফ্ট ব্যাগ",
+              "50kg PP ব্যাগ"
+            ],
+            "name": "কালো তিল বীজ এবং নাইজেলা স্যাটিভা (Sortex পরিষ্কার 99.9%)",
+            "description": "তীব্র মাটির সুগন্ধ, অ্যান্টিঅক্সিডেন্ট এবং অ্যান্থোসায়ানিন সমৃদ্ধ। প্রিমিয়াম বেকারি, সুশি রোলস, গুরমেট সিজনিং মিশ্রণ এবং ঐতিহ্যবাহী রন্ধনসম্পর্কীয় ঐতিহ্যবাহী রেসিপিগুলিতে জনপ্রিয়।",
+            "color": "গভীর অবসিডিয়ান কালো",
+            "harvestMonths": "আগস্ট - অক্টোবর",
+            "storage": "শীতল শুকনো গুদাম",
+            "shelfLife": "24 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "25kg牛皮纸袋",
+              "50kg PP包"
+            ],
+            "name": "黑芝麻与黑种草（Sortex 清洁99.9%）",
+            "description": "浓郁的泥土香气，富含抗氧化剂和花青素。在高端烘焙店、寿司卷、高级调味料混合和传统烹饪传承食谱中都很受欢迎。",
+            "color": "深黑曜石",
+            "harvestMonths": "8月至10月",
+            "storage": "凉爽干燥的仓库",
+            "shelfLife": "24个月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "25kgクラフトバッグ",
+              "50kg PP バッグ"
+            ],
+            "name": "ブラックゴマ&ナイジェラ・サティバ(Sortex クリーニングド・99.9%)",
+            "description": "強烈な土の香り、抗酸化物質とアントシアニンが豊富です。プレミアムベーカリー、寿司ロール、グルメシーズニングブレンド、伝統的な料理伝統のレシピで人気があります。",
+            "color": "深い黒曜石の黒",
+            "harvestMonths": "8月 – 10月",
+            "storage": "涼しく乾燥した倉庫",
+            "shelfLife": "24ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "25kg 크래프트 백",
+              "50kg PP 가방"
+            ],
+            "name": "흑참깨 및 니젤라 사티바 (Sortex 세척 99.9%)",
+            "description": "강렬한 흙내음 향과 항산화제와 안토시아닌이 풍부합니다. 프리미엄 베이커리, 스시 롤, 고급 양념 블렌드, 전통 요리 유산 레시피에서 인기가 많습니다.",
+            "color": "깊은 흑요석 검은",
+            "harvestMonths": "8월 – 10월",
+            "storage": "서늘하고 건조한 창고",
+            "shelfLife": "24개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "25kg Kantong Kraft",
+              "50kg PP Tas"
+            ],
+            "name": "Biji Wijen Hitam & Nigella Sativa (Sortex Dibersihkan 99.9%)",
+            "description": "Aroma tanah yang intens, kaya antioksidan dan antosianin. Populer di bakery premium, sushi roll, campuran bumbu gourmet, dan resep warisan kuliner tradisional.",
+            "color": "Hitam Obsidian Tua",
+            "harvestMonths": "Agustus – Oktober",
+            "storage": "Gudang kering sejuk",
+            "shelfLife": "24 Bulan"
+          },
+          "ms": {
+            "packagingTypes": [
+              "Beg Kraft 25kg",
+              "50kg PP Beg"
+            ],
+            "name": "Bijan Hitam & Nigella Sativa (Sortex Dibersihkan 99.9%)",
+            "description": "Aroma tanah yang kuat, kaya dengan antioksidan dan antosianin. Popular dalam bakeri premium, gulungan sushi, campuran perasa gourmet, dan resipi warisan kulinari tradisional.",
+            "color": "Obsidian Hitam Pekat",
+            "harvestMonths": "Ogos – Oktober",
+            "storage": "Gudang kering sejuk",
+            "shelfLife": "24 Bulan"
+          },
+          "sw": {
+            "packagingTypes": [
+              "25kg Mifuko ya Kraft",
+              "50kg PP Mifuko"
+            ],
+            "name": "Mbegu Nyeusi za Ufuta & Nigella Sativa (Sortex Iliyosafishwa 99.9%)",
+            "description": "Harufu kali ya udongo, matajiri katika antioxidants na anthocyanins. Maarufu katika mkate wa hali ya juu, roli za sushi, mchanganyiko wa kitoweo cha kitamu, na mapishi ya jadi ya urithi wa upishi.",
+            "color": "Deep Obsidian Nyeusi",
+            "harvestMonths": "Agosti - Oktoba",
+            "storage": "Ghala kavu baridi",
+            "shelfLife": "Miezi 24"
+          }
+        }
+      }
+    ],
+    "packagingOptions": [
+      {
+        "type": "Multi-wall Kraft Paper Bags with PE Liner",
+        "typeTr": "İçi Polietilen Astarlı Çok Katlı Kraft Torba",
+        "netWeight": "25 kg",
+        "dimensions": "65 x 42 x 12 cm",
+        "piecesPerBox": "N/A (Bulk)",
+        "boxesPerPallet": "40 Bags / 1,000 kg",
+        "palletType": "Euro Pallet (120 x 80 cm) or Standard (120 x 100 cm)",
+        "containerCapacity": "20ft FCL: 19 - 20 MT (Palletized) / 21 MT (Loose)",
+        "localized": {
+          "ar": {
+            "type": "أكياس ورق كرافت متعددة الجدران مع بطانة PE",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "غير متوفر (بكميات كبيرة)",
+            "boxesPerPallet": "40 حقائب / 1,000 kg",
+            "palletType": "يورو باليت (120 × 80 cm) أو ستاندرد (120 × 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (مركب) / 21 MT (مرتبكا)"
+          },
+          "ru": {
+            "type": "Многостенные пакеты из крафт-бумаги с подкладкой PE",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Сумки / 1,000 kg",
+            "palletType": "Euro Pallet (120 x 80 cm) или Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (паллетированный) / 21 MT (свободный)"
+          },
+          "de": {
+            "type": "Mehrwandige Kraft-Papiertüten mit PE Innenfutter",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Taschen / 1,000 kg",
+            "palletType": "Europalette (120 x 80 cm) oder Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Palettiert) / 21 MT (Locker)"
+          },
+          "fr": {
+            "type": "Sacs en papier Kraft multi-murs avec PE Liner",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/D (Masse)",
+            "boxesPerPallet": "40 Sacs / 1,000 kg",
+            "palletType": "Palette Euro (120 x 80 cm) ou Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL : 19 - 20 MT (Palette) / 21 MT (En liberté)"
+          },
+          "es": {
+            "type": "Bolsas de papel Kraft multipared con forro PE",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/D (Mayor)",
+            "boxesPerPallet": "Bolsas 40 / 1,000 kg",
+            "palletType": "Euro Pallet (120 x 80 cm) o Estándar (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Paletizado) / 21 MT (Suelto)"
+          },
+          "it": {
+            "type": "Sacchetti di carta Kraft multiparete con fodera PE",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Borse / 1,000 kg",
+            "palletType": "Euro Pallet (120 x 80 cm) o Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Palletizzato) / 21 MT (Sciolto)"
+          },
+          "pt": {
+            "type": "Sacolas de papel Kraft multiparede com forro PE",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Bolsas / 1,000 kg",
+            "palletType": "Euro Pallet (120 x 80 cm) ou Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Paletizado) / 21 MT (Solto)"
+          },
+          "nl": {
+            "type": "Multi-wand Kraft Papieren Zakken met PE Liner",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N.v.t. (Bulk)",
+            "boxesPerPallet": "40 Tassen / 1,000 kg",
+            "palletType": "Euro Pallet (120 x 80 cm) of Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Gepalleteerd) / 21 MT (Los)"
+          },
+          "pl": {
+            "type": "Wielościenne torby papierowe Kraft z PE podszewką",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Torby / 1,000 kg",
+            "palletType": "Euro Pallet (120 x 80 cm) lub Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Paletizowany) / 21 MT (Luźny)"
+          },
+          "ro": {
+            "type": "Pungi de hârtie Kraft cu pereți multipli și căptușeală PE",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "Genți 40 / 1,000 kg",
+            "palletType": "Palet Euro (120 x 80 cm) sau Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Palletizat) / 21 MT (Liber)"
+          },
+          "bg": {
+            "type": "Многостенни крафт хартиени торбички с PE облицовка",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Чанти / 1,000 kg",
+            "palletType": "Евро палета (120 x 80 cm) или Стандартна (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (палетизиран) / 21 MT (разхлабен)"
+          },
+          "el": {
+            "type": "Χάρτινες τσάντες Kraft πολλαπλών τοιχωμάτων με επένδυση PE",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "Α/Δ (Χύμα)",
+            "boxesPerPallet": "40 Τσάντες / 1,000 kg",
+            "palletType": "Ευρωπαλέτα (120 x 80 cm) ή Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Παλετοποιημένο) / 21 MT (Χαλαρό)"
+          },
+          "sr": {
+            "type": "Kraft papirne kese sa više zidova sa PE oblogom",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N / D (Skupno)",
+            "boxesPerPallet": "40 Torbe / 1,000 kg",
+            "palletType": "Evro paleta (120 k 80 cm) ili standardna (120 k 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (paletizovano) / 21 MT (labavo)"
+          },
+          "uk": {
+            "type": "Багатостінні пакети з крафт-паперу з PE підкладкою",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Сумки / 1,000 kg",
+            "palletType": "Euro Pallet (120 x 80 cm) або Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Піддон) / 21 MT (Вільний)"
+          },
+          "ka": {
+            "type": "მულტიჩაფოვანი ქრაფტ-პაპის ტომრები PE შიდა შეფუთვით",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "არ არის (მრავალგვერდა)",
+            "boxesPerPallet": "40 ტომრები / 1,000 kg",
+            "palletType": "ევრო პალეტი (120 x 80 cm) ან სტანდარტული (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (პალეტზე) / 21 MT (ხისტი)"
+          },
+          "az": {
+            "type": "Çoxdivarlı Kraft Kağız Torbalar PE Liner ilə",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Kütləvi)",
+            "boxesPerPallet": "40 Çantalar / 1,000 kg",
+            "palletType": "Euro Pallet (120 x 80 cm) və ya Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Paletləşdirilmiş) / 21 MT (Boş)"
+          },
+          "uz": {
+            "type": "Ko‘p qatlamli Kraft qog‘ozli sumkalar, PE astar bilan",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Ommaviy)",
+            "boxesPerPallet": "40 sumka / 1,000 kg",
+            "palletType": "Yevro palet (120 x 80 cm) yoki Standart (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (paletlanuvchi) / 21 MT (yopishqoq)"
+          },
+          "kk": {
+            "type": "Көп қабырғалы крафт қағаз сөмкелері PE лайнермен",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Сөмкелер / 1,000 kg",
+            "palletType": "Euro Pallet (120 x 80 cm) немесе Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Паллеттелген) / 21 MT (Бос)"
+          },
+          "fa": {
+            "type": "کیسه های کاغذی چندجداره کرافت با لاینر PE",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (حجم زیاد)",
+            "boxesPerPallet": "40 کیسه ها / 1,000 kg",
+            "palletType": "Euro Pallet (120 x 80 cm) یا استاندارد (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (پالت شده) / 21 MT (آزاد)"
+          },
+          "hi": {
+            "type": "PE लाइनर के साथ मल्टी-वॉल क्राफ्ट पेपर बैग",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "एन/ए (थोक)",
+            "boxesPerPallet": "40 बैग/1,000 kg",
+            "palletType": "यूरो पैलेट (120 x 80 cm) या मानक (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (पैलेटाइज्ड) / 21 MT (ढीला)"
+          },
+          "ur": {
+            "type": "ملٹی وال کرافٹ پیپر بیگز ود PE لائنر",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "نہیں/A (بلک)",
+            "boxesPerPallet": "40 بیگز / 1,000 kg",
+            "palletType": "یورو پیلیٹ (120 x 80 cm) یا اسٹینڈرڈ (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (پیلیٹائزڈ) / 21 MT (ڈھیلا)"
+          },
+          "bn": {
+            "type": "PE লাইনার সহ মাল্টি-ওয়াল ক্রাফ্ট পেপার ব্যাগ",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "এন / এ (বাল্ক)",
+            "boxesPerPallet": "40 ব্যাগ / 1,000 kg",
+            "palletType": "ইউরো প্যালেট (120 x 80 cm) বা স্ট্যান্ডার্ড (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (প্যালেটাইজড) / 21 MT (ঢিলা)"
+          },
+          "zh-cn": {
+            "type": "多层牛皮纸袋带PE衬里",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "无（散装）",
+            "boxesPerPallet": "40袋 / 1,000 kg",
+            "palletType": "欧式托盘（120 x 80 cm）或标准托盘（120 x 100 cm）",
+            "containerCapacity": "20ft FCL：19 - 20 MT（托盘化）/ 21 MT（松散）"
+          },
+          "ja": {
+            "type": "PEライナー付きマルチウォールクラフト紙袋",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "該当なし(バルク)",
+            "boxesPerPallet": "40 バッグ / 1,000 kg",
+            "palletType": "ユーロパレット(120 x 80 cm)またはスタンダード(120 x 100 cm)",
+            "containerCapacity": "20ft FCL:19 - 20 MT(パレット化)/ 21 MT(緩い)"
+          },
+          "ko": {
+            "type": "PE 라이너가 있는 다면 크래프트 종이봉투",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "해당 없음 (벌크)",
+            "boxesPerPallet": "40 가방 / 1,000 kg",
+            "palletType": "유로 팔레트 (120 x 80 cm) 또는 스탠다드 (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (팔레타이즈) / 21 MT (느슨)"
+          },
+          "id": {
+            "type": "Kantong Kertas Kraft Multi-dinding dengan Liner PE",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "Tanpa Bantuan (Bulk)",
+            "boxesPerPallet": "40 Tas / 1,000 kg",
+            "palletType": "Palet Euro (120 x 80 cm) atau Standar (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Terpalet) / 21 MT (Lepas)"
+          },
+          "ms": {
+            "type": "Beg Kertas Kraft Multi-dinding dengan PE Liner",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N/A (Pukal)",
+            "boxesPerPallet": "40 Beg / 1,000 kg",
+            "palletType": "Palet Euro (120 x 80 cm) atau Standard (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Dipaletkan) / 21 MT (Longgar)"
+          },
+          "sw": {
+            "type": "Mifuko ya Karatasi ya Kraft yenye ukuta mwingi na Mjengo wa PE",
+            "dimensions": "65 x 42 x 12 cm",
+            "piecesPerBox": "N / A (Wingi)",
+            "boxesPerPallet": "40 Mifuko / 1,000 kg",
+            "palletType": "Pallet ya Euro (120 x 80 cm) au Kawaida (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 19 - 20 MT (Palletized) / 21 MT (Huru)"
+          }
+        }
+      },
+      {
+        "type": "Polypropylene (PP) Woven Sacks",
+        "typeTr": "Polipropilen (PP) Dokuma İhracat Çuvalı",
+        "netWeight": "50 kg",
+        "dimensions": "95 x 55 cm",
+        "piecesPerBox": "N/A (Bulk)",
+        "boxesPerPallet": "20 Bags / 1,000 kg",
+        "palletType": "Industrial Pallet (120 x 100 cm)",
+        "containerCapacity": "20ft FCL: 20 - 21 MT",
+        "localized": {
+          "ar": {
+            "type": "أكياس منسوجة من البولي بروبيلين (PP)",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "غير متوفر (بكميات كبيرة)",
+            "boxesPerPallet": "20 حقائب / 1,000 kg",
+            "palletType": "المنصة الصناعية (120 × 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "ru": {
+            "type": "Плетёные мешки из полипропилена (PP)",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "20 Сумки / 1,000 kg",
+            "palletType": "Промышленная паллета (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "de": {
+            "type": "Polypropylen (PP) gewebte Säcke",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "20 Taschen / 1,000 kg",
+            "palletType": "Industriepalette (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "fr": {
+            "type": "Sacs tressés en polypropylène (PP)",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/D (Masse)",
+            "boxesPerPallet": "Sacs 20 / 1,000 kg",
+            "palletType": "Palette industrielle (120 x 100 cm)",
+            "containerCapacity": "20ft FCL : 20 - 21 MT"
+          },
+          "es": {
+            "type": "Sacos tejidos de polipropileno (PP)",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/D (Mayor)",
+            "boxesPerPallet": "20 Bolsas / 1,000 kg",
+            "palletType": "Palé industrial (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "it": {
+            "type": "Sacchi intrecciati in polipropilene (PP)",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "20 Borse / 1,000 kg",
+            "palletType": "Pallet industriale (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "pt": {
+            "type": "Sacos de polipropileno (PP) tecidos",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "20 Bolsas / 1,000 kg",
+            "palletType": "Palete Industrial (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "nl": {
+            "type": "Polypropyleen (PP) geweven zakken",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N.v.t. (Bulk)",
+            "boxesPerPallet": "20 Tassen / 1,000 kg",
+            "palletType": "Industriële pallet (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "pl": {
+            "type": "Worki z polipropylenem (PP) Tkane",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "20 Worki / 1,000 kg",
+            "palletType": "Paleta przemysłowa (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "ro": {
+            "type": "Saci țesuți din polipropilenă (PP)",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "Genți 20 / 1,000 kg",
+            "palletType": "Palet Industrial (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "bg": {
+            "type": "Полипропиленови (PP) тъкани чували",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "20 Чанти / 1,000 kg",
+            "palletType": "Индустриална палета (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "el": {
+            "type": "Υφαντοί σάκοι από πολυπροπυλένιο (PP)",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "Α/Δ (Χύμα)",
+            "boxesPerPallet": "20 Τσάντες / 1,000 kg",
+            "palletType": "Βιομηχανική παλέτα (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "sr": {
+            "type": "Polipropilen (PP) Tkane vreće",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N / D (Skupno)",
+            "boxesPerPallet": "20 Torbe / 1,000 kg",
+            "palletType": "Industrijska paleta (120 k 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "uk": {
+            "type": "Поліпропіленові (PP) Ткані мішки",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "20 Сумки / 1,000 kg",
+            "palletType": "Промислова піддона (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "ka": {
+            "type": "პოლიპროპილენის (PP) ნაქსოვი ტყავის ჩანთები",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "არ არის (მრავალგვერდა)",
+            "boxesPerPallet": "20 ჩანთები / 1,000 kg",
+            "palletType": "საწარმოო პალეტი (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "az": {
+            "type": "Polipropilen (PP) toxunmuş torbalar",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Kütləvi)",
+            "boxesPerPallet": "20 Çantalar / 1,000 kg",
+            "palletType": "Sənaye Paleti (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "uz": {
+            "type": "Polipropilen (PP) Toʻqilgan Sumkalar",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Ommaviy)",
+            "boxesPerPallet": "20 Sumkalar / 1,000 kg",
+            "palletType": "Sanoat Paleti (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "kk": {
+            "type": "Полипропилен (PP) Тоқылған қаптар",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "20 Сөмкелер / 1,000 kg",
+            "palletType": "Өнеркәсіптік паллет (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "fa": {
+            "type": "کیسه های بافته شده پلی پروپیلن (PP)",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (حجم زیاد)",
+            "boxesPerPallet": "20 کیف / 1,000 kg",
+            "palletType": "پالت صنعتی (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "hi": {
+            "type": "पॉलीप्रोपाइलीन (PP) बुने हुए बोरे",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "एन/ए (थोक)",
+            "boxesPerPallet": "20 बैग/1,000 kg",
+            "palletType": "औद्योगिक फूस (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "ur": {
+            "type": "پولی پروپیلین (PP) بنے ہوئے تھیلے",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "نہیں/A (بلک)",
+            "boxesPerPallet": "20 بیگز / 1,000 kg",
+            "palletType": "صنعتی پیلیٹ (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "bn": {
+            "type": "পলিপ্রোপিলিন (PP) বোনা বস্তা",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "এন / এ (বাল্ক)",
+            "boxesPerPallet": "20 ব্যাগ / 1,000 kg",
+            "palletType": "ইন্ডাস্ট্রিয়াল প্যালেট (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "zh-cn": {
+            "type": "聚丙烯（PP）编织袋",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "无（散装）",
+            "boxesPerPallet": "20 包 / 1,000 kg",
+            "palletType": "工业托盘（120 x 100 cm）",
+            "containerCapacity": "20ft FCL：20 - 21 MT"
+          },
+          "ja": {
+            "type": "ポリプロピレン(PP)織り袋",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "該当なし(バルク)",
+            "boxesPerPallet": "20 バッグ / 1,000 kg",
+            "palletType": "産業用パレット(120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "ko": {
+            "type": "폴리프로필렌 (PP) 직조 자루",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "해당 없음 (벌크)",
+            "boxesPerPallet": "20 가방 / 1,000 kg",
+            "palletType": "산업용 팔레트 (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "id": {
+            "type": "Kantong Anyaman Polipropilena (PP)",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "Tanpa Bantuan (Bulk)",
+            "boxesPerPallet": "20 Tas / 1,000 kg",
+            "palletType": "Palet Industri (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "ms": {
+            "type": "Beg Anyaman Polipropilena (PP)",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N/A (Pukal)",
+            "boxesPerPallet": "20 Beg / 1,000 kg",
+            "palletType": "Palet Industri (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          },
+          "sw": {
+            "type": "Polypropen (PP) Mifuko iliyofumwa",
+            "dimensions": "95 x 55 cm",
+            "piecesPerBox": "N / A (Wingi)",
+            "boxesPerPallet": "20 Mifuko / 1,000 kg",
+            "palletType": "Pallet ya Viwanda (120 x 100 cm)",
+            "containerCapacity": "20ft FCL: 20 - 21 MT"
+          }
+        }
+      },
+      {
+        "type": "FIBC Big Bags (Jumbo Bags)",
+        "typeTr": "FIBC Big Bag (Jumbo Dökme Çuval)",
+        "netWeight": "1,000 kg",
+        "dimensions": "90 x 90 x 120 cm",
+        "piecesPerBox": "1 Big Bag",
+        "boxesPerPallet": "1 Big Bag per Pallet",
+        "palletType": "Heavy Duty Wooden Pallet",
+        "containerCapacity": "20ft FCL: 20 MT (20 Big Bags)",
+        "localized": {
+          "ar": {
+            "type": "FIBC الحقائب الكبيرة (حقائب ضخمة)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 الحقيبة الكبيرة",
+            "boxesPerPallet": "1 حقيبة كبيرة لكل منصة",
+            "palletType": "منصة خشبية ثقيلة التحمل",
+            "containerCapacity": "20ft FCL: 20 MT (20 الحقائب الكبيرة)"
+          },
+          "ru": {
+            "type": "FIBC Большие сумки (Jumbo Bags)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Большая сумка",
+            "boxesPerPallet": "1 Большая сумка на паллет",
+            "palletType": "Тяжёлый деревянный поддон",
+            "containerCapacity": "20ft FCL: 20 MT (20 большие сумки)"
+          },
+          "de": {
+            "type": "FIBC Große Säcke (Jumbo Bags)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Große Tasche",
+            "boxesPerPallet": "1 große Tasche pro Palette",
+            "palletType": "Schwerlast-Holzpalette",
+            "containerCapacity": "20ft FCL: 20 MT (20 Big Bags)"
+          },
+          "fr": {
+            "type": "FIBC Gros Sacs (Sacs Jumbo)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Gros Sac",
+            "boxesPerPallet": "1 Gros Sac par Palette",
+            "palletType": "Palette en bois robuste",
+            "containerCapacity": "20ft FCL : 20 MT (20 Gros Sacs)"
+          },
+          "es": {
+            "type": "FIBC Bolsas Grandes (Bolsas Jumbo)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Gran Bolsa",
+            "boxesPerPallet": "1 Bolsa grande por palé",
+            "palletType": "Palé de madera resistente",
+            "containerCapacity": "20ft FCL: 20 MT (20 Bolsas Grandes)"
+          },
+          "it": {
+            "type": "FIBC Grandi Borse (Jumbo Bags)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Grande Borsa",
+            "boxesPerPallet": "1 Sacco Grande per Pallet",
+            "palletType": "Pallet in legno pesante",
+            "containerCapacity": "20ft FCL: 20 MT (20 Grandi Borse)"
+          },
+          "pt": {
+            "type": "FIBC Grandes Sacos (Sacolas Jumbo)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Grande Sacola",
+            "boxesPerPallet": "1 Grande Saco por palete",
+            "palletType": "Palete de Madeira Pesada",
+            "containerCapacity": "20ft FCL: 20 MT (20 Grandes Sacos)"
+          },
+          "nl": {
+            "type": "FIBC Grote Zakken (Jumbo Zakken)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Grote Tas",
+            "boxesPerPallet": "1 grote zak per pallet",
+            "palletType": "Zwaar Houten Pallet",
+            "containerCapacity": "20ft FCL: 20 MT (20 Grote Zakken)"
+          },
+          "pl": {
+            "type": "FIBC Duże Worki (Jumbo Bags)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Big Bag",
+            "boxesPerPallet": "1 Duża torba na paletę",
+            "palletType": "Ciężka drewniana paleta",
+            "containerCapacity": "20ft FCL: 20 MT (20 Big Bags)"
+          },
+          "ro": {
+            "type": "FIBC Saci Mari (Saci Jumbo)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Sacul Mare",
+            "boxesPerPallet": "1 Sacul Mare pe Palet",
+            "palletType": "Palet greu din lemn",
+            "containerCapacity": "20ft FCL: 20 MT (20 Saci Mari)"
+          },
+          "bg": {
+            "type": "FIBC Големи торби (Jumbo Bags)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Голямата чанта",
+            "boxesPerPallet": "1 Голяма торба на палета",
+            "palletType": "Тежка дървена палета",
+            "containerCapacity": "20ft FCL: 20 MT (20 Big Bags)"
+          },
+          "el": {
+            "type": "FIBC Μεγασάκοι (Jumbo Bags)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Μεγάλη τσάντα",
+            "boxesPerPallet": "1 Big Bag ανά παλέτα",
+            "palletType": "Ξύλινη παλέτα βαρέως τύπου",
+            "containerCapacity": "20ft FCL: 20 MT (20 μεγασάκους)"
+          },
+          "sr": {
+            "type": "FIBC Velike torbe (Jumbo torbe)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Velika torba",
+            "boxesPerPallet": "1 Velika torba po paleti",
+            "palletType": "Drvena paleta za teške uslove rada",
+            "containerCapacity": "20ft FCL: 20 MT (20 velike torbe)"
+          },
+          "uk": {
+            "type": "FIBC Big Bags (Jumbo Bags)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Велика Сумка",
+            "boxesPerPallet": "1 Велика сумка на палету",
+            "palletType": "Важка дерев'яна піддон",
+            "containerCapacity": "20ft FCL: 20 MT (20 Big Bags)"
+          },
+          "ka": {
+            "type": "FIBC დამწიფებული ჩანთები (ჯუმბო ჩანთები)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 დამწიფებული ჩანთა",
+            "boxesPerPallet": "1 დამწიფებული ჩანთა თითო პალეტზე",
+            "palletType": "მძიმე მოვალეობის ხის პალეტი",
+            "containerCapacity": "20ft FCL: 20 MT (20 ჯუმბო ჩანთები)"
+          },
+          "az": {
+            "type": "FIBC Böyük Çantalar (Jumbo Çantalar)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Böyük Çanta",
+            "boxesPerPallet": "1 Paletdə Böyük Çanta",
+            "palletType": "Ağır Taxta Palet",
+            "containerCapacity": "20ft FCL: 20 MT (20 Böyük Çantalar)"
+          },
+          "uz": {
+            "type": "FIBC Katta Sumkalar (Jumbo Sumkalar)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Katta Sumka",
+            "boxesPerPallet": "Har Paletga 1 Katta Sumka",
+            "palletType": "Ogʻir Majburiyatli Yogʻoch Palet",
+            "containerCapacity": "20ft FCL: 20 MT (20 Katta Sumkalar)"
+          },
+          "kk": {
+            "type": "FIBC Үлкен Сөмкелер (Үлкен Сөмкелер)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Үлкен Сөмке",
+            "boxesPerPallet": "1 паллетке үлкен сөмке",
+            "palletType": "Ауыр жүк ағаш паллет",
+            "containerCapacity": "20ft FCL: 20 MT (20 Big Bags)"
+          },
+          "fa": {
+            "type": "FIBC کیسه های بزرگ (کیسه های جامبو)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 کیف بزرگ",
+            "boxesPerPallet": "1 کیف بزرگ برای هر پالت",
+            "palletType": "پالت چوبی سنگین",
+            "containerCapacity": "20ft FCL: 20 MT (20 Big Bags)"
+          },
+          "hi": {
+            "type": "FIBC बड़े बैग (जंबो बैग)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 बड़ा बैग",
+            "boxesPerPallet": "1 बड़ा बैग प्रति फूस",
+            "palletType": "हैवी ड्यूटी लकड़ी का फूस",
+            "containerCapacity": "20ft FCL: 20 MT (20 बड़े बैग)"
+          },
+          "ur": {
+            "type": "FIBC بڑے بیگز (جمبو بیگز)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 بڑا بیگ",
+            "boxesPerPallet": "1 بگ بیگ فی پیلیٹ",
+            "palletType": "بھاری ڈیوٹی لکڑی کا پیلیٹ",
+            "containerCapacity": "20ft FCL: 20 MT (20 بگ بیگز)"
+          },
+          "bn": {
+            "type": "FIBC বড় ব্যাগ (জাম্বো ব্যাগ)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 বড় ব্যাগ",
+            "boxesPerPallet": "প্রতি প্যালেটে 1 বড় ব্যাগ",
+            "palletType": "হেভি ডিউটি উডেন প্যালেট",
+            "containerCapacity": "20ft FCL: 20 MT (20 বড় ব্যাগ)"
+          },
+          "zh-cn": {
+            "type": "FIBC大袋（大袋）",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1大袋子",
+            "boxesPerPallet": "1大袋每个托盘",
+            "palletType": "重型木托盘",
+            "containerCapacity": "20ft FCL：20 MT（20大袋）"
+          },
+          "ja": {
+            "type": "FIBC ビッグバッグ(ジャンボバッグス)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 ビッグバッグ",
+            "boxesPerPallet": "1 ビッグバッグ1パレットあたり",
+            "palletType": "ヘビーデューティ木製パレット",
+            "containerCapacity": "20ft FCL:20 MT(20ビッグバッグ)"
+          },
+          "ko": {
+            "type": "FIBC 빅백 (점보백)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 빅 백",
+            "boxesPerPallet": "팔레트당 1 개의 큰 가방",
+            "palletType": "중장비 목재 팔레트",
+            "containerCapacity": "20ft FCL: 20 MT (20 빅 백)"
+          },
+          "id": {
+            "type": "FIBC Tas Besar (Tas Jumbo)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Tas Besar",
+            "boxesPerPallet": "1 Kantong Besar per Palet",
+            "palletType": "Palet Kayu Tugas Berat",
+            "containerCapacity": "20ft FCL: 20 MT (20 Big Bags)"
+          },
+          "ms": {
+            "type": "FIBC Beg Besar (Beg Jumbo)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Beg Besar",
+            "boxesPerPallet": "1 Beg Besar setiap Palet",
+            "palletType": "Palet Kayu Tugas Berat",
+            "containerCapacity": "20ft FCL: 20 MT (20 Beg Besar)"
+          },
+          "sw": {
+            "type": "FIBC Mifuko Mikubwa (Mifuko ya Jumbo)",
+            "dimensions": "90 x 90 x 120 cm",
+            "piecesPerBox": "1 Mfuko Mkubwa",
+            "boxesPerPallet": "1 Mfuko Mkubwa kwa kila Pallet",
+            "palletType": "Pallet ya mbao ya Kazi Nzito",
+            "containerCapacity": "20ft FCL: 20 MT (20 Mifuko Mikubwa)"
+          }
+        }
+      }
+    ],
+    "logistics": {
+      "modes": [
+        "road",
+        "sea"
+      ],
+      "transitTimeEU": "5 - 9 Days via Mersin Ro-Ro & Ocean Routes",
+      "transitTimeGulf": "10 - 14 Days via Mersin MIP Container Lines",
+      "transitTimeAsia": "18 - 25 Days Direct Ocean Freight",
+      "storageMethod": "Store in cool, dry conditions away from direct sunlight (<20°C, RH <55%). Protect from strong odors.",
+      "storageMethodTr": "Doğrudan güneş ışığından uzak, serin ve kuru ortamda (<20°C, <%55 Bağıl Nem) muhafaza ediniz. Yabancı kokulardan koruyunuz.",
+      "localized": {
+        "ar": {
+          "transitTimeEU": "5 - 9 أيام عبر طرق Ro-Ro وموانئ مرسين",
+          "transitTimeGulf": "10 - 14 أيام عبر خطوط الحاويات في مرسين MIP",
+          "transitTimeAsia": "18 - شحن مباشر بحري 25 أيام",
+          "storageMethod": "تخزين في ظروف باردة وجافة بعيدا عن أشعة الشمس المباشرة (<20°C، RH <55%). احم من الروائح القوية."
+        },
+        "ru": {
+          "transitTimeEU": "5 - 9 дней через маршруты Мерсин Ро-Ро и океан",
+          "transitTimeGulf": "10 - 14 дней через Mersin MIP Container Lines",
+          "transitTimeAsia": "18 - 25 Days Direct Ocean Freight",
+          "storageMethod": "Храните в прохладных, сухих условиях, вдали от прямого солнечного света (<20°C, RH <55%). Защищайте от сильных запахов."
+        },
+        "de": {
+          "transitTimeEU": "5 - 9 Tage über Mersin Ro-Ro & Ozeanrouten",
+          "transitTimeGulf": "10 - 14 Tage über Mersin MIP Container Lines",
+          "transitTimeAsia": "18 - 25 Days Direct Ocean Freight",
+          "storageMethod": "Lagern Sie unter kühlen, trockenen Bedingungen fernab direkter Sonneneinstrahlung (<20°C, RH <55%). Schützen Sie vor starken Gerüchen."
+        },
+        "fr": {
+          "transitTimeEU": "5 - 9 jours via Mersin Ro-Ro & routes océaniques",
+          "transitTimeGulf": "10 - 14 jours via Mersin MIP lignes de conteneurs",
+          "transitTimeAsia": "18 - 25 jours de fret direct maritime",
+          "storageMethod": "Conserver dans des conditions fraîches et sèches, à l’abri du soleil direct (<20°C, RH <55%). Protégez contre les odeurs fortes."
+        },
+        "es": {
+          "transitTimeEU": "5 - 9 días vía Mersin Ro-Ro y rutas oceánicas",
+          "transitTimeGulf": "10 - 14 días vía Mersin MIP Container Lines",
+          "transitTimeAsia": "18 - 25 días Transporte Marítimo Directo",
+          "storageMethod": "Guarda en condiciones frescas y secas, lejos de la luz solar directa (<20°C, humedad relativa <55%). Protege de olores fuertes."
+        },
+        "it": {
+          "transitTimeEU": "5 - 9 giorni via Ro-Ro di Mersin e rotte oceaniche",
+          "transitTimeGulf": "10 - 14 giorni via Mersin MIP Container Lines",
+          "transitTimeAsia": "18 - 25 giorni Direct Ocean Freight",
+          "storageMethod": "Conserva in condizioni fresche e asciutte, lontano dalla luce solare diretta (<20°C, umidità relativa <55%). Proteggi dagli odori forti."
+        },
+        "pt": {
+          "transitTimeEU": "5 - 9 Dias via Rotas Ro-Ro & Oceânicas de Mersin",
+          "transitTimeGulf": "10 - 14 dias via Mersin MIP Container Lines",
+          "transitTimeAsia": "18 - 25 dias de Carga Direta Oceânica",
+          "storageMethod": "Armazene em condições frescas e secas, longe da luz solar direta (<20°C, RH <55%). Proteja contra odores fortes."
+        },
+        "nl": {
+          "transitTimeEU": "5 - 9 dagen via Mersin Ro-Ro & oceaanroutes",
+          "transitTimeGulf": "10 - 14 dagen via Mersin MIP containerlijnen",
+          "transitTimeAsia": "18 - 25 Dagen Directe Oceaanvracht",
+          "storageMethod": "Bewaar in koele, droge omstandigheden, weg van direct zonlicht (<20°C, RH <55%). Bescherm tegen sterke geuren."
+        },
+        "pl": {
+          "transitTimeEU": "5 - 9 dni przez Mersin Ro-Ro i trasy oceaniczne",
+          "transitTimeGulf": "10 - 14 Days przez Mersin MIP Container Lines",
+          "transitTimeAsia": "18 - 25 dni bezpośredniego transportu morskiego",
+          "storageMethod": "Przechowuj w chłodnych, suchych warunkach, z dala od bezpośredniego światła słonecznego (<20°C, wilgotności <55%). Chronić przed silnymi zapachami."
+        },
+        "ro": {
+          "transitTimeEU": "5 - 9 zile prin Mersin Ro-Ro & Rute Oceanice",
+          "transitTimeGulf": "10 - 14 zile prin Mersin MIP Container Lines",
+          "transitTimeAsia": "18 - 25 zile Marfă Oceanică Directă",
+          "storageMethod": "Păstrează în condiții reci și uscate, departe de lumina directă a soarelui (<20°C, RH <55%). Protejează-te de mirosuri puternice."
+        },
+        "bg": {
+          "transitTimeEU": "5 - 9 дни по маршрутите Мерсин Ро-Ро и океан",
+          "transitTimeGulf": "10 - 14 дни през Мерсен MIP контейнерни линии",
+          "transitTimeAsia": "18 - 25 дни Директен океански товарен превоз",
+          "storageMethod": "Съхранявайте в хладни, сухи условия, далеч от пряка слънчева светлина (<20°C, RH <55%). Защитавайте от силни миризми."
+        },
+        "el": {
+          "transitTimeEU": "5 - 9 ημέρες μέσω Mersin Ro-Ro & Ocean Routes",
+          "transitTimeGulf": "10 - 14 ημέρες μέσω γραμμών εμπορευματοκιβωτίων Mersin MIP",
+          "transitTimeAsia": "18 - 25 ημέρες απευθείας θαλάσσιες μεταφορές",
+          "storageMethod": "Φυλάσσετε σε δροσερές, ξηρές συνθήκες μακριά από το άμεσο ηλιακό φως (<20°C, RH <55%). Προστατέψτε από έντονες οσμές."
+        },
+        "sr": {
+          "transitTimeEU": "5 - 9 dana preko Mersin Ro-Ro & Ocean Routes",
+          "transitTimeGulf": "10 - 14 dana preko Mersin MIP kontejnerskih linija",
+          "transitTimeAsia": "18 - 25 dana Direktan okeanski teretni",
+          "storageMethod": "Čuvati u hladnim i suvim uslovima daleko od direktne sunčeve svetlosti (<20°C, RH <55%). Zaštititi od jakih mirisa."
+        },
+        "uk": {
+          "transitTimeEU": "5 - 9 дні через маршрути Мерсін Ро-Ро та океан",
+          "transitTimeGulf": "10 - 14 дні через Mersin MIP Container Lines",
+          "transitTimeAsia": "18 - 25 Days Direct Ocean Freight",
+          "storageMethod": "Зберігайте в прохолодних, сухих умовах, подалі від прямого сонячного світла (<20°C, RH <55%). Захищайте від сильних запахів."
+        },
+        "ka": {
+          "transitTimeEU": "5 - 9 დღე მერსინის Ro-Ro და ოკეანური გზებით",
+          "transitTimeGulf": "10 - 14 დღე მერსინის MIP კონტეინერის ხაზებით",
+          "transitTimeAsia": "18 - 25 დღე პირდაპირი ოკეანური სატვირთოთი",
+          "storageMethod": "შეინახეთ სუფთა, მშრალ პირობებში, პირდაპირი მზის სხივებისგან მოშორებით (<20°C, სველიანობა <55%). დაიცავით ძლიერი სუნისგან."
+        },
+        "az": {
+          "transitTimeEU": "5 - Mersin Ro-Ro və Okean Marşrutları ilə 9 Gün",
+          "transitTimeGulf": "10 - 14 Days Mersin MIP Container Lines vasitəsilə",
+          "transitTimeAsia": "18 - 25 Gün Birbaşa Dəniz Yükü",
+          "storageMethod": "Sərin və quru şəraitdə, birbaşa günəş işığından uzaqda saxla (<20°C, RH <55%). Güclü qoxulardan qorun."
+        },
+        "uz": {
+          "transitTimeEU": "Mersin Ro-Ro va Okean yo‘llari orqali 5 - 9 kun",
+          "transitTimeGulf": "Mersin MIP konteyner yo‘llari orqali 10 - 14 kun",
+          "transitTimeAsia": "Okean orqali bevosita jo‘natishda 18 - 25 kun",
+          "storageMethod": "To‘g‘ridan-to‘g‘ri quyosh nuridan himoya qilingan, sovuq va quruq sharoitda saqlang (<20°C, RH <55%). Kuchli hidlardan himoya qiling."
+        },
+        "kk": {
+          "transitTimeEU": "5 - 9 күн, Мерсин Ро-Ро және мұхит бағыттары арқылы",
+          "transitTimeGulf": "10 - 14 күн Mersin MIP Container Lines арқылы",
+          "transitTimeAsia": "18 - 25 Days Тікелей Мұхиттық Жүк",
+          "storageMethod": "Тікелей күн сәулесінен алыс салқын, құрғақ жағдайда сақтаңыз (<20°C, RH <55%). Күшті иістерден қорғаңыз."
+        },
+        "fa": {
+          "transitTimeEU": "5 - 9 روز از طریق مرسین رو-رو و مسیرهای اقیانوسی",
+          "transitTimeGulf": "10 - 14 روز از طریق مرسین MIP کانتینر لاینز",
+          "transitTimeAsia": "18 - 25 روز حمل مستقیم دریایی",
+          "storageMethod": "در شرایط خنک و خشک دور از نور مستقیم خورشید نگهداری کنید (<20°C، <55% RH). از بوهای قوی محافظت کنید."
+        },
+        "hi": {
+          "transitTimeEU": "5 - मेर्सिन रो-रो और समुद्री मार्गों के माध्यम से 9 दिन",
+          "transitTimeGulf": "10 - मेर्सिन MIP कंटेनर लाइन्स के माध्यम से 14 दिन",
+          "transitTimeAsia": "18 - 25 दिन प्रत्यक्ष महासागर माल ढुलाई",
+          "storageMethod": "सीधे धूप (<20°C, आरएच <55%) से दूर ठंडी, सूखी परिस्थितियों में स्टोर करें। तेज गंध से बचाएं।"
+        },
+        "ur": {
+          "transitTimeEU": "5 - 9 دن مرسن رو-رو اور سمندری راستے",
+          "transitTimeGulf": "10 - 14 ڈیز بذریعہ مرسن MIP کنٹینر لائنز",
+          "transitTimeAsia": "18 - 25 دن براہ راست سمندری مال برداری",
+          "storageMethod": "براہ راست دھوپ سے دور ٹھنڈی اور خشک حالت میں ذخیرہ کریں (<20°C، RH <55%)۔ تیز بدبو سے بچائیں۔"
+        },
+        "bn": {
+          "transitTimeEU": "5 - 9 দিন মার্সিন রো-রো এবং মহাসাগরীয় রুট হয়ে",
+          "transitTimeGulf": "10 - মার্সিন MIP কনটেইনার লাইনের মাধ্যমে 14 দিন",
+          "transitTimeAsia": "18 - 25 দিনের সরাসরি সমুদ্র মালবাহী",
+          "storageMethod": "সরাসরি সূর্যের আলো থেকে দূরে শীতল, শুকনো পরিস্থিতিতে সংরক্ষণ করুন (<20°C, আরএইচ <55%)। শক্তিশালী গন্ধ থেকে রক্ষা করুন।"
+        },
+        "zh-cn": {
+          "transitTimeEU": "通过梅尔辛滚装及海运路线 5 - 9 天",
+          "transitTimeGulf": "通过梅尔辛 MIP 集装箱航线 10 - 14 天",
+          "transitTimeAsia": "18 - 25天直达海运",
+          "storageMethod": "储存在凉爽干燥的环境中，避免直射阳光（<20°C，相对湿度<55%）。防止强烈气味。"
+        },
+        "ja": {
+          "transitTimeEU": "5 - メルシン・ロー&オーシャンルート経由の9日",
+          "transitTimeGulf": "10 - メルシンMIPコンテナライン経由14日",
+          "transitTimeAsia": "18 - 25日間の直通海上貨物",
+          "storageMethod": "直射日光が当たらない涼しく乾燥した環境で保存(<20°C、湿度<55%)。強い臭いから守ってください。"
+        },
+        "ko": {
+          "transitTimeEU": "5 - 메르신 로로 및 해양 노선 경유 9일",
+          "transitTimeGulf": "10 - 메르신 MIP 컨테이너 라인을 경유하는 14일",
+          "transitTimeAsia": "18 - 25일간 직접 해상 화물",
+          "storageMethod": "직사광선이 닿지 않는 서늘하고 건조한 환경에서 보관하세요(<20°C, 습도<55%). 강한 악취로부터 보호하세요."
+        },
+        "id": {
+          "transitTimeEU": "5 - 9 Hari melalui Mersin Ro-Ro & Jalur Laut",
+          "transitTimeGulf": "10 - 14 Hari melalui Jalur Kontainer Mersin MIP",
+          "transitTimeAsia": "18 - 25 hari pengiriman langsung laut",
+          "storageMethod": "Simpan dalam kondisi sejuk dan kering, jauh dari sinar matahari langsung (<20°C, kiri <55%). Lindungi dari bau yang menyengat."
+        },
+        "ms": {
+          "transitTimeEU": "5 - 9 Hari melalui Mersin Ro-Ro & Ocean Routes",
+          "transitTimeGulf": "10 - 14 hari melalui Mersin MIP Container Lines",
+          "transitTimeAsia": "18 - 25 hari penghantaran laut langsung",
+          "storageMethod": "Simpan dalam keadaan sejuk dan kering jauh dari cahaya matahari langsung (<20°C, RH <55%). Lindungi daripada bau yang kuat."
+        },
+        "sw": {
+          "transitTimeEU": "5 - Siku 9 kupitia Mersin Ro-Ro & Njia za Bahari",
+          "transitTimeGulf": "10 - Siku 14 kupitia Mersin MIP Container Lines",
+          "transitTimeAsia": "18 - Siku 25 Usafirishaji wa Moja kwa Moja wa Bahari",
+          "storageMethod": "Hifadhi katika hali ya baridi na kavu mbali na jua moja kwa moja (<20°C, RH <55%). Kinga kutokana na harufu kali."
+        }
+      }
+    },
+    "faqs": [
+      {
+        "question": "What is the optical purity and foreign matter level in your sesame shipments?",
+        "questionTr": "Susam sevkiyatlarınızda optik saflık ve yabancı madde oranı nedir?",
+        "answer": "All Nilasya sesame seeds undergo multi-pass Bühler Sortex optical sorting and gravity separation in Mersin. We guarantee minimum 99.9% purity for natural white and up to 99.98% purity for aqua-hulled sesame seeds, with zero stones, metals, or insect damage.",
+        "answerTr": "Tüm susamlarımız Mersin tesislerimizde çok kademeli Bühler Sortex optik renk ayırıcılar ve gravite masalarından geçer. Doğal beyaz susamda minimum %99.9, soyulmuş susamda %99.98 saflık garanti ediyoruz; taş, metal ve böcek hasarı kesinlikle sıfırdır.",
+        "localized": {
+          "ar": {
+            "question": "ما هي نقاء الشحنة من السمسم ومستوى الشوائب فيها؟",
+            "answer": "Bühler Sortex جميع بذور السمسم من Nilasya تمر بعملية فرز بصري متعددة ويفصل حسب الجاذبية في مرسين. نحن نضمن الحد الأدنى من نقاء 99.9% للسمسم الأبيض الطبيعي وحتى 99.98% للسمسم المقشور المائي، بدون حجارة أو معادن أو تلف الحشرات."
+          },
+          "ru": {
+            "question": "Какова оптическая чистота и уровень посторонних веществ в ваших поставках кунжута?",
+            "answer": "Все кунжутные семена Ниласья проходят многоэтапную Bühler Sortex оптическую сортировку и гравитационное разделение в Мерсине. Мы гарантируем минимальную 99.9% чистоту натурального белого растения и до 99.98% чистоту для кунжута с аква-шелухтой, без повреждений камнями, металлами или насекомыми."
+          },
+          "de": {
+            "question": "Wie hoch ist die optische Reinheit und der Fremdstoffgehalt Ihrer Sesamlieferungen?",
+            "answer": "Alle Sesamsamen von Nilasya werden in Mersin mehrfach Bühler Sortex optische Sortierung und Gravitationstrennung durchgeführt. Wir garantieren eine Mindestreinheit 99.9% für natürliches Weiß und bis zu 99.98% Reinheit für aqua-geschäfelten Sesamsamen, ohne Steine, Metalle oder Insektenschäden."
+          },
+          "fr": {
+            "question": "Quelle est la pureté optique et le niveau de corps étrangers dans vos envois de sésame ?",
+            "answer": "Toutes les graines de sésame Nilasya subissent un tri optique à plusieurs passes Bühler Sortex et une séparation par gravité à Mersin. Nous garantissons une pureté minimale de 99.9% pour le blanc naturel et jusqu'à 99.98% pour les graines de sésame dépouillées aqua, sans pierres, métaux ou dommages causés par les insectes."
+          },
+          "es": {
+            "question": "¿Cuál es la pureza óptica y el nivel de materia extraña en tus envíos de sésamo?",
+            "answer": "Todas las semillas de sésamo Nilasya pasan por clasificación óptica y separación por gravedad Bühler Sortex múltiples pasadas en Mersin. Garantizamos pureza mínima 99.9% para el blanco natural y hasta 99.98% pureza para semillas de sésamo con cáscara acuática, sin piedras, metales ni daños por insectos."
+          },
+          "it": {
+            "question": "Qual è la purezza ottica e il livello di corpi estranei nelle vostre spedizioni di sesamo?",
+            "answer": "Tutti i semi di sesamo Nilasya subiscono una selezione ottica e separazione per gravità multi-pass Bühler Sortex a Mersin. Garantiamo una purezza minima 99.9% per il sesamo bianco naturale e fino a 99.98% per i semi di sesamo sbucciati ad acqua, senza pietre, metalli o danni da insetti."
+          },
+          "pt": {
+            "question": "Qual é a pureza ótica e o nível de matéria estranha em seus embarques de gergelim?",
+            "answer": "Todas as sementes de gergelim Nilasya passam por múltiplas etapas de classificação óptica e separação por gravidade Bühler Sortex em Mersin. Garantimos pureza mínima 99.9% para sementes brancas naturais e até 99.98% de pureza para sementes de gergelim descascadas aqua, sem pedras, metais ou danos por insetos."
+          },
+          "nl": {
+            "question": "Wat is de optische zuiverheid en het vreemd materiaalpercentage in uw sesamzendingen?",
+            "answer": "Alle Nilasya-sesamzaden ondergaan meervoudige Bühler Sortex optische sorteermethoden en zwaartekrachtseparatie in Mersin. Wij garanderen minimaal 99.9% zuiverheid voor natuurlijk wit en tot 99.98% zuiverheid voor aqua-geschaalde sesamzaden, zonder stenen, metalen of insectenschade."
+          },
+          "pl": {
+            "question": "Jaki jest poziom czystości optycznej i materii obcej w twoich dostawach sezamu?",
+            "answer": "Wszystkie nasiona sezamu Nilasya przechodzą wieloprzejściowe Bühler Sortex optyczne sortowanie i separację grawitacyjną w Mersin. Gwarantujemy minimalną czystość 99.9% naturalnej bieli oraz do 99.98% czystości sezamu z łupiną akwamariny, bez kamieni, metali ani uszkodzeń owadów."
+          },
+          "ro": {
+            "question": "Care este puritatea optică și nivelul materiei străine în transporturile tale de susan?",
+            "answer": "Toate semințele de susan Nilasya trec prin sortare optică și separare gravitațională Bühler Sortex mai multe treceri în Mersin. Garantăm puritate minimă 99.9% pentru albul natural și puritate până la 99.98% pentru semințele de susan cu coajă acvatică, fără pietre, metale sau daune cauzate de insecte."
+          },
+          "bg": {
+            "question": "Каква е оптичната чистота и нивото на чуждо вещество във вашите сусамови пратки?",
+            "answer": "Всички семена от сусам Нилася преминават през многократно Bühler Sortex оптично сортиране и гравитационно разделяне в Мерсин. Гарантираме минимална 99.9% чистота на естественото бяло и до 99.98% чистота за сусамови семена с аква-обвивка, без никакви увреждания от камъни, метали или насекоми."
+          },
+          "el": {
+            "question": "Ποια είναι η οπτική καθαρότητα και το επίπεδο ξένων υλών στις αποστολές σουσαμιού σας;",
+            "answer": "Όλοι οι σπόροι σουσαμιού Nilasya υποβάλλονται σε οπτική διαλογή πολλαπλών περασμάτων Bühler Sortex και διαχωρισμό με βαρύτητα στη Μερσίνα. Εγγυόμαστε ελάχιστη καθαρότητα 99.9% για το φυσικό λευκό και έως 99.98% καθαρότητα για σουσάμι με φλοιό νερού, με μηδενικές πέτρες, μέταλλα ή ζημιές από έντομα."
+          },
+          "sr": {
+            "question": "Koja je optička čistoća i nivo stranih materija u vašim pošiljkama suzama?",
+            "answer": "Sve Nilasia sezamovo seme prolazi kroz višestruko prolazno Bühler Sortex optičko sortiranje i gravitaciono razdvajanje u Mersinu. Garantujemo minimalnu 99.9% čistoću za prirodnu belu i do 99.98% čistoće za akua-oljuštene sezamovo seme, sa nula kamenja, metala ili oštećenja insekata."
+          },
+          "uk": {
+            "question": "Яка оптична чистота та рівень сторонніх речовин у ваших поставках кунжуту?",
+            "answer": "Усі насіння кунжуту Ніласья проходять багатопрохідне Bühler Sortex оптичне сортування та гравітаційне розділення в Мерсіні. Ми гарантуємо мінімальну 99.9% чистоту для натурального білого насіння та до 99.98% чистоту для кунжуту з аква-оболонкою, без жодних пошкоджень каменями, металами чи комахами."
+          },
+          "ka": {
+            "question": "რა არის ოპტიკური სისუფთავე და უცხო სხეულის დონე თქვენს გოგრისან თესლთა მიწოდებაში?",
+            "answer": "ყველა ნილასია გოგრის თესლი გადის მრავალგზის Bühler Sortex ოპტიკურ სორტირებას და გრავიტაციულ განცალკევებას მერსინში. ჩვენ გარანტიას ვაძლევთ მინიმალურ 99.9% სიწმინდას ბუნებრივი თეთრი და მიღებამდე 99.98% სიწმინდას წყლის დამზადებულ გოგრის თესლზე, ნულოვანი ქათმის, ლითონის ან მწერის დაზიანებით."
+          },
+          "az": {
+            "question": "Sizin küncüt göndərişlərinizdə optik təmizlik və xarici maddə səviyyəsi nə qədərdir?",
+            "answer": "Bütün Nilasya küncüt toxumları Mersin şəhərində çoxlu Bühler Sortex optik çeşidləmə və cazibə ilə ayrılmadan keçir. Təbii ağ üçün minimum 99.9% təmizliyi, akva-qabıqlı küncüt toxumları üçün isə 99.98% qədər təmizliyi təmin edirik, heç bir daş, metal və ya həşərat zədəsi olmadan."
+          },
+          "uz": {
+            "question": "Sizning kunjut jo'natmalaringizda optik tozaligi va begona moddalar darajasi qanday?",
+            "answer": "Barcha Nilasya kunjut urug'lari Mersinda bir necha bosqichli Bühler Sortex optik saralash va gravitatsiya ajratishdan o'tadi. Biz tabiiy oq kunjut uchun minimal 99.9% tozaligini va suv bilan qoplangan kunjut uchun 99.98% gacha tozaligini, shuningdek, toshlar, metall va hasharot zarari yo'qligini kafolatlaymiz."
+          },
+          "kk": {
+            "question": "Күнжіт жеткізілімдеріңіздегі оптикалық тазалық пен бөтен зат деңгейі қандай?",
+            "answer": "Барлық Nilasya кунжут тұқымдары Мерсинде көп айналымдық Bühler Sortex оптикалық сұрыптау және гравитациялық бөлінуден өтеді. Біз табиғи ақ тұқымдардың минималды 99.9% тазалығын, ал аква қабықталған күнжіт тұқымдары үшін 99.98% тазалыққа дейін кепілдік береміз, тастар, металдар немесе жәндіктер зақымданбайды."
+          },
+          "fa": {
+            "question": "خلوص نوری و سطح ماده خارجی در محموله های کنجد شما چقدر است؟",
+            "answer": "تمام دانه های کنجد نیلاسیا در مرسین تحت مرتب سازی Bühler Sortex نوری چندمرحله ای و جداسازی گرانشی قرار می گیرند. ما حداقل خلوص 99.9% را برای کنجد طبیعی و تا خلوص 99.98% برای کنجد با پوسته آبی تضمین می کنیم، بدون هیچ آسیبی به سنگ، فلز یا حشرات."
+          },
+          "hi": {
+            "question": "आपके तिल शिपमेंट में ऑप्टिकल शुद्धता और विदेशी पदार्थ का स्तर क्या है?",
+            "answer": "सभी Nilasya तिल के बीज मर्सिन में ऑप्टिकल छंटाई और गुरुत्वाकर्षण पृथक्करण Bühler Sortex बहु-पास से गुजरते हैं। हम प्राकृतिक सफेद के लिए न्यूनतम 99.9% शुद्धता और एक्वा-छिलके वाले तिल के लिए 99.98% शुद्धता तक की गारंटी देते हैं, जिसमें शून्य पत्थर, धातु या कीट क्षति होती है।"
+          },
+          "ur": {
+            "question": "آپ کے تل کی شپمنٹس میں آپٹیکل پاکیزگی اور غیر ملکی مادہ کی سطح کیا ہے؟",
+            "answer": "تمام نیلاسیا تل کے بیج مرسن میں ملٹی پاس Bühler Sortex آپٹیکل سورٹنگ اور گریویٹی سیپریشن سے گزرتے ہیں۔ ہم قدرتی سفید کے لیے کم از کم 99.9% پاکیزگی اور ایکوا ہلڈ تل کے لیے 99.98% تک پاکیزگی کی ضمانت دیتے ہیں، بغیر کسی پتھر، دھات، یا کیڑے کو نقصان پہنچائے۔"
+          },
+          "bn": {
+            "question": "আপনার তিলের চালানে অপটিক্যাল বিশুদ্ধতা এবং বিদেশী পদার্থের স্তর কী?",
+            "answer": "সমস্ত নীলস্য তিলের বীজ মার্সিনে অপটিক্যাল বাছাই এবং মাধ্যাকর্ষণ পৃথকীকরণের Bühler Sortex মাল্টি-পাসের মধ্য দিয়ে যায়। আমরা প্রাকৃতিক সাদা অংশের জন্য সর্বনিম্ন 99.9% বিশুদ্ধতা এবং শূন্য পাথর, ধাতু বা পোকামাকড়ের ক্ষতি সহ জলজ-হাল্ড তিলের বীজের জন্য 99.98% বিশুদ্ধতা নিশ্চিত করি।"
+          },
+          "zh-cn": {
+            "question": "您的芝麻货物的光学纯度和杂质水平是多少？",
+            "answer": "所有 Nilasya 芝麻在梅尔辛经过多次 Bühler Sortex 光学分选和重力分离。我们保证天然白芝麻最低 99.9% 纯度，水剥芝麻最高可达 99.98% 纯度，无石块、金属或虫害。"
+          },
+          "ja": {
+            "question": "ごまの出荷中の光学純度と異物のレベルは?",
+            "answer": "すべてのニラシアごま種子は、メルシンで複数回のBühler Sortex光学選別と重力分離を受けています。天然白ゴマの種は最低99.9%純度、アクアハルドゴマは最大99.98%純度を保証し、石、金属、昆虫による損傷は一切ありません。"
+          },
+          "ko": {
+            "question": "참깨 출하물의 광학 순도와 이물질 수준은 어떠세요?",
+            "answer": "모든 닐라샤 참깨씨드는 메르신에서 다중 Bühler Sortex 광학 분류와 중력 분리를 거칩니다. 천연 흰참깨는 최소 99.9% 순도, 아쿠아 껍질 참깨는 최대 99.98% 순도를 보장하며, 돌, 금속, 곤충 손상이 전혀 없습니다."
+          },
+          "id": {
+            "question": "Bagaimana kemurnian optik dan tingkat benda asing dalam pengiriman wijen Anda?",
+            "answer": "Semua biji wijen Nilasya melewati sorting optik Bühler Sortex multi-lintasan dan pemisahan gravitasi di Mersin. Kami menjamin kemurnian minimum 99.9% untuk wijen putih alami dan hingga 99.98% untuk wijen aqua-hulled, tanpa batu, logam, atau kerusakan serangga."
+          },
+          "ms": {
+            "question": "Apakah tahap ketulenan optik dan bahan asing dalam penghantaran bijan anda?",
+            "answer": "Semua bijan Nilasya menjalani pengasingan optik berbilang laluan Bühler Sortex dan pemisahan graviti di Mersin. Kami menjamin ketulenan minimum 99.9% untuk bijan putih semula jadi dan sehingga 99.98% ketulenan untuk bijan berkulit aqua, tanpa kerosakan batu, logam, atau serangga."
+          },
+          "sw": {
+            "question": "Je, ni kiwango gani cha usafi wa macho na vitu vya kigeni katika usafirishaji wako wa ufuta?",
+            "answer": "Mbegu zote za ufuta za Nilasya hupitia upangaji wa macho Bühler Sortex kupita nyingi na utengano wa mvuto huko Mersin. Tunahakikisha usafi wa chini 99.9% kwa nyeupe asilia na hadi usafi wa 99.98% kwa mbegu za ufuta zilizo na maji, na mawe sifuri, metali au uharibifu wa wadudu."
+          }
+        }
+      },
+      {
+        "question": "Which sesame grade is best recommended for industrial tahini and halva production?",
+        "questionTr": "Endüstriyel tahin ve helva üretimi için hangi susam çeşidini tavsiye edersiniz?",
+        "answer": "We strongly recommend our Aqua-Hulled White Sesame or High-Oil Tahini Grade. These seeds have an oil content between 51% and 54%, low bitterness, and minimal free fatty acids (FFA < 1.5%), resulting in smooth, non-separating tahini paste with optimal shelf life.",
+        "answerTr": "Kabuksuz Soyulmuş Beyaz Susam veya Tahinlik Ekstra Yağlı Susamımızı öneriyoruz. %51-%54 arası doğal yağ oranı, düşük acılık ve düşük serbest yağ asitleri (FFA < %1.5) ile kavanozda ayrışmayan pürüzsüz tahin kıvamı sağlar.",
+        "localized": {
+          "ar": {
+            "question": "أي درجة من السمسم يوصى بها لإنتاج الطحينة والهلڤة الصناعية؟",
+            "answer": "نوصي بشدة ببذور السمسم الأبيض المقشور مائيًا أو درجة الطحينة عالية الزيت. تحتوي هذه البذور على محتوى زيت بين 51% و54%، منخفضة المرارة ودرجات الحموضة الحرة قليلة (FFA < 1.5%)، مما يؤدي إلى طحينة ناعمة غير مفصولة بعمر تخزين مثالي."
+          },
+          "ru": {
+            "question": "Какой кунжутный сорт лучше всего рекомендуется для производства промышленного тахини и халвы?",
+            "answer": "Мы настоятельно рекомендуем наш сорт Aqua-Hulled White Sunsame или High-Oil Tahini. Эти семена содержат содержание масла от 51% до 54%, низкую горчину и минимальное количество свободных жирных кислот (FFA < 1.5%), что обеспечивает гладкую, не расщепляющуюся пасту тахини с оптимальным сроком хранения."
+          },
+          "de": {
+            "question": "Welche Sesamsorte wird am besten für die industrielle Herstellung von Tahini und Halva empfohlen?",
+            "answer": "Wir empfehlen dringend unsere Aqua-Peeled White Sesam- oder High-Oil-Tahini-Qualität. Diese Samen haben einen Ölgehalt zwischen 51% und 54%, eine geringe Bitterkeit und minimale freie Fettsäuren (FFA < 1.5%), was zu einer glatten, nicht trennbaren Tahini-Paste mit optimaler Haltbarkeit führt."
+          },
+          "fr": {
+            "question": "Quel grade de sésame est le plus recommandé pour la production industrielle de tahini et de halva ?",
+            "answer": "Nous recommandons fortement notre sésame blanc dépouillé aqua ou le grade tahini à haute teneur en huile. Ces graines ont une teneur en huile comprise entre 51% et 54%, une faible amertume et des acides gras libres minimaux (AGL < 1.5%), ce qui donne une pâte de tahini lisse, sans séparation, avec une durée de conservation optimale."
+          },
+          "es": {
+            "question": "¿Qué grado de sésamo es mejor recomendado para la producción industrial de tahini y halva?",
+            "answer": "Recomendamos encarecidamente nuestra categoría Aqua-Hulled White Sejil o Tahini de alto contenido en aceite. Estas semillas tienen un contenido de aceite entre 51% y 54%, baja amargura y ácidos grasos libres mínimos (FFA < 1.5%), lo que resulta en una pasta de tahini suave, no separable y con una vida útil óptima."
+          },
+          "it": {
+            "question": "Quale grado di sesamo è consigliato per la produzione industriale di tahini e halva?",
+            "answer": "Raccomandiamo vivamente il nostro sesamo bianco sbucciato ad acqua o il grade per tahini ad alto contenuto di olio. Questi semi hanno un contenuto di olio tra 51% e 54%, bassa amarezza e acidi grassi liberi minimi (FFA < 1.5%), risultando in una pasta di tahini liscia, non separabile e con durata ottimale."
+          },
+          "pt": {
+            "question": "Qual grau de gergelim é mais recomendado para produção industrial de tahine e halva?",
+            "answer": "Recomendamos fortemente nosso Gergelim Branco Descascado Aqua ou Grau Tahine de Alto Óleo. Essas sementes têm teor de óleo entre 51% e 54%, baixa amargura e ácidos graxos livres mínimos (AGL < 1.5%), resultando em tahine suave, não separável e com vida útil ótima."
+          },
+          "nl": {
+            "question": "Welk sesamkwaliteit wordt het meest aanbevolen voor industriële tahin- en halvaproduktie?",
+            "answer": "Wij raden sterk onze Aqua-Geschaalde Witte Sesam of Hoogrendement Tahin-kwaliteit aan. Deze zaden hebben een oliegehalte tussen 51% en 54%, lage bitterheid en minimale vrije vetzuren (FFA < 1.5%), wat resulteert in een gladde tahinpasta die niet scheidt en een optimale houdbaarheid biedt."
+          },
+          "pl": {
+            "question": "Która odmiana sezamu jest najlepiej zalecana do produkcji tahini i halwy w branży?",
+            "answer": "Gorąco polecamy nasz Aqua-Louled White Sezam lub wysokoolejowe tahini Grade. Te nasiona mają zawartość oleju od 51% do 54%, niską gorycz i minimalną zawartość wolnych kwasów tłuszczowych (FFA < 1.5%), co daje gładką, nierozdzielającą się pastę tahini z optymalnym okresem przydatności do spożycia."
+          },
+          "ro": {
+            "question": "Care grad de susan este cel mai recomandat pentru producția industrială de tahini și halva?",
+            "answer": "Recomandăm cu tărie Aqua-hulled White Sesame sau Tahini cu conținut ridicat de ulei. Aceste semințe au un conținut de ulei între 51% și 54%, amărăciunea scăzută și acizi grași liberi minimi (FFA < 1.5%), rezultând o pastă de tahini netedă, care nu se separă, cu o durată optimă de valabilitate."
+          },
+          "bg": {
+            "question": "Кой сусам клас е най-препоръчителен за индустриално производство на тахини и халва?",
+            "answer": "Силно препоръчваме нашия клас Aqua-Hulled White Susame или High-Oil Tahini. Тези семена имат съдържание на масло между 51% и 54%, ниска горчивина и минимално количество свободни мастни киселини (FFA < 1.5%), което води до гладка, неразделяща се таханова паста с оптимален срок на годност."
+          },
+          "el": {
+            "question": "Ποια ποιότητα σουσαμιού συνιστάται καλύτερα για βιομηχανική παραγωγή ταχινιού και χαλβά;",
+            "answer": "Συνιστούμε ανεπιφύλακτα το λευκό σουσάμι Aqua-Hulled ή το Tahini Grade High-Oil. Αυτοί οι σπόροι έχουν περιεκτικότητα σε λάδι μεταξύ 51% και 54%, χαμηλή πικράδα και ελάχιστα ελεύθερα λιπαρά οξέα (FFA < 1.5%), με αποτέλεσμα λεία, μη διαχωριστική πάστα ταχίνι με βέλτιστη διάρκεια ζωής."
+          },
+          "sr": {
+            "question": "Koji susam razred se najbolje preporučuje za industrijsku proizvodnju tahinija i halve?",
+            "answer": "Preporučujemo naš Akua-Hulled beli susam ili Tahini Tahini razred sa visokim uljem. Ova semena imaju sadržaj ulja između 51% i 54%, nisku gorčinu i minimalne slobodne masne kiseline (FFA < 1.5%), što rezultira glatkom, nerazdvajajućom tahini pastom sa optimalnim rokom trajanja."
+          },
+          "uk": {
+            "question": "Який сорт кунжуту найкраще рекомендується для промислового виробництва тахіні та халви?",
+            "answer": "Ми настійно рекомендуємо наш Aqua-Hulled White Sesame або Tahini з високим вмістом олії. Це насіння має вміст олії від 51% до 54%, низьку гіркоту та мінімально вільні жирні кислоти (FFA < 1.5%), що забезпечує гладку, нерозділюючу пасту тахіні з оптимальним терміном зберігання."
+          },
+          "ka": {
+            "question": "რომელი გოგრის გრადაცია არის საუკეთესო რეკომენდირებული სამრეწველო ტაჰინისა და ჰალვის წარმოებისთვის?",
+            "answer": "ჩვენ გირჩევთ ჩვენი აკვა-მხრებიანი თეთრი სესამის ან მაღალი ზეთის შემცველობის ტაჰინის ხარისხს. ამ გუნდებში ზეთის შემცველობა მერყეობს 51% და 54%-ს შორის, აქვს დაბალი მწიფეობა და მინიმალური თავისუფალი ცხიმოვანი მჟავები (FFA < 1.5%), რის შედეგადაც მიიღება გლუვი, არანაწილებადი ტაჰინის პასტა ოპტიმალური ვადის შენახვით."
+          },
+          "az": {
+            "question": "Sənaye tahini və helva istehsalı üçün hansı küncüt növü ən yaxşı tövsiyə olunur?",
+            "answer": "Biz Aqua-Qabıqlı Ağ Küncüt və ya Yüksək Yağlı Tahini Dərəcəmizi güclü şəkildə tövsiyə edirik. Bu toxumların yağ tərkibi 51% ilə 54% arasında, aşağı acılığı və minimal sərbəst yağ turşuları (FFA < 1.5%) var, nəticədə optimal saxlanma müddətinə malik hamar, ayrılmayan tahini pastası əldə edilir."
+          },
+          "uz": {
+            "question": "SANOAT TAHINI VA XALVA ishlab chiqarish uchun qaysi kunjut darajasi eng tavsiya etiladi?",
+            "answer": "Biz Aqua-qobig‘i tozalangan Oq Susam yoki Yuqori Yog‘li Tahiqni sinfini qat’iy tavsiya qilamiz. Ushbu urug‘lar 51% dan 54% gacha yog‘ miqdoriga ega, achchiqligi past va erkin yog‘ kislotalari minimal (FFA < 1.5%), bu esa silliq, ajralmaydigan tahini pastasini va optimal saqlash muddatini ta’minlaydi."
+          },
+          "kk": {
+            "question": "Өнеркәсіптік тахини мен халва өндіру үшін қай күнжіт сорты ең жақсы ұсынылады?",
+            "answer": "Біз Aqua-Hulled White Cesame немесе High-Oil Tahini дәрежесін қатты ұсынамыз. Бұл тұқымдарда май мөлшері 51%-54% аралығында, ащылығы төмен және минималды еркін май қышқылдары (FFA < 1.5%, нәтижесінде тегіс, бөлінбейтін тахини пастасы оңтайлы сақталу мерзімі бар."
+          },
+          "fa": {
+            "question": "کدام درجه کنجد برای تولید صنعتی تاهینی و حلوا بهتر توصیه می شود؟",
+            "answer": "ما به شدت سس کنجد سفید با پوست آبی یا درجه طحینی با روغن بالا را توصیه می کنیم. این دانه ها دارای محتوای چربی بین 51% تا 54%، تلخی کم و اسیدهای چرب آزاد (FFA < 1.5%) بسیار کم هستند که منجر به خمیر طحینه صاف و غیرجداشونده با عمر مفید بهینه می شود."
+          },
+          "hi": {
+            "question": "औद्योगिक ताहिनी और हलवा उत्पादन के लिए किस तिल ग्रेड की सबसे अच्छी सिफारिश की जाती है?",
+            "answer": "हम दृढ़ता से अनुशंसा करते हैं हमारे एक्वा-पतवार वाले सफेद तिल या उच्च-तेल ताहिनी ग्रेड. इन बीजों में 51% और 54% के बीच तेल की मात्रा होती है, कम कड़वाहट और न्यूनतम मुक्त फैटी एसिड (एफएफए < 1.5%), जिसके परिणामस्वरूप इष्टतम शेल्फ जीवन के साथ चिकना, गैर-अलग तहिनी पेस्ट होता है।"
+          },
+          "ur": {
+            "question": "صنعتی تہینی اور حلوا کی پیداوار کے لیے کون سا تل گریڈ سب سے بہتر تجویز کیا جاتا ہے؟",
+            "answer": "ہم اپنی ایکوا-ہلڈ وائٹ تل یا ہائی آئل تہینی گریڈ کی سختی سے سفارش کرتے ہیں۔ ان بیجوں میں تیل کی مقدار 51% سے 54% کے درمیان ہوتی ہے، کڑواہٹ کم ہوتی ہے، اور فری فیٹی ایسڈز (FFA < 1.5%) کم ہوتے ہیں، جس کے نتیجے میں ہموار، غیر الگ ہونے والا تہینی پیسٹ بہترین شیلف لائف فراہم کرتا ہے۔"
+          },
+          "bn": {
+            "question": "শিল্প তাহিনী এবং হালভা উত্পাদনের জন্য কোন তিল গ্রেডটি সবচেয়ে ভাল সুপারিশ করা হয়?",
+            "answer": "আমরা দৃঢ়ভাবে আমাদের অ্যাকোয়া-হালড সাদা তিল বা উচ্চ-তেল তাহিনি গ্রেডের পরামর্শ দিই। এই বীজগুলিতে 51% এবং 54% এর মধ্যে তেলের পরিমাণ, কম তিক্ততা এবং ন্যূনতম ফ্রি ফ্যাটি অ্যাসিড (এফএফএ < 1.5%) রয়েছে, যার ফলে সর্বোত্তম শেল্ফ লাইফ সহ মসৃণ, অ-পৃথক তাহিনি পেস্ট তৈরি হয়।"
+          },
+          "zh-cn": {
+            "question": "哪种芝麻等级最适合工业用芝麻酱和哈瓦生产？",
+            "answer": "我们强烈推荐我们的水剥白芝麻或高油芝麻酱等级。这些芝麻油含量介于 51% 和 54% 之间，苦味低，游离脂肪酸极少（FFA < 1.5%），可制得顺滑、不分层且保质期最佳的芝麻酱。"
+          },
+          "ja": {
+            "question": "工業用タヒニやハルヴァの生産に最もおすすめのごまグレードは?",
+            "answer": "私たちはアクアハルドホワイトゴマまたは高油タヒニグレードを強くお勧めします。これらの種子は油分含有量が51%から54%の間で、苦味が低く、遊離脂肪酸(FFA< 1.5%)が最小限で、滑らかで分離しにくいタヒニペーストで最適な保存期間を保っています。"
+          },
+          "ko": {
+            "question": "산업용 타히니와 할바 생산에 가장 추천되는 참깨 등급은 무엇인가요?",
+            "answer": "저희는 아쿠아 껍질 백참깨 또는 고유 타히니 등급을 강력히 추천합니다. 이 씨앗들은 오일 함량이 51%에서 54% 사이이며, 쓴맛이 낮고 자유지방산(FFA < 1.5%)이 적어 최적의 유통기한을 가진 부드럽고 분리되지 않는 타히니 페이스트가 됩니다."
+          },
+          "id": {
+            "question": "Grade wijen mana yang paling direkomendasikan untuk produksi tahini dan halva industri?",
+            "answer": "Kami sangat merekomendasikan Wijen Putih Aqua-Hulled kami atau Grade Tahini Minyak Tinggi. Biji ini memiliki kandungan minyak antara 51% dan 54%, rasa pahit rendah, dan asam lemak bebas minimal (FFA < 1.5%), menghasilkan pasta tahini yang halus, tidak memisah, dengan umur simpan optimal."
+          },
+          "ms": {
+            "question": "Gred bijan mana yang paling disyorkan untuk pengeluaran tahini dan halva industri?",
+            "answer": "Kami sangat mengesyorkan Gred Bijan Putih Berkulit Aqua atau Tahini Berminyak Tinggi kami. Biji ini mempunyai kandungan minyak antara 51% dan 54%, kepahitan rendah, dan asid lemak bebas (FFA < 1.5%) yang minimum, menghasilkan pes tahini yang licin dan tidak memisahkan dengan jangka hayat yang optimum."
+          },
+          "sw": {
+            "question": "Ni daraja gani la ufuta linalopendekezwa vyema kwa uzalishaji wa tahini ya viwandani na halva?",
+            "answer": "Tunapendekeza sana ufuta wetu mweupe wa Aqua-Hulled au Daraja la Tahini la Mafuta ya Juu. Mbegu hizi zina maudhui ya mafuta kati ya 51% na 54%, uchungu mdogo, na asidi ndogo ya mafuta ya bure (FFA < 1.5%), na kusababisha kuweka tahini laini, isiyotenganisha na maisha bora ya rafu."
+          }
+        }
+      },
+      {
+        "question": "What is your Minimum Order Quantity (MOQ) and container capacity?",
+        "questionTr": "Minimum sipariş miktarı (MOQ) ve konteyner yükleme kapasitesi nedir?",
+        "answer": "Our standard export MOQ is one 20ft Full Container Load (FCL), which carries approximately 19 to 21 Metric Tons depending on bag configuration (palletized vs loose-stuffed). Mixed container loads with pulses or bulgur are also accommodated upon request.",
+        "answerTr": "Standart ihracat asgari sipariş miktarımız (MOQ) 1 adet 20ft FCL deniz konteyneridir (paletli veya dökme istifleme seçeneğine göre 19-21 Ton). Talep halinde bakliyat veya bulgur ürünlerimizle karma konteyner yüklemesi yapılabilmektedir.",
+        "localized": {
+          "ar": {
+            "question": "ما الحد الأدنى للطلب (MOQ) وسعة الحاوية؟",
+            "answer": "الحد الأدنى القياسي للتصدير هو حاوية كاملة 20ft (FCL)، والتي تحمل حوالي 19 إلى 21 طن متري حسب ترتيب الأكياس (على منصة أو محشوة فضفاضة). كما يتم تلبية حاويات مختلطة مع البقوليات أو البرغل عند الطلب."
+          },
+          "ru": {
+            "question": "Какова ваша минимальная сумма заказа (MOQ) и вместимость контейнера?",
+            "answer": "Наш стандартный экспортный MOQ — это один 20ft полный контейнерный груз (FCL), который перевозит примерно от 19 до 21 метрических тонн в зависимости от конфигурации мешков (паллетированный или свободно набитый). Смешанные контейнеры с пульсами или булгуром также предоставляются по запросу."
+          },
+          "de": {
+            "question": "Wie hoch ist Ihre Mindestbestellmenge (MOQ) und Containerkapazität?",
+            "answer": "Unser Standard-Export-MOQ ist eine 20ft Full Container Load (FCL), die je nach Beutelaufbau etwa 19 bis 21 metrische Tonnen transportiert. Mischcontainerladungen mit Hülsenfrüchten oder Bulgur werden ebenfalls auf Anfrage aufgenommen."
+          },
+          "fr": {
+            "question": "Quelle est votre quantité minimum de commande (MOQ) et la capacité du conteneur ?",
+            "answer": "Notre MOQ d'exportation standard est un conteneur complet (20ft Full Container Load, FCL), qui contient environ 19 à 21 tonnes métriques selon la configuration des sacs (palettisé ou en vrac). Les chargements mixtes avec des légumineuses ou du boulgour sont également possibles sur demande."
+          },
+          "es": {
+            "question": "¿Cuál es tu Cantidad Mínima de Pedido (MOQ) y la capacidad del contenedor?",
+            "answer": "Nuestro MOQ estándar de exportación es uno 20ft Carga Completa de Contenedor (FCL), que transporta aproximadamente entre 19 y 21 toneladas métricas dependiendo de la configuración de los sacos (paletizados vs rellenos sueltos). También se acomodan cargas mixtas con legumbres o bulgur bajo solicitud."
+          },
+          "it": {
+            "question": "Qual è la vostra quantità minima d'ordine (MOQ) e la capacità del contenitore?",
+            "answer": "La nostra MOQ standard per l'esportazione è un 20ft carico completo di container (FCL), che trasporta circa 19 a 21 tonnellate metriche a seconda della configurazione dei sacchi (su pallet o sfusi). Sono disponibili su richiesta anche carichi misti di container con legumi o bulgur."
+          },
+          "pt": {
+            "question": "Qual é a sua Quantidade Mínima de Pedido (MOQ) e capacidade do contêiner?",
+            "answer": "Nossa MOQ padrão de exportação é um 20ft Contêiner Completo (FCL), que transporta aproximadamente 19 a 21 Toneladas Métricas dependendo da configuração das sacas (paletizado vs solto). Contêineres mistos com leguminosas ou bulgur também são acomodados mediante solicitação."
+          },
+          "nl": {
+            "question": "Wat is uw Minimum Order Quantity (MOQ) en container capaciteit?",
+            "answer": "Onze standaard export-MOQ is één 20ft Full Container Load (FCL), wat ongeveer 19 tot 21 metrische tonnen bevat, afhankelijk van de zakconfiguratie (gepaletiseerd versus losgestopt). Gemengde containerladingen met peulvruchten of bulgur worden ook op verzoek geaccepteerd."
+          },
+          "pl": {
+            "question": "Jaka jest Twoja minimalna ilość zamówienia (MOQ) i pojemność pojemności?",
+            "answer": "Nasz standardowy eksportowy MOQ to jeden 20ft pełny ładunek kontenerowy (FCL), który przewozi około 19 do 21 ton metrycznych, w zależności od konfiguracji toreb (paletyzowane vs luźnie wypełniane). Na życzenie dostępne są także mieszane ładunki kontenerowe z pulse'ami lub bulgurami."
+          },
+          "ro": {
+            "question": "Care este Cantitatea Minimă de Comandă (MOQ) și capacitatea containerului?",
+            "answer": "MOQ-ul nostru standard de export este unul 20ft Full Container Load (FCL), care transportă aproximativ 19 până la 21 tone metrice, în funcție de configurația sacilor (paletizate vs umplute libere). Încărcăturile mixte cu leguminoase sau bulgur sunt de asemenea acomodate la cerere."
+          },
+          "bg": {
+            "question": "Какъв е вашият минимален брой за поръчка (MOQ) и капацитет на контейнера?",
+            "answer": "Нашият стандартен износен MOQ е един 20ft Full Container Load (FCL), който превозва приблизително 19 до 21 метрични тона в зависимост от конфигурацията на торбата (палетизиран срещу свободно пълнен). Смесени контейнерни товари с пулсови или булгури също се приемат при поискване."
+          },
+          "el": {
+            "question": "Ποια είναι η ελάχιστη ποσότητα παραγγελίας (MOQ) και η χωρητικότητα του δοχείου;",
+            "answer": "Το τυπικό μας MOQ εξαγωγής είναι ένα 20ft πλήρες φορτίο εμπορευματοκιβωτίων (FCL), το οποίο μεταφέρει περίπου 19 έως 21 μετρικούς τόνους ανάλογα με τη διαμόρφωση της σακούλας (παλετοποιημένη έναντι χαλαρά γεμισμένη). Μικτά φορτία εμπορευματοκιβωτίων με παλμούς ή πλιγούρι φιλοξενούνται επίσης κατόπιν αιτήματος."
+          },
+          "sr": {
+            "question": "Koji je vaš minimalna količina porudžbine (MOK) i kapacitet kontejnera?",
+            "answer": "Naš standardni izvoz MOK je jedan 20ft Full Container Load (FCL), koji nosi oko 19 do 21 metričkih tona u zavisnosti od konfiguracije torbe (paletizovana vs labavo punjena). Mešoviti kontejner opterećenja sa impulsima ili bulgur su takođe smešteni na zahtev."
+          },
+          "uk": {
+            "question": "Яка ваша мінімальна кількість замовлення (MOQ) та місткість контейнера?",
+            "answer": "Наш стандартний експортний MOQ — це один 20ft Full Container Load (FCL), який перевозить приблизно від 19 до 21 метричних тонн залежно від конфігурації мішка (палетизований проти вільно наповнений). Змішані контейнери з імпульсами або булгуром також розміщуються за запитом."
+          },
+          "ka": {
+            "question": "რა არის თქვენი მინიმალური შეკვეთის რაოდენობა (MOQ) და კონტეინერის მოცულობა?",
+            "answer": "ჩვენი სტანდარტული ექსპორტის MOQ არის ერთი 20ft სრული კონტეინერის დატვირთვა (FCL), რომელიც يحمل დაახლოებით 19 – 21 მეტრიკურ ტონას შეფუთვის კონფიგურაციის (პალეტირებულის წინააღმდეგ თავისუფლად მოთავსებული) მიხედვით. მოთხოვნის შემთხვევაში შესაძლებელია კონტეინერის ნარევი დატვირთვების მიღებაც პულსების ან ბურგულის შეწამვლით."
+          },
+          "az": {
+            "question": "Minimum Sifariş Miqdarınız (MOQ) və konteyner tutumunuz nədir?",
+            "answer": "Standart ixrac MOQ-umuz bir 20ft Tam Konteyner Yükü (FCL-dir, bu yük çanta konfiqurasiyasından asılı olaraq təxminən 19-dən 21 Metrik Ton daşıyır (paletli və ya boş doldurulmuş). Qarışıq konteyner yükləri də istəyə görə impuls və ya bulgurla təmin edilir."
+          },
+          "uz": {
+            "question": "Sizning Minimal Buyurtma Miqdoringiz (MOQ) va konteyner sig‘imi qancha?",
+            "answer": "Bizning standart eksport MOQ bir 20ft To‘liq Konteyner Yuklamasi (FCL) bo‘lib, bu taxminan 19 dan 21 gacha Metrik Tonni tashkil qiladi, sumka konfiguratsiyasiga qarab (paletlangan yoki erkin yuklangan). Puls yoki bulgur bilan aralash konteyner yuklamalari ham so‘rov bo‘yicha amalga oshiriladi."
+          },
+          "kk": {
+            "question": "Сіздің ең төменгі тапсырыс көлеміңіз (MOQ) және контейнер сыйымдылығы қандай?",
+            "answer": "Біздің стандартты экспорттық MOQ — 20ft толық контейнер жүктемесі (FCL), ол қаптың конфигурациясына байланысты шамамен 19-21 метрлік тоннаны тасымалдайды (паллеттелген немесе бос толтырылған). Импульстер немесе булгур бар аралас контейнер жүктемелері де сұраныс бойынша қабылданады."
+          },
+          "fa": {
+            "question": "حداقل مقدار سفارش (MOQ) و ظرفیت کانتینر شما چقدر است؟",
+            "answer": "MOQ استاندارد صادراتی ما یک 20ft بار کامل کانتینر (FCL) است که بسته به پیکربندی کیسه (پالت شده در مقابل پر شده آزاد) حدود 19 تا 21 تن متریک حمل می کند. بارهای کانتینری مخلوط با پالس یا بلغور نیز در صورت درخواست قابل پذیرش هستند."
+          },
+          "hi": {
+            "question": "आपकी न्यूनतम ऑर्डर मात्रा (MOQ) और कंटेनर क्षमता क्या है?",
+            "answer": "हमारा मानक निर्यात MOQ पूर्ण कंटेनर लोड (FCL) 20ft एक है, जो बैग कॉन्फ़िगरेशन (पैलेटाइज्ड बनाम ढीले-भरवां) के आधार पर लगभग 19 से 21 मीट्रिक टन ले जाता है। दालों या बुलगुर के साथ मिश्रित कंटेनर लोड को भी अनुरोध पर समायोजित किया जाता है।"
+          },
+          "ur": {
+            "question": "آپ کی کم از کم آرڈر مقدار (MOQ) اور کنٹینر کی گنجائش کیا ہے؟",
+            "answer": "ہمارا معیاری ایکسپورٹ MOQ ایک 20ft فل کنٹینر لوڈ (FCL) ہے، جو بیگ کی ترتیب (پیلیٹائزڈ بمقابلہ ڈھیلا بھرا) کے مطابق تقریبا 19 سے 21 میٹرک ٹن لے جاتا ہے۔ مخلوط کنٹینر لوڈز پلس یا بلگر کے ساتھ بھی درخواست پر فراہم کیے جاتے ہیں۔"
+          },
+          "bn": {
+            "question": "আপনার সর্বনিম্ন অর্ডার পরিমাণ (MOQ) এবং ধারক ক্ষমতা কত?",
+            "answer": "আমাদের স্ট্যান্ডার্ড এক্সপোর্ট এমওকিউ 20ft ফুল কন্টেইনার লোড (FCL), যা ব্যাগ কনফিগারেশনের উপর নির্ভর করে প্রায় 19 থেকে 21 মেট্রিক টন বহন করে (প্যালেটাইজড বনাম আলগা স্টাফড)। ডাল বা বুলগুরের সাথে মিশ্র কন্টেইনার লোডগুলিও অনুরোধের ভিত্তিতে রাখা হয়।"
+          },
+          "zh-cn": {
+            "question": "您的最低订购量 (MOQ) 和集装箱容量是多少？",
+            "answer": "我们的标准出口最小订单量为一整箱 20ft （FCL），根据包装方式（托盘或散装），可装运约 19 至 21 公吨。混装豆类或碎麦的集装箱也可按要求安排。"
+          },
+          "ja": {
+            "question": "最低注文量(MOQ)とコンテナ容量はどのくらいですか?",
+            "answer": "当社の標準輸出MOQは120ftフルコンテナロード(FCL)で、袋の構成(パレット入りか散装か)によって約19メートルトンから21メトリックトンを運ぶことができます。パルスやブルグルを含む混合コンテナ積み込みも、ご要望に応じて対応可能です。"
+          },
+          "ko": {
+            "question": "최소 주문 수량(MOQ)과 컨테이너 용량은 얼마인가요?",
+            "answer": "표준 수출 MOQ는 20ft 풀 컨테이너 적재(FCL)로, 가방 구성(팔레트화 또는 느슨 속짐)에 따라 약 19톤에서 21미터톤 정도를 운반합니다. 콩류 또는 불구르가 포함된 혼합 컨테이너 적재도 요청 시 수용할 수 있습니다."
+          },
+          "id": {
+            "question": "Berapakah Minimum Order Quantity (MOQ) dan kapasitas kontainer Anda?",
+            "answer": "MOQ ekspor standar kami adalah satu 20ft Full Container Load (FCL), yang memuat sekitar 19 hingga 21 Ton Metik tergantung pada konfigurasi karung (dalam palet vs pengisian longgar). Kontainer campuran dengan kacang-kacangan atau bulgur juga dapat diterima atas permintaan."
+          },
+          "ms": {
+            "question": "Apakah Kuantiti Pesanan Minimum (MOQ) dan kapasiti kontena anda?",
+            "answer": "MOQ eksport standard kami ialah satu 20ft Muatan Kontena Penuh (FCL), yang membawa kira-kira 19 hingga 21 Tan Metrik bergantung pada konfigurasi beg (palet vs isi longgar). Muatan kontena campuran dengan kekacang atau bulgur juga disediakan atas permintaan."
+          },
+          "sw": {
+            "question": "Je, ni kiasi gani cha chini cha Agizo lako (MOQ) na uwezo wa kontena?",
+            "answer": "MOQ yetu ya kawaida ya kuuza nje ni moja 20ft Mzigo Kamili wa Kontena (FCL), ambayo hubeba takriban Tani 19 hadi 21 kulingana na usanidi wa mfuko (palletized vs loose-stuffed). Mizigo ya kontena iliyochanganywa na kunde au bulgur pia huwekwa kwa ombi."
+          }
+        }
+      }
+    ],
+    "seoKeywords": [
+      "Turkish sesame seeds",
+      "hulled sesame seeds bulk",
+      "natural white sesame export",
+      "golden roasted simit sesame",
+      "tahini sesame supplier Mersin",
+      "Bühler Sortex sesame seeds",
+      "wholesale sesame seeds Türkiye",
+      "susam ihracatı",
+      "tahinlik susam",
+      "simit susamı",
+      "soyulmuş susam"
+    ],
+    "accentColor": "#c99745"
+  },
+  {
+    "id": "nuts-dried-fruits",
+    "slug": {
+      "tr": "kuruyemis-ve-kuru-meyveler",
+      "en": "nuts-and-dried-fruits",
+      "ar": "mukassarat-wa-fawakih-muqaffafa",
+      "ru": "orehi-i-suhofrukty",
+      "de": "nuesse-und-trockenfruechte",
+      "fr": "fruits-secs-et-noix",
+      "es": "frutos-secos-y-deshidratados",
+      "it": "frutta-secca-e-disidratata",
+      "pt": "frutos-secos-e-desidratados",
+      "nl": "noten-en-zuidvruchten",
+      "pl": "orzechy-i-suszone-owoce",
+      "ro": "nuci-si-fructe-uscate",
+      "bg": "yadki-i-sushini-plodove",
+      "el": "xiroi-karpoi-kai-apoxiramena-frouta",
+      "sr": "orasasti-plodovi-i-suseno-voce",
+      "uk": "gorihy-ta-suhofrukty",
+      "ka": "kakleuli-da-khiri",
+      "az": "cerezer-ve-quru-meyveler",
+      "uz": "yongoklar-va-quruq-mevalar",
+      "kk": "zhanhaqtar-men-keptegen-zhemister",
+      "fa": "ajil-va-khoshkbar",
+      "hi": "meve-aur-sukhe-fal",
+      "ur": "mewajaat-aur-khushk-phal",
+      "bn": "badam-o-shukno-fol",
+      "zh-cn": "jianguo-yu-ganguo",
+      "ja": "nattsu-to-doraifurutsu",
+      "ko": "gyeong-gwaryu-wa-geon-gwa",
+      "id": "kacang-dan-buah-kering",
+      "ms": "kacang-dan-buah-kering",
+      "sw": "kokwa-na-matunda-yaliyokaushwa"
+    },
+    "name": {
+      "tr": "Türk Kuruyemiş & Kuru Meyveler (Fındık, Antep Fıstığı, Ceviz, Badem, Leblebi, Kuru İncir, Kayısı)",
+      "en": "Turkish Nuts & Dried Fruits (Hazelnuts, Pistachios, Walnuts, Almonds, Roasted Chickpeas, Dried Figs & Apricots)",
+      "ar": "مكسرات وفواكه مجففة تركية (بندق، فستق عنتابي، جوز، لوز، قضامة حمص، تين ومشمش مجفف)",
+      "ru": "Турецкие орехи и сухофрукты (фундук, фисташки, грецкий орех, миндаль, нут леблеби, инжир, курага)",
+      "de": "Türkische Nüsse & Trockenfrüchte (Haselnüsse, Pistazien, Walnüsse, Mandeln, Kichererbsensnack, Feigen & Aprikosen)",
+      "fr": "Fruits Secs & Noix de Turquie (Noisettes, Pistaches d'Antep, Noix, Amandes, Pois Chiches Grillés, Figues & Abricots)",
+      "es": "Frutos Secos y Deshidratados Turcos (Avellanas, Pistachos, Nueces, Almendras, Leblebi, Higos y Albaricoques)",
+      "it": "Frutta Secca e Disidratata Turca (Nocciole, Pistacchi di Antep, Noci, Mandorle, Ceci Tostati, Fichi e Albicocche)",
+      "pt": "Frutos Secos e Desidratados Turcos (Avelãs, Pistácios, Nozes, Amêndoas, Grão Torrado, Figos e Damascos)",
+      "nl": "Turkse Noten & Zuidvruchten (Hazelnoten, Pistachenoten, Walnoten, Amandelen, Leblebi, Vijgen & Abrikozen)",
+      "pl": "Tureckie Orzechy i Bakalie (Orzechy laskowe, Pistacje, Orzechy włoskie, Migdały, Prażona ciecierzyca, Figi i Morele)",
+      "ro": "Nuci și Fructe Uscate Turcești (Alune de pădure, Fistic de Antep, Nuci, Migdale, Năut prăjit, Smochine și Caise)",
+      "bg": "Турски ядки и сушени плодове (лешници, шамфъстък от Антеп, орехи, бадеми, леблебия, смокини и кайсии)",
+      "el": "Τουρκικοί Ξηροί Καρποί & Αποξηραμένα Φρούτα (Φουντούκια, Φιστίκια Αντέπ, Καρύδια, Αμύγδαλα, Στραγάλια, Σύκα & Βερίκοκα)",
+      "sr": "Turski orašasti plodovi i sušeno voće (lešnik, pistaći, orah, badem, leblebija, smokve i kajsije)",
+      "uk": "Турецькі горіхи та сухофрукти (фундук, фісташки, волоський горіх, мигдаль, леблебі, інжир та курага)",
+      "ka": "თურქული კაკლეული და ჩირი (თხილი, ფისტა, ნიგოზი, ნუში, მოხალული მუხუდო, ლეღვი და გარგარი)",
+      "az": "Türk Çərəzləri və Quru Meyvələri (Fındıq, Püstə, Qoz, Badam, Ləbləbi, Quru Əncir və Ərik)",
+      "uz": "Turk yong'oqlari va quruq mevalari (Fındıq, pista, yong'oq, bodom, leblebi, anjir va o'rik)",
+      "kk": "Түрік жаңғақтары мен кептірілген жемістері (орман жаңғағы, пісте, грек жаңғағы, бадам, леблеби, інжір, өрік)",
+      "fa": "آجیل و خشکبار درجه یک ترکیه (فندق، پسته آنتپ، گردو، بادام، نخودچی، انجیر و برگه زردآلو)",
+      "hi": "तुर्की मेवे और सूखे मेवे (हेज़लनट्स, पिस्ता, अखरोट, बादाम, भुने हुए छोले, सूखे अंजीर और खुबानी)",
+      "ur": "ترک میوہ جات اور خشک پھل (پستہ، اخروٹ، بادام، فندق، بھنے ہوئے چنے، خشک انجیر اور خوبانی)",
+      "bn": "তুর্কি বাদাম এবং শুকনো ফল (হ্যাজেলনাট, পেস্তা, আখরোট, বাদাম, রোস্টেড ছোলা, শুকনো ডুমুর এবং খুবানি)",
+      "zh-cn": "土耳其精品坚果与传统干果 (吉雷松榛子、安泰普开心果、核桃仁、扁桃仁、鹰嘴豆酥脆零食、无花果干与杏干)",
+      "ja": "トルコ産プレミアムナッツ＆ドライフルーツ (ヘーゼルナッツ、ピスタチオ、くるみ、アーモンド、ひよこ豆レブレビ、イチジク、アプリコット)",
+      "ko": "터키산 프리미엄 견과류 및 건과일 (헤이즐넛, 안텝 피스타치오, 호두, 아몬드, 볶은 병아리콩 레블레비, 무화과 및 살구)",
+      "id": "Kacang-Kacangan & Buah Kering Turki (Hazelnut, Pistachio Antep, Kenari, Badam, Leblebi, Ara & Aprikot Kering)",
+      "ms": "Kekacang & Buah-buahan Kering Turki (Fındık, Pistachio, Walnut, Badam, Leblebi, Buah Tin & Aprikot)",
+      "sw": "Kokwa na Matunda Yaliyokaushwa ya Uturuki (Hazelnuts, Pistachios, Walnuts, Lozi, Dengu zilizokaushwa, Tini na Parachichi)"
+    },
+    "scientificName": "Corylus avellana / Pistacia vera / Juglans regia / Prunus dulcis",
+    "category": {
+      "tr": "Kuruyemiş ve Kuru Meyveler",
+      "en": "Nuts & Dried Fruits",
+      "ar": "المكسرات والفواكه المجففة",
+      "ru": "Орехи и сухофрукты",
+      "de": "Nüsse & Trockenfrüchte",
+      "fr": "Noix & Fruits Secs",
+      "es": "Frutos Secos y Frutas Deshidratadas",
+      "it": "Frutta Secca e Disidratata",
+      "pt": "Frutos Secos e Frutas Desidratadas",
+      "nl": "Noten & Zuidvruchten",
+      "pl": "Orzechy i Suszone Owoce",
+      "ro": "Nuci și Fructe Uscate",
+      "bg": "Ядки и сушени плодове",
+      "el": "Ξηροί Καρποί & Αποξηραμένα Φρούτα",
+      "sr": "Orašasti plodovi i suvo voće",
+      "uk": "Горіхи та сухофрукти",
+      "ka": "კაკლეული და ჩირი",
+      "az": "Çərəzlər və Quru Meyvələr",
+      "uz": "Yong'oqlar va quruq mevalar",
+      "kk": "Жаңғақтар мен кептірілген жемістер",
+      "fa": "آجیل و خشکبار",
+      "hi": "मेवे और सूखे मेवे",
+      "ur": "میوہ جات اور خشک پھل",
+      "bn": "বাদাম এবং শুকনো ফল",
+      "zh-cn": "坚果与果干",
+      "ja": "ナッツ＆ドライフルーツ",
+      "ko": "견과류 및 건과일",
+      "id": "Kacang & Buah Kering",
+      "ms": "Kekacang & Buah Kering",
+      "sw": "Kokwa na Matunda Yaliyokaushwa"
+    },
+    "tagline": {
+      "tr": "Giresun Türk Fındığı, Antep Fıstığı, Yerli Ceviz, Badem ve Güneşte Kurutulmuş İncir & Kayısı - Lüks İhracat Seçkisi",
+      "en": "Giresun Hazelnuts, Gaziantep Pistachios, Walnuts, Almonds, Roasted Chickpeas & Sun-Dried Fruits - Luxury Export Selection",
+      "ar": "بندق غيرسون، فستق عنتابي، جوز، لوز، حمص محمص وتين ومشمش مجفف بالشمس - تشكيلة تصدير فاخرة",
+      "ru": "Фундук Гиресун, фисташки Газиантеп, грецкий орех, миндаль и вяленые на солнце фрукты - премиальный экспорт",
+      "de": "Giresun-Haselnüsse, Gaziantep-Pistazien, Walnüsse, Mandeln und sonnengetrocknete Früchte - Premium-Exportauswahl",
+      "fr": "Noisettes de Giresun, Pistaches de Gaziantep, Noix, Amandes et Fruits Séchés au Soleil - Sélection Export de Luxe",
+      "es": "Avellanas de Giresun, Pistachos de Gaziantep, Nueces, Almendras y Frutas Secadas al Sol - Selección de Exportación de Lujo",
+      "it": "Nocciole di Giresun, Pistacchi di Gaziantep, Noci, Mandorle e Frutta Essiccata al Sole - Selezione Export di Lusso",
+      "pt": "Avelãs de Giresun, Pistácios de Gaziantep, Nozes, Amêndoas e Frutas Secas ao Sol - Seleção de Exportação de Luxo",
+      "nl": "Giresun hazelnoten, Gaziantep pistachenoten, walnoten, amandelen en zongedroogde zuidvruchten - Luxe exportkwaliteit",
+      "pl": "Orzechy laskowe Giresun, pistacje Gaziantep, orzechy włoskie, migdały i suszone na słońcu owoce - Selekcja eksportowa premium",
+      "ro": "Alune de pădure Giresun, fistic Gaziantep, nuci, migdale și fructe uscate la soare - Selecție export de lux",
+      "bg": "Лешници Гиресун, шамфъстък Газиантеп, орехи, бадеми и сушени на слънце плодове - Луксозна експортна селекция",
+      "el": "Φουντούκια Giresun, φιστίκια Gaziantep, καρύδια, αμύγδαλα και λιαστά αποξηραμένα φρούτα - Πολυτελής εξαγωγική συλλογή",
+      "sr": "Giresun lešnik, Gaziantep pistaći, orasi, bademi i sušeno voće - Premijum izvozna selekcija",
+      "uk": "Фундук Гіресун, фісташки Газіантеп, волоські горіхи, мигдаль та в'ялені на сонці фрукти - Преміальний експорт",
+      "ka": "გირესუნის თხილი, გაზიანთეფის ფისტა, ნიგოზი, ნუში და მზეზე გამომშრალი ხილი - პრემიუმ ექსპორტი",
+      "az": "Giresun fındığı, Qaziantep püstəsi, qoz, badam və günəşdə qurudulmuş meyvələr - Lüks ixrac seçimi",
+      "uz": "Giresun findig'i, Gaziantep pistasi, yong'oq, bodom va quyoshda quritilgan mevalar - Hashamatli eksport to'plami",
+      "kk": "Гиресун орман жаңғағы, Газиантеп пістесі, грек жаңғағы, бадам және күнде кептірілген жемістер - Люкс экспорт",
+      "fa": "فندق گیرسون، پسته غازی عینتاب، گردوی تویسرکان، بادام درختی و میوه‌های آفتاب‌خشک - دستچین صادراتی اعلا",
+      "hi": "गिरेसन हेज़लनट्स, गाज़ियांटेप पिस्ता, अखरोट, बादाम और धूप में सुखाए गए फल - लक्जरी निर्यात चयन",
+      "ur": "گیرسن فندق، غازی عنتاب پستہ، اخروٹ، بادام اور دھوپ میں خشک پھل - لگژری برآمدی انتخاب",
+      "bn": "গিরেসুন হ্যাজেলনাট, গাজিয়ানটেপ পেস্তা, আখরোট, বাদাম এবং রোদে শুকনো ফল - বিলাসবহুল রফতানি নির্বাচন",
+      "zh-cn": "土耳其吉雷松榛子、加济安泰普开心果、原生态核桃仁、扁桃仁与日光自然晾晒无花果、杏干 - 顶级出口甄选",
+      "ja": "ギレスン産ヘーゼルナッツ、ガジアンテプ産ピスタチオ、くるみ、アーモンド、天日干しイチジク・杏 - プレミアム輸出セレクション",
+      "ko": "기레순 헤이즐넛, 가지안테프 피스타치오, 호두, 아몬드 및 햇볕에 말린 천연 무화과·살구 - 럭셔리 수출 셀렉션",
+      "id": "Hazelnut Giresun, Pistachio Gaziantep, Kenari, Badam, dan Buah Kering Alami - Pilihan Ekspor Premium",
+      "ms": "Fındık Giresun, Pistachio Gaziantep, Walnut, Badam dan Buah-buahan Kering Asli - Pilihan Eksport Mewah",
+      "sw": "Hazelnuts za Giresun, Pistachios za Gaziantep, Walnuts, Lozi na Matunda Yaliyokaushwa kwa Jua - Uteuzi wa Kifahari wa Usafirishaji"
+    },
+    "shortDescription": {
+      "tr": "Türkiye dünyanın en büyük fındık üreticisi ve en köklü kuruyemiş ihracatçısıdır. Nilasya Agro Foods; Giresun ve Levant kalite iç fındık, meşhur Antep fıstığı, açık renk kelebek ceviz içi, tatlı badem içi, geleneksel Çorum çifte kavrulmuş leblebi ile Aydın kuru inciri ve Malatya gün kurusu kayısısını vakumlu ve modifiye atmosferli ambalajlarda tüm dünyaya ihraç etmektedir.",
+      "en": "Türkiye is the world's undisputed capital of premium hazelnuts and dried fruits. Nilasya Agro Foods exports calibrated Giresun & Levant hazelnut kernels (raw, roasted, blanched), authentic Gaziantep in-shell & green kernel pistachios, light walnut halves, crunchy sweet almonds, double-roasted chickpeas (leblebi), and sun-cured Aegean figs and Malatya apricots in vacuum-packed and nitrogen-flushed export cartons.",
+      "ar": "تعد تركيا المصدر الأول في العالم لأجود أنواع البندق والمكسرات والفواكه المجففة. تصدر Nilasya Agro Foods بندق غيرسون وليفانت، فستق عنتابي أخضر ومحمص، أنصاف جوز فاتحة، لوز مقرمش، قضامة حمص وقضبان التين والمشمش المجفف.",
+      "ru": "Турция - признанный мировой лидер по экспорту фундука, фисташек и премиальных сухофруктов. Nilasya Agro Foods экспортирует калиброванный фундук Гиресун, фисташки из Газиантепа, отборный грецкий орех, сладкий миндаль, хрустящий леблеби, а также сушеный инжир и курагу.",
+      "de": "Die Türkei ist das weltweite Zentrum für erstklassige Haselnüsse und Trockenfrüchte. Nilasya Agro Foods exportiert Giresun-Haselnüsse, Gaziantep-Pistazien, helle Walnusshälften, knackige Mandeln, Kichererbsen-Leblebi sowie Feigen und Aprikosen in Vakuum- und Schutzgasverpackung.",
+      "fr": "La Turquie est le leader mondial incontesté des noisettes et des fruits secs. Nilasya Agro Foods exporte des noisettes de Giresun de premier choix, des pistaches d'Antep, des cerneaux de noix clairs, des amandes douces, des pois chiches leblebi, ainsi que des figues et abricots séchés.",
+      "es": "Turquía es el mayor productor y exportador mundial de avellanas y frutos secos selectos. Nilasya Agro Foods exporta avellanas de Giresun, pistachos de Gaziantep, nueces en mitades, almendras dulces, leblebi e higos y albaricoques secos de calidad premium.",
+      "it": "La Turchia è il leader mondiale assoluto nella produzione di nocciole e frutta secca di pregio. Nilasya Agro Foods esporta nocciole di Giresun, pistacchi di Gaziantep, gherigli di noce chiari, mandorle dolci, ceci tostati leblebi, fichi e albicocche essiccate.",
+      "pt": "A Turquia é o principal produtor mundial de avelãs e frutos secos de alta qualidade. A Nilasya Agro Foods exporta avelãs de Giresun, pistácios de Gaziantep, metades de nozes claras, amêndoas doces, grão leblebi torrado, figos e damascos secos.",
+      "nl": "Turkije is 's werelds toonaangevende producent van hazelnoten en zuidvruchten. Nilasya Agro Foods exporteert Giresun hazelnoten, Gaziantep pistachenoten, blanke walnoten, zoete amandelen, leblebi en zongedroogde vijgen en abrikozen.",
+      "pl": "Turcja to światowy lider w produkcji orzechów laskowych i bakalii. Nilasya Agro Foods eksportuje orzechy laskowe Giresun, pistacje z Gaziantep, jasne połówki orzechów włoskich, słodkie migdały, prażoną ciecierzycę leblebi oraz suszone figi i morele.",
+      "ro": "Turcia este liderul mondial indiscutabil în producția de alune de pădure și fructe uscate. Nilasya Agro Foods exportă alune Giresun, fistic Gaziantep, jumătăți de miez de nucă, migdale dulci, leblebi, smochine și caise uscate.",
+      "bg": "Турция е световен лидер в износа на първокласни лешници и сушени плодове. Nilasya Agro Foods изнася лешници Гиресун, шамфъстък Газиантеп, светли орехови ядки, сладки бадеми, леблебия и сушени смокини и кайсии.",
+      "el": "Η Τουρκία είναι ο παγκόσμιος ηγέτης στην παραγωγή φουντουκιών και αποξηραμένων φρούτων. Η Nilasya Agro Foods εξάγει φουντούκια Giresun, φιστίκια Gaziantep, καρυδόψιχα, γλυκά αμύγδαλα, στραγάλια, σύκα και βερίκοκα.",
+      "sr": "Turska je svetski lider u proizvodnji lešnika i sušenog voća. Nilasya Agro Foods izvozi Giresun lešnik, Gaziantep pistaće, svetle polovine oraha, slatki badem, leblebiju, suve smokve i kajsije.",
+      "uk": "Туреччина є беззаперечним світовим лідером з виробництва фундука та сухофруктів. Nilasya Agro Foods експортує добірний фундук Гіресун, фісташки Газіантеп, світлі ядра волоського горіха, солодкий мигдаль, леблебі, інжир та курагу.",
+      "ka": "თურქეთი მსოფლიო ლიდერია თხილისა და ჩირის წარმოებაში. Nilasya Agro Foods ახორციელებს გირესუნის თხილის, გაზიანთეფის ფისტის, ნიგოზის, ნუშის, მოხალული მუხუდოს, ლეღვისა და გარგრის ჩირის ექსპორტს.",
+      "az": "Türkiyə yüksək keyfiyyətli fındıq və çərəz istehsalında dünya lideridir. Nilasya Agro Foods Giresun fındığı, Qaziantep püstəsi, açıq rəng kəpənək qoz ləpəsi, şirin badam, Çorum ləbləbisi və təbii quru meyvələri ixrac edir.",
+      "uz": "Turkiya dunyodagi eng yirik findiq va quruq mevalar ishlab chiqaruvchisidir. Nilasya Agro Foods Giresun findig'i, Gaziantep pistasi, yong'oq mag'zi, shirin bodom, leblebi va quruq mevalarni eksport qiladi.",
+      "kk": "Түркия әлемдегі ең ірі орман жаңғағы мен кептірілген жемістер өндірушісі болып табылады. Nilasya Agro Foods Гиресун жаңғағын, Газиантеп пістесін, грек жаңғағын, тәтті бадамды және кептірілген жемістерді экспорттайды.",
+      "fa": "ترکیه قطب جهانی تولید فندق و خشکبار ناب است. نیلاسیا آگرو فودز مغز فندق گیرسون و لوانت، پسته خندان غازی عینتاب، مغز گردوی پر پروانه روشن، بادام درختی، نخودچی دو آتیشه چوروم، انجیر ازمیر و برگه زردآلوی مالاتیا را صادر می نماید.",
+      "hi": "तुर्की प्रीमियम हेज़लनट्स और सूखे फलों की दुनिया की राजधानी है। Nilasya Agro Foods गिरेसन हेज़लनट्स, गाज़ियांटेप पिस्ता, अखरोट, बादाम, भुने हुए छोले, और धूप में सुखाए गए अंजीर और खुबानी का निर्यात करता है।",
+      "ur": "ترکی اعلیٰ معیار کے فندق اور خشک میوہ جات کا عالمی مرکز ہے۔ Nilasya Agro Foods گیرسن فندق، غازی عنتاب پستہ، اخروٹ کی گری، بادام، بھنے ہوئے چنے (لیبلیبی) اور خشک انجیر و خوبانی برآمد کرتا ہے۔",
+      "bn": "তুরস্ক প্রিমিয়াম হ্যাজেলনাট এবং শুকনো ফলের অবিসংবাদিত বিশ্ব রাজধানী। Nilasya Agro Foods গিরেসুন হ্যাজেলনাট, গাজিয়ানটেপ পেস্তা, আখরোট, বাদাম, রোস্টেড ছোলা (লেবলেবি), শুকনো ডুমুর এবং খুবানি রফতানি করে।",
+      "zh-cn": "土耳其是全球无可争议的高品质榛子与传统果干第一大国。Nilasya Agro Foods 出口经过精确筛选校准的吉雷松与黎凡特榛子仁（生仁、烘烤仁、脱皮白仁）、纯正加济安泰普带壳与绿仁开心果、特级浅色核桃半仁（蝴蝶仁）、香甜扁桃仁、双重烘烤鹰嘴豆酥脆零食，以及爱琴海阳光无花果干与马拉蒂亚纯天然杏干，采用真空或充氮保鲜箱装出口。",
+      "ja": "トルコは最高品質のヘーゼルナッツとドライフルーツの世界最大の産地です。Nilasya Agro Foodsはギレスン産ヘーゼルナッツ、ガジアンテプ産ピスタチオ、ライトくるみハーフ、アーモンド、ひよこ豆レブレビ、天日干しイチジク・アプリコットを真空・窒素充填輸出カートンで世界中に輸出しています。",
+      "ko": "터키는 전 세계 최고의 헤이즐넛과 건과일 생산국입니다. Nilasya Agro Foods는 기레순 헤이즐넛, 가지안테프 피스타치오, 밝은 색 호두 반태, 달콤한 아몬드, 바삭한 병아리콩 레블레비, 에게해 천연 무화과 및 말라티아 살구를 진공 및 질소 충전 포장으로 전 세계에 수출합니다.",
+      "id": "Turki adalah produsen utama kacang hazelnut dan buah kering di dunia. Nilasya Agro Foods mengekspor kacang hazelnut Giresun, pistachio Gaziantep, kenari, badam, kacang arab panggang leblebi, serta buah ara dan aprikot kering dalam kemasan vakum berstandar ekspor.",
+      "ms": "Turki adalah pengeluar utama hazelnut dan buah-buahan kering berkualiti tinggi di dunia. Nilasya Agro Foods mengeksport hazelnut Giresun, pistachio Gaziantep, walnut, badam, leblebi serta buah tin dan aprikot kering dalam bungkusan vakum premium.",
+      "sw": "Uturuki ndiyo nchi inayoongoza duniani kwa uzalishaji wa hazelnuts na matunda yaliyokaushwa. Nilasya Agro Foods huuza nje hazelnuts za Giresun, pistachios za Gaziantep, walnuts, lozi, leblebi, tini na parachichi zilizokaushwa kwa vifurushi vya utupu."
+    },
+    "fullDescription": {
+      "tr": "Karadeniz'in yemyeşil fındık bahçelerinden Güneydoğu Anadolu'nun fıstık diyarı Gaziantep'e, Malatya'nın altın sarısı kayısı vadilerinden Ege'nin incir dağlarına kadar uzanan Türkiye'nin en seçkin kuruyemiş ve kuru meyve ürünlerini doğrudan çiftçilerimizden ve modern işleme tesislerimizden tedarik ediyoruz. Ürünlerimiz el değmeden optik ayıklayıcılar, metal detektörleri ve lazer tarayıcılardan geçirilerek kalibre edilir. 5 kg, 10 kg, 12.5 kg ve 25 kg vakumlu ambalajlar, azot gazlı koruyucu atmosferli kutular ve gıdaya uygun çok katmanlı kraft torbalarda Mersin Uluslararası Limanı'ndan (MIP) reefer (soğutmalı) veya kuru deniz konteynerleriyle dünyanın her yerine ulaştırılır.",
+      "en": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers. All nuts and dried fruits are laser-scanned, X-ray sorted, calibrated for strict uniform sizing, and packed in food-grade vacuum pouches, modified atmosphere (MAP) nitrogen-flushed master cartons, or food-safe multi-wall bags. Shipped globally via temperature-controlled refrigerated or dry sea containers from Mersin International Port (MIP).",
+      "ar": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "ru": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "de": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "fr": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "es": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "it": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "pt": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "nl": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "pl": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "ro": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "bg": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "el": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "sr": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "uk": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "ka": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "az": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "uz": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "kk": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "fa": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "hi": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "ur": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "bn": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "zh-cn": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "ja": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "ko": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "id": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "ms": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers.",
+      "sw": "From the lush green hazelnut orchards of the Black Sea coast to the historic pistachio groves of Gaziantep, the sun-drenched apricot valleys of Malatya, and the Aegean fig terraced hills, Nilasya Agro Foods connects the richest agricultural terroirs of Türkiye to international buyers."
+    },
+    "heroImage": "/images/products/turkish-nuts-kuruyemis-nilasya.jpg",
+    "galleryImages": [
+      "/images/products/turkish-nuts-kuruyemis-nilasya.jpg",
+      "/images/products/turkish-antep-pistachio-nilasya.jpg",
+      "/images/products/turkish-hazelnuts-giresun-nilasya.jpg",
+      "/images/products/turkish-walnuts-apricots-figs-nilasya.jpg",
+      "/images/products/pulses-export-jumbo-bags-nilasya.jpg"
+    ],
+    "origins": {
+      "en": [
+        "Black Sea Coast (Giresun & Ordu - Hazelnuts)",
+        "Southeastern Anatolia (Gaziantep - Pistachios)",
+        "Aegean Region (Figs & Almonds)",
+        "Malatya Valley (Sun-Dried Apricots)"
+      ],
+      "tr": [
+        "Karadeniz Havzası (Giresun & Ordu - Fındık)",
+        "Güneydoğu Anadolu (Gaziantep - Antep Fıstığı)",
+        "Ege Havzası (İncir & Badem)",
+        "Malatya Yöresi (Gün Kurusu Kayısı)"
+      ],
+      "ar": [
+        "ساحل البحر الأسود (غيرسون وأوردو - البندق)",
+        "جنوب شرق الأناضول (غازيانتيب - الفستق)",
+        "منطقة إيجة (التين واللوز)",
+        "وادي مالاطيا (المشمش المجفف بالشمس)"
+      ],
+      "ru": [
+        "Побережье Чёрного моря (Гиресун и Орду — фундук)",
+        "Юго-Восточная Анатолия (Газиантеп - фисташки)",
+        "Эгейский регион (Инжир и миндаль)",
+        "Долина Малатья (Вяленые абрикосы)"
+      ],
+      "de": [
+        "Schwarzmeerküste (Giresun & Ordu – Haselnüsse)",
+        "Südostanatolien (Gaziantep – Pistazien)",
+        "Ägäische Region (Feigen & Mandeln)",
+        "Malatya-Tal (sonnengetrocknete Aprikosen)"
+      ],
+      "fr": [
+        "Côte de la Mer Noire (Giresun & Ordu - Noisettes)",
+        "Anatolie du Sud-Est (Gaziantep - Pistaches)",
+        "Région Égéenne (Figues & Amandes)",
+        "Vallée de Malatya (Abricots secs)"
+      ],
+      "es": [
+        "Costa del Mar Negro (Giresun y Ordu - Avellanas)",
+        "Sureste de Anatolia (Gaziantep - Pistachos)",
+        "Región del Egeo (Higos y Almendras)",
+        "Valle de Malatya (Albaricoques secos al sol)"
+      ],
+      "it": [
+        "Costa del Mar Nero (Giresun & Ordu - Nocciole)",
+        "Anatolia Sud-Orientale (Gaziantep - Pistacchi)",
+        "Regione Egea (Fichi & Mandorle)",
+        "Valle di Malatya (Albicocche essiccate al sole)"
+      ],
+      "pt": [
+        "Costa do Mar Negro (Giresun e Ordu - Avelãs)",
+        "Sudeste da Anatólia (Gaziantep - Pistaches)",
+        "Região do Egeu (Figos e Amêndoas)",
+        "Vale de Malátia (Damasco Seco ao Sol)"
+      ],
+      "nl": [
+        "Zwarte Zeekust (Giresun & Ordu - Hazelnoten)",
+        "Zuidoost-Anatolië (Gaziantep - Pistachenoten)",
+        "Egeïsche Regio (Vijgen & Amandelen)",
+        "Malatya-vallei (Zongedroogde abrikozen)"
+      ],
+      "pl": [
+        "Wybrzeże Morza Czarnego (Giresun & Ordu - orzechy laskowe)",
+        "Południowo-wschodnia Anatolia (Gaziantep - pistacje)",
+        "Region Morza Egejskiego (figi i migdały)",
+        "Dolina Malatya (Morele suszone na słońcu)"
+      ],
+      "ro": [
+        "Coasta Mării Negre (Giresun & Ordu - Alune)",
+        "Sud-Estul Anatoliei (Gaziantep - Fistic)",
+        "Regiunea Egee (Smochine și migdale)",
+        "Valea Malatya (Caisele uscate la soare)"
+      ],
+      "bg": [
+        "Черноморско крайбрежие (Гиресун и Орду - лешници)",
+        "Югоизточна Анатолия (Газиантеп - шамфъстъци)",
+        "Егейски регион (Смокини и бадеми)",
+        "Долината Малатя (Сушени на слънце кайсии)"
+      ],
+      "el": [
+        "Ακτή Μαύρης Θάλασσας (Giresun & Ordu - Φουντούκια)",
+        "Νοτιοανατολική Ανατολία (Γκαζιαντέπ - Φιστίκια)",
+        "Περιφέρεια Αιγαίου (Σύκα & Αμύγδαλα)",
+        "Κοιλάδα της Μαλάτια (Αποξηραμένα βερίκοκα)"
+      ],
+      "sr": [
+        "Crnomorska obala (Giresun & Ordu - Lešnici)",
+        "Jugoistočna Anatolija (Gaziantep - Pistacije)",
+        "Egejsko Region (Smokve i bademi)",
+        "Dolina Malatia (Sušene kajsije)"
+      ],
+      "uk": [
+        "Чорноморське узбережжя (Гіресун і Орду — Фундук)",
+        "Південно-Східна Анатолія (Газіантеп - фісташки)",
+        "Егейський регіон (Інжир і мигдаль)",
+        "Долина Малатья (сушені абрикоси)"
+      ],
+      "ka": [
+        "შავი ზღვის სანაპირო (გირესუნი & ორდუ - თხილი)",
+        "სამხრეთაღმოსავლეთი ანატოლია (გაზიანთეფი - ფისტაშკები)",
+        "აიგეოსის რეგიონი (ატარანი & ნუშები)",
+        "მალატიას ხეობა (მშრალი მარწყვის ქიშმიში)"
+      ],
+      "az": [
+        "Qara dəniz sahili (Giresun & Ordu - Fındıq)",
+        "Cənub-Şərqi Anadolu (Gaziantep - Pistachios)",
+        "Egey Regionu (Figs & Almonds)",
+        "Malatya Vadisi (Günəşdə qurudulmuş əriklər)"
+      ],
+      "uz": [
+        "Qora dengiz qirg‘oqlari (Giresun va Ordu - Findiq)",
+        "Janubi-sharqiy Anatoliya (G'aziantep - Pista)",
+        "Egey mintaqasi (Bodom va Anjir)",
+        "Malatya vodiysi (Quyoshda quritilgan o'rik)"
+      ],
+      "kk": [
+        "Қара теңіз жағалауы (Гиресун және Орду - Фундук)",
+        "Оңтүстік-Шығыс Анатолия (Газиантеп - Фисташкалар)",
+        "Эгей аймағы (Инжі мен бадам)",
+        "Малатья аңғары (Күнге кептірілген өрік)"
+      ],
+      "fa": [
+        "ساحل دریای سیاه (گیرسون و اوردو - فندق)",
+        "جنوب شرقی آناتولی (غازی عنتاب - پسته)",
+        "منطقه اژه (انجیر و بادام)",
+        "دره مالاتیا (زردآلوهای خشک شده در آفتاب)"
+      ],
+      "hi": [
+        "काला सागर तट (गिरेसन और ओर्डु - हेज़लनट्स)",
+        "दक्षिणपूर्वी अनातोलिया (गाज़ियांटेप - पिस्ता)",
+        "एजियन क्षेत्र (अंजीर और बादाम)",
+        "मालत्या घाटी (धूप में सुखाई खुबानी)"
+      ],
+      "ur": [
+        "بلیک سی کوسٹ (گیرسن & اوردو - ہیزل نٹس)",
+        "جنوب مشرقی اناطولیہ (غازی عنتاب - پستہ)",
+        "ایجیئن ریجن (انجیر اور بادام)",
+        "مالاتیا وادی (دھوپ میں خشک شدہ خوبانی)"
+      ],
+      "bn": [
+        "কৃষ্ণ সাগর উপকূল (গিরেসুন এবং ওরডু - হ্যাজেলনাটস)",
+        "দক্ষিণ-পূর্ব আনাতোলিয়া (গাজিয়ানটেপ - পেস্তা)",
+        "এজিয়ান অঞ্চল (ডুমুর এবং বাদাম)",
+        "মালত্য উপত্যকা (রোদে শুকনো এপ্রিকট)"
+      ],
+      "zh-cn": [
+        "黑海沿岸（基雷松 & 奥尔杜 - 榛子）",
+        "东南安纳托利亚（加齐安泰普 - 开心果）",
+        "爱琴地区（无花果 & 杏仁）",
+        "马拉蒂亚谷地（日晒杏）"
+      ],
+      "ja": [
+        "黒海沿岸(ギレスン&オルドゥ - ヘーゼルナッツ)",
+        "南東アナトリア(ガジアンテプ - ピスタチオ)",
+        "エーゲ海地域(イチジクとアーモンド)",
+        "マラティヤ渓谷(日干しアプリコット)"
+      ],
+      "ko": [
+        "흑해 연안 (기레순 & 오르두 - 헤이즐넛)",
+        "남동부 아나톨리아 (가지안테프 - 피스타치오)",
+        "에게 해 지역 (무화과 및 아몬드)",
+        "말라티야 계곡 (햇볕에 말린 살구)"
+      ],
+      "id": [
+        "Pantai Laut Hitam (Giresun & Ordu - Hazelnut)",
+        "Anatolia Tenggara (Gaziantep - Pistachio)",
+        "Wilayah Aegean (Ara & Almond)",
+        "Lembah Malatya (Aprikot Kering Matahari)"
+      ],
+      "ms": [
+        "Pantai Laut Hitam (Giresun & Ordu - Hazelnut)",
+        "Anatolia Tenggara (Gaziantep - Pistachio)",
+        "Wilayah Aegean (Buah Gin & Badam)",
+        "Lembah Malatya (Aprikot Kering Matahari)"
+      ],
+      "sw": [
+        "Pwani ya Bahari Nyeusi (Giresun & Ordu - Hazelnuts)",
+        "Anatolia ya Kusini-mashariki (Gaziantep - Pistachios)",
+        "Mkoa wa Aegean (Tini na Mlozi)",
+        "Bonde la Malatya (parachichi zilizokaushwa na jua)"
+      ]
+    },
+    "seasonMonths": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "seasonMonthsText": {
+      "tr": "Ağustos – Ekim (Soğuk Hava Depolarından Yıl Boyu Kesintisiz Sevkiyat)",
+      "en": "August – October (Year-Round Cold-Storage Supply)",
+      "ar": "أغسطس – أكتوبر (توريد التخزين البارد على مدار السنة)",
+      "ru": "август – октябрь (круглогодичное снабжение в холодильном хранении)",
+      "de": "August – Oktober (ganzjährige Kühllagerversorgung)",
+      "fr": "Août – Octobre (Approvisionnement en chambre froide toute l'année)",
+      "es": "Agosto – Octubre (suministro en frío todo el año)",
+      "it": "Agosto – Ottobre (Rifornimento frigorifero durante tutto l'anno)",
+      "pt": "Agosto – Outubro (Fornecimento de Armazenamento Frio o Ano Todo)",
+      "nl": "Augustus – Oktober (Het hele jaar door koude opslag)",
+      "pl": "sierpień – październik (całoroczne chłodnie)",
+      "ro": "August – octombrie (aprovizionare la rece pe tot parcursul anului)",
+      "bg": "август – октомври (целогодишно съхранение на студени хранилища)",
+      "el": "Αύγουστος – Οκτώβριος (Προμήθεια ψυκτικών αποθηκών όλο το χρόνο)",
+      "sr": "Avgust – oktobar (snabdevanje hladnjačama tokom cele godine)",
+      "uk": "Серпень – жовтень (Цілорічне постачання холодного зберігання)",
+      "ka": "აგვისტო – ოქტომბერი (წელიწადის განმავლობაში ცივი შენახვის მარაგი)",
+      "az": "Avqust – Oktyabr (İlboyu Soyuq Saxlama Təchizatı)",
+      "uz": "Avgust – Oktabr (Yil bo'yi sovuq saqlash ta'minoti)",
+      "kk": "тамыз – қазан (жыл бойы суық сақтау жабдықтары)",
+      "fa": "اوت – اکتبر (تأمین سردخانه در تمام طول سال)",
+      "hi": "अगस्त - अक्टूबर (साल भर कोल्ड-स्टोरेज आपूर्ति)",
+      "ur": "اگست – اکتوبر (سال بھر کولڈ اسٹوریج کی فراہمی)",
+      "bn": "আগস্ট - অক্টোবর (বছরব্যাপী কোল্ড-স্টোরেজ সরবরাহ)",
+      "zh-cn": "八月 – 十月（全年冷藏供应）",
+      "ja": "8月〜10月(通年冷蔵供給)",
+      "ko": "8월 – 10월 (연중 냉장 저장 공급)",
+      "id": "Agustus – Oktober (Pasokan Penyimpanan Dingin Sepanjang Tahun)",
+      "ms": "Ogos – Oktober (Bekalan Penyimpanan Sejuk Sepanjang Tahun)",
+      "sw": "Agosti - Oktoba (Ugavi wa Uhifadhi wa Baridi wa Mwaka Mzima)"
+    },
+    "specifications": {
+      "variety": "Giresun Hazelnuts, Antep Pistachios, Walnuts, Almonds, Leblebi & Dried Fruits",
+      "origin": "Türkiye (Giresun, Gaziantep, Malatya, Aegean, Central Anatolia)",
+      "originTr": "Türkiye (Giresun, Gaziantep, Malatya, Ege, İç Anadolu)",
+      "size": "Calibrated Export Sizes (11-15mm / Jumbo / Halves)",
+      "caliber": "Extra Class / Grade 1 Export Standards",
+      "color": "Natural Golden Tan, Emerald Green, Extra Light Amber",
+      "colorTr": "Doğal Altın Sarısı, Zümrüt Yeşili, Ekstra Açık Kehribar",
+      "moisture": "Max 5.0% - 6.0% (Nuts) / 18% - 22% (Dried Fruits)",
+      "purity": "Min 99.8% - 99.9%",
+      "broken": "Max 1.5%",
+      "foreignMatter": "Max 0.02%",
+      "damaged": "Max 0.5%",
+      "protein": "15% - 22% (Rich in natural healthy fats & Omega-3)",
+      "class": "Extra Class Export Quality",
+      "shelfLife": "12-24 Months in vacuum or nitrogen-flushed packaging",
+      "shelfLifeTr": "12-24 Ay vakum veya koruyucu atmosferli ambalajda",
+      "storageTemp": "4°C - 10°C (Refrigerated) / 15°C Dry",
+      "optimalHumidity": "< 60% RH",
+      "localized": {
+        "ar": {
+          "variety": "بندق جيرسون، فستق أنتاب، جوز، لوز، ليبليبي وفواكه مجففة",
+          "origin": "Türkiye (جيرسون، غازي عنتاب، ملاطيا، بحر إيجة، وسط الأناضول)",
+          "color": "أسمر ذهبي طبيعي، أخضر زمردي، كهرماني فاتح جدا",
+          "shelfLife": "12-24 أشهر في التغليف المفرغ أو النيتروجين",
+          "class": "جودة التصدير الإضافية",
+          "storageTemp": "4°C - 10°C (مبرد) / 15°C جافة",
+          "optimalHumidity": "< 60% RH"
+        },
+        "ru": {
+          "variety": "Фундук Гиресун, фисташки Антеп, грецкие орехи, миндаль, леблеби и сухофрукты",
+          "origin": "Türkiye (Гиресун, Газиантеп, Малатья, Эгейское море, Центральная Анатолия)",
+          "color": "Натуральный золотистый беж, изумрудно-зелёный, особо светлый янтарь",
+          "shelfLife": "12-24 Месяцы в вакуумной или азотной упаковке",
+          "class": "Экспортное качество дополнительного класса",
+          "storageTemp": "4°C - 10°C (в холодильнике) / 15°C Сухой",
+          "optimalHumidity": "< 60% RH"
+        },
+        "de": {
+          "variety": "Giresun-Haselnüsse, Antep-Pistazien, Walnüsse, Mandeln, Leblebi & Trockenfrüchte",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Ägäis, Zentralanatolien)",
+          "color": "Natürliches Goldbraun, Smaragdgrün, Extra leuchtendes Bernstein",
+          "shelfLife": "12-24 Monate in Vakuum- oder stickstoffgespülter Verpackung",
+          "class": "Extra Klasse Exportqualität",
+          "storageTemp": "4°C - 10°C (Gekühlt) / 15°C Trocken",
+          "optimalHumidity": "< 60% RH"
+        },
+        "fr": {
+          "variety": "Noisettes de Giresun, Pistaches, Noix, Amandes, Leblebi et Fruits Secs",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Égée, Anatolie centrale)",
+          "color": "Beige doré naturel, vert émeraude, ambre extra clair",
+          "shelfLife": "12-24 Mois dans un emballage sous vide ou rincé à l’azote",
+          "class": "Qualité d’exportation de classe supplémentaire",
+          "storageTemp": "4°C - 10°C (Réfrigéré) / 15°C Sec",
+          "optimalHumidity": "< 60% RH"
+        },
+        "es": {
+          "variety": "Avellanas de Giresun, Pistachos de Antep, Nueces, Almendras, Leblebi y Frutas Secas",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Egeo, Anatolia Central)",
+          "color": "Dorado Natural, Verde Esmeralda, Ámbar Extra Claro",
+          "shelfLife": "12-24 Meses en envase al vacío o purgado con nitrógeno",
+          "class": "Calidad de Exportación Extra Clase",
+          "storageTemp": "4°C - 10°C (Refrigerado) / 15°C Seco",
+          "optimalHumidity": "< 60% HR"
+        },
+        "it": {
+          "variety": "Nocciole Giresun, Pistacchi, Noci, Mandorle, Leblebi e Frutta Secca",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Egeo, Anatolia centrale)",
+          "color": "Sabbia dorata naturale, verde smeraldo, ambra extra chiara",
+          "shelfLife": "12-24 Mesi in imballaggi sottovuoto o con lavaggio con azoto",
+          "class": "Qualità Esportazione di Classe Extra",
+          "storageTemp": "4°C - 10°C (Refrigerato) / 15°C Secco",
+          "optimalHumidity": "< 60% RH"
+        },
+        "pt": {
+          "variety": "Giresun Avelãs, Pistácios Antep, Nozes, Amêndoas, Leblebi e Frutas Secas",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Egeu, Anatólia Central)",
+          "color": "Bronzeado dourado natural, verde esmeralda, âmbar extra claro",
+          "shelfLife": "12-24 Meses em embalagem a vácuo ou lavada com nitrogênio",
+          "class": "Classe Extra Qualidade de Exportação",
+          "storageTemp": "4°C - 10°C (Refrigerado) / 15°C Seco",
+          "optimalHumidity": "< 60% RH"
+        },
+        "nl": {
+          "variety": "Giresun Hazelnoten, Antep pistachenoten, Walnoten, Amandelen, Leblebi & Gedroogd fruit",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Egeïsche See, Centraal-Anatolië)",
+          "color": "Natuurlijke goudbruine kleur, smaragdgroen, Extra licht amber",
+          "shelfLife": "12-24 Maanden in vacuüm- of stikstofspoelverpakking",
+          "class": "Extra Klasse Exportkwaliteit",
+          "storageTemp": "4°C - 10°C (Gekoeld) / 15°C Droog",
+          "optimalHumidity": "< 60% RH"
+        },
+        "pl": {
+          "variety": "Giresun, orzechy laski, pistacje antep, orzechy włoskie, migdały, leblebi i suszone owoce",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Morze Egejskie, Anatolia Środkowa)",
+          "color": "Naturalny złoty beż, szmaragdowa zieleń, extra jasny bursztyn",
+          "shelfLife": "12-24 Miesiące w opakowaniu próżniowym lub płukanym azotem",
+          "class": "Ekstraklasa Jakość eksportu",
+          "storageTemp": "4°C - 10°C (Chłodzone) / 15°C Suche",
+          "optimalHumidity": "< 60% RH"
+        },
+        "ro": {
+          "variety": "Aluni Giresun, Fisticuri Antip, Nuci, Migdale, Leblebi și Fructe uscate",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Marea Egee, Anatolia Centrală)",
+          "color": "Bronz auriu natural, verde smarald, chihlimbar extra deschis",
+          "shelfLife": "12-24 Luni în vid sau în ambalaje cu azot",
+          "class": "Calitate de export Extra Class",
+          "storageTemp": "4°C - 10°C (Refrigerat) / 15°C Uscat",
+          "optimalHumidity": "< 60% RH"
+        },
+        "bg": {
+          "variety": "Гиресун лешници, Антеп шамфъстъци, орехи, бадеми, леблеби и сушени плодове",
+          "origin": "Türkiye (Гиресун, Газиантеп, Малатия, Егейско море, Централна Анатолия)",
+          "color": "Натурален златист беж, изумрудено зелен, екстра светло кехлибарен",
+          "shelfLife": "12-24 Месеци във вакуумна или азотна опаковка",
+          "class": "Качество на износа от допълнителен клас",
+          "storageTemp": "4°C - 10°C (Хладилна) / 15°C Суха",
+          "optimalHumidity": "< 60% RH"
+        },
+        "el": {
+          "variety": "Φουντούκια Giresun, Φιστίκια Antep, Καρύδια, Αμύγδαλα, Λεμπλέμπι & Αποξηραμένα Φρούτα",
+          "origin": "Türkiye (Κερασούντα, Γκαζιαντέπ, Μαλάτια, Αιγαίο, Κεντρική Ανατολία)",
+          "color": "Φυσικό Χρυσό Μαύρισμα, Σμαραγδένιο Πράσινο, Εξαιρετικά Ανοιχτό Κεχριμπάρι",
+          "shelfLife": "12-24 Μήνες σε συσκευασία κενού ή ξεπλυμένη με άζωτο",
+          "class": "Ποιότητα εξαγωγής επιπλέον κατηγορίας",
+          "storageTemp": "4°C - 10°C (Ψυγείο) / 15°C Ξηρό",
+          "optimalHumidity": "< 60% RH"
+        },
+        "sr": {
+          "variety": "Giresun lešnici, antep pistacije, orasi, bademi, leblebi i sušeno voće",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatia, Egejsko more, Centralna Anadolija)",
+          "color": "Prirodna zlatna preplanulost, smaragdno zelena, ekstra svetla jantarna",
+          "shelfLife": "12-24 Meseci u vakuumu ili azotom ispranoj ambalaži",
+          "class": "Ekstra klasa Kvalitet izvoza",
+          "storageTemp": "4°C - 10°C (u frižideru) / 15°C suvo",
+          "optimalHumidity": "< 60% RH"
+        },
+        "uk": {
+          "variety": "Гіресун ліщина, фісташки Антеп, волоські горіхи, мигдаль, леблебі та сухофрукти",
+          "origin": "Türkiye (Гіресун, Газіантеп, Малатія, Егейське море, Центральна Анатолія)",
+          "color": "Натуральний золотистий бежевий, смарагдово-зелений, Extra Light Amber",
+          "shelfLife": "12-24 Місяці у вакуумній або азотній упаковці",
+          "class": "Експортна якість додаткового класу",
+          "storageTemp": "4°C - 10°C (у холодильнику) / 15°C Сухий",
+          "optimalHumidity": "< 60% RH"
+        },
+        "ka": {
+          "variety": "გირესუნის ფუნდუშა, ანტეპის ფისტაჩიო, კაკალი, ნუში, ლებლები & ჩირი",
+          "origin": "Türkiye (გირესუნი, გაზიასანტეპი, მალატია, ეგეოსის რეგიონი, ცენტრალური ანატოლია)",
+          "color": "ბუნებრივი ოქროსფერი ტანი, სამეფო მწვანე, ძალიან მსუბუქი ალუბლისფერი",
+          "shelfLife": "12-24 თვე ვაკუუმსა ან აზოტით დატვირთულ შეფუთვაში",
+          "class": "ექსტრა კლასი ექსპორტის ხარისხი",
+          "storageTemp": "4°C - 10°C (მაცივარში) / 15°C მშრალი",
+          "optimalHumidity": "< 60% ნაყოფიერი ფენიდან"
+        },
+        "az": {
+          "variety": "Giresun fındıq, antep pistasio, qoz, badam, leblebi və qurudulmuş meyvələr",
+          "origin": "Türkiye (Giresun, Qaziantep, Malatya, Egey, Mərkəzi Anadolu)",
+          "color": "Təbii Qızılı Bronz, Zümrüd Yaşıl, Əlavə Açıq Kəhrəba",
+          "shelfLife": "12-24 Aylar vakuumda və ya azotla yuyulmuş qablaşdırmada",
+          "class": "Əlavə Sinif İxrac Keyfiyyəti",
+          "storageTemp": "4°C - 10°C (Soyuducu) / 15°C Quru",
+          "optimalHumidity": "< 60% RH"
+        },
+        "uz": {
+          "variety": "Giresun findiq, Antep pista, yong‘oq, bodom, leblebi & quritilgan mevalar",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Egey, Markaziy Anatoliya)",
+          "color": "Tabiiy Oltin Tan, Zoʻr Firqali Yashil, Juda Yengil Amber",
+          "shelfLife": "12-24 Oy vakuum yoki azot bilan toʻldirilgan qadoqlashda",
+          "class": "Qoʻshimcha Sinf Eksport Sifati",
+          "storageTemp": "4°C - 10°C (Sovutilgan) / 15°C Quruq",
+          "optimalHumidity": "< 60% RH"
+        },
+        "kk": {
+          "variety": "Гиресун жаңғағы, Антеп фисташкалары, жаңғақтар, бадам, леблеби және кептірілген жемістер",
+          "origin": "Türkiye (Гиресун, Газиантеп, Малатья, Эгей теңізі, Орталық Анатолия)",
+          "color": "Табиғи алтын қоңыр, Изумруд жасыл, Қосымша ашық янтарь",
+          "shelfLife": "12-24 Вакуумда немесе азотпен жуылған қаптамада айлар",
+          "class": "Қосымша класс экспорттық сапа",
+          "storageTemp": "4°C - 10°C (Тоңазытқышта) / 15°C Құрғақ",
+          "optimalHumidity": "< 60% RH"
+        },
+        "fa": {
+          "variety": "فندق گیرسون، پسته آنتپ، گردو، بادام، لبلبی و میوه های خشک",
+          "origin": "Türkiye (گیرسون، غازی آنتپ، مالاطیه، اژه، آناتولی مرکزی)",
+          "color": "برنزه طلایی طبیعی، سبز زمردی، کهربایی روشن",
+          "shelfLife": "12-24 ماه ها در بسته بندی خلأ یا شستشوی نیتروژن",
+          "class": "کیفیت صادرات کلاس اضافی",
+          "storageTemp": "4°C - 10°C (یخچالی) / 15°C خشک",
+          "optimalHumidity": "< 60% RH"
+        },
+        "hi": {
+          "variety": "गिरेसन हेज़लनट्स, एंटेप पिस्ता, अखरोट, बादाम, लेब्लेबी और सूखे मेवे",
+          "origin": "Türkiye (गिरेसन, गाज़ियांटेप, मालत्या, एजियन, सेंट्रल अनातोलिया)",
+          "color": "नेचुरल गोल्डन टैन, एमराल्ड ग्रीन, एक्स्ट्रा लाइट एम्बर",
+          "shelfLife": "12-24 वैक्यूम या नाइट्रोजन-फ्लश पैकेजिंग में महीने",
+          "class": "अतिरिक्त वर्ग निर्यात गुणवत्ता",
+          "storageTemp": "4°C - 10°C (प्रशीतित)/15°C सूखा",
+          "optimalHumidity": "< 60% आरएच"
+        },
+        "ur": {
+          "variety": "گیرسون ہیزلنٹس، انتپ پستہ، اخروٹ، بادام، لیبلبی اور خشک میوہ جات",
+          "origin": "Türkiye (گیرسون، غازی انتپ، مالاطیہ، ایجیئن، وسطی اناطولیہ)",
+          "color": "قدرتی سنہری ٹین، زمردی سبز، اضافی ہلکا عنبر",
+          "shelfLife": "12-24 مہینے ویکیوم یا نائٹروجن فلش شدہ پیکجنگ میں",
+          "class": "ایکسٹرا کلاس ایکسپورٹ کوالٹی",
+          "storageTemp": "4°C - 10°C (ریفریجریٹڈ) / 15°C خشک",
+          "optimalHumidity": "< 60% RH"
+        },
+        "bn": {
+          "variety": "গিরেসুন হ্যাজেলনাট, অ্যানটেপ পেস্তা, আখরোট, বাদাম, লেব্লেবি এবং শুকনো ফল",
+          "origin": "Türkiye (গিরেসুন, গাজিয়ানটেপ, মালতিয়া, এজিয়ান, মধ্য আনাতোলিয়া)",
+          "color": "প্রাকৃতিক গোল্ডেন ট্যান, পান্না সবুজ, অতিরিক্ত হালকা অ্যাম্বার",
+          "shelfLife": "ভ্যাকুয়াম বা নাইট্রোজেন-ফ্লাশড প্যাকেজিংয়ে 12-24 মাস",
+          "class": "অতিরিক্ত ক্লাস রফতানি গুণমান",
+          "storageTemp": "4°C - 10°C (রেফ্রিজারেটেড) / 15°C শুকনো",
+          "optimalHumidity": "< 60% আরএইচ"
+        },
+        "zh-cn": {
+          "variety": "吉雷松榛子、安泰普开心果、核桃、杏仁、勒布莱比和干果",
+          "origin": "Türkiye（吉雷松、加济安泰普、马拉蒂亚、爱琴海、中安纳托利亚）",
+          "color": "自然金色晒黑，翡翠绿，超浅琥珀",
+          "shelfLife": "12-24 真空或氮气冲洗包装数月",
+          "class": "额外舱级出口质量",
+          "storageTemp": "4°C - 10°C（冷藏）/ 15°C干",
+          "optimalHumidity": "< 60% RH"
+        },
+        "ja": {
+          "variety": "ギレスンヘーゼルナッツ、アンテップピスタチオ、クルミ、アーモンド、レブレビ、ドライフルーツ",
+          "origin": "Türkiye(ギレスン、ガジアンテプ、マラティヤ、エーゲ海、中央アナトリア)",
+          "color": "ナチュラルゴールデンタン、エメラルドグリーン、エクストラライトアンバー",
+          "shelfLife": "12-24 真空または窒素洗浄包装で数ヶ月",
+          "class": "エクストラクラス輸出品質",
+          "storageTemp": "4°C - 10°C(冷蔵)/ 15°Cドライ",
+          "optimalHumidity": "< 60% RH"
+        },
+        "ko": {
+          "variety": "기레순 헤이즐넛, 안테프 피스타치오, 호두, 아몬드, 레블레비 및 말린 과일",
+          "origin": "Türkiye (기레순, 가지안테프, 말라티야, 에게해, 중앙 아나톨리아)",
+          "color": "내추럴 골든 탠, 에메랄드 그린, 엑스트라 라이트 앰버",
+          "shelfLife": "12-24 진공 또는 질소 세척 포장에서 몇 달",
+          "class": "엑스트라 클래스 수출 품질",
+          "storageTemp": "4°C - 10°C (냉장 보관) / 15°C 건조",
+          "optimalHumidity": "< 60% 편"
+        },
+        "id": {
+          "variety": "Hazelnut Giresun, Pistachio Antep, Kenari, Almond, Leblebi & Buah Kering",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Aegean, Anatolia Tengah)",
+          "color": "Cokelat Emas Alami, Hijau Zamrud, Amber Extra Terang",
+          "shelfLife": "12-24 Bulan dalam kemasan vakum atau ditiup nitrogen",
+          "class": "Kualitas Ekspor Kelas Extra",
+          "storageTemp": "4°C - 10°C (Dinginkan) / 15°C Kering",
+          "optimalHumidity": "< 60% RH"
+        },
+        "ms": {
+          "variety": "Giresun Hazelnut, Antep Pistachio, Walnut, Badam, Leblebi & Buah Kering",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Aegean, Anatolia Tengah)",
+          "color": "Tan Emas Semula Jadi, Hijau Zamrud, Amber Ekstra Muda",
+          "shelfLife": "12-24 Bulan dalam pembungkusan vakum atau disiram nitrogen",
+          "class": "Kualiti Eksport Kelas Tambahan",
+          "storageTemp": "4°C - 10°C (Disejukkan) / 15°C Kering",
+          "optimalHumidity": "< 60% RH"
+        },
+        "sw": {
+          "variety": "Giresun Hazelnuts, Antep Pistachios, Walnuts, Lozi, Leblebi na Matunda Yaliyokaushwa",
+          "origin": "Türkiye (Giresun, Gaziantep, Malatya, Aegean, Anatolia ya Kati)",
+          "color": "Tan ya Dhahabu ya Asili, Kijani cha Zumaridi, Kaharabu Nyepesi ya Ziada",
+          "shelfLife": "12-24 Miezi katika ufungaji wa utupu au nitrojeni",
+          "class": "Ubora wa Usafirishaji wa Darasa la Ziada",
+          "storageTemp": "4°C - 10°C (Iliyohifadhiwa kwenye jokofu) / 15°C Kavu",
+          "optimalHumidity": "< 60% RH"
+        }
+      }
+    },
+    "varieties": [
+      {
+        "id": "giresun-turkish-hazelnuts",
+        "slug": "giresun-turkish-hazelnuts",
+        "name": "Turkish Hazelnuts - Giresun & Levant Quality (Raw, Roasted & Blanched)",
+        "image": "/images/products/turkish-hazelnuts-giresun-nilasya.jpg",
+        "nameTr": "Giresun & Levant Türk Fındık İçi (Çiğ, Kavrulmuş & Beyazlatılmış)",
+        "description": "Globally acclaimed for supreme fat composition, rich aroma, and thin pellicle. Available as natural raw kernels, blanched, and gentle drum-roasted in 11-13mm and 13-15mm calibers for premium chocolatiers.",
+        "descriptionTr": "Üstün yağ dengesi, eşsiz lezzet ve aromasıyla dünyanın en kaliteli fındığı. 11-13mm ve 13-15mm kalibrelerde çiğ, beyazlatılmış ve kavrulmuş iç fındık olarak çikolata ve unlu mamul sanayisine sunulmaktadır.",
+        "color": "Golden Tan Skin / Creamy Kernel",
+        "colorTr": "Altın Sarısı Kabuk / Krem Beyazı İç",
+        "size": "11-13mm / 13-15mm",
+        "caliber": "Extra Class Giresun / Levant Quality",
+        "moisture": "< 6.0%",
+        "purity": "99.9%",
+        "harvestMonths": "August – September",
+        "harvestMonthsTr": "Ağustos – Eylül",
+        "storage": "Cold storage 4°C - 8°C in nitrogen/vacuum bags",
+        "storageTr": "Soğuk hava deposu 4°C - 8°C vakum/azotlu torba",
+        "shelfLife": "18-24 Months",
+        "shelfLifeTr": "18-24 Ay",
+        "packagingTypes": [
+          "25kg Vacuum Bags in Cartons",
+          "10kg Vacuum Bags",
+          "1000kg Big Bags"
+        ],
+        "packagingTypesTr": [
+          "25kg Kolili Vakumlu Torba",
+          "10kg Vakumlu Torba",
+          "1000kg Big Bag"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "25kg أكياس التفريغ في الصناديق",
+              "10kg أكياس التفريغ",
+              "1000kg الحقائب الكبيرة"
+            ],
+            "name": "بندق تركي - جودة جيرسون & ليفانت (نيء، محمص ومسلوق)",
+            "description": "مشهورة عالميا بتركيبها الدهني الرائع، والرائحة الغنية، والقشرة الرقيقة. متوفرة كحبوب نيئة طبيعية، مسلوقة ومشوية بلطف على الطبل بعيارات 11 13mm و13 15mm لعيارات الشوكولاتة الفاخرة.",
+            "color": "جلد ذهبي بلون بني / نواة كريمية",
+            "harvestMonths": "أغسطس – سبتمبر",
+            "storage": "4°C التخزين البارد - 8°C في أكياس النيتروجين/التفريغ",
+            "shelfLife": "18-24 شهور"
+          },
+          "ru": {
+            "packagingTypes": [
+              "25kg вакуумные пакеты в коробках",
+              "10kg вакуумные мешки",
+              "1000kg Большие сумки"
+            ],
+            "name": "Турецкие фундук — качество Giresun и Levant (сырые, жареные и бланшированные)",
+            "description": "Всемирно признанная своим превосходным жировым составом, богатым ароматом и тонкой пелликулой. Доступна в виде натуральных сырых зерен, бланшированных и мягко обжаренных в барабанах в калибрах 11-13mm и 13-15mm для премиальных шоколадов.",
+            "color": "Золотистая коричневая кожа / Кремовое ядро",
+            "harvestMonths": "август – сентябрь",
+            "storage": "Холодное хранение 4°C — 8°C в пакетах с азотом и вакуумом",
+            "shelfLife": "18-24 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "25kg Vakuumbeutel in Kartons",
+              "10kg Vakuumbeutel",
+              "1000kg große Säcke"
+            ],
+            "name": "Türkische Haselnüsse – Giresun & Levant-Qualität (roh, geröstet und blanchiert)",
+            "description": "Weltweit bekannt für seine hervorragende Fettzusammensetzung, reichhaltiges Aroma und dünne Pellicle. Erhältlich als natürliche, rohe Körner, blanchiert und sanft trommelgeröstet in 11-13mm und 13-15mm Kalibern für Premium-Schokoladenhersteller.",
+            "color": "Goldbraune Haut / Cremiger Kern",
+            "harvestMonths": "August – September",
+            "storage": "Kaltlagerung 4°C - 8°C in Stickstoff-/Vakuumbeuteln",
+            "shelfLife": "18-24 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "25kg Sacs sous vide dans des cartons",
+              "10kg Sacs sous vide",
+              "1000kg Gros Sacs"
+            ],
+            "name": "Noisettes turques - Qualité Giresun & Levant (crues, rôties et blanchies)",
+            "description": "Reconnu mondialement pour sa composition suprême de graisses, son arôme riche et sa pellicule fine. Disponible en grains bruts naturels, blanchis et doucement torréfiés au tambour en calibres 11-13mm et 13-15mm pour les chocolatiers haut de gamme.",
+            "color": "Peau dorée bronzée / Noyau crémeux",
+            "harvestMonths": "Août – Septembre",
+            "storage": "4°C de stockage frigorifique - 8°C dans des sacs d’azote/vide",
+            "shelfLife": "18-24 mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "25kg bolsas de vacío en cajas",
+              "10kg bolsas de vacío",
+              "1000kg Grandes Bolsas"
+            ],
+            "name": "Avellanas turcas - Giresun & Levant Quality (crudas, tostadas y escaldadas)",
+            "description": "Reconocido mundialmente por su suprema composición de grasas, aroma intenso y fina película. Disponible como granos crudos naturales, escaldados y suavemente tostados en tambor en calibres 11-13mm y 13-15mm para chocolateros premium.",
+            "color": "Piel dorada color bronceado / Núcleo cremoso",
+            "harvestMonths": "Agosto – Septiembre",
+            "storage": "4°C de almacenamiento en frío - 8°C en bolsas de nitrógeno/vacío",
+            "shelfLife": "18-24 meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "25kg Sacchi a vuoto in cartoni",
+              "10kg Sacchetti per aspirapolvere",
+              "1000kg Grandi Borse"
+            ],
+            "name": "Nocciole turche - Giresun & Levant Quality (crude, tostate e sbollentate)",
+            "description": "Riconosciuta a livello mondiale per la composizione di grassi suprema, il profumo ricco e la pellicola sottile. Disponibile come chicchi naturali crudi, sbollentati e delicatamente tostati a tamburo nei calibri 11-13mm e 13-15mm per cioccolatoieri premium.",
+            "color": "Pelle dorata color abbronzato / Chicco cremoso",
+            "harvestMonths": "Agosto – Settembre",
+            "storage": "4°C di conservazione a freddo - 8°C in sacchi di azoto/vuoto",
+            "shelfLife": "18-24 mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "25kg sacos a vácuo em caixas",
+              "10kg Sacos de Vácuo",
+              "1000kg Grandes Sacos"
+            ],
+            "name": "Avelãs Turcas - Giresun & Levant Qualidade (cruas, torradas e branqueadas)",
+            "description": "Reconhecida mundialmente por composição suprema de gordura, aroma rico e película fina. Disponível como grãos naturais crus, branqueados e torrados suavemente em tambor em calibres 11-13mm e 13-15mm para chocolateiros premium.",
+            "color": "Pele dourada bronzeada / Grão cremoso",
+            "harvestMonths": "Agosto – Setembro",
+            "storage": "4°C de armazenamento a frio - 8°C em sacos de nitrogênio/vácuo",
+            "shelfLife": "18-24 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "25kg Vacuümzakken in dozen",
+              "10kg Vacuümzakken",
+              "1000kg Grote Zakken"
+            ],
+            "name": "Turkse hazelnoten - Giresun & Levant kwaliteit (rauw, geroosterd en geblancheerd)",
+            "description": "Wereldwijd geprezen om hun uitstekende vetsamenstelling, rijke aroma en dunne pellicle. Verkrijgbaar als natuurlijke rauwe korrels, geblancheerd en zacht getrommeld in 11-13mm en 13-15mm kalibers voor premium chocolatiers.",
+            "color": "Goudbruine Huid / Romige Korrel",
+            "harvestMonths": "Augustus – september",
+            "storage": "Koude opslag 4°C - 8°C in stikstof-/vacuümzakken",
+            "shelfLife": "18-24 maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "25kg Worki odkurzające w kartonach",
+              "10kg worki odkurzacza",
+              "1000kg Duże Worki"
+            ],
+            "name": "Tureckie orzechy laskie – jakość Giresun i Levant (surowe, prażone i blanszowane)",
+            "description": "Globalnie ceniony za doskonałą zawartość tłuszczu, bogaty aromat i cienką pellikulę. Dostępny jako naturalne surowe ziarna, blanszowane oraz delikatnie prażone na bębnie w kalibrach 11-13mm i 13-15mm dla premium czekoladników.",
+            "color": "Złocista Skóra / Kremowe Jądro",
+            "harvestMonths": "sierpień – wrzesień",
+            "storage": "4°C chłodniczy - 8°C w workach azotowych/próżniowych",
+            "shelfLife": "18-24 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "25kg pungi de vid în cutii",
+              "10kg Saci de vidat",
+              "1000kg Saci Mari"
+            ],
+            "name": "Alune turcești - Calitate Giresun & Levant (crude, prăjite și oplite)",
+            "description": "Apreciat la nivel global pentru compoziția supremă a grăsimilor, aroma bogată și pelicula subțire. Disponibil ca boabe naturale crude, olite și prăjite ușor la tambur în calibre 11-13mm și 13-15mm pentru ciocolatierii premium.",
+            "color": "Coajă aurie bronzată / Nucleu cremos",
+            "harvestMonths": "August – septembrie",
+            "storage": "Depozitare la rece 4°C - 8°C în saci cu azot/vid",
+            "shelfLife": "18-24 Luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "25kg вакуумни торбички в картонни кутии",
+              "10kg вакуумни торбички",
+              "1000kg Големи торби"
+            ],
+            "name": "Турски лешници - Giresun и Levant Quality (сурови, печени и бланширани)",
+            "description": "Световно признат за изключителен състав на мазнини, богат аромат и тънък пеликъл. Наличен като естествени сурови зърна, бланширани и нежно печени в барабани в калибъри 11-13mm и 13-15mm за премиум шоколадни машини.",
+            "color": "Златист тен кожа / кремообразно ядро",
+            "harvestMonths": "август – септември",
+            "storage": "Студено съхранение 4°C - 8°C в торбички с азот/вакуум",
+            "shelfLife": "18-24 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "25kg Σακούλες κενού σε χαρτοκιβώτια",
+              "10kg Σακούλες κενού",
+              "1000kg Μεγασάκοι"
+            ],
+            "name": "Τουρκικά φουντούκια - Ποιότητα Giresun & Levant (ωμά, ψητά και ασπρισμένα)",
+            "description": "Παγκοσμίως αναγνωρισμένο για την εξαιρετική σύνθεση λιπαρών, το πλούσιο άρωμα και το λεπτό πέπλο. Διατίθεται ως φυσικοί ακατέργαστοι πυρήνες, λευκασμένοι και απαλά καβουρδισμένοι σε διαμετρήματα 11-13mm και 13-15mm για σοκολατοποιούς υψηλής ποιότητας.",
+            "color": "Golden Tan Skin / Κρεμώδης πυρήνας",
+            "harvestMonths": "Αύγουστος – Σεπτέμβριος",
+            "storage": "Ψυχρή αποθήκευση 4°C - 8°C σε σάκους αζώτου/κενού",
+            "shelfLife": "18-24 μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "25kg Vakuum kese u kartonskim kutijama",
+              "10kg Vakuum kese",
+              "1000kg Velike torbe"
+            ],
+            "name": "Turski lešnici - Giresun & Levant kvalitet (sirovi, pečeni i blanširani)",
+            "description": "Globalno priznat za vrhunski sastav masti, bogatu aromu i tanku pelikulu. Dostupan kao prirodna sirova zrna, blanširana i nežna pečena u kalibrima 11-13mm i 13-15mm za vrhunske čokolade.",
+            "color": "Zlatna koža / kremasta jezgra",
+            "harvestMonths": "Avgust – septembar",
+            "storage": "Hladnjača 4°C - 8°C u azotnim / vakuumskim vrećama",
+            "shelfLife": "18-24 meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "25kg вакуумні пакети в коробках",
+              "10kg вакуумні пакети",
+              "1000kg Великі сумки"
+            ],
+            "name": "Турецькі ліщини — якість Giresun і Levant (сирі, обсмажені та бланшовані)",
+            "description": "Всесвітньо визнаний за надзвичайний жировий склад, насичений аромат і тонкий пеллікул. Доступний у вигляді натуральних сирих зерен, бланшованих і ніжно обсмажуваних у барабанах у калібрах 11-13mm і 13-15mm для преміальних шоколадних.",
+            "color": "Золотистий засмаглий шкіра / Кремове ядро",
+            "harvestMonths": "серпень – вересень",
+            "storage": "Холодне зберігання 4°C - 8°C в азотних/вакуумних пакетах",
+            "shelfLife": "18-24 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "25kg ვაკუუმური ჩანთები კარტონებში",
+              "10kg ვაკუუმური ჩანთები",
+              "1000kg დიდი ჩანთები"
+            ],
+            "name": "თურქული ჰაზლნუტი - გირესუნი და ლევანტის ხარისხი (მ.raw, შემწვარი & გა. გამხნევებული)",
+            "description": "მსოფლიო დონის აღიარება მაღალი ცხიმოვანი შემცველობის, მდიდარი არომატისა და თხელი გარსისთვის. ხელმისაწვდომია როგორც ბუნებრივი ნედლი გულებით, შერბურული და მსუბუქი ბარაბანით შეწურული 11-13mm და 13-15mm კალიბრებში პრემიუმ შოკოლადებისთვის.",
+            "color": "ოქროსფერი კანით / კრემისფერი გულით",
+            "harvestMonths": "აგვისტო – სექტემბერი",
+            "storage": "ცივი შენახვა 4°C - 8°C აზოტში/ვაკუუმში შეფუთულ ტომრებში",
+            "shelfLife": "18-24 თვის განმავლობაში"
+          },
+          "az": {
+            "packagingTypes": [
+              "25kg Qutularda vakuum torbaları",
+              "10kg Vakuum Torbaları",
+              "1000kg Böyük Çantalar"
+            ],
+            "name": "Türk fındıqları - Giresun və Levant Keyfiyyəti (Çiy, Qovrulmuş və Blanched)",
+            "description": "Yüksək yağ tərkibi, zəngin ətir və nazik pellicle ilə dünya miqyasında tanınır. Təbii xam dənələr, blanşlanmış və 11-13mm və 13-15mm kalibrdə yumşaq baraban qovrulması kimi təqdim olunur.",
+            "color": "Qızılı Qəhvəyi Dəri / Kremli Dənə",
+            "harvestMonths": "Avqust – Sentyabr",
+            "storage": "Soyuq saxlama 4°C - azot/vakuum torbalarında 8°C",
+            "shelfLife": "18-24 Aylar"
+          },
+          "uz": {
+            "packagingTypes": [
+              "25kg Qutilardagi vakuum sumkalari",
+              "10kg vakuum sumkalari",
+              "1000kg Katta Sumkalar"
+            ],
+            "name": "Turkiya findiqlari - Giresun va Levant sifati (Xom, Qovurilgan va Qaynatilgan)",
+            "description": "Yuqori darajadagi yog' tarkibi, boy hid va yupqa pellicle bilan butun dunyoda e'tirof etilgan. Tabiiy xom donlar sifatida, blantirilgan va 11-13mm hamda 13-15mm kalibrlarda yumshoq baraban qovurilgan yuqori sifatli shokoladlar uchun mavjud.",
+            "color": "Oltin Qora teri / Kremli dona",
+            "harvestMonths": "Avgust – Sentyabr",
+            "storage": "Sovuq saqlash 4°C - 8°C azot/vakuum paketlarida",
+            "shelfLife": "18-24 oylar"
+          },
+          "kk": {
+            "packagingTypes": [
+              "25kg Қораптағы вакуумдық пакеттер",
+              "10kg Вакуум Пакеттері",
+              "1000kg Үлкен сөмкелер"
+            ],
+            "name": "Түрік жаңғағы - Giresun және Levant сапасы (шикі, қуырылған және бланштелген)",
+            "description": "Жоғары майлы құрамы, бай хош иіс және жұқа пелликуласы үшін әлемдік деңгейде танымал. Табиғи шикі дәндер түрінде, бланшталған және жұмсақ барабанда қуырылған, 11-13mm және 13-15mm калибрлерінде премиум шоколад үшін қолжетімді.",
+            "color": "Алтын қоңыр тері / Кремді дәнді",
+            "harvestMonths": "Тамыз – Қыркүйек",
+            "storage": "Суық сақтау 4°C - азот/вакуум пакеттерінде 8°C",
+            "shelfLife": "18-24 ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "25kg کیسه های جاروبرقی در کارتن ها",
+              "10kg کیسه های جاروبرقی",
+              "1000kg کیسه های بزرگ"
+            ],
+            "name": "فندق ترکی - کیفیت گیرسون و شام (خام، برشته و بلانچ شده)",
+            "description": "در سراسر جهان به خاطر ترکیب چربی عالی، عطر غنی و لایه نازک تحسین شده است. به صورت دانه های خام طبیعی، بلانچ شده و ملایم در کالیبرهای 11 13mm و 13 15mm برای شکلات سازان ممتاز عرضه می شود.",
+            "color": "پوست طلایی برنزه / هسته کرمی",
+            "harvestMonths": "اوت – سپتامبر",
+            "storage": "4°C ذخیره سازی سرد - 8°C در کیسه های نیتروژن/خلاء",
+            "shelfLife": "18-24 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "25kg डिब्बों में वैक्यूम बैग",
+              "10kg वैक्यूम बैग",
+              "1000kg बड़े बैग"
+            ],
+            "name": "तुर्की हेज़लनट्स - गीरेसन और लेवेंट गुणवत्ता (कच्चा, भुना हुआ और ब्लांच किया हुआ)",
+            "description": "सर्वोच्च वसा संरचना, समृद्ध सुगंध और पतली पेलिकल के लिए विश्व स्तर पर प्रशंसित। प्राकृतिक कच्चे गुठली, ब्लांच किए हुए, और हल्के ड्रम-भुना हुआ 11-13mm और प्रीमियम चॉकलेटियर्स के लिए 13-15mm कैलिबर में उपलब्ध है।",
+            "color": "गोल्डन टैन स्किन/क्रीमी कर्नेल",
+            "harvestMonths": "अगस्त - सितंबर",
+            "storage": "कोल्ड स्टोरेज 4°C - नाइट्रोजन/वैक्यूम बैग में 8°C",
+            "shelfLife": "18-24 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "25kg کارٹن میں ویکیوم بیگز",
+              "10kg ویکیوم بیگز",
+              "1000kg بڑے تھیلے"
+            ],
+            "name": "ترک ہیزلنٹس - گیریسن اینڈ لیوانٹ کوالٹی (کچا، بھنا ہوا اور بلینچڈ)",
+            "description": "عالمی سطح پر بہترین چربی کی ترکیب، بھرپور خوشبو، اور پتلے پیلیکل کے لیے سراہا گیا۔ قدرتی خام دانوں کی صورت میں دستیاب، بلیچ شدہ، اور نرم ڈرم روسٹ 11 13mm اور 13 15mm کیلیبر میں پریمیم چاکلیٹیئرز کے لیے۔",
+            "color": "سنہری ٹین اسکن / کریمی کرنل",
+            "harvestMonths": "اگست – ستمبر",
+            "storage": "کولڈ اسٹوریج 4°C - نائٹروجن/ویکیوم بیگز میں 8°C",
+            "shelfLife": "18-24 مہینے"
+          },
+          "bn": {
+            "packagingTypes": [
+              "কার্টনে 25kg ভ্যাকুয়াম ব্যাগ",
+              "10kg ভ্যাকুয়াম ব্যাগ",
+              "1000kg বড় ব্যাগ"
+            ],
+            "name": "তুর্কি হ্যাজেলনাট - গিরেসান এবং লেভান্ট কোয়ালিটি (কাঁচা, ভাজা এবং ব্লাঞ্চড)",
+            "description": "সর্বোচ্চ চর্বি রচনা, সমৃদ্ধ সুগন্ধ এবং পাতলা পেলিকলের জন্য বিশ্বব্যাপী প্রশংসিত। প্রিমিয়াম চকোলেটিয়ারগুলির জন্য 11-13mm এবং 13-15mm ক্যালিবারগুলিতে প্রাকৃতিক কাঁচা কার্নেল, ব্লাঞ্চড এবং মৃদু ড্রাম-রোস্টেড হিসাবে উপলব্ধ।",
+            "color": "গোল্ডেন ট্যান ত্বক / ক্রিমি কার্নেল",
+            "harvestMonths": "আগস্ট - সেপ্টেম্বর",
+            "storage": "কোল্ড স্টোরেজ 4°C - নাইট্রোজেন / ভ্যাকুয়াম ব্যাগে 8°C",
+            "shelfLife": "18-24 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "25kg盒装真空袋",
+              "10kg 真空袋",
+              "1000kg大袋子"
+            ],
+            "name": "土耳其榛子 - Giresun & Levant 品质（生食、烘焙与焯水）",
+            "description": "以极高的脂肪成分、浓郁香气和薄薄的皮膜闻名全球。提供天然生麦粒、焯水后温和的桶式烘焙，口径为11-13mm和13-15mm，适合高端巧克力师。",
+            "color": "金黄皮肤 / 奶油籽粒",
+            "harvestMonths": "8月-9月",
+            "storage": "冷藏4°C - 8°C在氮气/真空袋中",
+            "shelfLife": "18-24个月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "25kg カートン入りの真空袋",
+              "10kg 真空袋",
+              "1000kg ビッグバッグ"
+            ],
+            "name": "トルコヘーゼルナッツ - ギレスン&レバント品質(生、ロースト&ブランチド)",
+            "description": "卓越した脂肪構成、豊かな香り、薄いペリクルで世界的に高く評価されています。天然の生の粒、湯通し、11-13mmおよび13-15mmのドラムローストでプレミアムチョコラティエ向けに提供可能です。",
+            "color": "ゴールデンタンの肌/クリーミーな粒",
+            "harvestMonths": "8月 – 9月",
+            "storage": "冷蔵4°C - 窒素/真空袋に入8°C",
+            "shelfLife": "18-24ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "25kg 상자에 담긴 진공청소 백",
+              "10kg 진공청소 백",
+              "1000kg 빅 백"
+            ],
+            "name": "터키시 헤이즐넛 - 기레순 & 레반트 품질 (생, 볶음, 데친)",
+            "description": "최고의 지방 조성, 풍부한 향, 얇은 펠리클로 전 세계적으로 인정받고 있습니다. 천연 생알갱이 데치고 부드러운 드럼 로스트로 11-13mm 및 13-15mm 등급으로 프리미엄 초콜릿 제조업자를 위해 제공됩니다.",
+            "color": "황금빛 탄 피부 / 크리미 커널",
+            "harvestMonths": "8월 – 9월",
+            "storage": "냉장 저장 4°C - 질소/진공 백에 8°C",
+            "shelfLife": "18-24개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "25kg Kantong Vakum dalam Karton",
+              "10kg Kantong Vakum",
+              "1000kg Tas Besar"
+            ],
+            "name": "Kacang Hazelnut Turki - Kualitas Giresun & Levant (mentah, panggang & direbus)",
+            "description": "Diakui secara global karena komposisi lemak yang unggul, aroma kaya, dan pellicle tipis. Tersedia dalam bentuk biji mentah alami, direbus dan dipanggang lembut dengan drum dalam kaliber 11-13mm dan 13-15mm untuk pembuat cokelat premium.",
+            "color": "Kulit Coklat Emas / Biji Krim",
+            "harvestMonths": "Agustus – September",
+            "storage": "4°C penyimpanan dingin - 8°C dalam kantong nitrogen/vakum",
+            "shelfLife": "Bulan 18-24"
+          },
+          "ms": {
+            "packagingTypes": [
+              "25kg Beg Vakum dalam Kotak",
+              "10kg Beg Vakum",
+              "1000kg Beg Besar"
+            ],
+            "name": "Kacang Hazelnut Turki - Kualiti Giresun & Levant (mentah, panggang & direbus)",
+            "description": "Diiktiraf di seluruh dunia kerana komposisi lemak yang unggul, aroma yang kaya, dan pellicle yang nipis. Tersedia sebagai biji mentah semula jadi, direbus dan dipanggang lembut dalam kaliber 11-13mm dan 13-15mm untuk pembuat coklat premium.",
+            "color": "Kulit Tan Keemasan / Biji Berkrim",
+            "harvestMonths": "Ogos – September",
+            "storage": "4°C penyimpanan sejuk - 8°C dalam beg nitrogen/vakum",
+            "shelfLife": "Bulan 18-24"
+          },
+          "sw": {
+            "packagingTypes": [
+              "25kg Mifuko ya Utupu kwenye Katoni",
+              "10kg Mifuko ya Utupu",
+              "1000kg Mifuko Mikubwa"
+            ],
+            "name": "Hazelnuts za Kituruki - Ubora wa Giresun & Levant (mbichi, Iliyochomwa na Blanched)",
+            "description": "Inasifiwa ulimwenguni kote kwa muundo wa hali ya juu wa mafuta, harufu nzuri, na pellicle nyembamba. Inapatikana kama punje mbichi za asilia, zilizokaushwa, na zilizochomwa kwa ngoma kwa upole katika 11-13mm na 13-15mm calibers kwa chokoleti za hali ya juu.",
+            "color": "Ngozi ya Dhahabu ya Tan / Punje ya Cream",
+            "harvestMonths": "Agosti - Septemba",
+            "storage": "Hifadhi baridi 4°C - 8°C katika mifuko ya nitrojeni/utupu",
+            "shelfLife": "Miezi 18-24"
+          }
+        }
+      },
+      {
+        "id": "gaziantep-antep-pistachios",
+        "slug": "gaziantep-antep-pistachios",
+        "name": "Gaziantep Pistachios (In-Shell Roasted Salted & Emerald Green Kernels / Boz İç)",
+        "image": "/images/products/turkish-antep-pistachio-nilasya.jpg",
+        "nameTr": "Gaziantep Antep Fıstığı (Kavrulmuş Çıtlatılmış & Boz Yeşil İç Fıstık)",
+        "description": "Famed for its deep, concentrated flavor and vibrant emerald green interior (Boz İç). Supplied in-shell gently roasted with sea salt for snacking, or as prime green kernels for baklava, luxury chocolates, and gelato.",
+        "descriptionTr": "Gaziantep'in eşsiz ikliminde olgunlaşan yoğun aromalı fıstıklar. Atıştırmalık çıtlatılmış kavrulmuş ve dünyaca ünlü Antep baklavası ile çikolata sanayisinin vazgeçilmezi zümrüt yeşili 'Boz İç' fıstık.",
+        "color": "Natural Split Shell / Emerald Green Inside",
+        "colorTr": "Doğal Çıtlatılmış Kabuk / Zümrüt Boz Yeşil İç",
+        "size": "26-28 / 28-30 per oz (In-shell) & Calibrated Kernels",
+        "caliber": "Jumbo Roasted & Grade A Green Kernel",
+        "moisture": "< 4.5%",
+        "purity": "99.8%",
+        "harvestMonths": "September – October",
+        "harvestMonthsTr": "Eylül – Ekim",
+        "storage": "Cool dry warehouse <15°C, RH <55%",
+        "storageTr": "Serin kuru depo <15°C, <%55 Nem",
+        "shelfLife": "18 Months",
+        "shelfLifeTr": "18 Ay",
+        "packagingTypes": [
+          "10kg Vacuum Packs in Carton",
+          "25kg Woven Bags",
+          "12.5kg MAP Boxes"
+        ],
+        "packagingTypesTr": [
+          "10kg Kolili Vakum Paket",
+          "25kg Dokuma Çuval",
+          "12.5kg MAP Kutu"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "10kg أكياس التفريغ في الكرتون",
+              "25kg حقائب منسوجة",
+              "صناديق الخرائط 12.5kg"
+            ],
+            "name": "فستق غازي عنتاب (حبوب مملحة ومحمية داخل القشرة / بوز إيتش)",
+            "description": "مشهور بنكهته العميقة والمركزة وداخله الأخضر الزمردي الزاهي (Boz İç). يقدم داخل القشرة محمصا بلطف مع ملح البحر للوجبات الخفيفة، أو كحبوب خضراء مثالية للبقلاوة، والشوكولاتة الفاخرة، والجيلاتو.",
+            "color": "القشرة المنقسمة الطبيعية / الأخضر الزمردي داخل",
+            "harvestMonths": "سبتمبر – أكتوبر",
+            "storage": "<15°C مستودع جاف بارد، <55%",
+            "shelfLife": "18 شهور"
+          },
+          "ru": {
+            "packagingTypes": [
+              "10kg Вакуумные пакеты в картоне",
+              "25kg Плетёные мешки",
+              "12.5kg MAP Boxes"
+            ],
+            "name": "Газиантеп фисташки (жареные в скорлупе солёные и изумрудно-зелёные зерна / boz İç)",
+            "description": "Известна своим глубоким, концентрированным вкусом и яркой изумрудно-зелёной оттенком (Boz İç). Поставляется в скорлупе, аккуратно обжаренная с морской солью для перекуса или как лучшие зелёные зерна для баклавы, роскошного шоколада и джелато.",
+            "color": "Естественная расщеплённая раковина / изумрудно-зелёный интерьер",
+            "harvestMonths": "сентябрь – октябрь",
+            "storage": "Холодный сухой склад <15°C, RH <55%",
+            "shelfLife": "18 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "10kg Vakuumpackungen im Karton",
+              "25kg Gewebte Taschen",
+              "12.5kg MAP-Boxen"
+            ],
+            "name": "Gaziantep Pistazien (schalengeröstete gesalzene und smaragdgrüne Körner / Boz İç)",
+            "description": "Berühmt für seinen tiefen, konzentrierten Geschmack und das lebendige smaragdgrüne Innere (Boz İç). Wird in der Muschel leicht mit Meersalz zum Naschen geröstet oder als erstklassige grüne Körner für Baklava, Luxusschokolade und Gelato.",
+            "color": "Natürliche gespaltene Schale / Smaragdgrün innen",
+            "harvestMonths": "September – Oktober",
+            "storage": "Kühles, trockenes Lagerhaus <15°C, RH <55%",
+            "shelfLife": "18 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "10kg Emballages sous vide en carton",
+              "25kg Sacs tressés",
+              "12.5kg Encadrés MAP"
+            ],
+            "name": "Pistaches gaziantep (Grillés salés en coquille & grains verts émeraude / Boz İç)",
+            "description": "Célèbre pour sa saveur profonde et concentrée et son intérieur vert émeraude éclatant (Boz İç). Fourni en coquille, légèrement torréfié avec du sel de mer pour grignoter, ou comme grains verts de choix pour le baklava, les chocolats de luxe et les gelatos.",
+            "color": "Coquille naturelle fendue / Intérieur vert émeraude",
+            "harvestMonths": "Septembre – Octobre",
+            "storage": "Entrepôt sec frais <15°C, RH <55%",
+            "shelfLife": "18 Mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "10kg Paquetes al vacío en cartón",
+              "25kg Bolsas tejidas",
+              "12.5kg Cajas MAP"
+            ],
+            "name": "Gaziantep Pistachos (Salados tostados con cáscara y granos verde esmeralda / Boz İç)",
+            "description": "Famosa por su sabor profundo y concentrado y su interior vibrante verde esmeralda (Boz İç). Se suministra en cáscara, tostada suavemente con sal marina para picar o como granos verdes de primera para baklava, chocolates de lujo y helados.",
+            "color": "Interior natural partido / verde esmeralda",
+            "harvestMonths": "Septiembre – Octubre",
+            "storage": "Almacén seco fresco <15°C, RH <55%",
+            "shelfLife": "18 Meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "10kg Pacchetti sottovuoto in scatola",
+              "25kg Borse Intrecciate",
+              "12.5kg Caselle MAP"
+            ],
+            "name": "Gaziantep Pistacchi (Tostato con guscio e spicchi verde smeraldo / Boz İç)",
+            "description": "Famosa per il suo sapore profondo e concentrato e per il vivace interno verde smeraldo (Boz İç). Fornita in guscio delicatamente tostata con sale marino per lo spuntino, o come chicchi verdi di prima qualità per baklava, cioccolatini di lusso e gelato.",
+            "color": "Interno Naturale Spaccato / Verde Smeraldo",
+            "harvestMonths": "Settembre – Ottobre",
+            "storage": "Magazzino secco fresco <15°C, RH <55%",
+            "shelfLife": "18 mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "10kg embalagens a vácuo em caixa",
+              "25kg Bolsas Trançadas",
+              "12.5kg Caixas MAP"
+            ],
+            "name": "Gaziantep Pistaches (Salgado Torrado com Casca & Grãos Verdes Esmeralda / Boz İç)",
+            "description": "Famosa por seu sabor profundo e concentrado e interior vibrante verde esmeralda (Boz İç). Fornecida em casca, torrada suavemente com sal marinho para petiscar, ou como grãos verdes de primeira qualidade para baklava, chocolates de luxo e gelato.",
+            "color": "Casca Natural Dividida / Verde Esmeralda por dentro",
+            "harvestMonths": "Setembro – Outubro",
+            "storage": "Armazém seco fresco <15°C, RH <55%",
+            "shelfLife": "18 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "10kg vacuümverpakkingen in een karton",
+              "25kg Geweven Zakken",
+              "12.5kg KAART-dozen"
+            ],
+            "name": "Gaziantep pistachenoten (Geroosterde Zouten & Smaragdgroene Pitten / Boz İç)",
+            "description": "Beroemd om zijn diepe, geconcentreerde smaak en levendige smaragdgroene binnenkant (Boz İç). Geleverd in de schelp, zachtjes geroosterd met zeezout als tussendoortje, of als prime groene korrels voor baklava, luxe chocolade en gelato.",
+            "color": "Natuurlijke Gespleten Schelp / Smaragdgroene Binnenkant",
+            "harvestMonths": "september – oktober",
+            "storage": "Koel droog magazijn <15°C, RH <55%",
+            "shelfLife": "18 Maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "10kg Pakowania próżniowe w kartonach",
+              "25kg Plecione torby",
+              "12.5kg MAP Boxy"
+            ],
+            "name": "Pistacje gaziantep (Pieczone w skorupce, solone i szmaragdowozielone ziarna / Boz İç)",
+            "description": "Słynący z głębokiego, skoncentrowanego smaku i żywego, szmaragdowozielonego wnętrza (Boz İç). Podawany w skorupce, delikatnie prażony z solą morską do przekąsek, lub jako idealne zielone ziarna do baklawy, luksusowych czekoladek i gelato.",
+            "color": "Naturalna rozszczepiona skorupa / szmaragdowo zielona wewnątrz",
+            "harvestMonths": "Wrzesień – październik",
+            "storage": "Chłodny, suchy magazyn <15°C, prawy <55%",
+            "shelfLife": "18 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "10kg Pachete vidate în cutie",
+              "25kg Genți țesute",
+              "12.5kg Cutii MAP"
+            ],
+            "name": "Gaziantep Pistachios (sărați prăjiți în coajă & boabe verde smarald / Boz İç)",
+            "description": "Renumit pentru aroma sa profundă, concentrată și interiorul vibrant verde smarald (Boz İç). Livrat în coajă, prăjit ușor cu sare de mare pentru gustări sau ca boabe verzi de top pentru baklava, ciocolată de lux și gelato.",
+            "color": "Cochilie naturală despicată / Verde smarald în interior",
+            "harvestMonths": "Septembrie – octombrie",
+            "storage": "Depozit răcoros și uscat <15°C, RH <55%",
+            "shelfLife": "18 Luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "10kg вакуумни пакети в кутия",
+              "25kg Тъкани чанти",
+              "12.5kg MAP кутии"
+            ],
+            "name": "Газиантеп шамфъстък (печени в черупка солени и изумрудено зелени зърна / boz İç)",
+            "description": "Известен със своя дълбок, концентриран вкус и ярък изумрудено зелен интериор (Boz İç). Доставя се в черупка, леко изпечена с морска сол за закуска или като първокласни зелени зърна за баклава, луксозни шоколади и джелато.",
+            "color": "Естествена разцепена черупка / Изумрудено зелена вътре",
+            "harvestMonths": "септември – октомври",
+            "storage": "Хладен сух склад <15°C, RH <55%",
+            "shelfLife": "18 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "10kg Συσκευασίες κενού σε χαρτοκιβώτιο",
+              "25kg Υφαντές Τσάντες",
+              "Κουτιά 12.5kg MAP"
+            ],
+            "name": "Φιστίκια Γκαζιαντέπ (Καβουρδισμένοι Αλατισμένοι & Σμαραγδένιοι Πράσινοι Πυρήνες / Boz İç)",
+            "description": "Φημίζεται για τη βαθιά, συμπυκνωμένη γεύση του και το ζωντανό σμαραγδένιο πράσινο εσωτερικό του (Boz İç). Παρέχεται με κέλυφος απαλά καβουρδισμένο με θαλασσινό αλάτι για σνακ ή ως πρωταρχικοί πράσινοι πυρήνες για μπακλαβά, σοκολάτες πολυτελείας και gelato.",
+            "color": "Φυσικό Split Shell / Σμαραγδένιο Πράσινο Εσωτερικό",
+            "harvestMonths": "Σεπτέμβριος – Οκτώβριος",
+            "storage": "Ψυχρός ξηρός <15°C αποθήκης, RH <55%",
+            "shelfLife": "18 Μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "10kg vakuum pakovanja u kartonu",
+              "25kg Tkane torbe",
+              "12.5kg MAP kutije"
+            ],
+            "name": "Gaziantep pistacije (u ljusci pečena slana i smaragdno zelena zrna / Boz Ic)",
+            "description": "Poznat po svom dubokom, koncentrisanom ukusu i živopisnoj smaragdno zelenoj unutrašnjosti (Boz Ic). Isporučuje se u ljusci nežno pečena sa morskom soli za grickanje, ili kao vrhunska zelena zrna za baklavu, luksuzne čokolade i sladoled.",
+            "color": "Prirodna Split Shell / Emerald Green Inside",
+            "harvestMonths": "septembar – oktobar",
+            "storage": "Hladno suvo skladište <15°C, RH <55%",
+            "shelfLife": "18 meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "10kg вакуумні пакети в картоні",
+              "25kg Ткані сумки",
+              "12.5kg MAP Boxes"
+            ],
+            "name": "фісташки газіантеп (запечені, солоні та смарагдово-зелені зерна / boz İç)",
+            "description": "Відомий своїм глибоким, концентрованим смаком і яскравим смарагдово-зеленим інтер'єром (Boz İç). Поставляється в шкаралупі, ніжно обсмажена з морською сіллю для перекусу, або як ідеальні зелені зерна для баклави, розкішного шоколаду та джелато.",
+            "color": "Природна розщеплена оболонка / Смарагдово-зелена всередині",
+            "harvestMonths": "вересень – жовтень",
+            "storage": "Прохолодний сухий склад <15°C, RH <55%",
+            "shelfLife": "18 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "10kg ვაკუუმ პაკეტები კარტონში",
+              "25kg ქსოვილი ჩანთები",
+              "12.5kg MAP ყუთები"
+            ],
+            "name": "გაზიანტეპის პისტაკიო (კანსთან ერთად შეწურული მარილით და მენთოლისფერი გულით / ბოზ იჩ)",
+            "description": "ცნობილი ღრმა, კონცენტრირებული გემოსა და ცოცხალი მენთოლისფერი შიგთავსით (ბოზ იჩ). მიწოდებულია კერიით, მსუბუქად შეწურული ზღვის მარილთან ერთად საჭმელად, ან როგორც პრაიმული მწვანე გულები ბაკლავას, ლუქს შოკოლადისა და ჟელატოსთვის.",
+            "color": "ბუნებრივი შერჩეული კანი / მენთოლისფერი შიგნით",
+            "harvestMonths": "სექტემბერი – ოქტომბერი",
+            "storage": "გრილი მშრალი საწყობი <15°C, შედარებითი სველი <55%",
+            "shelfLife": "18 თვე"
+          },
+          "az": {
+            "packagingTypes": [
+              "10kg Karton Vakuum Paketləri",
+              "25kg toxunmuş çantalar",
+              "12.5kg XƏRİTƏ Qutuları"
+            ],
+            "name": "Gaziantep Pistachios (Qabıqda Qovrulmuş Duzlu və Zümrüd Yaşıl Dənələr / Boz İç)",
+            "description": "Dərin, konsentratlaşdırılmış dadı və canlı zümrüd yaşıl interyeri ilə məşhurdur (Boz İç). Qəlyanaltı üçün dəniz duzu ilə yumşaq qovrulmuş qabıqda və ya baklava, lüks şokoladlar və gelato üçün əsas yaşıl dənələr kimi təqdim olunur.",
+            "color": "Təbii Bölünmüş Qabıq / Zümrüd Yaşıl İçəri",
+            "harvestMonths": "Sentyabr – Oktyabr",
+            "storage": "Sərin quru anbar <15°C, RH <55%",
+            "shelfLife": "18 Ay"
+          },
+          "uz": {
+            "packagingTypes": [
+              "10kg Karton ichidagi vakuum paketlar",
+              "25kg To‘qilgan sumkalar",
+              "12.5kg MAP qutilari"
+            ],
+            "name": "Gaziantep pista (qobig'ida qovurilgan tuzlangan va zumrad yashil donlar / boz iç)",
+            "description": "Chuqur, konsentratsiyalangan ta'mi va yorqin zumrad yashil ichki qismi bilan mashhur (Boz İç). Dengiz tuzi bilan yumshoq qovurilgan qobiq ichida, atirlar uchun yoki baklava, hashamatli shokoladlar va gelato uchun asosiy yashil don sifatida taqdim etiladi.",
+            "color": "Tabiiy bo'lingan qobiq / Ichki zumrad yashil",
+            "harvestMonths": "Sentyabr – Oktyabr",
+            "storage": "Sovuq quruq ombor <15°C, RH <55%",
+            "shelfLife": "18 Oy"
+          },
+          "kk": {
+            "packagingTypes": [
+              "10kg Картондағы вакуум пакеттері",
+              "25kg Өрілген сөмкелер",
+              "12.5kg MAP қораптары"
+            ],
+            "name": "Gaziantep фисташкалары (қабықта қуырылған, тұздалған және изумруд жасыл дәндер / boz İç)",
+            "description": "Терең, шоғырланған дәмі мен жарқын изумруд жасыл ішкі көрінісімен танымал (Boz İç). Теңіз тұзымен жұмсақ қуырылған қабықта немесе баклава, люкс шоколад және джелато үшін жасыл дәндер ретінде беріледі.",
+            "color": "Табиғи бөлінген қабық / Изумруд жасыл ішкі жағы",
+            "harvestMonths": "Қыркүйек – Қазан",
+            "storage": "Салқын құрғақ қойма <15°C, RH <55%",
+            "shelfLife": "18 ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "10kg وکیوم پک ها در کارتن",
+              "25kg کیف های بافته شده",
+              "جعبه های نقشه 12.5kg"
+            ],
+            "name": "پسته غازیانتپ (دانه های نمک سود و سبز زمردی برشته شده در صدف / Boz İðħ)",
+            "description": "به خاطر طعم عمیق و غلیظ و فضای داخلی سبز زمردی زنده (Boz İç) مشهور است. در پوسته با نمک دریایی به آرامی برای خوردن یا به عنوان دانه سبز مرغوب برای باقلوا، شکلات های لوکس و ژلاتو عرضه می شود.",
+            "color": "پوسته طبیعی شکافته / سبز زمردی داخلی",
+            "harvestMonths": "سپتامبر – اکتبر",
+            "storage": "<15°C انبار خشک و سرد، RH <55%",
+            "shelfLife": "18 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "कार्टन में 10kg वैक्यूम पैक",
+              "25kg बुने हुए बैग",
+              "12.5kg एमएपी बॉक्स"
+            ],
+            "name": "गाजियांटेप पिस्ता (इन-शेल भुना हुआ नमकीन और एमराल्ड ग्रीन कर्नेल/बोज़ İç)",
+            "description": "अपने गहरे, केंद्रित स्वाद और जीवंत पन्ना हरे इंटीरियर (Boz İç) के लिए प्रसिद्ध। स्नैकिंग के लिए समुद्री नमक के साथ धीरे-धीरे भुना हुआ, या बाकलावा, लक्जरी चॉकलेट और जिलेटो के लिए प्रमुख हरी गुठली के रूप में खोल में आपूर्ति की जाती है।",
+            "color": "नेचुरल स्प्लिट शेल/एमराल्ड ग्रीन इनसाइड",
+            "harvestMonths": "सितंबर - अक्टूबर",
+            "storage": "कूल ड्राई वेयरहाउस <15°C, आरएच <55%",
+            "shelfLife": "18 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "10kg ویکیوم پیکس کارٹن میں",
+              "25kg بنے ہوئے تھیلے",
+              "12.5kg نقشہ خانوں"
+            ],
+            "name": "غازی عنتیپ پستہ (ان شیل روسٹڈ سالٹڈ اور ایمرلڈ گرین کرنلز / Boz İðç)",
+            "description": "اپنے گہرے، مرکوز ذائقے اور چمکدار زمردی سبز اندرونی حصے (Boz İç) کے لیے مشہور۔ یہ شیل میں ہلکے سے سمندری نمک کے ساتھ بھنی ہوئی ہوتی ہے تاکہ ناشتہ کیا جا سکے، یا بکلوا، لگژری چاکلیٹس، اور جیلاٹو کے لیے بہترین سبز دانے کے طور پر فراہم کی جاتی ہے۔",
+            "color": "قدرتی تقسیم شدہ خول / زمردی سبز اندرونی",
+            "harvestMonths": "ستمبر – اکتوبر",
+            "storage": "ٹھنڈی خشک گودام <15°C، آر ایچ <55%",
+            "shelfLife": "18 مہینے"
+          },
+          "bn": {
+            "packagingTypes": [
+              "কার্টনে 10kg ভ্যাকুয়াম প্যাক",
+              "25kg বোনা ব্যাগ",
+              "12.5kg ম্যাপ বাক্স"
+            ],
+            "name": "গাজিয়ানটেপ পেস্তা (ইন-শেল রোস্টেড লবণযুক্ত এবং পান্না সবুজ কার্নেল / বোজ ই)",
+            "description": "এর গভীর, ঘনীভূত স্বাদ এবং প্রাণবন্ত পান্না সবুজ অভ্যন্তরের জন্য বিখ্যাত। স্ন্যাকিংয়ের জন্য সামুদ্রিক লবণ দিয়ে আলতো করে ভাজা ইন-শেল সরবরাহ করা হয়, বা বাকলাভা, বিলাসবহুল চকোলেট এবং জেলাটোর জন্য প্রধান সবুজ কার্নেল হিসাবে।",
+            "color": "প্রাকৃতিক স্প্লিট শেল / পান্না সবুজ ভিতরে",
+            "harvestMonths": "সেপ্টেম্বর - অক্টোবর",
+            "storage": "শীতল শুকনো গুদাম <15°C, আরএইচ <55%",
+            "shelfLife": "18 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "10kg盒式真空包装",
+              "25kg 编织袋",
+              "12.5kg MAP盒子"
+            ],
+            "name": "加济安泰普开心果（带壳烤盐味和翡翠绿核粒 / boz İç）",
+            "description": "以其浓郁浓郁的风味和鲜艳的翡翠绿色内馅（Boz İç）而闻名。带壳供应，轻轻烘焙后加入海盐，适合零食，或作为优质绿色核仁，用于巴克拉瓦、奢华巧克力和意式冰淇淋。",
+            "color": "天然分体壳 / 翡翠绿内部",
+            "harvestMonths": "9月至10月",
+            "storage": "凉爽干燥的仓库<15°C，右侧<55%",
+            "shelfLife": "18个月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "10kg カートン入りの真空パック",
+              "25kg 織り袋",
+              "12.5kg MAPボックス"
+            ],
+            "name": "ガジアンテプ・ピスタチオ(殻付きロースト塩とエメラルドグリーンの粒 / Boz İç)",
+            "description": "深く濃縮された風味と鮮やかなエメラルドグリーンの内側(Boz İç)で有名です。シェル付きでシーソルトで優しく焙煎され、スナック用に、またはバクラバ、高級チョコレート、ジェラート用のプライムグリーンカーネルとして提供されます。",
+            "color": "ナチュラル・スプリット・シェル / エメラルドグリーン・インサイド",
+            "harvestMonths": "9月 – 10月",
+            "storage": "涼しい乾燥倉庫<15°C、右<55%",
+            "shelfLife": "18ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "10kg 팩 상자",
+              "25kg 직조 가방",
+              "12.5kg MAP 박스"
+            ],
+            "name": "가지안테프 피스타치오 (껍데기 구운 소금 및 에메랄드 그린 알갱이 / 보즈 이치)",
+            "description": "깊고 농축된 맛과 생기 넘치는 에메랄드 그린 내부(Boz İç)로 유명합니다. 간식용으로 바다 소금과 함께 부드럽게 구운 껍질껍질로 공급되거나, 바클라바, 고급 초콜릿, 젤라토용 초록 알갱이로 제공됩니다.",
+            "color": "내추럴 스플릿 셸 / 에메랄드 그린 내부",
+            "harvestMonths": "9월 – 10월",
+            "storage": "서늘하고 건조한 창고 <15°C, 습도는 <55%",
+            "shelfLife": "18개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "10kg Vakum Pack dalam Karton",
+              "25kg Tas Tenun",
+              "12.5kg Kotak PETA"
+            ],
+            "name": "Pistachio Gaziantep (Biji Asin Panggang Dalam Cangkang & Hijau Zamrud / Boz İç)",
+            "description": "Terkenal dengan rasa yang dalam dan pekat serta interior hijau zamrud yang cerah (Boz İç). Disajikan dalam cangkang yang dipanggang lembut dengan garam laut untuk camilan, atau sebagai biji hijau utama untuk baklava, cokelat mewah, dan gelato.",
+            "color": "Cangkang Terpisah Alami / Bagian Hijau Zamrud",
+            "harvestMonths": "September – Oktober",
+            "storage": "Gudang kering dingin <15°C, RH <55%",
+            "shelfLife": "18 Bulan"
+          },
+          "ms": {
+            "packagingTypes": [
+              "10kg Pek Vakum dalam Karton",
+              "25kg Beg Tenunan",
+              "Kotak PETA 12.5kg"
+            ],
+            "name": "Pistachio Gaziantep (Biji Hijau Masin & Zamrud Panggang Dalam Cangkerang / Boz İç)",
+            "description": "Terkenal dengan rasa pekat yang dalam dan dalaman hijau zamrud yang terang (Boz İç). Dibekalkan dalam cangkerang yang dipanggang perlahan dengan garam laut untuk snek, atau sebagai biji hijau utama untuk baklava, coklat mewah, dan gelato.",
+            "color": "Kulit Terbelah Semula Jadi / Hijau Zamrud Bahagian Dalam",
+            "harvestMonths": "September – Oktober",
+            "storage": "Gudang kering sejuk <15°C, RH <55%",
+            "shelfLife": "18 Bulan"
+          },
+          "sw": {
+            "packagingTypes": [
+              "Pakiti 10kg za Utupu kwenye Katoni",
+              "25kg Mifuko ya Kusuka",
+              "12.5kg Sanduku za RAMANI"
+            ],
+            "name": "Pistachios za Gaziantep (Konje za Kijani Zilizochomwa na Zumaridi / Boz İç)",
+            "description": "Inajulikana kwa ladha yake ya kina, iliyokolea na mambo ya ndani ya kijani kibichi ya zumaridi (Boz İç). Imetolewa ndani ya ganda iliyochomwa kwa upole na chumvi bahari kwa vitafunio, au kama punje kuu za kijani kibichi kwa baklava, chokoleti za kifahari na gelato.",
+            "color": "Ganda la Mgawanyiko wa Asili / Kijani cha Zumaridi Ndani",
+            "harvestMonths": "Septemba - Oktoba",
+            "storage": "Ghala kavu <15°C baridi, RH <55%",
+            "shelfLife": "Miezi 18"
+          }
+        }
+      },
+      {
+        "id": "turkish-walnut-kernels",
+        "slug": "turkish-walnut-kernels",
+        "name": "Turkish Natural Walnut Kernels (Light Halves / Kelebek & Quarters)",
+        "image": "/images/products/turkish-walnuts-apricots-figs-nilasya.jpg",
+        "nameTr": "Doğal Türk Ceviz İçi (Açık Renk Kelebek & Çeyrek İçi)",
+        "description": "Carefully cracked and hand-sorted light amber halves (80%+ Kelebek) and quarters. Rich in plant-based Omega-3 ALA fatty acids and natural antioxidants, free from bitterness.",
+        "descriptionTr": "Özenle kırılmış ve el ile seçilmiş açık sarı kelebek (%80+ bütün) ve çeyrek ceviz içi. Yüksek Omega-3 ve doğal antioksidan zengini, acılaşma yapmayan taze mahsul.",
+        "color": "Extra Light Amber",
+        "colorTr": "Ekstra Açık Kehribar Sarısı",
+        "size": "Halves 80%+ (Kelebek)",
+        "caliber": "Grade 1 Light Halves",
+        "moisture": "< 5.0%",
+        "purity": "99.8%",
+        "harvestMonths": "September – October",
+        "harvestMonthsTr": "Eylül – Ekim",
+        "storage": "Refrigerated 4°C - 10°C in vacuum cartons",
+        "storageTr": "4°C - 10°C Soğutmalı vakumlu kolilerde",
+        "shelfLife": "12 Months",
+        "shelfLifeTr": "12 Ay",
+        "packagingTypes": [
+          "10kg Vacuum Pack in Master Carton",
+          "2 x 5kg Vacuum Pouches"
+        ],
+        "packagingTypesTr": [
+          "10kg Kolili Vakum Paket",
+          "2 x 5kg Vakumlu Paket"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "10kg حزمة تفريغ في علبة ماستر",
+              "2 × 5kg أكياس التفريغ"
+            ],
+            "name": "حبة الجوز الطبيعية التركية (نصف خفيف / كيليبك & أرباع)",
+            "description": "أن80%صاف وربع كهرمانية فاتحة مكسورة ومرتبة يدويا بعناية. غنية بأحماض أوميغا-3 ALA الدهنية النباتية ومضادات الأكسدة الطبيعية، خالية من المرارة.",
+            "color": "كهرمان خفيف جدا",
+            "harvestMonths": "سبتمبر – أكتوبر",
+            "storage": "4°C المبرد - 10°C في علب التفريغ",
+            "shelfLife": "12 شهور"
+          },
+          "ru": {
+            "packagingTypes": [
+              "10kg Вакуумный пакет в главной коробке",
+              "2 x 5kg вакуумные подсумки"
+            ],
+            "name": "Турецкие натуральные ореховые ядра (светлые половинки / келебек и четверти)",
+            "description": "Аккуратно расколотые и вручную сортированные половинки светло-янтарного цвета (80%+ Келебек) и четвертаки. Богаты растительными жирными кислотами Омега-3 ALA и натуральными антиоксидантами, не содержат горечи.",
+            "color": "Extra Light Amber",
+            "harvestMonths": "сентябрь – октябрь",
+            "storage": "Охлаждаемые 4°C - 10°C в вакуумных коробках",
+            "shelfLife": "12 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "10kg Vakuumpack im Masterkarton",
+              "2 x 5kg Vakuumbeutel"
+            ],
+            "name": "Türkische Naturwalnusskerne (leichte Hälften / Kelebek & Viertel)",
+            "description": "Sorgfältig gebrochene und handsortierte helle bernsteinfarbene Hälften (80%+ Kelebek) und Viertel. Reich an pflanzlichen Omega-3 ALA-Fettsäuren und natürlichen Antioxidantien, frei von Bitterkeit.",
+            "color": "Extra Light Amber",
+            "harvestMonths": "September – Oktober",
+            "storage": "Gekühlte 4°C - 10°C in Vakuumkartons",
+            "shelfLife": "12 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "10kg Emballage sous vide dans un carton maître",
+              "2 x 5kg Pochettes sous vide"
+            ],
+            "name": "Noix naturelles turques (moitiés claires / kelebek et quarts)",
+            "description": "80%Moitiés et quarts ambrés clairs soigneusement cassés et triés à la main. Riche en acides gras Omega-3 ALA d’origine végétale et en antioxydants naturels, exempt d’amertume.",
+            "color": "Ambre Extra Léger",
+            "harvestMonths": "Septembre – Octobre",
+            "storage": "4°C réfrigérée - 10°C dans des cartons sous vide",
+            "shelfLife": "12 mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "10kg Paquete de vacío en caja maestra",
+              "2 x 5kg Bolsas de vacío"
+            ],
+            "name": "Núcleos naturales de nuez turcos (mitades claras / kelebek y cuartos)",
+            "description": "Mita80%des y cuartos de ámbar claro cuidadosamente agrietados y clasificados a mano. Rico en ácidos grasos Omega-3 ALA de origen vegetal y antioxidantes naturales, libre de amargor.",
+            "color": "Ámbar Extra Claro",
+            "harvestMonths": "Septiembre – Octubre",
+            "storage": "4°C refrigerados - 10°C en cajas al vacío",
+            "shelfLife": "12 Meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "10kg Vaso sottovuoto in cartone master",
+              "2 x 5kg Sacchetti a vuoto"
+            ],
+            "name": "Noccioli naturali turchi (metà chiara / kelebek e quarti)",
+            "description": "Metà e quarti di ambra chiara (80%+ Kelebek) e smistati con cura, spaccati e selezionati a mano. Ricchi di acidi grassi Omega-3 ALA di origine vegetale e antiossidanti naturali, privi di amarezza.",
+            "color": "ambra extra chiara",
+            "harvestMonths": "Settembre – Ottobre",
+            "storage": "4°C refrigerata - 10°C in cartoni sottovuoto",
+            "shelfLife": "12 mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "10kg Embalagem a Vácuo na Caixa Mestre",
+              "2 x 5kg Bolsas de Vácuo"
+            ],
+            "name": "Grãos naturais de noz turca (metades claras / kelebek e quartos)",
+            "description": "Metades e quartos de cor âmbar claro cuidadosamente rachados e separados 80%à mão. Rico em ácidos graxos Omega-3 ALA de origem vegetal e antioxidantes naturais, livre de amargor.",
+            "color": "âmbar extra claro",
+            "harvestMonths": "Setembro – Outubro",
+            "storage": "4°C refrigerados - 10°C em caixas a vácuo",
+            "shelfLife": "12 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "10kg vacuümpak in meesterdoos",
+              "2 x 5kg Vacuümzakjes"
+            ],
+            "name": "Turkse natuurlijke walnootkorrels (Lichte helften / Kelebek & Kwarten)",
+            "description": "Zorgvuldig gebroken en met de hand gesorteerde lichtamberhalve (80%+ Kelebek) en kwarten. Rijk aan plantaardige Omega-3 ALA-vetzuren en natuurlijke antioxidanten, vrij van bitterheid.",
+            "color": "Extra Licht Amber",
+            "harvestMonths": "september – oktober",
+            "storage": "Gekoelde 4°C - 10°C in vacuümkartons",
+            "shelfLife": "12 maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "10kg Opakowanie próżniowe w głównym kartonie",
+              "2 x 5kg Sakiewki próżniowe"
+            ],
+            "name": "Tureckie naturalne ziarna orzecha włoskiego (lekkie połówki / kelebek i ćwiartki)",
+            "description": "Starannie rozbite i ręcznie sortowane połówki jasnobursztynowych (80%+ Kelebek) i ćwiartki. Bogate w roślinne kwasy tłuszczowe Omega-3 ALA oraz naturalne przeciwutleniacze, wolne od goryczy.",
+            "color": "Extra Jasny Bursztyn",
+            "harvestMonths": "Wrzesień – październik",
+            "storage": "Chłodzone 4°C - 10°C w kartonach próżniowych",
+            "shelfLife": "12 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "10kg Pachet vid în cutia principală",
+              "Buzunarele cu vid 2 x 5kg"
+            ],
+            "name": "Mărunțe naturale de nucă turcești (jumătăți deschise / kelebek și sferturi)",
+            "description": "Jumătăți și sferturi de chihlimbar deschis (80%+ Kelebek) spartate cu grijă și sortate manual. Bogat în acizi grași Omega-3 ALA pe bază de plante și antioxidanți naturali, lipsit de amărăciune.",
+            "color": "Chihlimbar Extra Deschis",
+            "harvestMonths": "Septembrie – octombrie",
+            "storage": "4°C refrigerat - 10°C în cutii vidate",
+            "shelfLife": "12 Luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "10kg вакуумен пакет в главна кутия",
+              "2 x 5kg вакуумни торбички"
+            ],
+            "name": "Турски натурални орехови ядки (леки половини / келебек и четвъртини)",
+            "description": "Внимателно натрошени и ръчно сортирани светло кехлибарени половинки (80%+ Келебек) и четвъртини. Богати на растителни Омега-3 ALA мастни киселини и естествени антиоксиданти, без горчивина.",
+            "color": "Extra Light Amber",
+            "harvestMonths": "септември – октомври",
+            "storage": "Хладилни 4°C - 10°C във вакуумни кутии",
+            "shelfLife": "12 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "10kg Συσκευασία κενού σε κύριο χαρτοκιβώτιο",
+              "2 x 5kg Θήκες κενού"
+            ],
+            "name": "Τουρκική φυσική καρυδόψιχα (ελαφριά μισά / kelebek & τέταρτα)",
+            "description": "Προσεκτικά ραγισμένα και ταξινομημένα με το χέρι ελαφριά κεχριμπαρένια μισά (80%+ Kelebek) και τέταρτα. Πλούσιο σε φυτικά λιπαρά οξέα Ωμέγα-3 ALA και φυσικά αντιοξειδωτικά, απαλλαγμένα από πικρία.",
+            "color": "Εξαιρετικά ανοιχτό κεχριμπάρι",
+            "harvestMonths": "Σεπτέμβριος – Οκτώβριος",
+            "storage": "Ψυγείο 4°C - 10°C σε χαρτοκιβώτια κενού αέρος",
+            "shelfLife": "12 μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "10kg Vakuum pakovanje u glavnom kartonu",
+              "2 k 5kg Vakuum kesice"
+            ],
+            "name": "Turski prirodni orah jezgra (svetlo polovine / kelebek & kvartala)",
+            "description": "Pažljivo ispucale i ručno sortirane polovine svetlog ćilibara (80%+ Kelebek) i četvrtine. Bogat biljnim Omega-3 ALA masnim kiselinama i prirodnim antioksidantima, bez gorčine.",
+            "color": "Ekstra svetlo ćilibara",
+            "harvestMonths": "septembar – oktobar",
+            "storage": "U frižideru 4°C - 10°C u vakuum kartonskim kutijama",
+            "shelfLife": "12 meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "10kg вакуумний пакет у головній коробці",
+              "2 x 5kg Вакуумні підсумки"
+            ],
+            "name": "Турецькі натуральні зерна волоського горіха (світлі половинки / келебек і чверті)",
+            "description": "Ретельно роздроблені та вручну відсортовані половинки світлого бурштину (80%+ Келебек) і чверті. Багаті на рослинні жирні кислоти Омега-3 ALA та натуральні антиоксиданти, без гіркоти.",
+            "color": "Extra Light Amber",
+            "harvestMonths": "вересень – жовтень",
+            "storage": "Охолоджені 4°C - 10°C у вакуумних коробках",
+            "shelfLife": "12 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "10kg ვაკუუმ პაკეტი მთავარი კარტონში",
+              "2 x 5kg ვაკუუმ პაუჩები"
+            ],
+            "name": "თურქული ბუნებრივი ალმონის კაკლები (გვერდითი ნახევრები / კელებეკი & მეოთხედი)",
+            "description": "ფრთხილად არღვევილი და ხელით დახარისხებული მსუბუქი მდგრადი ნახევრები (80%+ კელებეკი) და მეოთხედი. მდიდარია ცხოველური წარმოშობის Omega-3 ALA ცხიმოვანი მჟავებით და ბუნებრივი ანტიოქსიდანტებით, არ შეიცავს მლაშეს.",
+            "color": "დამატებით მსუბუქი მდგრადი",
+            "harvestMonths": "სექტემბერი – ოქტომბერი",
+            "storage": "მაცხელებული 4°C - 10°C ვაკუუმ კარტონებში",
+            "shelfLife": "12 თვის"
+          },
+          "az": {
+            "packagingTypes": [
+              "10kg Əsas kartonda vakuum paketi",
+              "2 x 5kg vakuum kisələri"
+            ],
+            "name": "Türk Təbii Qoz Dənələri (Yüngül Yarım / Kelebek və Dörddəbir hissə)",
+            "description": "Diqqətlə çatlanmış və əl ilə çeşidlənmiş açıq kəhrəba yarımları (80%+ Kelebek) və dörddəbir hissələr. Bitki mənşəli Omega-3 ALA yağ turşuları və təbii antioksidantlarla zəngindir, acısızdır.",
+            "color": "Extra Light Amber",
+            "harvestMonths": "Sentyabr – Oktyabr",
+            "storage": "Soyuducuda 4°C - vakuum qutularında 10°C",
+            "shelfLife": "12 Ay"
+          },
+          "uz": {
+            "packagingTypes": [
+              "10kg Master kartonda vakuum paket",
+              "2 x 5kg Vakuum paketlar"
+            ],
+            "name": "Turkiya tabiiy yong‘oq yong‘oqlari (Yengil yarim / Kelebek va choraklar)",
+            "description": "Diqqat bilan sindirilgan va qo‘lda saralangan engil ambers yarimlar (80%+ Kelebek) va choraklar. O‘simlik manbali Omega-3 ALA yog‘ kislotalari va tabiiy antioksidantlarga boy, achchiqliksiz.",
+            "color": "Maxsus Yengil Amber",
+            "harvestMonths": "Sentyabr – Oktyabr",
+            "storage": "Sovutgichda saqlangan 4°C - vakuum kartonlarda 10°C",
+            "shelfLife": "12 Oylik"
+          },
+          "kk": {
+            "packagingTypes": [
+              "10kg Мастер қорапта вакуумдық пакет",
+              "2 x 5kg Вакуумдық қапшықтар"
+            ],
+            "name": "Түрік табиғи жаңғақ дәндері (жеңіл жартылары / келебек және төрттер)",
+            "description": "Мұқият сындырылған және қолмен сұрыпталған ашық янтарь жарттары (80%+ Келебек) және ширек бөлшектер. Өсімдік негізіндегі Омега-3 ALA май қышқылдары мен табиғи антиоксиданттарға бай, ащы дәмсіз.",
+            "color": "Қосымша Жарық Янтарь",
+            "harvestMonths": "Қыркүйек – Қазан",
+            "storage": "Вакуумдық қораптарда 4°C - 10°C",
+            "shelfLife": "12 ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "بسته وکیوم 10kg در مستر کارتن",
+              "2 5kg جیب های وکیوم"
+            ],
+            "name": "هسته های طبیعی گردوی ترکیه (نیمه های سبک / کلبک و ربع ها)",
+            "description": "نیمه های کهربایی روشن (80%+ کلبک) و ربع ها با دقت شکسته و دست مرتب شده. غنی از اسیدهای چرب امگا-3 ALA گیاهی و آنتی اکسیدان های طبیعی، عاری از تلخی.",
+            "color": "کهربایی نور اضافی",
+            "harvestMonths": "سپتامبر – اکتبر",
+            "storage": "4°C یخچالی - 10°C در جعبه های خلأ",
+            "shelfLife": "12 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "मास्टर कार्टन में 10kg वैक्यूम पैक",
+              "2 x 5kg वैक्यूम पाउच"
+            ],
+            "name": "तुर्की प्राकृतिक अखरोट की गुठली (लाइट हाफ/केलेबेक और क्वार्टर)",
+            "description": "सावधानी से टूटे और हाथ से छांटे गए हल्के एम्बर के आधे हिस्से (80%+ केलेबेक) और क्वार्टर। पौधे-आधारित ओमेगा-3 एएलए फैटी एसिड और प्राकृतिक एंटीऑक्सिडेंट से भरपूर, कड़वाहट से मुक्त।",
+            "color": "अतिरिक्त प्रकाश एम्बर",
+            "harvestMonths": "सितंबर - अक्टूबर",
+            "storage": "प्रशीतित 4°C - वैक्यूम डिब्बों में 10°C",
+            "shelfLife": "12 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "10kg ماسٹر کارٹن میں ویکیوم پیک",
+              "2 x 5kg ویکیوم پاؤچز"
+            ],
+            "name": "ترک قدرتی اخروٹ کے دانے (ہلکے نصف / کلیبیک & کوارٹرز)",
+            "description": "احتیاط سے توڑے اور ہاتھ سے ترتیب دیے گئے ہلکے عنبر رنگ کے نصف (80%+ کیلبیک) اور کوارٹرز۔ پودوں پر مبنی اومیگا-3 اے ایل اے فیٹی ایسڈز اور قدرتی اینٹی آکسیڈنٹس سے بھرپور، کڑواہٹ سے پاک۔",
+            "color": "ایکسٹرا لائٹ امبر",
+            "harvestMonths": "ستمبر – اکتوبر",
+            "storage": "ریفریجریٹڈ 4°C - ویکیوم کارٹنز میں 10°C",
+            "shelfLife": "12 مہینے"
+          },
+          "bn": {
+            "packagingTypes": [
+              "মাস্টার কার্টনে 10kg ভ্যাকুয়াম প্যাক",
+              "2 x 5kg ভ্যাকুয়াম পাউচ"
+            ],
+            "name": "তুর্কি প্রাকৃতিক আখরোট কার্নেল (হালকা অর্ধ / কেলেবেক এবং কোয়ার্টার)",
+            "description": "সাবধানে ক্র্যাক করা এবং হাতে বাছাই করা হালকা অ্যাম্বার অর্ধাংশ (80%+ কেলেবেক) এবং কোয়ার্টার। উদ্ভিদ-ভিত্তিক ওমেগা -3 এএলএ ফ্যাটি অ্যাসিড এবং প্রাকৃতিক অ্যান্টিঅক্সিডেন্টগুলিতে সমৃদ্ধ, তিক্ততা থেকে মুক্ত।",
+            "color": "অতিরিক্ত হালকা অ্যাম্বার",
+            "harvestMonths": "সেপ্টেম্বর - অক্টোবর",
+            "storage": "রেফ্রিজারেটেড 4°C - ভ্যাকুয়াম কার্টনগুলিতে 10°C",
+            "shelfLife": "12 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "主盒10kg真空包装",
+              "2 x 5kg个真空袋"
+            ],
+            "name": "土耳其天然核桃核桃（轻质半叶/Kelebek & Quarters）",
+            "description": "精心敲击并手工分拣的浅琥珀色半片（80%+ Kelebek）和四分之一。富含植物基Omega-3 ALA脂肪酸和天然抗氧化剂，无苦味。",
+            "color": "超浅琥珀",
+            "harvestMonths": "9月至10月",
+            "storage": "冷藏4°C - 10°C真空盒装",
+            "shelfLife": "12个月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "マスターカートンの10kg掃除機パック",
+              "2 x 5kg 掃除ポーチ"
+            ],
+            "name": "トルコ産天然クルミの粒(軽い半分/ケレベク&クォーターズ)",
+            "description": "丁寧に割り手作業で選別された淡い琥珀色の半分(80%+ケレベク)とクォーター。植物由来のオメガ3ALA脂肪酸と天然抗酸化物質が豊富で、苦味はない。",
+            "color": "エクストラライトアンバー",
+            "harvestMonths": "9月 – 10月",
+            "storage": "冷蔵4°C - 真空パックで10°C",
+            "shelfLife": "12ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "마스터 카톤 10kg 진공청소기",
+              "2 x 5kg 진공 파우치"
+            ],
+            "name": "터키 천연 호두 알갱이 (라이트 하프 / 켈레벡 & 쿼터)",
+            "description": "정성스럽게 깨지고 손수 선별된 연한 호박색 반쪽(80%+ 켈레벡)과 4분의 1. 식물성 오메가-3 ALA 지방산과 천연 항산화제가 풍부하며 쓴맛이 없습니다.",
+            "color": "엑스트라 라이트 앰버",
+            "harvestMonths": "9월 – 10월",
+            "storage": "냉장 4°C - 진공 상자에 10°C",
+            "shelfLife": "12개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "10kg Paket Vakum dalam Karton Utama",
+              "2 x 5kg Kantong Vakum"
+            ],
+            "name": "Biji Kenari Alami Turki (Setengah Ringan / Kelebek & Kuartal)",
+            "description": "Potongan amber muda (80%+ Kelebek) dan seperempat yang dipecahkan dan disortir dengan tangan. Kaya akan asam lemak Omega-3 ALA berbasis nabati dan antioksidan alami, bebas dari rasa pahit.",
+            "color": "Amber Ekstra Ringan",
+            "harvestMonths": "September – Oktober",
+            "storage": "4°C pendingin - 10°C dalam karton vakum",
+            "shelfLife": "12 Bulan"
+          },
+          "ms": {
+            "packagingTypes": [
+              "Pek Vakum 10kg dalam Kotak Induk",
+              "2 x 5kg Beg Vakum"
+            ],
+            "name": "Biji Walnut Semula Jadi Turki (Bahagian Ringan / Kelebek & Suku Bahagian)",
+            "description": "Bahagian amber muda (80%+ Kelebek) dan suku yang dipecahkan dan disusun dengan tangan dengan teliti. Kaya dengan asid lemak Omega-3 ALA berasaskan tumbuhan dan antioksidan semula jadi, bebas daripada rasa pahit.",
+            "color": "Amber Cahaya Ekstra",
+            "harvestMonths": "September – Oktober",
+            "storage": "4°C sejuk sejuk - 10°C dalam kotak vakum",
+            "shelfLife": "12 Bulan"
+          },
+          "sw": {
+            "packagingTypes": [
+              "10kg Pakiti ya Utupu katika Katoni Kuu",
+              "2 x 5kg Mifuko ya Utupu"
+            ],
+            "name": "Punje za asili za Walnut za Kituruki (Nusu Nyepesi / Kelebek & Robo)",
+            "description": "Nusu za kahawia nyepesi zilizopasuka kwa uangalifu na kupangwa kwa mkono (80%+ Kelebek) na robo. Tajiri katika asidi ya mafuta ya Omega-3 ALA inayotokana na mimea na antioxidants asilia, bila uchungu.",
+            "color": "Kahawia nyepesi ya ziada",
+            "harvestMonths": "Septemba - Oktoba",
+            "storage": "4°C iliyohifadhiwa kwenye jokofu - 10°C kwenye katoni za utupu",
+            "shelfLife": "Miezi 12"
+          }
+        }
+      },
+      {
+        "id": "turkish-sweet-almonds",
+        "slug": "turkish-sweet-almonds",
+        "name": "Turkish Sweet Almonds (Raw Natural & Roasted Kernels - Ferragnes Type)",
+        "image": "/images/products/turkish-nuts-kuruyemis-nilasya.jpg",
+        "nameTr": "Akdeniz Tatlı Badem İçi (Doğal Çiğ & Kavrulmuş - Ferragnes Tipi)",
+        "description": "Large, elongated sweet almond kernels with smooth cinnamon skin and firm crisp crunch. Calibrated for premium snack packaging, baking marzipan, and confectionery coatings.",
+        "descriptionTr": "Akdeniz ve Ege havzasında yetişen dolgun, çıtır ve tatlı badem içi. Lüks kuruyemiş paketlemesi, unlu mamuller ve marzipan/ezme üretimi için homojen kalibre edilmiştir.",
+        "color": "Cinnamon Brown Skin / Creamy Kernel",
+        "colorTr": "Tarçın Kahvesi Kabuk / Krem İçi",
+        "size": "27-30 / 30-32 per oz",
+        "caliber": "Grade A Calibrated Sweet Kernel",
+        "moisture": "< 5.5%",
+        "purity": "99.9%",
+        "harvestMonths": "August – September",
+        "harvestMonthsTr": "Ağustos – Eylül",
+        "storage": "Dry ventilated warehouse <15°C",
+        "storageTr": "Kuru havalandırmalı depo <15°C",
+        "shelfLife": "18 Months",
+        "shelfLifeTr": "18 Ay",
+        "packagingTypes": [
+          "10kg Vacuum Carton",
+          "25kg Multi-wall Paper Bags"
+        ],
+        "packagingTypesTr": [
+          "10kg Vakumlu Koli",
+          "25kg Çok Katlı Kraft Torba"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "10kg علبة مكنسة",
+              "25kg أكياس ورقية متعددة الطبقات"
+            ],
+            "name": "اللوز الحلو التركي (نوى طبيعية خام ومحمصة - نوع فيراغني)",
+            "description": "حبات لوز حلوة كبيرة وممدودة بقشرة قرفة ناعمة ومقرمشة صلبة. معايرة لتغليف الوجبات الخفيفة الفاخرة، وخبز مارزيبان، وطلاءات الحلويات.",
+            "color": "بشرة قرفة بنية / نواة كريمية",
+            "harvestMonths": "أغسطس – سبتمبر",
+            "storage": "مستودع مهوى جاف <15°C",
+            "shelfLife": "18 شهور"
+          },
+          "ru": {
+            "packagingTypes": [
+              "10kg Вакуумная коробка",
+              "25kg Многослойные бумажные пакеты"
+            ],
+            "name": "Турецкие сладкие миндаль (сырые натуральные и жареные зерна — тип ферраньски)",
+            "description": "Крупные, вытянутые сладко-миндальные зерна с гладкой коричной кожурой и плотной хрустящей корочкой. Откалибровано для премиальной упаковки для закусок, марципана для выпечки и кондитерских покрытий.",
+            "color": "Коричная коричневая кожа / Кремовое ядро",
+            "harvestMonths": "август – сентябрь",
+            "storage": "Сухой вентилируемый склад <15°C",
+            "shelfLife": "18 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "10kg Vakuumkarton",
+              "25kg Mehrschichtige Papiersäcke"
+            ],
+            "name": "Türkische Süßmandeln (rohe natürliche und geröstete Körner – Ferragnes-Typ)",
+            "description": "Große, längliche süße Mandelkerne mit glatter Zimthaut und festem, knackigem Biss. Kalibriert für Premium-Snackverpackungen, Marzipanbackwaren und Süßwarenüberzüge.",
+            "color": "Zimtbraune Haut / Cremiger Kern",
+            "harvestMonths": "August – September",
+            "storage": "Trocken belüftetes Lager <15°C",
+            "shelfLife": "18 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "10kg Carton sous vide",
+              "25kg Sacs en papier multi-couches"
+            ],
+            "name": "Amandes douces turques (Cru naturel & grains grillés - type Ferragnes)",
+            "description": "Gros grains d’amande sucrés allongés avec une peau lisse de cannelle et croustillant ferme et croustillant. Calibré pour l’emballage premium de snacks, le marzin de pâte à pâte et les enrobages de confiserie.",
+            "color": "Peau brun cannelle / Grain crémeux",
+            "harvestMonths": "Août – Septembre",
+            "storage": "Entrepôt à sec ventilé <15°C",
+            "shelfLife": "18 Mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "Cartón al vacío 10kg",
+              "Bolsas de papel multicapa 25kg"
+            ],
+            "name": "Almendras dulces turcas (crudas naturales y granos tostados - tipo Ferragnes)",
+            "description": "Grandes almendras dulces alargadas con piel de canela lisa y un crujido firme y crujiente. Calibradas para envases de snacks premium, horneado de mazapán y coberturas de confitería.",
+            "color": "Piel canela marrón / Almendra cremosa",
+            "harvestMonths": "Agosto – Septiembre",
+            "storage": "Almacén seco ventilado <15°C",
+            "shelfLife": "18 Meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "Cartone Sottovuoto 10kg",
+              "Sacchi di Carta Multistrato 25kg"
+            ],
+            "name": "Mandorle dolci turche (Naturali crude e tostate - tipo Ferragnes)",
+            "description": "Grandi e allungati semi di mandorla dolce con pelle liscia color cannella e croccantezza ferma. Calibrati per confezioni di snack di alta qualità, marzapane da forno e rivestimenti di confetteria.",
+            "color": "Pelle Marrone Cannella / Nocciolo Cremoso",
+            "harvestMonths": "Agosto – Settembre",
+            "storage": "Magazzino asciutto e ventilato <15°C",
+            "shelfLife": "18 mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "10kg Caixa a Vácuo",
+              "25kg Sacos de Papel Multi-camada"
+            ],
+            "name": "Amêndoas doces turcas (Cru Natural & Grãos Torrados - Tipo Ferragnes)",
+            "description": "Grandes e alongados grãos de amêndoa doce com pele lisa de canela e crocância firme. Calibrados para embalagens premium de lanches, marzipã para confeitaria e coberturas de confeitos.",
+            "color": "Pele Castanho Canela / Grão Cremoso",
+            "harvestMonths": "Agosto – Setembro",
+            "storage": "Armazém seco e ventilado <15°C",
+            "shelfLife": "18 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "10kg Vacuümdoos",
+              "25kg Mehrwandige Papieren Zakjes"
+            ],
+            "name": "Turkse zoete amandelen (Rauw, natuurlijk en geroosterde korrels - Ferragnes-type)",
+            "description": "Grote, langwerpige zoete amandelkorrels met een gladde kaneelschil en stevige, knapperige crunch. Gekalibreerd voor premium snackverpakkingen, bakmarsipan en snoeplaagjes.",
+            "color": "Kaneelbruine schil / Romige korrel",
+            "harvestMonths": "Augustus – september",
+            "storage": "Droog geventileerd magazijn <15°C",
+            "shelfLife": "18 Maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "10kg Karton próżniowy",
+              "25kg Torby papierowe wielowarstwowe"
+            ],
+            "name": "Tureckie słodkie migdały (surowe, naturalne i prażone ziarna – typ Ferragnes)",
+            "description": "Duże, wydłużone słodkie migdałowe ziarna z gładką cynamonową skórką i twardą, chrupiącą chrupiącością. Dostosowane do premium opakowań przekąsek, pieczenia marcipanu i powłok cukierniczych.",
+            "color": "Cynamonowo-brązowa skórka / Kremowe ziarno",
+            "harvestMonths": "sierpień – wrzesień",
+            "storage": "Suchy, wentylowany magazyn <15°C",
+            "shelfLife": "18 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "10kg Carton de vid",
+              "25kg Pungi de hârtie cu mai multe straturi"
+            ],
+            "name": "Migdale dulci turcești (crude naturale și boabe prăjite - tip Ferragnes)",
+            "description": "Boabe mari și alungite de migdale dulci, cu coajă netedă de scorțișoară și crocant ferm și crocant. Calibrate pentru ambalaje premium pentru gustări, marțipan pentru copt și straturi de dulciuri.",
+            "color": "Coajă maro cu scorțișoară / Nucleu cremos",
+            "harvestMonths": "August – septembrie",
+            "storage": "Depozit ventilat uscat <15°C",
+            "shelfLife": "18 Luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "10kg Вакуумна кутия",
+              "25kg Многослойни хартиени торби"
+            ],
+            "name": "Турски сладки бадеми (сурови натурални и печени зърна - тип ферански)",
+            "description": "Големи, удължени сладки бадемови зърна с гладка канелена коричка и твърда хрупкава текстура. Калибрирани за премиум опаковки за закуски, марципан за печене и сладкарски покрития.",
+            "color": "Канелена кафява кожа / кремообразно ядро",
+            "harvestMonths": "август – септември",
+            "storage": "Сух вентилиран склад <15°C",
+            "shelfLife": "18 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "10kg Χαρτοκιβώτιο κενού",
+              "25kg Τσάντες Χαρτιού Πολυτοίχης"
+            ],
+            "name": "Τουρκικά γλυκά αμύγδαλα (Ωμοί, φυσικοί & καβουρδισμένοι πυρήνες - Τύπος Ferragnes)",
+            "description": "Μεγάλοι, επιμήκεις πυρήνες γλυκού αμυγδάλου με λεία φλούδα κανέλας και σφιχτό τραγανό τραγανό. Βαθμονομημένο για premium συσκευασίες σνακ, αμυγδαλόπαστα ψησίματος και επικαλύψεις ζαχαροπλαστικής.",
+            "color": "Κανέλα Καφέ Δέρμα / Κρεμώδης Πυρήνας",
+            "harvestMonths": "Αύγουστος – Σεπτέμβριος",
+            "storage": "Ξηρός αεριζόμενος <15°C αποθήκης",
+            "shelfLife": "18 Μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "10kg Vakuum karton",
+              "25kg Višeslojne papirne kese"
+            ],
+            "name": "Turski slatki bademi (sirovo prirodno i pečeno zrno - tip feranjaca)",
+            "description": "Velike, izdužene jezgre slatkog badema sa glatkom kožom cimeta i čvrstom hrskavom hrskavom. Kalibrisano za vrhunsko pakovanje za užinu, pečenje marcipana i konditorskih premaza.",
+            "color": "Cimet smeđa koža / kremasto jezgro",
+            "harvestMonths": "Avgust – septembar",
+            "storage": "Suva ventilacija skladište <15°C",
+            "shelfLife": "18 meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "10kg вакуумна коробка",
+              "25kg Паперові пакети з багатьма шарами"
+            ],
+            "name": "Турецькі солодкі мигдаль (сирі натуральні та запечені зерна — тип фераньє)",
+            "description": "Великі, подовжені солодкі мигдальні зерна з гладкою корицею та жорстким хрустким хруском. Відкалібровані для преміальної упаковки для закусок, марципану для випікання та кондитерського покриття.",
+            "color": "Корична-коричнева шкіра / Кремове зерно",
+            "harvestMonths": "серпень – вересень",
+            "storage": "Сухий вентильований склад <15°C",
+            "shelfLife": "18 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "10kg ვაკუმური ყუთი",
+              "25kg მრავალსართულიანი ქაღალდის ჩანთები"
+            ],
+            "name": "თურქული ტკბილი ალმონები (ქსოვილი ბუნებრივი & შემწვარი კაკლები - Ferragnes ტიპი)",
+            "description": "დიდი, გრძელი ნაზი بادամის თესლი გლუვი დარიჩინის ფერის კანის და მყარ-ფრანკი ხმის მქონე. შედგენილია პრემიუმ სნექსის შეფუთვის, მარიცპანის საცხობი და კონფეტების საფარველებისათვის.",
+            "color": "დარიჩინის ყავისფერი კანი / კრემისფერი თესლი",
+            "harvestMonths": "აგვისტო – სექტემბერი",
+            "storage": "მშრალი ვენტილირებული საწყობი <15°C",
+            "shelfLife": "18 თვე"
+          },
+          "az": {
+            "packagingTypes": [
+              "10kg Vakum Kartonu",
+              "25kg Çoxqatlı Kağız Çantalar"
+            ],
+            "name": "Türk Şirin Badamları (Xam, Təbii və Qovrulmuş Dənələr - Ferragnes Tipi)",
+            "description": "Böyük, uzadılmış şirin badam dənələri, hamar darçın qabığı və möhkəm, xırtıldayan xırtıltı. Premium qəlyanaltı qablaşdırması, bişirmə marzipanı və konfet örtükləri üçün kalibrlənib.",
+            "color": "Darçın Qəhvəyi Dəri / Kremli Dənə",
+            "harvestMonths": "Avqust – Sentyabr",
+            "storage": "Quru havalandırılan anbar <15°C",
+            "shelfLife": "18 Ay"
+          },
+          "uz": {
+            "packagingTypes": [
+              "10kg Vakuum Karton",
+              "25kg Ko‘p qatlamli qog‘oz sumkalar"
+            ],
+            "name": "Turkiya shirin bodomlari (Xom tabiiy va qovurilgan yong‘oq - Ferragnes turi)",
+            "description": "Katta, uzun shaklli shirin bodom yong‘oqlari, silliq dolchin qobig‘i va qattiq, xushbo‘y xiraligi bilan. Premium atirlik qadoqlash, marzipan pishirish va shirinlik qoplamalari uchun kalibrlangan.",
+            "color": "Dolchin jigarrang qobiqli / Kremli yadrosi",
+            "harvestMonths": "Avgust – Sentyabr",
+            "storage": "Quritilgan, shamollatiladigan ombor <15°C",
+            "shelfLife": "18 Oy"
+          },
+          "kk": {
+            "packagingTypes": [
+              "10kg Вакуум қорабы",
+              "25kg Көп қабатты қағаз пакеттер"
+            ],
+            "name": "Түрік тәтті бадам (шикі табиғи және қуырылған дәндер - феррань түрі)",
+            "description": "Үлкен, ұзын тәтті бадам дәндері, жұмсақ даршын қабығы және қатты қытырлақ қытырлақ қаптамасы. Жоғары сапалы тіскебасар қаптамаларына, пісіруге арналған марципанға және кондитерлік жабындарға калибрленген.",
+            "color": "Даршын қоңыр тері / Кремді дәнді",
+            "harvestMonths": "Тамыз – Қыркүйек",
+            "storage": "Құрғақ желдетілетін қойма <15°C",
+            "shelfLife": "18 ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "10kg جعبه جاروبرقی",
+              "25kg کیسه‌های کاغذی چندلایه"
+            ],
+            "name": "بادام شیرین ترکی (هسته خام طبیعی و برشته شده - نوع فراگن)",
+            "description": "دانه های بادام شیرین بزرگ و کشیده با پوست صاف دارچینی و تردی سفت و ترد. کالیبره شده برای بسته بندی اسنک با کیفیت، مارزیپان پخت و پوشش های شیرینی پزی.",
+            "color": "پوست قهوه ای دارچینی / هسته کرمی",
+            "harvestMonths": "اوت – سپتامبر",
+            "storage": "انبار خشک تهویه شده <15°C",
+            "shelfLife": "18 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "10kg वैक्यूम कार्टन",
+              "25kg मल्टी-वाल पेपर बैग"
+            ],
+            "name": "तुर्की मीठे बादाम (कच्चे प्राकृतिक और भुने हुए गुठली - फेरागनेस प्रकार)",
+            "description": "चिकनी दालचीनी त्वचा और फर्म कुरकुरा क्रंच के साथ बड़े, लम्बी मीठे बादाम की गुठली। प्रीमियम स्नैक पैकेजिंग, बेकिंग मार्जिपन और कन्फेक्शनरी कोटिंग्स के लिए कैलिब्रेटेड किया गया।",
+            "color": "दालचीनी भूरी त्वचा/मलाईदार गिरी",
+            "harvestMonths": "अगस्त - सितंबर",
+            "storage": "सूखा हवादार गोदाम <15°C",
+            "shelfLife": "18 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "10kg ویکیوم کارٹن",
+              "25kg کثیر دیواری کاغذی تھیلے"
+            ],
+            "name": "ترکی میٹھے بادام (خام قدرتی اور بھنے ہوئے دانے - فیراگنیز قسم)",
+            "description": "بڑے، لمبے میٹھے بادام کے دانے ہموار دار چینی کی جلد اور سخت کرسپ کرنچ۔ پریمیم اسنیک پیکجنگ، بیکنگ مارزیپان، اور کنفیکشنری کوٹنگز کے لیے کیلیبریٹ کیا گیا۔",
+            "color": "دار چینی بھوری جلد / کریمی کرنل",
+            "harvestMonths": "اگست – ستمبر",
+            "storage": "خشک ہوا دار گودام <15°C",
+            "shelfLife": "18 مہینے"
+          },
+          "bn": {
+            "packagingTypes": [
+              "10kg ভ্যাকুয়াম কার্টন",
+              "25kg মাল্টি-ওয়াল পেপার ব্যাগ"
+            ],
+            "name": "তুর্কি মিষ্টি বাদাম (কাঁচা প্রাকৃতিক এবং ভাজা কার্নেল - ফেরাগনেস টাইপ)",
+            "description": "মসৃণ দারুচিনি ত্বক এবং দৃঢ় খাস্তা ক্রাঞ্চ সহ বৃহত্তর, দীর্ঘায়িত মিষ্টি বাদামের কার্নেল। প্রিমিয়াম স্ন্যাক প্যাকেজিং, বেকিং মার্জিপান এবং মিষ্টান্ন আবরণের জন্য ক্যালিব্রেটেড।",
+            "color": "দারুচিনি বাদামী ত্বক / ক্রিমি কার্নেল",
+            "harvestMonths": "আগস্ট - সেপ্টেম্বর",
+            "storage": "শুকনো বায়ুচলাচল গুদাম <15°C",
+            "shelfLife": "18 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "10kg 真空盒",
+              "25kg 多层纸袋"
+            ],
+            "name": "土耳其甜杏仁（生天然烘焙核粒 - 铁兰尼斯型）",
+            "description": "大而细长的甜杏仁，肉皮光滑，口感坚脆。校准用于高级零食包装、烘焙杏仁糖和糖果涂层。",
+            "color": "肉桂棕色果皮 / 奶油玉米粒",
+            "harvestMonths": "8月-9月",
+            "storage": "干燥通风仓库<15°C",
+            "shelfLife": "18个月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "10kg 真空パック",
+              "25kg 多層紙袋"
+            ],
+            "name": "トルコのスイートアーモンド(生・天然・焙煎の粒 - フェラーニュタイプ)",
+            "description": "大きく細長い甘いアーモンドの粒は、滑らかなシナモン色の皮としっかりしたカリッとした食感。プレミアムスナックパッケージ、焼きマジパン、菓子コーティングに対応。",
+            "color": "シナモンブラウンの皮/クリーミーなカーネル",
+            "harvestMonths": "8月 – 9月",
+            "storage": "乾燥換気倉庫<15°C",
+            "shelfLife": "18ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "10kg 진공청소기 상자",
+              "25kg 다중벽 종이 봉투"
+            ],
+            "name": "터키식 스위트 아몬드 (생 천연 및 구운 알갱이 - 페라냐 타입)",
+            "description": "크고 길게 뻗은 달콤한 아몬드 알갱이로, 매끄러운 계피 껍질과 단단하고 바삭한 아삭함. 프리미엄 스낵 포장, 베이킹용 마지팬, 제과 코팅에 맞게 보정됨.",
+            "color": "시나몬 브라운 껍질 / 크리미한 커널",
+            "harvestMonths": "8월 – 9월",
+            "storage": "건조 환기 창고 <15°C",
+            "shelfLife": "18개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "10kg Vakum Karton",
+              "25kg Kantong Kertas Multi-lapisan"
+            ],
+            "name": "Almond Manis Turki (Biji Mentah Alami & Panggang - Tipe Ferragnes)",
+            "description": "Biji almond manis besar dan memanjang dengan kulit kayu manis yang halus dan renyah yang keras. Dikalibrasi untuk kemasan camilan premium, marzipan panggang, dan lapisan permen.",
+            "color": "Kulit Coklat Kayu Manis / Biji Krim",
+            "harvestMonths": "Agustus – September",
+            "storage": "Gudang kering berventilasi <15°C",
+            "shelfLife": "18 Bulan"
+          },
+          "ms": {
+            "packagingTypes": [
+              "10kg Kotak Vakum",
+              "25kg Beg Kertas Berlapis Banyak"
+            ],
+            "name": "Badam Manis Turki (Biji Mentah Semula Jadi & Panggang - Jenis Ferragnes)",
+            "description": "Biji badam manis yang besar dan memanjang dengan kulit kayu manis yang licin dan rangup yang keras. Dikalibrasi untuk pembungkusan snek premium, marzipan pembakar, dan salutan gula-gula.",
+            "color": "Kulit Coklat Kayu Manis / Biji Berkrim",
+            "harvestMonths": "Ogos – September",
+            "storage": "Gudang kering berpengudaraan <15°C",
+            "shelfLife": "18 Bulan"
+          },
+          "sw": {
+            "packagingTypes": [
+              "10kg Katoni ya Utupu",
+              "25kg Mifuko ya Karatasi yenye Ukuta Mwingi"
+            ],
+            "name": "Lozi Tamu za Kituruki (Punje Mbichi za Asili na Zilizochomwa - Aina ya Ferragnes)",
+            "description": "Punje kubwa za mlozi tamu zilizoinuliwa na ngozi laini ya mdalasini na crunch thabiti. Imerekebishwa kwa ufungaji wa vitafunio vya hali ya juu, kuoka marzipan, na mipako ya confectionery.",
+            "color": "Ngozi ya Kahawia ya Mdalasini / Kernel ya Creamy",
+            "harvestMonths": "Agosti - Septemba",
+            "storage": "Ghala kavu lenye uingizaji hewa <15°C",
+            "shelfLife": "Miezi 18"
+          }
+        }
+      },
+      {
+        "id": "traditional-corum-leblebi",
+        "slug": "traditional-corum-leblebi",
+        "name": "Traditional Çorum Roasted Chickpeas (Yellow & White Leblebi)",
+        "image": "/images/products/turkish-nuts-kuruyemis-nilasya.jpg",
+        "nameTr": "Geleneksel Çorum Çifte Kavrulmuş Sarı Leblebi & Beyaz Leblebi",
+        "description": "An iconic Anatolian specialty snack prepared by multi-stage wood-fired oven resting and tempering of selected large Turkish chickpeas. Naturally gluten-free, low fat, and packed with plant protein.",
+        "descriptionTr": "Seçme iri Türk nohutlarının geleneksel fırınlarda dinlendirilip çifte kavrulmasıyla elde edilen efsanevi Çorum leblebisi. Doğal olarak glutensiz, düşük yağlı ve yüksek bitkisel proteinli atıştırmalık.",
+        "color": "Crisp Golden Yellow / Crunchy White",
+        "colorTr": "Çıtır Altın Sarısı / Çıtır Beyaz",
+        "size": "9mm - 10mm+",
+        "caliber": "Double Roasted Snack Grade",
+        "moisture": "< 3.0%",
+        "purity": "99.9%",
+        "harvestMonths": "Continuous Roasting Year-Round",
+        "harvestMonthsTr": "Yıl Boyu Kesintisiz Günlük Fırınlama",
+        "storage": "Airtight moisture-barrier packaging",
+        "storageTr": "Nem almayan hava sızdırmaz ambalaj",
+        "shelfLife": "12 Months",
+        "shelfLifeTr": "12 Ay",
+        "packagingTypes": [
+          "20kg Master Carton with Liner",
+          "5kg Retail Packs",
+          "25kg Bags"
+        ],
+        "packagingTypesTr": [
+          "20kg İçi Naylonlu Koli",
+          "5kg Perakende Paket",
+          "25kg Çuval"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "20kg الكرتون الرئيسي مع بطانة",
+              "5kg عبوات التجزئة",
+              "25kg أكياس"
+            ],
+            "name": "الحمص المحمص التقليدي من قراروم (اللب الأبيض والأصفر)",
+            "description": "وجبة خفيفة أيقونية من الأناضول تُحضّر عبر خطوات متعددة من التحميص في فرن حطب واختيار أكبر حبوب الحمص التركية وتركها لتبرد وتتزن. خالية من الغلوتين طبيعيًا، قليلة الدهون، وغنية بالبروتين النباتي.",
+            "color": "أصفر ذهبي مقرمش / أبيض مقرمش",
+            "harvestMonths": "التحميص المستمر طوال السنة",
+            "storage": "تغليف محكم ضد الرطوبة",
+            "shelfLife": "12 شهور"
+          },
+          "ru": {
+            "packagingTypes": [
+              "20kg Главная коробка с вкладышем",
+              "5kg Розничные упаковки",
+              "25kg Пакеты"
+            ],
+            "name": "Традиционный жареный нут из Чорума (желтый и белый леблебби)",
+            "description": "Знаковая анатолийская закуска, приготовленная с использованием многоступенчатой печи на дровах с выдержкой и закалкой выбранного крупного турецкого нута. Естественно безглютеновая, с низким содержанием жира и богатая растительным белком.",
+            "color": "Хрустящий золотисто-желтый / Хрустящий белый",
+            "harvestMonths": "Непрерывная обжарка круглый год",
+            "storage": "Герметичная упаковка с защитой от влаги",
+            "shelfLife": "12 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "20kg Hauptkarton mit Inlay",
+              "5kg Einzelhandelsverpackungen",
+              "25kg Säcke"
+            ],
+            "name": "Traditionelle Çorum geröstete Kichererbsen (Gelbe & Weiße Leblebi)",
+            "description": "Ein ikonischer anatolischer Spezialitätensnack, zubereitet durch mehrstufiges Ofenrösten, Ruhen und Tempern ausgewählter großer türkischer Kichererbsen. Natürlich glutenfrei, fettarm und reich an pflanzlichem Eiweiß.",
+            "color": "Knuspriges Goldgelb / Knackiges Weiß",
+            "harvestMonths": "Ganzjährige kontinuierliche Röstung",
+            "storage": "Luftdichte, feuchtigkeitsdichte Verpackung",
+            "shelfLife": "12 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "20kg Carton principal avec doublure",
+              "5kg Paquets de vente au détail",
+              "25kg Sacs"
+            ],
+            "name": "Pois chiches rôtis traditionnels de Çorum (Leblebi jaunes et blancs)",
+            "description": "Une collation emblématique d'Anatolie préparée par repos et tempérage des gros pois chiches turcs sélectionnés dans un four à bois à plusieurs étapes. Naturellement sans gluten, faible en matières grasses et riche en protéines végétales.",
+            "color": "Jaune doré croustillant / Blanc croquant",
+            "harvestMonths": "Torréfaction continue toute l'année",
+            "storage": "Emballage hermétique barrière à l'humidité",
+            "shelfLife": "12 mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "Cartón maestro con forro 20kg",
+              "Paquetes minoristas 5kg",
+              "Bolsas 25kg"
+            ],
+            "name": "Garbanzos asados tradicionales de Çorum (Leblebi amarillo y blanco)",
+            "description": "Un snack icónico de Anatolia preparado mediante horno de leña en varias etapas, reposo y templado de garbanzos turcos grandes seleccionados. Naturalmente libre de gluten, bajo en grasa y rico en proteína vegetal.",
+            "color": "Amarillo dorado crujiente / Blanco crujiente",
+            "harvestMonths": "Tostado continuo durante todo el año",
+            "storage": "Empaque hermético con barrera contra la humedad",
+            "shelfLife": "12 Meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "Cartone Principale 20kg con Rivestimento",
+              "Confezioni Retail 5kg",
+              "Sacchi 25kg"
+            ],
+            "name": "Ceci Tostati Tradizionali di Çorum (Leblebi Gialli e Bianchi)",
+            "description": "Uno snack iconico della Anatolia preparato con cottura a legna a più fasi, riposo e temperamento di ceci turchi grandi selezionati. Naturalmente senza glutine, a basso contenuto di grassi e ricco di proteine vegetali.",
+            "color": "Giallo Dorato Croccante / Bianco Croccante",
+            "harvestMonths": "Tostatura Continua Tutto l'Anno",
+            "storage": "Confezionamento ermetico a barriera contro l'umidità",
+            "shelfLife": "12 mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "20kg Caixa-mestra com Forro",
+              "5kg Embalagens para Varejo",
+              "25kg Sacos"
+            ],
+            "name": "Tradicional Grão-de-bico Assado Çorum (Leblebi Amarela & Branca)",
+            "description": "Um lanche típico icônico da Anatólia preparado por forno a lenha em várias etapas, seguido de repouso e temperagem de grãos grandes de grão-de-bico turco selecionados. Naturalmente sem glúten, baixo em gordura e rico em proteína vegetal.",
+            "color": "Dourado Crocante / Branco Crocante",
+            "harvestMonths": "Torrefação Contínua Durante o Ano Todo",
+            "storage": "Embalagem hermética com barreira de umidade",
+            "shelfLife": "12 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "20kg Hoofddoos met Liner",
+              "5kg Verkoopverpakkingen",
+              "25kg Zakjes"
+            ],
+            "name": "Traditionele Çorum Geroosterde Kikkererwten (Gele & Witte Leblebi)",
+            "description": "Een iconische Anatolische specialiteitssnack, bereid door meertraps houtovenroostering, rusten en temperen van geselecteerde grote Turkse kikkererwten. Natuurlijk glutenvrij, vetarm en boordevol plantaardige eiwitten.",
+            "color": "Knapperig Goudgeel / Krokant Wit",
+            "harvestMonths": "Continue Rösting Hele Jaar Door",
+            "storage": "Luchtdichte, vochtwerende verpakking",
+            "shelfLife": "12 maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "20kg Główny karton z wkładką",
+              "5kg Opakowania detaliczne",
+              "25kg Torby"
+            ],
+            "name": "Tradycyjne prażone ciecierzyce z Çorum (żółte i białe leblebi)",
+            "description": "Ikoniczna przystawka anatolijska przygotowywana w wieloetapowym piecu opalanym drewnem, z odpoczynkiem i temperowaniem wyselekcjonowanej dużej tureckiej ciecierzycy. Naturalnie bezglutenowe, niskotłuszczowe i bogate w białko roślinne.",
+            "color": "Chrupiąco złocisto-żółte / Chrupiąco białe",
+            "harvestMonths": "Ciągłe prażenie przez cały rok",
+            "storage": "Hermetyczne opakowanie chroniące przed wilgocią",
+            "shelfLife": "12 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "20kg Cutie principală cu liner",
+              "5kg Pachete de vânzare cu amănuntul",
+              "25kg Pungi"
+            ],
+            "name": "Năut prăjit tradițional Çorum (Leblebi galben și alb)",
+            "description": "Un gustare emblematică anatoliană preparată prin coacere în cuptor pe lemne în mai multe etape, odihnire și temperare a năutului turcesc mare selectat. Fără gluten, cu conținut scăzut de grăsimi și bogat în proteine vegetale.",
+            "color": "Crocant Galben Auriu / Alb Crocant",
+            "harvestMonths": "Prăjire continuă pe tot parcursul anului",
+            "storage": "Ambalaj etanș cu barieră împotriva umidității",
+            "shelfLife": "12 Luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "20kg Главна картонена кутия с вътрешна облицовка",
+              "5kg Продуктови опаковки за търговия на дребно",
+              "25kg Торбички"
+            ],
+            "name": "Традиционни печени нахутени зърна от Чорум (жълти и бели леблебии)",
+            "description": "Иконична анатолийска специалитетна закуска, приготвена чрез многостепенно печене в пещ на дърва с почивка и темпериране на избрания голям турски нахут. Естествено без глутен, с ниско съдържание на мазнини и богата на растителен протеин.",
+            "color": "Хрупкаво златисто жълто / хрупкаво бяло",
+            "harvestMonths": "Непрекъснато печене през цялата година",
+            "storage": "Херметично опаковане с бариера срещу влага",
+            "shelfLife": "12 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "20kg Κύριο Κουτί με Επένδυση",
+              "5kg Τσάντες Λιανικής",
+              "25kg Τσάντες"
+            ],
+            "name": "Παραδοσιακά Ψημένα Ρεβίθια Çorum (Κίτρινα & Λευκά Leblebi)",
+            "description": "Ένα εμβληματικό ανατολιτικό σνακ ειδικότητας παρασκευασμένο με πολυβηματική ψησταριά σε φούρνο ξύλου και ξεκούραση και ωρίμανση επιλεγμένων μεγάλων τουρκικών ρεβιθιών. Φυσικά χωρίς γλουτένη, χαμηλό σε λιπαρά και γεμάτο φυτική πρωτεΐνη.",
+            "color": "Τραγανό Χρυσό Κίτρινο / Τραγανό Λευκό",
+            "harvestMonths": "Συνεχής Ψήσιμο Όλο τον Χρόνο",
+            "storage": "Αεροστεγής συσκευασία με φράγμα υγρασίας",
+            "shelfLife": "12 μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "20kg Glavna kartonska kutija sa unutrašnjim slojem",
+              "5kg Pakovanja za maloprodaju",
+              "25kg Kese"
+            ],
+            "name": "Tradicionalna pečena Çorum leblebija (žuta i bela leblebija)",
+            "description": "Ikonični anadolijski specijalitet snack pripremljen više faza pečenjem u drvenoj peći sa postepenim odmaranjem i temperiranjem odabranih velikih turskih leblebija. Prirodno bez glutena, niskog sadržaja masti i bogat biljnim proteinom.",
+            "color": "Hrskavo zlatno žuto / hrskavo belo",
+            "harvestMonths": "Kontinuirano pečenje tokom cele godine",
+            "storage": "Vakuum pakovanje otporno na vlagu",
+            "shelfLife": "12 meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "20kg Основна картонна коробка з вкладкою",
+              "5kg Роздрібні упаковки",
+              "25kg Пакети"
+            ],
+            "name": "Традиційний чорамський смажений нут (жовтий та білий леблебі)",
+            "description": "Знакова спеціальна закуска з Анатолії, приготована шляхом багатоступеневого обсмажування в дров’яній печі та витримки обраного великого турецького нуту. Природно безглютенова, з низьким вмістом жиру та багата рослинним білком.",
+            "color": "Хрусткий золотисто-жовтий / Хрусткий білий",
+            "harvestMonths": "Безперервне обсмажування цілий рік",
+            "storage": "Герметична упаковка, що запобігає проникненню вологи",
+            "shelfLife": "12 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "20kg მთავარი ყუთი ლაინერით",
+              "5kg საცალო შეფუთვები",
+              "25kg ჩანთები"
+            ],
+            "name": "ტრადიციული ჭორუმის შემწვარი ხორბლის გული (ყვითელი და თეთრი ლებლеби)",
+            "description": "ცნობილი ანატოლიური სპეციალტეტი სნექსი, მომზადებული მრავალფაზიანი ხის ღუმელში დიდ თურქულ ხორბლის გულებზე შეწვა და დასვენება. ბუნებრივად გლუტენის გარეშე, დაბალკალორიული, და სავსე მცენარეული პროტეინით.",
+            "color": "ხრაშუნა ოქროსისფერი ყვითელი / ხრაშუნა თეთრი",
+            "harvestMonths": "უწყვეტი შემწვარი მთელი წლის განმავლობაში",
+            "storage": "ჰაერისმჭრელი ტენიანობის ბარიერის შეფუთვები",
+            "shelfLife": "12 თვის"
+          },
+          "az": {
+            "packagingTypes": [
+              "20kg Astarlı Usta Karton",
+              "5kg Pərakəndə Paketlər",
+              "25kg Çantalar"
+            ],
+            "name": "Ənənəvi Çorum Qovrulmuş Noxudlar (Sarı və Ağ Leblebi)",
+            "description": "Seçilmiş iri Türk noxudlarının çoxsəviyyəli odlu sobada qovrulub istirahətə buraxılması və temperlənməsi ilə hazırlanmış ikonik Anadolu ixtisaslı qəlyanaltı. Təbii olaraq qlütensiz, az yağlı və bitki zülalı ilə zəngin.",
+            "color": "Xırtıldayan Qızıl Sarı / Xırtıldayan Ağ",
+            "harvestMonths": "İlin Bütünündə Davamlı Qovurma",
+            "storage": "Hava keçirməyən, rütubət maneəli qablaşdırma",
+            "shelfLife": "12 Ay"
+          },
+          "uz": {
+            "packagingTypes": [
+              "20kg Meister Karton ichki qatlam bilan",
+              "5kg Chakana paketlar",
+              "25kg Sumkalar"
+            ],
+            "name": "An’anaviy Çorum qovurilgan no‘xat (sariq va oq leblebi)",
+            "description": "Tanlangan katta turk no‘xatlarini ko‘p bosqichli yog‘och pechda damlab, temperlash bilan tayyorlangan mashhur Anatoliya atirlik snaki. Tabiiy ravishda glutensiz, past yog‘li va o‘simlik oqsili bilan boy.",
+            "color": "Xirillagan oltin sariq / Xirillagan oq",
+            "harvestMonths": "Butun yil davomida uzluksiz qovurish",
+            "storage": "Havo o‘tkazmaydigan namlik qarshiligi bo‘lgan qadoqlash",
+            "shelfLife": "12 Oylik"
+          },
+          "kk": {
+            "packagingTypes": [
+              "20kg Қаптамалы негізгі картон",
+              "5kg Бөлшек сауда пакеттері",
+              "25kg Пакеттер"
+            ],
+            "name": "Дәстүрлі Чорумдағы қуырылған нут (Сары және Ақ Леблебі)",
+            "description": "Таңдалған үлкен түрік нутынан көп сатылы ағаш пешінде дайындалатын әйгілі Анадол шұжық тағамы. Табиғи түрде глютенсіз, майы аз және өсімдік белкіне бай.",
+            "color": "Қытырлақ Алтын Сары / Қытырлақ Ақ",
+            "harvestMonths": "Жыл бойы үзіліссіз қуырылу",
+            "storage": "Ауа өткізбейтін ылғалдан қорғайтын орам",
+            "shelfLife": "12 ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "20kg کارتُن اصلی با لاینر",
+              "5kg بسته‌های خرده‌فروشی",
+              "25kg کیسه‌ها"
+            ],
+            "name": "نخودچی سنتی چوروم (لبلبی زرد و سفید)",
+            "description": "یک خوراکی نمادین آناتولی که با استفاده از نخود بزرگ ترکیه‌ای انتخاب شده و طی فرآیند چند مرحله‌ای پخت در تنور چوبی و استراحت و ته‌نشینی تهیه می‌شود. به طور طبیعی بدون گلوتن، کم‌چرب و غنی از پروتئین گیاهی.",
+            "color": "طلایی زرد ترد / سفید ترد",
+            "harvestMonths": "برشته‌کردن مداوم در تمام طول سال",
+            "storage": "بسته‌بندی دربسته با مانع رطوبت",
+            "shelfLife": "12 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "20kg मास्टर कार्टन विद लाइनर",
+              "5kg रिटेल पैक्स",
+              "25kg बैग्स"
+            ],
+            "name": "पारंपरिक चोरुम भुनी हुई चना (पीला और सफेद लेब्लबी)",
+            "description": "एक प्रतीकात्मक अनातोलियन विशेष स्नैक जो चयनित बड़े तुर्की चने की बहु-चरण की लकड़ी में भुनी हुई भट्टी में आराम और टेम्परिंग करके तैयार किया जाता है। स्वाभाविक रूप से ग्लूटेन-मुक्त, कम वसा वाला, और पौधों से प्राप्त प्रोटीन से भरपूर।",
+            "color": "कुरकुरा सुनहरा पीला / क्रंची सफेद",
+            "harvestMonths": "साल भर लगातार भुना जाना",
+            "storage": "एयरटाइट नमी-प्रतिरोधी पैकेजिंग",
+            "shelfLife": "12 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "20kg ماسٹر کارٹن لائینر کے ساتھ",
+              "5kg ریٹیل پیک",
+              "25kg تھیلے"
+            ],
+            "name": "روایتی چورم بھنے ہوئے چنے (پیلا اور سفید لبلبی)",
+            "description": "ایک مشہور اناطولیہ خصوصی ناشتہ جو منتخب بڑے ترک چنوں کی ملٹی-اسٹیج لکڑی سے لگی ہوئی بھٹی میں پکائی اور آرام دی گئی ہو۔ قدرتی طور پر گلٹین فری، کم چربی والا، اور پودوں سے حاصل کردہ پروٹین سے بھرپور۔",
+            "color": "کرسپ سنہری پیلا / کرنچی سفید",
+            "harvestMonths": "سال بھر مسلسل بھونا جانا",
+            "storage": "ہوا بند نمی سے بچانے والی پیکیجنگ",
+            "shelfLife": "12 مہینے"
+          },
+          "bn": {
+            "packagingTypes": [
+              "20kg মাস্টার কার্টন লাইন সহ",
+              "5kg রিটেইল প্যাক",
+              "25kg ব্যাগ"
+            ],
+            "name": "প্রচলিত চোরুম ভাজা ছোলা (হলুদ ও সাদা লেবলেবি)",
+            "description": "একটি আইকনিক আনাতোলিয়ান বিশেষ ধরনের নাস্তা যা নির্বাচিত বড় তুর্কি ছোলার বহু-পর্বের কাঠের চুল炉তে রান্না, বিশ্রাম ও টেম্পারিং করে তৈরি করা হয়। স্বাভাবিকভাবে গ্লুটেন-মুক্ত, কম চর্বিযুক্ত, এবং উদ্ভিদ প্রোটিনে সমৃদ্ধ।",
+            "color": "ক্রিস্প গোল্ডেন হলুদ / ক্রাঞ্চি সাদা",
+            "harvestMonths": "সারাবছর ধারাবাহিক ভাজা",
+            "storage": "বায়ুরোধক আর্দ্রতা-বাধা প্যাকেজিং",
+            "shelfLife": "12 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "20kg 带内衬的大箱",
+              "5kg 零售包装",
+              "25kg 袋装"
+            ],
+            "name": "传统柔鲁姆烤鹰嘴豆（黄白色Leblebi）",
+            "description": "一种标志性的安纳托利亚特色小吃，通过多阶段木火烤炉烘焙、静置和调温精选的大颗土耳其鹰嘴豆制成。天然无麸质，低脂肪，富含植物蛋白。",
+            "color": "脆金黄 / 香脆白色",
+            "harvestMonths": "全年连续烘焙",
+            "storage": "密封防潮包装",
+            "shelfLife": "12个月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "20kg ライナー付きマスターカートン",
+              "5kg 小売パック",
+              "25kg 袋"
+            ],
+            "name": "伝統的なチョルムのローストひよこ豆（黄色＆白のレブレビ）",
+            "description": "選び抜かれた大粒のトルコひよこ豆を使い、複数段階の薪窯で焼き、休ませ、調整して作られる象徴的なアナトリア名物スナック。自然にグルテンフリー、低脂肪で植物性タンパク質が豊富。",
+            "color": "サクサクの黄金色／カリカリの白",
+            "harvestMonths": "年中連続焙煎",
+            "storage": "密閉の防湿包装",
+            "shelfLife": "12ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "20kg 라이너가 있는 마스터 카톤",
+              "5kg 소매용 팩",
+              "25kg 봉투"
+            ],
+            "name": "전통 초룸 구운 병아리콩 (노란색 & 흰색 레블레비)",
+            "description": "선택된 대형 터키 병아리콩을 다단계 장작 오븐에서 구운 뒤 휴지 및 온도 조절하여 준비한 상징적인 아나톨리아 특산 스낵. 자연적으로 글루텐 프리, 저지방, 식물성 단백질 풍부.",
+            "color": "바삭한 금황색 / 아삭한 백색",
+            "harvestMonths": "연중 지속적인 로스팅",
+            "storage": "밀폐 습기 차단 포장",
+            "shelfLife": "12개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "20kg Karton Induk dengan Liner",
+              "5kg Paket Ritel",
+              "25kg Kantong"
+            ],
+            "name": "Kacang Arab Panggang Tradisional Çorum (Leblebi Kuning & Putih)",
+            "description": "Camilan khas Anatolia yang ikonik disiapkan melalui pemanggangan bertahap dengan oven berbahan bakar kayu dan pendinginan serta pematangan kacang Arab besar pilihan dari Turki. Secara alami bebas gluten, rendah lemak, dan kaya protein nabati.",
+            "color": "Kuning Emas Renyah / Putih Renyah",
+            "harvestMonths": "Pemanggangan Berkelanjutan Sepanjang Tahun",
+            "storage": "Kemasan kedap udara dan tahan kelembaban",
+            "shelfLife": "12 Bulan"
+          },
+          "ms": {
+            "packagingTypes": [
+              "20kg Kotak Induk dengan Lapisan Dalam",
+              "5kg Pek Runcit",
+              "25kg Beg"
+            ],
+            "name": "Kacang Chickpeas Panggang Tradisional Çorum (Leblebi Kuning & Putih)",
+            "description": "Snek khas Anatolia yang ikonik disediakan melalui proses multi-tahap iaitu pembakaran dalam ketuhar kayu, perlepasan dan penyamaan haba kacang chickpea Turki besar terpilih. Secara semula jadi bebas gluten, rendah lemak, dan kaya dengan protein tumbuhan.",
+            "color": "Kekuningan Emas Rangup / Putih Rangup",
+            "harvestMonths": "Pemanggangan Berterusan Sepanjang Tahun",
+            "storage": "Pembungkusan kedap udara dan pelindung kelembapan",
+            "shelfLife": "12 Bulan"
+          },
+          "sw": {
+            "packagingTypes": [
+              "20kg Kila Sanduku Kuu lenye Laini",
+              "5kg Vizaani vya Kuuza",
+              "25kg Mifuko"
+            ],
+            "name": "Njugu za Jadi za Çorum zilizochomwa (Leblebi ya Njano na Nyeupe)",
+            "description": "Kitafunwa cha kipekee cha Anatolia kilichotayarishwa kwa hatua nyingi katika tanuri la kuni huku kikipumzika na kupashwa joto kwa njugu kubwa zilizochaguliwa za Uturuki. Hakina gluten kwa asili, mafuta kidogo, na yana protini ya mimea kwa wingi.",
+            "color": "Njano Angavu na Nyepesi / Nyeupe ya Kutoboa",
+            "harvestMonths": "Kuchoma Bila Kuspika Mwaka Mzima",
+            "storage": "Ufungashaji wa Hewa-Safi Anaozuia Unyevu",
+            "shelfLife": "Miezi 12"
+          }
+        }
+      },
+      {
+        "id": "sun-dried-figs-apricots",
+        "slug": "sun-dried-figs-apricots",
+        "name": "Turkish Sun-Dried Figs & Malatya Sun-Dried Apricots (Jumbo Export)",
+        "image": "/images/products/turkish-walnuts-apricots-figs-nilasya.jpg",
+        "nameTr": "Ege Kuru İncir & Malatya Gün Kurusu Doğal Kayısı (Lüks İhracat)",
+        "description": "Naturally dried under the Aegean and Anatolian sun without added sugar. Plump, seed-crunching Lerida and Garland figs from Aydın and velvet-soft sun-cured dark/golden apricots from Malatya.",
+        "descriptionTr": "İlave şeker içermeyen, tamamen doğal güneş altında kurutulmuş Aydın kuru incirleri (Lerida/Garland) ve dünyaca ünlü Malatya gün kurusu ile kükürtlü sarı kayısı seçkisi.",
+        "color": "Honey Amber Figs & Dark Sun-Cured Apricots",
+        "colorTr": "Bal Kehribar İncir & Doğal Esmer Gün Kurusu Kayısı",
+        "size": "Sizes 1 to 4 (Jumbo)",
+        "caliber": "Extra Grade Sun-Cured Fruit",
+        "moisture": "18% - 22%",
+        "purity": "99.9%",
+        "harvestMonths": "August – October",
+        "harvestMonthsTr": "Ağustos – Ekim",
+        "storage": "Cold storage 4°C - 10°C, RH <65%",
+        "storageTr": "Soğuk hava deposu 4°C - 10°C, <%65 Nem",
+        "shelfLife": "12-18 Months",
+        "shelfLifeTr": "12-18 Ay",
+        "packagingTypes": [
+          "5kg / 10kg Master Display Cartons",
+          "1kg Wooden Boxes"
+        ],
+        "packagingTypesTr": [
+          "5kg / 10kg İhracat Kolisi",
+          "1kg Ahşap Gurme Kutu"
+        ],
+        "localized": {
+          "ar": {
+            "packagingTypes": [
+              "كرتونات عرض رئيسية 5kg / 10kg",
+              "صناديق خشبية 1kg"
+            ],
+            "name": "التين التركي المجفف تحت الشمس والمشمش المجفف من ملاطيا (تصدير جامبو)",
+            "description": "مجفف طبيعيًا تحت شمس بحر إيجة والأناضول دون إضافة سكر. تين ليريدا وغارلاند ممتلئ، يقاطع البذور من أيدن ومشمش غامق/ذهبي ناعم مخملي مجفف تحت الشمس من ملاطيا.",
+            "color": "تين كهرماني بالعسل ومشمش غامق مجفف تحت الشمس",
+            "harvestMonths": "أغسطس – أكتوبر",
+            "storage": "65% 10°C 4°C تخزين بارد - RH <",
+            "shelfLife": "12-18 أشهر"
+          },
+          "ru": {
+            "packagingTypes": [
+              "5kg / 10kg Основные демонстрационные коробки",
+              "1kg Деревянные коробки"
+            ],
+            "name": "Турецкие инжир и шиповник Малации, высушенные на солнце (экспортный джамбо)",
+            "description": "Естественная сушка под солнцем Эгейского и Анатолийского регионов без добавления сахара. Сочные, с хрустящими семенами инжиры Лерида и Гарланд из Айдына и бархатисто-мягкие солнечные темные/золотистые абрикосы из Малации.",
+            "color": "Медовый янтарный инжир и темные солнечные абрикосы",
+            "harvestMonths": "август – октябрь",
+            "storage": "Холодное хранение 4°C - 10°C, относительная влажность <65%",
+            "shelfLife": "12-18 месяцев"
+          },
+          "de": {
+            "packagingTypes": [
+              "5kg / 10kg Haupt-Displaykartons",
+              "1kg Holzkisten"
+            ],
+            "name": "Türkische sonnengetrocknete Feigen & Malatya sonnengetrocknete Aprikosen (Jumbo Export)",
+            "description": "Natürlich unter der Ägäis- und Anatolien-Sonne ohne Zuckerzugabe getrocknet. Füllige, samenknackende Lerida- und Garland-Feigen aus Aydın und samtweich sonnengetrocknete dunkle/goldene Aprikosen aus Malatya.",
+            "color": "Honigbernstein-Figen & Dunkle sonnengetrocknete Aprikosen",
+            "harvestMonths": "August – Oktober",
+            "storage": "Kaltlager 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 Monate"
+          },
+          "fr": {
+            "packagingTypes": [
+              "5kg / 10kg Cartons d'exposition principaux",
+              "1kg Boîtes en bois"
+            ],
+            "name": "Figues séchées au soleil turques et abricots séchés au soleil de Malatya (Export Jumbo)",
+            "description": "Naturellement séchés sous le soleil égéen et anatolien sans sucre ajouté. Figues Lerida et Garland dodues et croquantes des graines d’Aydın et abricots noirs/dorés veloutés séchés au soleil de Malatya.",
+            "color": "Figues ambrées au miel & Abricots séchés au soleil foncés",
+            "harvestMonths": "Août – Octobre",
+            "storage": "Stockage à froid 4°C - 10°C, HU <65%",
+            "shelfLife": "12-18 Mois"
+          },
+          "es": {
+            "packagingTypes": [
+              "Cartones maestros de exhibición 5kg / 10kg",
+              "Cajas de madera 1kg"
+            ],
+            "name": "Higos secados al sol turcos y albaricoques de Malatya secos al sol (Exportación Jumbo)",
+            "description": "Secados naturalmente bajo el sol del Egeo y Anatolia sin azúcar añadida. Higos Lerida y Garland jugosos y crujientes de semillas de Aydın, y albaricoques oscuros/dorados curados al sol, suaves como terciopelo, de Malatya.",
+            "color": "Higos ámbar de miel y albaricoques oscuros curados al sol",
+            "harvestMonths": "Agosto – Octubre",
+            "storage": "Almacenamiento en frío 4°C - 10°C, HR <65%",
+            "shelfLife": "12-18 Meses"
+          },
+          "it": {
+            "packagingTypes": [
+              "Cartoni Espositivi Principali 5kg / 10kg",
+              "Scatole di Legno 1kg"
+            ],
+            "name": "Fichi Secchi al Sole Turchi & Albicocche Secche al Sole di Malatya (Esportazione Jumbo)",
+            "description": "Asciugati naturalmente sotto il sole Egeo e Anatolico senza zuccheri aggiunti. Fichi Lerida e Garland carnosi e croccanti dai semi di Aydın e albicocche scure/dorate morbide come velluto essiccate al sole di Malatya.",
+            "color": "Fichi Ambra al Miele & Albicocche Scure Secche al Sole",
+            "harvestMonths": "Agosto – Ottobre",
+            "storage": "Conservazione a freddo 4°C - 10°C, UR <65%",
+            "shelfLife": "12-18 Mesi"
+          },
+          "pt": {
+            "packagingTypes": [
+              "5kg / 10kg Caixas Expositoras Mestras",
+              "1kg Caixas de Madeira"
+            ],
+            "name": "Figos Turcos Secos ao Sol & Damasco Seco de Malatya (Exportação Jumbo)",
+            "description": "Naturalmente secos ao sol do Egeu e da Anatólia sem adição de açúcar. Figos Lerida e Garland carnudos e crocantes das sementes de Aydın e damascos escuros/dourados secos ao sol, macios como veludo, de Malatya.",
+            "color": "Figos Âmbar Mel & Damasco Seco Escuro",
+            "harvestMonths": "Agosto – Outubro",
+            "storage": "Armazenamento a frio 4°C - 10°C, UR <65%",
+            "shelfLife": "12-18 Meses"
+          },
+          "nl": {
+            "packagingTypes": [
+              "5kg / 10kg Hoofddisplaydozen",
+              "1kg Houten Dozen"
+            ],
+            "name": "Turkse Zon Gedroogde Vijgen & Malatya Zon Gedroogde Abrikozen (Jumbo Export)",
+            "description": "Natuurlijke droging onder de zon van de Egeïsche Zee en Anatolië zonder toegevoegde suiker. Uitgebreide, pit-krokante Lerida en Garland vijgen uit Aydın en fluweelzachte zon-gerijpte donkere/gouden abrikozen uit Malatya.",
+            "color": "Honingkleurige Vijgen & Donkere Zon-Gedroogde Abrikozen",
+            "harvestMonths": "augustus – oktober",
+            "storage": "Koelopslag 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 Maanden"
+          },
+          "pl": {
+            "packagingTypes": [
+              "5kg / 10kg Główne kartony ekspozycyjne",
+              "1kg Drewniane skrzynki"
+            ],
+            "name": "Tureckie suszone na słońcu figi i morele z Malatyi (duży eksport)",
+            "description": "Naturalnie suszone na słońcu Egejskim i Anatolijskim bez dodatku cukru. Soczyste, z pestkami figi Lerida i Garland z Aydın oraz aksamitnie miękkie, ciemne/złote morele suszone na słońcu z Malatyi.",
+            "color": "Figy miodowo-bursztynowe i ciemne morele suszone na słońcu",
+            "harvestMonths": "Sierpień – październik",
+            "storage": "Chłodnie 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 miesięcy"
+          },
+          "ro": {
+            "packagingTypes": [
+              "5kg / 10kg Cutii principale pentru display",
+              "1kg Cutii de lemn"
+            ],
+            "name": "Smochine uscate la soare turcești & Caise uscate la soare din Malatya (Export Jumbo)",
+            "description": "Uscate natural sub soarele egeean și anatolian fără zahăr adăugat. Smochine Lerida și Garland, pline și crocante pe semințe din Aydın și caise întunecate/aurii, catifelate, uscate la soare din Malatya.",
+            "color": "Smochine color miere & Caise întunecate uscate la soare",
+            "harvestMonths": "August – octombrie",
+            "storage": "Depozitare la rece 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 luni"
+          },
+          "bg": {
+            "packagingTypes": [
+              "5kg / 10kg Главни изложбени кутии",
+              "1kg Дървени кутии"
+            ],
+            "name": "Турски сушени на слънце смокини и малатийски сушени кайсии (Джъмбо за износ)",
+            "description": "Естествено изсушени под егеийското и анатолийското слънце без добавена захар. Пълни, с хрупкави семки смокини Лерида и Гарланд от Айдън и кадифено меки слънчево сушени тъмни/златисти кайсии от Малатя.",
+            "color": "Смокини с медено-янтарен цвят и тъмни слънчево сушени кайсии",
+            "harvestMonths": "август – октомври",
+            "storage": "Студено съхранение 4°C - 10°C, ВР <65%",
+            "shelfLife": "12-18 месеца"
+          },
+          "el": {
+            "packagingTypes": [
+              "5kg / 10kg Κύρια Κουτιά Προβολής",
+              "1kg Ξύλινα Κουτιά"
+            ],
+            "name": "Τουρκικά Ηλιακά Αποξηραμένα Σύκα & Αποξηραμένα Βερίκοκα Malatya (Jumbo Εξαγωγής)",
+            "description": "Φυσικά αποξηραμένα κάτω από τον ήλιο του Αιγαίου και της Ανατολίας χωρίς πρόσθετη ζάχαρη. Σφριγηλά, τραγανά σπόρια σύκα Lerida και Garland από την Aydın και απαλό σαν βελούδο σκοτεινό/χρυσαφί αποξηραμένο στον ήλιο βερίκοκο από Malatya.",
+            "color": "Σύκα Μέλι Αμβρος & Σκοτεινά Αποξηραμένα Βερίκοκα",
+            "harvestMonths": "Αύγουστος – Οκτώβριος",
+            "storage": "Ψυχρή αποθήκευση 4°C - 10°C, ΣΣ <65%",
+            "shelfLife": "12-18 Μήνες"
+          },
+          "sr": {
+            "packagingTypes": [
+              "5kg / 10kg Glavni prikazni kartoni",
+              "1kg Drvene kutije"
+            ],
+            "name": "Turske suncem sušene smokve & Malatya suncem sušene kajsije (Jumbo za izvoz)",
+            "description": "Prirodno sušeno pod egejskim i anadolijskim suncem bez dodanog šećera. Bujne, sa semenjem rastuće Lerida i Garland smokve iz Aydina i baršunasto mekane tamne/zlatne suncem sušene kajsije iz Malatye.",
+            "color": "Medene ćilibarske smokve & tamne suncem sušene kajsije",
+            "harvestMonths": "Avgust – Oktobar",
+            "storage": "Hladno skladištenje 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 Meseci"
+          },
+          "uk": {
+            "packagingTypes": [
+              "5kg / 10kg Основні демонстраційні картонні коробки",
+              "1kg Дерев’яні ящики"
+            ],
+            "name": "Турецькі інжир, висушений на сонці, та абрикоси Малаї (експортні джамбо)",
+            "description": "Натурально висушені під сонцем Егейського та Анатолійського регіонів без додавання цукру. Соковиті, з хрумкими насінням фіги Lerida та Garland з Айдина та ніжні на дотик темні/золоті абрикоси, висушені на сонці, з Малаї.",
+            "color": "Медово-бурштинові інжири та темні абрикоси, висушені на сонці",
+            "harvestMonths": "Серпень – жовтень",
+            "storage": "Зберігання при холодній температурі 4°C - 10°C, вологість <65%",
+            "shelfLife": "12-18 місяців"
+          },
+          "ka": {
+            "packagingTypes": [
+              "5kg / 10kg მთავარი საჩვენებელი ყუთები",
+              "1kg ხის ყუთები"
+            ],
+            "name": "თურქული მზეზე გაშრობილი ფიჭვები და მალათიას მზეზე გაშრობილი ატმის ფილები (ჯამბო ექსპორტი)",
+            "description": "ბუნებრივად გაშრობილი ეგეოსისა და ანატოლის მზის ქვეშ, შაქრის დამატების გარეშე. მომრგვალებული, თესლის ქოჩრის ლერიდა და გარლანდ ფიჭვები აიდინიდან და აბრეშუმისებრი რბილი, მზეზე გაშრობილი მუქი/ოქროსფერი ატმები მალათიიდან.",
+            "color": "თაფლისფერი ფიჭვები & მუქი მზეზე გაშრობილი ატმები",
+            "harvestMonths": "აგვისტო – ოქტომბერი",
+            "storage": "ცივი შენახვა 4°C - 10°C, ტენიანობა <65%",
+            "shelfLife": "12-18 თვე"
+          },
+          "az": {
+            "packagingTypes": [
+              "5kg / 10kg Usta Göstəriş Kartonları",
+              "1kg Taxta Qutular"
+            ],
+            "name": "Türk Gün Qurutması İncirlər & Malatya Gün Qurutması Əriklər (Jumbo İxrac)",
+            "description": "Əlavə şəkərsiz, Egey və Anadolu günündə təbii olaraq qurudulmuş. Aydından saxlama qabıqlı, toxumlu Lerida və Garland incirləri və Malatyadan mürəkkəb yumşaq gün qurusu qara/qızıl ərik.",
+            "color": "Bal Sarısı İncir & Tünd Gün Qurusu Ərik",
+            "harvestMonths": "Avqust – Oktyabr",
+            "storage": "Soyuq saxlama 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 Ay"
+          },
+          "uz": {
+            "packagingTypes": [
+              "5kg / 10kg Boshqaruvchi Displey Kartonlari",
+              "1kg Yog‘och Qutilar"
+            ],
+            "name": "Turkiya Quyoshda Quritilgan Oʻriklar va Malatya Quyoshda Quritilgan Olchalar (Jumbo Eksport)",
+            "description": "Qoʻshimcha shakar olmay Aegean va Anatoliya quyoshi ostida tabiiy ravishda quritilgan. Aydin shahridan toʻla, urugʻlini sindiruvchi Lerida va Garland o‘riklari va Malatyadan yumshoq to‘q/golden rangli quyoshda quritilgan o‘riklar.",
+            "color": "Asal Amber Figs va To‘q Quyoshda Quritilgan O‘riklar",
+            "harvestMonths": "Avgust – Oktyabr",
+            "storage": "Sovuq saqlash 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 Oy"
+          },
+          "kk": {
+            "packagingTypes": [
+              "5kg / 10kg Негізгі көрме картондары",
+              "1kg Ағаш қораптар"
+            ],
+            "name": "Түрік күнде кептірілген инжирлер және Малация күнде кептірілген өріктер (Джамбо экспорт)",
+            "description": "Қосымша қантсыз, Эгей және Анадол күнінде табиғи түрде кептірілген. Айдыннан келген дәнді Lerida және Garland инжирлері, Малациялық жұмсақ қара/алтын күн кептірілген өріктер.",
+            "color": "Бал түсті инжирлер және қара күн кептірілген өріктер",
+            "harvestMonths": "Тамыз – Қазан",
+            "storage": "Суық сақтау 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 Ай"
+          },
+          "fa": {
+            "packagingTypes": [
+              "5kg / 10kg کارتن‌های نمایشگر اصلی",
+              "1kg جعبه‌های چوبی"
+            ],
+            "name": "انجیرهای خشک خورشیدی ترکیه و زردآلوهای خشک خورشیدی مالاتیا (صادرات جومبو)",
+            "description": "به طور طبیعی زیر آفتاب اژه و آناتولی خشک شده‌اند بدون شکر افزوده. انجیرهای پر و دارای دانه‌ی سفت لریدا و گارلند از آیدین و زردآلوهای تیره/طلایی نرم و خشک‌شده زیر آفتاب از مالاتیا.",
+            "color": "انجیر عسل کهربایی و زردآلوهای نرم خشک‌شده تحت آفتاب تیره",
+            "harvestMonths": "اوت – اکتبر",
+            "storage": "نگهداری سرد 4°C - 10°C، رطوبت نسبی <65%",
+            "shelfLife": "12-18 ماه"
+          },
+          "hi": {
+            "packagingTypes": [
+              "5kg / 10kg मास्टर डिस्प्ले कार्टन",
+              "1kg वुडन बॉक्सेस"
+            ],
+            "name": "तुर्की सन-ड्राइ फिग्स और मलात्या सन-ड्राइ एप्रिकॉट्स (जंबो एक्सपोर्ट)",
+            "description": "बिना किसी अतिरिक्त चीनी के एजियन और अनातोलियन सूर्य के नीचे प्राकृतिक रूप से सूखे। आयदिन के गोल और बीज-क्रंचिंग लेरिडा और गारलैंड फिग्स और मलात्या के मखमली मुलायम सूर्य-सूखे डार्क/गोल्डन एप्रिकॉट्स।",
+            "color": "हनी एम्बर फिग्स और डार्क सन-क्योर एप्रिकॉट्स",
+            "harvestMonths": "अगस्त - अक्टूबर",
+            "storage": "कोल्ड स्टोरेज 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 महीने"
+          },
+          "ur": {
+            "packagingTypes": [
+              "5kg / 10kg ماسٹر ڈسپلے کارٹنز",
+              "1kg لکڑی کے بکس"
+            ],
+            "name": "ترک سن-ڈرائی فِگ اور ملاتیا سن-ڈرائی خوبانی (جمبو ایکسپورٹ)",
+            "description": "ایجین اور اناطولیہ کی دھوپ میں بغیر کسی اضافی شکر کے قدرتی طور پر خشک کی گئی۔ آدین کے آپس میں بھرپور، بیج crunch کرنے والی لرِیدا اور گرلینڈ فِگ اور ملاتیا کے مخملی نرم سن-کیورڈ سیاہ / سنہری خوبانیاں۔",
+            "color": "ہنی ایمبر فِگ اور سیاہ سن-کیورڈ خوبانیاں",
+            "harvestMonths": "اگست – اکتوبر",
+            "storage": "سرد ذخیرہ 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 ماہ"
+          },
+          "bn": {
+            "packagingTypes": [
+              "5kg / 10kg মাস্টার ডিসপ্লে কার্টন",
+              "1kg কাঠের বাকস"
+            ],
+            "name": "তুর্কি সূর্য-শুকানো ইঁচু ও মালাট্যা সূর্য-শুকানো আপ্রিকট (জাম্বো রপ্তানি)",
+            "description": "কোন অতিরিক্ত চিনি ছাড়াই এজিয়ান ও আনাতোলিয়ান সূর্যের তাপে স্বাভাবিকভাবে শুকানো। আইদিন থেকে বড়, বীজক্রাঞ্চিং লেরিডা ও গারল্যান্ড ইঁচু এবং মালাট্যা থেকে মখমলের মতো নরম সূর্য-উপকারী ডার্ক/গোল্ডেন আপ্রিকট।",
+            "color": "হানি অ্যাম্বার ইঁচু ও ডার্ক সূর্য-উপকারী আপ্রিকট",
+            "harvestMonths": "আগস্ট - অক্টোবর",
+            "storage": "শীতল সংরক্ষণ 4°C - 10°C, আর্দ্রতা <65%",
+            "shelfLife": "12-18 মাস"
+          },
+          "zh-cn": {
+            "packagingTypes": [
+              "5kg / 10kg 主展示箱",
+              "1kg 木箱"
+            ],
+            "name": "土耳其日晒无花果和马拉蒂亚日晒杏（巨型出口级）",
+            "description": "在爱琴海和安纳托利亚的阳光下自然晾干，无添加糖。来自艾登的饱满、种仁脆的Lerida和Garland无花果，以及来自马拉蒂亚的天鹅绒般柔软的深色/金色日晒杏。",
+            "color": "蜂蜜琥珀色无花果 & 深色日晒杏",
+            "harvestMonths": "8月至10月",
+            "storage": "冷藏 4°C - 10°C，相对湿度 <65%",
+            "shelfLife": "12-18 月"
+          },
+          "ja": {
+            "packagingTypes": [
+              "5kg/10kg マスターディスプレイカートン",
+              "1kg 木箱"
+            ],
+            "name": "トルコの天日干しイチジク＆マラティヤ天日干しアプリコット（ジャンボ輸出用）",
+            "description": "エーゲ海およびアナトリアの太陽の下で自然乾燥、砂糖不使用。アユディン産の種ごと楽しめるふっくらレリダ＆ガーランドイチジクと、マラティヤ産の絨毯のような柔らかい天日干しのダーク／ゴールデンアプリコット。",
+            "color": "蜂蜜色のイチジク＆天日干しダークアプリコット",
+            "harvestMonths": "8月 – 10月",
+            "storage": "低温保管 4°C - 10°C、相対湿度 <65%",
+            "shelfLife": "12-18 ヶ月"
+          },
+          "ko": {
+            "packagingTypes": [
+              "5kg / 10kg 마스터 디스플레이 카톤",
+              "1kg 나무 상자"
+            ],
+            "name": "터키 햇볕 건무화과 및 말라티아 햇볕 건살구 (점보 수출용)",
+            "description": "설탕을 첨가하지 않고 에게해와 아나톨리아 태양 아래 자연 건조. 아이다인 지역의 통씨와 가랜드 무화과, 말라티아의 벨벳처럼 부드러운 햇볕 건조 다크/골든 살구.",
+            "color": "꿀빛 호박 무화과 및 다크 햇볕 건 살구",
+            "harvestMonths": "8월 – 10월",
+            "storage": "냉장 4°C - 10°C, 상대습도 <65%",
+            "shelfLife": "12-18 개월"
+          },
+          "id": {
+            "packagingTypes": [
+              "5kg / 10kg Karton Tampilan Induk",
+              "1kg Kotak Kayu"
+            ],
+            "name": "Ara Kering Matahari Turki & Aprikot Kering Matahari Malatya (Ekspor Jumbo)",
+            "description": "Dikeringkan secara alami di bawah sinar matahari Aegea dan Anatolia tanpa tambahan gula. Ara Lerida dan Garland yang besar dan renyah bijinya dari Aydın serta aprikot gelap/emas yang lembut dari Malatya.",
+            "color": "Ara Amber Madu & Aprikot Gelap Kering Matahari",
+            "harvestMonths": "Agustus – Oktober",
+            "storage": "Penyimpanan Dingin 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 Bulan"
+          },
+          "ms": {
+            "packagingTypes": [
+              "5kg / 10kg Kotak Paparan Induk",
+              "1kg Kotak Kayu"
+            ],
+            "name": "Sari Kurma Matahari Turki & Aprikot Matahari Malatya (Eksport Jumbo)",
+            "description": "Dikeringkan secara semula jadi di bawah matahari Aegean dan Anatolia tanpa gula tambahan. Kurma Lerida dan Garland yang berbiji renyah dari Aydın dan aprikot gelap/emerkapur lembut matahari dari Malatya.",
+            "color": "Kurma Madu Amber & Aprikot Gelap Matahari Kering",
+            "harvestMonths": "Ogos – Oktober",
+            "storage": "Penyimpanan sejuk 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 Bulan"
+          },
+          "sw": {
+            "packagingTypes": [
+              "5kg / 10kg Sanduku Kuu za Maonyesho",
+              "1kg Maboksi ya Mbao"
+            ],
+            "name": "Tufaha Wobusamuli wa Jua wa Uturuki & Aprikoti zilizokauka Jua za Malatya (Jumbo Export)",
+            "description": "Zimekauka kwa asili chini ya jua la Aegean na Anatolia bila sukari ya ziada. Mikungu minene, inayo-vunja mbegu Lerida na Garland kutoka Aydın na aprikoti tamu wenye rangi ya samadi iliyo-kowaniwa na jua kutoka Malatya.",
+            "color": "Mikungu ya Asali na Aprikoti Zilizokauka Jua Zenye Rangi Giza",
+            "harvestMonths": "Agosti - Oktoba",
+            "storage": "Hifadhi ya Baridi 4°C - 10°C, RH <65%",
+            "shelfLife": "12-18 Miezi"
+          }
+        }
+      }
+    ],
+    "packagingOptions": [
+      {
+        "type": "Vacuum Barrier Pouches in Master Cartons",
+        "typeTr": "Mukavva Kolili Bariyerli Vakum Paket",
+        "netWeight": "10 kg / 12.5 kg / 25 kg",
+        "dimensions": "40 x 30 x 20 cm",
+        "piecesPerBox": "1 to 2 Pouches",
+        "boxesPerPallet": "64 to 80 Cartons per Pallet",
+        "palletType": "Euro Pallet (120 x 80 cm) or Standard (120 x 100 cm)",
+        "containerCapacity": "20ft Reefer/Dry Container: 16 - 18 MT / 40ft: 24 - 26 MT",
+        "localized": {
+          "ar": {
+            "type": "حقائب حاجز التفريغ في علب الماستر",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 إلى 2 الحقائب",
+            "boxesPerPallet": "64 إلى 80 علب لكل منصة",
+            "palletType": "يورو باليت (120 × 80 cm) أو ستاندرد (120 × 100 cm)",
+            "containerCapacity": "20ft الحاوية الجافة/الريفير: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "ru": {
+            "type": "вакуумные барьерные подсумки в мастер-картонах",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 к 2 мешочкам",
+            "boxesPerPallet": "64 до 80 коробок на паллет",
+            "palletType": "Euro Pallet (120 x 80 cm) или Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Холодильник/Сухой контейнер: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "de": {
+            "type": "Vakuumbarrierenbeutel in Masterkartons",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 zu 2 Taschen",
+            "boxesPerPallet": "64 auf 80 Kartons pro Palette",
+            "palletType": "Europalette (120 x 80 cm) oder Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Kühl-/Trockenbehälter: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "fr": {
+            "type": "Sachets barrière sous vide dans des cartons maîtres",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 à 2 Poches",
+            "boxesPerPallet": "64 à 80 Cartons par palette",
+            "palletType": "Palette Euro (120 x 80 cm) ou Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Récipient sec/Sec : 16 - 18 MT / 40ft : 24 - 26 MT"
+          },
+          "es": {
+            "type": "Bolsas de barrera al vacío en cajas maestras",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 a 2 Bolsas",
+            "boxesPerPallet": "64 a 80 Cajas por palé",
+            "palletType": "Euro Pallet (120 x 80 cm) o Estándar (120 x 100 cm)",
+            "containerCapacity": "20ft Recipiente refrigerado/seco: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "it": {
+            "type": "Sacchetti a barriera per il vuoto in cartoni master",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 alle 2 Sacche",
+            "boxesPerPallet": "64 a 80 Cartoni per Pallet",
+            "palletType": "Euro Pallet (120 x 80 cm) o Standard (120 x 100 cm)",
+            "containerCapacity": "20ft contenitore refrigerato/secco: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "pt": {
+            "type": "Bolsas de Barreira a Vácuo em Caixas Mestre",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 para 2 Bolsas",
+            "boxesPerPallet": "64 para 80 Caixas por Palete",
+            "palletType": "Euro Pallet (120 x 80 cm) ou Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Recipiente Seco/Frigideiro: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "nl": {
+            "type": "Vacuümbarrièrezakken in Master Boxtons",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 naar 2 Pouches",
+            "boxesPerPallet": "64 om 80 dozen per pallet",
+            "palletType": "Euro Pallet (120 x 80 cm) of Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Koel-/droogcontainer: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "pl": {
+            "type": "Ładownice barierowe próżniowe w kartonach master",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 do 2 Sakiewki",
+            "boxesPerPallet": "64 do 80 kartonów na paletę",
+            "palletType": "Euro Pallet (120 x 80 cm) lub Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Chłodnia/Kontener suchy: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "ro": {
+            "type": "Pungi cu barieră de vid în cutii master",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 la 2 Buzunari",
+            "boxesPerPallet": "64 la 80 cutii pe palet",
+            "palletType": "Palet Euro (120 x 80 cm) sau Standard (120 x 100 cm)",
+            "containerCapacity": "20ft recipient frigorific/uscat: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "bg": {
+            "type": "вакуумни бариерни торбички в главни кутии",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 към 2 торбички",
+            "boxesPerPallet": "64 до 80 кутии на палета",
+            "palletType": "Евро палета (120 x 80 cm) или Стандартна (120 x 100 cm)",
+            "containerCapacity": "20ft Резина/Сух контейнер: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "el": {
+            "type": "Θήκες φραγμού κενού σε κύρια χαρτοκιβώτια",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 έως 2 θήκες",
+            "boxesPerPallet": "64 έως 80 χαρτοκιβώτια ανά παλέτα",
+            "palletType": "Ευρωπαλέτα (120 x 80 cm) ή Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Reefer/Dry Container: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "sr": {
+            "type": "Vakuum barijera Torbice u Master kartonskim kutijama",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 do 2 Torbice",
+            "boxesPerPallet": "64 do 80 kartona po paleti",
+            "palletType": "Evro paleta (120 k 80 cm) ili standardna (120 k 100 cm)",
+            "containerCapacity": "20ft Hladnjača / suvi kontejner: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "uk": {
+            "type": "Вакуумні бар'єрні підсумки в головних коробках",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 до 2 мішечок",
+            "boxesPerPallet": "64 до 80 коробок на палету",
+            "palletType": "Euro Pallet (120 x 80 cm) або Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Сухий контейнер: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "ka": {
+            "type": "ვაკუუმ შეფუთვის ჩანთები მთავარ ყუთებში",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 to 2 ჩანთა",
+            "boxesPerPallet": "64 to 80 ყუთი პალეტის მიხედვით",
+            "palletType": "ევრო პალეტი (120 x 80 cm) ან სტანდარტული (120 x 100 cm)",
+            "containerCapacity": "20ft ფრიაფი/მშრალი კონტეინერი: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "az": {
+            "type": "Əsas qutularda vakuum baryer torbaları",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 2 kisələrə",
+            "boxesPerPallet": "Palet başına 80 karton 64",
+            "palletType": "Euro Pallet (120 x 80 cm) və ya Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Reefer/Quru konteyner: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "uz": {
+            "type": "Master kartonlar ichida vakuumli toʻrlar",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 dan 2 gacha toʻrlar",
+            "boxesPerPallet": "Pallet boshiga 64 dan 80 gacha kartonlar",
+            "palletType": "Yevro palet (120 x 80 cm) yoki Standart (120 x 100 cm)",
+            "containerCapacity": "20ft Muzlatilgan/Quritilgan konteyner: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "kk": {
+            "type": "Бас қораптардағы вакуумдық қоршау сөмкелері",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 2 сөмкелерге",
+            "boxesPerPallet": "паллетке 64-80 қорапқа дейін",
+            "palletType": "Euro Pallet (120 x 80 cm) немесе Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Марихуана/Құрғақ контейнер: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "fa": {
+            "type": "کیسه های مانع خلأ در جعبه های مستر",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 به 2 کیسه ها",
+            "boxesPerPallet": "64 تا 80 کارتن برای هر پالت",
+            "palletType": "Euro Pallet (120 x 80 cm) یا استاندارد (120 x 100 cm)",
+            "containerCapacity": "20ft ظرف خشک/ریفر: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "hi": {
+            "type": "मास्टर डिब्बों में वैक्यूम बैरियर पाउच",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "2 पाउच 1",
+            "boxesPerPallet": "प्रति फूस 80 डिब्बों के 64",
+            "palletType": "यूरो पैलेट (120 x 80 cm) या मानक (120 x 100 cm)",
+            "containerCapacity": "20ft रीफर/ड्राई कंटेनर: 16 - 18 MT/40ft: 24 - 26 MT"
+          },
+          "ur": {
+            "type": "ماسٹر کارٹنز میں ویکیوم بیریئر پاؤچز",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 2 پاؤچز کو",
+            "boxesPerPallet": "64 سے 80 کارٹن فی پیلیٹ",
+            "palletType": "یورو پیلیٹ (120 x 80 cm) یا اسٹینڈرڈ (120 x 100 cm)",
+            "containerCapacity": "20ft ریفر/خشک کنٹینر: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "bn": {
+            "type": "মাস্টার কার্টনে ভ্যাকুয়াম ব্যারিয়ার পাউচ",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 2 পাউচ",
+            "boxesPerPallet": "প্রতি প্যালেটে 80 কার্টন 64",
+            "palletType": "ইউরো প্যালেট (120 x 80 cm) বা স্ট্যান্ডার্ড (120 x 100 cm)",
+            "containerCapacity": "20ft রিফার / শুকনো ধারক: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "zh-cn": {
+            "type": "主盒中的真空屏障袋",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1到2袋",
+            "boxesPerPallet": "64到每个托盘80纸箱",
+            "palletType": "欧式托盘（120 x 80 cm）或标准托盘（120 x 100 cm）",
+            "containerCapacity": "20ft 冷藏箱/干货箱：16 - 18 MT / 40ft：24 - 26 MT"
+          },
+          "ja": {
+            "type": "マスターカートン内の真空バリアパウチ",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 2 ポーチへ",
+            "boxesPerPallet": "パレットあたり64 80カートン",
+            "palletType": "ユーロパレット(120 x 80 cm)またはスタンダード(120 x 100 cm)",
+            "containerCapacity": "20ft 冷蔵庫/乾燥容器:16 - 18 MT / 40ft:24 - 26 MT"
+          },
+          "ko": {
+            "type": "마스터 카톤 내 진공 차단 파우치",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 2 파우치",
+            "boxesPerPallet": "팔레트당 80 상자 64",
+            "palletType": "유로 팔레트 (120 x 80 cm) 또는 스탠다드 (120 x 100 cm)",
+            "containerCapacity": "20ft 냉기/건조 용기: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "id": {
+            "type": "Kantong Vacuum Barrier dalam Karton Induk",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 hingga 2 Kantong",
+            "boxesPerPallet": "64 hingga 80 Karton per Palet",
+            "palletType": "Palet Euro (120 x 80 cm) atau Standar (120 x 100 cm)",
+            "containerCapacity": "20ft Wadah Ganja/Kering: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "ms": {
+            "type": "Beg Penghalang Vakum dalam Kotak Induk",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 ke 2 Pouch",
+            "boxesPerPallet": "64 hingga 80 Kotak setiap Palet",
+            "palletType": "Palet Euro (120 x 80 cm) atau Standard (120 x 100 cm)",
+            "containerCapacity": "20ft Bekas Ganja/Kering: 16 - 18 MT / 40ft: 24 - 26 MT"
+          },
+          "sw": {
+            "type": "Mifuko ya Kizuizi cha Utupu katika Katoni Kuu",
+            "dimensions": "40 x 30 x 20 cm",
+            "piecesPerBox": "1 kwa 2 Mifuko",
+            "boxesPerPallet": "64 hadi 80 Katoni kwa kila Pallet",
+            "palletType": "Pallet ya Euro (120 x 80 cm) au Kawaida (120 x 100 cm)",
+            "containerCapacity": "20ft Reefer/Dry Container: 16 - 18 MT / 40ft: 24 - 26 MT"
+          }
+        }
+      },
+      {
+        "type": "Modified Atmosphere Packaging (MAP) Nitrogen Flush",
+        "typeTr": "Azot Korumalı Modifiye Atmosfer (MAP) Kolisi",
+        "netWeight": "10 kg / 12.5 kg",
+        "dimensions": "39 x 29 x 22 cm",
+        "piecesPerBox": "1 Master MAP Liner",
+        "boxesPerPallet": "72 Cartons / 900 kg",
+        "palletType": "Euro Pallet (120 x 80 cm)",
+        "containerCapacity": "20ft FCL: 16 - 17 MT",
+        "localized": {
+          "ar": {
+            "type": "تغليف الغلاف الجوي المعدل (MAP) تدفق النيتروجين",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP Liner",
+            "boxesPerPallet": "72 علب / 900 kg",
+            "palletType": "يورو باليت (120 × 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "ru": {
+            "type": "Промывка азотом с модифицированной атмосферной упаковкой (MAP)",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Главный лайнер MAP",
+            "boxesPerPallet": "72 Коробки / 900 kg",
+            "palletType": "Европаллет (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "de": {
+            "type": "Modifizierte Atmosphärenverpackung (MAP) Stickstoffspülung",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP Liner",
+            "boxesPerPallet": "72 Kartons / 900 kg",
+            "palletType": "Euro Pallet (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "fr": {
+            "type": "Rinçage à l’azote à atmosphère modifiée (MAP)",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Liner MAP principal",
+            "boxesPerPallet": "72 Cartons / 900 kg",
+            "palletType": "Palette Euro (120 x 80 cm)",
+            "containerCapacity": "20ft FCL : 16 - 17 MT"
+          },
+          "es": {
+            "type": "Lavado de nitrógeno con atmósfera modificada (MAP)",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Cartucho Maestro MAP",
+            "boxesPerPallet": "72 Cartones / 900 kg",
+            "palletType": "Euro Pallet (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "it": {
+            "type": "Accarico dell'azoto per l'Atmosferato Modificato (MAP)",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP Liner",
+            "boxesPerPallet": "72 Cartoni / 900 kg",
+            "palletType": "Euro Pallet (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "pt": {
+            "type": "Enxame de Nitrogênio em Empacotamento em Atmosfera Modificada (MAP)",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP Liner",
+            "boxesPerPallet": "72 Caixas / 900 kg",
+            "palletType": "Euro Pallet (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "nl": {
+            "type": "Aangepast Atmosfeer Verpakking (MAP) Stikstofspoeling",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP Liner",
+            "boxesPerPallet": "72 Kartonnen / 900 kg",
+            "palletType": "Euro Pallet (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "pl": {
+            "type": "Pakowanie z zmodyfikowaną atmosferą (MAP) płukanie azotem",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP Liner",
+            "boxesPerPallet": "72 Kartony / 900 kg",
+            "palletType": "Euro Pallet (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "ro": {
+            "type": "Spălare cu azot cu atmosferă modificată (MAP)",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP Liner",
+            "boxesPerPallet": "72 Cutii / 900 kg",
+            "palletType": "Palet Euro (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "bg": {
+            "type": "Промиване на азот с модифицирана атмосферна опаковка (MAP)",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Главен MAP лайнер",
+            "boxesPerPallet": "72 Кутии / 900 kg",
+            "palletType": "Европейска палета (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "el": {
+            "type": "Συσκευασία τροποποιημένης ατμόσφαιρας (MAP) Έκπλυση αζώτου",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP Liner",
+            "boxesPerPallet": "72 Χαρτοκιβώτια / 900 kg",
+            "palletType": "Ευρωπαλέτα (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "sr": {
+            "type": "Pakovanje modifikovane atmosfere (MAP) Azot ispiranje",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP liner",
+            "boxesPerPallet": "72 Kartonske kutije / 900 kg",
+            "palletType": "Evro paleta (120 k 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "uk": {
+            "type": "Промивка азотом у модифікованій атмосферній упаковці (MAP)",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Головний лайнер MAP",
+            "boxesPerPallet": "72 Коробки / 900 kg",
+            "palletType": "Євро-піддон (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "ka": {
+            "type": "მორგებული ატმოსფეროს შეფუთვა (MAP) აზოტის_flush",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP ლაინერი",
+            "boxesPerPallet": "72 კარტონები / 900 kg",
+            "palletType": "ევრო პალეტი (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "az": {
+            "type": "Modifikasiya olunmuş Atmosfer Qablaşdırması (MAP) Azot Yuyulması",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP Liner",
+            "boxesPerPallet": "72 Kartonlar / 900 kg",
+            "palletType": "Euro Pallet (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "uz": {
+            "type": "O‘zgartirilgan atmosfera qadoqlash (MAP) Azot bilan to‘ldirish",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP astari",
+            "boxesPerPallet": "72 qutilar / 900 kg",
+            "palletType": "Yevro palet (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "kk": {
+            "type": "Өзгертілген атмосфералық орау (MAP) азотпен жуу",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP лайнеры",
+            "boxesPerPallet": "72 Қораптар / 900 kg",
+            "palletType": "Еуропаллет (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "fa": {
+            "type": "شستشوی نیتروژن با بسته بندی اتمسفر اصلاح شده (MAP)",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 مستر مپ لاینر",
+            "boxesPerPallet": "72 کارتن / 900 kg",
+            "palletType": "Euro Pallet (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "hi": {
+            "type": "संशोधित वायुमंडल पैकेजिंग (एमएपी) नाइट्रोजन फ्लश",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 मास्टर एमएपी लाइनर",
+            "boxesPerPallet": "72 डिब्बों/900 kg",
+            "palletType": "यूरो पैलेट (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "ur": {
+            "type": "موڈیفائیڈ ایٹموسفیئر پیکیجنگ (MAP) نائٹروجن فلش",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 ماسٹر میپ لائنر",
+            "boxesPerPallet": "72 کارٹن / 900 kg",
+            "palletType": "یورو پیلیٹ (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "bn": {
+            "type": "পরিবর্তিত বায়ুমণ্ডল প্যাকেজিং (এমএপি) নাইট্রোজেন ফ্লাশ",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 মাস্টার ম্যাপ লাইনার",
+            "boxesPerPallet": "72 কার্টন / 900 kg",
+            "palletType": "ইউরো প্যালেট (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "zh-cn": {
+            "type": "改性大气包装（MAP）氮气冲洗",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 MAP主线",
+            "boxesPerPallet": "72纸箱 / 900 kg",
+            "palletType": "欧洲托盘（120 x 80 cm）",
+            "containerCapacity": "20ft FCL：16 - 17 MT"
+          },
+          "ja": {
+            "type": "修正大気包装(MAP)窒素フラッシュ",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 マスターMAPライナー",
+            "boxesPerPallet": "72 カートン / 900 kg",
+            "palletType": "ユーロパレット(120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "ko": {
+            "type": "변형 대기 포장(MAP) 질소 플러시",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "마스터 MAP 라이너 1",
+            "boxesPerPallet": "72 상자 / 900 kg",
+            "palletType": "유로 팔레트 (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "id": {
+            "type": "Kemasan Atmosfer Modifikasi (MAP) Flush Nitrogen",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Master MAP Liner",
+            "boxesPerPallet": "72 Karton / 900 kg",
+            "palletType": "Palet Euro (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "ms": {
+            "type": "Pembungkusan Atmosfera Diubah Suai (MAP) Flush Nitrogen",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Pelapik Peta Induk",
+            "boxesPerPallet": "72 Kotak / 900 kg",
+            "palletType": "Palet Euro (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          },
+          "sw": {
+            "type": "Ufungaji wa Anga Iliyorekebishwa (MAP) Kusafisha Nitrojeni",
+            "dimensions": "39 x 29 x 22 cm",
+            "piecesPerBox": "1 Mjengo Mkuu wa MAP",
+            "boxesPerPallet": "72 Katoni / 900 kg",
+            "palletType": "Pallet ya Euro (120 x 80 cm)",
+            "containerCapacity": "20ft FCL: 16 - 17 MT"
+          }
+        }
+      },
+      {
+        "type": "Multi-wall Food-Grade Kraft Bags",
+        "typeTr": "Gıdaya Uygun Çok Katlı Kraft Torba",
+        "netWeight": "25 kg",
+        "dimensions": "70 x 45 x 12 cm",
+        "piecesPerBox": "N/A (Bulk)",
+        "boxesPerPallet": "40 Bags / 1,000 kg",
+        "palletType": "Standard Industrial Pallet",
+        "containerCapacity": "20ft FCL: 18 - 20 MT",
+        "localized": {
+          "ar": {
+            "type": "أكياس كرافت متعددة الجدران بدرجة طعام",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "غير متوفر (بكميات كبيرة)",
+            "boxesPerPallet": "40 حقائب / 1,000 kg",
+            "palletType": "المنصة الصناعية القياسية",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "ru": {
+            "type": "Многостенные пищевые крафт-мешки",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Сумки / 1,000 kg",
+            "palletType": "Стандартная промышленная паллета",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "de": {
+            "type": "Mehrwandige Lebensmittelqualität-Kraftbeutel",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Taschen / 1,000 kg",
+            "palletType": "Standard-Industriepalette",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "fr": {
+            "type": "Sacs Kraft multimuraux de qualité alimentaire",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/D (Masse)",
+            "boxesPerPallet": "40 Sacs / 1,000 kg",
+            "palletType": "Palette industrielle standard",
+            "containerCapacity": "20ft FCL : 18 - 20 MT"
+          },
+          "es": {
+            "type": "Bolsas Kraft Multipared de grado alimentario",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/D (Mayor)",
+            "boxesPerPallet": "Bolsas 40 / 1,000 kg",
+            "palletType": "Palé Industrial Estándar",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "it": {
+            "type": "Sacchi Kraft multiparete di grado alimentare",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Borse / 1,000 kg",
+            "palletType": "Pallet industriale standard",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "pt": {
+            "type": "Sacolas Kraft Multiparede Grau Alimentar",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Bolsas / 1,000 kg",
+            "palletType": "Palete Industrial Padrão",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "nl": {
+            "type": "Multi-wand voedselkwaliteit kraftzakken",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N.v.t. (Bulk)",
+            "boxesPerPallet": "40 Tassen / 1,000 kg",
+            "palletType": "Standaard Industrieel Pallet",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "pl": {
+            "type": "Wielościenne worki kraftowe o jakości spożywczej",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Torby / 1,000 kg",
+            "palletType": "Standardowa paleta przemysłowa",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "ro": {
+            "type": "Pungi Kraft de calitate alimentară cu pereți multipli",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "Genți 40 / 1,000 kg",
+            "palletType": "Palet Industrial Standard",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "bg": {
+            "type": "Многостенни хранителни Kraft чанти",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Чанти / 1,000 kg",
+            "palletType": "Стандартна индустриална палета",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "el": {
+            "type": "Τσάντες Kraft πολλαπλών τοιχωμάτων για τρόφιμα",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "Α/Δ (Χύμα)",
+            "boxesPerPallet": "40 Τσάντες / 1,000 kg",
+            "palletType": "Τυπική βιομηχανική παλέτα",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "sr": {
+            "type": "Kraft torbe za hranu sa više zidova",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N / D (Skupno)",
+            "boxesPerPallet": "40 Torbe / 1,000 kg",
+            "palletType": "Standardna industrijska paleta",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "uk": {
+            "type": "Багатостінні харчові крафт-мішки",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Сумки / 1,000 kg",
+            "palletType": "Стандартна промислова палета",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "ka": {
+            "type": "მრავალშრიანი საკვები ხარისხის ქრაფტ ტომრები",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "არ არის (მრავალგვერდა)",
+            "boxesPerPallet": "40 ტომრები / 1,000 kg",
+            "palletType": "სტანდარტული ინდუსტრიული პალეტი",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "az": {
+            "type": "Çoxdivarlı Qida Səviyyəli Kraft Çantaları",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Kütləvi)",
+            "boxesPerPallet": "40 Çantalar / 1,000 kg",
+            "palletType": "Standart Sənaye Paleti",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "uz": {
+            "type": "Ko‘p qavatli oziq-ovqat sifatli kraft sumkalar",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Ommaviy)",
+            "boxesPerPallet": "40 sumka / 1,000 kg",
+            "palletType": "Standart sanoat paleti",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "kk": {
+            "type": "Көп қабырғалы азық-түлік сапалы крафт сөмкелері",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Bulk)",
+            "boxesPerPallet": "40 Сөмкелер / 1,000 kg",
+            "palletType": "Стандартты өнеркәсіптік паллет",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "fa": {
+            "type": "کیف های کرافت چنددیواره درجه غذایی",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (حجم زیاد)",
+            "boxesPerPallet": "40 کیسه ها / 1,000 kg",
+            "palletType": "پالت صنعتی استاندارد",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "hi": {
+            "type": "मल्टी-वॉल फूड-ग्रेड क्राफ्ट बैग",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "एन/ए (थोक)",
+            "boxesPerPallet": "40 बैग/1,000 kg",
+            "palletType": "मानक औद्योगिक फूस",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "ur": {
+            "type": "ملٹی وال فوڈ گریڈ کرافٹ بیگز",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "نہیں/A (بلک)",
+            "boxesPerPallet": "40 بیگز / 1,000 kg",
+            "palletType": "معیاری صنعتی پیلیٹ",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "bn": {
+            "type": "মাল্টি-ওয়াল ফুড-গ্রেড ক্রাফ্ট ব্যাগ",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "এন / এ (বাল্ক)",
+            "boxesPerPallet": "40 ব্যাগ / 1,000 kg",
+            "palletType": "স্ট্যান্ডার্ড ইন্ডাস্ট্রিয়াল প্যালেট",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "zh-cn": {
+            "type": "多层食品级牛皮纸袋",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "无（散装）",
+            "boxesPerPallet": "40袋 / 1,000 kg",
+            "palletType": "标准工业托盘",
+            "containerCapacity": "20ft FCL：18 - 20 MT"
+          },
+          "ja": {
+            "type": "マルチウォールフードグレードクラフトバッグ",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "該当なし(バルク)",
+            "boxesPerPallet": "40 バッグ / 1,000 kg",
+            "palletType": "標準産業用パレット",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "ko": {
+            "type": "다면면 식품 등급 크래프트 백",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "해당 없음 (벌크)",
+            "boxesPerPallet": "40 가방 / 1,000 kg",
+            "palletType": "표준 산업용 팔레트",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "id": {
+            "type": "Kantong Kraft Food-Grade Multi-dinding",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "Tanpa Bantuan (Bulk)",
+            "boxesPerPallet": "40 Tas / 1,000 kg",
+            "palletType": "Palet Industri Standar",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "ms": {
+            "type": "Beg Kraft Gred Makanan Berbilang Dinding",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N/A (Pukal)",
+            "boxesPerPallet": "40 Beg / 1,000 kg",
+            "palletType": "Palet Industri Standard",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          },
+          "sw": {
+            "type": "Mifuko ya Kraft ya Kiwango cha Chakula cha ukuta mwingi",
+            "dimensions": "70 x 45 x 12 cm",
+            "piecesPerBox": "N / A (Wingi)",
+            "boxesPerPallet": "40 Mifuko / 1,000 kg",
+            "palletType": "Pallet ya Kawaida ya Viwanda",
+            "containerCapacity": "20ft FCL: 18 - 20 MT"
+          }
+        }
+      }
+    ],
+    "logistics": {
+      "modes": [
+        "road",
+        "sea",
+        "air"
+      ],
+      "transitTimeEU": "4 - 8 Days Express Road & Short-Sea Reefer",
+      "transitTimeGulf": "8 - 12 Days Direct Sea Container",
+      "transitTimeAsia": "16 - 24 Days Ocean Container Routes",
+      "storageMethod": "Store in cool, dry climate room (4°C - 10°C, RH <60%) to preserve natural oils and prevent oxidation.",
+      "storageMethodTr": "Doğal yağları korumak ve acılaşmayı önlemek için soğuk ve kuru ortamda (4°C - 10°C, <%60 Nem) muhafaza ediniz.",
+      "localized": {
+        "ar": {
+          "transitTimeEU": "4 - طريق 8 الأيام السريع ومنطقة التبريد القصيرة",
+          "transitTimeGulf": "8 - 12 يوم حاوية البحر المباشر",
+          "transitTimeAsia": "16 - 24 أيام مسارات حاويات المحيط",
+          "storageMethod": "تخزين في غرفة ذات مناخ بارد وجاف (4°C - 10°C، <60% RH) للحفاظ على الزيوت الطبيعية ومنع الأكسدة."
+        },
+        "ru": {
+          "transitTimeEU": "4 - 8 Days Express Road и Short-Sea Reefer",
+          "transitTimeGulf": "8 - 12 Days Direct Sea Container",
+          "transitTimeAsia": "16 - 24 дней Океанские контейнерные маршруты",
+          "storageMethod": "Храните в комнате с прохладным и сухим климатом (4°C - 10°C, влажность <60%) для сохранения натуральных масел и предотвращения окисления."
+        },
+        "de": {
+          "transitTimeEU": "4 - 8 Tage Expressstraße & Short-Sea-Reefer",
+          "transitTimeGulf": "8 - 12 Tage Direkter Seecontainer",
+          "transitTimeAsia": "16 - 24 Tage Ozeancontainerrouten",
+          "storageMethod": "In einem kühlen, trockenen Klimaraum lagern (4°C - 10°C, RH <60%), um natürliche Öle zu bewahren und Oxidation zu verhindern."
+        },
+        "fr": {
+          "transitTimeEU": "4 - 8 jours Express Road & Short-Sea Reer",
+          "transitTimeGulf": "8 - 12 jours Conteneur maritime direct",
+          "transitTimeAsia": "16 - 24 jours Routes de conteneurs océaniques",
+          "storageMethod": "Conserver dans une pièce à climat frais et sec (4°C - 10°C, humidité relative <60%) afin de préserver les huiles naturelles et prévenir l’oxydation."
+        },
+        "es": {
+          "transitTimeEU": "4 - 8 Días Carretera Exprés y Reefer Mar Corto",
+          "transitTimeGulf": "8 - 12 Días Contenedor Mar Directo",
+          "transitTimeAsia": "16 - 24 Días Rutas de Contenedor Oceánico",
+          "storageMethod": "Almacenar en cuarto fresco y seco (4°C - 10°C, HR <60%) para preservar aceites naturales y prevenir la oxidación."
+        },
+        "it": {
+          "transitTimeEU": "4 - 8 Days Express Road & Short-Sea Reefer",
+          "transitTimeGulf": "8 - 12 giorni Container Diretto Marittimo",
+          "transitTimeAsia": "16 - 24 Giorni Rotte Container Oceaniche",
+          "storageMethod": "Conserva in una stanza a clima fresco e asciutto (4°C - 10°C, umidità relativa <60%) per preservare gli oli naturali e prevenire l'ossidazione."
+        },
+        "pt": {
+          "transitTimeEU": "4 - 8 Days Express Road & Short-Sea Reer",
+          "transitTimeGulf": "8 - 12 dias Contêineres Marítimos Diretos",
+          "transitTimeAsia": "16 - 24 Dias Rotas de Contêineres Oceânicos",
+          "storageMethod": "Armazene em ambientes de clima fresco e seco (4°C - 10°C, umidade relativa <60%) para preservar os óleos naturais e prevenir oxidação."
+        },
+        "nl": {
+          "transitTimeEU": "4 - 8 Dagen Express Road & Kortzee Koel",
+          "transitTimeGulf": "8 - 12 Dagen Direct Sea Container",
+          "transitTimeAsia": "16 - 24 Dagen Oceaancontainerroutes",
+          "storageMethod": "Bewaar in een koele, droge klimaatkamer (4°C - 10°C, RH <60%) om natuurlijke oliën te behouden en oxidatie te voorkomen."
+        },
+        "pl": {
+          "transitTimeEU": "4 - 8 Express Road i krótkomorskie lodówki",
+          "transitTimeGulf": "8 - 12 dni Bezpośredni Kontener morski",
+          "transitTimeAsia": "16 - 24 dni tras kontenerowych oceanicznych",
+          "storageMethod": "Przechowywać w chłodnym, suchym pomieszczeniu (4°C - 10°C, wilgotność <60%), aby zachować naturalne oleje i zapobiec utlenianiu."
+        },
+        "ro": {
+          "transitTimeEU": "4 - 8 Days Express Road & Short-Sea Reer",
+          "transitTimeGulf": "8 - 12 zile Direct Sea Container",
+          "transitTimeAsia": "16 - 24 Zile Rute Oceanice pentru containere",
+          "storageMethod": "Păstrați într-o cameră cu climă răcoroasă și uscată (4°C - 10°C, RH <60%) pentru a conserva uleiurile naturale și a preveni oxidarea."
+        },
+        "bg": {
+          "transitTimeEU": "4 - 8 дни експресен път и късноморски хладилен вагон",
+          "transitTimeGulf": "8 - 12 дни Директен морски контейнер",
+          "transitTimeAsia": "16 - 24 дни Океански контейнерни маршрути",
+          "storageMethod": "Съхранявайте в хладна, суха климатична стая (4°C - 10°C, RH <60%), за да запазите естествените масла и да предотвратите окисление."
+        },
+        "el": {
+          "transitTimeEU": "4 - 8 ημέρες Express Road & Short-Sea Reefer",
+          "transitTimeGulf": "8 - Απευθείας θαλάσσιο εμπορευματοκιβώτιο 12 ημερών",
+          "transitTimeAsia": "16 - Διαδρομές εμπορευματοκιβωτίων 24 ημερών",
+          "storageMethod": "Φυλάσσετε σε δροσερό, ξηρό κλίμα δωμάτιο (4°C - 10°C, RH <60%) για να διατηρήσετε τα φυσικά έλαια και να αποτρέψετε την οξείδωση."
+        },
+        "sr": {
+          "transitTimeEU": "4 - 8 dana Ekpress Road & Short-Sea Reefer",
+          "transitTimeGulf": "8 - 12 dana Direktan more kontejnera",
+          "transitTimeAsia": "16 - 24 dana okeanske kontejnerske rute",
+          "storageMethod": "Čuvati u hladnoj i suvoj klimatskoj prostoriji (4°C - 10°C, RH <60%) kako biste sačuvali prirodna ulja i sprečili oksidaciju."
+        },
+        "uk": {
+          "transitTimeEU": "4 - 8 Days Express Road та Short-Sea Reefer",
+          "transitTimeGulf": "8 - 12 Days Direct Sea Container",
+          "transitTimeAsia": "16 - 24 дні Океанські контейнерні маршрути",
+          "storageMethod": "Зберігайте в кімнаті з прохолодним, сухим кліматом (4°C - 10°C, RH <60%), щоб зберегти природні олії та запобігти окисленню."
+        },
+        "ka": {
+          "transitTimeEU": "4 - 8 დღე ექსპრეს გზებით და მოკლე ზღვის Reefer",
+          "transitTimeGulf": "8 - 12 დღე პირდაპირი საზღვაო კონტეინერით",
+          "transitTimeAsia": "16 - 24 დღე ოკეანური კონტეინერის გზებით",
+          "storageMethod": "შეინახეთ გრილ, მშრალ კლიმატში (4°C - 10°C, ნორმა RH <60%) ბუნებრივი ზეთების შესანახად და ოქსიდაციის თავიდან ასაცილებლად."
+        },
+        "az": {
+          "transitTimeEU": "4 - 8 Days Express Road & Short-Sea Reefer",
+          "transitTimeGulf": "8 - 12 Gün Birbaşa Dəniz Konteyneri",
+          "transitTimeAsia": "16 - 24 Gün Okean Konteyner Marşrutları",
+          "storageMethod": "Təbii yağları qorumaq və oksidləşmənin qarşısını almaq üçün sərin, quru iqlim otağında (4°C - 10°C, RH <60%) saxlayın."
+        },
+        "uz": {
+          "transitTimeEU": "4 - 8 Kun Express Yoʻl va Qisqa-Dengiz Muzlatgichi",
+          "transitTimeGulf": "8 - 12 Kun Toʻgʻridan-toʻgʻri Dengiz Konteyneri",
+          "transitTimeAsia": "16 - 24 Kun Okean Konteyner Yoʻllari",
+          "storageMethod": "Tabiiy yogʻlarni saqlash va oksidlanishni oldini olish uchun sovuq, quruq iqlimli xonada saqlang (4°C - 10°C, RH <60%)"
+        },
+        "kk": {
+          "transitTimeEU": "4 - 8 Days Express Road және Short-Sea Reefer",
+          "transitTimeGulf": "8 - 12 Days Тікелей теңіз контейнері",
+          "transitTimeAsia": "16 - 24 күндік мұхиттық контейнер маршруттары",
+          "storageMethod": "Табиғи майларды сақтау және тотығуды болдырмау үшін салқын, құрғақ климатты бөлмеде (4°C - 10°C, оң жақ <60%) сақтаңыз."
+        },
+        "fa": {
+          "transitTimeEU": "4 - جاده اکسپرس 8 روز و یخچال کوتاه",
+          "transitTimeGulf": "8 - 12 روز کانتینر مستقیم دریایی",
+          "transitTimeAsia": "16 - مسیرهای کانتینری اقیانوسی 24 روز",
+          "storageMethod": "در اتاقی خنک و خشک (4°C - 10°C، <60% نسبی) نگهداری کنید تا روغن های طبیعی حفظ شده و از اکسیداسیون جلوگیری شود."
+        },
+        "hi": {
+          "transitTimeEU": "4 - 8 डेज़ एक्सप्रेस रोड और शॉर्ट-सी रीफर",
+          "transitTimeGulf": "8 - 12 दिन का सीधा समुद्री कंटेनर",
+          "transitTimeAsia": "16 - 24 दिन के महासागर कंटेनर मार्ग",
+          "storageMethod": "प्राकृतिक तेलों को संरक्षित करने और ऑक्सीकरण को रोकने के लिए ठंडे, शुष्क जलवायु वाले कमरे (4°C - 10°C, आरएच <60%) में स्टोर करें।"
+        },
+        "ur": {
+          "transitTimeEU": "4 - 8 ڈیز ایکسپریس روڈ اور شارٹ-سی ریفر",
+          "transitTimeGulf": "8 - 12 ڈیز ڈائریکٹ سی کنٹینر",
+          "transitTimeAsia": "16 - 24 دن کے سمندری کنٹینر راستے",
+          "storageMethod": "ٹھنڈی، خشک آب و ہوا والے کمرے (4°C - 10°C، RH <60%) میں ذخیرہ کریں تاکہ قدرتی تیل محفوظ رہیں اور آکسیڈیشن سے بچا جا سکے۔"
+        },
+        "bn": {
+          "transitTimeEU": "4 - 8 দিনের এক্সপ্রেস রোড এবং শর্ট সি রিফার",
+          "transitTimeGulf": "8 - 12 দিনের সরাসরি সমুদ্র কন্টেইনার",
+          "transitTimeAsia": "16 - 24 দিনের ওশান কন্টেইনার রুট",
+          "storageMethod": "প্রাকৃতিক তেল সংরক্ষণ এবং জারণ রোধ করতে শীতল, শুকনো জলবায়ু ঘরে (4°C - 10°C, আরএইচ <60%) সংরক্ষণ করুন।"
+        },
+        "zh-cn": {
+          "transitTimeEU": "4 - 8日快线与短海冷藏车",
+          "transitTimeGulf": "8 - 12天直达海运集装箱",
+          "transitTimeAsia": "16 - 24天海洋集装箱航线",
+          "storageMethod": "储存在凉爽干燥的气候室（4°C - 10°C，相对湿度<60%），以保存天然油脂并防止氧化。"
+        },
+        "ja": {
+          "transitTimeEU": "4 - 8デイズ・エクスプレス・ロード&ショートシーリーファー",
+          "transitTimeGulf": "8 - 12日直行海上コンテナ",
+          "transitTimeAsia": "16 - 24日の洋上コンテナルート",
+          "storageMethod": "涼しく乾燥した気候の部屋(4°C - 10°C、湿度<60%)で保存し、天然の油脂を保存し酸化を防ぎます。"
+        },
+        "ko": {
+          "transitTimeEU": "4 - 8 데이즈 익스프레스 로드 및 단거리 냉장",
+          "transitTimeGulf": "8 - 12일 직항 해상 컨테이너",
+          "transitTimeAsia": "16 - 24일 해상 컨테이너 노선",
+          "storageMethod": "자연 오일을 보존하고 산화를 방지하기 위해 서늘하고 건조한 기후 방(4°C - 10°C, 습도<60%)에 보관하세요."
+        },
+        "id": {
+          "transitTimeEU": "4 - 8 Hari Pengiriman Ekspres Jalan & Laut Pendek (Reefer)",
+          "transitTimeGulf": "8 - 12 Hari Kontainer Laut Langsung",
+          "transitTimeAsia": "16 - 24 Hari Rute Kontainer Laut",
+          "storageMethod": "Simpan di ruangan sejuk dan kering (4°C - 10°C, RH <60%) untuk menjaga minyak alami dan mencegah oksidasi."
+        },
+        "ms": {
+          "transitTimeEU": "4 - 8 Days Express Road & Short-Sea Reefer",
+          "transitTimeGulf": "Kontena Laut Langsung 8 - 12 Hari",
+          "transitTimeAsia": "Laluan Kontena Lautan 16 - 24 Hari",
+          "storageMethod": "Simpan dalam bilik beriklim sejuk dan kering (4°C - 10°C, RH <60%) untuk memelihara minyak semula jadi dan mengelakkan pengoksidaan."
+        },
+        "sw": {
+          "transitTimeEU": "4 - Barabara ya Express ya Siku 8 na Reefer ya Bahari Fupi",
+          "transitTimeGulf": "8 - Siku 12 Kontena la Moja kwa Moja la Bahari",
+          "transitTimeAsia": "16 - Njia za Kontena za Bahari za Siku 24",
+          "storageMethod": "Hifadhi katika chumba cha hali ya hewa baridi, kavu (4°C - 10°C, RH <60%) ili kuhifadhi mafuta ya asili na kuzuia oxidation."
+        }
+      }
+    },
+    "faqs": [
+      {
+        "question": "How do you ensure aflatoxin safety and quality compliance for nut exports?",
+        "questionTr": "Fındık ve kuruyemiş ihracatında aflatoksin güvenliğini ve kalite standartlarını nasıl sağlıyorsunuz?",
+        "answer": "Every single production batch undergoes rigorous sampling and laboratory analysis in ISO 17025 accredited laboratories. We test for aflatoxins (B1, B2, G1, G2 and Total), moisture, peroxide values, and microbiological purity. Full official Health and Phytosanitary certificates alongside third-party inspection (SGS/Bureau Veritas) accompany each shipment.",
+        "answerTr": "Her üretim partimiz ISO 17025 akreditasyonlu laboratuvarlarda numune alınarak analiz edilir. Aflatoksin (B1, B2, G1, G2 ve Toplam), nem, peroksit ve mikrobiyolojik testler eksiksiz tamamlanır. Resmi Sağlık ve Fitosaniter sertifikaları ile talep halinde SGS/Bureau Veritas gözetim raporları her sevkiyata eklenir.",
+        "localized": {
+          "ar": {
+            "question": "كيف تضمن سلامة وجودة الأفلاتوكسين لتصدير المكسرات؟",
+            "answer": "تخضع كل دفعة إنتاجية لأخذ عينات دقيقة وتحليل مخبري في ISO 17025 مختبرات معتمدة. نقوم باختبار الأفلاتوكسينات (B1، B2، G1، G2 وكل)، الرطوبة، قيم البيروكسيد، والنقاء الميكروبيولوجي. ترافق كل شحنة شهادات صحية وصحة نباتية رسمية كاملة إلى جانب تفتيش من طرف ثالث (SGS/Bureau Veritas)."
+          },
+          "ru": {
+            "question": "Как обеспечить безопасность и соответствие качества афлатоксина для экспорта орехов?",
+            "answer": "Каждая серия производства проходит тщательный отбор проб и лабораторный анализ в ISO 17025 аккредитованных лабораториях. Мы проверяем на афлатоксины (B1, B2, G1, G2 и Total), влажность, перекись и микробиологическую чистоту. С каждой поставкой сопровождаются полные официальные сертификаты здоровья и фитосанитарии, а также сторонняя инспекция (SGS/Bureau Veritas)."
+          },
+          "de": {
+            "question": "Wie stellen Sie Aflatoxin-Sicherheit und Qualitätskonformität für Nussexporte sicher?",
+            "answer": "Jede einzelne Produktionscharge wird einer rigorosen Probenahme und Laboranalyse in ISO 17025 akkreditierten Labors unterzogen. Wir testen auf Aflatoxine (B1, B2, G1, G2 und Gesamt), Feuchtigkeit, Peroxidwerte und mikrobiologische Reinheit. Vollständige offizielle Gesundheits- und Pflanzenschutz-Zertifikate sowie eine Inspektion durch Dritte (SGS/Bureau Veritas) begleiten jede Lieferung."
+          },
+          "fr": {
+            "question": "Comment garantir la sécurité et la conformité qualité des aflatoxines pour les exportations de noix ?",
+            "answer": "Chaque lot de production subit un échantillonnage rigoureux et une analyse en laboratoire dans ISO 17025 laboratoires accrédités. Nous testons les aflatoxines (B1, B2, G1, G2 et totale), l’humidité, les valeurs de peroxyde et la pureté microbiologique. Chaque expédition accompagne chaque expédition des certificats officiels officiels de santé et phytosanitaires complets, accompagnés d’une inspection tierce (SGS/Bureau Veritas)."
+          },
+          "es": {
+            "question": "¿Cómo asegura la seguridad frente a aflatoxinas y el cumplimiento de calidad en las exportaciones de frutos secos?",
+            "answer": "Cada lote de producción se somete a un riguroso muestreo y análisis de laboratorio en laboratorios acreditados ISO 17025. Probamos aflatoxinas (B1, B2, G1, G2 y Total), humedad, valores de peróxido y pureza microbiológica. Cada envío va acompañado de certificados oficiales completos de Sanidad y Fitosanitarios junto con inspección de terceros (SGS/Bureau Veritas)."
+          },
+          "it": {
+            "question": "Come garantite la sicurezza e la conformità alla qualità delle aflatoxine per le esportazioni di frutta secca?",
+            "answer": "Ogni singolo lotto di produzione è sottoposto a un rigoroso campionamento e analisi di laboratorio in laboratori accreditati ISO 17025. Testiamo aflatossine (B1, B2, G1, G2 e Totale), umidità, valori di perossido e purezza microbiologica. Certificati ufficiali sanitari e fitosanitari completi insieme all'ispezione di terze parti (SGS/Bureau Veritas) accompagnano ogni spedizione."
+          },
+          "pt": {
+            "question": "Como garantir a segurança e a conformidade com a qualidade da aflatoxina para exportações de castanhas?",
+            "answer": "Cada lote de produção passa por amostragem rigorosa e análise laboratorial em laboratórios ISO 17025 credenciados. Testamos aflatoxinas (B1, B2, G1, G2 e Total), umidade, valores de peróxido e pureza microbiológica. Certificados oficiais completos de Saúde e Fitossanitários, juntamente com inspeção de terceiros (SGS/Bureau Veritas), acompanham cada remessa."
+          },
+          "nl": {
+            "question": "Hoe zorgt u voor de veiligheid en kwaliteit van aflatoxine bij de export van noten?",
+            "answer": "Elke productiebatch ondergaat grondige bemonstering en laboratoriumanalyse in ISO 17025 geaccrediteerde laboratoria. We testen op aflatoxinen (B1, B2, G1, G2 en totaal), vocht, peroxidewaarden en microbiologische zuiverheid. Volledige officiële gezondheids- en fytosanitaire certificaten samen met derde-inspectie (SGS/Bureau Veritas) gaan bij elke zending."
+          },
+          "pl": {
+            "question": "Jak zapewniacie bezpieczeństwo i zgodność z jakością aflatotoksyn przy eksporcie orzechów?",
+            "answer": "Każda pojedyncza partia produkcyjna poddawana jest rygorystycznemu pobieraniu próbek i analizie laboratoryjnej w ISO 17025 akredytowanych laboratoriach. Testujemy aflatoksyny (B1, B2, G1, G2 i całkowitość), wilgotność, wartości nadtlenku oraz czystość mikrobiologiczną. Do każdej wysyłki dołączone są pełne oficjalne certyfikaty zdrowotne i fitosanitarne oraz inspekcje zewnętrzne (SGS/Bureau Veritas)."
+          },
+          "ro": {
+            "question": "Cum asigurați siguranța aflatoxinelor și conformitatea calității pentru exporturile de nuci?",
+            "answer": "Fiecare lot de producție trece printr-un eșantionare riguroasă și analiză de laborator în laboratoare acreditate ISO 17025. Testăm aflatoxine (B1, B2, G1, G2 și total), umiditate, valori de peroxid și puritate microbiologică. Certificate oficiale complete de sănătate și fitosanitare, împreună cu inspecția terță parte (SGS/Bureau Veritas), însoțesc fiecare transport."
+          },
+          "bg": {
+            "question": "Как гарантирате безопасността и качеството на афлатоксина при износ на ядки?",
+            "answer": "Всяка една производствена партида преминава през стриктно вземане на проби и лабораторен анализ в ISO 17025 акредитирани лаборатории. Тестваме за афлатоксини (B1, B2, G1, G2 и Total), влажност, стойности на пероксид и микробиологична чистота. Пълни официални здравни и фитосанитарни сертификати, заедно с инспекция от трети страни (SGS/Bureau Veritas), съпътстват всяка пратка."
+          },
+          "el": {
+            "question": "Πώς διασφαλίζετε την ασφάλεια και την ποιότητα της αφλατοξίνης για τις εξαγωγές ξηρών καρπών;",
+            "answer": "Κάθε παρτίδα παραγωγής υποβάλλεται σε αυστηρή δειγματοληψία και εργαστηριακή ανάλυση σε ISO 17025 διαπιστευμένα εργαστήρια. Ελέγχουμε για αφλατοξίνες (B1, B2, G1, G2 και Total), υγρασία, τιμές υπεροξειδίου και μικροβιολογική καθαρότητα. Πλήρη επίσημα υγειονομικά και φυτοϋγειονομικά πιστοποιητικά μαζί με επιθεώρηση τρίτων (SGS/Bureau Veritas) συνοδεύουν κάθε αποστολή."
+          },
+          "sr": {
+            "question": "Kako osigurati sigurnost aflatoksina i usklađenost kvaliteta za izvoz oraha?",
+            "answer": "Svaka pojedinačna proizvodna serija prolazi rigorozno uzorkovanje i laboratorijske analize u ISO 17025 akreditovanim laboratorijama. Testiramo na aflatoksine (B1, B2, G1, G2 i ukupno), vlagu, peroksidne vrednosti i mikrobiološku čistoću. Potpuni zvanični zdravstveni i fitosanitarni sertifikati uz inspekciju treće strane (SGS / Bureau Veritas) prate svaku pošiljku."
+          },
+          "uk": {
+            "question": "Як забезпечити безпеку та якість афлатоксину для експорту горіхів?",
+            "answer": "Кожна виробнича партія проходить ретельний відбір проб і лабораторний аналіз у ISO 17025 акредитованих лабораторіях. Ми тестуємо на афлатоксини (B1, B2, G1, G2 та загальний), вологу, перекис і мікробіологічну чистоту. Кожну партію супроводжують повні офіційні сертифікати здоров'я та фітосанітарні сертифікати разом із сторонніми інспекціями (SGS/Bureau Veritas)."
+          },
+          "ka": {
+            "question": "როგორ უზრუნველყოთ აფლატოქსინის უსაფრთხოება და ხარისხის შესაბამისობა ნაღების ექსპორტის დროს?",
+            "answer": "ყოველი წარმოების პარტია განიცდის მკაცრ ნიმუშების აღებასა და ლაბორატორიულ ანალიზს ISO 17025 აკრედიტებულ ლაბორატორიებში. ჩვენ ვტესტავთ აფლატოქსინებს (B1, B2, G1, G2 და საერთო), ტენიანობას, პეროქსიდის მნიშვნელობებს და მიკრობიოლოგიურ სისუფთავეს. სრული ოფიციალური ჯანმრთელობისა და ფიტოსანიტარული სერტიფიკატები ერთად მესამე მხარის ინსპექციასთან (SGS/Bureau Veritas) თან ახლავს თითოეულ ჩატვირთვას."
+          },
+          "az": {
+            "question": "Qoz ixracatı üçün aflatoksin təhlükəsizliyi və keyfiyyət uyğunluğunu necə təmin edirsiniz?",
+            "answer": "Hər bir istehsal partiyası akkreditə olunmuş ISO 17025 laboratoriyada ciddi nümunə götürmə və laboratoriya analizindən keçir. Biz aflatoksinlər (B1, B2, G1, G2 və Total), rütubət, peroksid dəyərləri və mikrobioloji təmizlik üçün test edirik. Hər göndərişə tam rəsmi Sağlamlıq və Fitosanitar sertifikatlar və üçüncü tərəf yoxlaması (SGS/Bureau Veritas) əlavə olunur."
+          },
+          "uz": {
+            "question": "Yong‘oq eksportida aflatoksin xavfsizligi va sifatga rioya qilishni qanday ta’minlaysiz?",
+            "answer": "Har bir ishlab chiqarish partiyasi ISO 17025 akkreditatsiyadan o‘tgan laboratoriyalarda qat’iy namunalar olinib va laboratoriya tahlilidan o‘tadi. Biz aflatoksinlar (B1, B2, G1, G2 va jami), namlik, peroksid qiymatlari va mikrobiologik tozaligini tekshiramiz. Har bir jo‘natmaga rasmiy To‘liq Sog‘liqni Saqlash va Fitosanitar sertifikatlar shuningdek uchinchi tomon tekshiruvi (SGS/Bureau Veritas) hamroh bo‘ladi."
+          },
+          "kk": {
+            "question": "Жаңғақ экспортында афлатоксиннің қауіпсіздігі мен сапасына сәйкестігін қалай қамтамасыз етесіз?",
+            "answer": "Әрбір өндірістік партия ISO 17025 аккредиттелген зертханаларда қатаң үлгі алу және зертханалық талдаудан өтеді. Біз афлатоксиндерді (B1, B2, G1, G2 және Total), ылғалдылықты, пероксид мәндерін және микробиологиялық тазалықты тексереміз. Әрбір жеткізілімге толық ресми денсаулық және фитосанитарлық сертификаттар, сондай-ақ үшінші тарап инспекциясы (SGS/Bureau Veritas) беріледі."
+          },
+          "fa": {
+            "question": "چگونه ایمنی و کیفیت آفلاتوکسین را برای صادرات مغزها تضمین می کنید؟",
+            "answer": "هر دسته تولیدی نمونه برداری دقیق و تحلیل آزمایشگاهی در ISO 17025 آزمایشگاه معتبر انجام می شود. ما آفلاتوکسین ها (B1، B2، G1، G2 و کل)، رطوبت، مقادیر پراکسید و خلوص میکروبیولوژیکی را آزمایش می کنیم. گواهی های رسمی کامل سلامت و بهداشت گیاهی همراه با بازرسی های شخص ثالث (SGS/Bureau Veritas) همراه با هر محموله ارائه می شود."
+          },
+          "hi": {
+            "question": "आप अखरोट निर्यात के लिए एफ्लाटॉक्सिन सुरक्षा और गुणवत्ता अनुपालन कैसे सुनिश्चित करते हैं?",
+            "answer": "प्रत्येक उत्पादन बैच ISO 17025 मान्यता प्राप्त प्रयोगशालाओं में कठोर नमूनाकरण और प्रयोगशाला विश्लेषण से गुजरता है। हम एफ्लाटॉक्सिन (B1, B2, G1, G2 और कुल), नमी, पेरोक्साइड मान और सूक्ष्मजीवविज्ञानी शुद्धता के लिए परीक्षण करते हैं। प्रत्येक शिपमेंट के साथ तृतीय-पक्ष निरीक्षण (SGS/ब्यूरो वेरिटास) के साथ पूर्ण आधिकारिक स्वास्थ्य और फाइटोसैनिटरी प्रमाण पत्र।"
+          },
+          "ur": {
+            "question": "آپ گری جات کی برآمدات کے لیے افلیٹوکسین کی حفاظت اور معیار کی پابندی کیسے یقینی بناتے ہیں؟",
+            "answer": "ہر پروڈکشن بیچ ISO 17025 منظور شدہ لیبارٹریوں میں سخت سیمپلنگ اور لیبارٹری تجزیہ سے گزرتا ہے۔ ہم افلیٹوکسنز (B1، B2، G1، G2 اور ٹوٹل)، نمی، پر آکسائیڈ کی قدریں، اور مائیکرو بایولوجیکل پاکیزگی کی جانچ کرتے ہیں۔ ہر شپمنٹ کے ساتھ مکمل سرکاری صحت اور فائٹوسینیٹری سرٹیفیکیٹس کے ساتھ تھرڈ پارٹی انسپیکشن (SGS/Bureau Veritas) بھی فراہم کیے جاتے ہیں۔"
+          },
+          "bn": {
+            "question": "বাদাম রফতানির জন্য আপনি কীভাবে আফলাটক্সিন সুরক্ষা এবং গুণমানের সম্মতি নিশ্চিত করবেন?",
+            "answer": "প্রতিটি একক উত্পাদন ব্যাচ ISO 17025 স্বীকৃত পরীক্ষাগারগুলিতে কঠোর নমুনা এবং পরীক্ষাগার বিশ্লেষণের মধ্য দিয়ে যায়। আমরা আফলাটক্সিন (B1, B2, G1, G2 এবং মোট), আর্দ্রতা, পারক্সাইডের মান এবং মাইক্রোবায়োলজিক্যাল বিশুদ্ধতার জন্য পরীক্ষা করি। তৃতীয় পক্ষের পরিদর্শন (SGS / ব্যুরো ভেরিটাস) সহ সম্পূর্ণ অফিসিয়াল স্বাস্থ্য এবং ফাইটোস্যানিটারি শংসাপত্র প্রতিটি চালানের সাথে থাকে।"
+          },
+          "zh-cn": {
+            "question": "如何确保坚果出口的黄麴毒素安全和质量合规？",
+            "answer": "每一批生产都经过严格的采样和ISO 17025认证实验室的实验室分析。我们检测黄麴毒素（B1、B2、G1、G2和总量）、湿度、过氧化物值和微生物纯度。每批货物均附有完整的官方健康与植物检疫证书及第三方检验（SGS/Bureau Veritas）。"
+          },
+          "ja": {
+            "question": "ナッツ輸出において、アフラトキシンの安全性と品質遵守をどのように確保していますか?",
+            "answer": "すべての生産バッチは、ISO 17025認定された検査所で厳格なサンプリングと実験室分析を受けています。アフラトキシン(B1、B2、G1、G2、トータル)、水分、過酸化水素値、微生物純度を検査します。各出荷には、公式の健康・植物検疫証明書と第三者検査(SGS/Bureau Veritas)が添付されます。"
+          },
+          "ko": {
+            "question": "견과류 수출에서 아플라톡신 안전성과 품질 준수를 어떻게 보장합니까?",
+            "answer": "모든 생산 배치는 ISO 17025 인증된 실험실에서 엄격한 샘플링 및 실험실 분석을 거칩니다. 우리는 아플라톡신(B1, B2, G1, G2, 토토), 수분, 과산화수소 수치, 미생물학적 순도를 검사합니다. 각 선적에는 공식 보건 및 식물 검역 증명서와 제3자 검사(SGS/Bureau Veritas)가 함께 제공됩니다."
+          },
+          "id": {
+            "question": "Bagaimana Anda memastikan keamanan aflatoksin dan kepatuhan kualitas untuk ekspor kacang?",
+            "answer": "Setiap batch produksi menjalani pengambilan sampel dan analisis laboratorium yang ketat di laboratorium yang diakreditasi ISO 17025. Kami menguji aflatoksin (B1, B2, G1, G2 dan Total), kadar air, nilai peroksida, dan kemurnian mikrobiologis. Sertifikat Kesehatan dan Fitosanitari resmi lengkap beserta inspeksi pihak ketiga (SGS/Bureau Veritas) menyertai setiap pengiriman."
+          },
+          "ms": {
+            "question": "Bagaimana anda memastikan keselamatan aflatoksin dan pematuhan kualiti untuk eksport kacang?",
+            "answer": "Setiap kumpulan pengeluaran menjalani pensampelan dan analisis makmal yang ketat di makmal ISO 17025 diiktiraf. Kami menguji aflatoksin (B1, B2, G1, G2 dan Total), kelembapan, nilai peroksida, dan ketulenan mikrobiologi. Sijil Kesihatan dan Fitosanitari rasmi penuh bersama pemeriksaan pihak ketiga (SGS/Bureau Veritas) disertai setiap penghantaran."
+          },
+          "sw": {
+            "question": "Je, unahakikishaje usalama wa aflatoxin na utiifu wa ubora kwa usafirishaji wa karanga?",
+            "answer": "Kila kundi moja la uzalishaji hupitia sampuli kali na uchambuzi wa maabara katika maabara ISO 17025 zilizoidhinishwa. Tunajaribu aflatoxins (B1, B2, G1, G2 na Jumla), unyevu, maadili ya peroksidi, na usafi wa microbiolojia. Vyeti rasmi kamili vya Afya na Phytosanitary pamoja na ukaguzi wa mtu wa tatu (SGS/Bureau Veritas) huambatana na kila usafirishaji."
+          }
+        }
+      },
+      {
+        "question": "Can we order a consolidated container combining hazelnuts, pistachios, and dried fruits?",
+        "questionTr": "Fındık, fıstık, ceviz ve kuru meyveleri içeren karma (konsolide) konteyner siparişi verebilir miyiz?",
+        "answer": "Yes! Nilasya Agro Foods specializes in flexible consolidation. You can combine multiple nut varieties (hazelnuts, pistachios, walnuts, almonds) and dried fruits (figs, apricots) into a single 20ft or 40ft container to optimize your inventory and cash flow.",
+        "answerTr": "Evet! Nilasya Agro Foods esnek konsolidasyon imkanı sunmaktadır. Fındık, Antep fıstığı, ceviz, badem ve kuru meyveleri tek bir 20ft veya 40ft konteynerde birleştirerek stok maliyetlerinizi optimize edebilirsiniz.",
+        "localized": {
+          "ar": {
+            "question": "هل يمكننا طلب علبة موحدة تجمع بين البندق والفستق والفواكه المجففة؟",
+            "answer": "نعم! Nilasya Agro Foods متخصصة في الدمج المرن. يمكنك دمج عدة أنواع من المكسرات (بندق، فستق، جوز، لوز) والفواكه المجففة (التين، المشمش) في 20ft أو 40ft في وعاء واحد لتحسين مخزونك وتدفقك النقدي."
+          },
+          "ru": {
+            "question": "Можем ли мы заказать консолидированный контейнер с фундуком, фисташками и сухофруктами?",
+            "answer": "Да! Nilasya Agro Foods специализируется на гибкой консолидации. Вы можете объединить несколько сортов орехов (фундук, фисташки, грецкие орехи, миндаль) и сухофрукты (инжир, абрикосы) в одном контейнере 20ft или 40ft для оптимизации запасов и денежного потока."
+          },
+          "de": {
+            "question": "Können wir einen konsolidierten Container mit Haselnüssen, Pistazien und Trockenfrüchten bestellen?",
+            "answer": "Ja! Nilasya Agro Foods ist auf flexible Konsolidierung spezialisiert. Sie können mehrere Nusssorten (Haselnüsse, Pistazien, Walnüsse, Mandeln) und Trockenfrüchte (Feigen, Aprikosen) in einem einzigen 20ft oder 40ft Container kombinieren, um Ihr Inventar und Ihren Cashflow zu optimieren."
+          },
+          "fr": {
+            "question": "Peut-on commander un conteneur consolidé combinant noisetiers, pistaches et fruits secs ?",
+            "answer": "Oui ! Nilasya Agro Foods est spécialisée dans la consolidation flexible. Vous pouvez combiner plusieurs variétés de fruits à coque (noisette, pistaches, noix, amandes) et fruits secs (figues, abricots) dans un seul 20ft ou 40ft contenant pour optimiser votre inventaire et votre trésorerie."
+          },
+          "es": {
+            "question": "¿Podemos pedir un contenedor consolidado que combine avellanas, pistachos y frutas secas?",
+            "answer": "¡Sí! Nilasya Agro Foods se especializa en consolidación flexible. Puede combinar múltiples variedades de frutos secos (avellanas, pistachos, nueces, almendras) y frutas secas (higos, albaricoques) en un solo contenedor 20ft o 40ft para optimizar su inventario y flujo de caja."
+          },
+          "it": {
+            "question": "Possiamo ordinare un contenitore consolidato che combini nocciole, pistacchi e frutta secca?",
+            "answer": "Sì! Nilasya Agro Foods è specializzata nella consolidazione flessibile. Puoi combinare più varietà di noci (nocciole, pistacchi, noci, mandorle) e frutta secca (fichi, albicocche) in un unico contenitore 20ft o 40ft per ottimizzare il tuo inventario e il flusso di cassa."
+          },
+          "pt": {
+            "question": "Podemos pedir um recipiente consolidado que combine avelãs, pistaches e frutas secas?",
+            "answer": "Sim! Nilasya Agro Foods é especializada em consolidação flexível. Você pode combinar várias variedades de castanhas (avelãs, pistaches, nozes, amêndoas) e frutas secas (figos, damascos) em um único recipiente 20ft ou 40ft para otimizar seu estoque e fluxo de caixa."
+          },
+          "nl": {
+            "question": "Kunnen we een geconsolideerde container bestellen die hazelnoten, pistachenoten en gedroogd fruit combineert?",
+            "answer": "Ja! Nilasya Agro Foods is gespecialiseerd in flexibele consolidatie. Je kunt meerdere notenrassen (hazelnoten, pistachenoten, walnoten, amandelen) en gedroogd fruit (vijgen, abrikozen) combineren in één 20ft of 40ft container om je voorraad en cashflow te optimaliseren."
+          },
+          "pl": {
+            "question": "Czy możemy zamówić skonsolidowane pojemniki łączące orzechy laskowe, pistacje i suszone owoce?",
+            "answer": "Tak! Nilasya Agro Foods specjalizuje się w elastycznej konsolidacji. Możesz łączyć wiele odmian orzechów (orzechy laski, pistacje, orzechy włoskie, migdały) i suszone owoce (figi, morele) w jednym pojemniku 20ft lub 40ft, aby zoptymalizować zapasy i przepływ gotówki."
+          },
+          "ro": {
+            "question": "Putem comanda un recipient consolidat care să combine alune, fistic și fructe uscate?",
+            "answer": "Da! Nilasya Agro Foods este specializată în consolidare flexibilă. Poți combina mai multe soiuri de nuci (alune, fistic, nuci, migdale) și fructe uscate (smochine, caise) într-un singur recipient 20ft sau 40ft pentru a-ți optimiza inventarul și fluxul de numerar."
+          },
+          "bg": {
+            "question": "Можем ли да поръчаме консолидиран контейнер, съчетаващ лешници, шамфъстъци и сушени плодове?",
+            "answer": "Да! Nilasya Agro Foods се специализира в гъвкава консолидация. Можете да комбинирате няколко сорта ядки (лешници, шамфъстъци, орехи, бадеми) и сушени плодове (смокини, кайсии) в един 20ft или 40ft съд, за да оптимизирате инвентара и паричния си поток."
+          },
+          "el": {
+            "question": "Μπορούμε να παραγγείλουμε ένα ενοποιημένο δοχείο που συνδυάζει φουντούκια, φιστίκια Αιγίνης και αποξηραμένα φρούτα;",
+            "answer": "Ναι! Nilasya Agro Foods ειδικεύεται στην ευέλικτη ενοποίηση. Μπορείτε να συνδυάσετε πολλές ποικιλίες ξηρών καρπών (φουντούκια, φιστίκια, καρύδια, αμύγδαλα) και αποξηραμένα φρούτα (σύκα, βερίκοκα) σε ένα μόνο δοχείο 20ft ή 40ft για να βελτιστοποιήσετε το απόθεμα και τις ταμειακές ροές σας."
+          },
+          "sr": {
+            "question": "Možemo naručiti konsolidovani kontejner koji kombinuje lešnike, pistacije i suvo voće?",
+            "answer": "Da! Nilasya Agro Foods specijalizovana za fleksibilnu konsolidaciju. Možete kombinovati više sorti oraha (lešnici, pistacije, orasi, bademi) i suvo voće (smokve, kajsije) u jednu 20ft ili 40ft kontejner kako biste optimizirali svoj inventar i novčani tok."
+          },
+          "uk": {
+            "question": "Чи можемо ми замовити консолідований контейнер, що поєднує ліщину, фісташки та сухофрукти?",
+            "answer": "Так! Nilasya Agro Foods спеціалізується на гнучкій консолідації. Ви можете комбінувати кілька сортів горіхів (фундук, фісташки, волоські горіхи, мигдаль) та сухофрукти (інжир, абрикоси) в один контейнер 20ft або 40ft для оптимізації запасів і грошових потоків."
+          },
+          "ka": {
+            "question": "შეგვიძლია შეკვეთა გაკეთდეს კონსოლიდირებული კონტეინერისთვის, რომელიც შეიცავს ნუშს, ფისტას და გაშრალ ხილს?",
+            "answer": "კი! Nilasya Agro Foods სპეციალიზებულია მოქნილი კონსოლიდაციაში. შეგიძლიათ შეაერთოთ რამდენიმე კაკლის ჯიში (ფუნთუშა, ფუნდუკი, კაკალი, ნუში) და თხილი (ჩირი, ძՄიტრი) ერთ 20ft ან 40ft კონტეინერში, რათა ოპტიმიზირებული იყოს თქვენი მარაგი და ნაღდი ფულის თანხა."
+          },
+          "az": {
+            "question": "Fındıq, fıstıq və qurudulmuş meyvələrdən ibarət birləşmiş qab sifariş edə bilərik?",
+            "answer": "Bəli! Nilasya Agro Foods çevik konsolidasiya üzrə ixtisaslaşıb. Bir neçə qoz növünü (fındıq, fıstığ, qoz, badam) və qurudulmuş meyvələri (incir, ərik) bir 20ft və ya 40ft konteynerdə birləşdirərək inventarınızı və pul axınınızı optimallaşdıra bilərsiniz."
+          },
+          "uz": {
+            "question": "Yong‘oq, pista va quritilgan mevalarni birlashtirgan umumiy konteyner buyurtma qila olamizmi?",
+            "answer": "Ha! Nilasya Agro Foods moslashuvchan konsolidatsiya bo‘yicha ixtisoslashgan. Siz bir nechta yong‘oq turlarini (findiq, pista, yong‘oq, bodom) va quritilgan mevalarni (anjir, o‘rik) yagona 20ft yoki 40ft konteynerga birlashtirib, inventarizatsiya va naqd pul oqimini optimallashtirishingiz mumkin."
+          },
+          "kk": {
+            "question": "Жаңғақ, фисташка және кептірілген жемістер қосылған біріктірілген контейнерге тапсырыс бере аламыз ба?",
+            "answer": "Иә! Nilasya Agro Foods икемді біріктіруге маманданған. Сіз бірнеше жаңғақ түрін (фундук, фисташка, жаңғақ, бадам) және кептірілген жемістерді (инжір, өрік) бір 20ft немесе 40ft контейнерге біріктіріп, қорды және ақша ағынын оңтайландыруға болады."
+          },
+          "fa": {
+            "question": "می تونیم یه ظرف ترکیبی با فندق، پسته و میوه خشک سفارش بدیم؟",
+            "answer": "بله! Nilasya Agro Foods در تجمیع انعطاف پذیر تخصص دارد. می توانید چندین نوع مغزدار (فندق، پسته، گردو، بادام) و میوه های خشک (انجیر، زردآلو) را در یک ظرف 20ft یا 40ft ترکیب کنید تا موجودی و جریان نقدی خود را بهینه کنید."
+          },
+          "hi": {
+            "question": "क्या हम हेज़लनट्स, पिस्ता और सूखे मेवों के संयोजन वाला एक समेकित कंटेनर ऑर्डर कर सकते हैं?",
+            "answer": "हाँ! Nilasya Agro Foods लचीले समेकन में माहिर हैं। आप अपनी इन्वेंट्री और नकदी प्रवाह को अनुकूलित करने के लिए अखरोट की कई किस्मों (हेज़लनट्स, पिस्ता, अखरोट, बादाम) और सूखे मेवे (अंजीर, खुबानी) को एक ही 20ft या 40ft कंटेनर में मिला सकते हैं।"
+          },
+          "ur": {
+            "question": "کیا ہم ہیزلنٹس، پستہ اور خشک میوہ جات کو ملا کر ایک کنسولیڈیٹڈ کنٹینر آرڈر کر سکتے ہیں؟",
+            "answer": "جی ہاں! Nilasya Agro Foods لچکدار انضمام میں مہارت رکھتا ہے۔ آپ مختلف قسم کے گری دار میوے (ہیزل نٹ، پستہ، اخروٹ، بادام) اور خشک میوہ جات (انجیر، خوبانی) کو ایک 20ft یا 40ft کنٹینر میں ملا کر اپنی انوینٹری اور نقد بہاؤ کو بہتر بنا سکتے ہیں۔"
+          },
+          "bn": {
+            "question": "আমরা কি হ্যাজেলনাট, পেস্তা এবং শুকনো ফলের সংমিশ্রণে একটি সংহত পাত্রে অর্ডার করতে পারি?",
+            "answer": "হ্যাঁ! Nilasya Agro Foods নমনীয় একত্রীকরণে বিশেষজ্ঞ। আপনার ইনভেন্টরি এবং নগদ প্রবাহকে অনুকূল করার জন্য আপনি একাধিক বাদামের জাত (হ্যাজেলনাট, পেস্তা, আখরোট, বাদাম) এবং শুকনো ফল (ডুমুর, এপ্রিকট) একক 20ft বা 40ft পাত্রে একত্রিত করতে পারেন।"
+          },
+          "zh-cn": {
+            "question": "我们能点一个混合装装，混合榛子、开心果和干果吗？",
+            "answer": "是的！Nilasya Agro Foods专注于灵活整合。你可以将多种坚果品种（榛子、开心果、核桃、杏仁）和干果（无花果、杏子）混合在一个20ft或40ft容器中，以优化库存和现金流。"
+          },
+          "ja": {
+            "question": "ヘーゼルナッツ、ピスタチオ、ドライフルーツを組み合わせた統合容器を注文できますか?",
+            "answer": "はい!Nilasya Agro Foodsは柔軟な統合を専門としています。複数のナッツ品種(ヘーゼルナッツ、ピスタチオ、クルミ、アーモンド)やドライフルーツ(イチジク、アプリコット)を1つの20ftまたは40ft容器に組み合わせて、在庫とキャッシュフローを最適化できます。"
+          },
+          "ko": {
+            "question": "헤이즐넛, 피스타치오, 말린 과일을 합친 통합 용기 주문할 수 있을까요?",
+            "answer": "네! Nilasya Agro Foods 유연한 통합에 특화되어 있습니다. 여러 견과류 품종(헤이즐넛, 피스타치오, 호두, 아몬드)과 말린 과일(무화과, 살구)을 하나의 20ft 또는 40ft 용기에 섞어 재고와 현금 흐름을 최적화할 수 있습니다."
+          },
+          "id": {
+            "question": "Bisakah kami memesan kontainer gabungan yang mencakup hazelnut, pistachio, dan buah kering?",
+            "answer": "Ya! Nilasya Agro Foods mengkhususkan diri dalam konsolidasi fleksibel. Anda dapat menggabungkan berbagai jenis kacang (hazelnut, pistachio, kenari, almond) dan buah kering (buah ara, aprikot) dalam satu kontainer 20ft atau 40ft untuk mengoptimalkan inventaris dan arus kas Anda."
+          },
+          "ms": {
+            "question": "Bolehkah kami memesan bekas gabungan yang menggabungkan kacang hazel, pistachio, dan buah-buahan kering?",
+            "answer": "Ya! Nilasya Agro Foods pakar dalam penggabungan fleksibel. Anda boleh menggabungkan pelbagai varieti kacang (hazelnut, pistachio, walnut, badam) dan buah-buahan kering (buah ara, aprikot) ke dalam satu bekas 20ft atau 40ft untuk mengoptimumkan inventori dan aliran tunai anda."
+          },
+          "sw": {
+            "question": "Je, tunaweza kuagiza chombo kilichounganishwa kinachochanganya hazelnuts, pistachios, na matunda yaliyokaushwa?",
+            "answer": "Ndiyo! Nilasya Agro Foods mtaalamu wa ujumuishaji rahisi. Unaweza kuchanganya aina nyingi za karanga (hazelnuts, pistachios, walnuts, almond) na matunda yaliyokaushwa (tini, parachichi) kwenye chombo kimoja cha 20ft au 40ft ili kuboresha hesabu yako na mtiririko wa pesa."
+          }
+        }
+      },
+      {
+        "question": "What are the packaging shelf-life advantages of your vacuum and MAP boxes?",
+        "questionTr": "Vakumlu ve modifiye atmosferli (MAP) ambalajlarınızın raf ömrü avantajları nelerdir?",
+        "answer": "Our vacuum-sealed multi-barrier pouches and nitrogen-flushed (MAP) master cartons eliminate atmospheric oxygen, preventing rancidity, insect infestation, and crispness loss. This guarantees fresh-crop taste and texture for 18 to 24 months even through long sea voyages.",
+        "answerTr": "Çok katmanlı bariyerli vakum paketlerimiz ve azot gazlı modifiye atmosferli (MAP) kolilerimiz ortamdaki oksijeni sıfırlayarak yağ acılaşmasını, böceklenmeyi ve lezzet kaybını tamamen engeller. Ürünler uzun deniz yolculuklarında dahi 18-24 ay ilk günkü tazeliğini korur.",
+        "localized": {
+          "ar": {
+            "question": "ما هي مزايا مدة التعبئة لصناديق المكنسة الكهربائية وصناديق MAP الخاصة بك؟",
+            "answer": "حقائب متعددة الحواجز المغلقة بالفراغ وعلب النيتروجين الرئيسية (MAP) تقضي على الأكسجين الجوي، مما يمنع التعفن وانتشار الحشرات وفقدان القرمشة. هذا يضمن طعم وملمس المحاصيل الطازجة لمدة 18 إلى 24 شهرا حتى خلال الرحلات البحرية الطويلة."
+          },
+          "ru": {
+            "question": "Каковы преимущества срока годности упаковки у ваших вакуумных и MAP-коробок?",
+            "answer": "Наши вакуумно герметичные многобарьерные пакеты и главные коробки с промывкой азота (MAP) выводят атмосферный кислород, предотвращая прогоркание, заражение насекомыми и потерю хрусткости. Это гарантирует вкус и текстуру свежего урожая в течение 18–24 месяцев даже во время длительных морских путешествий."
+          },
+          "de": {
+            "question": "Welche Vorteile hinsichtlich der Haltbarkeit bietet Ihre Vakuum- und MAP-Verpackung?",
+            "answer": "Unsere vakuumversiegelten Mehrschichtbeutel und stickstoffgespülten (MAP) Masterkartons eliminieren Sauerstoff aus der Umgebung, verhindern Ranzigkeit, Schädlingsbefall und den Verlust der Knusprigkeit. Dies garantiert frischen Erntegeschmack und -textur für 18 bis 24 Monate, selbst auf langen Seereisen."
+          },
+          "fr": {
+            "question": "Quels sont les avantages de conservation de vos boîtes à vide et MAP ?",
+            "answer": "Nos sachets multi-barrières sous vide et nos cartons maîtres rincés à l’azote (MAP) éliminent l’oxygène atmosphérique, évitant la rancance, l’infestation d’insectes et la perte de croustillance. Cela garantit un goût et une texture de récolte fraîche pendant 18 à 24 mois, même lors de longues traversées en mer."
+          },
+          "es": {
+            "question": "¿Cuáles son las ventajas de vida útil de sus cajas al vacío y en MAP?",
+            "answer": "Nuestras bolsas multicapa selladas al vacío y cartones maestros purgados con nitrógeno (MAP) eliminan el oxígeno atmosférico, previniendo la rancidez, infestación de insectos y pérdida de crocancia. Esto garantiza sabor y textura de cosecha fresca durante 18 a 24 meses incluso en largos viajes marítimos."
+          },
+          "it": {
+            "question": "Quali sono i vantaggi della durata del packaging delle tue scatole a vuoto e MAP?",
+            "answer": "Le nostre bustine multi-barriera sigillate sottovuoto e i cartoni master con rinchiacchio con azoto (MAP) eliminano l'ossigeno atmosferico, prevenendo rancidità, infestazione da insetti e perdita di croccantezza. Questo garantisce gusto e consistenza di raccolto fresco per 18 a 24 mesi, anche durante lunghi viaggi in mare."
+          },
+          "pt": {
+            "question": "Quais são as vantagens de vida útil das embalagens das suas caixas de vácuo e MAP?",
+            "answer": "Nossas bolsas multibarreira seladas a vácuo e caixas mestres com nitrogênio (MAP) eliminam o oxigênio atmosférico, prevenindo rancidez, infestação de insetos e perda de crocância. Isso garante sabor e textura de safra fresca por 18 a 24 meses, mesmo em longas viagens marítimas."
+          },
+          "nl": {
+            "question": "Wat zijn de houdbaarheidsvoordelen van de verpakking van uw stofzuiger en MAP-dozen?",
+            "answer": "Onze vacuümverpakte multi-barrière zakjes en stikstofgespoelde (MAP) hoofddozen elimineren atmosferische zuurstof, waardoor ranziedheid, insectenbesmetting en verlies van knapperigheid worden voorkomen. Dit garandeert verse smaak en textuur van verse gewassen voor 18 tot 24 maanden, zelfs tijdens lange zeereizen."
+          },
+          "pl": {
+            "question": "Jakie są zalety opakowania na rynku przechowywania w pudełkach odkurzacza i MAP?",
+            "answer": "Nasze próżniowo zamknięte wielobarierowe woreczki oraz główne kartony z płukaniem azotem (MAP) eliminują tlen atmosferyczny, zapobiegając jeżłowaniu, inwazji owadów i utracie chrupiątości. Gwarantuje to smak i teksturę świeżych upraw przez 18 do 24 miesięcy, nawet podczas długich rejsów morskich."
+          },
+          "ro": {
+            "question": "Care sunt avantajele de durată de viață ale ambalajului ale cutiilor voastre de vid și MAP?",
+            "answer": "Pungile noastre multi-barieră sigilate în vid și cutiile master cu azot (MAP) elimină oxigenul atmosferic, prevenind ranceditatea, infestarea cu insecte și pierderea de claritate. Aceasta garantează gustul și textura proaspetei pentru 18 până la 24 luni, chiar și în timpul călătoriilor lungi pe mare."
+          },
+          "bg": {
+            "question": "Какви са предимствата при срока на годност на опаковките на вашите прахосмукачки и MAP кутии?",
+            "answer": "Нашите вакуумно запечатани многобарьерни торбички и главни кутии с промиване на азот (MAP) елиминират атмосферния кислород, предотвратявайки гнило, нашествие от насекоми и загуба на хрупкавост. Това гарантира вкус и текстура на пресната реколта за 18 до 24 месеца, дори по време на дълги морски пътувания."
+          },
+          "el": {
+            "question": "Ποια είναι τα πλεονεκτήματα της διάρκειας ζωής της συσκευασίας των κουτιών κενού και MAP;",
+            "answer": "Οι θήκες πολλαπλών φραγμών που σφραγίζονται με κενό και τα κύρια χαρτοκιβώτια που ξεπλένονται με άζωτο (MAP) εξαλείφουν το ατμοσφαιρικό οξυγόνο, αποτρέποντας το τάγγισμα, την προσβολή από έντομα και την απώλεια τραγανότητας. Αυτό εγγυάται γεύση και υφή φρέσκιας καλλιέργειας για 18 έως 24 μήνες ακόμη και σε μακρινά θαλάσσια ταξίδια."
+          },
+          "sr": {
+            "question": "Koje su prednosti ambalaže rok trajanja vaših vakuum i MAP kutija?",
+            "answer": "Naši vakuumski zatvorene multi-barijerne kese i azot-ispiranje (MAP) master kartoni eliminišu atmosferski kiseonik, sprečavajući užeglost, insekata zaraze, i gubitak hrskavice. Ovo garantuje sveže useva ukus i teksturu za 18 do 24 meseci čak i kroz duge morske putovanja."
+          },
+          "uk": {
+            "question": "Які переваги у терміні зберігання упаковки у ваших вакуумних та MAP-коробках?",
+            "answer": "Наші вакуумно герметизовані багатобар'єрні пакети та головні коробки з промивкою азотом (MAP) усувають атмосферний кисень, запобігаючи прогорлуванню, зараженню комах і втраті хрусткості. Це гарантує смак і текстуру свіжого врожаю протягом 18-24 місяців навіть під час тривалих морських подорожей."
+          },
+          "ka": {
+            "question": "რა უპირატესობები აქვს თქვენი ვაკუუმისა და MAP ყუთების შეფუთვის ვადებს?",
+            "answer": "ჩვენი ვაკუუმით დაფარული მრავალფენიანი პაუჩები და აზოტით აღჭურვილი (MAP) მასტერკარტონები ამცირებს ატმოსფეროს ჟანგბადს, თავიდან აცილებს კლებას, მწერის შეჭრას და ხარის დაკარგვას. ეს უზრუნველყოფს ახალი მოსავლის გემოს და ტექსტურას 18–დან 24 თვემდე, კიდევ საკმაოსთანაც გრძელი ზღვის მოგზაურობების დროსაც."
+          },
+          "az": {
+            "question": "Sizin tozsoran və MAP qutularınızın qablaşdırma saxlama müddəti üstünlükləri nələrdir?",
+            "answer": "Vakumla möhürlənmiş çoxbarəli paketlərimiz və azotla yuyulmuş (MAP) master kartonlarımız atmosfer oksigenini aradan qaldırır, iyrəncliyi, həşərat infeksiyasını və xırtıltıllıq itkisinin qarşısını alır. Bu, uzun dəniz səfərlərində belə 18-dən 24 aya qədər təzə məhsul dadı və teksturası təmin edir."
+          },
+          "uz": {
+            "question": "Sizning vakuum va MAP qutilaringizning qadoqlashning saqlash muddati bo‘yicha qanday foydalari bor?",
+            "answer": "Bizning vakuumli çoxqatlamli paketlar va azot bilan to‘ldirilgan (MAP) master kartonlar atmosferadagi kislorodni yo‘q qiladi, shuningdek, yomonlashish, hasharotlar bosqini va xushbo‘ylik yo‘qolishini oldini oladi. Bu 18 uchun 24 oygacha yangi hosil ta’mi va to‘qimasini kafolatlaydi, hatto uzoq dengiz safarlari davomida ham."
+          },
+          "kk": {
+            "question": "Шаңсорғыш және MAP қораптарыңыздың орау жарамдылығының артықшылықтары қандай?",
+            "answer": "Біздің вакууммен тығыздалған көпбөгетті қапшықтарымыз және азотпен жуылған (MAP) негізгі қораптарымыз атмосфералық оттегіні жояды, бұл ашу, жәндіктердің жұбын және қытырлақ болуды болдырмайды. Бұл жаңа дақылдардың дәмі мен текстурасын ұзақ теңіз сапарларында 18-24 айға дейін сақтайды."
+          },
+          "fa": {
+            "question": "مزایای ماندگاری بسته بندی جاروبرقی و جعبه های MAP شما چیست؟",
+            "answer": "کیسه های چندمانعی مهر و موم شده با خلأ و جعبه های اصلی نیتروژن (MAP) ما اکسیژن جوی را حذف کرده و از فاسدشدگی، آلودگی حشرات و از دست رفتن تردی جلوگیری می کنند. این امر طعم و بافت محصول تازه را برای 18 تا 24 ماه حتی در سفرهای طولانی دریایی تضمین می کند."
+          },
+          "hi": {
+            "question": "आपके वैक्यूम और एमएपी बॉक्स के पैकेजिंग शेल्फ-लाइफ फायदे क्या हैं?",
+            "answer": "हमारे वैक्यूम-सीलबंद मल्टी-बैरियर पाउच और नाइट्रोजन-फ्लश (एमएपी) मास्टर कार्टन वायुमंडलीय ऑक्सीजन को खत्म करते हैं, बासीपन, कीट संक्रमण और कुरकुरापन के नुकसान को रोकते हैं। यह लंबी समुद्री यात्राओं के माध्यम से भी 18 से 24 महीनों तक ताजी फसल के स्वाद और बनावट की गारंटी देता है।"
+          },
+          "ur": {
+            "question": "آپ کے ویکیوم اور MAP باکسز کی پیکجنگ شیلف لائف کے کیا فوائد ہیں؟",
+            "answer": "ہمارے ویکیوم سیلڈ ملٹی بیریئر پاؤچز اور نائٹروجن فلشڈ (MAP) ماسٹر کارٹنز فضائی آکسیجن کو ختم کرتے ہیں، جس سے بدبونی، کیڑوں کی افزائش اور کرسپنس کے نقصان کو روکا جاتا ہے۔ یہ تازہ فصل کے ذائقے اور ساخت کو 18 سے 24 مہینوں تک طویل سمندری سفر کے دوران بھی یقینی بناتا ہے۔"
+          },
+          "bn": {
+            "question": "আপনার ভ্যাকুয়াম এবং ম্যাপ বাক্সগুলির প্যাকেজিং শেল্ফ-লাইফ সুবিধাগুলি কী কী?",
+            "answer": "আমাদের ভ্যাকুয়াম-সিলড মাল্টি-ব্যারিয়ার পাউচ এবং নাইট্রোজেন-ফ্লাশড (এমএপি) মাস্টার কার্টনগুলি বায়ুমণ্ডলীয় অক্সিজেনকে দূর করে, রানসিডিটি, পোকামাকড়ের উপদ্রব এবং খাস্তা ক্ষতি রোধ করে। এটি দীর্ঘ সমুদ্র ভ্রমণের মাধ্যমেও 18 থেকে 24 মাস পর্যন্ত তাজা-ফসলের স্বাদ এবং টেক্সচারের গ্যারান্টি দেয়।"
+          },
+          "zh-cn": {
+            "question": "你们的吸尘器和MAP盒在包装保质期上有哪些优势？",
+            "answer": "我们的真空密封多层隔壁袋和氮气冲洗（MAP）主盒消除大气氧气，防止腐败、虫害和脆度损失。这保证了18到24个月的新鲜作物口感和口感，即使经历长途海上航行。"
+          },
+          "ja": {
+            "question": "掃除機とMAPボックスの包装保存期間の利点は何ですか?",
+            "answer": "当社の真空封入マルチバリアパウチと窒素洗浄(MAP)マスターカートンは大気中の酸素を除去し、酸化、害虫の発生、シャキッとした質の喪失を防ぎます。これにより、長距離の海上航海でも18〜24ヶ月間、新鮮な作物の味と食感が保証されます。"
+          },
+          "ko": {
+            "question": "진공청소기와 MAP 박스의 포장 유통기한에 어떤 장점이 있나요?",
+            "answer": "저희의 진공 밀봉 다중 장벽 파우치와 질소 플러시드(MAP) 마스터 카톤은 대기 중 산소를 제거하여 부패, 해충 감염, 바삭함 손실을 방지합니다. 이로 인해 긴 해상 항해에도 18개월에서 24개월 동안 신선한 작물의 맛과 식감을 보장합니다."
+          },
+          "id": {
+            "question": "Apa keuntungan masa simpan kemasan vacuum dan MAP Anda?",
+            "answer": "Kantong multi-barrier vakum kami dan karton induk yang ditiup nitrogen (MAP) menghilangkan oksigen atmosfer, mencegah ketengikan, serangan serangga, dan kehilangan kerenyahan. Ini menjamin rasa dan tekstur hasil panen segar selama 18 hingga 24 bulan bahkan dalam perjalanan laut panjang."
+          },
+          "ms": {
+            "question": "Apakah kelebihan jangka hayat pembungkusan bagi vakum dan kotak MAP anda?",
+            "answer": "Kantung pelbagai halangan bertutup vakum dan kotak induk nitrogen (MAP) kami menghapuskan oksigen atmosfera, mencegah tengik, jangkitan serangga, dan kehilangan kerangupan. Ini menjamin rasa dan tekstur tanaman segar untuk 18 hingga 24 bulan walaupun melalui pelayaran laut yang panjang."
+          },
+          "sw": {
+            "question": "Je, ni faida gani za maisha ya rafu ya ufungaji ya utupu wako na masanduku ya MAP?",
+            "answer": "Mifuko yetu ya vizuizi vingi iliyofungwa kwa utupu na katoni kuu zilizosafishwa na nitrojeni (MAP) huondoa oksijeni ya angahewa, kuzuia rancidity, kushambuliwa na wadudu, na upotezaji wa crispness. Hii inahakikisha ladha na umbile la mazao mapya kwa miezi 18 hadi 24 hata kupitia safari ndefu za baharini."
+          }
+        }
+      }
+    ],
+    "seoKeywords": [
+      "Turkish hazelnuts Giresun",
+      "Antep pistachios bulk export",
+      "Turkish walnuts halves Kelebek",
+      "roasted chickpeas leblebi Çorum",
+      "Turkish dried figs Aydın",
+      "Malatya dried apricots export",
+      "wholesale Turkish nuts",
+      "kuruyemiş ihracatı",
+      "Türk fındığı toptan",
+      "Antep fıstığı ihracat",
+      "Mersin kuruyemiş"
+    ],
+    "accentColor": "#7a441e"
   }
 ];

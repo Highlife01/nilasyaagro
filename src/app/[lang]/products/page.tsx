@@ -86,6 +86,12 @@ export default async function ProductsCatalogPage({
             <span className="px-4 py-2 rounded-2xl bg-orange-800/80 border border-orange-500/40 text-orange-100 text-xs font-black shadow-md backdrop-blur-sm">
               {pt.pills.seedsOilseeds || (lang === 'tr' ? '🌻 Tohumlar ve Yağlı Tohumlar' : '🌻 Seeds & Oilseeds')}
             </span>
+            <span className="px-4 py-2 rounded-2xl bg-amber-500/90 border border-amber-300 text-slate-950 text-xs font-black shadow-md backdrop-blur-sm">
+              {lang === 'tr' ? '🌿 Doğal & Soyulmuş Susam' : '🌿 Sesame Seeds (Natural & Hulled)'}
+            </span>
+            <span className="px-4 py-2 rounded-2xl bg-amber-900/90 border border-amber-600/60 text-amber-100 text-xs font-black shadow-md backdrop-blur-sm">
+              {lang === 'tr' ? '🌰 Türk Kuruyemiş & Fındık/Fıstık' : '🌰 Turkish Nuts & Dried Fruits'}
+            </span>
           </div>
         </div>
       </section>
