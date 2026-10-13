@@ -1,4 +1,5 @@
 import type { Locale, RFQSubmission } from '@/types';
+import { getActiveSessionId } from './visitorTracking';
 
 export interface InquiryPayload {
   kind: 'rfq' | 'contact';
@@ -42,8 +43,15 @@ export async function submitInquiry(payload: InquiryPayload): Promise<{ referenc
     data.website = `https://${data.website}`;
   }
 
+  const sessionId = getActiveSessionId();
+  const headers: Record<string, string> = {};
+  if (sessionId) {
+    headers['x-nilasya-session-id'] = sessionId;
+  }
+
   const result = await apiRequest<{ referenceCode: string; deliveryStatus: string }>('/inquiries', {
     method: 'POST',
+    headers,
     body: JSON.stringify({ ...payload, data }),
   });
 

@@ -18,7 +18,8 @@ import {
   ShieldCheck,
   RefreshCw,
   Sparkles,
-  AlertTriangle
+  AlertTriangle,
+  Activity
 } from 'lucide-react';
 
 import Link from 'next/link';
@@ -38,9 +39,10 @@ import { ProductsTab } from './tabs/ProductsTab';
 import { LogisticsTab } from './tabs/LogisticsTab';
 import { InsightsTab } from './tabs/InsightsTab';
 import { SettingsTab } from './tabs/SettingsTab';
+import { AnalyticsTab } from './tabs/AnalyticsTab';
 
 interface NavItem {
-  id: 'overview' | 'quotes' | 'products' | 'logistics' | 'insights' | 'settings';
+  id: 'overview' | 'quotes' | 'products' | 'logistics' | 'analytics' | 'insights' | 'settings';
   label: string;
   icon: React.ComponentType<{ className?: string }>;
   badge?: string;
@@ -56,7 +58,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   user,
   onLogout,
 }) => {
-  const [activeTab, setActiveTab] = useState<'overview' | 'quotes' | 'products' | 'logistics' | 'insights' | 'settings'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'quotes' | 'products' | 'logistics' | 'analytics' | 'insights' | 'settings'>('overview');
   const [currency, setCurrency] = useState<'USD' | 'EUR' | 'TRY'>('USD');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState('');
@@ -117,8 +119,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       if (e.key === '2') setActiveTab('quotes');
       if (e.key === '3') setActiveTab('products');
       if (e.key === '4') setActiveTab('logistics');
-      if (e.key === '5') setActiveTab('insights');
-      if (e.key === '6') setActiveTab('settings');
+      if (e.key === '5') setActiveTab('analytics');
+      if (e.key === '6') setActiveTab('insights');
+      if (e.key === '7') setActiveTab('settings');
       if (e.key === 'Escape') setIsSidebarOpen(false);
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -156,6 +159,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       icon: Ship, 
       badge: `${inTransitCount} Seyirde`,
       badgeColor: 'bg-amber-100 text-amber-800'
+    },
+    { 
+      id: 'analytics', 
+      label: 'Ziyaretçi & Giriş Analizi', 
+      icon: Activity, 
+      badge: 'Canlı', 
+      badgeColor: 'bg-emerald-100 text-emerald-800' 
     },
     { id: 'insights', label: 'Pazar Rehberleri & GEO', icon: BookOpen, badge: '30 Dil' },
     { id: 'settings', label: 'Süper Admin & Ayarlar', icon: Settings },
@@ -438,6 +448,12 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             <LogisticsTab
               containers={containers}
               onRefreshData={refreshAllData}
+            />
+          )}
+
+          {activeTab === 'analytics' && (
+            <AnalyticsTab
+              onNavigateToQuotes={() => setActiveTab('quotes')}
             />
           )}
 

@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
-import { createApiHandler, referenceFor } from '../functions/api.mjs';
+import { createApiHandler, parseUserAgent, referenceFor, resolveClientLocation } from '../functions/api.mjs';
 import { createNotificationWorker, createResendTransport, NotificationError } from '../functions/notifications.mjs';
 import { createFirestoreStore, notificationPolicy } from '../functions/store.mjs';
-import { HttpError, requestedDeliveryDate, validateContainer, validateContainerUpdates, validateInquiry, validateStock } from '../functions/validation.mjs';
+import { HttpError, requestedDeliveryDate, validateAnalyticsPayload, validateContainer, validateContainerUpdates, validateInquiry, validateStock } from '../functions/validation.mjs';
 
 const catalog = JSON.parse(await readFile(new URL('../functions/catalog.json', import.meta.url), 'utf8'));
 const timestamp = Date.parse('2026-10-09T10:00:00Z');
@@ -253,4 +253,122 @@ test('container validation and API routes handle real container CRUD', async () 
   assert.equal(deleteRes.statusCode, 200);
   assert.equal(createdRecord.action, 'delete');
 });
+
+test('user agent parser correctly identifies devices, enforces iPhone model rule, and classifies bots', () => {
+  // 1. iPhone: Model MUST strictly be 'Model belirlenemedi', never guessed
+  const iphoneUA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/604.1';
+  const iphoneParsed = parseUserAgent(iphoneUA);
+  assert.equal(iphoneParsed.deviceType, 'mobile');
+  assert.equal(iphoneParsed.deviceBrand, 'Apple');
+  assert.equal(iphoneParsed.deviceModel, 'Model belirlenemedi');
+  assert.equal(iphoneParsed.os, 'iOS 18.1');
+  assert.equal(iphoneParsed.browser, 'Safari 18.1');
+  assert.equal(iphoneParsed.isBot, false);
+
+  // 2. Android: Extract model from UA
+  const androidUA = 'Mozilla/5.0 (Linux; Android 14; SM-S918B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36';
+  const androidParsed = parseUserAgent(androidUA);
+  assert.equal(androidParsed.deviceType, 'mobile');
+  assert.equal(androidParsed.deviceBrand, 'Samsung');
+  assert.equal(androidParsed.deviceModel, 'SM-S918B');
+  assert.equal(androidParsed.os, 'Android 14');
+  assert.equal(androidParsed.browser, 'Chrome 120');
+  assert.equal(androidParsed.isBot, false);
+
+  // 3. Desktop Windows:
+  const windowsUA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36';
+  const windowsParsed = parseUserAgent(windowsUA);
+  assert.equal(windowsParsed.deviceType, 'desktop');
+  assert.equal(windowsParsed.os, 'Windows 10/11');
+  assert.equal(windowsParsed.browser, 'Chrome 133');
+  assert.equal(windowsParsed.isBot, false);
+
+  // 4. Search Engine Bot:
+  const botUA = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)';
+  const botParsed = parseUserAgent(botUA);
+  assert.equal(botParsed.isBot, true);
+  assert.equal(botParsed.botName, 'Googlebot');
+});
+
+test('analytics validation cleanses sensitive query parameters and enforces structure', () => {
+  const payload = {
+    sessionId: 'sess-123456',
+    visitorId: 'vis-abcdef',
+    path: '/tr/quote?token=secret123&product=chickpeas&password=mypassword',
+    referrer: 'https://google.com',
+    title: 'Nilasya Quote',
+    screen: '1920x1080',
+    language: 'tr-TR',
+    timezone: 'Europe/Istanbul',
+    utm: { source: 'google', campaign: 'export2026' },
+  };
+  const validated = validateAnalyticsPayload(payload);
+  assert.equal(validated.sessionId, 'sess-123456');
+  assert.equal(validated.visitorId, 'vis-abcdef');
+  // Sensitive params stripped
+  assert.ok(!validated.path.includes('secret123'));
+  assert.ok(!validated.path.includes('mypassword'));
+  assert.ok(validated.path.includes('product=chickpeas'));
+});
+
+test('public analytics endpoint collects visitor beacons and admin endpoint returns analytics', async () => {
+  let savedSession;
+  let loggedAuth;
+  const store = {
+    async rateLimit() {},
+    async recordVisitorSession(data) { savedSession = data; return { sessionId: data.sessionId }; },
+    async getVisitorAnalytics() {
+      return {
+        summary: { totalSessions: 1, totalPageviews: 2, uniqueVisitors: 1, activeVisitors: 1, activeWindowMinutes: 5, conversionCount: 0, conversionRate: 0, breakdowns: { countries: [], devices: [], os: [], browsers: [], sources: [], topPages: [], daily: [] } },
+        sessions: { items: [savedSession], total: 1, page: 1, limit: 25, totalPages: 1 },
+      };
+    },
+    async recordAuthLog(data) { loggedAuth = data; return data; },
+    async listAuthLogs() {
+      return { items: [loggedAuth], total: 1, page: 1, limit: 25, totalPages: 1 };
+    },
+    async list() { return []; },
+  };
+
+  const handler = createApiHandler({
+    auth: { async verifySessionCookie() { return claims; }, async getUser() { return { customClaims: { nilasyaRole: 'EXPORT_MANAGER' } }; } },
+    store,
+    catalog,
+    allowedOrigins: [origin],
+  });
+
+  // 1. Send public beacon
+  const beaconRes = await handler(
+    {
+      method: 'POST',
+      path: '/api/analytics/collect',
+      headers: { 'x-nilasya-request': '1', origin, 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
+      body: { sessionId: 's-999', path: '/tr/products/kirmizi-mercimek' },
+    },
+    {
+      set() {},
+      status(code) { return { json(data) { return { statusCode: code, body: data }; } }; },
+    }
+  );
+  assert.equal(beaconRes.statusCode, 200);
+  assert.equal(savedSession.sessionId, 's-999');
+  assert.equal(savedSession.path, '/tr/products/kirmizi-mercimek');
+  assert.equal(savedSession.os, 'Windows 10/11');
+
+  // 2. Fetch admin analytics summary
+  const adminRes = await handler(
+    {
+      method: 'GET',
+      path: '/api/admin/analytics/data',
+      headers: { 'x-nilasya-request': '1', cookie: '__session=valid' },
+    },
+    {
+      set() {},
+      status(code) { return { json(data) { return { statusCode: code, body: data }; } }; },
+    }
+  );
+  assert.equal(adminRes.statusCode, 200);
+  assert.equal(adminRes.body.summary.totalSessions, 1);
+});
+
 

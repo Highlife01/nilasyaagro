@@ -183,3 +183,44 @@ export function validateContainerUpdates(data) {
   return result;
 }
 
+export function validateAnalyticsPayload(data) {
+  if (!data || typeof data !== 'object' || Array.isArray(data)) throw new HttpError(400, 'Invalid analytics payload.');
+  const sessionId = text(data.sessionId, 'Session ID', { required: true, max: 64 });
+  const visitorId = text(data.visitorId, 'Visitor ID', { max: 64 }) || sessionId;
+  let path = text(data.path, 'Path', { max: 500 }) || '/';
+  if (!path.startsWith('/')) path = `/${path}`;
+  // Strip query string params containing sensitive words like password, token, key, secret
+  path = path.replace(/[?&](password|token|key|secret|auth)=[^&#]*/gi, '');
+
+  const referrer = text(data.referrer, 'Referrer', { max: 500 }) || '';
+  const title = text(data.title, 'Title', { max: 300 }) || '';
+  const screen = text(data.screen, 'Screen', { max: 30 }) || '';
+  const language = text(data.language, 'Language', { max: 30 }) || '';
+  const timezone = text(data.timezone, 'Timezone', { max: 50 }) || 'UTC';
+  
+  const utm = (data.utm && typeof data.utm === 'object') ? {
+    source: text(data.utm.source, 'UTM Source', { max: 100 }) || null,
+    medium: text(data.utm.medium, 'UTM Medium', { max: 100 }) || null,
+    campaign: text(data.utm.campaign, 'UTM Campaign', { max: 100 }) || null,
+    term: text(data.utm.term, 'UTM Term', { max: 100 }) || null,
+    content: text(data.utm.content, 'UTM Content', { max: 100 }) || null,
+  } : {};
+
+  const clientHints = (data.clientHints && typeof data.clientHints === 'object') ? {
+    model: text(data.clientHints.model, 'Model hint', { max: 100 }) || null,
+    platformVersion: text(data.clientHints.platformVersion, 'Platform version hint', { max: 50 }) || null,
+  } : {};
+
+  return {
+    sessionId,
+    visitorId,
+    path,
+    referrer,
+    title,
+    screen,
+    language,
+    timezone,
+    utm,
+    clientHints,
+  };
+}

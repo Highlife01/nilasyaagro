@@ -10,6 +10,7 @@ import { usePathname } from 'next/navigation';
 import { productsData } from '@/data/products';
 import { AnalyticsConsent } from '@/components/common/AnalyticsConsent';
 import { trackEvent } from '@/lib/analytics';
+import { initVisitorTracking, trackPageView } from '@/lib/visitorTracking';
 
 interface AppWrapperProps {
   children: React.ReactNode;
@@ -42,7 +43,13 @@ export const AppWrapper: React.FC<AppWrapperProps> = ({
         // PWA enhancements must never block the main site.
       });
     }
+    const cleanupTracking = initVisitorTracking();
+    return () => cleanupTracking();
   }, []);
+
+  useEffect(() => {
+    trackPageView(pathname);
+  }, [pathname]);
 
   const openQuote = (productId?: string) => {
     if (productId || activeProduct) trackEvent('product_to_rfq_click', { product_slug: productId || activeProduct });
