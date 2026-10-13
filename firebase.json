@@ -5,6 +5,7 @@
     {
       "target": "nilasyaagrofoods",
       "public": "out",
+      "postdeploy": "node scripts/cleanup-hosting-versions.mjs --execute",
       "ignore": [
         "firebase.json",
         "**/.*",
