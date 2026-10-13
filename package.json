@@ -9,7 +9,8 @@
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "test": "node tests/project.test.mjs",
-    "verify:export": "node scripts/postprocess-export.mjs --check"
+    "verify:export": "node scripts/postprocess-export.mjs --check",
+    "cleanup:hosting": "node scripts/cleanup-hosting-versions.mjs --execute"
   },
   "dependencies": {
     "@types/canvas-confetti": "^1.9.0",
