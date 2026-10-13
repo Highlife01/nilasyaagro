@@ -147,3 +147,39 @@ export function validateStock(productId, data, catalog) {
     activeCalibers: (data.activeCalibers || []).map((item) => text(item, 'Caliber', { required: true, max: 150 })),
   };
 }
+
+export const containerStatuses = ['packhouse', 'customs', 'in_transit', 'delivered'];
+
+export function validateContainer(data) {
+  if (!data || typeof data !== 'object' || Array.isArray(data)) throw new HttpError(400, 'Invalid container data.');
+  return {
+    containerNo: text(data.containerNo, 'Container number', { required: true, max: 50 }).toUpperCase(),
+    bookingRef: text(data.bookingRef, 'Booking reference', { required: true, max: 100 }).toUpperCase(),
+    carrier: text(data.carrier, 'Carrier', { required: true, max: 100 }),
+    produce: text(data.produce, 'Produce', { required: true, max: 200 }),
+    tonnage: finiteNumber(Number(data.tonnage), 'Tonnage', 10000),
+    originPort: text(data.originPort, 'Origin port', { required: true, max: 100 }),
+    destinationPort: text(data.destinationPort, 'Destination port', { required: true, max: 100 }),
+    destinationCountry: text(data.destinationCountry, 'Destination country', { required: true, max: 100 }),
+    incoterm: text(data.incoterm, 'Incoterm', { required: true, max: 50 }),
+    setTemperature: text(data.setTemperature, 'Set temperature', { max: 100 }) || 'Dry Ventilated',
+    currentTemperature: text(data.currentTemperature, 'Current temperature', { max: 100 }) || 'Ambient',
+    humidity: text(data.humidity, 'Humidity', { max: 100 }) || 'Dry Cargo',
+    status: choice(data.status, containerStatuses, 'Status'),
+    departureDate: text(data.departureDate, 'Departure date', { required: true, max: 20 }),
+    eta: text(data.eta, 'ETA', { required: true, max: 20 }),
+    vesselName: text(data.vesselName, 'Vessel name', { required: true, max: 100 }),
+  };
+}
+
+export function validateContainerUpdates(data) {
+  if (!data || typeof data !== 'object' || Array.isArray(data)) throw new HttpError(400, 'Invalid update.');
+  const result = {};
+  if (data.status !== undefined) result.status = choice(data.status, containerStatuses, 'Status');
+  if (data.currentTemperature !== undefined) result.currentTemperature = text(data.currentTemperature, 'Current temperature', { max: 100 });
+  if (data.humidity !== undefined) result.humidity = text(data.humidity, 'Humidity', { max: 100 });
+  if (data.eta !== undefined) result.eta = text(data.eta, 'ETA', { max: 20 });
+  if (!Object.keys(result).length) throw new HttpError(400, 'No editable fields were supplied.');
+  return result;
+}
+

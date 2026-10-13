@@ -10,8 +10,8 @@ interface AdminLoginProps {
 }
 
 export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess }) => {
-  const [email, setEmail] = useState('abdullah@nilasyaagrofoods.com.tr');
-  const [password, setPassword] = useState('nilasya2026');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
@@ -32,11 +32,6 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess }) => {
     }
   };
 
-  const fillAdminCredentials = () => {
-    setEmail('abdullah@nilasyaagrofoods.com.tr');
-    setPassword('nilasya2026');
-    setErrorMsg('');
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-emerald-50/50 to-slate-100 flex flex-col items-center justify-center p-4 sm:p-6 relative overflow-hidden text-slate-800 font-sans">
@@ -79,20 +74,6 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess }) => {
           </p>
         </div>
 
-        {/* Quick Demo Credentials Assistant */}
-        <div className="mb-5 p-3 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-between text-xs">
-          <div className="flex items-center gap-2 text-slate-600">
-            <Sparkles className="w-4 h-4 text-emerald-600 shrink-0" />
-            <span>Yönetici: <strong>Abdullah Başaranoğlu</strong></span>
-          </div>
-          <button
-            type="button"
-            onClick={fillAdminCredentials}
-            className="text-[11px] font-bold text-emerald-700 hover:text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200 cursor-pointer transition-colors"
-          >
-            Otomatik Doldur
-          </button>
-        </div>
 
         {/* Error Notification */}
         {errorMsg && (

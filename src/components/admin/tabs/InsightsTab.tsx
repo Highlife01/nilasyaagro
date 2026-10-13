@@ -40,7 +40,7 @@ export const InsightsTab: React.FC = () => {
 
         <div className="flex items-center gap-2 bg-emerald-50 border border-emerald-200 px-3.5 py-1.5 rounded-xl text-xs font-semibold text-emerald-800 shadow-2xs">
           <Sparkles className="w-4 h-4 text-emerald-600" />
-          <span>GEO / AI Search Readiness: 99/100</span>
+          <span>llms.txt & Schema.org Doğrulandı</span>
         </div>
       </div>
 
@@ -93,11 +93,17 @@ export const InsightsTab: React.FC = () => {
 
       {/* Articles Grid */}
       <div className="space-y-4">
-        {filteredArticles.map((article) => (
-          <div
-            key={article.slug}
-            className="bg-white border border-slate-200/80 rounded-3xl p-6 hover:border-emerald-300 hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-xs"
-          >
+        {filteredArticles.length === 0 ? (
+          <div className="bg-white border border-slate-200/80 rounded-3xl p-12 text-center text-slate-400">
+            <BookOpen className="w-8 h-8 mx-auto mb-2 text-slate-300" />
+            <p className="font-semibold text-slate-600">Aradığınız kriterlere uygun makale bulunamadı.</p>
+          </div>
+        ) : (
+          filteredArticles.map((article) => (
+            <div
+              key={article.slug}
+              className="bg-white border border-slate-200/80 rounded-3xl p-6 hover:border-emerald-300 hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-xs"
+            >
             <div className="space-y-2 flex-1">
               <div className="flex flex-wrap items-center gap-2.5">
                 <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800">
@@ -148,8 +154,9 @@ export const InsightsTab: React.FC = () => {
               </Link>
             </div>
           </div>
-        ))}
-      </div>
+        ))
+      )}
     </div>
-  );
+  </div>
+);
 };

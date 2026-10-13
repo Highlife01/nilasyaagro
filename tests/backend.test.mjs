@@ -4,7 +4,7 @@ import test from 'node:test';
 import { createApiHandler, referenceFor } from '../functions/api.mjs';
 import { createNotificationWorker, createResendTransport, NotificationError } from '../functions/notifications.mjs';
 import { createFirestoreStore, notificationPolicy } from '../functions/store.mjs';
-import { HttpError, requestedDeliveryDate, validateInquiry, validateStock } from '../functions/validation.mjs';
+import { HttpError, requestedDeliveryDate, validateContainer, validateContainerUpdates, validateInquiry, validateStock } from '../functions/validation.mjs';
 
 const catalog = JSON.parse(await readFile(new URL('../functions/catalog.json', import.meta.url), 'utf8'));
 const timestamp = Date.parse('2026-10-09T10:00:00Z');
@@ -204,3 +204,53 @@ test('mail transport preserves idempotency and distinguishes permanent provider 
   const rejected = createResendTransport({ apiKey: 'test-key', async fetchImpl() { return { ok: false, status: 422, async json() { return {}; } }; } });
   await assert.rejects(rejected({}, 'key'), (error) => error instanceof NotificationError && error.retryable === false);
 });
+
+test('container validation and API routes handle real container CRUD', async () => {
+  const sampleContainer = {
+    containerNo: 'MSCU-123456-7',
+    bookingRef: 'BKG-TR-2026-001',
+    carrier: 'MSC',
+    produce: 'Koçbaşı Nohut',
+    tonnage: 24,
+    originPort: 'Mersin International Port (MIP)',
+    destinationPort: 'Hamburg Port',
+    destinationCountry: 'Germany',
+    incoterm: 'CIF',
+    status: 'in_transit',
+    departureDate: '2026-10-10',
+    eta: '2026-10-25',
+    vesselName: 'MSC Gülsün',
+  };
+  const validated = validateContainer(sampleContainer);
+  assert.equal(validated.containerNo, 'MSCU-123456-7');
+  assert.equal(validated.status, 'in_transit');
+  assert.throws(() => validateContainer({ ...sampleContainer, containerNo: '' }), badRequest);
+  assert.throws(() => validateContainer({ ...sampleContainer, status: 'invalid-status' }), badRequest);
+
+  const updates = validateContainerUpdates({ status: 'delivered', eta: '2026-10-26' });
+  assert.equal(updates.status, 'delivered');
+  assert.equal(updates.eta, '2026-10-26');
+
+  // Test API POST container
+  let createdRecord;
+  const store = {
+    async create(collection, id, data) { createdRecord = { collection, id, data }; },
+    async update(collection, id, data) { createdRecord = { action: 'update', collection, id, data }; },
+    async remove(collection, id) { createdRecord = { action: 'delete', collection, id }; },
+    async audit() {},
+  };
+  const postRes = await requestApi({ store }, { path: '/api/admin/containers', method: 'POST', body: sampleContainer });
+  assert.equal(postRes.statusCode, 201);
+  assert.equal(createdRecord.collection, 'containers');
+  assert.equal(createdRecord.data.containerNo, 'MSCU-123456-7');
+
+  const patchRes = await requestApi({ store }, { path: '/api/admin/containers/cnt-1', method: 'PATCH', body: { status: 'delivered' } });
+  assert.equal(patchRes.statusCode, 200);
+  assert.equal(createdRecord.action, 'update');
+  assert.equal(createdRecord.data.status, 'delivered');
+
+  const deleteRes = await requestApi({ store }, { path: '/api/admin/containers/cnt-1', method: 'DELETE', body: {} });
+  assert.equal(deleteRes.statusCode, 200);
+  assert.equal(createdRecord.action, 'delete');
+});
+

@@ -5,13 +5,8 @@ import {
   Check, 
   Edit3, 
   Save, 
-  X, 
-  Package, 
   Search, 
-  Sparkles, 
-  ShieldCheck, 
-  Layers, 
-  ArrowUpRight 
+  AlertCircle
 } from 'lucide-react';
 import { productsData } from '@/data/products';
 import { ProductStockControl, updateProductStock } from '@/lib/adminAuth';
@@ -30,22 +25,22 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
   const [saveSuccessMsg, setSaveSuccessMsg] = useState('');
   const [filterTerm, setFilterTerm] = useState('');
 
-  const getStockData = (productId: string): ProductStockControl => {
-    return stocks.find((s) => s.productId === productId) || {
-      productId,
-      seasonStatus: 'peak',
-      moqTons: 20,
-      availableStockMT: 1500,
-      exportQualityScore: 98,
-      storageCondition: 'İklimlendirmeli Çelik Silo, Nem <%13.5, Sortex %99.8 Saflık',
-      activeCalibers: ['Standart İhracat Boyutu', 'Sortex Seçme'],
-    };
+  const getStockData = (productId: string): ProductStockControl | null => {
+    return stocks.find((s) => s.productId === productId) || null;
   };
 
   const handleStartEdit = (productId: string) => {
     const current = getStockData(productId);
     setEditingId(productId);
-    setEditForm({ ...current });
+    setEditForm(current || {
+      productId,
+      seasonStatus: 'storage',
+      moqTons: 20,
+      availableStockMT: 0,
+      exportQualityScore: 95,
+      storageCondition: '',
+      activeCalibers: [],
+    });
     setSaveSuccessMsg('');
   };
 
@@ -53,13 +48,17 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
     try {
       const current = getStockData(productId);
       const updated: ProductStockControl = {
-        ...current,
-        ...editForm,
         productId,
+        seasonStatus: editForm.seasonStatus || current?.seasonStatus || 'storage',
+        moqTons: Number(editForm.moqTons ?? current?.moqTons ?? 20),
+        availableStockMT: Number(editForm.availableStockMT ?? current?.availableStockMT ?? 0),
+        exportQualityScore: Number(editForm.exportQualityScore ?? current?.exportQualityScore ?? 95),
+        storageCondition: (editForm.storageCondition || current?.storageCondition || '').trim() || 'Depo bilgisi girilmedi',
+        activeCalibers: editForm.activeCalibers || current?.activeCalibers || [],
       };
       await updateProductStock(productId, updated);
       setEditingId(null);
-      setSaveSuccessMsg(`${productId} ürününün hasat ve stok bilgileri başarıyla güncellendi.`);
+      setSaveSuccessMsg(`${productId} ürününün hasat ve stok bilgileri sunucuya başarıyla kaydedildi.`);
       setTimeout(() => setSaveSuccessMsg(''), 3500);
       onRefreshData();
     } catch (err) {
@@ -83,7 +82,7 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
             Ürün Portföyü & Silo Stok Yönetimi
           </h1>
           <p className="text-xs text-slate-500 mt-1">
-            Nilasya Agro Foods&apos;un 6 ana ihraç ürünü için canlı hasat takvimi, minimum sipariş miktarı (MOQ) ve lisanslı çelik silo stok kontrolü.
+            Nilasya Agro Foods ihraç ürünleri için sunucu veritabanındaki gerçek hasat durumu, minimum sipariş miktarı (MOQ) ve silo stokları.
           </p>
         </div>
 
@@ -117,21 +116,27 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
             <span className="w-2.5 h-2.5 rounded-full bg-teal-600" />
             Lisanslı Silo: {stocks.filter((s) => s.seasonStatus === 'storage').length} Ürün
           </span>
+          <span className="flex items-center gap-1.5 text-slate-400 font-normal">
+            Toplam Kayıtlı: {stocks.length} / {filteredProducts.length}
+          </span>
         </div>
       </div>
 
-      {/* Grid of 6 Products */}
+      {/* Grid of Products */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProducts.map((prod) => {
           const stock = getStockData(prod.id);
           const isEditing = editingId === prod.id;
 
-          const statusBadge = {
+          const statusBadge = stock ? {
             peak: { label: 'Zirve Hasat (Peak)', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
             storage: { label: 'Lisanslı Çelik Silo', color: 'bg-teal-50 text-teal-700 border-teal-200' },
             preorder: { label: 'Yeni Sezon Ön Sipariş', color: 'bg-amber-50 text-amber-700 border-amber-200' },
             closed: { label: 'Sezon Sonu', color: 'bg-slate-100 text-slate-600 border-slate-200' },
-          }[stock.seasonStatus] || { label: 'Aktif İhraç', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' };
+          }[stock.seasonStatus] || { label: 'Aktif İhraç', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' } : {
+            label: 'Veri Girilmedi',
+            color: 'bg-slate-100 text-slate-500 border-slate-200'
+          };
 
           return (
             <div 
@@ -162,58 +167,71 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
 
                 {/* Normal View */}
                 {!isEditing ? (
-                  <div className="space-y-3.5 text-xs py-2">
-                    <div className="grid grid-cols-2 gap-3 p-3 bg-slate-50 rounded-2xl border border-slate-100 font-mono">
-                      <div>
-                        <div className="text-[10px] text-slate-400 uppercase font-sans font-bold">Mevcut Stok</div>
-                        <div className="text-base font-black text-slate-900 mt-0.5">
-                          {stock.availableStockMT.toLocaleString('tr-TR')} MT
+                  stock ? (
+                    <div className="space-y-3.5 text-xs py-2">
+                      <div className="grid grid-cols-2 gap-3 p-3 bg-slate-50 rounded-2xl border border-slate-100 font-mono">
+                        <div>
+                          <div className="text-[10px] text-slate-400 uppercase font-sans font-bold">Mevcut Stok</div>
+                          <div className="text-base font-black text-slate-900 mt-0.5">
+                            {stock.availableStockMT.toLocaleString('tr-TR')} MT
+                          </div>
+                        </div>
+                        <div>
+                          <div className="text-[10px] text-slate-400 uppercase font-sans font-bold">MOQ (Min. Sipariş)</div>
+                          <div className="text-base font-black text-emerald-700 mt-0.5">
+                            {stock.moqTons} Tons
+                          </div>
                         </div>
                       </div>
-                      <div>
-                        <div className="text-[10px] text-slate-400 uppercase font-sans font-bold">MOQ (Min. Sipariş)</div>
-                        <div className="text-base font-black text-emerald-700 mt-0.5">
-                          {stock.moqTons} Tons
+
+                      <div className="space-y-1">
+                        <div className="flex items-center justify-between text-slate-600">
+                          <span>Sortex Saflık / Kalite Skoru:</span>
+                          <span className="font-bold text-emerald-700 font-mono">%{stock.exportQualityScore}</span>
                         </div>
+                        <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                          <div 
+                            className="h-full bg-emerald-600 rounded-full" 
+                            style={{ width: `${stock.exportQualityScore}%` }} 
+                          />
+                        </div>
+                      </div>
+
+                      <div className="text-slate-600 text-[11px] leading-relaxed">
+                        <span className="font-bold text-slate-700">Depo Koşulları: </span>
+                        <span>{stock.storageCondition}</span>
+                      </div>
+
+                      {stock.activeCalibers && stock.activeCalibers.length > 0 && (
+                        <div className="pt-2 border-t border-slate-100">
+                          <div className="text-[10px] uppercase font-bold text-slate-400 mb-1.5">
+                            İhraç Kalibre & Seçenekler:
+                          </div>
+                          <div className="flex flex-wrap gap-1">
+                            {stock.activeCalibers.map((cal, i) => (
+                              <span 
+                                key={i} 
+                                className="text-[10px] bg-slate-100 border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md font-medium"
+                              >
+                                {cal}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="space-y-3 text-xs py-4 text-slate-400">
+                      <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100 text-center space-y-1">
+                        <div className="text-[11px] font-semibold text-slate-600">Sunucu Veritabanında Stok Kaydı Yok</div>
+                        <div className="text-[10px] text-slate-400">Bu ürün için henüz güncel hasat ve stok bilgisi girilmemiştir.</div>
+                      </div>
+                      <div className="flex items-center gap-1.5 text-[11px] text-slate-400">
+                        <AlertCircle className="w-3.5 h-3.5 text-slate-400" />
+                        <span>Veri kaynağı bağlı değil / Bilgi girilmedi</span>
                       </div>
                     </div>
-
-                    <div className="space-y-1">
-                      <div className="flex items-center justify-between text-slate-600">
-                        <span>Sortex Saflık / Kalite Skoru:</span>
-                        <span className="font-bold text-emerald-700 font-mono">%{stock.exportQualityScore}</span>
-                      </div>
-                      <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                        <div 
-                          className="h-full bg-emerald-600 rounded-full" 
-                          style={{ width: `${stock.exportQualityScore}%` }} 
-                        />
-                      </div>
-                    </div>
-
-                    <div className="text-slate-600 text-[11px] leading-relaxed">
-                      <span className="font-bold text-slate-700">Depo Koşulları: </span>
-                      <span>{stock.storageCondition}</span>
-                    </div>
-
-                    {stock.activeCalibers && stock.activeCalibers.length > 0 && (
-                      <div className="pt-2 border-t border-slate-100">
-                        <div className="text-[10px] uppercase font-bold text-slate-400 mb-1.5">
-                          İhraç Kalibre & Seçenekler:
-                        </div>
-                        <div className="flex flex-wrap gap-1">
-                          {stock.activeCalibers.map((cal, i) => (
-                            <span 
-                              key={i} 
-                              className="text-[10px] bg-slate-100 border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md font-medium"
-                            >
-                              {cal}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
+                  )
                 ) : (
                   /* Edit Mode Form */
                   <div className="space-y-3 text-xs py-2">
@@ -222,7 +240,7 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
                         Sezon Durumu
                       </label>
                       <select
-                        value={editForm.seasonStatus || 'peak'}
+                        value={editForm.seasonStatus || 'storage'}
                         onChange={(e) => setEditForm({ ...editForm, seasonStatus: e.target.value as ProductStockControl['seasonStatus'] })}
                         className="w-full p-2 bg-slate-50 border border-slate-200 rounded-xl font-semibold"
                       >
@@ -240,7 +258,7 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
                         </label>
                         <input
                           type="number"
-                          value={editForm.availableStockMT || 0}
+                          value={editForm.availableStockMT ?? 0}
                           onChange={(e) => setEditForm({ ...editForm, availableStockMT: Number(e.target.value) || 0 })}
                           className="w-full p-2 bg-slate-50 border border-slate-200 rounded-xl font-mono font-bold"
                         />
@@ -252,7 +270,7 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
                         </label>
                         <input
                           type="number"
-                          value={editForm.moqTons || 20}
+                          value={editForm.moqTons ?? 20}
                           onChange={(e) => setEditForm({ ...editForm, moqTons: Number(e.target.value) || 20 })}
                           className="w-full p-2 bg-slate-50 border border-slate-200 rounded-xl font-mono font-bold"
                         />
@@ -266,8 +284,8 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
                       <input
                         type="number"
                         max={100}
-                        min={90}
-                        value={editForm.exportQualityScore || 98}
+                        min={50}
+                        value={editForm.exportQualityScore ?? 98}
                         onChange={(e) => setEditForm({ ...editForm, exportQualityScore: Number(e.target.value) || 98 })}
                         className="w-full p-2 bg-slate-50 border border-slate-200 rounded-xl font-mono"
                       />
@@ -297,7 +315,7 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
                     className="w-full py-2 px-3 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-700 hover:text-emerald-700 text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
                   >
                     <Edit3 className="w-3.5 h-3.5" />
-                    <span>Stok & Sezon Bilgisini Düzenle</span>
+                    <span>{stock ? 'Stok & Sezon Bilgisini Düzenle' : 'Stok Kaydı Oluştur'}</span>
                   </button>
                 ) : (
                   <div className="w-full flex items-center gap-2">

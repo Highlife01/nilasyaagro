@@ -1,5 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto';
-import { HttpError, roles, text, validateInquiry, validateRequestId, validateRfqUpdates, validateStock } from './validation.mjs';
+import { HttpError, roles, text, validateContainer, validateContainerUpdates, validateInquiry, validateRequestId, validateRfqUpdates, validateStock } from './validation.mjs';
 
 const cookieName = '__session';
 const resourceName = { rfqs: 'inquiries', stocks: 'stocks', containers: 'containers', audit: 'audit' };
@@ -114,6 +114,26 @@ export function createApiHandler({ auth, store, catalog, signIn, notify, allowed
         if (user.role === 'SALES_REP') throw new HttpError(403, 'This action requires a manager.');
         await store.set(collection, id, validateStock(id, req.body, catalog));
         await store.audit(claims, 'Stok güncellendi', id);
+        return res.status(200).json({ ok: true });
+      }
+      if (resource === 'containers' && method === 'POST' && !id) {
+        if (user.role === 'SALES_REP') throw new HttpError(403, 'This action requires a manager.');
+        const container = validateContainer(req.body);
+        const recordId = randomUUID();
+        await store.create(collection, recordId, { ...container, id: recordId, createdAt: new Date(now()).toISOString() });
+        await store.audit(claims, 'Konteyner eklendi', `${recordId}: ${container.containerNo}`);
+        return res.status(201).json({ id: recordId });
+      }
+      if (resource === 'containers' && method === 'PATCH' && id) {
+        const updates = validateContainerUpdates(req.body);
+        await store.update(collection, id, updates);
+        await store.audit(claims, 'Konteyner güncellendi', `${id}: ${Object.keys(updates).join(', ')}`);
+        return res.status(200).json({ ok: true });
+      }
+      if (resource === 'containers' && method === 'DELETE' && id) {
+        if (user.role === 'SALES_REP') throw new HttpError(403, 'This action requires a manager.');
+        await store.remove(collection, id);
+        await store.audit(claims, 'Konteyner silindi', id);
         return res.status(200).json({ ok: true });
       }
       throw new HttpError(405, 'Method not allowed.');

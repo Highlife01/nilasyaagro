@@ -29,22 +29,22 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
 
   // New container form
   const [newContainerForm, setNewContainerForm] = useState(() => ({
-    containerNo: 'MSCU-',
-    bookingRef: 'BKG-TR-2026-',
+    containerNo: '',
+    bookingRef: '',
     carrier: 'MSC (Mediterranean Shipping Co.)',
-    produce: 'Koçbaşı Nohut (9-10mm Sortex)',
+    produce: '',
     tonnage: 24.0,
     originPort: 'Mersin International Port (MIP)',
-    destinationPort: 'Hamburg Port',
-    destinationCountry: 'Almanya',
-    incoterm: 'CIF Hamburg',
-    setTemperature: 'Dry Ventilated (Kuru Havalandırmalı)',
-    currentTemperature: 'Ambient (+22 °C)',
-    humidity: '60% (Nem Güvenli)',
-    status: 'in_transit' as ExportContainer['status'],
+    destinationPort: '',
+    destinationCountry: '',
+    incoterm: 'CIF',
+    setTemperature: 'Kuru Havalandırmalı',
+    currentTemperature: 'Ortam Sıcaklığı',
+    humidity: 'Güvenli Nem',
+    status: 'packhouse' as ExportContainer['status'],
     departureDate: new Date().toISOString().split('T')[0],
     eta: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-    vesselName: 'MSC Gülsün / V.2610',
+    vesselName: '',
   }));
 
   const inTransitCount = containers.filter((c) => c.status === 'in_transit').length;
@@ -83,6 +83,24 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
     e.preventDefault();
     try {
       await saveContainer(newContainerForm);
+      setNewContainerForm({
+        containerNo: '',
+        bookingRef: '',
+        carrier: 'MSC (Mediterranean Shipping Co.)',
+        produce: '',
+        tonnage: 24.0,
+        originPort: 'Mersin International Port (MIP)',
+        destinationPort: '',
+        destinationCountry: '',
+        incoterm: 'CIF',
+        setTemperature: 'Kuru Havalandırmalı',
+        currentTemperature: 'Ortam Sıcaklığı',
+        humidity: 'Güvenli Nem',
+        status: 'packhouse',
+        departureDate: new Date().toISOString().split('T')[0],
+        eta: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+        vesselName: '',
+      });
       setIsAddModalOpen(false);
       onRefreshData();
     } catch (err) {
@@ -218,7 +236,11 @@ export const LogisticsTab: React.FC<LogisticsTabProps> = ({
         {filteredContainers.length === 0 ? (
           <div className="bg-white border border-slate-200/80 rounded-3xl p-12 text-center text-slate-400">
             <Ship className="w-8 h-8 mx-auto mb-2 text-slate-300" />
-            <p className="font-semibold text-slate-600">Aradığınız kriterlere uygun konteyner kaydı bulunamadı.</p>
+            <p className="font-semibold text-slate-600">
+              {containers.length === 0
+                ? 'Henüz konteyner sevkiyatı bulunmuyor'
+                : 'Aradığınız kriterlere uygun konteyner kaydı bulunamadı.'}
+            </p>
           </div>
         ) : (
           filteredContainers.map((c) => {

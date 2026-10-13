@@ -420,11 +420,24 @@ Tahmini Sipariş Değeri: $${(rfq.estimatedValueUSD || 0).toLocaleString()} USD`
                 <tr>
                   <td colSpan={7} className="py-12 text-center text-slate-400">
                     <Inbox className="w-8 h-8 mx-auto mb-2 text-slate-300" />
-                    <p className="font-semibold text-slate-600">Aradığınız kriterlere uygun kayıt bulunamadı.</p>
-                    <p className="text-[11px] text-slate-400 mt-0.5">Filtreleri sıfırlayarak tüm gelen talepleri görebilirsiniz.</p>
+                    <p className="font-semibold text-slate-600">
+                      {rfqs.length === 0
+                        ? (typeFilter === 'contact' 
+                            ? 'Henüz mesaj bulunmuyor' 
+                            : typeFilter === 'rfq' 
+                            ? 'Henüz sipariş talebi bulunmuyor' 
+                            : 'Henüz mesaj veya sipariş talebi bulunmuyor')
+                        : 'Aradığınız kriterlere uygun kayıt bulunamadı.'}
+                    </p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">
+                      {rfqs.length === 0
+                        ? 'Web sitesinden veya iletişim formundan yeni bir başvuru kaydedildiğinde burada görüntülenecektir.'
+                        : 'Filtreleri sıfırlayarak tüm gelen talepleri görebilirsiniz.'}
+                    </p>
                   </td>
                 </tr>
               ) : (
+
                 filteredRFQs.map((rfq) => {
                   const isContact = rfq.kind === 'contact';
                   const statusBadge = {

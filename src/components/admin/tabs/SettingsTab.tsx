@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { 
   DollarSign, 
   Download, 
-  RotateCcw, 
   LogOut, 
   CheckCircle2, 
   Clock, 
@@ -21,8 +20,7 @@ import {
   getAuditLogs, 
   getStoredRFQs, 
   getStoredContainers, 
-  getStoredProductStocks,
-  resetAllAdminData
+  getStoredProductStocks
 } from '@/lib/adminAuth';
 
 interface SettingsTabProps {
@@ -85,15 +83,6 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
       alert('Yedekleme verileri alınırken bir hata oluştu: ' + (err instanceof Error ? err.message : String(err)));
     } finally {
       setIsBackingUp(false);
-    }
-  };
-
-  const handleResetData = () => {
-    if (confirm('Tüm teklif, konteyner ve hasat verilerini standart fabrika ayarlarına ve güncel tohum veritabanına döndürmek istediğinize emin misiniz?')) {
-      resetAllAdminData();
-      onRefreshData();
-      setActionSuccess('Tüm operasyonel veriler fabrika ayarlarına ve güncel tohum verilerine döndürüldü.');
-      setTimeout(() => setActionSuccess(''), 4000);
     }
   };
 
@@ -222,25 +211,16 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
 
               <div className="pt-3 border-t border-slate-100">
                 <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
-                  Veri Yedekleme ve Sıfırlama
+                  Veri Yedekleme ve Dışa Aktarma
                 </label>
-                <div className="flex flex-col gap-2">
-                  <button
-                    onClick={handleBackup}
-                    disabled={isBackingUp}
-                    className="w-full py-2.5 px-4 rounded-xl bg-slate-50 hover:bg-slate-100 disabled:opacity-50 text-slate-700 border border-slate-200 text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-2xs"
-                  >
-                    <Download className="w-4 h-4 text-emerald-600" />
-                    <span>{isBackingUp ? 'Yedekleme Hazırlanıyor...' : 'Tüm Verileri Dışa Aktar (JSON)'}</span>
-                  </button>
-                  <button
-                    onClick={handleResetData}
-                    className="w-full py-2.5 px-4 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-600 border border-slate-200 text-xs font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-2xs"
-                  >
-                    <RotateCcw className="w-4 h-4 text-slate-400" />
-                    <span>Tohum Veritabanını Yeniden Yükle</span>
-                  </button>
-                </div>
+                <button
+                  onClick={handleBackup}
+                  disabled={isBackingUp}
+                  className="w-full py-2.5 px-4 rounded-xl bg-slate-50 hover:bg-slate-100 disabled:opacity-50 text-slate-700 border border-slate-200 text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-2xs"
+                >
+                  <Download className="w-4 h-4 text-emerald-600" />
+                  <span>{isBackingUp ? 'Yedekleme Hazırlanıyor...' : 'Tüm Verileri Dışa Aktar (JSON)'}</span>
+                </button>
               </div>
             </div>
           </div>
@@ -349,7 +329,7 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
               {filteredLogs.length === 0 ? (
                 <tr>
                   <td colSpan={5} className="py-8 text-center text-slate-400">
-                    Arama kriterinize uygun kayıt bulunamadı.
+                    {auditLogs.length === 0 ? 'Henüz denetim kaydı bulunmuyor.' : 'Arama kriterinize uygun kayıt bulunamadı.'}
                   </td>
                 </tr>
               ) : (
