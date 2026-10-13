@@ -14,6 +14,8 @@
 
 Nilasya Agro Foods is an enterprise B2B agricultural commodity processor, packer, and exporter of high-grade Turkish pulses, grains, durum wheat, bulgur, and oilseeds. Operating directly from Türkiye's premier maritime export gate at Mersin International Port (MIP) and inland aggregation centers across Central and Southeastern Anatolia, Nilasya Agro Foods supplies international supermarket chains, canneries, dal millers, and bulk commodity distributors across 50+ countries.
 
+Besides the six core categories below, the catalogue also lists specialty pulses & seeds, durum pasta, sesame seeds, and nuts & dried fruits (10 product groups in total, see `src/data/products.ts`).
+
 ### Core Export Commodities (6 Categories)
 
 1. **Chickpeas (Nohut):** Large-caliber Turkish Kabuli (Koçbaşı) chickpeas (8mm, 9mm, 10mm, 11mm+). Thin-skinned, buttery texture, high water absorption, and Bühler Sortex optical sorting (purity 99.8%).
@@ -93,11 +95,10 @@ firebase deploy --only hosting:nilasyaagrofoods
 
 - **ISO 22000 & HACCP:** Food safety management systems in grain processing.
 - **Bühler Sortex Optical Quality:** Laser multi-camera color sorting for min 99.8% purity.
-- **Non-GMO Project:** 100% Anatolian heritage non-genetically modified seeds.
 - **Phytosanitary & Fumigation:** Turkish Ministry of Agriculture pre-export inspection and container fumigation.
-- **Halal & Kosher Standards:** Compliant with international religious food dietary laws.
+- **Halal Certified Sourcing:** Compliant with international halal dietary requirements.
 - **Independent Inspection:** Pre-shipment weight, grade, and quality audits by SGS or GAFTA accredited surveyors.
 
 ---
 
-© 2026 Nilasya Agro Foods Tarım Ürünleri Dış Ticaret Ltd. Şti. All rights reserved.
+© 2026 NİLASYA GLOBAL TARIM İTHALAT VE İHRACAT LİMİTED ŞİRKETİ (Nilasya Agro Foods). All rights reserved.

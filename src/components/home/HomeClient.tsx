@@ -1,0 +1,42 @@
+'use client';
+
+import React, { useContext } from 'react';
+import { HeroSection } from '@/components/home/HeroSection';
+import { TrustStrip } from '@/components/home/TrustStrip';
+import { ProductGrid } from '@/components/home/ProductGrid';
+import { CompanyIntro } from '@/components/home/CompanyIntro';
+import { FounderSection } from '@/components/about/FounderSection';
+import { FarmToWorldFlow } from '@/components/home/FarmToWorldFlow';
+import { ProductionMap } from '@/components/home/ProductionMap';
+import { HarvestCalendarSection } from '@/components/home/HarvestCalendarSection';
+import { QualityTraceabilitySection } from '@/components/home/QualityTraceabilitySection';
+import { PackagingShowcase } from '@/components/home/PackagingShowcase';
+import { GlobalLogisticsSection } from '@/components/home/GlobalLogisticsSection';
+import { ExportHeroSection } from '@/components/home/ExportHeroSection';
+import { InsightsSection } from '@/components/home/InsightsSection';
+import { FinalCTASection } from '@/components/home/FinalCTASection';
+import { RFQContext } from '@/components/layout/AppWrapper';
+import { Locale } from '@/types';
+
+export function HomeClient({ lang }: { lang: Locale }) {
+  const { openQuote } = useContext(RFQContext);
+
+  return (
+    <div className="space-y-0">
+      <HeroSection lang={lang} onOpenQuote={() => openQuote()} />
+      <TrustStrip lang={lang} />
+      <ProductGrid lang={lang} onOpenQuoteWithProduct={(productId) => openQuote(productId)} />
+      <CompanyIntro lang={lang} />
+      <FounderSection lang={lang} />
+      <FarmToWorldFlow lang={lang} />
+      <ProductionMap lang={lang} />
+      <HarvestCalendarSection lang={lang} onOpenQuoteWithProduct={openQuote} />
+      <QualityTraceabilitySection lang={lang} />
+      <PackagingShowcase lang={lang} />
+      <ExportHeroSection lang={lang} onOpenQuote={() => openQuote()} />
+      <GlobalLogisticsSection lang={lang} />
+      <InsightsSection lang={lang} />
+      <FinalCTASection lang={lang} onOpenQuote={() => openQuote()} />
+    </div>
+  );
+}

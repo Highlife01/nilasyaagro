@@ -3,10 +3,9 @@ import { Locale } from '@/types';
 import { supportedLanguages, isRtlLang } from '@/data/languages';
 import { AppWrapper } from '@/components/layout/AppWrapper';
 import type { Metadata } from 'next';
-import { getTranslations } from '@/data/translations';
 import { pageMetadata } from '@/lib/metadata';
 import { notFound } from 'next/navigation';
-import { localizedSeoDescription } from '@/data/seo';
+import { localizedHomeTitle, localizedSeoDescription } from '@/data/seo';
 
 export function generateStaticParams() {
   return supportedLanguages.map((lang) => ({
@@ -22,8 +21,7 @@ export async function generateMetadata({
   const resolvedParams = await params;
   const lang = resolvedParams.lang as Locale;
   if (!supportedLanguages.some(({ code }) => code === lang)) notFound();
-  const t = getTranslations(lang);
-  return pageMetadata(lang, '', `${t.hero.titleLine1} ${t.hero.titleLine2}`, localizedSeoDescription(lang));
+  return pageMetadata(lang, '', localizedHomeTitle(lang), localizedSeoDescription(lang));
 }
 
 export default async function LangLayout({

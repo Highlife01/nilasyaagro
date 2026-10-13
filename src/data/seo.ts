@@ -5,6 +5,21 @@ export function localizedSeoDescription(lang: string, subject?: string) {
   return subject ? `${subject}. ${description}` : description;
 }
 
+const homeTitles: Record<string, string> = {
+  en: 'Turkish Pulses & Grains Exporter — Chickpeas, Lentils, Beans',
+  tr: 'Türk Bakliyat ve Hububat İhracatçısı — Nohut, Mercimek, Fasulye',
+  ar: 'مصدّر البقوليات والحبوب التركية — حمص وعدس وفاصوليا',
+  ru: 'Экспортёр турецких бобовых и зерновых — нут, чечевица, фасоль',
+  de: 'Türkischer Hülsenfrüchte-Exporteur — Kichererbsen, Linsen, Bohnen',
+  fr: 'Exportateur de légumineuses turques — pois chiches, lentilles, haricots',
+  es: 'Exportador de legumbres turcas — garbanzos, lentejas, alubias',
+  it: 'Esportatore di legumi turchi — ceci, lenticchie, fagioli',
+};
+
+export function localizedHomeTitle(lang: string) {
+  return homeTitles[lang] || homeTitles.en;
+}
+
 const routeDescriptions: Record<string, { en: string; tr: string }> = {
   about: { en: 'Meet Nilasya Agro Foods, a Turkish B2B supplier of pulses and grains. Contact our Adana trade desk for product specifications and export requirements.', tr: 'Nilasya Agro Foods’u tanıyın. Türkiye’den bakliyat ve hububat tedariki, ürün şartnameleri ve ihracat talepleri için Adana ticaret ekibimize ulaşın.' },
   products: { en: 'Compare Turkish chickpeas, lentils, beans, peas, durum wheat and bulgur. Review varieties, moisture, purity, packaging and request a bulk export quotation.', tr: 'Türk nohudu, mercimek, fasulye, bezelye, durum buğdayı ve bulguru karşılaştırın. Çeşitleri, nem, saflık ve ambalaj seçeneklerini inceleyip toptan teklif alın.' },

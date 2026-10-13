@@ -1,52 +1,26 @@
-'use client';
-
-import React, { useContext } from 'react';
-import { use } from 'react';
-import { HeroSection } from '@/components/home/HeroSection';
-import { TrustStrip } from '@/components/home/TrustStrip';
-import { ProductGrid } from '@/components/home/ProductGrid';
-import { CompanyIntro } from '@/components/home/CompanyIntro';
-import { FounderSection } from '@/components/about/FounderSection';
-import { FarmToWorldFlow } from '@/components/home/FarmToWorldFlow';
-import { ProductionMap } from '@/components/home/ProductionMap';
-import { HarvestCalendarSection } from '@/components/home/HarvestCalendarSection';
-import { QualityTraceabilitySection } from '@/components/home/QualityTraceabilitySection';
-import { PackagingShowcase } from '@/components/home/PackagingShowcase';
-import { GlobalLogisticsSection } from '@/components/home/GlobalLogisticsSection';
-import { ExportHeroSection } from '@/components/home/ExportHeroSection';
-import { InsightsSection } from '@/components/home/InsightsSection';
-import { FinalCTASection } from '@/components/home/FinalCTASection';
-import { RFQContext } from '@/components/layout/AppWrapper';
-import { Locale } from '@/types';
+import { HomeClient } from '@/components/home/HomeClient';
 import { supportedLanguages } from '@/data/languages';
+import { localizedHomeTitle, localizedSeoDescription } from '@/data/seo';
+import { serializeJsonLd, webPageSchema } from '@/lib/structuredData';
+import { Locale } from '@/types';
 
-export default function HomePage({
+export default async function HomePage({
   params,
 }: {
   params: Promise<{ lang: string }>;
 }) {
-  const resolvedParams = use(params);
+  const resolvedParams = await params;
   const lang = (supportedLanguages.some((l) => l.code === resolvedParams.lang)
     ? resolvedParams.lang
     : 'en') as Locale;
-  const { openQuote } = useContext(RFQContext);
+  const pageJsonLd = webPageSchema(lang, '', localizedHomeTitle(lang), localizedSeoDescription(lang), {
+    image: '/images/og/nilasya-export-1200x630.jpg',
+  });
 
   return (
-    <div className="space-y-0">
-      <HeroSection lang={lang} onOpenQuote={() => openQuote()} />
-      <TrustStrip lang={lang} />
-      <ProductGrid lang={lang} onOpenQuoteWithProduct={(productId) => openQuote(productId)} />
-      <CompanyIntro lang={lang} />
-      <FounderSection lang={lang} />
-      <FarmToWorldFlow lang={lang} />
-      <ProductionMap lang={lang} />
-      <HarvestCalendarSection lang={lang} onOpenQuoteWithProduct={openQuote} />
-      <QualityTraceabilitySection lang={lang} />
-      <PackagingShowcase lang={lang} />
-      <ExportHeroSection lang={lang} onOpenQuote={() => openQuote()} />
-      <GlobalLogisticsSection lang={lang} />
-      <InsightsSection lang={lang} />
-      <FinalCTASection lang={lang} onOpenQuote={() => openQuote()} />
-    </div>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageJsonLd) }} />
+      <HomeClient lang={lang} />
+    </>
   );
 }

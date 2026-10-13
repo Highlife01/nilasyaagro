@@ -105,7 +105,7 @@
         {
           "source": "/",
           "destination": "/en/",
-          "type": 302
+          "type": 301
         }
       ],
       "cleanUrls": true,

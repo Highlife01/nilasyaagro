@@ -56,13 +56,27 @@ export function localizedAlternates(
   return { canonical: localizedUrl(lang, pathFor(lang)), languages };
 }
 
+const MAX_DESCRIPTION = 155;
+
+export function trimDescription(text: string, max = MAX_DESCRIPTION) {
+  const clean = text.replace(/\s+/g, ' ').trim();
+  if (clean.length <= max) return clean;
+  const window = clean.slice(0, max);
+  const sentenceEnd = Math.max(window.lastIndexOf('. '), window.lastIndexOf('。'), window.lastIndexOf('؟ '));
+  if (sentenceEnd >= 80) return window.slice(0, sentenceEnd + 1).trim();
+  const wordEnd = window.lastIndexOf(' ');
+  const cut = wordEnd >= 80 ? window.slice(0, wordEnd) : window.slice(0, max - 1);
+  return `${cut.replace(/[\s,;:.\-–—]+$/u, '')}…`;
+}
+
 export function pageMetadata(
   lang: string,
   pathname: string,
   title: string,
-  description: string,
+  rawDescription: string,
   extra: Metadata = {},
 ): Metadata {
+  const description = trimDescription(rawDescription);
   const brandedTitle = title.includes(company.name) ? title : `${title} | ${company.name}`;
   const images = [{ url: defaultSocialImage, width: 1200, height: 630, alt: company.name }];
   return {

@@ -117,11 +117,10 @@ export default function RootLayout({
         <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Nilasya Agro Foods Full Knowledge Base (Markdown)" />
         <link rel="alternate" type="text/markdown" href="/llms-tr.txt" title="Nilasya Agro Foods LLM Bağlam Özeti (Türkçe Markdown)" />
         <link rel="alternate" type="text/markdown" href="/llms-ar.txt" title="Nilasya Agro Foods LLM سياق وملخص المنتجات (العربية Markdown)" />
-        {/* Google tag (gtag.js) */}
-        <script async id="nilasya-ga4" src="https://www.googletagmanager.com/gtag/js?id=G-ST5MWN0FR3" />
+        {/* Consent Mode default: GA4 (gtag.js) is loaded only after the visitor accepts, see AnalyticsConsent. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ST5MWN0FR3');`,
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});`,
           }}
         />
 

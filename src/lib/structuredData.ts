@@ -52,6 +52,23 @@ export function organizationSchema() {
       url: localizedUrl('en', 'contact'),
     },
     sameAs: [company.linkedin],
+    areaServed: ['Europe', 'Middle East', 'North Africa', 'Asia', 'North America'],
+    knowsAbout: [
+      'Turkish pulses export', 'Chickpeas', 'Red lentils', 'Green lentils', 'Dry white beans',
+      'Dry peas', 'Durum wheat', 'Bulgur', 'Sesame seeds', 'Hazelnuts', 'Optical sorting', 'Incoterms FOB CFR CIF',
+    ],
+    hasCredential: ['ISO 22000', 'HACCP'].map((name) => ({
+      '@type': 'EducationalOccupationalCredential', name, credentialCategory: 'certification',
+    })),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog', name: 'Turkish pulses, grains and agricultural commodities',
+      url: localizedUrl('en', 'products'),
+    },
+    makesOffer: {
+      '@type': 'Offer',
+      eligibleQuantity: { '@type': 'QuantitativeValue', minValue: 24, unitText: 'MT (1 x 20ft FCL)' },
+      businessFunction: 'http://purl.org/goodrelations/v1#Sell',
+    },
   };
 }
 
