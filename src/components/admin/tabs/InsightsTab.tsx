@@ -7,8 +7,6 @@ import {
   CheckCircle2, 
   Clock, 
   Search, 
-  Globe, 
-  ShieldCheck, 
   BookOpen, 
   Check 
 } from 'lucide-react';

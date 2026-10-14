@@ -6,12 +6,9 @@ import {
   Download, 
   Plus, 
   FileText, 
-  Phone, 
   Mail, 
-  Globe, 
   MapPin, 
   X, 
-  ExternalLink, 
   Trash2, 
   Calculator, 
   MessageSquare,
@@ -19,9 +16,7 @@ import {
   Check,
   Clock,
   Inbox,
-  Send,
-  HelpCircle,
-  Filter
+  Send
 } from 'lucide-react';
 import { RFQSubmission } from '@/types';
 import { AdminInquiry, updateRFQ, deleteRFQ, saveRFQInquiry } from '@/lib/adminAuth';

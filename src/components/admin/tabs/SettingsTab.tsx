@@ -2,17 +2,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { 
-  DollarSign, 
   Download, 
   LogOut, 
   CheckCircle2, 
-  Clock, 
   ShieldCheck, 
-  Sparkles, 
   ExternalLink, 
-  Search, 
-  Activity,
-  FileCheck
+  Search
 } from 'lucide-react';
 import { 
   AdminUser, 

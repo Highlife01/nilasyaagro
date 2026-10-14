@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { 
   Users, 
   Eye, 
@@ -15,22 +15,17 @@ import {
   Laptop, 
   Tablet, 
   Globe, 
-  Clock, 
   ChevronLeft, 
   ChevronRight, 
   Search, 
-  ExternalLink,
-  Bot,
-  UserCheck,
-  AlertTriangle,
-  Info,
-  Calendar,
-  Layers,
-  ArrowRight,
-  X,
-  FileSpreadsheet,
-  Lock,
-  Compass
+  Bot, 
+  UserCheck, 
+  Info, 
+  Layers, 
+  ArrowRight, 
+  X, 
+  Lock, 
+  Compass 
 } from 'lucide-react';
 import { 
   VisitorSession, 
@@ -134,11 +129,19 @@ export const AnalyticsTab: React.FC<AnalyticsTabProps> = () => {
 
   // Initial and reactive load
   useEffect(() => {
-    if (subTab === 'visitors') {
-      loadVisitorData();
-    } else {
-      loadAuthLogsData();
-    }
+    let mounted = true;
+    const timer = setTimeout(() => {
+      if (!mounted) return;
+      if (subTab === 'visitors') {
+        void loadVisitorData();
+      } else {
+        void loadAuthLogsData();
+      }
+    }, 0);
+    return () => {
+      mounted = false;
+      clearTimeout(timer);
+    };
   }, [subTab, loadVisitorData, loadAuthLogsData]);
 
   // Handle CSV Export
@@ -481,7 +484,7 @@ export const AnalyticsTab: React.FC<AnalyticsTabProps> = () => {
                 <label className="block text-[11px] font-semibold text-slate-500 mb-1">Tarih Aralığı</label>
                 <select
                   value={range}
-                  onChange={(e) => { setRange(e.target.value as any); setCurrentPage(1); }}
+                  onChange={(e) => { setRange(e.target.value as 'today' | '7d' | '30d' | 'all'); setCurrentPage(1); }}
                   className="w-full bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-1.5 text-slate-800 focus:outline-emerald-600"
                 >
                   <option value="today">Bugün</option>
@@ -511,7 +514,7 @@ export const AnalyticsTab: React.FC<AnalyticsTabProps> = () => {
                 <label className="block text-[11px] font-semibold text-slate-500 mb-1">Form Dönüşümü</label>
                 <select
                   value={conversionFilter}
-                  onChange={(e) => { setConversionFilter(e.target.value as any); setCurrentPage(1); }}
+                  onChange={(e) => { setConversionFilter(e.target.value as 'all' | 'yes' | 'no'); setCurrentPage(1); }}
                   className="w-full bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-1.5 text-slate-800 focus:outline-emerald-600"
                 >
                   <option value="all">Tüm Ziyaretler</option>
@@ -525,7 +528,7 @@ export const AnalyticsTab: React.FC<AnalyticsTabProps> = () => {
                 <label className="block text-[11px] font-semibold text-slate-500 mb-1">Bot / Tarayıcı</label>
                 <select
                   value={botFilter}
-                  onChange={(e) => { setBotFilter(e.target.value as any); setCurrentPage(1); }}
+                  onChange={(e) => { setBotFilter(e.target.value as 'all' | 'human' | 'bot'); setCurrentPage(1); }}
                   className="w-full bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-1.5 text-slate-800 focus:outline-emerald-600"
                 >
                   <option value="all">Tümü</option>
@@ -534,8 +537,42 @@ export const AnalyticsTab: React.FC<AnalyticsTabProps> = () => {
                 </select>
               </div>
 
+              {/* Country */}
+              <div>
+                <label className="block text-[11px] font-semibold text-slate-500 mb-1">Ülke</label>
+                <select
+                  value={countryFilter}
+                  onChange={(e) => { setCountryFilter(e.target.value); setCurrentPage(1); }}
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-1.5 text-slate-800 focus:outline-emerald-600"
+                >
+                  <option value="all">Tüm Ülkeler</option>
+                  {summary?.breakdowns?.countries?.map((c) => (
+                    <option key={c.name || ''} value={c.name || ''}>
+                      {c.name || 'Bilinmiyor'} ({c.count})
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Browser */}
+              <div>
+                <label className="block text-[11px] font-semibold text-slate-500 mb-1">Tarayıcı</label>
+                <select
+                  value={browserFilter}
+                  onChange={(e) => { setBrowserFilter(e.target.value); setCurrentPage(1); }}
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-1.5 text-slate-800 focus:outline-emerald-600"
+                >
+                  <option value="all">Tümü</option>
+                  <option value="Chrome">Chrome</option>
+                  <option value="Safari">Safari</option>
+                  <option value="Firefox">Firefox</option>
+                  <option value="Edge">Edge</option>
+                  <option value="Opera">Opera</option>
+                </select>
+              </div>
+
               {/* Page Search */}
-              <div className="col-span-2">
+              <div className="col-span-2 sm:col-span-3 md:col-span-6 mt-1">
                 <label className="block text-[11px] font-semibold text-slate-500 mb-1">Sayfa Arama</label>
                 <div className="relative">
                   <Search className="w-3.5 h-3.5 absolute left-2.5 top-2.5 text-slate-400" />

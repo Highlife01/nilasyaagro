@@ -31,7 +31,6 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
   rfqs,
   containers,
   stocks,
-  currency,
   onNavigateToTab,
 }) => {
   // Real counts

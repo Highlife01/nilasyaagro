@@ -15,9 +15,7 @@ import {
   ChevronRight, 
   Clock, 
   ExternalLink,
-  ShieldCheck,
   RefreshCw,
-  Sparkles,
   AlertTriangle,
   Activity
 } from 'lucide-react';
@@ -63,7 +61,6 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState('');
   const [isRefreshing, setIsRefreshing] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
 
@@ -90,14 +87,16 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       setLoadError(err instanceof Error ? err.message : 'Backend sunucusuna bağlanılamadı.');
     } finally {
       setIsRefreshing(false);
-      setIsLoading(false);
     }
   }, []);
 
   useEffect(() => {
     let mounted = true;
-    refreshAllData();
-
+    const initTimer = setTimeout(() => {
+      if (mounted) {
+        void refreshAllData();
+      }
+    }, 0);
 
     const updateTime = () => {
       const now = new Date();
@@ -128,10 +127,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
     return () => {
       mounted = false;
+      clearTimeout(initTimer);
       clearInterval(interval);
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [refreshAllData]);
 
   const handleLogoutClick = () => {
     if (confirm('Yönetici oturumunu kapatmak istediğinize emin misiniz?')) {

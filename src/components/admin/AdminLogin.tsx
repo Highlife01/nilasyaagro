@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Mail, Eye, EyeOff, ShieldCheck, ArrowRight, AlertCircle, Globe, CheckCircle2, KeyRound, Sparkles } from 'lucide-react';
+import { Mail, Eye, EyeOff, ShieldCheck, ArrowRight, AlertCircle, Globe, CheckCircle2, KeyRound } from 'lucide-react';
 import Link from 'next/link';
 import { loginAdmin, AdminUser } from '@/lib/adminAuth';
 
