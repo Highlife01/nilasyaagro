@@ -4,6 +4,7 @@ import './globals.css';
 import { company } from '@/data/company';
 import { getCompanyFactLabels } from '@/data/companyFacts';
 import { supportedLanguages, isRtlLang } from '@/data/languages';
+import { localizedAlternates } from '@/lib/metadata';
 import { organizationSchema, websiteSchema, serializeJsonLd } from '@/lib/structuredData';
 
 const jakarta = Plus_Jakarta_Sans({
@@ -37,6 +38,7 @@ export const metadata: Metadata = {
     statusBarStyle: 'black-translucent',
   },
   metadataBase: new URL(company.baseUrl),
+  alternates: localizedAlternates('en', ''),
   title: {
     default: 'Nilasya Agro Foods — B2B Pulses, Grains & Agricultural Commodities Exporter',
     template: '%s | Nilasya Agro Foods',
@@ -58,14 +60,16 @@ export const metadata: Metadata = {
     '100% durum semolina pasta manufacturer',
     'B2B agricultural commodities Turkey',
     'Nilasya Agro Foods',
+    'www.nilasyaagrofoods.com.tr',
+    'nilasyaagrofoods.com.tr',
   ],
   authors: [{ name: 'Nilasya Agro Foods International Trade Desk', url: company.baseUrl }],
   creator: 'Nilasya Agro Foods',
   publisher: company.legalName,
   openGraph: {
-    title: 'Nilasya Agro Foods — Pulses & Grains Trade Enquiries',
+    title: 'Nilasya Agro Foods — B2B Pulses, Grains & Agricultural Commodities Exporter',
     description: getCompanyFactLabels('en').description,
-    url: company.baseUrl,
+    url: `${company.baseUrl}/en/`,
     siteName: 'Nilasya Agro Foods',
     locale: 'en_US',
     type: 'website',
@@ -80,7 +84,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nilasya Agro Foods — B2B Pulses & Grains Exporter',
+    title: 'Nilasya Agro Foods — B2B Pulses, Grains & Agricultural Commodities Exporter',
     description: getCompanyFactLabels('en').description,
     images: ['/images/og/nilasya-export-1200x630.jpg'],
   },
@@ -110,13 +114,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${jakarta.variable} scroll-smooth`}>
       <head>
-        {/* Bing Webmaster Tools Site Verification */}
-        <meta name="msvalidate.01" content="C8E68649B6F1550CF94F3C3FF30C9F7F" />
         {/* Machine-Readable AI & LLM Discovery Standards (llms.txt & llms-full.txt) */}
-        <link rel="alternate" type="text/markdown" href="/llms.txt" title="Nilasya Agro Foods LLM Context Summary (English Markdown)" />
-        <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Nilasya Agro Foods Full Knowledge Base (Markdown)" />
-        <link rel="alternate" type="text/markdown" href="/llms-tr.txt" title="Nilasya Agro Foods LLM Bağlam Özeti (Türkçe Markdown)" />
-        <link rel="alternate" type="text/markdown" href="/llms-ar.txt" title="Nilasya Agro Foods LLM سياق وملخص المنتجات (العربية Markdown)" />
+        <link rel="alternate" type="text/markdown" href={`${company.baseUrl}/llms.txt`} title="Nilasya Agro Foods LLM Context Summary (English Markdown)" />
+        <link rel="alternate" type="text/markdown" href={`${company.baseUrl}/llms-full.txt`} title="Nilasya Agro Foods Full Knowledge Base (Markdown)" />
+        <link rel="alternate" type="text/markdown" href={`${company.baseUrl}/llms-tr.txt`} title="Nilasya Agro Foods LLM Bağlam Özeti (Türkçe Markdown)" />
+        <link rel="alternate" type="text/markdown" href={`${company.baseUrl}/llms-ar.txt`} title="Nilasya Agro Foods LLM سياق وملخص المنتجات (العربية Markdown)" />
         {/* Consent Mode default: GA4 (gtag.js) is loaded only after the visitor accepts, see AnalyticsConsent. */}
         <script
           dangerouslySetInnerHTML={{

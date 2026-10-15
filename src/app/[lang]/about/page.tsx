@@ -10,6 +10,7 @@ import { ShieldCheck, HeartHandshake, Users } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
 import { localizedPageDescription } from '@/data/seo';
 import { pageMetadata } from '@/lib/metadata';
+import { breadcrumbSchema, serializeJsonLd, webPageSchema } from '@/lib/structuredData';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -36,10 +37,21 @@ export default async function AboutPage({
 }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang as Locale;
+  const t = getTranslations(lang);
   const pt = getPageTranslations(lang).about;
+  const breadcrumbs = breadcrumbSchema(lang, [{ name: t.nav.about, path: 'about' }]);
+  const pageJsonLd = webPageSchema(
+    lang,
+    'about',
+    t.nav.about,
+    localizedPageDescription(lang, 'about', t.nav.about),
+    { type: 'AboutPage', breadcrumb: breadcrumbs }
+  );
 
   return (
     <div className="pt-28 bg-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
       <CompanyIntro lang={lang} isH1 />
       <FounderSection lang={lang} />
       <TrustStrip lang={lang} />

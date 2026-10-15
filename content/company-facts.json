@@ -74,6 +74,11 @@
   "canonicalHost": {
     "status": "existing",
     "value": "https://www.nilasyaagrofoods.com.tr",
+    "alternateHosts": [
+      "https://nilasyaagrofoods.com.tr",
+      "www.nilasyaagrofoods.com.tr",
+      "nilasyaagrofoods.com.tr"
+    ],
     "source": "README.md and src/data/company.ts"
   },
   "labels": {

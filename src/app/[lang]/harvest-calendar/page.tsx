@@ -6,8 +6,9 @@ import { ClientCalendarWrapper } from './ClientCalendarWrapper';
 import type { Metadata } from 'next';
 import { Calendar, Snowflake, ShieldCheck, Sun } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
-import { localizedSeoDescription } from '@/data/seo';
+import { localizedPageDescription } from '@/data/seo';
 import { pageMetadata } from '@/lib/metadata';
+import { breadcrumbSchema, serializeJsonLd, webPageSchema } from '@/lib/structuredData';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -24,7 +25,7 @@ export async function generateMetadata({
   const lang = resolvedParams.lang as Locale;
   const t = getTranslations(lang);
 
-  return pageMetadata(lang, '/harvest-calendar/', t.harvestCalendar.title, localizedSeoDescription(lang, t.harvestCalendar.title));
+  return pageMetadata(lang, 'harvest-calendar', t.harvestCalendar.title, localizedPageDescription(lang, 'harvest-calendar', t.harvestCalendar.title));
 }
 
 export default async function HarvestCalendarPage({
@@ -34,10 +35,21 @@ export default async function HarvestCalendarPage({
 }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang as Locale;
+  const t = getTranslations(lang);
   const pt = getPageTranslations(lang).calendarPage;
+  const breadcrumbs = breadcrumbSchema(lang, [{ name: t.harvestCalendar.title, path: 'harvest-calendar' }]);
+  const pageJsonLd = webPageSchema(
+    lang,
+    'harvest-calendar',
+    t.harvestCalendar.title,
+    localizedPageDescription(lang, 'harvest-calendar', t.harvestCalendar.title),
+    { breadcrumb: breadcrumbs }
+  );
 
   return (
     <div className="pt-24 bg-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
       {/* Luminous High-Contrast Hero Banner */}
       <section className="relative py-14 lg:py-18 bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950 text-white overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />

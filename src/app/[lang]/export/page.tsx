@@ -10,6 +10,7 @@ import { Globe2, ArrowRight, Clock, MapPin, Sparkles } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
 import { localizedPageDescription } from '@/data/seo';
 import { pageMetadata } from '@/lib/metadata';
+import { breadcrumbSchema, collectionPageSchema, serializeJsonLd } from '@/lib/structuredData';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -36,7 +37,21 @@ export default async function ExportPage({
 }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang as Locale;
+  const t = getTranslations(lang);
   const pt = getPageTranslations(lang).exportPage;
+  const breadcrumbs = breadcrumbSchema(lang, [{ name: t.nav.export, path: 'export' }]);
+  const pageJsonLd = collectionPageSchema(
+    lang,
+    'export',
+    t.nav.export,
+    localizedPageDescription(lang, 'export', t.nav.export),
+    exportCountriesData.map((country) => ({
+      name: country.name[lang] || country.name.native || country.name.en,
+      path: `export/${country.slug}`,
+      description: country.overview[lang] || country.overview.en,
+    })),
+    { breadcrumb: breadcrumbs }
+  );
 
   const regions = [
     'Europe / EU',
@@ -47,6 +62,8 @@ export default async function ExportPage({
 
   return (
     <div className="pt-24 bg-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
       {/* Hero Banner */}
       <section className="relative py-16 lg:py-20 bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950 text-white overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />

@@ -7,6 +7,7 @@ import { Leaf, Droplets, Sun, Recycle } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
 import { localizedPageDescription } from '@/data/seo';
 import { pageMetadata } from '@/lib/metadata';
+import { breadcrumbSchema, serializeJsonLd, webPageSchema } from '@/lib/structuredData';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -33,7 +34,16 @@ export default async function SustainabilityPage({
 }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang as Locale;
+  const t = getTranslations(lang);
   const pt = getPageTranslations(lang).sustainabilityPage;
+  const breadcrumbs = breadcrumbSchema(lang, [{ name: t.nav.sustainability, path: 'sustainability' }]);
+  const pageJsonLd = webPageSchema(
+    lang,
+    'sustainability',
+    t.nav.sustainability,
+    localizedPageDescription(lang, 'sustainability', t.nav.sustainability),
+    { breadcrumb: breadcrumbs }
+  );
 
   const pillars = [
     {
@@ -60,6 +70,8 @@ export default async function SustainabilityPage({
 
   return (
     <div className="pt-28 bg-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-widest">

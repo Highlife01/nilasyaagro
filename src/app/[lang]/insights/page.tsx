@@ -9,6 +9,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from '@/data/translations';
 import { localizedPageDescription } from '@/data/seo';
 import { pageMetadata } from '@/lib/metadata';
+import { breadcrumbSchema, collectionPageSchema, serializeJsonLd } from '@/lib/structuredData';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -35,10 +36,28 @@ export default async function InsightsPage({
 }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang as Locale;
+  const t = getTranslations(lang);
   const pt = getPageTranslations(lang).insightsPage;
+  const breadcrumbs = breadcrumbSchema(lang, [{ name: t.nav.insights, path: 'insights' }]);
+  const pageJsonLd = collectionPageSchema(
+    lang,
+    'insights',
+    t.insightsSection.title,
+    localizedPageDescription(lang, 'insights', t.insightsSection.title),
+    insightArticles.map((article) => ({
+      name: article.title[lang] || article.title.en,
+      path: `insights/${article.slug}`,
+      image: article.image,
+      description: article.excerpt[lang] || article.excerpt.en,
+      type: 'Article' as const,
+    })),
+    { breadcrumb: breadcrumbs }
+  );
 
   return (
     <div className="pt-28 pb-20 bg-slate-50 min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-widest">

@@ -112,17 +112,20 @@ test('API rejects malformed stock payloads without writing records', async () =>
 
 test('API checks origin and current account permissions before mutations', async () => {
   let writes = 0;
+  const apexOrigin = 'https://nilasyaagrofoods.com.tr';
   const store = { async set() { writes++; }, async audit() {} };
-  const blockedOrigin = await requestApi({ store }, { headers: { origin: 'https://other.example.com' } });
+  const blockedOrigin = await requestApi({ store, allowedOrigins: [origin, apexOrigin] }, { headers: { origin: 'https://other.example.com' } });
   assert.equal(blockedOrigin.statusCode, 403);
   const revokedRole = await requestApi({ store, auth: { async verifySessionCookie() { return claims; }, async getUser() { return { customClaims: {} }; } } });
   assert.equal(revokedRole.statusCode, 403);
   const salesRep = await requestApi({ store, auth: { async verifySessionCookie() { return claims; }, async getUser() { return { customClaims: { nilasyaRole: 'SALES_REP' } }; } } });
   assert.equal(salesRep.statusCode, 403);
   assert.equal(writes, 0);
-  const allowed = await requestApi({ store });
-  assert.equal(allowed.statusCode, 200);
-  assert.equal(writes, 1);
+  const allowedWww = await requestApi({ store, allowedOrigins: [origin, apexOrigin] }, { headers: { origin } });
+  assert.equal(allowedWww.statusCode, 200);
+  const allowedApex = await requestApi({ store, allowedOrigins: [origin, apexOrigin] }, { headers: { origin: apexOrigin } });
+  assert.equal(allowedApex.statusCode, 200);
+  assert.equal(writes, 2);
 });
 
 test('saved inquiry responses retain their reference when notifications are pending', async () => {

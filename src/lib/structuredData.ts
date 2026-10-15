@@ -25,7 +25,9 @@ function absoluteUrl(path: string) {
 export function organizationSchema() {
   return {
     '@context': 'https://schema.org', '@type': 'Organization', '@id': organizationId,
-    name: company.name, legalName: company.legalName, url: company.baseUrl,
+    name: company.name, legalName: company.legalName,
+    alternateName: [company.legalName, company.wwwDomain, company.domain],
+    url: company.baseUrl,
     logo: {
       '@type': 'ImageObject', '@id': `${company.baseUrl}/#logo`,
       url: absoluteUrl(company.logo), contentUrl: absoluteUrl(company.logo),
@@ -51,7 +53,7 @@ export function organizationSchema() {
       telephone: company.phoneE164, email: company.email, contactType: 'sales',
       url: localizedUrl('en', 'contact'),
     },
-    sameAs: [company.linkedin],
+    sameAs: [company.baseUrl, company.apexUrl, company.linkedin],
     areaServed: ['Europe', 'Middle East', 'North Africa', 'Asia', 'North America'],
     knowsAbout: [
       'Turkish pulses export', 'Chickpeas', 'Red lentils', 'Green lentils', 'Dry white beans',
@@ -78,7 +80,9 @@ export function websiteSchema() {
     '@type': 'WebSite',
     '@id': websiteId,
     name: company.name,
+    alternateName: [company.brandName, company.wwwDomain, company.domain],
     url: company.baseUrl,
+    sameAs: [company.baseUrl, company.apexUrl],
     publisher: { '@id': organizationId },
     inLanguage: supportedLanguages.map(({ code }) => code),
   };

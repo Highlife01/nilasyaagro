@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from '@/data/translations';
 import { localizedPageDescription } from '@/data/seo';
 import { pageMetadata } from '@/lib/metadata';
+import { breadcrumbSchema, serializeJsonLd, webPageSchema } from '@/lib/structuredData';
 
 export function generateStaticParams() {
   return supportedLanguages.map((l) => ({ lang: l.code }));
@@ -23,9 +24,20 @@ export default async function PrivacyPolicyPage({
 }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang as Locale;
+  const t = getTranslations(lang);
+  const breadcrumbs = breadcrumbSchema(lang, [{ name: t.footer.privacy, path: 'privacy-policy' }]);
+  const pageJsonLd = webPageSchema(
+    lang,
+    'privacy-policy',
+    t.footer.privacy,
+    localizedPageDescription(lang, 'privacy-policy', t.footer.privacy),
+    { breadcrumb: breadcrumbs }
+  );
 
   return (
     <div className="pt-32 pb-20 bg-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         <h1 className="text-3xl sm:text-4xl font-black text-slate-950">
           {lang === 'tr' ? 'Gizlilik Politikası ve KVKK / GDPR Aydınlatma Metni' : 'Privacy Policy & GDPR Compliance'}

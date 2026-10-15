@@ -10,6 +10,8 @@ import { Sparkles } from 'lucide-react';
 import { getTranslations } from '@/data/translations';
 import { localizedPageDescription } from '@/data/seo';
 import { pageMetadata } from '@/lib/metadata';
+import { productsData } from '@/data/products';
+import { breadcrumbSchema, collectionPageSchema, serializeJsonLd } from '@/lib/structuredData';
 
 import { getPageTranslations } from '@/data/pageTranslations';
 
@@ -36,10 +38,28 @@ export default async function ProductsCatalogPage({
 }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang as Locale;
+  const t = getTranslations(lang);
   const pt = getPageTranslations(lang).productsPage;
+  const breadcrumbs = breadcrumbSchema(lang, [{ name: t.nav.products, path: 'products' }]);
+  const pageJsonLd = collectionPageSchema(
+    lang,
+    'products',
+    t.productsSection.titleMain,
+    localizedPageDescription(lang, 'products', `${t.productsSection.titleMain}: ${t.hero.productsList}`),
+    productsData.map((product) => ({
+      name: product.name[lang] || product.name.en,
+      path: `products/${product.slug[lang] || product.slug.en || product.id}`,
+      image: product.heroImage,
+      description: product.shortDescription[lang] || product.shortDescription.en,
+      type: 'Product' as const,
+    })),
+    { breadcrumb: breadcrumbs }
+  );
 
   return (
     <div className="pt-24 bg-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
       {/* Fresh Vibrant Hero Header Banner */}
       <section className="relative py-16 lg:py-20 bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950 text-white overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />

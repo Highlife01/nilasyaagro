@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from '@/data/translations';
 import { localizedPageDescription } from '@/data/seo';
 import { pageMetadata } from '@/lib/metadata';
+import { breadcrumbSchema, serializeJsonLd, webPageSchema } from '@/lib/structuredData';
 
 export function generateStaticParams() {
   return supportedLanguages.map((l) => ({ lang: l.code }));
@@ -30,6 +31,21 @@ export default async function QuotePage({
 }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang as Locale;
+  const t = getTranslations(lang);
+  const breadcrumbs = breadcrumbSchema(lang, [{ name: t.rfq.modalTitle, path: 'quote' }]);
+  const pageJsonLd = webPageSchema(
+    lang,
+    'quote',
+    t.rfq.modalTitle,
+    localizedPageDescription(lang, 'quote', t.rfq.modalTitle),
+    { breadcrumb: breadcrumbs }
+  );
 
-  return <QuoteClientWrapper lang={lang} />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
+      <QuoteClientWrapper lang={lang} />
+    </>
+  );
 }

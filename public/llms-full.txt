@@ -2,7 +2,8 @@
 
 - Brand: Nilasya Agro Foods
 - Legal entity: NİLASYA GLOBAL TARIM İTHALAT VE İHRACAT LİMİTED ŞİRKETİ
-- Website: https://www.nilasyaagrofoods.com.tr
+- Official Websites: https://www.nilasyaagrofoods.com.tr | https://nilasyaagrofoods.com.tr (www.nilasyaagrofoods.com.tr & nilasyaagrofoods.com.tr)
+- Canonical Origin: https://www.nilasyaagrofoods.com.tr
 - Trade desk & Operations: Toros Mah. Barış Manço Bulvarı, Çukurova / Adana / Türkiye
 - Primary Loading Hub: Mersin International Port (MIP), Türkiye
 - Annual Milling & Supply Capacity: 120,000 MT

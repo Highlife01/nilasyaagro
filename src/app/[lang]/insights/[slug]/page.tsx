@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { Clock, User, Calendar, ArrowLeft, Tag } from 'lucide-react';
 import type { Metadata } from 'next';
 import { pageMetadata, localizedUrl } from '@/lib/metadata';
-import { breadcrumbSchema, organizationId, serializeJsonLd } from '@/lib/structuredData';
+import { articleSchema, breadcrumbSchema, serializeJsonLd, webPageSchema } from '@/lib/structuredData';
 import { getTranslations } from '@/data/translations';
 import { MarkdownContent } from '@/components/common/MarkdownContent';
 import { getPageTranslations } from '@/data/pageTranslations';
@@ -63,26 +63,28 @@ export default async function InsightDetailPage({
 
   const url = localizedUrl(lang, `insights/${slug}`);
   const t = getTranslations(lang);
-  const articleJsonLd = {
-    '@context': 'https://schema.org', '@type': 'Article', '@id': `${url}#article`,
-    headline: title, image: `${company.baseUrl}${article.image}`,
-    url, mainEntityOfPage: { '@type': 'WebPage', '@id': url }, inLanguage: lang,
-    author: { '@type': 'Organization', name: article.author, url: company.baseUrl },
-    publisher: { '@id': organizationId },
-    datePublished: article.publishedAt, dateModified: article.updatedAt,
-    description: article.excerpt[lang] || article.excerpt.en,
-  };
+  const articleJsonLd = articleSchema(article, lang);
   const breadcrumbs = breadcrumbSchema(lang, [
     { name: t.nav.insights, path: 'insights' }, { name: title, path: `insights/${slug}` },
   ]);
+  const pageJsonLd = webPageSchema(
+    lang,
+    `insights/${slug}`,
+    title,
+    article.excerpt[lang] || article.excerpt.en,
+    { image: article.image, breadcrumb: breadcrumbs, mainEntity: { '@id': `${url}#article` } }
+  );
 
   return (
     <article className="pt-28 pb-20 bg-white min-h-screen">
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(pageJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleJsonLd) }}
       />
-
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbs) }} />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-6">

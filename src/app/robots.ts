@@ -16,8 +16,13 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
         // Admin and error pages remain crawlable so their noindex can be read.
       },
-      { userAgent: aiCrawlers, allow: ['/', '/llms.txt', '/llms-full.txt'], disallow: ['/api/'] },
+      {
+        userAgent: aiCrawlers,
+        allow: ['/', '/llms.txt', '/llms-full.txt', '/llms-tr.txt', '/llms-ar.txt', '/.well-known/llms.txt'],
+        disallow: ['/api/'],
+      },
     ],
+    host: company.baseUrl,
     sitemap: `${company.baseUrl}/sitemap.xml`,
   };
 }
