@@ -183,32 +183,40 @@ export function validateContainerUpdates(data) {
   return result;
 }
 
+// Browsers send null for client hints and UTM fields that are not available.
+const optionalText = (value, label, options) => text(value === null ? undefined : value, label, options) || null;
+
 export function validateAnalyticsPayload(data) {
   if (!data || typeof data !== 'object' || Array.isArray(data)) throw new HttpError(400, 'Invalid analytics payload.');
+  // Anonymous counting carries no persistent identity, query strings, full referrers or device hints.
+  const anonymous = data.anonymous === true;
   const sessionId = text(data.sessionId, 'Session ID', { required: true, max: 64 });
-  const visitorId = text(data.visitorId, 'Visitor ID', { max: 64 }) || sessionId;
+  const visitorId = anonymous ? sessionId : (text(data.visitorId, 'Visitor ID', { max: 64 }) || sessionId);
   let path = text(data.path, 'Path', { max: 500 }) || '/';
   if (!path.startsWith('/')) path = `/${path}`;
   // Strip query string params containing sensitive words like password, token, key, secret
-  path = path.replace(/[?&](password|token|key|secret|auth)=[^&#]*/gi, '');
+  path = anonymous ? path.split(/[?#]/u)[0] : path.replace(/[?&](password|token|key|secret|auth)=[^&#]*/gi, '');
 
-  const referrer = text(data.referrer, 'Referrer', { max: 500 }) || '';
+  let referrer = text(data.referrer, 'Referrer', { max: 500 }) || '';
+  if (anonymous && referrer) {
+    try { referrer = new URL(referrer).origin; } catch { referrer = ''; }
+  }
   const title = text(data.title, 'Title', { max: 300 }) || '';
   const screen = text(data.screen, 'Screen', { max: 30 }) || '';
   const language = text(data.language, 'Language', { max: 30 }) || '';
   const timezone = text(data.timezone, 'Timezone', { max: 50 }) || 'UTC';
   
-  const utm = (data.utm && typeof data.utm === 'object') ? {
-    source: text(data.utm.source, 'UTM Source', { max: 100 }) || null,
-    medium: text(data.utm.medium, 'UTM Medium', { max: 100 }) || null,
-    campaign: text(data.utm.campaign, 'UTM Campaign', { max: 100 }) || null,
-    term: text(data.utm.term, 'UTM Term', { max: 100 }) || null,
-    content: text(data.utm.content, 'UTM Content', { max: 100 }) || null,
+  const utm = (!anonymous && data.utm && typeof data.utm === 'object') ? {
+    source: optionalText(data.utm.source, 'UTM Source', { max: 100 }),
+    medium: optionalText(data.utm.medium, 'UTM Medium', { max: 100 }),
+    campaign: optionalText(data.utm.campaign, 'UTM Campaign', { max: 100 }),
+    term: optionalText(data.utm.term, 'UTM Term', { max: 100 }),
+    content: optionalText(data.utm.content, 'UTM Content', { max: 100 }),
   } : {};
 
-  const clientHints = (data.clientHints && typeof data.clientHints === 'object') ? {
-    model: text(data.clientHints.model, 'Model hint', { max: 100 }) || null,
-    platformVersion: text(data.clientHints.platformVersion, 'Platform version hint', { max: 50 }) || null,
+  const clientHints = (!anonymous && data.clientHints && typeof data.clientHints === 'object') ? {
+    model: optionalText(data.clientHints.model, 'Model hint', { max: 100 }),
+    platformVersion: optionalText(data.clientHints.platformVersion, 'Platform version hint', { max: 50 }),
   } : {};
 
   return {
@@ -220,6 +228,8 @@ export function validateAnalyticsPayload(data) {
     screen,
     language,
     timezone,
+    isHeartbeat: data.isHeartbeat === true,
+    anonymous,
     utm,
     clientHints,
   };

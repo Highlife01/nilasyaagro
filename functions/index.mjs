@@ -9,6 +9,7 @@ import { logger } from 'firebase-functions';
 import { createApiHandler } from './api.mjs';
 import { HttpError } from './validation.mjs';
 import { createFirestoreStore } from './store.mjs';
+import { getNilasyaFirestore, NILASYA_DATABASE_ID } from './database.mjs';
 import { createNotificationWorker, createResendTransport, NotificationError } from './notifications.mjs';
 
 let _app;
@@ -20,7 +21,7 @@ function getAuthService() {
   return getAuth(getApp());
 }
 
-const databaseId = defineString('NILASYA_DATABASE_ID', { default: 'nilasyaagrofoods' });
+const databaseId = defineString('NILASYA_DATABASE_ID', { default: NILASYA_DATABASE_ID });
 const webApiKey = defineString('NILASYA_WEB_API_KEY', { default: 'AIzaSyAEa7XLZ7A0U42Hv622WChtHZfJqwLzbuo', description: 'The Firebase project web API key used for email/password authentication.' });
 const resendApiKey = defineSecret('NILASYA_RESEND_API_KEY');
 const mailFrom = defineString('NILASYA_MAIL_FROM', { default: '', description: 'Verified sender email address in the Resend account.' });
@@ -30,7 +31,7 @@ const catalog = JSON.parse(readFileSync(new URL('./catalog.json', import.meta.ur
 const origins = ['https://www.nilasyaagrofoods.com.tr', 'https://nilasyaagrofoods.com.tr', 'https://nilasyaagrofoods.web.app', 'https://nilasyaagrofoods.firebaseapp.com'];
 
 function createServices() {
-  const db = getFirestore(getApp(), databaseId.value());
+  const db = getNilasyaFirestore({ app: getApp(), databaseId: databaseId.value(), getFirestore });
   const store = createFirestoreStore(db, { Timestamp, FieldValue });
   const emulator = process.env.FUNCTIONS_EMULATOR === 'true';
   const transport = createResendTransport({ apiKey: () => resendApiKey.value() });

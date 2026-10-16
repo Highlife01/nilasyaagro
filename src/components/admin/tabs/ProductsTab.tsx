@@ -9,15 +9,17 @@ import {
   AlertCircle
 } from 'lucide-react';
 import { productsData } from '@/data/products';
-import { ProductStockControl, updateProductStock } from '@/lib/adminAuth';
+import { type AdminDataStatus, type ProductStockControl, updateProductStock } from '@/lib/adminAuth';
 
 interface ProductsTabProps {
   stocks: ProductStockControl[];
+  dataStatus: AdminDataStatus;
   onRefreshData: () => void;
 }
 
 export const ProductsTab: React.FC<ProductsTabProps> = ({
   stocks,
+  dataStatus,
   onRefreshData,
 }) => {
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -30,6 +32,7 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
   };
 
   const handleStartEdit = (productId: string) => {
+    if (dataStatus !== 'ready') return;
     const current = getStockData(productId);
     setEditingId(productId);
     setEditForm(current || {
@@ -45,6 +48,7 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
   };
 
   const handleSave = async (productId: string) => {
+    if (dataStatus !== 'ready') return;
     try {
       const current = getStockData(productId);
       const updated: ProductStockControl = {
@@ -65,6 +69,26 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
       alert('Stok güncellenirken hata oluştu: ' + (err instanceof Error ? err.message : String(err)));
     }
   };
+
+  if (dataStatus !== 'ready') {
+    return (
+      <div className="space-y-6 font-sans" aria-live="polite" aria-busy={dataStatus === 'loading'}>
+        <h1 className="text-2xl font-black text-slate-950 tracking-tight">
+          Ürün Portföyü & Silo Stok Yönetimi
+        </h1>
+        <div className="p-6 bg-white rounded-2xl border border-slate-200 text-sm text-slate-600">
+          <p className="font-semibold text-slate-900">
+            {dataStatus === 'loading' ? 'Stok verileri yükleniyor...' : 'Stok verileri alınamadı'}
+          </p>
+          <p className="mt-2 text-xs">
+            {dataStatus === 'loading'
+              ? 'Sunucudaki ürün ve stok kayıtları kontrol ediliyor.'
+              : 'Yukarıdaki Yeniden Dene düğmesini kullanarak stok verilerini tekrar yükleyebilirsiniz.'}
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   const filteredProducts = productsData.filter((prod) => {
     const term = filterTerm.toLowerCase();
@@ -228,7 +252,7 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
                       </div>
                       <div className="flex items-center gap-1.5 text-[11px] text-slate-400">
                         <AlertCircle className="w-3.5 h-3.5 text-slate-400" />
-                        <span>Veri kaynağı bağlı değil / Bilgi girilmedi</span>
+                        <span>Güncel stok bilgilerini girmek için Stok Kaydı Oluştur düğmesini kullanın.</span>
                       </div>
                     </div>
                   )

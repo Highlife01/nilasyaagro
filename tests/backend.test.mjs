@@ -314,6 +314,52 @@ test('analytics validation cleanses sensitive query parameters and enforces stru
   assert.ok(validated.path.includes('product=chickpeas'));
 });
 
+test('analytics validation accepts the null hints and UTM fields real browsers send', () => {
+  const validated = validateAnalyticsPayload({
+    sessionId: 'sess-123456',
+    visitorId: 'vis-abcdef',
+    path: '/tr/',
+    isHeartbeat: false,
+    utm: { source: 'google', medium: null, campaign: null, term: null, content: null },
+    clientHints: { model: null, platformVersion: '19.0.0' },
+  });
+  assert.equal(validated.clientHints.model, null);
+  assert.equal(validated.clientHints.platformVersion, '19.0.0');
+  assert.equal(validated.utm.source, 'google');
+  assert.equal(validated.utm.medium, null);
+  assert.throws(() => validateAnalyticsPayload({ sessionId: 'sess-123456', clientHints: { model: 123 } }), badRequest);
+});
+
+test('anonymous analytics drops identity, query strings, full referrers and device hints', async () => {
+  const validated = validateAnalyticsPayload({
+    sessionId: 'anon-session-1',
+    visitorId: 'must-be-ignored',
+    anonymous: true,
+    path: '/tr/quote?email=buyer@example.com&product=chickpeas',
+    referrer: 'https://www.google.com/search?q=private+query',
+    title: 'Quote',
+    utm: { source: 'newsletter' },
+    clientHints: { model: 'Pixel 9', platformVersion: '15' },
+  });
+  assert.equal(validated.anonymous, true);
+  assert.equal(validated.visitorId, 'anon-session-1');
+  assert.equal(validated.path, '/tr/quote');
+  assert.equal(validated.referrer, 'https://www.google.com');
+  assert.deepEqual(validated.utm, {});
+  assert.deepEqual(validated.clientHints, {});
+
+  const calls = [];
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async (...args) => { calls.push(args); throw new Error('third-party lookup must not run'); };
+  try {
+    const location = await resolveClientLocation({ headers: { 'x-forwarded-for': '203.0.113.9', 'x-country-code': 'DE', 'x-appengine-city': 'Berlin' }, ip: '203.0.113.9' }, { countryOnly: true });
+    assert.deepEqual(location, { country: 'DE', city: 'Bilinmiyor', region: 'Bilinmiyor', isVpnOrProxy: false, isTest: false });
+    assert.equal(calls.length, 0);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
 test('public analytics endpoint collects visitor beacons and admin endpoint returns analytics', async () => {
   let savedSession;
   let loggedAuth;
@@ -339,6 +385,21 @@ test('public analytics endpoint collects visitor beacons and admin endpoint retu
     catalog,
     allowedOrigins: [origin],
   });
+
+  const rejectedBeaconRes = await handler(
+    {
+      method: 'POST',
+      path: '/api/analytics/collect',
+      headers: { origin, 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0' },
+      body: { sessionId: 's-missing-marker', path: '/tr' },
+    },
+    {
+      set() {},
+      status(code) { return { json(data) { return { statusCode: code, body: data }; } }; },
+    }
+  );
+  assert.equal(rejectedBeaconRes.statusCode, 403);
+  assert.equal(savedSession, undefined);
 
   // 1. Send public beacon
   const beaconRes = await handler(
@@ -374,4 +435,67 @@ test('public analytics endpoint collects visitor beacons and admin endpoint retu
   assert.equal(adminRes.body.summary.totalSessions, 1);
 });
 
+test('visitor heartbeats refresh activity without inflating page views', async () => {
+  const records = new Map();
+  const db = {
+    collection(name) {
+      return {
+        doc(id) {
+          return { id, path: `${name}/${id}` };
+        },
+      };
+    },
+    async runTransaction(callback) {
+      const writes = [];
+      const result = await callback({
+        async get(ref) { return { data: () => structuredClone(records.get(ref.path)) }; },
+        set(ref, data) { writes.push({ method: 'set', ref, data }); },
+        update(ref, data) { writes.push({ method: 'update', ref, data }); },
+      });
+      for (const { method, ref, data } of writes) {
+        const saved = method === 'update' ? records.get(ref.path) : {};
+        records.set(ref.path, { ...saved, ...structuredClone(data) });
+      }
+      return result;
+    },
+  };
+  let timestamp = 1000;
+  const store = createFirestoreStore(db, {
+    Timestamp: { fromMillis: (value) => value },
+    FieldValue: { delete: () => ({}) },
+    now: () => timestamp,
+  });
 
+  const firstPage = await store.recordVisitorSession({
+    sessionId: 'session-analytics-1',
+    visitorId: 'visitor-analytics-1',
+    path: '/tr',
+    startedAt: timestamp,
+    lastActivityAt: timestamp,
+  });
+  assert.equal(firstPage.pageviewsCount, 1);
+  assert.equal(firstPage.pagesVisited.length, 1);
+
+  timestamp += 30000;
+  const heartbeat = await store.recordVisitorSession({
+    sessionId: 'session-analytics-1',
+    visitorId: 'visitor-analytics-1',
+    path: '/tr',
+    isHeartbeat: true,
+    lastActivityAt: timestamp,
+  });
+  assert.equal(heartbeat.lastActivityAt, timestamp);
+  assert.equal(heartbeat.durationSeconds, 30);
+  assert.equal(heartbeat.pageviewsCount, 1);
+  assert.equal(heartbeat.pagesVisited.length, 1);
+
+  timestamp += 1000;
+  const nextPage = await store.recordVisitorSession({
+    sessionId: 'session-analytics-1',
+    visitorId: 'visitor-analytics-1',
+    path: '/tr/about',
+    lastActivityAt: timestamp,
+  });
+  assert.equal(nextPage.pageviewsCount, 2);
+  assert.equal(nextPage.pagesVisited.length, 2);
+});

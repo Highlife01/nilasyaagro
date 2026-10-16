@@ -57,13 +57,15 @@ export function getOrCreateSessionAndVisitor(): { sessionId: string; visitorId: 
 
 interface AnalyticsPayload {
   sessionId: string;
-  visitorId: string;
+  visitorId?: string;
   path: string;
   referrer: string;
   title: string;
-  screen: string;
-  language: string;
-  timezone: string;
+  screen?: string;
+  language?: string;
+  timezone?: string;
+  isHeartbeat?: boolean;
+  anonymous?: boolean;
   utm?: {
     source?: string | null;
     medium?: string | null;
@@ -79,6 +81,9 @@ interface AnalyticsPayload {
 
 let lastTrackedPath = '';
 let lastTrackedTime = 0;
+let lastTrackedMode: 'identified' | 'anonymous' = 'anonymous';
+// Held only in memory: no cookie or storage, so it disappears when the tab is closed or reloaded.
+let anonymousSessionId: string | null = null;
 
 function parseUTMParams(): AnalyticsPayload['utm'] {
   if (typeof window === 'undefined') return {};
@@ -102,21 +107,12 @@ function parseUTMParams(): AnalyticsPayload['utm'] {
   }
 }
 
-async function sendBeaconPayload(payload: AnalyticsPayload): Promise<void> {
+async function sendAnalyticsPayload(payload: AnalyticsPayload): Promise<void> {
   const url = (process.env.NEXT_PUBLIC_INQUIRY_API_URL || '/api').replace(/\/$/, '') + '/analytics/collect';
   const body = JSON.stringify(payload);
 
-  if (typeof navigator !== 'undefined' && typeof navigator.sendBeacon === 'function') {
-    const blob = new Blob([body], { type: 'application/json' });
-    try {
-      if (navigator.sendBeacon(url, blob)) return;
-    } catch {
-      // Fall through to fetch
-    }
-  }
-
   try {
-    await fetch(url, {
+    const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -125,24 +121,42 @@ async function sendBeaconPayload(payload: AnalyticsPayload): Promise<void> {
       body,
       keepalive: true,
     });
+    if (!response.ok) {
+      console.warn('Visitor analytics request failed.', { status: response.status });
+    }
   } catch {
-    // Non-blocking tracker
+    console.warn('Visitor analytics request could not reach the server.');
   }
 }
 
-export async function trackPageView(customPath?: string): Promise<void> {
+export async function trackPageView(customPath?: string, isHeartbeat = false): Promise<void> {
   if (typeof window === 'undefined') return;
-  if (analyticsConsent() !== 'granted') return;
 
+  const identified = analyticsConsent() === 'granted';
+  const mode = identified ? 'identified' : 'anonymous';
   const path = customPath || window.location.pathname || '/';
   const now = Date.now();
 
   // Rapid reload or re-render deduplication (ignore if within 2 seconds on identical path)
-  if (path === lastTrackedPath && now - lastTrackedTime < 2000) {
+  if (mode === lastTrackedMode && path === lastTrackedPath && now - lastTrackedTime < 2000) {
     return;
   }
   lastTrackedPath = path;
   lastTrackedTime = now;
+  lastTrackedMode = mode;
+
+  if (!identified) {
+    anonymousSessionId ||= generateUUID();
+    await sendAnalyticsPayload({
+      sessionId: anonymousSessionId,
+      path,
+      referrer: document.referrer || '',
+      title: document.title || '',
+      isHeartbeat,
+      anonymous: true,
+    });
+    return;
+  }
 
   const identity = getOrCreateSessionAndVisitor();
   if (!identity) return;
@@ -174,39 +188,36 @@ export async function trackPageView(customPath?: string): Promise<void> {
     screen: `${window.screen?.width || 0}x${window.screen?.height || 0}`,
     language: navigator.language || '',
     timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC',
+    isHeartbeat,
     utm: parseUTMParams(),
     clientHints,
   };
 
-  await sendBeaconPayload(payload);
+  await sendAnalyticsPayload(payload);
 }
 
 export function initVisitorTracking(): () => void {
   if (typeof window === 'undefined') return () => {};
 
-  // Track initial page
-  if (analyticsConsent() === 'granted') {
-    trackPageView();
-  }
+  // Track initial page (anonymously until the visitor grants analytics permission)
+  trackPageView();
 
-  // Subscribe to consent changes (starts tracking immediately upon consent)
+  // A consent change switches tracking mode immediately
   const unsubscribeConsent = subscribeAnalyticsConsent(() => {
-    if (analyticsConsent() === 'granted') {
-      trackPageView();
-    }
+    trackPageView();
   });
 
   // 30-second heartbeat to accurately measure session activity and duration
   const heartbeatInterval = setInterval(() => {
-    if (analyticsConsent() === 'granted' && document.visibilityState === 'visible') {
-      trackPageView(window.location.pathname);
+    if (document.visibilityState === 'visible') {
+      trackPageView(window.location.pathname, true);
     }
   }, 30000);
 
   // Send heartbeat on page exit / visibility change
   const handleVisibilityChange = () => {
-    if (document.visibilityState === 'hidden' && analyticsConsent() === 'granted') {
-      trackPageView(window.location.pathname);
+    if (document.visibilityState === 'hidden') {
+      trackPageView(window.location.pathname, true);
     }
   };
   document.addEventListener('visibilitychange', handleVisibilityChange);

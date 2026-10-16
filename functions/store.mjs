@@ -167,6 +167,7 @@ export function createFirestoreStore(db, { Timestamp, FieldValue, now = () => Da
             isBot: Boolean(data.isBot),
             botName: data.botName || null,
             isTest: Boolean(data.isTest),
+            anonymous: Boolean(data.anonymous),
           };
           transaction.set(ref, session);
           return session;
@@ -177,7 +178,7 @@ export function createFirestoreStore(db, { Timestamp, FieldValue, now = () => Da
         const pages = Array.isArray(existing.pagesVisited) ? [...existing.pagesVisited] : [];
         let newPageviewsCount = existing.pageviewsCount || 1;
 
-        if (data.path) {
+        if (data.path && !data.isHeartbeat) {
           const lastPage = pages[pages.length - 1];
           const isRapidRepeat = lastPage && lastPage.path === data.path && (currentActivity - lastPage.timestamp < 3000);
           if (!isRapidRepeat) {
@@ -193,7 +194,7 @@ export function createFirestoreStore(db, { Timestamp, FieldValue, now = () => Da
         const updates = {
           lastActivityAt: currentActivity,
           durationSeconds,
-          exitPage: data.path || existing.exitPage,
+          exitPage: data.path && !data.isHeartbeat ? data.path : existing.exitPage,
           pageviewsCount: newPageviewsCount,
           pagesVisited: pages.slice(-50),
         };
@@ -305,7 +306,8 @@ export function createFirestoreStore(db, { Timestamp, FieldValue, now = () => Da
       const dailyMap = {};
 
       allDocs.forEach((s) => {
-        if (s.visitorId) uniqueVisitorsSet.add(s.visitorId);
+        // Anonymous sessions have no persistent identity, so they cannot be counted as unique visitors.
+        if (s.visitorId && !s.anonymous) uniqueVisitorsSet.add(s.visitorId);
         totalPageviews += (s.pageviewsCount || 1);
         if (s.lastActivityAt >= activeThreshold) activeVisitorsCount += 1;
         if (s.hasConverted) conversionCount += 1;
@@ -333,7 +335,7 @@ export function createFirestoreStore(db, { Timestamp, FieldValue, now = () => Da
         if (!dailyMap[dayKey]) dailyMap[dayKey] = { date: dayKey, sessions: 0, pageviews: 0, unique: new Set() };
         dailyMap[dayKey].sessions += 1;
         dailyMap[dayKey].pageviews += (s.pageviewsCount || 1);
-        if (s.visitorId) dailyMap[dayKey].unique.add(s.visitorId);
+        if (s.visitorId && !s.anonymous) dailyMap[dayKey].unique.add(s.visitorId);
       });
 
       const summary = {

@@ -17,12 +17,13 @@ import {
   CheckCircle2,
   AlertCircle
 } from 'lucide-react';
-import { AdminInquiry, ExportContainer, ProductStockControl } from '@/lib/adminAuth';
+import type { AdminDataStatus, AdminInquiry, ExportContainer, ProductStockControl } from '@/lib/adminAuth';
 
 interface OverviewTabProps {
   rfqs: AdminInquiry[];
   containers: ExportContainer[];
   stocks: ProductStockControl[];
+  dataStatus: AdminDataStatus;
   currency: 'USD' | 'EUR' | 'TRY';
   onNavigateToTab: (tabId: string) => void;
 }
@@ -31,6 +32,7 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
   rfqs,
   containers,
   stocks,
+  dataStatus,
   onNavigateToTab,
 }) => {
   // Real counts
@@ -172,6 +174,21 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
     return 'Kayıtlı veri yok';
   }, [stocks, commodityDefinitions]);
 
+  if (dataStatus !== 'ready') {
+    return (
+      <div className="p-6 bg-white rounded-2xl border border-slate-200 text-sm text-slate-600" aria-live="polite" aria-busy={dataStatus === 'loading'}>
+        <p className="font-semibold text-slate-900">
+          {dataStatus === 'loading' ? 'Panel verileri yükleniyor...' : 'Panel verileri alınamadı'}
+        </p>
+        <p className="mt-2 text-xs">
+          {dataStatus === 'loading'
+            ? 'Talep, konteyner ve stok kayıtları kontrol ediliyor.'
+            : 'Yukarıdaki Yeniden Dene düğmesini kullanarak verileri tekrar yükleyebilirsiniz.'}
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-6 font-sans">
       {/* Welcome Banner */}
@@ -221,11 +238,11 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
           </div>
           <div className="mt-3">
             <div className="text-base sm:text-lg font-black text-slate-600 tracking-tight">
-              Veri kaynağı bağlı değil
+              Ciro verisi yok
             </div>
             <div className="flex items-center gap-1.5 text-[11px] text-slate-500 font-medium mt-1">
               <AlertCircle className="w-3.5 h-3.5 text-slate-400" />
-              <span>Muhasebe / ERP entegrasyonu bağlı değil</span>
+              <span>Muhasebe verisi henüz eklenmedi</span>
             </div>
             <div className="text-[11px] font-mono text-emerald-800 font-bold mt-2 pt-2 border-t border-slate-100">
               Talep Edilen Hacim: {totalRfqVolume.toLocaleString('tr-TR')} MT
@@ -279,23 +296,29 @@ export const OverviewTab: React.FC<OverviewTabProps> = ({
           </div>
         </div>
 
-        {/* Card 4: Silo & Terminal Capacity */}
+        {/* Card 4: Registered stock */}
         <div className="bg-white border border-slate-200/80 rounded-2xl p-5 hover:border-teal-400/80 hover:shadow-md transition-all group shadow-xs">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Mersin Silo & Depo</span>
+            <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Kayıtlı Silo & Depo Stoku</span>
             <div className="w-9 h-9 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-700 group-hover:scale-110 transition-transform">
               <ThermometerSnowflake className="w-5 h-5" />
             </div>
           </div>
           <div className="mt-3">
             <div className="text-base sm:text-lg font-black text-slate-600 tracking-tight">
-              Veri kaynağı bağlı değil
+              {stocks.length > 0 ? `${totalStockMT.toLocaleString('tr-TR')} MT` : 'Stok kaydı yok'}
             </div>
             <div className="text-[11px] text-slate-500 font-medium mt-1">
               {stocks.length > 0 
-                ? `Kayıtlı Stok: ${totalStockMT.toLocaleString('tr-TR')} MT (${stocks.length} ürün)` 
-                : 'Silo IoT telemetri sensörleri ve stok kaydı bağlı değil'}
+                ? `${stocks.length} ürünün kayıtlı toplam stoku`
+                : 'Ürün & Silo Stokları bölümünden ilk stok kaydını oluşturun.'}
             </div>
+            <button
+              onClick={() => onNavigateToTab('products')}
+              className="mt-3 text-xs font-semibold text-teal-700 hover:text-teal-900 cursor-pointer"
+            >
+              {stocks.length > 0 ? 'Stokları görüntüle' : 'Stok kaydı oluştur'}
+            </button>
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import type { RFQSubmission } from '@/types';
 
+export type AdminDataStatus = 'loading' | 'ready' | 'error';
+
 export interface AdminUser {
   email: string;
   name: string;

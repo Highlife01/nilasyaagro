@@ -22,6 +22,7 @@ import {
 
 import Link from 'next/link';
 import { 
+  type AdminDataStatus,
   AdminUser, 
   AdminInquiry,
   getStoredRFQs, 
@@ -142,6 +143,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
   const newRfqsCount = rfqs.filter((r) => r.status === 'new').length;
   const inTransitCount = containers.filter((c) => c.status === 'in_transit').length;
+  const dataStatus: AdminDataStatus = lastUpdated ? 'ready' : loadError && !isRefreshing ? 'error' : 'loading';
 
   const navItems: NavItem[] = [
     { id: 'overview', label: 'Genel Bakış & KPI', icon: LayoutDashboard },
@@ -339,7 +341,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             <button
               onClick={refreshAllData}
               disabled={isRefreshing}
-              title="Tüm Telemetri ve Verileri Yenile"
+              title="Panel Verilerini Yenile"
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold cursor-pointer transition-colors shadow-2xs border border-slate-200"
             >
               <RefreshCw className={`w-3.5 h-3.5 text-emerald-600 ${isRefreshing ? 'animate-spin' : ''}`} />
@@ -377,12 +379,14 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
             {/* System Status Pill */}
             <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-semibold text-xs ${
-              loadError 
-                ? 'bg-rose-50 border border-rose-200 text-rose-800' 
-                : 'bg-emerald-50 border border-emerald-200 text-emerald-800'
+              isRefreshing || (!lastUpdated && !loadError)
+                ? 'bg-amber-50 border border-amber-200 text-amber-800'
+                : loadError
+                  ? 'bg-rose-50 border border-rose-200 text-rose-800'
+                  : 'bg-emerald-50 border border-emerald-200 text-emerald-800'
             }`}>
-              <span className={`w-2 h-2 rounded-full ${loadError ? 'bg-rose-600' : 'bg-emerald-600 animate-pulse'}`} />
-              <span>{loadError ? 'Bağlantı Hatası' : 'Canlı Veri Bağlı'}</span>
+              <span className={`w-2 h-2 rounded-full ${isRefreshing || (!lastUpdated && !loadError) ? 'bg-amber-600 animate-pulse' : loadError ? 'bg-rose-600' : 'bg-emerald-600'}`} />
+              <span>{isRefreshing || (!lastUpdated && !loadError) ? 'Veriler yükleniyor' : loadError ? 'Bağlantı Hatası' : 'Veriler alındı'}</span>
             </div>
           </div>
         </header>
@@ -424,6 +428,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
               rfqs={rfqs}
               containers={containers}
               stocks={stocks}
+              dataStatus={dataStatus}
               currency={currency}
               onNavigateToTab={(tabId) => setActiveTab(tabId as NavItem['id'])}
             />
@@ -440,6 +445,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
           {activeTab === 'products' && (
             <ProductsTab
               stocks={stocks}
+              dataStatus={dataStatus}
               onRefreshData={refreshAllData}
             />
           )}

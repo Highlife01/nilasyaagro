@@ -46,6 +46,14 @@ Besides the six core categories below, the catalogue also lists specialty pulses
 
 ## 🛠️ Getting Started
 
+### Firebase Data Isolation
+
+This application uses Firebase project `advera-c8dd0` and the named Firestore database `nilasyaagrofoods`. The API and notification worker reject any other database ID, including an empty value or `(default)`, and reject conflicting project settings before opening Firestore. Keep `NILASYA_DATABASE_ID=nilasyaagrofoods` in the Functions environment.
+
+Firestore rules in `firebase.json` apply only to `nilasyaagrofoods`. The deployment scripts explicitly select the project, Hosting target, and Functions codebase configured for this application. Other Firestore databases are outside this configuration. Firebase Authentication is shared at the project level; the named Firestore database separates application records, not Auth accounts.
+
+The admin dashboard reads saved product stocks from this database. An empty stock list means no records have been entered; loading and connection failures are shown separately. Accounting revenue requires actual accounting data and is not inferred from quote requests.
+
 ### 1. Install Dependencies
 
 ```bash
@@ -77,7 +85,7 @@ Runs `next build` followed by [`scripts/postprocess-export.mjs`](scripts/postpro
 ### 5. Deploy to Firebase Hosting
 
 ```bash
-firebase deploy --only hosting:nilasyaagrofoods
+firebase deploy --project advera-c8dd0 --only hosting:nilasyaagrofoods
 ```
 
 ---

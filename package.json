@@ -12,8 +12,8 @@
     "verify:export": "node scripts/postprocess-export.mjs --check",
     "cleanup:hosting": "node scripts/cleanup-hosting-versions.mjs --execute",
     "cleanup:hosting:dry": "node scripts/cleanup-hosting-versions.mjs",
-    "deploy:hosting": "npm run build && npx firebase-tools deploy --only hosting:nilasyaagrofoods",
-    "deploy": "npm run build && npx firebase-tools deploy"
+    "deploy:hosting": "npm run build && npx firebase-tools deploy --project advera-c8dd0 --only hosting:nilasyaagrofoods",
+    "deploy": "npm run build && npx firebase-tools deploy --project advera-c8dd0 --only hosting:nilasyaagrofoods,functions:nilasya,firestore"
   },
   "dependencies": {
     "@types/canvas-confetti": "^1.9.0",

@@ -8,13 +8,13 @@ import type { Locale } from '@/types';
 const measurementId = process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || 'G-ST5MWN0FR3';
 const enabled = /^G-[A-Z0-9]+$/.test(measurementId);
 const copy: Record<string, [string, string, string, string]> = {
-  en: ['Allow anonymous usage measurement? We never send your form details to analytics.', 'Allow', 'Decline', 'Analytics preferences'],
-  tr: ['Anonim kullanım ölçümüne izin verilsin mi? Form bilgileriniz analitiğe gönderilmez.', 'İzin ver', 'Reddet', 'Analitik tercihleri'],
-  ar: ['هل تسمح بقياس الاستخدام المجهول؟ لا نرسل تفاصيل النموذج إلى التحليلات.', 'السماح', 'رفض', 'تفضيلات التحليلات'],
-  de: ['Anonyme Nutzungsmessung zulassen? Formulardaten werden nicht an Analytics gesendet.', 'Zulassen', 'Ablehnen', 'Analytics-Einstellungen'],
-  fr: ['Autoriser la mesure anonyme ? Les données du formulaire ne sont jamais envoyées aux analyses.', 'Autoriser', 'Refuser', 'Préférences analytiques'],
-  it: ['Consentire la misurazione anonima? I dati del modulo non vengono inviati alle analisi.', 'Consenti', 'Rifiuta', 'Preferenze analitiche'],
-  es: ['¿Permitir la medición anónima? Los datos del formulario nunca se envían a las analíticas.', 'Permitir', 'Rechazar', 'Preferencias analíticas'],
+  en: ['Allow detailed usage measurement? Without permission we only count page visits anonymously, with no cookies or personal data. We never send your form details to analytics.', 'Allow', 'Decline', 'Analytics preferences'],
+  tr: ['Ayrıntılı kullanım ölçümüne izin verilsin mi? İzin vermezseniz yalnızca çerezsiz ve kişisel veri içermeyen anonim ziyaret sayımı yapılır. Form bilgileriniz analitiğe gönderilmez.', 'İzin ver', 'Reddet', 'Analitik tercihleri'],
+  ar: ['هل تسمح بقياس الاستخدام التفصيلي؟ دون إذنك نحصي زيارات الصفحات بشكل مجهول فقط، دون ملفات تعريف ارتباط أو بيانات شخصية. لا نرسل تفاصيل النموذج إلى التحليلات.', 'السماح', 'رفض', 'تفضيلات التحليلات'],
+  de: ['Detaillierte Nutzungsmessung zulassen? Ohne Erlaubnis zählen wir Seitenaufrufe nur anonym, ohne Cookies und ohne personenbezogene Daten. Formulardaten werden nicht an Analytics gesendet.', 'Zulassen', 'Ablehnen', 'Analytics-Einstellungen'],
+  fr: ['Autoriser la mesure détaillée ? Sans autorisation, nous comptons uniquement les visites de pages de façon anonyme, sans cookies ni données personnelles. Les données du formulaire ne sont jamais envoyées aux analyses.', 'Autoriser', 'Refuser', 'Préférences analytiques'],
+  it: ['Consentire la misurazione dettagliata? Senza consenso contiamo solo le visite alle pagine in modo anonimo, senza cookie né dati personali. I dati del modulo non vengono inviati alle analisi.', 'Consenti', 'Rifiuta', 'Preferenze analitiche'],
+  es: ['¿Permitir la medición detallada? Sin permiso solo contamos las visitas a páginas de forma anónima, sin cookies ni datos personales. Los datos del formulario nunca se envían a las analíticas.', 'Permitir', 'Rechazar', 'Preferencias analíticas'],
 };
 type AnalyticsWindow = Window & { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void; [key: `ga-disable-${string}`]: boolean };
 const getServerConsent = () => null;

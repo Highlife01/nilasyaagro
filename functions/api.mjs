@@ -97,7 +97,7 @@ export function parseUserAgent(uaString = '', clientHints = {}) {
 
 const ipGeoCache = new Map();
 
-export async function resolveClientLocation(req) {
+export async function resolveClientLocation(req, { countryOnly = false } = {}) {
   const rawIp = (req.headers['x-forwarded-for'] || '').split(',')[0].trim() || req.headers['fastly-client-ip'] || req.ip || '';
   const cleanIp = rawIp.replace(/^::ffff:/, '');
 
@@ -108,6 +108,12 @@ export async function resolveClientLocation(req) {
   const headerCountry = req.headers['x-appengine-country'] || req.headers['cf-ipcountry'] || req.headers['x-country-code'];
   const headerCity = req.headers['x-appengine-city'];
   const headerRegion = req.headers['x-appengine-region'];
+
+  // Anonymous counting uses only the country the platform already provides:
+  // no IP is cached and no third-party lookup is made.
+  if (countryOnly) {
+    return { country: headerCountry && headerCountry !== 'ZZ' ? headerCountry : 'Bilinmiyor', city: 'Bilinmiyor', region: 'Bilinmiyor', isVpnOrProxy: false, isTest: false };
+  }
 
   if (ipGeoCache.has(cleanIp)) {
     return ipGeoCache.get(cleanIp);
@@ -196,7 +202,7 @@ export function createApiHandler({ auth, store, catalog, signIn, notify, allowed
         await store.rateLimit('analytics', req.ip, 120, 60 * 1000);
         const payload = validateAnalyticsPayload(req.body);
         const ua = parseUserAgent(req.headers['user-agent'] || '', payload.clientHints);
-        const loc = await resolveClientLocation(req);
+        const loc = await resolveClientLocation(req, { countryOnly: payload.anonymous });
         const sessionRecord = await store.recordVisitorSession({
           ...payload,
           ...ua,

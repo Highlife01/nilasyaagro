@@ -23,6 +23,32 @@ await run('forms use a real WhatsApp handoff and no fake timer', async () => {
   }
 });
 
+await run('visitor analytics sends the request marker required by the API', async () => {
+  const source = await readFile(new URL('../src/lib/visitorTracking.ts', import.meta.url), 'utf8');
+  const senderStart = source.indexOf('async function sendAnalyticsPayload');
+  const senderEnd = source.indexOf('\nexport async function trackPageView', senderStart);
+  assert.notEqual(senderStart, -1);
+  assert.notEqual(senderEnd, -1);
+  const sender = source.slice(senderStart, senderEnd);
+  assert.match(sender, /await fetch\(url/u);
+  assert.match(sender, /'X-Nilasya-Request': '1'/u);
+  assert.match(sender, /if \(!response\.ok\)/u);
+  assert.doesNotMatch(sender, /sendBeacon/u);
+  assert.match(source, /trackPageView\(window\.location\.pathname, true\)/u);
+});
+
+await run('visitors without permission are counted anonymously without cookies', async () => {
+  const source = await readFile(new URL('../src/lib/visitorTracking.ts', import.meta.url), 'utf8');
+  const start = source.indexOf('export async function trackPageView');
+  const end = source.indexOf('const identity = getOrCreateSessionAndVisitor()', start);
+  assert.notEqual(start, -1);
+  assert.notEqual(end, -1);
+  const anonymousBranch = source.slice(start, end);
+  assert.match(anonymousBranch, /anonymous: true/u);
+  assert.doesNotMatch(anonymousBranch, /setCookie|getCookie|localStorage|sessionStorage|visitorId|clientHints/u);
+  assert.doesNotMatch(source.slice(source.indexOf('export function initVisitorTracking')), /analyticsConsent\(\) === 'granted'/u);
+});
+
 await run('sitemap is generated from the application data', async () => {
   const source = await readFile(new URL('../src/app/sitemap.ts', import.meta.url), 'utf8');
   assert.match(source, /productsData/u);
@@ -63,4 +89,3 @@ await run('SEO configuration binds both www.nilasyaagrofoods.com.tr and nilasyaa
 });
 
 console.log('All project checks passed.');
-
